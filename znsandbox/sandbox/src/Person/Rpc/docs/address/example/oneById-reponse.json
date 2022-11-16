@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "registrationAddress": "г Караганда, ул. Пушкина",
+      "residenceAddress": "г Караганда, ул. Пушкина",
+      "flatNumber": "45",
+      "houseNumber": "123",
+      "housingNumber": "4"
+    },
+    "meta": null
+  }
+}

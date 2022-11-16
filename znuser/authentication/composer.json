@@ -1,0 +1,21 @@
+{
+  "name": "znuser/authentication",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ZnDeveloper",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "ZnUser\\Authentication\\": "src",
+      "ZnUser\\Authentication\\Tests\\": "tests"
+    }
+  }
+}

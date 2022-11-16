@@ -1,0 +1,21 @@
+{
+  "name": "znuser/identity",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ZnDeveloper",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "ZnUser\\Identity\\": "src",
+      "ZnUser\\Identity\\Tests\\": "tests"
+    }
+  }
+}

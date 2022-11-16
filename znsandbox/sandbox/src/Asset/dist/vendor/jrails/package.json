@@ -1,0 +1,54 @@
+{
+  "_from": "jrails@0.0.4",
+  "_id": "jrails@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-B883+MQ3Ab+v4Wy8EFkHb7Plus7HnR+CbOVzZy9NcUz6D0+1fAEN+DHUGb4cJjilhRmrJpwxf5tuPGUp2EQ9wQ==",
+  "_location": "/jrails",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jrails@0.0.4",
+    "name": "jrails",
+    "escapedName": "jrails",
+    "rawSpec": "0.0.4",
+    "saveSpec": null,
+    "fetchSpec": "0.0.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jrails/-/jrails-0.0.4.tgz",
+  "_shasum": "874f0c9bd41fab86cb277f321b7aedc8df386b02",
+  "_spec": "jrails@0.0.4",
+  "_where": "/home/vitaliy/develop/www/js/rails",
+  "author": {
+    "name": "Zn Developer"
+  },
+  "bugs": {
+    "url": "https://github.com/jsrails/core/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "deprecated": false,
+  "description": "[Документация](docs/README.md)",
+  "homepage": "https://github.com/jsrails/core#readme",
+  "keywords": [
+    "js",
+    "rails",
+    "core"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "jrails",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsrails/core.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "version": "0.0.4"
+}

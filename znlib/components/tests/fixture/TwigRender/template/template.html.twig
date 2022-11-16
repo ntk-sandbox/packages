@@ -1,0 +1,13 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    {% if header is not empty %}
+        {{ header }}
+    {% endif %}
+
+    {% block contentHtml %}{% endblock %}
+
+    {% if footer is not empty %}
+        {{ footer }}
+    {% endif %}
+{% endblock %}

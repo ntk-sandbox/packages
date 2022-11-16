@@ -1,0 +1,111 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "representativeCitizenshipId": 9,
+      "representativeTypeId": 11,
+      "representativeCitizenship": {
+        "id": 9,
+        "bookId": 5,
+        "parentId": null,
+        "code": "",
+        "title": "Гражданин РК (резидент)",
+        "shortTitle": null,
+        "entity": "",
+        "sort": 10,
+        "props": null,
+        "createdAt": "2021-06-17 06:47:27",
+        "updatedAt": null,
+        "translations": [],
+        "book": null,
+        "parent": null,
+        "statusId": 100
+      },
+      "representativeType": {
+        "id": 11,
+        "bookId": 6,
+        "parentId": null,
+        "code": "",
+        "title": "Отец",
+        "shortTitle": null,
+        "entity": "",
+        "sort": 10,
+        "props": null,
+        "createdAt": "2021-06-17 06:47:27",
+        "updatedAt": null,
+        "translations": [],
+        "book": null,
+        "parent": null,
+        "statusId": 100
+      },
+      "code": "123123123123",
+      "firstName": "Qwery1111",
+      "middleName": null,
+      "lastName": "Fisher",
+      "birthday": null,
+      "sexId": 1,
+      "contacts": [
+        {
+          "id": 2,
+          "personId": 1,
+          "attributeId": 3,
+          "value": "+77771111111",
+          "statusId": 100,
+          "sort": "100",
+          "createdAt": "2021-08-12 12:30:46",
+          "updatedAt": null,
+          "attribute": {
+            "id": 3,
+            "name": "mobile",
+            "type": "string",
+            "default": null,
+            "isRequired": null,
+            "title": "Мобильный номер",
+            "description": null,
+            "unitId": null,
+            "status": 100,
+            "rules": [],
+            "enums": [],
+            "unit": null,
+            "tie": null
+          }
+        },
+        {
+          "id": 1,
+          "personId": 1,
+          "attributeId": 1,
+          "value": "support1@example.com",
+          "statusId": 100,
+          "sort": "100",
+          "createdAt": "2021-08-12 12:30:46",
+          "updatedAt": null,
+          "attribute": {
+            "id": 1,
+            "name": "email",
+            "type": "string",
+            "default": null,
+            "isRequired": null,
+            "title": "Email",
+            "description": null,
+            "unitId": null,
+            "status": 100,
+            "rules": [
+              {
+                "id": 2,
+                "attributeId": 1,
+                "name": "Email",
+                "params": null,
+                "sort": 20,
+                "status": 100
+              }
+            ],
+            "enums": [],
+            "unit": null,
+            "tie": null
+          }
+        }
+      ],
+      "sex": null
+    }
+  }
+}

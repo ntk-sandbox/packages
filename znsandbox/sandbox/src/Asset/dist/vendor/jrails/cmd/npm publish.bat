@@ -1,0 +1,3 @@
+cd ..
+npm publish
+pause

@@ -1,0 +1,14 @@
+{
+  "jsonrpc": "2.0",
+  "method": "myPerson.one",
+  "params": {
+    "body": {
+      "with": [
+        "contacts.attribute",
+        "representativeCitizenship",
+        "representativeType",
+        "sex"
+      ]
+    }
+  }
+}

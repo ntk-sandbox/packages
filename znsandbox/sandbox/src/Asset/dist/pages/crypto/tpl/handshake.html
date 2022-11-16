@@ -1,0 +1,22 @@
+<div>
+    <h1>Handshake</h1>
+
+    <b-button @click="reset" variant="info" class="m-1">
+        Reset
+    </b-button>
+
+    <b-button @click="ping" variant="info" class="m-1">
+        Ping
+    </b-button>
+
+    <b-button @click="send" variant="info" class="m-1">
+        Send
+    </b-button>
+
+    <input v-model="text">
+
+    <pre>
+        {{ responseHtml }}
+    </pre>
+
+</div>

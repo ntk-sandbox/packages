@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+
+use ZnLib\Init\Domain\Libs\InitConsoleApp;
+
+$_ENV['CONSOLE_APP_CLASS'] = InitConsoleApp::class;
+require __DIR__ . '/../../../../packages/znframework/console/bin/zn';

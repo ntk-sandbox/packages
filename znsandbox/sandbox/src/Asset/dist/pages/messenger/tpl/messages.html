@@ -1,0 +1,32 @@
+<div>
+    <!--Пользователь {{ chat.name }} (ID:{{ $route.params.id }})-->
+
+
+    <div id="messageList" class="msg_history">
+        <div id="message-container" v-for="message in messageCollection">
+
+            <div class="outgoing_msg" v-if="user.id === message.author_id">
+                <div class="sent_msg">
+                    <p>{{ message.text }}</p>
+                    <span class="time_date"> 11:01 AM | June 9</span>
+                </div>
+            </div>
+
+            <div class="incoming_msg" v-if="user.id !== message.author_id">
+                <div class="incoming_msg_img">
+                    <b-avatar variant="info" :src="message.author.logo" class="mr-3"
+                              :alt="message.author.username"></b-avatar>
+                </div>
+                <div class="received_msg">
+                    <div class="received_withd_msg">
+                        <p>{{ message.text }}</p>
+                        <span class="time_date"> 11:01 AM | June 9</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

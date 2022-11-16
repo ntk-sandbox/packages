@@ -1,0 +1,10 @@
+{
+  "title": "",
+  "list": "",
+  "item": "",
+  "message": {
+    "attempts_have_been_blocked": "Попытки исчерпаны. Действие заблокировано.",
+    "attempts_have_been_exhausted": "Попытки исчерпаны. Повторите позже.",
+    "attempts_have_been_exhausted_time": "Попытки исчерпаны. Вы можете повторить через: {{seconds}} секунд."
+  }
+}

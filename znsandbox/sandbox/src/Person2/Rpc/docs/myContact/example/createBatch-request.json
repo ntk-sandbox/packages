@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "method": "myContact.createBatch",
+    "body": {
+      "mobile": [
+        "+77771112233"
+      ],
+      "residenceAddress": [
+        "Астана, ул. Пушкина, д. 123"
+      ]
+    }
+  }
+}

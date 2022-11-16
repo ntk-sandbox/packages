@@ -1,0 +1,23 @@
+{
+	"name": "znbundle/messenger",
+	"type": "extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Zn Developer",
+			"email": "zndev@ya.ru"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"guzzlehttp/guzzle": ">5.3",
+		"znpack/core": "0.x-dev",
+		"znpack/domain": "0.x-dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"ZnBundle\\Messenger\\": "src",
+			"ZnBundle\\Messenger\\Tests\\": "tests"
+		}
+	}
+}

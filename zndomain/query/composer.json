@@ -1,0 +1,21 @@
+{
+  "name": "zndomain/query",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zn Developer",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "ZnDomain\\Query\\": "src",
+      "ZnDomain\\Query\\Tests\\": "tests"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"name": "znbundle/talkbox",
+	"type": "extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Zn Developer",
+			"email": "zndev@ya.ru"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"symfony/serializer": "4.*|5.*",
+		"znpack/core": "0.x-dev",
+		"znpack/domain": "0.x-dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"ZnBundle\\TalkBox\\": "src",
+			"ZnBundle\\TalkBox\\Tests\\": "tests"
+		}
+	}
+}

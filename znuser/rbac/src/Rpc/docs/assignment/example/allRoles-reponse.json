@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": [
+      {
+        "id": 7,
+        "identityId": 7,
+        "itemName": "rUser",
+        "statusId": 100
+      }
+    ]
+  }
+}

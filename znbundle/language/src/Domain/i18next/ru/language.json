@@ -1,0 +1,14 @@
+{
+  "title": "Мультиязычность",
+  "attribute": {
+    "code": "Код",
+    "title": "Название",
+    "name": "Имя",
+    "locale": "Локаль",
+    "isMain": "Основной",
+    "isEnabled": "Включен"
+  },
+  "message": {
+    "switch_success": "Язык переключен!"
+  }
+}

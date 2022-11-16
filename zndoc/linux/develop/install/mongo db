@@ -1,0 +1,23 @@
+
+wget https://pecl.php.net/get/mongodb-1.2.11.tgz
+tar -xvzf mongodb-1.2.11.tgz
+cd mongodb-1.2.11/
+
+phpize
+./configure
+make all -j 5
+sudo make install
+
+
+
+
+
+Затем можно посмотреть состояние службы:
+sudo systemctl status mongod
+
+И добавить её в автозагрузку, если это необходимо:
+sudo systemctl enable mongod
+
+    sudo nano /etc/php5/apache2/php.ini
+    sudo nano /etc/php5/cli/php.ini
+    sudo mcedit /etc/php5/fpm/php.ini

@@ -1,0 +1,12 @@
+{
+  "title": "Персональные данные",
+  "list": "",
+  "item": "",
+  "attribute": {
+    "email": "Почта",
+    "firstName": "Имя",
+    "middleName": "Отчество",
+    "lastName": "Фамилия",
+    "sex": "Пол"
+  }
+}

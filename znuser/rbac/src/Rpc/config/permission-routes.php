@@ -1,0 +1,67 @@
+<?php
+
+use ZnUser\Rbac\Rpc\Controllers\PermissionController;
+use ZnUser\Rbac\Domain\Enums\Rbac\RbacItemPermissionEnum;
+
+return [
+    [
+        'method_name' => 'rbacPermission.all',
+        'version' => '1',
+        'is_verify_eds' => false,
+        'is_verify_auth' => true,
+        'permission_name' => RbacItemPermissionEnum::ALL,
+        'handler_class' => PermissionController::class,
+        'handler_method' => 'all',
+        'status_id' => 100,
+        'title' => 'RBAC. Полномочия. Просмотр списка',
+        'description' => null,
+    ],
+    [
+        'method_name' => 'rbacPermission.oneById',
+        'version' => '1',
+        'is_verify_eds' => false,
+        'is_verify_auth' => true,
+        'permission_name' => RbacItemPermissionEnum::ONE,
+        'handler_class' => PermissionController::class,
+        'handler_method' => 'oneById',
+        'status_id' => 100,
+        'title' => 'RBAC. Полномочия. Просмотр записи',
+        'description' => null,
+    ],
+    [
+        'method_name' => 'rbacPermission.create',
+        'version' => '1',
+        'is_verify_eds' => false,
+        'is_verify_auth' => true,
+        'permission_name' => RbacItemPermissionEnum::CREATE,
+        'handler_class' => PermissionController::class,
+        'handler_method' => 'add',
+        'status_id' => 100,
+        'title' => 'RBAC. Полномочия. Создание',
+        'description' => null,
+    ],
+    [
+        'method_name' => 'rbacPermission.update',
+        'version' => '1',
+        'is_verify_eds' => false,
+        'is_verify_auth' => true,
+        'permission_name' => RbacItemPermissionEnum::UPDATE,
+        'handler_class' => PermissionController::class,
+        'handler_method' => 'update',
+        'status_id' => 100,
+        'title' => 'RBAC. Полномочия. Редактирование',
+        'description' => null,
+    ],
+    [
+        'method_name' => 'rbacPermission.delete',
+        'version' => '1',
+        'is_verify_eds' => false,
+        'is_verify_auth' => true,
+        'permission_name' => RbacItemPermissionEnum::DELETE,
+        'handler_class' => PermissionController::class,
+        'handler_method' => 'delete',
+        'status_id' => 100,
+        'title' => 'RBAC. Полномочия. Удаление',
+        'description' => null,
+    ],
+];

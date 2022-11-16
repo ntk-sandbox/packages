@@ -1,0 +1,26 @@
+description: "API key"
+/generate:
+    post:
+        securedBy: [ userAuth ]
+        description: "Генерировать ключ приложения"
+        body:
+            application/json:
+                example: !include example/generate-request.json
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: !include example/generate-reponse.json
+
+/delete:
+    post:
+        securedBy: [ userAuth ]
+        description: "Удалить ключ приложения"
+        body:
+            application/json:
+                example: !include example/delete-request.json
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: !include example/delete-reponse.json

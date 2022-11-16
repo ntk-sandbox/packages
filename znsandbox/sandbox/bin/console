@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+/*use ZnCore\Arr\Helpers\ArrayHelper;
+use ZnCore\App\Factories\ApplicationFactory;
+use ZnCore\App\Factories\KernelFactory;
+use ZnCore\DotEnv\Domain\Libs\DotEnv;
+
+require __DIR__ . '/../../../autoload.php';
+
+DotEnv::init();
+
+$bundles = [
+    new \ZnCore\App\Bundle(['all']),
+    new \ZnTool\Package\Bundle(['all']),
+    new \ZnSandbox\Sandbox\Bundle\Bundle(['all']),
+    new \ZnSandbox\Sandbox\Generator\Bundle(['all']),
+];
+
+$bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../../../../' . DotEnv::get('BUNDLES_CONFIG_FILE'));
+$kernel = KernelFactory::createConsoleKernel($bundles);
+$application = ApplicationFactory::createConsole($kernel);
+$application->run();*/

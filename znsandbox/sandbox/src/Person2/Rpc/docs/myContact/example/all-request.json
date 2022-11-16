@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "method": "...",
+  "params": {
+    "meta": {
+      "version": 1,
+      "Language":"ru",
+      "timestamp": "2021-05-26T15:59:16+0000",
+      "Authorization": "bearer XAgQTzcEFIK2PrvtwkMyvDFD6bUjgq33z3kycw9-3t-RY2Ru1NpAc3q5fr5NeRGC"
+    },
+    "body": {
+      "with": [
+        "attribute"
+      ]
+    }
+  }
+}

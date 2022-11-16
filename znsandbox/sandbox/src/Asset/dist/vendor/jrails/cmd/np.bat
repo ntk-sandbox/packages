@@ -1,0 +1,3 @@
+cd ..
+np
+pause

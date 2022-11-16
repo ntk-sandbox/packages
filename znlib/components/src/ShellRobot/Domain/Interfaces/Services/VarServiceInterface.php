@@ -1,0 +1,10 @@
+<?php
+
+namespace ZnLib\Components\ShellRobot\Domain\Interfaces\Services;
+
+interface VarServiceInterface
+{
+
+
+}
+

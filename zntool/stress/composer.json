@@ -1,0 +1,21 @@
+{
+  "name": "zntool/stress",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zn Developer",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "ZnTool\\Stress\\": "src",
+      "ZnTool\\Stress\\Tests\\": "tests"
+    }
+  }
+}
