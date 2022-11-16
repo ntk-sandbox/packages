@@ -97,7 +97,7 @@ class GitNeedReleaseCommand extends BaseCommand
                 $version = $lastVersion ? "<fg=blue>{$lastVersion}</>" : "<fg=red>No version</>";
                 $output->writeln("<fg=yellow> {$packageId}:{$version}</>");
 
-                $vendorDir = __DIR__ . '/../../../vendor/ntk-sandbox/packages/';
+                $vendorDir = __DIR__ . '/../../../../../../';
                 $dir = realpath($vendorDir) . '/' . $packageId;
 
                 $possibleVersionList = VersionHelper::possibleVersionList($lastVersion);

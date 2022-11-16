@@ -85,7 +85,7 @@ class GitStashAllCommand extends BaseCommand
         foreach ($totalCollection as $changedEntity) {
             $packageEntity = $changedEntity->getPackage();
             $packageId = $packageEntity->getId();
-            $vendorDir = __DIR__ . '/../../../vendor/ntk-sandbox/packages/';
+            $vendorDir = __DIR__ . '/../../../../../../';
             $dir = realpath($vendorDir) . '/' . $packageId;
             $orgDir = realpath($vendorDir) . '/' . $packageEntity->getGroup()->name;
             if ($changedEntity->getStatus() == StatusEnum::CHANGED) {
