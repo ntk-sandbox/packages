@@ -16,8 +16,8 @@ class TestApp extends BaseApp
             new \ZnLib\Components\SymfonyTranslation\Bundle(['all']),
             new \ZnLib\I18Next\Bundle(['all']),
             new \ZnLib\Components\DefaultApp\Bundle(['all']),
-            \ZnDatabase\Eloquent\Bundle::class,
-            \ZnDatabase\Fixture\Bundle::class,
+//            \ZnDatabase\Eloquent\Bundle::class,
+//            \ZnDatabase\Fixture\Bundle::class,
         ];
         return ArrayHelper::merge($this->bundles, $bundles);
     }
