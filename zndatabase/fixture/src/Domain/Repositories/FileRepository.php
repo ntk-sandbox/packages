@@ -24,6 +24,7 @@ use ZnSandbox\Sandbox\Generator\Domain\Services\GeneratorService;
 class FileRepository implements RepositoryInterface, GetEntityClassInterface
 {
 
+    protected $config;
     public $extension = 'php';
 
     public function __construct($config = [])
