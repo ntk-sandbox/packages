@@ -9,9 +9,7 @@ use ZnBundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
 use ZnBundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Service\Base\BaseCrudService;
-use ZnLib\I18Next\Facades\I18Next;
 use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 
 /**
  * @method AttemptRepositoryInterface getRepository()

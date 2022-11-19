@@ -2,6 +2,7 @@
 
 namespace ZnFramework\Rpc\Symfony4\Libs;
 
+use Throwable;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestCollection;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseCollection;
@@ -64,8 +65,15 @@ class RpcRequestHandler
         foreach ($requestCollection->getCollection() as $requestEntity) {
             /** @var RpcRequestEntity $requestEntity */
             $requestEntity->addMeta(HttpHeaderEnum::IP, $_SERVER['REMOTE_ADDR']);
-            $responseEntity = $this->procedureService->callOneProcedure($requestEntity);
-            $responseCollection->add($responseEntity);
+            try {
+                ob_start();
+                $responseEntity = $this->procedureService->callOneProcedure($requestEntity);
+                ob_clean();
+                $responseCollection->add($responseEntity);
+            } catch (Throwable $e) {
+                $responseEntity = $this->responseFormatter->forgeErrorResponse(RpcErrorCodeEnum::APPLICATION_ERROR, $e->getMessage());
+                $responseCollection->add($responseEntity);
+            }
         }
         return $responseCollection;
     }

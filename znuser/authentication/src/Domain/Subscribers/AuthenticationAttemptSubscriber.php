@@ -2,15 +2,14 @@
 
 namespace ZnUser\Authentication\Domain\Subscribers;
 
-use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use ZnUser\Authentication\Domain\Enums\UserNotifyTypeEnum;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use ZnBundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
+use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnUser\Authentication\Domain\Enums\AuthEventEnum;
+use ZnUser\Authentication\Domain\Enums\UserNotifyTypeEnum;
 use ZnUser\Authentication\Domain\Events\AuthEvent;
 use ZnUser\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 
 class AuthenticationAttemptSubscriber implements EventSubscriberInterface
@@ -30,8 +29,7 @@ class AuthenticationAttemptSubscriber implements EventSubscriberInterface
         AttemptServiceInterface $attemptService,
         NotifyServiceInterface $notifyService,
         CredentialServiceInterface $credentialService
-    )
-    {
+    ) {
         $this->attemptService = $attemptService;
         $this->credentialService = $credentialService;
         $this->notifyService = $notifyService;
@@ -48,7 +46,6 @@ class AuthenticationAttemptSubscriber implements EventSubscriberInterface
 
     public function onBeforeAuth(AuthEvent $event)
     {
-
     }
 
     /*public function onAfterAuthSuccess(AuthEvent $event)
@@ -61,10 +58,17 @@ class AuthenticationAttemptSubscriber implements EventSubscriberInterface
         $login = $event->getLoginForm()->getLogin();
         $credentialEntity = $this->credentialService->findOneByCredentialValue($login);
         try {
-            $this->attemptService->check($credentialEntity->getIdentityId(), $this->action, $this->lifeTime, $this->attemptCount);
-            //} catch (NotFoundException $e) {
-        } catch (AttemptsBlockedException | AttemptsExhaustedException $e) {
-            $this->notifyService->sendNotifyByTypeName(UserNotifyTypeEnum::AUTHENTICATION_ATTEMPT_BLOCK, $credentialEntity->getIdentityId());
+            $this->attemptService->check(
+                $credentialEntity->getIdentityId(),
+                $this->action,
+                $this->lifeTime,
+                $this->attemptCount
+            );
+        } catch (AttemptsBlockedException $e) {
+            $this->notifyService->sendNotifyByTypeName(
+                UserNotifyTypeEnum::AUTHENTICATION_ATTEMPT_BLOCK,
+                $credentialEntity->getIdentityId()
+            );
             throw $e;
         }
     }
