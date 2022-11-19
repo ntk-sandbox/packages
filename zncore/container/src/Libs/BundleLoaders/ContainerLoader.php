@@ -156,6 +156,7 @@ class ContainerLoader extends BaseLoader
         ];
         $methodParametersResolver = new MethodParametersResolver($this->getContainer());
         $params = $methodParametersResolver->resolveClosure($requiredConfig, $methodParametersResolverArgs);
+//        dd($params);
         call_user_func_array($requiredConfig, $params);
     }
 }
