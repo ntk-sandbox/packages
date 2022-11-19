@@ -52,6 +52,9 @@ abstract class BaseWebApp extends BaseApp
         $containerConfigurator->bind(ErrorRendererInterface::class, HtmlErrorRenderer::class);
         $containerConfigurator->singleton(View::class, View::class);
         $containerConfigurator->singleton(RouteCollection::class, RouteCollection::class);
+        $containerConfigurator->singleton(RequestStack::class, RequestStack::class);
+        $containerConfigurator->singleton(UrlMatcherInterface::class, UrlMatcher::class);
+        $containerConfigurator->singleton(RequestMatcherInterface::class, UrlMatcher::class);
 //        $containerConfigurator->singleton('error_controller', ErrorController::class);
     }
 }

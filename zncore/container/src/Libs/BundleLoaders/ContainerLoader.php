@@ -14,6 +14,16 @@ use ZnCore\Container\Libs\ContainerConfigurators\ArrayContainerConfigurator;
 use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
 use ZnCore\Instance\Libs\Resolvers\MethodParametersResolver;
 
+class Container1 extends \ZnCore\Container\Libs\Container
+{
+
+
+    public function __construct()
+    {
+        $this->bindings = [];
+    }
+}
+
 /**
  * Загрузчик конфигурации контейнера
  */
