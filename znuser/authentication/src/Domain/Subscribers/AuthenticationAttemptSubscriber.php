@@ -2,6 +2,7 @@
 
 namespace ZnUser\Authentication\Domain\Subscribers;
 
+use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
 use ZnUser\Authentication\Domain\Enums\UserNotifyTypeEnum;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
@@ -62,7 +63,7 @@ class AuthenticationAttemptSubscriber implements EventSubscriberInterface
         try {
             $this->attemptService->check($credentialEntity->getIdentityId(), $this->action, $this->lifeTime, $this->attemptCount);
             //} catch (NotFoundException $e) {
-        } catch (AttemptsBlockedException $e) {
+        } catch (AttemptsBlockedException | AttemptsExhaustedException $e) {
             $this->notifyService->sendNotifyByTypeName(UserNotifyTypeEnum::AUTHENTICATION_ATTEMPT_BLOCK, $credentialEntity->getIdentityId());
             throw $e;
         }

@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Summary\Domain\Repositories\Eloquent;
 
+use DateTime;
 use ZnBundle\Summary\Domain\Entities\AttemptEntity;
 use ZnBundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
 use ZnDomain\Query\Entities\Where;
@@ -24,9 +25,9 @@ class AttemptRepository extends BaseEloquentCrudRepository implements AttemptRep
 
     public function countByIdentityId(int $identityId, string $action, int $lifeTime): int
     {
-        $date = new \DateTime();
+        $date = new DateTime();
         $date->modify("-{$lifeTime} seconds");
-        $query = new Query;
+        $query = new Query();
         $query->where('identity_id', $identityId);
         $query->whereNew(new Where('created_at', $date, OperatorEnum::GREATER));
         return $this->count($query);

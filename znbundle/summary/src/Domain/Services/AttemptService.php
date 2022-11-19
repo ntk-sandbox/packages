@@ -5,15 +5,21 @@ namespace ZnBundle\Summary\Domain\Services;
 use ZnBundle\Summary\Domain\Entities\AttemptEntity;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
+use ZnBundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
 use ZnBundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Service\Base\BaseCrudService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
+use ZnLib\I18Next\Facades\I18Next;
+use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use ZnUser\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 
+/**
+ * @method AttemptRepositoryInterface getRepository()
+ */
 class AttemptService extends BaseCrudService implements AttemptServiceInterface
 {
 
-    public function __construct(EntityManagerInterface $em)
+    public function __construct(EntityManagerInterface $em, private TranslationServiceInterface $translateService)
     {
         $this->setEntityManager($em);
     }
@@ -27,13 +33,11 @@ class AttemptService extends BaseCrudService implements AttemptServiceInterface
     {
         $this->increment($identityId, $action);
         $count = $this->getRepository()->countByIdentityId($identityId, $action, $lifeTime);
-        //dd($count, $attemptCount);
         if ($count == $attemptCount) {
-
-            $message = I18Next::t('summary', 'attempt.message.attempts_have_been_blocked');
+            $message = $this->translateService->t('summary', 'attempt.message.attempts_have_been_blocked');
             throw new AttemptsBlockedException($message);
         } elseif ($count > $attemptCount) {
-            $message = I18Next::t('summary', 'attempt.message.attempts_have_been_exhausted');
+            $message = $this->translateService->t('summary', 'attempt.message.attempts_have_been_exhausted');
             throw new AttemptsExhaustedException($message);
         }
     }
