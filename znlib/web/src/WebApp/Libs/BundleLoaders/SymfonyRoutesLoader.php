@@ -21,7 +21,12 @@ class SymfonyRoutesLoader extends BaseLoader
 
     public function loadAll(array $bundles): void
     {
-        $routes = $this->container->get(RouteCollection::class); //new RouteCollection();
+        /** @var RouteCollection $routes */
+        $routes = $this->container->get(RouteCollection::class);
+        $this->getConfig($bundles, $routes);
+    }
+
+    protected function getConfig(array $bundles, RouteCollection $routes): RouteCollection {
         $routingConfigurator = $this->createRoutingConfigurator($routes);
         foreach ($bundles as $bundle) {
             $loadedConfig = $this->load($bundle);
@@ -29,9 +34,9 @@ class SymfonyRoutesLoader extends BaseLoader
                 foreach ($loadedConfig as $configFile) {
                     $closure = include $configFile;
                     call_user_func($closure, $routingConfigurator);
-//                    $closure($routingConfigurator);
                 }
             }
         }
+        return $routes;
     }
 }

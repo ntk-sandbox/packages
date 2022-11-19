@@ -7,18 +7,9 @@ use ZnCore\Env\Enums\EnvEnum;
 class EnvHelper
 {
 
-//    public static function isTestEnv(): bool
-//    {
-//        global $_GET, $_SERVER, $argv;
-//        $isConsoleTest = isset($argv) && in_array('--env=test', $argv);
-////        $isWebTest = isset($_GET['env']) && $_GET['env'] == 'test';
-//        $isWebTest = (isset($_SERVER['HTTP_ENV_NAME']) && $_SERVER['HTTP_ENV_NAME'] == 'test') || (isset($_GET['env']) && $_GET['env'] == 'test');
-//        return $isConsoleTest || $isWebTest;
-//    }
-
     public static function setErrorVisibleFromEnv(): void
     {
-        $isDebug = EnvHelper::isDebug();
+        $isDebug = self::isDebug();
         $level = $isDebug ? E_ALL : E_PARSE | E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR;
         self::setErrorVisible($isDebug, $level);
     }
@@ -26,19 +17,19 @@ class EnvHelper
     public static function setErrorVisible(bool $isDebug, int $level): void
     {
         if ($isDebug) {
-            EnvHelper::showErrors($level);
+            self::showErrors($level);
         } else {
-            EnvHelper::hideErrors($level);
+            self::hideErrors($level);
         }
     }
 
-    public static function showErrors(int $level = E_ALL): void
+    protected static function showErrors(int $level = E_ALL): void
     {
         error_reporting($level);
         ini_set('display_errors', '1');
     }
 
-    public static function hideErrors(int $level = 0): void
+    protected static function hideErrors(int $level = 0): void
     {
         error_reporting($level);
         ini_set('display_errors', '0');

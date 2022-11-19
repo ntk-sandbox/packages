@@ -26,8 +26,7 @@ abstract class BaseConsoleApp extends BaseApp
         ZnCore $znCore,
         ContainerConfiguratorInterface $containerConfigurator,
         ConfigManagerInterface $configManager
-    )
-    {
+    ) {
         parent::__construct($container, $dispatcher, $znCore, $containerConfigurator);
         $this->configManager = $configManager;
     }
@@ -46,7 +45,17 @@ abstract class BaseConsoleApp extends BaseApp
 
     public function import(): array
     {
-        return ['i18next', 'container', 'entityManager', 'eventDispatcher', 'rbac', 'console', 'migration', 'symfonyRpc', 'telegramRoutes'];
+        return [
+            'i18next',
+            'container',
+            'entityManager',
+            'eventDispatcher',
+            'rbac',
+            'console',
+            'migration',
+            'symfonyRpc',
+            'telegramRoutes'
+        ];
     }
 
     protected function bundleLoaders(): array
@@ -70,7 +79,6 @@ abstract class BaseConsoleApp extends BaseApp
 
     protected function configDispatcher(EventDispatcherConfiguratorInterface $configurator): void
     {
-
     }
 
     protected function createConsole(array $consoleCommands)
@@ -79,15 +87,17 @@ abstract class BaseConsoleApp extends BaseApp
 
         /** @var Application $application */
         $application = $container->get(Application::class);
-        $application->getDefinition()->addOptions([
-            new InputOption(
-                '--env',
-                '-e',
-                InputOption::VALUE_OPTIONAL,
-                'The environment to operate in.',
-                'DEV'
-            )
-        ]);
+        $application->getDefinition()->addOptions(
+            [
+                new InputOption(
+                    '--env',
+                    '-e',
+                    InputOption::VALUE_OPTIONAL,
+                    'The environment to operate in.',
+                    'DEV'
+                )
+            ]
+        );
         if (!empty($consoleCommands)) {
             CommandHelper::registerFromNamespaceList($consoleCommands, $container, $application);
         }

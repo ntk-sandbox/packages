@@ -67,8 +67,7 @@ abstract class BaseApp implements AppInterface
         EventDispatcherInterface $dispatcher,
         ZnCore $znCore,
         ContainerConfiguratorInterface $containerConfigurator
-    )
-    {
+    ) {
         $this->setContainer($container);
         $this->setEventDispatcher($dispatcher);
         $this->containerConfigurator = $containerConfigurator;
@@ -103,8 +102,6 @@ abstract class BaseApp implements AppInterface
     protected function initEnv(): void
     {
         DotEnv::init($_ENV['APP_MODE']);
-//        EnvHelper::prepareTestEnv();
-//        DotEnv::init();
         EnvHelper::setErrorVisibleFromEnv();
     }
 
@@ -119,12 +116,12 @@ abstract class BaseApp implements AppInterface
     }
 
     /**
-     * Загрузка подкюченных бандлов.
+     * Загрузка подключенных бандлов.
      */
     protected function initBundles(): void
     {
         $bundleLoader = $this->getBundleLoader();
-        $bundleLoader->loadMainConfig($this->appName());
+        $bundleLoader->loadMainConfig($this->bundles(), $this->import());
     }
 
     /**
@@ -153,7 +150,7 @@ abstract class BaseApp implements AppInterface
      */
     protected function createBundleLoaderInstance(): BundleLoader
     {
-        return new BundleLoader($this->bundles(), $this->import());
+        return new BundleLoader($this->getContainer());
     }
 
     /**
@@ -190,7 +187,6 @@ abstract class BaseApp implements AppInterface
      */
     protected function configDispatcher(EventDispatcherConfiguratorInterface $configurator): void
     {
-
     }
 
     /**

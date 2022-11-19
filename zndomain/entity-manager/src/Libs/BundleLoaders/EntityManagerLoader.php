@@ -14,12 +14,28 @@ class EntityManagerLoader extends BaseLoader
 
     public function loadAll(array $bundles): void
     {
+        /*$config = $this->getValueFromCache();
+        if (empty($config)) {
+            $config = $this->getConfig($bundles);
+            $this->setValueToCache($config);
+        }*/
+        $config = $this->getConfig($bundles);
+        /** @var EntityManagerConfiguratorInterface $entityManagerConfigurator */
+        $entityManagerConfigurator = $this->getContainer()->get(EntityManagerConfiguratorInterface::class);
+        $entityManagerConfigurator->setConfig($config);
+    }
+
+    protected function getConfig(array $bundles): array
+    {
         foreach ($bundles as $bundle) {
             $containerConfigList = $this->load($bundle);
             foreach ($containerConfigList as $containerConfig) {
                 $this->importFromConfig($containerConfig);
             }
         }
+        /** @var EntityManagerConfiguratorInterface $entityManagerConfigurator */
+        $entityManagerConfigurator = $this->getContainer()->get(EntityManagerConfiguratorInterface::class);
+        return $entityManagerConfigurator->getConfig();
     }
 
     private function importFromConfig($configFile): void

@@ -19,6 +19,11 @@ class EntityManagerConfigurator implements EntityManagerConfiguratorInterface
         return $this->entityToRepository;
     }
 
+    public function setConfig(array $config): void
+    {
+        $this->entityToRepository = $config;
+    }
+
     public function entityToRepository(string $entityClass)
     {
         return $this->entityToRepository[$entityClass] ?? null;

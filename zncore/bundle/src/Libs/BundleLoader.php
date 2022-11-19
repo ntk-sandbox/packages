@@ -2,11 +2,14 @@
 
 namespace ZnCore\Bundle\Libs;
 
+use Psr\Container\ContainerInterface;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\Bundle\Base\BaseBundle;
 use ZnCore\Bundle\Base\BaseLoader;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\Container\Helpers\ContainerHelper;
+use ZnCore\Container\Traits\ContainerAttributeTrait;
+use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
 use ZnCore\Instance\Helpers\ClassHelper;
 use ZnCore\Instance\Helpers\InstanceHelper;
 
@@ -16,33 +19,16 @@ use ZnCore\Instance\Helpers\InstanceHelper;
 class BundleLoader
 {
 
+    use ContainerAttributeTrait;
+
     private $bundles = [];
     private $import = [];
     private $loadersConfig = [];
+    private $cache;
 
-    public function __construct(array $bundles = [], array $import = [])
+    public function __construct(ContainerInterface $container)
     {
-        $this->addBundles($bundles);
-        $this->import = $import;
-    }
-
-    /**
-     * Добавить бандлы.
-     *
-     * @param array $bundles Массив описания бандлов
-     */
-    protected function addBundles(array $bundles)
-    {
-        foreach ($bundles as $bundleDefinition) {
-            $bundleInstance = $this->createBundleInstance($bundleDefinition);
-            $bundleClass = get_class($bundleInstance);
-            if (!isset($this->bundles[$bundleClass])) {
-                if ($bundleInstance->deps()) {
-                    $this->addBundles($bundleInstance->deps());
-                }
-                $this->bundles[$bundleClass] = $bundleInstance;
-            }
-        }
+        $this->container = $container;
     }
 
     /**
@@ -58,15 +44,34 @@ class BundleLoader
 
     /**
      * Загрузить все конфиги приложения.
-     *
-     * @param string $appName Имя приложения
      */
-    public function loadMainConfig(string $appName): void
+    public function loadMainConfig(array $bundles = [], array $import = []): void
     {
+        $this->addBundles($bundles);
         $loaders = $this->getLoadersConfig();
-        $loaders = ArrayHelper::extractByKeys($loaders, $this->import);
+        $loaders = ArrayHelper::extractByKeys($loaders, $import);
         foreach ($loaders as $loaderName => $loaderDefinition) {
             $this->load($loaderName, $loaderDefinition);
+        }
+    }
+
+    /**
+     * Добавить бандлы.
+     *
+     * @param array $bundles Массив описания бандлов
+     * @throws InvalidConfigException
+     */
+    protected function addBundles(array $bundles)
+    {
+        foreach ($bundles as $bundleDefinition) {
+            $bundleInstance = $this->createBundleInstance($bundleDefinition);
+            $bundleClass = get_class($bundleInstance);
+            if (!isset($this->bundles[$bundleClass])) {
+                if ($bundleInstance->deps()) {
+                    $this->addBundles($bundleInstance->deps());
+                }
+                $this->bundles[$bundleClass] = $bundleInstance;
+            }
         }
     }
 
@@ -80,7 +85,7 @@ class BundleLoader
      *
      * @param object | string | array $bundleDefinition Объявление бандла
      * @return BaseBundle
-     * @throws \ZnCore\Contract\Common\Exceptions\InvalidConfigException
+     * @throws InvalidConfigException
      */
     private function createBundleInstance($bundleDefinition): BaseBundle
     {
@@ -103,7 +108,7 @@ class BundleLoader
             $loaderInstance->setName($loaderName);
         }
         $bundles = $this->filterBundlesByLoader($this->bundles, $loaderName);
-        $configManager = ContainerHelper::getContainer()->get(ConfigManagerInterface::class);
+        $configManager = $this->container->get(ConfigManagerInterface::class);
         $configManager->set('bundles', $bundles);
         $loaderInstance->loadAll($bundles);
     }

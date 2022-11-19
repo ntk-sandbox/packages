@@ -3,11 +3,15 @@
 namespace ZnCore\Bundle\Base;
 
 use Psr\Container\ContainerInterface;
+use Symfony\Component\Cache\Adapter\AdapterInterface;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Contracts\Cache\ItemInterface;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\Container\Traits\ContainerAttributeTrait;
+use ZnLib\Components\Time\Enums\TimeEnum;
 
 /**
- * Абстрактный класс импорта конкретной конфиурации бандла.
+ * Абстрактный класс импорта конкретной конфигурации бандла.
  */
 abstract class BaseLoader
 {
@@ -37,6 +41,31 @@ abstract class BaseLoader
     {
         $this->setContainer($container);
         $this->setConfigManager($configManager);
+    }
+
+    protected function getCacheKey(): string {
+        return static::class;
+    }
+
+    public function getValueFromCache() {
+        /** @var ItemInterface $item */
+        $item = $this->getCache()->getItem($this->getCacheKey());
+        return $item->get();
+    }
+
+    public function setValueToCache($value) {
+        /** @var ItemInterface $item */
+        $item = $this->getCache()->getItem($this->getCacheKey());
+        $item->set($value);
+        $this->getCache()->save($item);
+    }
+
+    public function getCache(): AdapterInterface
+    {
+        $cacheDirectory = $_ENV['CACHE_DIRECTORY'];
+        $adapter = new FilesystemAdapter('bootstrapApp', TimeEnum::SECOND_PER_DAY, $cacheDirectory);
+//        $adapter->setLogger($container->get(LoggerInterface::class));
+        return $adapter;
     }
 
     public function getName(): ?string
