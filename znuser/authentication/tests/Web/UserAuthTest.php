@@ -2,8 +2,6 @@
 
 namespace ZnUser\Authentication\Tests\Web;
 
-
-use Tests\Helpers\FixtureHelper;
 use ZnLib\Web\Test\BaseWebTest;
 
 class UserAuthTest extends BaseWebTest

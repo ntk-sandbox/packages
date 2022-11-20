@@ -3,7 +3,6 @@
 namespace ZnUser\Password\Tests\Rpc\User;
 
 use ZnBundle\Notify\Test\Helpers\EmailHelper;
-use Tests\Rpc\BaseTest;
 use ZnFramework\Rpc\Test\BaseRpcTest;
 
 class RestorePasswordTest extends BaseRpcTest
