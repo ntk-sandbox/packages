@@ -4,6 +4,7 @@ namespace ZnBundle\Notify\Test\Helpers;
 
 use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use ZnBundle\Notify\Domain\Repositories\File\EmailRepository;
 use ZnCore\Container\Helpers\ContainerHelper;
 
 class EmailHelper
@@ -18,7 +19,7 @@ class EmailHelper
 
     public static function oneLast(): EmailEntity {
         /** @var EmailRepositoryInterface $emailRepo */
-        $emailRepo = ContainerHelper::getContainer()->get(EmailRepositoryInterface::class);
+        $emailRepo = ContainerHelper::getContainer()->get(EmailRepository::class);
         return $emailRepo->oneLast();
     }
 

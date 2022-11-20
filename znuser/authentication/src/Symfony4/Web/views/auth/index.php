@@ -46,4 +46,4 @@ $formRender->addFormOption('autocomplete', 'off');
 
 <?= $formRender->endFrom() ?>
 
-<a href="/restore-password"><?= \ZnLib\I18Next\Facades\I18Next::t('user', 'restore-password.request_action') ?></a>
+<a href="/restore-password"><?= \ZnLib\I18Next\Facades\I18Next::t('authentication', 'auth.forgot_title') ?></a>

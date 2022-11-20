@@ -12,7 +12,7 @@ return [
             /** @var AuthService $authService */
             $authService = $container->get(AuthService::class);
             $authService->addSubscriber(SymfonyAuthenticationIdentitySubscriber::class);
-            $authService->addSubscriber(
+            /*$authService->addSubscriber(
                 [
                     'class' => \ZnUser\Authentication\Domain\Subscribers\AuthenticationAttemptSubscriber::class,
                     'action' => 'authorization',
@@ -21,7 +21,7 @@ return [
                     'lifeTime' => 10,
 //                'lifeTime' => TimeEnum::SECOND_PER_MINUTE * 30,
                 ]
-            );
+            );*/
             return $authService;
         },
     ],
