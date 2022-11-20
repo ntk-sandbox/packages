@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HttpClient\HttpClient;
-use Tests\Enums\UserEnum;
+
 use ZnTool\Test\Traits\BaseUrlTrait;
 use ZnTool\Test\Traits\FixtureTrait;
 
@@ -45,6 +45,7 @@ abstract class BaseWebTest extends TestCase
     protected function sendForm(HttpBrowser $browser, string $uri, string $buttonValue, array $formValues): Crawler
     {
         $crawler = $this->sendRequest($browser, $uri);
+//        dd($browser->getResponse());
         $form = $crawler->selectButton($buttonValue)->form();
         foreach ($formValues as $name => $value) {
             $form[$name] = $value;
@@ -68,7 +69,7 @@ abstract class BaseWebTest extends TestCase
         return $browser;
     }
 
-    protected function getBrowserByLogin(string $login = null, string $password = UserEnum::PASSWORD): HttpBrowser
+    protected function getBrowserByLogin(string $login = null, string $password = "Wwwqqq111"): HttpBrowser
     {
         $browser = $this->getBrowser();
         if ($login == null) {
@@ -78,7 +79,7 @@ abstract class BaseWebTest extends TestCase
         return $browser;
     }
 
-    private function authByLogin(HttpBrowser $browser, string $login = null, string $password = UserEnum::PASSWORD)
+    private function authByLogin(HttpBrowser $browser, string $login = null, string $password = "Wwwqqq111")
     {
         $this->sendForm($browser, 'auth', 'Вход', [
             'form[login]' => $login,

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Rest\Tests\Unit;
+namespace ZnLib\Rpc\Tests\Unit;
 
 use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
 use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;

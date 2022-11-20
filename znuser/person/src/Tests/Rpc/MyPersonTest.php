@@ -2,7 +2,7 @@
 
 namespace ZnUser\Person\Tests\Rpc;
 
-use Tests\Enums\UserEnum;
+
 use Tests\Rpc\BaseTest;
 
 class MyPersonTest extends BaseTest
@@ -23,7 +23,7 @@ class MyPersonTest extends BaseTest
 
     public function testOne()
     {
-        $request = $this->createRequest(UserEnum::ADMIN);
+        $request = $this->createRequest("admin");
         $request->setMethod('myPerson.one');
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)
@@ -45,7 +45,7 @@ class MyPersonTest extends BaseTest
 
     public function testUpdate()
     {
-        $request = $this->createRequest(UserEnum::ADMIN);
+        $request = $this->createRequest("admin");
         $request->setMethod('myPerson.update');
         $request->setParams([
             "firstName" => "Root222",

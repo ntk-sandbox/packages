@@ -2,7 +2,7 @@
 
 namespace ZnUser\Rbac\Tests\Rpc;
 
-use Tests\Enums\UserEnum;
+
 use ZnFramework\Rpc\Test\Traits\CrudRpcTestTrait;
 use Tests\Rpc\BaseTest;
 use ZnLib\Components\Store\StoreFile;
@@ -77,7 +77,7 @@ class RbacRoleTest extends BaseTest
 
     public function testAllSuccess()
     {
-        $response = $this->all(['perPage' => 1000], UserEnum::ADMIN_ID);
+        $response = $this->all(['perPage' => 1000], 1);
         if(TestHelper::isRewriteData()) {
             $this->getRepository()->dumpDataProvider($response);
 //            $this->getRepository()->dumpAll($response->getResult());
@@ -88,30 +88,30 @@ class RbacRoleTest extends BaseTest
 
     public function testPaginationSuccess()
     {
-        $response = $this->all(['perPage' => 1], UserEnum::ADMIN_ID);
+        $response = $this->all(['perPage' => 1], 1);
         $this->getRpcAssert($response)->assertResult([$this->getRepository()->findOneByIdAsArray($this->getFirstId())]);
         $this->getRpcAssert($response)->assertPagination($this->getTotalCount(), 1, 1, 1);
 
-        $response = $this->all(['perPage' => 1, 'page' => 2], UserEnum::ADMIN_ID);
+        $response = $this->all(['perPage' => 1, 'page' => 2], 1);
         $this->getRpcAssert($response)->assertResult([$this->getRepository()->findOneByIdAsArray($this->getFirstId() + 1)]);
         $this->getRpcAssert($response)->assertPagination($this->getTotalCount(), 1, 1, 2);
     }
 
     public function testAllForbidden()
     {
-        $response = $this->all([], UserEnum::USER7_ID);
+        $response = $this->all([], 7);
         $this->getRpcAssert($response)->assertForbidden();
     }
 
     public function testOneByIdSuccess()
     {
-        $response = $this->findOneById($this->getExistedId(), UserEnum::ADMIN_ID);
+        $response = $this->findOneById($this->getExistedId(), 1);
         $this->getRpcAssert($response)->assertResult($this->getRepository()->findOneByIdAsArray($this->getExistedId()));
     }
 
     public function testOneByIdForbidden()
     {
-        $response = $this->findOneById($this->getExistedId(), UserEnum::USER7_ID);
+        $response = $this->findOneById($this->getExistedId(), 7);
         $this->getRpcAssert($response)->assertForbidden();
     }
 
@@ -120,7 +120,7 @@ class RbacRoleTest extends BaseTest
         $response = $this->create([
             'name' => 'custom1',
             'title' => 'Custom 1',
-        ], UserEnum::ADMIN_ID);
+        ], 1);
         $this->getRpcAssert($response)->assertResult([
             "id" => $this->getNextId(),
             'name' => 'custom1',
@@ -132,16 +132,16 @@ class RbacRoleTest extends BaseTest
             "id" => $this->getNextId(),
             'name' => 'custom1',
             'title' => 'Custom 1',
-        ], UserEnum::ADMIN_ID);
+        ], 1);
     }
 
     public function testCreateForbidden()
     {
-        $response = $this->create([], UserEnum::USER7_ID);
+        $response = $this->create([], 7);
         $this->getRpcAssert($response)->assertForbidden();
 
         // check created entity
-        $this->assertNotFoundById(39, UserEnum::ADMIN_ID);
+        $this->assertNotFoundById(39, 1);
     }
 
     public function testUpdateSuccess()
@@ -149,7 +149,7 @@ class RbacRoleTest extends BaseTest
         $response = $this->update([
             'id' => $this->getExistedId(),
             'title' => 'Custom 2',
-        ], UserEnum::ADMIN_ID);
+        ], 1);
 
         $this->getRpcAssert($response)->assertResult([
             "id" => $this->getExistedId(),
@@ -160,36 +160,36 @@ class RbacRoleTest extends BaseTest
         $this->assertItem([
             "id" => $this->getExistedId(),
             "title" => "Custom 2",
-        ], UserEnum::ADMIN_ID);
+        ], 1);
     }
 
     public function testUpdateForbidden()
     {
-        $response = $this->update([], UserEnum::USER7_ID);
+        $response = $this->update([], 7);
         $this->getRpcAssert($response)->assertForbidden();
 
         // check updated entity
-        $this->assertExistsById($this->getExistedId(), UserEnum::ADMIN_ID);
+        $this->assertExistsById($this->getExistedId(), 1);
     }
 
     public function testDeleteSuccess()
     {
         $id = $this->getExistedId();
-        $this->assertDeleteById($id, UserEnum::ADMIN_ID, true);
+        $this->assertDeleteById($id, 1, true);
 
-        /*$response = $this->deleteById($this->getExistedId(), UserEnum::ADMIN_ID);
+        /*$response = $this->deleteById($this->getExistedId(), 1);
         $this->getRpcAssert($response)->assertIsResult();
 
         // check deleted entity
-        $this->assertNotFoundById($this->getExistedId(), UserEnum::ADMIN);*/
+        $this->assertNotFoundById($this->getExistedId(), "admin");*/
     }
 
     public function testDeleteForbidden()
     {
-        $response = $this->deleteById($this->getExistedId(), UserEnum::USER7_ID);
+        $response = $this->deleteById($this->getExistedId(), 7);
         $this->getRpcAssert($response)->assertForbidden();
 
         // check deleted entity
-        $this->assertExistsById($this->getExistedId(), UserEnum::ADMIN_ID);
+        $this->assertExistsById($this->getExistedId(), 1);
     }
 }

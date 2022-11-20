@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Rest\Tests\Unit;
+namespace ZnLib\Rpc\Tests\Unit;
 
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnDomain\Validator\Helpers\ValidationHelper;

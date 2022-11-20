@@ -11,7 +11,10 @@ class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
     protected function fixtures(): array
     {
         return [
+            'language',
+            'language_bundle',
             'rpc_route',
+            'user_identity',
             'user_credential',
             'user_token',
             'rbac_assignment',
@@ -22,6 +25,7 @@ class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
 
     public function testSwitchKzSuccess()
     {
+        $this->markTestIncomplete();
         $browser = $this->getBrowserByLogin(UserEnum::ADMIN);
         $this->sendRequest($browser, 'language/current/switch?locale=kz-KK');
         $this->createAssert($browser)
@@ -30,6 +34,7 @@ class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
 
     public function testSwitchRuSuccess()
     {
+        $this->markTestIncomplete();
         $browser = $this->getBrowserByLogin(UserEnum::ADMIN);
         $this->sendRequest($browser, 'language/current/switch?locale=ru-RU');
         $this->createAssert($browser)

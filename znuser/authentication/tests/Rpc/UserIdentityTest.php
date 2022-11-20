@@ -1,59 +1,37 @@
 <?php
 
-namespace ZnUser\Rbac\Tests\Rpc;
+namespace ZnUser\Authentication\Tests\Rpc\User;
 
 
 use Tests\Rpc\BaseTest;
 use ZnFramework\Rpc\Test\Traits\CrudRpcTestTrait;
-use ZnLib\Components\Store\StoreFile;
 use ZnTool\Test\Helpers\TestHelper;
 
-class RbacPermissionTest extends BaseTest
+class UserIdentityTest extends BaseTest
 {
 
     use CrudRpcTestTrait;
 
     protected function getExistedId(): int
     {
-        return 43;
-    }
-
-    private function getRoleCount(): int
-    {
-        $permissionsFile = __DIR__ . '/../data/Rbac/role.json';
-        return $this->getRepository($permissionsFile)->getTotal() ?: 0;
-    }
-
-    protected function getFirstId(): int
-    {
-        return $this->getRoleCount() + 1;
-    }
-
-    protected function getNextId(): int
-    {
-        return $this->getTotalCount() + $this->getRoleCount() + 1;
-    }
-
-    protected function getTotalCount(): int
-    {
-        return $this->getRepository()->getTotal();
+        return 2;
     }
 
     protected function fixtures(): array
     {
         return [
-            //'application_application',
+
         ];
     }
 
     protected function baseMethod(): string
     {
-        return 'rbacPermission';
+        return 'user';
     }
 
     protected function itemsFileName(): string
     {
-        return __DIR__ . '/../data/Rbac/permission.json';
+        return __DIR__ . '/../data/User/identity.json';
     }
 
     public function testUnauthorized()
@@ -82,10 +60,14 @@ class RbacPermissionTest extends BaseTest
     public function testAllSuccess()
     {
         $response = $this->all(['perPage' => 1000], 1);
-        if(TestHelper::isRewriteData()) {
-            $this->getRepository()->dumpDataProvider($response);
-//            $this->getRepository()->dumpAll($response->getResult());
-//            $this->getRepository()->setTotal($response->getMetaItem('totalCount'));
+        if (TestHelper::isRewriteData()) {
+            $this->getRepository()->dumpDataProvider($response, [
+                'id',
+                'statusId',
+                'createdAt',
+                'updatedAt',
+                'username',
+            ]);
         }
         $this->getRpcAssert($response)->assertResult($this->getRepository()->allAsArray());
     }
@@ -122,21 +104,18 @@ class RbacPermissionTest extends BaseTest
     public function testCreateSuccess()
     {
         $response = $this->create([
-            'name' => 'custom1',
-            'title' => 'Custom 1',
+            'username' => 'Custom 1',
+//            'password' => '4444444444444',
         ], 1);
-        //dd($response);
         $this->getRpcAssert($response)->assertResult([
             "id" => $this->getNextId(),
-            'name' => 'custom1',
-            'title' => 'Custom 1',
+            "username" => "Custom 1",
         ]);
 
         // check created entity
         $this->assertItem([
             "id" => $this->getNextId(),
-            'name' => 'custom1',
-            'title' => 'Custom 1',
+            "username" => "Custom 1",
         ], 1);
     }
 
@@ -153,18 +132,18 @@ class RbacPermissionTest extends BaseTest
     {
         $response = $this->update([
             'id' => $this->getExistedId(),
-            'title' => 'Custom 2',
+            'username' => 'Custom 1',
         ], 1);
 
         $this->getRpcAssert($response)->assertResult([
             "id" => $this->getExistedId(),
-            "title" => "Custom 2",
+            "username" => "Custom 1",
         ]);
 
         // check updated entity
         $this->assertItem([
             "id" => $this->getExistedId(),
-            "title" => "Custom 2",
+            "username" => "Custom 1",
         ], 1);
     }
 
@@ -180,9 +159,7 @@ class RbacPermissionTest extends BaseTest
     public function testDeleteSuccess()
     {
         $id = $this->getExistedId();
-        $this->assertDeleteById($id, 1, false);
-
-        //$this->markTestIncomplete('Тест временно отключен');
+        $this->assertDeleteById($id, 1, true);
 
         /*$response = $this->deleteById($this->getExistedId(), 1);
         $this->getRpcAssert($response)->assertIsResult();

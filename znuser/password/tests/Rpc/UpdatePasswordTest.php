@@ -2,7 +2,7 @@
 
 namespace ZnUser\Password\Tests\Rpc\User;
 
-use Tests\Enums\UserEnum;
+
 use ZnBundle\Notify\Test\Helpers\EmailHelper;
 use Tests\Rpc\BaseTest;
 
@@ -28,16 +28,16 @@ class UpdatePasswordTest extends BaseTest
     public function testSuccess()
     {
         $newPassword = "Qwerty456#";
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
             "new_password" => $newPassword,
             "new_password_confirm" => $newPassword,
         ]);
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
-        $this->assertSuccessAuthorization(UserEnum::ADMIN, $newPassword);
+        $this->assertSuccessAuthorization("admin", $newPassword);
 
         $this->assertEntity([
             'to' => "admin@example.com",
@@ -56,9 +56,9 @@ class UpdatePasswordTest extends BaseTest
 
     public function testRepeatPassword()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
             "new_password" => "Qwerty456#",
             "new_password_confirm" => "Qwerty456#",
         ]);
@@ -76,7 +76,7 @@ class UpdatePasswordTest extends BaseTest
         $this->getRpcAssert($response)->assertIsResult();
 
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
             "new_password" => "Qwerty456#",
             "new_password_confirm" => "Qwerty456#",
         ]);
@@ -95,9 +95,9 @@ class UpdatePasswordTest extends BaseTest
 
     public function testLightPassword()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
             "new_password" => "qwertyuio",
             "new_password_confirm" => "qwertyuio",
         ]);
@@ -116,9 +116,9 @@ class UpdatePasswordTest extends BaseTest
 
     public function testCreatePasswordShortPassword()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
             "new_password" => "Qwe",
             "new_password_confirm" => "Qwe",
         ]);
@@ -141,9 +141,9 @@ class UpdatePasswordTest extends BaseTest
 
     public function testCreatePasswordNotEqualPasswordWithConfirm()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
             "new_password" => "Qwerty456#",
             "new_password_confirm" => "Qwerty457#",
         ]);
@@ -162,11 +162,11 @@ class UpdatePasswordTest extends BaseTest
 
     public function testCurrentPasswordEqualNewPasswordWithConfirm()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setParams([
-            "current_password" => UserEnum::PASSWORD,
-            "new_password" => UserEnum::PASSWORD,
-            "new_password_confirm" => UserEnum::PASSWORD,
+            "current_password" => "Wwwqqq111",
+            "new_password" => "Wwwqqq111",
+            "new_password_confirm" => "Wwwqqq111",
         ]);
 
         $response = $this->sendRequestByEntity($request);

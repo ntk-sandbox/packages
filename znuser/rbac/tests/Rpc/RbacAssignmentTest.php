@@ -2,7 +2,7 @@
 
 namespace ZnUser\Rbac\Tests\Rpc;
 
-use Tests\Enums\UserEnum;
+
 use Tests\Rpc\BaseTest;
 use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
@@ -11,7 +11,7 @@ class RbacAssignmentTest extends BaseTest
 
     public function testAttachExistedError()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.attach');
         $request->setParams([
             "identityId" => 7,
@@ -26,7 +26,7 @@ class RbacAssignmentTest extends BaseTest
 
     public function testAttachUnprocessableError()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.attach');
         $request->setParams([
             "identityId" => 9999,
@@ -47,7 +47,7 @@ class RbacAssignmentTest extends BaseTest
 
     public function testDetachUnprocessableError()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.detach');
         $request->setParams([
             "identityId" => 9999,
@@ -68,7 +68,7 @@ class RbacAssignmentTest extends BaseTest
 
     public function testDetachNotFoundError()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.detach');
         $request->setParams([
             "identityId" => 6,
@@ -84,7 +84,7 @@ class RbacAssignmentTest extends BaseTest
 
     public function testAttachAndDetach()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.attach');
         $request->setParams([
             "identityId" => 7,
@@ -93,12 +93,12 @@ class RbacAssignmentTest extends BaseTest
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
-        $request = $this->createRequest(UserEnum::USER7_ID);
+        $request = $this->createRequest(7);
         $request->setMethod('rbacRole.all');
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.detach');
         $request->setParams([
             "identityId" => 7,
@@ -107,7 +107,7 @@ class RbacAssignmentTest extends BaseTest
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
-        $request = $this->createRequest(UserEnum::USER7_ID);
+        $request = $this->createRequest(7);
         $request->setMethod('rbacRole.all');
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertForbidden();
@@ -115,7 +115,7 @@ class RbacAssignmentTest extends BaseTest
 
     public function testAllRoles()
     {
-        $request = $this->createRequest(UserEnum::ADMIN_ID);
+        $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.allRoles');
         $request->setParams([
             "identityId" => 6,

@@ -2,7 +2,7 @@
 
 namespace ZnUser\Person\Tests\Rpc;
 
-use Tests\Enums\UserEnum;
+
 use Tests\Rpc\BaseTest;
 
 abstract class MyContactTest extends BaseTest
@@ -17,7 +17,7 @@ abstract class MyContactTest extends BaseTest
 
     public function testOne()
     {
-        $request = $this->createRequest(UserEnum::ADMIN);
+        $request = $this->createRequest("admin");
         $request->setMethod('myContact.all');
         $response = $this->sendRequestByEntity($request);
         dd($response);
