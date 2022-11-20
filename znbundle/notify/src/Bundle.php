@@ -4,6 +4,7 @@ namespace ZnBundle\Notify;
 
 use ZnCore\Bundle\Base\BaseBundle;
 
+// todo: отделить flash, toastr
 class Bundle extends BaseBundle
 {
 
