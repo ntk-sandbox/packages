@@ -24,7 +24,7 @@ class DashboardController extends BaseWebController implements ControllerAccessI
     {
         $this->service = $service;
     }
-    
+
     public function access(): array
     {
         return [
