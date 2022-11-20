@@ -5,6 +5,9 @@ namespace ZnUser\Rbac\Domain\Enums\Rbac;
 use ZnCore\Enum\Interfaces\GetLabelsInterface;
 use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
 
+/**
+ * Системные роли
+ */
 class SystemRoleEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {
 

@@ -7,13 +7,6 @@ use ZnCore\Bundle\Base\BaseBundle;
 class Bundle extends BaseBundle
 {
 
-    public function deps(): array
-    {
-        return [
-            \ZnDatabase\Fixture\Bundle::class,
-        ];
-    }
-
     public function symfonyAdmin(): array
     {
         return [

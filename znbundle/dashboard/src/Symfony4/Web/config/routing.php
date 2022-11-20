@@ -1,11 +1,10 @@
 <?php
 
-use ZnBundle\Dashboard\Symfony4\Web\Controllers\PersonController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
+use ZnBundle\Dashboard\Symfony4\Web\Controllers\DashboardController;
 
 return function (RoutingConfigurator $routes) {
     $routes
-        ->add('settings/person', '/person-settings')
-        ->controller([PersonController::class, 'update'])
-        ->methods(['GET', 'POST']);
+        ->add('main_page', '/')
+        ->controller([DashboardController::class, 'index']);
 };

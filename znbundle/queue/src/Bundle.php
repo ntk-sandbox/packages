@@ -7,12 +7,12 @@ use ZnCore\Bundle\Base\BaseBundle;
 class Bundle extends BaseBundle
 {
 
-    /*public function i18next(): array
+    public function deps(): array
     {
         return [
-            
+            new \ZnLib\Components\Lock\Bundle(['all']),
         ];
-    }*/
+    }
 
     public function console(): array
     {

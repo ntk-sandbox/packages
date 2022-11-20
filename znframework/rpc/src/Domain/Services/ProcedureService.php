@@ -29,13 +29,6 @@ use ZnFramework\Rpc\Domain\Helpers\RequestHelper;
 use ZnFramework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 use ZnFramework\Rpc\Domain\Interfaces\Services\ProcedureServiceInterface;
 use ZnFramework\Rpc\Domain\Libs\ResponseFormatter;
-use ZnFramework\Rpc\Domain\Subscribers\ApplicationAuthenticationSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\CheckAccessSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\CryptoProviderSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\LanguageSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\LogSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\RpcFirewallSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\TimestampSubscriber;
 use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
 
 class ProcedureService implements ProcedureServiceInterface
@@ -52,26 +45,12 @@ class ProcedureService implements ProcedureServiceInterface
         MethodServiceInterface $methodService,
         EventDispatcherInterface $dispatcher,
         InstanceProvider $instanceProvider
-    )
-    {
+    ) {
         set_error_handler([$this, 'errorHandler']);
         $this->responseFormatter = $responseFormatter;
         $this->methodService = $methodService;
         $this->setEventDispatcher($dispatcher);
         $this->instanceProvider = $instanceProvider;
-    }
-
-    public function subscribes_____________(): array
-    {
-        return [
-            ApplicationAuthenticationSubscriber::class, // Аутентификация приложения
-            RpcFirewallSubscriber::class, // Аутентификация пользователя
-            CheckAccessSubscriber::class, // Проверка прав доступа
-            TimestampSubscriber::class, // Проверка метки времени запроса и подстановка метки времени ответа
-            CryptoProviderSubscriber::class, // Проверка подписи запроса и подписание ответа
-            LogSubscriber::class, // Логирование запроса и ответа
-            LanguageSubscriber::class, // Обработка языка
-        ];
     }
 
     public function callOneProcedure(RpcRequestEntity $requestEntity): RpcResponseEntity
@@ -95,19 +74,44 @@ class ProcedureService implements ProcedureServiceInterface
             $parameters = [
                 RpcRequestEntity::class => $requestEntity
             ];
-            $responseEntity = $this->instanceProvider->callMethod($methodEntity->getHandlerClass(), [], $methodEntity->getHandlerMethod(), $parameters);
+            $responseEntity = $this->instanceProvider->callMethod(
+                $methodEntity->getHandlerClass(),
+                [],
+                $methodEntity->getHandlerMethod(),
+                $parameters
+            );
         } catch (NotFoundException $e) {
-            $responseEntity = $this->responseFormatter->forgeErrorResponse(HttpStatusCodeEnum::NOT_FOUND, $e->getMessage(), EntityHelper::toArray($e), $e);
+            $responseEntity = $this->responseFormatter->forgeErrorResponse(
+                HttpStatusCodeEnum::NOT_FOUND,
+                $e->getMessage(),
+                EntityHelper::toArray($e),
+                $e
+            );
         } catch (UnprocessibleEntityException $e) {
             $responseEntity = $this->handleUnprocessibleEntityException($e);
         } catch (UnauthorizedException $e) {
             $message = $e->getMessage() ?: 'Unauthorized';
-            $responseEntity = $this->responseFormatter->forgeErrorResponse(HttpStatusCodeEnum::UNAUTHORIZED, $message, EntityHelper::toArray($e), $e);
+            $responseEntity = $this->responseFormatter->forgeErrorResponse(
+                HttpStatusCodeEnum::UNAUTHORIZED,
+                $message,
+                EntityHelper::toArray($e),
+                $e
+            );
         } catch (ForbiddenException $e) {
-            $responseEntity = $this->responseFormatter->forgeErrorResponse(HttpStatusCodeEnum::FORBIDDEN, $e->getMessage(), EntityHelper::toArray($e), $e);
+            $responseEntity = $this->responseFormatter->forgeErrorResponse(
+                HttpStatusCodeEnum::FORBIDDEN,
+                $e->getMessage(),
+                EntityHelper::toArray($e),
+                $e
+            );
         } catch (EntryNotFoundException $e) {
             $message = 'Server error. Bad inject dependencies in "' . $e->getMessage() . '"';
-            $responseEntity = $this->responseFormatter->forgeErrorResponse(RpcErrorCodeEnum::SYSTEM_ERROR, $message, EntityHelper::toArray($e), $e);
+            $responseEntity = $this->responseFormatter->forgeErrorResponse(
+                RpcErrorCodeEnum::SYSTEM_ERROR,
+                $message,
+                EntityHelper::toArray($e),
+                $e
+            );
         } catch (\Throwable $e) {
             $code = $e->getCode() ?: RpcErrorCodeEnum::APPLICATION_ERROR;
             $message = $e->getMessage() ?: 'Application error: ' . get_class($e);
@@ -152,6 +156,10 @@ class ProcedureService implements ProcedureServiceInterface
         } else {
             $message = 'Parameter validation error';
         }
-        return $this->responseFormatter->forgeErrorResponse(RpcErrorCodeEnum::SERVER_ERROR_INVALID_PARAMS, $message, $errorData);
+        return $this->responseFormatter->forgeErrorResponse(
+            RpcErrorCodeEnum::SERVER_ERROR_INVALID_PARAMS,
+            $message,
+            $errorData
+        );
     }
 }
