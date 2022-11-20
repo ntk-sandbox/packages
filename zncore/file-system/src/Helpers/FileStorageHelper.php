@@ -44,10 +44,10 @@ class FileStorageHelper
     public static function copy(string $sourceFile, string $targetFile, $dirAccess = 0777)
     {
         $sourceData = FileStorageHelper::load($sourceFile);
-        FileStorageHelper::save($targetFile, $sourceData, null, null, $dirAccess);
+        FileStorageHelper::save($targetFile, $sourceData, 0, null, $dirAccess);
     }
 
-    public static function touchFile($fileName, $data = null, $flags = null, $context = null, int $dirAccess = 0777)
+    public static function touchFile($fileName, $data = null, $flags = 0, $context = null, int $dirAccess = 0777)
     {
         $fileName = FileHelper::normalizePath($fileName);
         if (!file_exists($fileName)) {
