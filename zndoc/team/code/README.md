@@ -3,6 +3,7 @@
 * [ООП](oop.md)
 * [SOLID](solid.md)
 * [GRASP](grasp.md)
+* [Listener & Subcriber](listener_and_subcriber.md)
 * Стиль кода
   * [Пример](style-example.md)
 * [Качество кода](quality.md)
