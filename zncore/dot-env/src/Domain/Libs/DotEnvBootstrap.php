@@ -19,11 +19,6 @@ class DotEnvBootstrap
 
     private $inited = false;
 
-    /*public static function load(string $mode = DotEnvModeEnum::MAIN, string $basePath = null)
-    {
-        DotEnvBootstrap::getInstance()->init($mode, $basePath);
-    }*/
-
     /**
      * Инициализация переменных окружения
      *

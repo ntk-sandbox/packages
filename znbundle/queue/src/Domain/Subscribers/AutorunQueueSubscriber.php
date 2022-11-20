@@ -3,12 +3,11 @@
 namespace ZnBundle\Queue\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\Process\Process;
 use Symfony\Contracts\EventDispatcher\Event;
 use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use ZnCore\App\Enums\AppEventEnum;
 use ZnCore\Container\Helpers\ContainerHelper;
 use ZnFramework\Console\Domain\Libs\ZnShell;
-use ZnCore\App\Enums\AppEventEnum;
 
 /**
  * Автозапуск CRON-задач при каждом запросе.
@@ -26,19 +25,25 @@ class AutorunQueueSubscriber implements EventSubscriberInterface
         ];
     }
 
-    public function callbackWithShell() {
+    public function callbackWithShell()
+    {
         $shell = new ZnShell();
         $process = $shell->getProcessFromCommandString('queue:run');
 //            $process->run();
         $process->start();
         $process->disableOutput();
-        while ($process->isRunning()) {}
+        while ($process->isRunning()) {
+        }
     }
 
-    public function callbackWithService() {
+    public function callbackWithService()
+    {
         /** @var JobServiceInterface $jobService */
-            $jobService = ContainerHelper::getContainer()->get(JobServiceInterface::class);
+        $jobService = ContainerHelper::getContainer()->get(JobServiceInterface::class);
+        try {
             $jobService->touch();
+        } catch (\Throwable  $e) {
+        }
     }
 
     public function onAfterInit(Event $event)

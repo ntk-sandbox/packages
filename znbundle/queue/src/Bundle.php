@@ -41,4 +41,11 @@ class Bundle extends BaseBundle
             __DIR__ . '/Domain/config/em.php',
         ];
     }
+
+    public function eventDispatcher(): array
+    {
+        return [
+            __DIR__ . '/Domain/config/eventDispatcher.php',
+        ];
+    }
 }
