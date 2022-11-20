@@ -4,13 +4,20 @@ namespace ZnUser\Password\Tests\Rpc\User;
 
 use ZnBundle\Notify\Test\Helpers\EmailHelper;
 use Tests\Rpc\BaseTest;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 
-class RestorePasswordTest extends BaseTest
+class RestorePasswordTest extends BaseRpcTest
 {
 
     protected function fixtures(): array
     {
         return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
             'security_password_history',
             'user_confirm',
             'notify_type',

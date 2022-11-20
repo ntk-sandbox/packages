@@ -2,21 +2,34 @@
 
 namespace ZnUser\Rbac\Tests\Rpc;
 
-
-use Tests\Rpc\BaseTest;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
-class RbacAssignmentTest extends BaseTest
+class RbacAssignmentTest extends BaseRpcTest
 {
+
+    protected function fixtures(): array
+    {
+        return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
+        ];
+    }
 
     public function testAttachExistedError()
     {
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.attach');
-        $request->setParams([
-            "identityId" => 7,
-            "itemName" => SystemRoleEnum::ADMINISTRATOR,
-        ]);
+        $request->setParams(
+            [
+                "identityId" => 7,
+                "itemName" => SystemRoleEnum::ADMINISTRATOR,
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
@@ -28,52 +41,62 @@ class RbacAssignmentTest extends BaseTest
     {
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.attach');
-        $request->setParams([
-            "identityId" => 9999,
-            "itemName" => 'qwertyu',
-        ]);
+        $request->setParams(
+            [
+                "identityId" => 9999,
+                "itemName" => 'qwertyu',
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
-        $this->getRpcAssert($response)->assertUnprocessableEntityErrors([
+        $this->getRpcAssert($response)->assertUnprocessableEntityErrors(
             [
-                'field' => 'identityId',
-                'message' => 'User not found',
-            ],
-            [
-                'field' => 'itemName',
-                'message' => 'Item not found',
-            ],
-        ]);
+                [
+                    'field' => 'identityId',
+                    'message' => 'User not found',
+                ],
+                [
+                    'field' => 'itemName',
+                    'message' => 'Item not found',
+                ],
+            ]
+        );
     }
 
     public function testDetachUnprocessableError()
     {
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.detach');
-        $request->setParams([
-            "identityId" => 9999,
-            "itemName" => 'qwertyu',
-        ]);
+        $request->setParams(
+            [
+                "identityId" => 9999,
+                "itemName" => 'qwertyu',
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
-        $this->getRpcAssert($response)->assertUnprocessableEntityErrors([
+        $this->getRpcAssert($response)->assertUnprocessableEntityErrors(
             [
-                'field' => 'identityId',
-                'message' => 'User not found',
-            ],
-            [
-                'field' => 'itemName',
-                'message' => 'Item not found',
-            ],
-        ]);
+                [
+                    'field' => 'identityId',
+                    'message' => 'User not found',
+                ],
+                [
+                    'field' => 'itemName',
+                    'message' => 'Item not found',
+                ],
+            ]
+        );
     }
 
     public function testDetachNotFoundError()
     {
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.detach');
-        $request->setParams([
-            "identityId" => 6,
-            "itemName" => SystemRoleEnum::USER,
-        ]);
+        $request->setParams(
+            [
+                "identityId" => 6,
+                "itemName" => SystemRoleEnum::USER,
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
@@ -86,10 +109,12 @@ class RbacAssignmentTest extends BaseTest
     {
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.attach');
-        $request->setParams([
-            "identityId" => 7,
-            "itemName" => SystemRoleEnum::ADMINISTRATOR,
-        ]);
+        $request->setParams(
+            [
+                "identityId" => 7,
+                "itemName" => SystemRoleEnum::ADMINISTRATOR,
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
@@ -100,10 +125,12 @@ class RbacAssignmentTest extends BaseTest
 
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.detach');
-        $request->setParams([
-            "identityId" => 7,
-            "itemName" => SystemRoleEnum::ADMINISTRATOR,
-        ]);
+        $request->setParams(
+            [
+                "identityId" => 7,
+                "itemName" => SystemRoleEnum::ADMINISTRATOR,
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)->assertIsResult();
 
@@ -117,17 +144,21 @@ class RbacAssignmentTest extends BaseTest
     {
         $request = $this->createRequest(1);
         $request->setMethod('rbacAssignment.allRoles');
-        $request->setParams([
-            "identityId" => 6,
-        ]);
-        $response = $this->sendRequestByEntity($request);
-        $this->getRpcAssert($response)->assertCollection([
+        $request->setParams(
             [
-                "id" => 6,
                 "identityId" => 6,
-                "itemName" => SystemRoleEnum::USER,
-                "statusId" => 100,
-            ],
-        ]);
+            ]
+        );
+        $response = $this->sendRequestByEntity($request);
+        $this->getRpcAssert($response)->assertCollection(
+            [
+                [
+                    "id" => 6,
+                    "identityId" => 6,
+                    "itemName" => SystemRoleEnum::USER,
+                    "statusId" => 100,
+                ],
+            ]
+        );
     }
 }

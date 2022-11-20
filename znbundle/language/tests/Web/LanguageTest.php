@@ -2,7 +2,6 @@
 
 namespace ZnBundle\Language\Tests\Web;
 
-use Tests\Enums\UserEnum;
 use Tests\Helpers\FixtureHelper;
 
 class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
@@ -26,7 +25,7 @@ class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
     public function testSwitchKzSuccess()
     {
         $this->markTestIncomplete();
-        $browser = $this->getBrowserByLogin(UserEnum::ADMIN);
+        $browser = $this->getBrowserByLogin("admin");
         $this->sendRequest($browser, 'language/current/switch?locale=kz-KK');
         $this->createAssert($browser)
             ->assertContainsContent('Тіл ауыстырылды');
@@ -35,7 +34,7 @@ class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
     public function testSwitchRuSuccess()
     {
         $this->markTestIncomplete();
-        $browser = $this->getBrowserByLogin(UserEnum::ADMIN);
+        $browser = $this->getBrowserByLogin("admin");
         $this->sendRequest($browser, 'language/current/switch?locale=ru-RU');
         $this->createAssert($browser)
             ->assertContainsContent('Язык переключен');

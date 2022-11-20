@@ -2,17 +2,20 @@
 
 namespace ZnUser\Person\Tests\Rpc;
 
+use ZnFramework\Rpc\Test\BaseRpcTest;
 
-use Tests\Rpc\BaseTest;
-
-class MyPersonTest extends BaseTest
+class MyPersonTest extends BaseRpcTest
 {
 
     protected function fixtures(): array
     {
         return [
-//            'money_transaction',
-//            'money_wallet',
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
         ];
     }
 
@@ -28,31 +31,35 @@ class MyPersonTest extends BaseTest
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)
             ->assertIsResult()
-            ->assertResult([
-                'code' => NULL,
-                'firstName' => 'Harold',
-                'middleName' => NULL,
-                'lastName' => 'Fisher',
-                'title' => 'Fisher Harold',
-                'birthday' => '10.01.2013',
-                'sexId' => 1,
-                'statusId' => 100,
-                'contacts' => NULL,
-                'sex' => NULL,
-                'identity' => NULL,
-            ]);
+            ->assertResult(
+                [
+                    'code' => null,
+                    'firstName' => 'Harold',
+                    'middleName' => null,
+                    'lastName' => 'Fisher',
+                    'title' => 'Fisher Harold',
+                    'birthday' => '10.01.2013',
+                    'sexId' => 1,
+                    'statusId' => 100,
+                    'contacts' => null,
+                    'sex' => null,
+                    'identity' => null,
+                ]
+            );
     }
 
     public function testUpdate()
     {
         $request = $this->createRequest("admin");
         $request->setMethod('myPerson.update');
-        $request->setParams([
-            "firstName" => "Root222",
-            "middleName" => null,
-            "lastName" => "Admin222",
-            "birthday" => "10.01.2010",
-        ]);
+        $request->setParams(
+            [
+                "firstName" => "Root222",
+                "middleName" => null,
+                "lastName" => "Admin222",
+                "birthday" => "10.01.2010",
+            ]
+        );
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)
             ->assertIsResult();
@@ -62,18 +69,20 @@ class MyPersonTest extends BaseTest
         $response = $this->sendRequestByEntity($request);
         $this->getRpcAssert($response)
             ->assertIsResult()
-            ->assertResult([
-                "code" => null,
-                "firstName" => "Root222",
-                "middleName" => null,
-                "lastName" => "Admin222",
-                "title" => "Admin222 Root222",
-                "birthday" => "10.01.2010",
-                "sexId" => 1,
-                "statusId" => 100,
-                "contacts" => null,
-                "sex" => null,
-                "identity" => null,
-            ]);
+            ->assertResult(
+                [
+                    "code" => null,
+                    "firstName" => "Root222",
+                    "middleName" => null,
+                    "lastName" => "Admin222",
+                    "title" => "Admin222 Root222",
+                    "birthday" => "10.01.2010",
+                    "sexId" => 1,
+                    "statusId" => 100,
+                    "contacts" => null,
+                    "sex" => null,
+                    "identity" => null,
+                ]
+            );
     }
 }

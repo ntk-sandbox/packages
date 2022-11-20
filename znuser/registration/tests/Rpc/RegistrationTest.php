@@ -3,14 +3,20 @@
 namespace ZnUser\Registration\Tests\Rpc\User;
 
 use ZnBundle\Notify\Test\Helpers\EmailHelper;
-use Tests\Rpc\BaseTest;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 
-class RegistrationTest extends BaseTest
+class RegistrationTest extends BaseRpcTest
 {
 
     protected function fixtures(): array
     {
         return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
             'user_confirm',
         ];
     }

@@ -2,16 +2,21 @@
 
 namespace ZnUser\Authentication\Tests\Rpc\User;
 
-
 use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use Tests\Rpc\BaseTest;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 
-class UserAuthTest extends BaseTest
+class UserAuthTest extends BaseRpcTest
 {
 
     protected function fixtures(): array
     {
         return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
             'summary_attempt',
             'notify_type',
             'notify_type_i18n',
@@ -29,10 +34,12 @@ class UserAuthTest extends BaseTest
     public function testGetTokenSuccess()
     {
         $request = $this->createRequest();
-        $request->setParams([
-            'login' => "admin",
-            'password' => "Wwwqqq111",
-        ]);
+        $request->setParams(
+            [
+                'login' => "admin",
+                'password' => "Wwwqqq111",
+            ]
+        );
 
         $response = $this->sendRequestByEntity($request);
         $result = $response->getResult();
@@ -43,14 +50,16 @@ class UserAuthTest extends BaseTest
 
     public function testFailAttempt()
     {
-        if(empty($_ENV['MY_PROJECT_DIRECTORY'])) {
+        if (empty($_ENV['MY_PROJECT_DIRECTORY'])) {
             $this->markTestSkipped();
         }
         $request = $this->createRequest();
-        $request->setParams([
-            'login' => "admin",
-            'password' => 'qwerty123#$%',
-        ]);
+        $request->setParams(
+            [
+                'login' => "admin",
+                'password' => 'qwerty123#$%',
+            ]
+        );
 
         for ($i = 0; $i < 2; $i++) {
             $response = $this->sendRequestByEntity($request);
@@ -71,10 +80,12 @@ class UserAuthTest extends BaseTest
     public function testSuccessAttempt()
     {
         $request = $this->createRequest();
-        $request->setParams([
-            'login' => "admin",
-            'password' => "Wwwqqq111",
-        ]);
+        $request->setParams(
+            [
+                'login' => "admin",
+                'password' => "Wwwqqq111",
+            ]
+        );
 
         for ($i = 0; $i < 5; $i++) {
             $response = $this->sendRequestByEntity($request);

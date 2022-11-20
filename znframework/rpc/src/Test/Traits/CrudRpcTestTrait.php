@@ -2,7 +2,6 @@
 
 namespace ZnFramework\Rpc\Test\Traits;
 
-use Tests\Enums\UserEnum;
 use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;

@@ -2,16 +2,22 @@
 
 namespace ZnLib\Rpc\Tests\Rpc;
 
-use Tests\Rpc\BaseTest;
 use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
 use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 
-class RpcVersionTest extends BaseTest
+class RpcVersionTest extends BaseRpcTest
 {
 
     protected function fixtures(): array
     {
         return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
             'summary_attempt',
         ];
     }

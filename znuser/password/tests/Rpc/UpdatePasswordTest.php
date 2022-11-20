@@ -2,16 +2,21 @@
 
 namespace ZnUser\Password\Tests\Rpc\User;
 
-
 use ZnBundle\Notify\Test\Helpers\EmailHelper;
-use Tests\Rpc\BaseTest;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 
-class UpdatePasswordTest extends BaseTest
+class UpdatePasswordTest extends BaseRpcTest
 {
 
     protected function fixtures(): array
     {
         return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
             'security_password_history',
             'notify_type',
             'notify_type_i18n',

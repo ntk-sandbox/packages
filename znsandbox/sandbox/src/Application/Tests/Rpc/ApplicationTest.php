@@ -2,12 +2,11 @@
 
 namespace Tests\Rpc\Application;
 
-
-use Tests\Rpc\BaseTest;
+use ZnFramework\Rpc\Test\BaseRpcTest;
 use ZnFramework\Rpc\Test\Traits\CrudRpcTestTrait;
 use ZnTool\Test\Helpers\TestHelper;
 
-abstract class ApplicationTest extends BaseTest
+abstract class ApplicationTest extends BaseRpcTest
 {
 
     use CrudRpcTestTrait;
@@ -25,6 +24,12 @@ abstract class ApplicationTest extends BaseTest
     protected function fixtures(): array
     {
         return [
+            'rpc_route',
+            'user_credential',
+            'user_token',
+            'rbac_assignment',
+            'rbac_inheritance',
+            'settings_system',
             'application_application',
         ];
     }
