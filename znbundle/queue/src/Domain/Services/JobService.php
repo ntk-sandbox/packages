@@ -14,7 +14,6 @@ use ZnBundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
 use ZnBundle\Queue\Domain\Queries\NewTaskQuery;
 use ZnCore\Code\Helpers\PropertyHelper;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Service\Base\BaseService;
@@ -57,7 +56,7 @@ class JobService extends BaseService implements JobServiceInterface
         //$jobEntity->setDelay();
         ValidationHelper::validateEntity($jobEntity);
 
-        if (DotEnv::get('CRON_DIRECT_RUN', false) == 1) {
+        if ($_ENV['CRON_DIRECT_RUN'] ?? false) {
             $jobInstance = $this->getJobInstance($jobEntity, $this->container);
             $jobInstance->run();
             return $jobEntity;
@@ -72,7 +71,7 @@ class JobService extends BaseService implements JobServiceInterface
 
     public function touch(): void
     {
-        if (DotEnv::get('CRON_AUTORUN', false) == 1) {
+        if ($_ENV['CRON_AUTORUN'] ?? false) {
             $this->runAll();
         }
     }

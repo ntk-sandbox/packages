@@ -9,11 +9,10 @@ use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Csrf\CsrfToken;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
+use ZnCore\Collection\Interfaces\Enumerable;
 use ZnDomain\Validator\Entities\ValidationErrorEntity;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
 use ZnLib\Web\Form\Interfaces\BuildFormInterface;
 
 class FormHelper
@@ -58,7 +57,7 @@ class FormHelper
 
     protected static function validCsrfToken(CsrfTokenManagerInterface $tokenManager, Request $request)
     {
-        $csrfToken = new CsrfToken(DotEnv::get('CSRF_TOKEN_ID'), $request->get('csrfToken'));
+        $csrfToken = new CsrfToken($_ENV['CSRF_TOKEN_ID'], $request->get('csrfToken'));
         $isValidToken = $tokenManager->isTokenValid($csrfToken);
         if (!$isValidToken) {
             throw new BadRequestException('CSRF token validate error!');

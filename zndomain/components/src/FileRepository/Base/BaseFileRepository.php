@@ -2,7 +2,6 @@
 
 namespace ZnDomain\Components\FileRepository\Base;
 
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnDomain\Repository\Interfaces\RepositoryInterface;
@@ -20,7 +19,7 @@ abstract class BaseFileRepository implements RepositoryInterface
 
     public function directory(): string
     {
-        return DotEnv::get('FILE_DB_DIRECTORY');
+        return $_ENV['FILE_DB_DIRECTORY'];
     }
 
     public function fileExt(): string

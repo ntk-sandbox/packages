@@ -12,7 +12,7 @@ return [
         SynchronizeServiceInterface::class => function (ContainerInterface $container) {
             /** @var SynchronizeService $service */
             $service = $container->get(SynchronizeService::class);
-            $configFile = DotEnv::get('SYNCHRONIZE_CONFIG_FILE');
+            $configFile = $_ENV['SYNCHRONIZE_CONFIG_FILE'];
 //            dd($configFile);
 
             $store = new StoreFile($configFile);

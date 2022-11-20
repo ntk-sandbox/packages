@@ -2,10 +2,9 @@
 
 namespace ZnDomain\Components\FileRepository\Base;
 
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
+use ZnDomain\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
 use ZnDomain\Repository\Traits\RepositoryRelationTrait;
 use ZnLib\Components\Store\StoreFile;
 
@@ -17,7 +16,7 @@ abstract class BaseFileCrudRepository extends BaseFileRepository implements Crud
 
     public function directory(): string
     {
-        return DotEnv::get('FILE_DB_DIRECTORY');
+        return $_ENV['FILE_DB_DIRECTORY'];
     }
 
     public function fileExt(): string

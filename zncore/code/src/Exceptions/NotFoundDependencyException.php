@@ -5,7 +5,7 @@ namespace ZnCore\Code\Exceptions;
 use RuntimeException;
 
 /**
- * Composer-зависимость не найдена
+ * Composer-пакет не найден
  */
 class NotFoundDependencyException extends RuntimeException
 {

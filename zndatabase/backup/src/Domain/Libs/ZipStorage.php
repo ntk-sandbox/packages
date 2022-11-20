@@ -2,12 +2,11 @@
 
 namespace ZnDatabase\Backup\Domain\Libs;
 
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
+use ZnCore\Collection\Interfaces\Enumerable;
+use ZnCore\Collection\Libs\Collection;
 use ZnCore\FileSystem\Helpers\FileHelper;
 use ZnCore\FileSystem\Helpers\FilePathHelper;
 use ZnCore\Text\Helpers\TextHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
 use ZnDatabase\Backup\Domain\Interfaces\Storages\StorageInterface;
 use ZnLib\Components\Store\Store;
 use ZnLib\Components\Zip\Libs\Zip;
@@ -23,7 +22,7 @@ class ZipStorage extends BaseStorage implements StorageInterface
     public function __construct(string $version)
     {
         $this->version = $version;
-        $this->dumpPath = DotEnv::get('DUMP_DIRECTORY');
+        $this->dumpPath = $_ENV['DUMP_DIRECTORY'];
         $this->currentDumpPath = $this->dumpPath . '/' . $version;
         FileHelper::createDirectory($this->currentDumpPath);
     }

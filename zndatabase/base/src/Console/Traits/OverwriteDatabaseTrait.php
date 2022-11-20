@@ -5,11 +5,10 @@ namespace ZnDatabase\Base\Console\Traits;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
-use ZnLib\Components\Http\Helpers\UrlHelper;
 use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnCore\Text\Helpers\TextHelper;
 use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use ZnLib\Components\Http\Helpers\UrlHelper;
 
 trait OverwriteDatabaseTrait
 {
@@ -42,7 +41,7 @@ trait OverwriteDatabaseTrait
 
     protected function isExcludeDatabaseNames(string $database): bool
     {
-        $exclude = DotEnv::get('DATABASE_PROTECT_EXCLUDE', null);
+        $exclude = $_ENV['DATABASE_PROTECT_EXCLUDE'] ?? null;
         $exclude = !empty($exclude) ? explode(',', $exclude) : $this->defaultExclideDatabaseNames();
 //        dd($exclude);
         foreach ($exclude as $ex) {

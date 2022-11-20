@@ -12,12 +12,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Csrf\CsrfToken;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Component\Validator\ConstraintViolation;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnDomain\Validator\Entities\ValidationErrorEntity;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnDomain\Validator\Helpers\ValidationHelper;
 use ZnLib\Web\Form\Interfaces\BuildFormInterface;
-use ZnLib\Web\Form\Traits\ControllerFormTrait;
 
 class FormManager
 {
@@ -124,7 +122,7 @@ class FormManager
 
     protected static function validCsrfToken(CsrfTokenManagerInterface $tokenManager, Request $request)
     {
-        $csrfToken = new CsrfToken(DotEnv::get('CSRF_TOKEN_ID'), $request->get('csrfToken'));
+        $csrfToken = new CsrfToken($_ENV['CSRF_TOKEN_ID'], $request->get('csrfToken'));
         $isValidToken = $tokenManager->isTokenValid($csrfToken);
         if (!$isValidToken) {
             throw new BadRequestException('CSRF token validate error!');

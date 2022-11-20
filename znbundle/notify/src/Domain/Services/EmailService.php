@@ -10,7 +10,6 @@ use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
 use ZnBundle\Notify\Domain\Jobs\SendEmailJob;
 use ZnBundle\Queue\Domain\Enums\PriorityEnum;
 use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 
 class EmailService implements EmailServiceInterface
 {
@@ -29,7 +28,7 @@ class EmailService implements EmailServiceInterface
     public function push(EmailEntity $emailEntity, $priority = PriorityEnum::NORMAL)
     {
         if($emailEntity->getFrom() == null) {
-            $emailEntity->setFrom(DotEnv::get('EMAIL_FROM'));
+            $emailEntity->setFrom($_ENV['EMAIL_FROM']);
         }
         $emailJob = new SendEmailJob($this->container);
         $emailJob->entity = $emailEntity;

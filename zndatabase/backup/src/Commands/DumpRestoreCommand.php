@@ -7,10 +7,8 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Query\Entities\Query;
+use ZnCore\Container\Helpers\ContainerHelper;
 use ZnDatabase\Backup\Domain\Entities\DumpEntity;
 use ZnDatabase\Backup\Domain\Interfaces\Services\DumpServiceInterface;
 use ZnDatabase\Backup\Domain\Libs\DbStorage;
@@ -19,6 +17,7 @@ use ZnDatabase\Base\Console\Traits\OverwriteDatabaseTrait;
 use ZnDatabase\Base\Domain\Libs\Dependency;
 use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
 use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
+use ZnDomain\Query\Entities\Query;
 use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
 
 class DumpRestoreCommand extends Command
@@ -102,7 +101,7 @@ class DumpRestoreCommand extends Command
 //        $fileStorage = new ZipStorage($version);
 
 
-        $this->dumpPath = DotEnv::get('DUMP_DIRECTORY');
+        $this->dumpPath = $_ENV['DUMP_DIRECTORY'];
         $this->currentDumpPath = $this->dumpPath . '/' . date('Y-m/d/H-i-s');
 
         $collection = $this->dumpService->findAll();

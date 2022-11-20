@@ -3,7 +3,6 @@
 namespace ZnFramework\Rpc\Rpc\Base;
 
 use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnCore\Instance\Helpers\ClassHelper;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnDomain\Query\Entities\Query;
@@ -63,7 +62,7 @@ abstract class BaseCrudRpcController extends BaseRpcController
     {
         // todo: получать data provider, в meta передавать параметры пагинации: totalCount, pageCount, currentPage, perPage
         $this->forgeWith($requestEntity, $query);
-        $perPageDefault = $this->pageSizeDefault ?? DotEnv::get('PAGE_SIZE_DEFAULT', 20);
+        $perPageDefault = $this->pageSizeDefault ?? ($_ENV['PAGE_SIZE_DEFAULT'] ?? 20);
         $perPage = $requestEntity->getParamItem('perPage', $perPageDefault);
         if ($perPage) {
             $query->perPage($perPage);
@@ -102,7 +101,7 @@ abstract class BaseCrudRpcController extends BaseRpcController
         $this->forgeQueryPagination($query, $requestEntity);
 
         $dp = $this->service->getDataProvider($query);
-        $perPageMax = $this->pageSizeMax ?? DotEnv::get('PAGE_SIZE_MAX', 50);
+        $perPageMax = $this->pageSizeMax ?? ($_ENV['PAGE_SIZE_MAX'] ?? 50);
         $dp->getEntity()->setMaxPageSize($perPageMax);
 
         if ($this->filterModel) {

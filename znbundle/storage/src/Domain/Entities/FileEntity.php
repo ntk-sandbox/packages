@@ -6,13 +6,12 @@ use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnBundle\Storage\Domain\Libs\FileHash;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnDomain\Components\Constraints\Enum;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Collection\Interfaces\Enumerable;
+use ZnCore\FileSystem\Helpers\FilePathHelper;
+use ZnDomain\Components\Constraints\Enum;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Entity\Interfaces\UniqueInterface;
+use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 use ZnLib\Components\Status\Enums\StatusEnum;
 
 //use ZnCore\DotEnv\Domain\Libs\DotEnvConfigInterface;
@@ -176,7 +175,7 @@ class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, Un
         if (isset($parsedUri['scheme'])) {
             return $uri;
         }
-        return DotEnv::get('WEB_URL') . $this->getUri();
+        return $_ENV['WEB_URL'] . $this->getUri();
     }
 
     public function getUri(): ?string
@@ -184,7 +183,7 @@ class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, Un
         if ($this->uri) {
             return $this->uri;
         }
-        $publicUrl = DotEnv::get('STORAGE_PUBLIC_URI');
+        $publicUrl = $_ENV['STORAGE_PUBLIC_URI'];
         return '/' . $publicUrl . '/' . $this->_fileHash->getPath($this->getHash(), $this->getExtension());
 //        return '/' . $publicUrl . '/' . UploadHelper::getTargetFileName($this->getHash(), $this->getExtension());
     }
@@ -206,7 +205,7 @@ class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, Un
 
     public function getRelativeFileName(): string
     {
-        $publicDirectory = DotEnv::get('STORAGE_PUBLIC_DIRECTORY');
+        $publicDirectory = $_ENV['STORAGE_PUBLIC_DIRECTORY'];
         return $publicDirectory . '/' . $this->_fileHash->getPath($this->getHash(), $this->getExtension());
     }
 

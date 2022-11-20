@@ -2,11 +2,6 @@
 
 namespace ZnUser\Authentication\Symfony4\Web\Controllers;
 
-use Psr\Log\LoggerInterface;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use ZnUser\Authentication\Domain\Enums\Rbac\AuthenticationPermissionEnum;
-use ZnUser\Authentication\Domain\Enums\WebCookieEnum;
-use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
 use DateTime;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
@@ -15,21 +10,22 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use ZnUser\Authentication\Domain\Forms\AuthForm;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
+use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
 use ZnLib\Web\Controller\Base\BaseWebController;
 use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\SignedCookie\Libs\CookieValue;
 use ZnLib\Web\Form\Traits\ControllerFormTrait;
+use ZnLib\Web\SignedCookie\Libs\CookieValue;
+use ZnUser\Authentication\Domain\Enums\Rbac\AuthenticationPermissionEnum;
+use ZnUser\Authentication\Domain\Enums\WebCookieEnum;
+use ZnUser\Authentication\Domain\Forms\AuthForm;
+use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
 
 class AuthController extends BaseWebController implements ControllerAccessInterface
 {
@@ -88,7 +84,7 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
                 $response = new RedirectResponse('/', HttpStatusCodeEnum::MOVED_TEMPORARILY);
 
                 if($form->getRememberMe()) {
-                    $cookieValue = new CookieValue(DotEnv::get('CSRF_TOKEN_ID'));
+                    $cookieValue = new CookieValue($_ENV['CSRF_TOKEN_ID']);
                     $hashedValue = $cookieValue->encode($identity->getId());
                     $cookie = new Cookie(WebCookieEnum::IDENTITY_ID, $hashedValue, new DateTime('+ 3650 day'));
                     $response->headers->setCookie($cookie);

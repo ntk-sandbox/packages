@@ -4,10 +4,8 @@ namespace ZnLib\Web\Form\Libs;
 
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnCore\Text\Helpers\TemplateHelper;
 use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
+use ZnCore\Text\Helpers\TemplateHelper;
 use ZnLib\Web\Form\Libs\Renders\BaseRender;
 use ZnLib\Web\Form\Libs\Renders\ButtonRender;
 use ZnLib\Web\Form\Libs\Renders\CheckboxRender;
@@ -20,6 +18,7 @@ use ZnLib\Web\Form\Libs\Renders\PasswordRender;
 use ZnLib\Web\Form\Libs\Renders\SelectRender;
 use ZnLib\Web\Form\Libs\Renders\TextareaRender;
 use ZnLib\Web\Form\Libs\Renders\TextRender;
+use ZnLib\Web\Html\Helpers\Html;
 
 class FormRender
 {
@@ -140,7 +139,7 @@ class FormRender
 
     private function csrfTokenInput(): string
     {
-        $token = $this->tokenManager->getToken(DotEnv::get('CSRF_TOKEN_ID'));
+        $token = $this->tokenManager->getToken($_ENV['CSRF_TOKEN_ID']);
         return Html::hiddenInput('csrfToken', $token->getValue());
     }
 

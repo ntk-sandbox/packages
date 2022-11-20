@@ -4,7 +4,6 @@ namespace ZnSandbox\Sandbox\EgovData\Domain\Libs;
 
 use GuzzleHttp\Client as GuzzleClient;
 use Psr\Http\Message\ResponseInterface;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 
 class EgovDataClient
 {
@@ -27,7 +26,7 @@ class EgovDataClient
 
     private function getApiKey(): string {
         if(empty($this->apiKey)) {
-            $this->apiKey = DotEnv::get('EGOV_API_KEY');
+            $this->apiKey = $_ENV['EGOV_API_KEY'];
             if(empty($this->apiKey)) {
                 throw new \Exception('Empty e.gov token!');
             }

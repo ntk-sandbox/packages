@@ -2,20 +2,19 @@
 
 namespace ZnDatabase\Backup\Domain\Repositories\File;
 
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Collection\Libs\Collection;
+use ZnCore\FileSystem\Helpers\FileHelper;
+use ZnCore\FileSystem\Helpers\FindFileHelper;
+use ZnDatabase\Backup\Domain\Entities\DumpEntity;
+use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
+use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDatabase\Backup\Domain\Entities\DumpEntity;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
 
 class DumpRepository implements CrudRepositoryInterface
 {
@@ -39,7 +38,7 @@ class DumpRepository implements CrudRepositoryInterface
         $this->dbRepository = $dbRepository;
         $this->setEntityManager($em);
 
-        $this->dumpPath = DotEnv::get('DUMP_DIRECTORY');
+        $this->dumpPath = $_ENV['DUMP_DIRECTORY'];
         $this->currentDumpPath = $this->dumpPath . '/' . date('Y-m/d/H-i-s');
     }
 

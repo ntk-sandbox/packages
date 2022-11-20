@@ -2,7 +2,6 @@
 
 namespace ZnLib\Web\SignedCookie\Libs;
 
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
 
 class CookieValue
@@ -36,7 +35,7 @@ class CookieValue
 
     private function generateHash($value): string {
         $jsonValue = json_encode($value);
-        $scopedValue = DotEnv::get('CSRF_TOKEN_ID') . $jsonValue;
+        $scopedValue = $_ENV['CSRF_TOKEN_ID'] . $jsonValue;
         return hash(HashAlgoEnum::SHA256, $scopedValue);
     }
 }

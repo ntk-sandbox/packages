@@ -7,9 +7,8 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
 use ZnCore\Collection\Helpers\CollectionHelper;
+use ZnCore\Container\Helpers\ContainerHelper;
 use ZnDatabase\Backup\Domain\Libs\DbStorage;
 use ZnDatabase\Backup\Domain\Libs\ZipStorage;
 use ZnDatabase\Base\Domain\Facades\DbFacade;
@@ -63,7 +62,7 @@ class DumpCreateCommand extends Command
             $version = $version . '-' . $comment;
         }
 
-        $dumpPath = DotEnv::get('DUMP_DIRECTORY') . '/' . $version;
+        $dumpPath = $_ENV['DUMP_DIRECTORY'] . '/' . $version;
 
         $this->currentDumpPath = $dumpPath;
         $this->version = $version;
