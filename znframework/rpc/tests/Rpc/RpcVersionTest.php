@@ -2,7 +2,6 @@
 
 namespace ZnLib\Rpc\Tests\Rpc;
 
-
 use Tests\Rpc\BaseTest;
 use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
 use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
