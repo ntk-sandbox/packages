@@ -49,7 +49,7 @@ class ConfirmService extends BaseCrudService implements ConfirmServiceInterface
         try {
             $confirmEntity = $this->findOneByLoginAction($login, $action);
         } catch (NotFoundException $e) {
-            throw new NotFoundException(I18Next::t('user', 'confirm.not_found'));
+            throw new NotFoundException(I18Next::t('confirm', 'confirm.not_found'));
         }
         return $code == $confirmEntity->getCode();
     }

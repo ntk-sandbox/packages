@@ -10,7 +10,7 @@ class Bundle extends BaseBundle
     public function i18next(): array
     {
         return [
-            'user' => __DIR__ . '/Domain/i18next/__lng__/__ns__.json',
+            'confirm' => __DIR__ . '/Domain/i18next/__lng__/__ns__.json',
         ];
     }
 
