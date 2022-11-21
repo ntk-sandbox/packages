@@ -43,14 +43,14 @@ class SelectDomainInput extends BaseInput
         $domainCollection = [];
         $domainCollectionNamespaces = [];
         foreach ($bundleCollection as $bundleEntity) {
-            if ($bundleEntity->getDomain()) {
+//            if ($bundleEntity->getDomain()) {
 //                $domainNamespace = ClassHelper::getNamespace($bundleEntity->getDomain()->getClassName());
                 $domainNamespace = $bundleEntity->getNamespace();
-                $domainName = $bundleEntity->getDomain()->getName();
+                $domainName = $bundleEntity->getName();
                 $title = "$domainName ($domainNamespace)";
                 $domainCollection[] = $title;
                 $domainCollectionNamespaces[$title] = $bundleEntity->getDomain();
-            }
+//            }
             // dd($domainNamespace);
         }
 

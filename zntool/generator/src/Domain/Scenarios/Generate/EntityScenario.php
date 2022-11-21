@@ -62,7 +62,7 @@ class EntityScenario extends BaseEntityScenario
     private function updateContainerConfig(FileGenerator $fileGenerator)
     {
         $fullClassName = $this->getFullClassName();
-        $containerFileName = PackageHelper::pathByNamespace($this->domainNamespace) . '/config/container.php';
+        $containerFileName = PackageHelper::pathByNamespace($this->domainNamespace) . '/config/em.php';
         $storeFile = new StoreFile($containerFileName);
         $containerConfig = $storeFile->load();
 

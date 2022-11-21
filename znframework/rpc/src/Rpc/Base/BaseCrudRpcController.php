@@ -121,6 +121,14 @@ abstract class BaseCrudRpcController extends BaseRpcController
         return $this->serializeResult($entity);
     }
 
+    protected function createFormInstance(RpcRequestEntity $rpcRequestEntity): object
+    {
+        $params = $rpcRequestEntity->getParams();
+        $formInstance = ClassHelper::createInstance($this->formClass);
+        PropertyHelper::setAttributes($formInstance, $params);
+        return $formInstance;
+    }
+
     protected function prepareForm(?array $params, object $formInstance = null)
     {
         if (!$formInstance && $this->formClass) {

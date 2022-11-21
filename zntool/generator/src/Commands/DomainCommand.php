@@ -85,6 +85,10 @@ class DomainCommand extends BaseGeneratorCommand
             $buildDto->domainName = $domainEntity->getName();
             $output->writeln('');
             $output->writeln("<fg=green>Domain founded ({$buildDto->domainName})</>");
+        } else {
+            $buildDto->domainName = $domainEntity->getName();
+            $output->writeln('');
+            $output->writeln("<fg=green>Domain founded ({$buildDto->domainName})</>");
         }
         if (empty($buildDto->domainName)) {
             $this->runInputScenario(DomainNameInputScenario::class, $input, $output, $buildDto);
@@ -115,15 +119,23 @@ class DomainCommand extends BaseGeneratorCommand
         $domainCollectionNamespaces = [];
         foreach ($bundleCollection as $bundleEntity) {
 
-            if ($bundleEntity->getDomain()) {
+//            if ($bundleEntity->getDomain()) {
                 //$domainNamespace = ClassHelper::getNamespace($bundleEntity->getDomain()->getClassName());
                 $bundleNamespace = $bundleEntity->getNamespace();
                 //$domainName = $bundleEntity->getDomain()->getName();
 //                $title = "$domainName ($bundleNamespace)";
                 $title = $bundleNamespace;
                 $domainCollection[] = $title;
-                $domainCollectionNamespaces[$title] = $bundleEntity->getDomain();
+            if (! $bundleEntity->getDomain()) {
+                $domainEntity = new DomainEntity();
+                $domainEntity->setName($bundleEntity->getName());
+                $domainEntity->setNamespace($bundleNamespace . '\\Domain');
+                $domainEntity->setClassName($bundleNamespace . '\\Domain\\Domain');
+                $bundleEntity->setDomain($domainEntity);
             }
+
+            $domainCollectionNamespaces[$title] = $bundleEntity->getDomain();
+//            }
             // dd($domainNamespace);
         }
 
