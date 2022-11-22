@@ -3,8 +3,8 @@
 namespace ZnSandbox\Sandbox\Person2\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\EntityEvent;
 use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
@@ -45,7 +45,7 @@ class AuthorSubscriber implements EventSubscriberInterface
         PropertyHelper::setValue($entity, $this->attribute, $personId);
         try {
 
-        } catch (UnauthorizedException $e) {
+        } catch (AuthenticationException $e) {
         }
     }
 }

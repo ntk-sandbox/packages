@@ -4,10 +4,10 @@ namespace ZnFramework\Rpc\Domain\Services;
 
 use Illuminate\Container\EntryNotFoundException;
 use Symfony\Component\HttpKernel\KernelEvents;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
 use ZnCore\Instance\Libs\InstanceProvider;
 use ZnDomain\Entity\Helpers\EntityHelper;
@@ -89,7 +89,7 @@ class ProcedureService implements ProcedureServiceInterface
             );
         } catch (UnprocessibleEntityException $e) {
             $responseEntity = $this->handleUnprocessibleEntityException($e);
-        } catch (UnauthorizedException $e) {
+        } catch (AuthenticationException $e) {
             $message = $e->getMessage() ?: 'Unauthorized';
             $responseEntity = $this->responseFormatter->forgeErrorResponse(
                 HttpStatusCodeEnum::UNAUTHORIZED,
@@ -97,7 +97,7 @@ class ProcedureService implements ProcedureServiceInterface
                 EntityHelper::toArray($e),
                 $e
             );
-        } catch (ForbiddenException $e) {
+        } catch (AccessDeniedException $e) {
             $responseEntity = $this->responseFormatter->forgeErrorResponse(
                 HttpStatusCodeEnum::FORBIDDEN,
                 $e->getMessage(),

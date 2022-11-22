@@ -2,11 +2,13 @@
 
 namespace ZnCore\Contract\User\Interfaces\Entities;
 
+use Symfony\Component\Security\Core\User\UserInterface;
+
 /**
  * Интерфейс сущности аккаунта пользователя
  * @todo Перенести в
  */
-interface IdentityEntityInterface
+interface IdentityEntityInterface extends UserInterface
 {
 
     /**

@@ -2,8 +2,8 @@
 
 namespace ZnUser\Authentication\Domain\Traits;
 
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 
 /**
@@ -24,7 +24,7 @@ trait GetUserTrait
     {
         $identityEntity = $this->security->getUser();
         if ($identityEntity == null) {
-            throw new UnauthorizedException();
+            throw new AuthenticationException();
         }
         return $identityEntity;
     }

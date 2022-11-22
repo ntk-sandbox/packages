@@ -3,8 +3,8 @@
 namespace ZnDomain\Components\Author\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\QueryEvent;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
@@ -42,7 +42,7 @@ class AuthorQuerySubscriber implements EventSubscriberInterface
 
         $identityEntity = $this->security->getUser();
         if ($identityEntity == null) {
-            throw new UnauthorizedException();
+            throw new AuthenticationException();
         }
         $identityId = $identityEntity->getId();
 

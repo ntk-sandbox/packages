@@ -3,13 +3,11 @@
 namespace ZnFramework\Rpc\Domain\Subscribers\Authentication;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\KernelEvents;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
 use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
 use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
@@ -57,19 +55,19 @@ abstract class BaseRpcAuthenticationSubscriber implements EventSubscriberInterfa
     /**
      * Аутентификация пользователя
      * @param RpcRequestEntity $requestEntity
-     * @throws UnauthorizedException
+     * @throws AuthenticationException
      */
     protected function userAuthentication(RpcRequestEntity $requestEntity)
     {
         $authorization = $this->getToken($requestEntity);
         if (empty($authorization)) {
-            throw new UnauthorizedException('Empty token');
+            throw new AuthenticationException('Empty token');
         }
         try {
             $identity = $this->authService->authenticationByToken($authorization);
             $this->authService->setIdentity($identity);
         } catch (NotFoundException $e) {
-            throw new UnauthorizedException('Bad token');
+            throw new AuthenticationException('Bad token');
         }
     }
 }

@@ -3,9 +3,9 @@
 namespace ZnDomain\Components\Author\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
 use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\EntityEvent;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
@@ -39,7 +39,7 @@ class SetAuthorIdSubscriber implements EventSubscriberInterface
 
         $identityEntity = $this->security->getUser();
         if ($identityEntity == null) {
-            throw new UnauthorizedException();
+            throw new AuthenticationException();
         }
         $identityId = $identityEntity->getId();
 

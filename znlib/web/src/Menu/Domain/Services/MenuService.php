@@ -5,11 +5,11 @@ namespace ZnLib\Web\Menu\Domain\Services;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Yii;
 use ZnCore\Code\Helpers\PropertyHelper;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\Instance\Helpers\ClassHelper;
 use ZnCore\Text\Helpers\Inflector;
 use ZnDomain\Query\Entities\Query;
@@ -180,7 +180,7 @@ class MenuService extends BaseCrudService implements MenuServiceInterface
         try {
             $this->managerService->checkMyAccess($menuEntity->getAccess());
             $menuEntity->setVisible(true);
-        } catch (ForbiddenException|UnauthorizedException $e) {
+        } catch (AccessDeniedException|AuthenticationException $e) {
             $menuEntity->setVisible(false);
         }
 

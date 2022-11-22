@@ -2,13 +2,13 @@
 
 namespace ZnFramework\Rpc\Domain\Subscribers;
 
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
+use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
+use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
 
 class ApplicationAuthenticationSubscriber implements EventSubscriberInterface
 {
@@ -32,7 +32,7 @@ class ApplicationAuthenticationSubscriber implements EventSubscriberInterface
     /**
      * Аутентификация приложения
      * @param RpcRequestEntity $requestEntity
-     * @throws UnauthorizedException
+     * @throws AuthenticationException
      */
     private function applicationAuthentication(RpcRequestEntity $requestEntity)
     {
@@ -41,7 +41,7 @@ class ApplicationAuthenticationSubscriber implements EventSubscriberInterface
             try {
                 // todo: реализовать
             } catch (NotFoundException $e) {
-                throw new UnauthorizedException('Bad ApiKey or Signature');
+                throw new AuthenticationException('Bad ApiKey or Signature');
             }
         }
     }

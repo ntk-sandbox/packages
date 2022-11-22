@@ -2,8 +2,8 @@
 
 namespace ZnUser\Authentication\Rpc\Controllers;
 
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
 use ZnFramework\Rpc\Rpc\Base\BaseRpcController;
@@ -35,7 +35,7 @@ class AuthIdentityController extends BaseRpcController
     {
         $identityEntity = $this->getUser();
         if ($identityEntity == null) {
-            throw new UnauthorizedException();
+            throw new AuthenticationException();
         }
         return $this->serializeResult($identityEntity);
     }

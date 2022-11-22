@@ -2,8 +2,8 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Service\Base\BaseCrudService;
@@ -43,7 +43,7 @@ class ActivityService extends BaseCrudService implements ActivityServiceInterfac
 
         $identityEntity = $this->security->getUser();
         if ($identityEntity == null) {
-            throw new UnauthorizedException();
+            throw new AuthenticationException();
         }
 
         $entity->setUserId($identityEntity->getId());

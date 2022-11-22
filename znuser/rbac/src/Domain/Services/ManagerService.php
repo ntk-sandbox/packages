@@ -5,10 +5,9 @@ namespace ZnUser\Rbac\Domain\Services;
 use App\Organization\Domain\Enums\Rbac\OrganizationOrganizationPermissionEnum;
 use Casbin\ManagementEnforcer;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
 use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 use ZnUser\Rbac\Domain\Interfaces\Repositories\ManagerRepositoryInterface;
 use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
@@ -57,7 +56,7 @@ class ManagerService implements ManagerServiceInterface
         try {
             $this->checkMyAccess($permissionNames);
             return true;
-        } catch (ForbiddenException $e) {
+        } catch (AccessDeniedException $e) {
             return false;
         }
     }
@@ -69,12 +68,12 @@ class ManagerService implements ManagerServiceInterface
             $identityEntity = $this->security->getUser();
 
             if($identityEntity == null) {
-                throw new UnauthorizedException();
+                throw new AuthenticationException();
             }
 
             $roleNames = $this->assignmentService->getRolesByIdentityId($identityEntity->getId());
             $this->checkAccess($roleNames, $permissionNames);
-        } catch (UnauthorizedException $e) {
+        } catch (AuthenticationException $e) {
             $roleNames = $this->getDefaultRoles();
             $isCan = $this->isCanByRoleNames($roleNames, $permissionNames);
             if (!$isCan) {
@@ -87,7 +86,7 @@ class ManagerService implements ManagerServiceInterface
     {
         $isCan = $this->isCanByRoleNames($roleNames, $permissionNames);
         if (!$isCan) {
-            throw new ForbiddenException('Deny access!');
+            throw new AccessDeniedException('Deny access!');
         }
     }
 

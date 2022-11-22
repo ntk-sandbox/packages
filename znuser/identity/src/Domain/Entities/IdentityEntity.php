@@ -14,7 +14,7 @@ use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 use ZnLib\Components\Status\Enums\StatusEnum;
 
-class IdentityEntity implements ValidationByMetadataInterface, EntityIdInterface, IdentityEntityInterface, UserInterface
+class IdentityEntity implements ValidationByMetadataInterface, EntityIdInterface, IdentityEntityInterface
 {
 
     protected $id = null;

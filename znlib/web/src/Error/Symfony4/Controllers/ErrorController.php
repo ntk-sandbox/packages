@@ -8,14 +8,14 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnCore\Env\Helpers\EnvHelper;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnLib\Web\Controller\Base\BaseWebController;
 use ZnLib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
+use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
 
 class ErrorController extends BaseWebController implements ErrorControllerInterface
 {
@@ -50,10 +50,10 @@ class ErrorController extends BaseWebController implements ErrorControllerInterf
             'request' => $data,
             'trace' => debug_backtrace()
         ]);
-        if ($exception instanceof ForbiddenException) {
+        if ($exception instanceof AccessDeniedException) {
             return $this->forbidden($request, $exception);
         }
-        if ($exception instanceof UnauthorizedException) {
+        if ($exception instanceof AuthenticationException) {
             return $this->unauthorized($request, $exception);
         }
         if ($exception instanceof NotFoundException) {

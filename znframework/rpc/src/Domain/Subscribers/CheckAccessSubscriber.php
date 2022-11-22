@@ -3,8 +3,8 @@
 namespace ZnFramework\Rpc\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
 use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
@@ -49,7 +49,7 @@ class CheckAccessSubscriber implements EventSubscriberInterface
     /**
      * Проверка прав доступа
      * @param string $permissionName
-     * @throws ForbiddenException
+     * @throws AccessDeniedException
      */
     private function checkAccess(string $permissionName)
     {

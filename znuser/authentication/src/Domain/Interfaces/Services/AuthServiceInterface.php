@@ -2,16 +2,16 @@
 
 namespace ZnUser\Authentication\Domain\Interfaces\Services;
 
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
-use ZnUser\Authentication\Domain\Forms\AuthForm;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use ZnUser\Authentication\Domain\Forms\AuthForm;
 
 interface AuthServiceInterface
 {
 
     /**
      * @return IdentityEntityInterface
-     * @throws UnauthorizedException
+     * @throws AuthenticationException
      */
 //    public function getIdentity(): ?IdentityEntityInterface;
     public function setIdentity(IdentityEntityInterface $identityEntity);

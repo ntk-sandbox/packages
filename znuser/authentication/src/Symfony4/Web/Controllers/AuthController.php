@@ -11,12 +11,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
 use ZnLib\Web\Controller\Base\BaseWebController;
@@ -86,7 +86,7 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
 
                 $identityEntity = $this->security->getUser();
                 if($identityEntity == null) {
-                    throw new UnauthorizedException();
+                    throw new AuthenticationException();
                 }
 
                 $response = new RedirectResponse('/', HttpStatusCodeEnum::MOVED_TEMPORARILY);

@@ -3,13 +3,11 @@
 namespace ZnUser\Person\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\EntityEvent;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnUser\Person\Domain\Entities\PersonEntity;
 use ZnUser\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class MyChildSubscriber implements EventSubscriberInterface
@@ -36,7 +34,7 @@ class MyChildSubscriber implements EventSubscriberInterface
     public function onBefore(EntityEvent $event)
     {
         if (!$this->myPersonService->isMyChild($event->getEntity()->getId())) {
-            throw new ForbiddenException('Not allowed');
+            throw new AccessDeniedException('Not allowed');
         }
     }
 }

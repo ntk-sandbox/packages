@@ -3,8 +3,8 @@
 namespace ZnUser\Password\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnDomain\Validator\Helpers\ValidationHelper;
 use ZnLib\I18Next\Facades\I18Next;
@@ -46,7 +46,7 @@ class UpdatePasswordService implements UpdatePasswordServiceInterface
      * Проверить старый пароль
      * @param string $currentPassword
      * @throws UnprocessibleEntityException
-     * @throws UnauthorizedException
+     * @throws AuthenticationException
      */
     private function checkCurrentPassword(string $currentPassword)
     {

@@ -2,17 +2,17 @@
 
 namespace ZnLib\Socket\Domain\Libs;
 
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Workerman\Connection\ConnectionInterface;
 use Workerman\Worker;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnLib\Socket\Domain\Entities\SocketEventEntity;
 use ZnLib\Socket\Domain\Enums\SocketEventEnum;
 use ZnLib\Socket\Domain\Repositories\Ram\ConnectionRepository;
-use Workerman\Protocols\Http\Request;
+use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+
 //use PHPSocketIO\SocketIO;
 
 class SocketIoDaemon
@@ -77,7 +77,7 @@ class SocketIoDaemon
             return $identityEntity->getId();
         }
 
-        throw new UnauthorizedException('Empty user id');
+        throw new AuthenticationException('Empty user id');
     }
 
     public function onWsConnect(ConnectionInterface $connection)

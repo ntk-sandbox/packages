@@ -2,7 +2,7 @@
 
 namespace ZnUser\Rbac\Domain\Interfaces\Services;
 
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 interface ManagerServiceInterface
 {
@@ -17,7 +17,7 @@ interface ManagerServiceInterface
     /**
      * Проверка полномочий текущего пользователя
      * @param array $permissionNames
-     * @throws ForbiddenException
+     * @throws AccessDeniedException
      */
     public function checkMyAccess(array $permissionNames): void;
     
@@ -25,7 +25,7 @@ interface ManagerServiceInterface
      * Проверка полномочий
      * @param array $roleNames Роли пользователя
      * @param array $permissionNames Полномочия
-     * @throws ForbiddenException
+     * @throws AccessDeniedException
      */
     public function checkAccess(array $roleNames, array $permissionNames): void;
 

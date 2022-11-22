@@ -5,6 +5,7 @@ namespace ZnUser\Authentication\Domain\Services;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\NullToken;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Constraints\Email;
 use ZnBundle\User\Domain\Entities\User;
@@ -12,13 +13,11 @@ use ZnCore\Collection\Libs\Collection;
 use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnCore\Contract\Common\Exceptions\NotSupportedException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
 use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
 use ZnCrypt\Base\Domain\Services\PasswordService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
 use ZnDomain\Repository\Interfaces\FindOneInterface;
 use ZnDomain\Repository\Traits\RepositoryAwareTrait;
 use ZnDomain\Validator\Entities\ValidationErrorEntity;
@@ -111,7 +110,7 @@ class AuthService implements AuthServiceInterface
 //            return $event->getIdentityEntity();
 //        }*/
 //        if ($this->isGuest()) {
-//            throw new UnauthorizedException();
+//            throw new AuthenticationException();
 //        }
 //        $this->getEventDispatcher()->dispatch($event, AuthEventEnum::AFTER_GET_IDENTITY);
 //        return $event->getIdentityEntity();
@@ -167,7 +166,7 @@ class AuthService implements AuthServiceInterface
         try {
             $tokenValueEntity = TokenHelper::parseToken($token);
         } catch (InvalidMethodParameterException $e) {
-            throw new UnauthorizedException($e->getMessage());
+            throw new AuthenticationException($e->getMessage());
         }
 
         // todo: сделать обработчики токенов разных типов
