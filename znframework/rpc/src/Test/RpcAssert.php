@@ -194,7 +194,19 @@ class RpcAssert extends BaseAssert
         $this->assertIsError();
         $this->assertErrorMessage('Parameter validation error');
         $this->assertErrorCode(RpcErrorCodeEnum::SERVER_ERROR_INVALID_PARAMS);
-        $this->assertEquals($errors, $this->response->getError()['data']);
+        $this->assertEquals(
+            $this->unprocessableEntityErrorsToFlat($errors),
+            $this->unprocessableEntityErrorsToFlat($this->response->getError()['data'])
+        );
         return $this;
+    }
+
+    protected function unprocessableEntityErrorsToFlat(array $errors) {
+        $flat = [];
+        foreach ($errors as $error) {
+            $flat[] = "{$error['field']}|{$error['message']}";
+        }
+        sort($flat);
+        return $flat;
     }
 }

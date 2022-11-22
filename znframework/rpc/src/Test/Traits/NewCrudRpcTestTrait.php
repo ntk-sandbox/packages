@@ -8,7 +8,7 @@ use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
 use ZnFramework\Rpc\Test\RpcAssert;
 
-trait CrudRpcTestTrait
+trait NewCrudRpcTestTrait
 {
 
     use RepositoryTestTrait;
@@ -20,6 +20,10 @@ trait CrudRpcTestTrait
     abstract protected function getRpcAssert(RpcResponseEntity $response = null): RpcAssert;
 
 //    abstract protected function getExistedId(): int;
+
+    protected function itemsFileName(): string {
+
+    }
 
     protected function getNextId(): int
     {
@@ -60,7 +64,7 @@ trait CrudRpcTestTrait
         return $this->sendRequestByEntity($request);
     }
 
-    protected function deleteById(int $id, string $login = null): RpcResponseEntity
+    protected function deleteById(int|string $id, string $login = null): RpcResponseEntity
     {
         $request = $this->createRequest($login);
         $request->setMethod($this->baseMethod() . '.delete');
@@ -78,7 +82,7 @@ trait CrudRpcTestTrait
     protected function oneById(int $id, string $login = null, array $params = []): RpcResponseEntity
     {
         $request = $this->createRequest($login);
-        $request->setMethod($this->baseMethod() . '.oneById');
+        $request->setMethod($this->baseMethod() . '.one-by-id');
         $request->setParamItem('id', $id);
         if ($params) {
             foreach ($params as $paramKey => $paramValue) {
@@ -88,10 +92,10 @@ trait CrudRpcTestTrait
         return $this->sendRequestByEntity($request);
     }
 
-    protected function findOneById(int $id, string $login = null, array $params = []): RpcResponseEntity
+    protected function findOneById(int|string $id, string $login = null, array $params = []): RpcResponseEntity
     {
         $request = $this->createRequest($login);
-        $request->setMethod($this->baseMethod() . '.oneById');
+        $request->setMethod($this->baseMethod() . '.one-by-id');
         $request->setParamItem('id', $id);
         if ($params) {
             foreach ($params as $paramKey => $paramValue) {
@@ -128,7 +132,7 @@ trait CrudRpcTestTrait
         }
     }
 
-    protected function assertNotFoundById(int $id, string $login = null)
+    protected function assertNotFoundById(int|string $id, string $login = null)
     {
         $response = $this->findOneById($id, $login);
         $this->getRpcAssert($response)->assertNotFound();
@@ -162,7 +166,7 @@ trait CrudRpcTestTrait
     {
         $arr = [
             'all' => $all,
-            'oneById' => $one,
+            'one-by-id' => $one,
             'create' => $create,
             'update' => $update,
             'delete' => $delete,
