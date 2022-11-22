@@ -2,12 +2,12 @@
 
 namespace ZnCore\Contract\User\Exceptions;
 
-use Exception;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 /**
  * Не достаточно полномочий
  */
-class ForbiddenException extends Exception
+class ForbiddenException extends AccessDeniedException
 {
 
 }
