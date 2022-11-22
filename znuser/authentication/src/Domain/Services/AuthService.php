@@ -9,21 +9,21 @@ use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Constraints\Email;
 use ZnBundle\User\Domain\Entities\User;
+use ZnCore\Collection\Libs\Collection;
 use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnCore\Contract\Common\Exceptions\NotSupportedException;
 use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
+use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
+use ZnCrypt\Base\Domain\Services\PasswordService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Repository\Traits\RepositoryAwareTrait;
-use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
-use ZnCrypt\Base\Domain\Services\PasswordService;
+use ZnDomain\Validator\Entities\ValidationErrorEntity;
+use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use ZnDomain\Validator\Helpers\ValidationHelper;
 use ZnLib\I18Next\Facades\I18Next;
 use ZnUser\Authentication\Domain\Entities\CredentialEntity;
 use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
@@ -61,8 +61,7 @@ class AuthService implements AuthServiceInterface
         Security $security,
         LoggerInterface $logger,
         private TokenStorageInterface $tokenStorage
-    )
-    {
+    ) {
         $this->identityRepository = $identityRepository;
         $this->passwordService = $passwordService;
         $this->credentialRepository = $credentialRepository;
@@ -177,7 +176,9 @@ class AuthService implements AuthServiceInterface
             $this->logger->info('auth authenticationByToken');
             return $userEntity;
         } else {
-            throw new NotSupportedException('Token type "' . $tokenValueEntity->getType() . '" not supported in ' . get_class($this));
+            throw new NotSupportedException(
+                'Token type "' . $tokenValueEntity->getType() . '" not supported in ' . get_class($this)
+            );
         }
     }
 
@@ -239,7 +240,10 @@ class AuthService implements AuthServiceInterface
             $this->logger->info('auth verificationPassword');
         } catch (InvalidPasswordException $e) {
             $errorCollection = new Collection();
-            $ValidationErrorEntity = new ValidationErrorEntity('password', I18Next::t('authentication', 'auth.incorrect_password'));
+            $ValidationErrorEntity = new ValidationErrorEntity(
+                'password',
+                I18Next::t('authentication', 'auth.incorrect_password')
+            );
             $errorCollection->add($ValidationErrorEntity);
             $exception = new UnprocessibleEntityException;
             $exception->setErrorCollection($errorCollection);

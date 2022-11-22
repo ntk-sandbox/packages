@@ -5,15 +5,12 @@ namespace ZnUser\Notify\Domain\Services;
 use Symfony\Component\Security\Core\Security;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Query\Entities\Where;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\SettingServiceInterface;
 
 class SettingService /*extends BaseCrudService*/
@@ -21,27 +18,16 @@ class SettingService /*extends BaseCrudService*/
 {
 
     use EntityManagerAwareTrait;
+    use GetUserTrait;
 
-    private $authService;
-
-    public function __construct(EntityManagerInterface $em, SettingRepositoryInterface $repository, AuthServiceInterface $authService, private Security $security)
+    public function __construct(EntityManagerInterface $em, private Security $security)
     {
         $this->setEntityManager($em);
-//        $this->repository = $repository;
-        $this->authService = $authService;
     }
 
     public function getEntityClass(): string
     {
         return SettingEntity::class;
-    }
-
-    private function getUser(): ?IdentityEntityInterface {
-        $identityEntity = $this->security->getUser();
-        if($identityEntity == null) {
-            throw new UnauthorizedException();
-        }
-        return $identityEntity;
     }
 
     protected function forgeQuery(Query $query = null): Query
@@ -57,7 +43,8 @@ class SettingService /*extends BaseCrudService*/
         $data = [];
         $settingsCollection = $this->allByUserId($userId);
         foreach ($settingsCollection as $settingsEntity) {
-            $data[$settingsEntity->getNotifyTypeId()][$settingsEntity->getContactTypeId()] = $settingsEntity->getIsEnabled();
+            $data[$settingsEntity->getNotifyTypeId()][$settingsEntity->getContactTypeId(
+            )] = $settingsEntity->getIsEnabled();
         }
         return $data;
     }

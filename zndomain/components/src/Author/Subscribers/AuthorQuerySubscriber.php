@@ -9,24 +9,19 @@ use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\QueryEvent;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 
 class AuthorQuerySubscriber implements EventSubscriberInterface
 {
 
     use EntityManagerAwareTrait;
 
-//    private $authService;
     private $attributeName;
 
     public function __construct(
         EntityManagerInterface $entityManager,
-//        AuthServiceInterface $authService,
         private Security $security
-    )
-    {
+    ) {
         $this->setEntityManager($entityManager);
-//        $this->authService = $authService;
     }
 
     public function setAttributeName(string $attributeName): void
@@ -46,11 +41,10 @@ class AuthorQuerySubscriber implements EventSubscriberInterface
         $query = $event->getQuery();
 
         $identityEntity = $this->security->getUser();
-        if($identityEntity == null) {
+        if ($identityEntity == null) {
             throw new UnauthorizedException();
         }
         $identityId = $identityEntity->getId();
-//        $identityId = $this->security->getToken()->getUser()->getId();
 
         $query->where($this->attributeName, $identityId);
     }

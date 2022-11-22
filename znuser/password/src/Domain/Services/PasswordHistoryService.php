@@ -2,49 +2,37 @@
 
 namespace ZnUser\Password\Domain\Services;
 
+use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 use ZnUser\Password\Domain\Entities\PasswordHistoryEntity;
 use ZnUser\Password\Domain\Interfaces\Repositories\PasswordHistoryRepositoryInterface;
 use ZnUser\Password\Domain\Interfaces\Services\PasswordHistoryServiceInterface;
-use Symfony\Component\PasswordHasher\PasswordHasherInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 
 class PasswordHistoryService extends BaseCrudService implements PasswordHistoryServiceInterface
 {
 
+    use GetUserTrait;
+
     private $passwordHistoryRepository;
-    private $authService;
     private $passwordHasher;
 
     public function __construct(
         EntityManagerInterface $em,
         PasswordHistoryRepositoryInterface $passwordHistoryRepository,
-        AuthServiceInterface $authService,
         PasswordHasherInterface $passwordHasher,
         private Security $security
-    )
-    {
+    ) {
         $this->setEntityManager($em);
         $this->passwordHistoryRepository = $passwordHistoryRepository;
-        $this->authService = $authService;
         $this->passwordHasher = $passwordHasher;
     }
 
     public function getEntityClass(): string
     {
         return PasswordHistoryEntity::class;
-    }
-
-    private function getUser(): ?IdentityEntityInterface {
-        $identityEntity = $this->security->getUser();
-        if($identityEntity == null) {
-            throw new UnauthorizedException();
-        }
-        return $identityEntity;
     }
 
     public function add(string $password, int $identityId = null)

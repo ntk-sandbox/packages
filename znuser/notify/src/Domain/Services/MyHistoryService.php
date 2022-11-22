@@ -3,18 +3,16 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Query\Entities\Query;
+use ZnDomain\Query\Entities\Where;
+use ZnDomain\Service\Base\BaseCrudService;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
 
 class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterface
 {
@@ -22,28 +20,16 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
 //    use SoftDeleteTrait;
 //    use SoftRestoreTrait;
 
-    private $authService;
+    use GetUserTrait;
 
     public function __construct(
         EntityManagerInterface $em,
 //        HistoryRepositoryInterface $repository,
-        AuthServiceInterface $authService,
         private Security $security
-    )
-    {
+    ) {
         $this->setEntityManager($em);
         $repository = $this->getEntityManager()->getRepository(NotifyEntity::class);
         $this->setRepository($repository);
-
-        $this->authService = $authService;
-    }
-
-    private function getUser(): ?IdentityEntityInterface {
-        $identityEntity = $this->security->getUser();
-        if($identityEntity == null) {
-            throw new UnauthorizedException();
-        }
-        return $identityEntity;
     }
 
     public function clearMyMessages()
@@ -85,9 +71,12 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
         $query = new Query();
         $query->whereNew(new Where('recipient_id', $myIdentity->getId()));
         $query->whereNew(new Where('status_id', NotifyStatusEnum::NEW));
-        $this->getRepository()->updateByQuery($query, [
-            'status_id' => NotifyStatusEnum::SEEN,
-        ]);
+        $this->getRepository()->updateByQuery(
+            $query,
+            [
+                'status_id' => NotifyStatusEnum::SEEN,
+            ]
+        );
     }
 
     protected function forgeQuery(Query $query = null): Query

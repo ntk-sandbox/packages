@@ -126,6 +126,5 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
         $response = new RedirectResponse('/', HttpStatusCodeEnum::MOVED_TEMPORARILY);
         $response->headers->clearCookie(WebCookieEnum::IDENTITY_ID);
         return $response;
-        //return $this->redirect('/');
     }
 }

@@ -2,14 +2,13 @@
 
 namespace ZnFramework\Rpc\Domain\Subscribers;
 
-use Symfony\Component\Security\Core\Security;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Contract\User\Exceptions\UnauthorizedException;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Contract\User\Exceptions\ForbiddenException;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
+use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
 use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 
@@ -17,20 +16,17 @@ class CheckAccessSubscriber implements EventSubscriberInterface
 {
 
     use EntityManagerAwareTrait;
+    use GetUserTrait;
 
-    private $authService;
     private $managerService;
     private $assignmentService;
 
     public function __construct(
         ManagerServiceInterface $managerService,
         AssignmentServiceInterface $assignmentService,
-        AuthServiceInterface $authService,
         private Security $security
-    )
-    {
+    ) {
         $this->managerService = $managerService;
-        $this->authService = $authService;
         $this->assignmentService = $assignmentService;
     }
 
@@ -58,7 +54,7 @@ class CheckAccessSubscriber implements EventSubscriberInterface
     private function checkAccess(string $permissionName)
     {
         $identityEntity = $this->security->getUser();
-        if($identityEntity) {
+        if ($identityEntity) {
             $roles = $this->assignmentService->getRolesByIdentityId($identityEntity->getId());
         } else {
             $roles = ['rGuest'];

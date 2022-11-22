@@ -3,6 +3,7 @@
 namespace ZnUser\Authentication\Domain\Traits;
 
 use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 
 /**
@@ -13,29 +14,23 @@ use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 trait GetUserTrait
 {
 
-    /**
-     * Сущность аккаунта
-     * @var IdentityEntityInterface $user
-     */
-    private $user;
+    private Security $security;
 
     /**
      * Получить сущность аккаунта
      * @return IdentityEntityInterface
      */
-    public function getUser(): IdentityEntityInterface
+    public function getUser(): ?IdentityEntityInterface
     {
-        return $this->user;
+        $identityEntity = $this->security->getUser();
+        if ($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
     }
 
-    /**
-     * Назначение общего хранилища аккаунта и его токена
-     *
-     * Обычно, его назначают в конструкторе класса
-     * @param Security $security
-     */
-    public function setSecurity(Security $security)
+    protected function setSecurity(Security $security)
     {
-        $this->user = $security->getToken()->getUser();
+        $this->security = $security;
     }
 }
