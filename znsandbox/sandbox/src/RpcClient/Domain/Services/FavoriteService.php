@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\RpcClient\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnLib\Components\Status\Enums\StatusEnum;
@@ -11,6 +12,7 @@ use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
 use ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
 use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\FavoriteServiceInterface;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 
 /**
  * @method FavoriteRepositoryInterface getRepository()
@@ -18,11 +20,14 @@ use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\FavoriteServiceInterf
 class FavoriteService extends BaseCrudService implements FavoriteServiceInterface
 {
 
+    use GetUserTrait;
+
     private $authService;
 
     public function __construct(
         EntityManagerInterface $em,
-        AuthServiceInterface $authService
+        AuthServiceInterface $authService,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
@@ -37,7 +42,7 @@ class FavoriteService extends BaseCrudService implements FavoriteServiceInterfac
     public function addFavorite(FavoriteEntity $favoriteEntity)
     {
         $favoriteEntity->setStatusId(StatusEnum::ENABLED);
-        $favoriteEntity->setAuthorId($this->authService->getIdentity()->getId());
+        $favoriteEntity->setAuthorId($this->getUser()->getId());
         if ($favoriteEntity->getId()) {
 
             /*try {
@@ -64,7 +69,7 @@ class FavoriteService extends BaseCrudService implements FavoriteServiceInterfac
     public function addHistory(FavoriteEntity $favoriteEntity)
     {
         $favoriteEntity->setStatusId(StatusEnum::WAIT_APPROVING);
-        $favoriteEntity->setAuthorId($this->authService->getIdentity()->getId());
+        $favoriteEntity->setAuthorId($this->getUser()->getId());
         if ($favoriteEntity->getId()) {
 
             /*try {
@@ -103,7 +108,7 @@ class FavoriteService extends BaseCrudService implements FavoriteServiceInterfac
     {
         $this->getRepository()->deleteByCondition([
             'status_id' => StatusEnum::WAIT_APPROVING,
-            'author_id' => $this->authService->getIdentity()->getId()
+            'author_id' => $this->getUser()->getId()
         ]);
     }
 
@@ -116,7 +121,7 @@ class FavoriteService extends BaseCrudService implements FavoriteServiceInterfac
         ]);
         $query->with(['auth']);
         $query->where('status_id', StatusEnum::WAIT_APPROVING);
-        $query->where('author_id', $this->authService->getIdentity()->getId());
+        $query->where('author_id', $this->getUser()->getId());
         return parent::findAll($query);
     }
 }

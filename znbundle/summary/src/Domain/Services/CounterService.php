@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Summary\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnBundle\Summary\Domain\Entities\CounterEntity;
 use ZnBundle\Summary\Domain\Interfaces\Repositories\CounterRepositoryInterface;
 use ZnBundle\Summary\Domain\Interfaces\Services\CounterServiceInterface;
@@ -14,9 +15,12 @@ use ZnDomain\Query\Entities\Where;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 
 class CounterService extends BaseCrudService implements CounterServiceInterface
 {
+
+    use GetUserTrait;
 
     private $authService;
     private $sessionService;
@@ -25,7 +29,8 @@ class CounterService extends BaseCrudService implements CounterServiceInterface
         EntityManagerInterface $em,
         CounterRepositoryInterface $repository,
         AuthServiceInterface $authService,
-        SessionServiceInterface $sessionService
+        SessionServiceInterface $sessionService,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
@@ -49,10 +54,15 @@ class CounterService extends BaseCrudService implements CounterServiceInterface
         $counterEntity->setEntityId($entityId);
         $counterEntity->setType($type);
 
-        if (!$this->authService->isGuest()) {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity) {
+            $counterEntity->setUserId($identityEntity->getId());
+        }
+
+        /*if (!$this->authService->isGuest()) {
             $userId = $this->authService->getIdentity()->getId();
             $counterEntity->setUserId($userId);
-        }
+        }*/
 
         $sessionEntity = $this->sessionService->currentSession();
         $counterEntity->setSessionId($sessionEntity->getId());
@@ -72,13 +82,24 @@ class CounterService extends BaseCrudService implements CounterServiceInterface
         $query->whereNew(new Where('entity_name', $entityName));
         $query->whereNew(new Where('entity_id', $entityId));
         $query->whereNew(new Where('type', $type));
-        if (!$this->authService->isGuest()) {
-            $userId = $this->authService->getIdentity()->getId();
+
+
+        $identityEntity = $this->security->getUser();
+        if($identityEntity) {
+            $userId = $identityEntity->getId();
             $query->whereNew(new Where('user_id', $userId));
         } else {
             $sessionEntity = $this->sessionService->currentSession();
             $query->whereNew(new Where('session_id', $sessionEntity->getId()));
         }
+
+        /*if (!$this->authService->isGuest()) {
+            $userId = $this->authService->getIdentity()->getId();
+            $query->whereNew(new Where('user_id', $userId));
+        } else {
+            $sessionEntity = $this->sessionService->currentSession();
+            $query->whereNew(new Where('session_id', $sessionEntity->getId()));
+        }*/
         return $this->getRepository()->findOne($query);
     }
 

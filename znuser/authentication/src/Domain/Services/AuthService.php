@@ -4,7 +4,6 @@ namespace ZnUser\Authentication\Domain\Services;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\NullToken;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Constraints\Email;
@@ -20,6 +19,7 @@ use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
 use ZnCrypt\Base\Domain\Services\PasswordService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
+use ZnDomain\Repository\Interfaces\FindOneInterface;
 use ZnDomain\Repository\Traits\RepositoryAwareTrait;
 use ZnDomain\Validator\Entities\ValidationErrorEntity;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
@@ -46,9 +46,9 @@ class AuthService implements AuthServiceInterface
     protected $tokenService;
     protected $passwordService;
     protected $credentialRepository;
-    protected $identityRepository;
+//    protected $identityRepository;
     protected $logger;
-    protected $identityEntity;
+//    protected $identityEntity;
     protected $security;
     protected $em;
 
@@ -59,10 +59,11 @@ class AuthService implements AuthServiceInterface
         TokenServiceInterface $tokenService,
         EntityManagerInterface $em,
         Security $security,
-        LoggerInterface $logger,
-        private TokenStorageInterface $tokenStorage
-    ) {
-        $this->identityRepository = $identityRepository;
+        LoggerInterface $logger
+//        private TokenStorageInterface $tokenStorage
+    )
+    {
+//        $this->identityRepository = $identityRepository;
         $this->passwordService = $passwordService;
         $this->credentialRepository = $credentialRepository;
         $this->logger = $logger;
@@ -76,7 +77,7 @@ class AuthService implements AuthServiceInterface
     {
         $token = new NullToken();
         $this->security->setToken($token);
-        $this->tokenStorage->setToken($token);
+//        $this->tokenStorage->setToken($token);
     }
 
     public function setIdentity(IdentityEntityInterface $identityEntity)
@@ -87,41 +88,42 @@ class AuthService implements AuthServiceInterface
 //        $token = new AnonymousToken([], $identityEntity);
         $token = new UsernamePasswordToken($identityEntity, 'main', $identityEntity->getRoles());
         $this->security->setToken($token);
-        $this->tokenStorage->setToken($token);
+//        $this->tokenStorage->setToken($token);
 
         //$event = new IdentityEvent($identityEntity);
         //$this->getEventDispatcher()->dispatch($event, AuthEventEnum::BEFORE_SET_IDENTITY);
-        $this->identityEntity = $identityEntity;
+//        $this->identityEntity = $identityEntity;
         //$this->getEventDispatcher()->dispatch($event, AuthEventEnum::AFTER_SET_IDENTITY);
     }
 
-    public function getIdentity(): ?IdentityEntityInterface
-    {
-        $identityEntity = null;
-        if ($this->security->getUser() != null) {
-            $identityEntity = $this->security->getUser();
-        } /*elseif($this->identityEntity) {
-            $identityEntity = $this->identityEntity;
-        }*/
-        $event = new IdentityEvent();
-        $event->setIdentityEntity($identityEntity);
-        $this->getEventDispatcher()->dispatch($event, AuthEventEnum::BEFORE_GET_IDENTITY);
-        /*if($event->getIdentityEntity()) {
-            return $event->getIdentityEntity();
-        }*/
-        if ($this->isGuest()) {
-            throw new UnauthorizedException();
-        }
-        $this->getEventDispatcher()->dispatch($event, AuthEventEnum::AFTER_GET_IDENTITY);
-        return $event->getIdentityEntity();
-    }
+//    public function getIdentity(): ?IdentityEntityInterface
+//    {
+//        $identityEntity = null;
+//        if ($this->security->getUser() != null) {
+//            $identityEntity = $this->security->getUser();
+//        } /*elseif($this->identityEntity) {
+//            $identityEntity = $this->identityEntity;
+//        }*/
+//        $event = new IdentityEvent();
+//        $event->setIdentityEntity($identityEntity);
+//        $this->getEventDispatcher()->dispatch($event, AuthEventEnum::BEFORE_GET_IDENTITY);
+//        /*if($event->getIdentityEntity()) {
+//            return $event->getIdentityEntity();
+//        }*/
+//        if ($this->isGuest()) {
+//            throw new UnauthorizedException();
+//        }
+//        $this->getEventDispatcher()->dispatch($event, AuthEventEnum::AFTER_GET_IDENTITY);
+//        return $event->getIdentityEntity();
+//    }
 
     public function isGuest(): bool
     {
-        if ($this->security->getUser() != null) {
+        $identityEntity = $this->security->getUser();
+        if ($identityEntity != null) {
             return false;
         }
-        $event = new IdentityEvent($this->identityEntity);
+        $event = new IdentityEvent($identityEntity);
         $this->getEventDispatcher()->dispatch($event, AuthEventEnum::BEFORE_IS_GUEST);
         if (is_bool($event->getIsGuest())) {
             return $event->getIsGuest();
@@ -132,10 +134,11 @@ class AuthService implements AuthServiceInterface
 
     public function logout()
     {
-        $event = new IdentityEvent($this->identityEntity);
+        $identityEntity = $this->security->getUser();
+        $event = new IdentityEvent($identityEntity);
         $this->getEventDispatcher()->dispatch($event, AuthEventEnum::BEFORE_LOGOUT);
 
-        $this->identityEntity = null;
+//        $this->identityEntity = null;
         $this->resetAuth();
         $this->logger->info('auth logout');
         $this->getEventDispatcher()->dispatch($event, AuthEventEnum::AFTER_LOGOUT);
@@ -170,9 +173,8 @@ class AuthService implements AuthServiceInterface
         // todo: сделать обработчики токенов разных типов
         if ($tokenValueEntity->getType() == 'bearer') {
             $userId = $this->tokenService->getIdentityIdByToken($token);
-            $query = new Query();
             /** @var IdentityEntityInterface $userEntity */
-            $userEntity = $this->identityRepository->findOneById($userId, $query);
+            $userEntity = $this->findOneIdentityById($userId);
             $this->logger->info('auth authenticationByToken');
             return $userEntity;
         } else {
@@ -180,6 +182,13 @@ class AuthService implements AuthServiceInterface
                 'Token type "' . $tokenValueEntity->getType() . '" not supported in ' . get_class($this)
             );
         }
+    }
+
+    protected function findOneIdentityById(int $userId): ?IdentityEntityInterface
+    {
+        /** @var FindOneInterface $repository */
+        $repository = $this->em->getRepository(IdentityEntityInterface::class);
+        return $repository->findOneById($userId);
     }
 
     /*public function authenticationByForm(LoginForm $loginForm)
@@ -227,7 +236,8 @@ class AuthService implements AuthServiceInterface
         }
 
         /** @var IdentityEntityInterface $userEntity */
-        $userEntity = $this->identityRepository->findOneById($credentialEntity->getIdentityId());
+        $userEntity = $this->findOneIdentityById($credentialEntity->getIdentityId());
+//        $userEntity = $this->identityRepository->findOneById($credentialEntity->getIdentityId());
         $authEvent->setIdentityEntity($userEntity);
         $this->getEventDispatcher()->dispatch($authEvent, AuthEventEnum::AFTER_AUTH_SUCCESS);
         return $userEntity;

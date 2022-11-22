@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\RpcClient\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
@@ -19,25 +20,29 @@ use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\ClientRepositoryI
 use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\ClientServiceInterface;
 use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\UserServiceInterface;
 use ZnSandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 
 class ClientService extends BaseService implements ClientServiceInterface
 {
 
+    use GetUserTrait;
+
     private $rpcProvider;
-    private $authService;
+//    private $authService;
 //    private $authProvider;
     private $userService;
 
     public function __construct(
         EntityManagerInterface $em,
         RpcProvider $rpcProvider,
-        AuthServiceInterface $authService,
-        UserServiceInterface $userService
+//        AuthServiceInterface $authService,
+        UserServiceInterface $userService,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
         $this->rpcProvider = $rpcProvider;
-        $this->authService = $authService;
+//        $this->authService = $authService;
 //        $this->authProvider = new RpcAuthProvider($this->rpcProvider);
         $this->userService = $userService;
     }
@@ -99,7 +104,7 @@ class ClientService extends BaseService implements ClientServiceInterface
         $favoriteEntity->setDescription($form->getDescription());
         $favoriteEntity->setAuthBy($form->getAuthBy() ?: null);
         $favoriteEntity->setVersion($form->getVersion());
-        $favoriteEntity->setAuthorId($this->authService->getIdentity()->getId());
+        $favoriteEntity->setAuthorId($this->getUser()->getId());
         //$this->generateUid($favoriteEntity);
 
         try {

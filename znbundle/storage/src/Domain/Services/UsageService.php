@@ -2,27 +2,32 @@
 
 namespace ZnBundle\Storage\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnBundle\Storage\Domain\Entities\UsageEntity;
 use ZnBundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
 use ZnBundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnDomain\Service\Base\BaseCrudService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 
 class UsageService extends BaseCrudService implements UsageServiceInterface
 {
 
-    private $authService;
+//    use GetUserTrait;
+
+//    private $authService;
 
     public function __construct(
         EntityManagerInterface $em,
         UsageRepositoryInterface $repository,
-        AuthServiceInterface $authService
+//        AuthServiceInterface $authService,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
 //        $this->setRepository($repository);
-        $this->authService = $authService;
+//        $this->authService = $authService;
     }
 
     public function getEntityClass(): string
@@ -37,8 +42,9 @@ class UsageService extends BaseCrudService implements UsageServiceInterface
         $usageEntity->setEntityId($entityId);
         $usageEntity->setFileId($fileId);
 
-        if(!$this->authService->isGuest()) {
-            $usageEntity->setUserId($this->authService->getIdentity()->getId());
+        $identityEntity = $this->security->getUser();
+        if($identityEntity) {
+            $usageEntity->setUserId($identityEntity->getId());
         }
 
         $this->getEntityManager()->persist($usageEntity);

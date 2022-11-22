@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\Person2\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Code\Helpers\PropertyHelper;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
@@ -11,30 +12,35 @@ use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceReposito
 use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 
 class MyPersonService extends BaseService implements MyPersonServiceInterface
 {
 
-    private $authService;
+    use GetUserTrait;
+
+//    private $authService;
     private $personRepository;
     private $inheritanceRepository;
 
     public function __construct(
         EntityManagerInterface $em,
-        AuthServiceInterface $authService,
+//        AuthServiceInterface $authService,
         PersonRepositoryInterface $personRepository,
-        InheritanceRepositoryInterface $inheritanceRepository
+        InheritanceRepositoryInterface $inheritanceRepository,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
-        $this->authService = $authService;
+//        $this->authService = $authService;
         $this->personRepository = $personRepository;
         $this->inheritanceRepository = $inheritanceRepository;
     }
 
     public function findOne(Query $query = null): PersonEntity
     {
-        $identityId = $this->authService->getIdentity()->getId();
+        $identityId = $this->getUser()->getId();
+//        $identityId = $this->authService->getIdentity()->getId();
         return $this->personRepository->findOneByIdentityId($identityId, $query);
     }
 

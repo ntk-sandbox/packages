@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\Person\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnBundle\Eav\Domain\Entities\DynamicEntity;
 use ZnBundle\Eav\Domain\Forms\DynamicForm;
 use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
@@ -15,27 +16,31 @@ use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnKaz\Iin\Domain\Helpers\IinParser;
 use ZnSandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 use ZnUser\Identity\Domain\Entities\IdentityEntity;
 use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
 
 class PersonService extends BaseService implements PersonServiceInterface
 {
 
+    use GetUserTrait;
+
     protected $identityService;
     protected $entityService;
     protected $valueService;
-    protected $authService;
+//    protected $authService;
 
     public function __construct(
         EntityServiceInterface $entityService,
         ValueServiceInterface $valueService,
-        AuthServiceInterface $authService,
-        IdentityServiceInterface $identityService
+//        AuthServiceInterface $authService,
+        IdentityServiceInterface $identityService,
+        private Security $security
     )
     {
         $this->entityService = $entityService;
         $this->valueService = $valueService;
-        $this->authService = $authService;
+//        $this->authService = $authService;
         $this->identityService = $identityService;
     }
 
@@ -47,7 +52,8 @@ class PersonService extends BaseService implements PersonServiceInterface
 
     public function findOneByAuth(string $entityName): DynamicEntity
     {
-        $identityId = $this->authService->getIdentity()->getId();
+        $identityId = $this->getUser()->getId();
+//        $identityId = $this->authService->getIdentity()->getId();
         try {
             $entity = $this->findOneById($entityName, $identityId);
         } catch (NotFoundException $e) {
@@ -72,7 +78,9 @@ class PersonService extends BaseService implements PersonServiceInterface
 
     public function updateMyData(string $entityName, DynamicForm $form): void
     {
-        $identityId = $this->authService->getIdentity()->getId();
+
+        $identityId = $this->getUser()->getId();
+//        $identityId = $this->authService->getIdentity()->getId();
         $this->updateById($entityName, $form, $identityId);
     }
 

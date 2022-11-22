@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Messenger\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnBundle\Messenger\Domain\Entities\ChatEntity;
 use ZnBundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
@@ -16,6 +17,7 @@ use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Service\Base\BaseCrudService;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use ZnUser\Authentication\Domain\Traits\GetUserTrait;
 
 /**
  * @property ChatRepositoryInterface | GetEntityClassInterface $repository
@@ -24,22 +26,28 @@ class ChatService extends BaseCrudService implements ChatServiceInterface
 {
 
     //use UserAwareTrait;
+    use GetUserTrait;
 
     private $memberRepository;
-    private $authService;
 
-    public function __construct(AuthServiceInterface $authService, ChatRepositoryInterface $repository, MemberRepositoryInterface $memberRepository)
-    {
+//    private $authService;
+
+    public function __construct(
+//        AuthServiceInterface $authService,
+        ChatRepositoryInterface $repository,
+        MemberRepositoryInterface $memberRepository,
+        private Security $security
+    ) {
         $this->setRepository($repository);
         // todo: заменить на Security
-        $this->authService = $authService;
+//        $this->authService = $authService;
         $this->memberRepository = $memberRepository;
     }
 
     private function allSelfChatIds(): array
     {
         /** @var User $userEntity */
-        $userEntity = $this->authService->getIdentity();
+        $userEntity = $this->getUser();
         $memberQuery = Query::forge();
         $memberQuery->where('user_id', $userEntity->getId());
         $memberCollection = $this->memberRepository->findAll($memberQuery);
@@ -52,7 +60,7 @@ class ChatService extends BaseCrudService implements ChatServiceInterface
         /** @var ChatEntity[] $collection */
         $collection = parent::findAll($query);
         foreach ($collection as $entity) {
-            $entity->setAuthUserId($this->authService->getIdentity()->getId());
+            $entity->setAuthUserId($this->getUser()->getId());
         }
         return $collection;
     }
