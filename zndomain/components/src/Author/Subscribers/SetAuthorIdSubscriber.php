@@ -3,7 +3,9 @@
 namespace ZnDomain\Components\Author\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Code\Helpers\PropertyHelper;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\EntityEvent;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
@@ -16,7 +18,8 @@ class SetAuthorIdSubscriber implements EventSubscriberInterface
     private $attribute;
 
     public function __construct(
-        AuthServiceInterface $authService
+        AuthServiceInterface $authService,
+        private Security $security
     )
     {
         $this->authService = $authService;
@@ -38,7 +41,14 @@ class SetAuthorIdSubscriber implements EventSubscriberInterface
     {
         /** @var EntityIdInterface $entity */
         $entity = $event->getEntity();
-        $identityId = $this->authService->getIdentity()->getId();
+
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        $identityId = $identityEntity->getId();
+
+//        $identityId = $this->authService->getIdentity()->getId();
         PropertyHelper::setValue($entity, $this->attribute, $identityId);
     }
 }

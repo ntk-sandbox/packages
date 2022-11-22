@@ -73,9 +73,11 @@ class WebFirewallSubscriber implements EventSubscriberInterface
 
     public function onKernelRequest(RequestEvent $event)
     {
+
         $request = $event->getRequest();
         $token = new NullToken();
         $identityArray = $this->session->get('user.identity');
+
         if (!$identityArray) {
             $identityIdCookie = $event->getRequest()->cookies->get(WebCookieEnum::IDENTITY_ID);
             if ($identityIdCookie) {
@@ -90,6 +92,9 @@ class WebFirewallSubscriber implements EventSubscriberInterface
                     $this->session->set('user.identity', EntityHelper::toArray($identity));
                 } catch (\DomainException $e) {}
             }
+        } else {
+            $identity = $this->identityService->findOneById($identityArray['id']);
+            $token = new TestBrowserToken([], $identity);
         }
         $this->security->setToken($token);
     }

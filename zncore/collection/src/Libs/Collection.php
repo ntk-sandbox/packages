@@ -34,6 +34,5 @@ class Collection extends \Doctrine\Common\Collections\ArrayCollection implements
         $iterator = $this->getIterator();
         $iterator->uasort($sorCallback);
         return new static(iterator_to_array($iterator));
-//        dd($sorted);
     }
 }

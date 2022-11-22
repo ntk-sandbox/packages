@@ -2,7 +2,10 @@
 
 namespace ZnUser\Rbac\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Collection\Interfaces\Enumerable;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
+use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Service\Base\BaseService;
@@ -28,7 +31,8 @@ class MyAssignmentService extends BaseService implements MyAssignmentServiceInte
         EntityManagerInterface $em,
         AuthServiceInterface $authService,
         AssignmentServiceInterface $assignmentService, 
-        ManagerServiceInterface $managerService
+        ManagerServiceInterface $managerService,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
@@ -42,9 +46,18 @@ class MyAssignmentService extends BaseService implements MyAssignmentServiceInte
         return AssignmentEntity::class;
     }
 
+    private function getUser(): ?IdentityEntityInterface {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
+    }
+
     public function findAll(): Enumerable
     {
-        $identityId = $this->authService->getIdentity()->getId();
+        $identityId = $this->getUser()->getId();
+//        $identityId = $this->authService->getIdentity()->getId();
         $query = new Query();
         $query->with(['item']);
         return $this->assignmentService->allByIdentityId($identityId, $query);
@@ -52,13 +65,16 @@ class MyAssignmentService extends BaseService implements MyAssignmentServiceInte
 
     public function allNames(): array
     {
-        $identityId = $this->authService->getIdentity()->getId();
+        $identityId = $this->getUser()->getId();
+//        $identityId = $this->authService->getIdentity()->getId();
         return $this->assignmentService->getRolesByIdentityId($identityId);
     }
 
     public function allPermissions(): array
     {
-        $identityId = $this->authService->getIdentity()->getId();
+
+        $identityId = $this->getUser()->getId();
+//        $identityId = $this->authService->getIdentity()->getId();
         $roles = $this->assignmentService->getRolesByIdentityId($identityId);
         return $this->managerService->allNestedItemsByRoleNames($roles);
     }

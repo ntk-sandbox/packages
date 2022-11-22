@@ -2,6 +2,8 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnUser\Notify\Domain\Entities\ActivityEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\ActivityServiceInterface;
@@ -16,7 +18,7 @@ class ActivityService extends BaseCrudService implements ActivityServiceInterfac
 
     private $authService;
 
-    public function __construct(ActivityRepositoryInterface $repository, AuthServiceInterface $authService)
+    public function __construct(ActivityRepositoryInterface $repository, AuthServiceInterface $authService, private Security $security)
     {
         $this->setRepository($repository);
         $this->authService = $authService;
@@ -37,7 +39,13 @@ class ActivityService extends BaseCrudService implements ActivityServiceInterfac
         $entity->setEntityId($entityId);
         $entity->setAction($action);
         $entity->setAttributes(json_encode($attributes));
-        $entity->setUserId($this->authService->getIdentity()->getId());
+
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+
+        $entity->setUserId($identityEntity->getId());
         try {
             $this->getRepository()->create($entity);
         } catch (UnprocessibleEntityException $e) {

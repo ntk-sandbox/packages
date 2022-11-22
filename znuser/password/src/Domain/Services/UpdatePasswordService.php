@@ -2,6 +2,8 @@
 
 namespace ZnUser\Password\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnUser\Password\Domain\Forms\UpdatePasswordForm;
 use ZnUser\Password\Domain\Interfaces\Services\PasswordServiceInterface;
 use ZnUser\Password\Domain\Interfaces\Services\UpdatePasswordServiceInterface;
@@ -25,7 +27,8 @@ class UpdatePasswordService implements UpdatePasswordServiceInterface
         CredentialRepositoryInterface $credentialRepository,
         PasswordHasherInterface $passwordHasher,
         AuthServiceInterface $authService,
-        PasswordServiceInterface $passwordService
+        PasswordServiceInterface $passwordService,
+        private Security $security
     )
     {
         $this->credentialRepository = $credentialRepository;
@@ -34,11 +37,20 @@ class UpdatePasswordService implements UpdatePasswordServiceInterface
         $this->passwordService = $passwordService;
     }
 
+    private function getUser(): ?IdentityEntityInterface {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
+    }
+
     public function update(UpdatePasswordForm $updatePasswordForm)
     {
         ValidationHelper::validateEntity($updatePasswordForm);
         $this->checkCurrentPassword($updatePasswordForm->getCurrentPassword());
-        $identity = $this->authService->getIdentity();
+        $identity = $this->getUser();
+//        $identity = $this->authService->getIdentity();
         $this->passwordService->setPassword($updatePasswordForm->getNewPassword(), $identity->getId());
     }
 
@@ -50,7 +62,8 @@ class UpdatePasswordService implements UpdatePasswordServiceInterface
      */
     private function checkCurrentPassword(string $currentPassword)
     {
-        $identity = $this->authService->getIdentity();
+        $identity = $this->getUser();
+//        $identity = $this->authService->getIdentity();
         $all = $this->credentialRepository->allByIdentityId($identity->getId(), ['login', 'email']);
         $entity = $all->first();
         $isValidCurrentPassword = $this->passwordHasher->verify($entity->getValidation(), $currentPassword);

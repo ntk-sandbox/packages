@@ -2,8 +2,11 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
+use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnDomain\Query\Entities\Query;
@@ -21,7 +24,7 @@ class SettingService /*extends BaseCrudService*/
 
     private $authService;
 
-    public function __construct(EntityManagerInterface $em, SettingRepositoryInterface $repository, AuthServiceInterface $authService)
+    public function __construct(EntityManagerInterface $em, SettingRepositoryInterface $repository, AuthServiceInterface $authService, private Security $security)
     {
         $this->setEntityManager($em);
 //        $this->repository = $repository;
@@ -33,10 +36,18 @@ class SettingService /*extends BaseCrudService*/
         return SettingEntity::class;
     }
 
+    private function getUser(): ?IdentityEntityInterface {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
+    }
+
     protected function forgeQuery(Query $query = null): Query
     {
         $query = parent::forgeQuery($query);
-        $userId = $this->authService->getIdentity()->getId();
+        $userId = $this->getUser()->getId();
         $query->whereNew(new Where('user_id', $userId));
         return $query;
     }
@@ -70,15 +81,15 @@ class SettingService /*extends BaseCrudService*/
 
     public function getMySettings(): array
     {
-
-        $userId = $this->authService->getIdentity()->getId();
-
+        $userId = $this->getUser()->getId();
+//        $userId = $this->authService->getIdentity()->getId();
         return $this->getSettingsByUserId($userId);
     }
 
     public function saveMySettings(array $data)
     {
-        $userId = $this->authService->getIdentity()->getId();
+        $userId = $this->getUser()->getId();
+//        $userId = $this->authService->getIdentity()->getId();
         foreach ($data as $typeId => $typeData) {
             foreach ($typeData as $contactTypeId => $value) {
                 try {

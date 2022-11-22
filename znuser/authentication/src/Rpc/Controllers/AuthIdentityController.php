@@ -2,7 +2,9 @@
 
 namespace ZnUser\Authentication\Rpc\Controllers;
 
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Code\Helpers\PropertyHelper;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
 use ZnFramework\Rpc\Rpc\Base\BaseRpcController;
@@ -13,7 +15,7 @@ use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 class AuthIdentityController extends BaseRpcController
 {
 
-    public function __construct(AuthServiceInterface $authService)
+    public function __construct(AuthServiceInterface $authService, private Security $security)
     {
         $this->service = $authService;
     }
@@ -36,10 +38,16 @@ class AuthIdentityController extends BaseRpcController
 //        $form = new AuthForm();
 //        PropertyHelper::setAttributes($form, $requestEntity->getParams());
 //        /** @var TokenValueEntity $tokenEntity */
-        $tokenEntity = $this->service->getIdentity();
+//        $tokenEntity = $this->service->getIdentity();
+
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+
 //        $result = [];
 //        $result['token'] = $tokenEntity->getTokenString();
-        $result = $tokenEntity;
-        return $this->serializeResult($result);
+//        $result = $tokenEntity;
+        return $this->serializeResult($identityEntity);
     }
 }

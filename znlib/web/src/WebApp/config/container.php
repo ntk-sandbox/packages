@@ -17,7 +17,7 @@ return [
         ControllerResolverInterface::class => ControllerResolver::class,
         ArgumentResolverInterface::class => ArgumentResolver::class,
         UrlGeneratorInterface::class => UrlGenerator::class,
-        TokenStorageInterface::class => SessionTokenStorage::class,
+//        TokenStorageInterface::class => SessionTokenStorage::class,
         /*TokenStorageInterface::class => function (ContainerInterface $container) {
 //            $session = $container->get(SessionInterface::class);
             $requestStack = $container->get(RequestStack::class);

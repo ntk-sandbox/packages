@@ -2,6 +2,9 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
+use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
@@ -24,7 +27,8 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
     public function __construct(
         EntityManagerInterface $em,
 //        HistoryRepositoryInterface $repository,
-        AuthServiceInterface $authService
+        AuthServiceInterface $authService,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
@@ -34,9 +38,18 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
         $this->authService = $authService;
     }
 
+    private function getUser(): ?IdentityEntityInterface {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
+    }
+
     public function clearMyMessages()
     {
-        $myIdentity = $this->authService->getIdentity();
+        $myIdentity = $this->getUser();
+//        $myIdentity = $this->authService->getIdentity();
         $this->getRepository()->deleteByCondition(['recipient_id' => $myIdentity->getId()]);
     }
 
@@ -48,7 +61,8 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
 
     public function seenById(int $id)
     {
-        $myIdentity = $this->authService->getIdentity();
+        $myIdentity = $this->getUser();
+//        $myIdentity = $this->authService->getIdentity();
         $query = new Query();
         $query->whereNew(new Where('recipient_id', $myIdentity->getId()));
         $query->whereNew(new Where('status_id', NotifyStatusEnum::NEW));
@@ -66,7 +80,8 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
 
     public function readAll()
     {
-        $myIdentity = $this->authService->getIdentity();
+        $myIdentity = $this->getUser();
+//        $myIdentity = $this->authService->getIdentity();
         $query = new Query();
         $query->whereNew(new Where('recipient_id', $myIdentity->getId()));
         $query->whereNew(new Where('status_id', NotifyStatusEnum::NEW));
@@ -78,7 +93,8 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
     protected function forgeQuery(Query $query = null): Query
     {
         $query = parent::forgeQuery($query);
-        $myIdentity = $this->authService->getIdentity();
+        $myIdentity = $this->getUser();
+//        $myIdentity = $this->authService->getIdentity();
         $query->whereNew(new Where('recipient_id', $myIdentity->getId()));
         return $query;
     }

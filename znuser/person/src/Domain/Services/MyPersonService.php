@@ -2,7 +2,10 @@
 
 namespace ZnUser\Person\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Code\Helpers\PropertyHelper;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
+use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\Query\Entities\Query;
 use ZnDomain\Service\Base\BaseService;
@@ -23,7 +26,8 @@ class MyPersonService extends BaseService implements MyPersonServiceInterface
         EntityManagerInterface $em,
         AuthServiceInterface $authService,
         PersonRepositoryInterface $personRepository,
-        InheritanceRepositoryInterface $inheritanceRepository
+        InheritanceRepositoryInterface $inheritanceRepository,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
@@ -32,9 +36,18 @@ class MyPersonService extends BaseService implements MyPersonServiceInterface
         $this->inheritanceRepository = $inheritanceRepository;
     }
 
+    private function getUser(): ?IdentityEntityInterface {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
+    }
+
     public function findOne(Query $query = null): PersonEntity
     {
-        $id = $this->authService->getIdentity()->getPersonId();
+        $id = $this->getUser()->getPersonId();
+//        $id = $this->authService->getIdentity()->getPersonId();
         return $this->personRepository->findOneById($id, $query);
     }
 

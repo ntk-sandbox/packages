@@ -3,6 +3,8 @@
 namespace ZnDomain\Components\Author\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\QueryEvent;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
@@ -14,13 +16,17 @@ class AuthorQuerySubscriber implements EventSubscriberInterface
 
     use EntityManagerAwareTrait;
 
-    private $authService;
+//    private $authService;
     private $attributeName;
 
-    public function __construct(EntityManagerInterface $entityManager, AuthServiceInterface $authService)
+    public function __construct(
+        EntityManagerInterface $entityManager,
+//        AuthServiceInterface $authService,
+        private Security $security
+    )
     {
         $this->setEntityManager($entityManager);
-        $this->authService = $authService;
+//        $this->authService = $authService;
     }
 
     public function setAttributeName(string $attributeName): void
@@ -38,7 +44,14 @@ class AuthorQuerySubscriber implements EventSubscriberInterface
     public function onBeforeForgeQuery(QueryEvent $event)
     {
         $query = $event->getQuery();
-        $identityId = $this->authService->getIdentity()->getId();
+
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        $identityId = $identityEntity->getId();
+//        $identityId = $this->security->getToken()->getUser()->getId();
+
         $query->where($this->attributeName, $identityId);
     }
 }

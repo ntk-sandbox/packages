@@ -2,6 +2,9 @@
 
 namespace ZnUser\Password\Domain\Services;
 
+use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
+use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use ZnUser\Password\Domain\Entities\PasswordHistoryEntity;
 use ZnUser\Password\Domain\Interfaces\Repositories\PasswordHistoryRepositoryInterface;
 use ZnUser\Password\Domain\Interfaces\Services\PasswordHistoryServiceInterface;
@@ -21,7 +24,8 @@ class PasswordHistoryService extends BaseCrudService implements PasswordHistoryS
         EntityManagerInterface $em,
         PasswordHistoryRepositoryInterface $passwordHistoryRepository,
         AuthServiceInterface $authService,
-        PasswordHasherInterface $passwordHasher
+        PasswordHasherInterface $passwordHasher,
+        private Security $security
     )
     {
         $this->setEntityManager($em);
@@ -35,10 +39,19 @@ class PasswordHistoryService extends BaseCrudService implements PasswordHistoryS
         return PasswordHistoryEntity::class;
     }
 
+    private function getUser(): ?IdentityEntityInterface {
+        $identityEntity = $this->security->getUser();
+        if($identityEntity == null) {
+            throw new UnauthorizedException();
+        }
+        return $identityEntity;
+    }
+
     public function add(string $password, int $identityId = null)
     {
         if ($identityId == null) {
-            $identity = $this->authService->getIdentity();
+            $identity = $this->getUser();
+//            $identity = $this->authService->getIdentity();
             $identityId = $identity->getId();
         }
         $passwordHash = $this->passwordHasher->hash($password);
@@ -52,7 +65,8 @@ class PasswordHistoryService extends BaseCrudService implements PasswordHistoryS
     public function isHas(string $password, int $identityId = null): bool
     {
         if ($identityId == null) {
-            $identity = $this->authService->getIdentity();
+            $identity = $this->getUser();
+//            $identity = $this->authService->getIdentity();
             $identityId = $identity->getId();
         }
         $all = $this->passwordHistoryRepository->allByIdentityId($identityId);

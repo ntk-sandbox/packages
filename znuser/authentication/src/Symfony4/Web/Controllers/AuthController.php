@@ -11,10 +11,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
 use ZnLib\Web\Controller\Base\BaseWebController;
@@ -44,7 +46,8 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
         ToastrServiceInterface $toastrService,
         AuthServiceInterface $authService,
         SessionInterface $session,
-        UrlGeneratorInterface $urlGenerator
+        UrlGeneratorInterface $urlGenerator,
+        private Security $security
     )
     {
         $this->setFormFactory($formFactory);
@@ -69,7 +72,8 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
 
     public function auth(Request $request): Response
     {
-        if (!$this->authService->isGuest()) {
+        $identityEntity = $this->security->getUser();
+        if ($identityEntity) {
             $this->toastrService->success('Вы уже авторизованы!');
             return $this->redirectToHome();
         }
@@ -79,13 +83,17 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
         if ($buildForm->isSubmitted() && $buildForm->isValid()) {
             try {
                 $this->authService->authByForm($form);
-                $identity = $this->authService->getIdentity();
+
+                $identityEntity = $this->security->getUser();
+                if($identityEntity == null) {
+                    throw new UnauthorizedException();
+                }
 
                 $response = new RedirectResponse('/', HttpStatusCodeEnum::MOVED_TEMPORARILY);
 
                 if($form->getRememberMe()) {
                     $cookieValue = new CookieValue($_ENV['CSRF_TOKEN_ID']);
-                    $hashedValue = $cookieValue->encode($identity->getId());
+                    $hashedValue = $cookieValue->encode($identityEntity->getId());
                     $cookie = new Cookie(WebCookieEnum::IDENTITY_ID, $hashedValue, new DateTime('+ 3650 day'));
                     $response->headers->setCookie($cookie);
                 }

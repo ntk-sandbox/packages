@@ -4,6 +4,8 @@ namespace ZnUser\Rbac\Domain\Services;
 
 use App\Organization\Domain\Enums\Rbac\OrganizationOrganizationPermissionEnum;
 use Casbin\ManagementEnforcer;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
+use Symfony\Component\Security\Core\Security;
 use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Contract\User\Exceptions\ForbiddenException;
@@ -17,23 +19,27 @@ class ManagerService implements ManagerServiceInterface
 
     /** @var ManagementEnforcer */
     private $enforcer;
-    private $authService;
+//    private $authService;
     private $assignmentService;
     private $managerRepository;
     private $defaultRoles = [
         SystemRoleEnum::GUEST,
     ];
+    private Security $security;
 
     public function __construct(
         ManagerRepositoryInterface $managerRepository,
-        AuthServiceInterface $authService,
-        AssignmentServiceInterface $assignmentService
+//        AuthServiceInterface $authService,
+        AssignmentServiceInterface $assignmentService,
+        Security $security,
+        private TokenStorageInterface $tokenStorage
     )
     {
         $this->managerRepository = $managerRepository;
         //$this->enforcer = $managerRepository->getEnforcer();
-        $this->authService = $authService;
+//        $this->authService = $authService;
         $this->assignmentService = $assignmentService;
+        $this->security = $security;
     }
 
     public function getDefaultRoles(): array
@@ -59,7 +65,13 @@ class ManagerService implements ManagerServiceInterface
     public function checkMyAccess(array $permissionNames): void
     {
         try {
-            $identityEntity = $this->authService->getIdentity();
+//            $identityEntity = $this->authService->getIdentity();
+            $identityEntity = $this->security->getUser();
+
+            if($identityEntity == null) {
+                throw new UnauthorizedException();
+            }
+
             $roleNames = $this->assignmentService->getRolesByIdentityId($identityEntity->getId());
             $this->checkAccess($roleNames, $permissionNames);
         } catch (UnauthorizedException $e) {

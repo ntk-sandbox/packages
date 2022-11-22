@@ -16,6 +16,7 @@ return [
         PasswordHasherInterface::class => NativePasswordHasher::class,
         Security::class => \ZnUser\Authentication\Symfony4\Components\Core\Security::class,
         TokenStorageInterface::class => TokenStorage::class,
+        'security.token_storage' => TokenStorageInterface::class,
         AuthorizationTokenGeneratorInterface::class => SafeUriAuthorizationTokenGenerator::class,
 
         'ZnUser\Authentication\Domain\Interfaces\Services\TokenServiceInterface' => 'ZnUser\Authentication\Domain\Services\BearerTokenService',

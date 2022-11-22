@@ -2,6 +2,8 @@
 
 namespace ZnLib\Web\TwBootstrap\Widgets\UserNavbarMenu;
 
+use Symfony\Component\Security\Core\Security;
+use ZnCore\Contract\User\Exceptions\UnauthorizedException;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnLib\Web\Widget\Base\BaseWidget2;
 use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
@@ -17,7 +19,11 @@ class UserNavbarMenuWidget extends BaseWidget2
     private $authService;
     private $myAssignmentService;
 
-    public function __construct(AuthServiceInterface $authService, MyAssignmentServiceInterface $myAssignmentService)
+    public function __construct(
+        AuthServiceInterface $authService,
+        MyAssignmentServiceInterface $myAssignmentService,
+        private Security $security
+    )
     {
         $this->authService = $authService;
         $this->myAssignmentService = $myAssignmentService;
@@ -25,11 +31,9 @@ class UserNavbarMenuWidget extends BaseWidget2
 
     public function run(): string
     {
-        if ($this->authService->isGuest()) {
-            return $this->render('guest', [
-                'loginUrl' => $this->loginUrl,
-            ]);
-        } else {
+        $identityEntity = $this->security->getUser();
+
+        if ($identityEntity) {
             $assignmentCollection = $this->myAssignmentService->findAll();
             $userMenuHtml = $this->userMenuHtml;
 
@@ -39,11 +43,15 @@ class UserNavbarMenuWidget extends BaseWidget2
                 $userMenuHtml = '<h6 class="dropdown-header">' . $roleEntity->getTitle() . '</h6>' . $this->userMenuHtml;
             }
 
-            $identity = $this->authService->getIdentity();
+//            $identityEntity = $this->authService->getIdentity();
             return $this->render('user', [
-                'identity' => $identity,
+                'identity' => $identityEntity,
                 //'roleEntity' => $assignmentCollection->first()->getItem(),
                 'userMenuHtml' => $userMenuHtml,
+            ]);
+        } else {
+            return $this->render('guest', [
+                'loginUrl' => $this->loginUrl,
             ]);
         }
     }

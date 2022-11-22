@@ -4,6 +4,7 @@ namespace ZnUser\Authentication\Domain\Services;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\NullToken;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Constraints\Email;
@@ -58,7 +59,8 @@ class AuthService implements AuthServiceInterface
         TokenServiceInterface $tokenService,
         EntityManagerInterface $em,
         Security $security,
-        LoggerInterface $logger
+        LoggerInterface $logger,
+        private TokenStorageInterface $tokenStorage
     )
     {
         $this->identityRepository = $identityRepository;
@@ -75,6 +77,7 @@ class AuthService implements AuthServiceInterface
     {
         $token = new NullToken();
         $this->security->setToken($token);
+        $this->tokenStorage->setToken($token);
     }
 
     public function setIdentity(IdentityEntityInterface $identityEntity)
@@ -85,6 +88,7 @@ class AuthService implements AuthServiceInterface
 //        $token = new AnonymousToken([], $identityEntity);
         $token = new UsernamePasswordToken($identityEntity, 'main', $identityEntity->getRoles());
         $this->security->setToken($token);
+        $this->tokenStorage->setToken($token);
 
         //$event = new IdentityEvent($identityEntity);
         //$this->getEventDispatcher()->dispatch($event, AuthEventEnum::BEFORE_SET_IDENTITY);
