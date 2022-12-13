@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "method": "...",
+  "params": {
+    "body": {
+      "value": "support@example.com",
+      "attributeId": 1
+    }
+  }
+}

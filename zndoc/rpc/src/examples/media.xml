@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<mediafiles>
+    <media media-type="image">
+        <media-reference mime-type="image/jpeg"/>
+        <media-object encoding="base64"><![CDATA[/9j/4AAQ[...snip...]P4Vm9zOR//Z=]]></media-object>
+        <media.caption>What up</media.caption>
+    </media>
+</mediafiles>

@@ -1,0 +1,60 @@
+description: "Хранилище. Файлы"
+get:
+    description: "Получить коллекцию"
+    is: !include ../../../../../../zndoc/rest-api/src/is/all.raml
+    responses:
+        200:
+            body:
+                application/json:
+                    example: !include example/all-response-body.json
+post:
+    description: "Загрузить файлы на сервер"
+    is: !include ../../../base/is/create200.raml
+    responses:
+        200:
+            body:
+                application/json:
+                    example: !include example/all-response-body.json
+    body:
+        multipart/form-data:
+            properties:
+                service_id:
+                    description: ID сервиса
+                    required: true
+                    type: integer
+                file1:
+                    description: Файл для загрузки 1
+                    required: true
+                    type: file
+                file2:
+                    description: Файл для загрузки 2
+                    required: false
+                    type: file
+                file3:
+                    description: Файл для загрузки 3
+                    required: false
+                    type: file
+/{id}:
+    uriParameters:
+        id:
+            description: "ID сущности"
+            type: string
+    get:
+        description: "Получить сущность"
+        is: !include ../../../../../../zndoc/rest-api/src/is/one.raml
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: !include example/one-response-body.json
+    put:
+        securedBy: [Auth]
+        description: "Изменить сущность"
+        is: !include ../../../../../../zndoc/rest-api/src/is/update.raml
+        body:
+            application/json:
+                example: !include example/update-request-body.json
+    delete:
+        securedBy: [Auth]
+        description: "Удалить сущность"
+        is: !include ../../../../../../zndoc/rest-api/src/is/delete.raml

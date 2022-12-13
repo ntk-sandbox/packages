@@ -1,0 +1,126 @@
+{
+	"body": [
+		{
+			"id": 1,
+			"type": 1,
+			"name": "rGuest",
+			"title": "Гость системы",
+			"description": null
+		},
+		{
+			"id": 2,
+			"type": 1,
+			"name": "rUser",
+			"title": "Идентифицированный пользователь",
+			"description": null
+		},
+		{
+			"id": 3,
+			"type": 1,
+			"name": "rDeveloper",
+			"title": "Разработчик",
+			"description": null
+		},
+		{
+			"id": 4,
+			"type": 1,
+			"name": "rAdministrator",
+			"title": "Администратор системы",
+			"description": null
+		},
+		{
+			"id": 5,
+			"type": 1,
+			"name": "rRoot",
+			"title": "Корневой администратор системы",
+			"description": null
+		},
+		{
+			"id": 6,
+			"type": 1,
+			"name": "rMservisUser",
+			"title": "Внутренний пользователь (Mservis)",
+			"description": null
+		},
+		{
+			"id": 7,
+			"type": 1,
+			"name": "rMservisAccountant",
+			"title": "Бухгалтер (Mservis)",
+			"description": null
+		},
+		{
+			"id": 8,
+			"type": 1,
+			"name": "rMservisSupport",
+			"title": "Суппорт (Mservis)",
+			"description": null
+		},
+		{
+			"id": 9,
+			"type": 1,
+			"name": "rMservisMerchant",
+			"title": "Мерчант (Mservis)",
+			"description": null
+		},
+		{
+			"id": 10,
+			"type": 1,
+			"name": "rMservisAdministrator",
+			"title": "Администратор (Mservis)",
+			"description": null
+		},
+		{
+			"id": 11,
+			"type": 1,
+			"name": "rMservisRoot",
+			"title": "Супер Администратор (Mservis)",
+			"description": null
+		},
+		{
+			"id": 12,
+			"type": 1,
+			"name": "rMoneyIssuer",
+			"title": "Эмитент денежных средств",
+			"description": null
+		},
+		{
+			"id": 13,
+			"type": 1,
+			"name": "rCompanyClient",
+			"title": "Клиент",
+			"description": null
+		},
+		{
+			"id": 14,
+			"type": 1,
+			"name": "rCompanyWorker",
+			"title": "Работник",
+			"description": null
+		},
+		{
+			"id": 15,
+			"type": 1,
+			"name": "rCompanyOperator",
+			"title": "Оператор",
+			"description": null
+		},
+		{
+			"id": 16,
+			"type": 1,
+			"name": "rCompanyAccountant",
+			"title": "Бухгалтер",
+			"description": null
+		},
+		{
+			"id": 17,
+			"type": 1,
+			"name": "rCompanyDirector",
+			"title": "Директор",
+			"description": null
+		}
+	],
+	"meta": {
+		"totalCount": 17
+	}
+}

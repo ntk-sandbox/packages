@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+use ZnLib\Init\Domain\Libs\InitConsoleApp;
+
+\ZnCore\Code\Helpers\DeprecateHelper::hardThrow('use vendor/ntk-sandbox/packages/znframework/console/bin');
+
+$_ENV['CONSOLE_APP_CLASS'] = InitConsoleApp::class;
+require __DIR__ . '/../../../../packages/znframework/console/bin/zn';

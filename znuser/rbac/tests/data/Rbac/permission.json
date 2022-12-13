@@ -1,0 +1,1407 @@
+{
+	"body": [
+		{
+			"id": 18,
+			"type": 2,
+			"name": "oAuthenticationGetTokenByPassword",
+			"title": "Аутентификация. Получение токена по паролю",
+			"description": null
+		},
+		{
+			"id": 19,
+			"type": 2,
+			"name": "oAuthenticationWebLogin",
+			"title": "Аутентификация. Вход в аккаунт",
+			"description": null
+		},
+		{
+			"id": 20,
+			"type": 2,
+			"name": "oAuthenticationWebLogout",
+			"title": "Аутентификация. Выход из аккаунта",
+			"description": null
+		},
+		{
+			"id": 21,
+			"type": 2,
+			"name": "oUserImitationImitation",
+			"title": "Пользователь. Имитация аутентификации",
+			"description": null
+		},
+		{
+			"id": 22,
+			"type": 2,
+			"name": "oUserIdentityAll",
+			"title": "Пользователи. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 23,
+			"type": 2,
+			"name": "oUserIdentityOne",
+			"title": "Пользователи. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 24,
+			"type": 2,
+			"name": "oUserIdentityCreate",
+			"title": "Пользователи. Создание",
+			"description": null
+		},
+		{
+			"id": 25,
+			"type": 2,
+			"name": "oUserIdentityUpdate",
+			"title": "Пользователи. Редактирование",
+			"description": null
+		},
+		{
+			"id": 26,
+			"type": 2,
+			"name": "oUserIdentityDelete",
+			"title": "Пользователи. Удаление",
+			"description": null
+		},
+		{
+			"id": 27,
+			"type": 2,
+			"name": "oRbacItemCrud",
+			"title": "RBAC. Роли и полномочия. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 28,
+			"type": 2,
+			"name": "oRbacItemAll",
+			"title": "RBAC. Роли и полномочия. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 29,
+			"type": 2,
+			"name": "oRbacItemOne",
+			"title": "RBAC. Роли и полномочия. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 30,
+			"type": 2,
+			"name": "oRbacItemCreate",
+			"title": "RBAC. Роли и полномочия. Создание",
+			"description": null
+		},
+		{
+			"id": 31,
+			"type": 2,
+			"name": "oRbacItemUpdate",
+			"title": "RBAC. Роли и полномочия. Редактирование",
+			"description": null
+		},
+		{
+			"id": 32,
+			"type": 2,
+			"name": "oRbacItemDelete",
+			"title": "RBAC. Роли и полномочия. Удаление",
+			"description": null
+		},
+		{
+			"id": 33,
+			"type": 2,
+			"name": "oRbacAssignmentAttach",
+			"title": "RBAC назначения полномочий. Прикрепить полномочие",
+			"description": null
+		},
+		{
+			"id": 34,
+			"type": 2,
+			"name": "oRbacAssignmentDetach",
+			"title": "RBAC назначения полномочий. Открепить полномочие",
+			"description": null
+		},
+		{
+			"id": 35,
+			"type": 2,
+			"name": "oRbacAssignmentAllRoles",
+			"title": "RBAC назначения полномочий. Получить все роли пользователя",
+			"description": null
+		},
+		{
+			"id": 36,
+			"type": 2,
+			"name": "oRbacMyAssignmentAll",
+			"title": "Мои роли. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 37,
+			"type": 2,
+			"name": "oAdminOnly",
+			"title": "Доступ только для админа",
+			"description": null
+		},
+		{
+			"id": 38,
+			"type": 2,
+			"name": "oAdminOnlyAll",
+			"title": "Доступ только для админа. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 39,
+			"type": 2,
+			"name": "oAdminOnlyOne",
+			"title": "Доступ только для админа. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 40,
+			"type": 2,
+			"name": "oAdminOnlyCreate",
+			"title": "Доступ только для админа. Создание",
+			"description": null
+		},
+		{
+			"id": 41,
+			"type": 2,
+			"name": "oAdminOnlyUpdate",
+			"title": "Доступ только для админа. Редактирование",
+			"description": null
+		},
+		{
+			"id": 42,
+			"type": 2,
+			"name": "oAdminOnlyDelete",
+			"title": "Доступ только для админа. Удаление",
+			"description": null
+		},
+		{
+			"id": 43,
+			"type": 2,
+			"name": "oMservisTransactionPayInCrud",
+			"title": "MservisTransactionPayIn. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 44,
+			"type": 2,
+			"name": "oMservisTransactionPayInAll",
+			"title": "MservisTransactionPayIn. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 45,
+			"type": 2,
+			"name": "oMservisTransactionPayInOne",
+			"title": "MservisTransactionPayIn. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 46,
+			"type": 2,
+			"name": "oMservisTransactionPayInCreate",
+			"title": "MservisTransactionPayIn. Создание",
+			"description": null
+		},
+		{
+			"id": 47,
+			"type": 2,
+			"name": "oMservisTransactionPayInUpdate",
+			"title": "MservisTransactionPayIn. Редактирование",
+			"description": null
+		},
+		{
+			"id": 48,
+			"type": 2,
+			"name": "oMservisTransactionPayInDelete",
+			"title": "MservisTransactionPayIn. Удаление",
+			"description": null
+		},
+		{
+			"id": 49,
+			"type": 2,
+			"name": "oMservisTransactionPayInRestore",
+			"title": "MservisTransactionPayIn. Восстановление",
+			"description": null
+		},
+		{
+			"id": 50,
+			"type": 2,
+			"name": "oMservisTransactionPayOutCrud",
+			"title": "MservisTransactionPayOut. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 51,
+			"type": 2,
+			"name": "oMservisTransactionPayOutAll",
+			"title": "MservisTransactionPayOut. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 52,
+			"type": 2,
+			"name": "oMservisTransactionPayOutOne",
+			"title": "MservisTransactionPayOut. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 53,
+			"type": 2,
+			"name": "oMservisTransactionPayOutCreate",
+			"title": "MservisTransactionPayOut. Создание",
+			"description": null
+		},
+		{
+			"id": 54,
+			"type": 2,
+			"name": "oMservisTransactionPayOutUpdate",
+			"title": "MservisTransactionPayOut. Редактирование",
+			"description": null
+		},
+		{
+			"id": 55,
+			"type": 2,
+			"name": "oMservisTransactionPayOutDelete",
+			"title": "MservisTransactionPayOut. Удаление",
+			"description": null
+		},
+		{
+			"id": 56,
+			"type": 2,
+			"name": "oMservisTransactionPayOutRestore",
+			"title": "MservisTransactionPayOut. Восстановление",
+			"description": null
+		},
+		{
+			"id": 57,
+			"type": 2,
+			"name": "oLanguageCurrentSwitch",
+			"title": "Текущий язык. Переключить",
+			"description": null
+		},
+		{
+			"id": 58,
+			"type": 2,
+			"name": "oGeoCountryAll",
+			"title": "Страна. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 59,
+			"type": 2,
+			"name": "oGeoCountryOne",
+			"title": "Страна. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 60,
+			"type": 2,
+			"name": "oGeoCountryCreate",
+			"title": "Страна. Создание",
+			"description": null
+		},
+		{
+			"id": 61,
+			"type": 2,
+			"name": "oGeoCountryUpdate",
+			"title": "Страна. Редактирование",
+			"description": null
+		},
+		{
+			"id": 62,
+			"type": 2,
+			"name": "oGeoCountryDelete",
+			"title": "Страна. Удаление",
+			"description": null
+		},
+		{
+			"id": 63,
+			"type": 2,
+			"name": "oGeoCurrencyAll",
+			"title": "Валюта. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 64,
+			"type": 2,
+			"name": "oGeoCurrencyOne",
+			"title": "Валюта. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 65,
+			"type": 2,
+			"name": "oGeoCurrencyCreate",
+			"title": "Валюта. Создание",
+			"description": null
+		},
+		{
+			"id": 66,
+			"type": 2,
+			"name": "oGeoCurrencyUpdate",
+			"title": "Валюта. Редактирование",
+			"description": null
+		},
+		{
+			"id": 67,
+			"type": 2,
+			"name": "oGeoCurrencyDelete",
+			"title": "Валюта. Удаление",
+			"description": null
+		},
+		{
+			"id": 68,
+			"type": 2,
+			"name": "oGeoLocalityAll",
+			"title": "Населенный пункт. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 69,
+			"type": 2,
+			"name": "oGeoLocalityOne",
+			"title": "Населенный пункт. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 70,
+			"type": 2,
+			"name": "oGeoLocalityCreate",
+			"title": "Населенный пункт. Создание",
+			"description": null
+		},
+		{
+			"id": 71,
+			"type": 2,
+			"name": "oGeoLocalityUpdate",
+			"title": "Населенный пункт. Редактирование",
+			"description": null
+		},
+		{
+			"id": 72,
+			"type": 2,
+			"name": "oGeoLocalityDelete",
+			"title": "Населенный пункт. Удаление",
+			"description": null
+		},
+		{
+			"id": 73,
+			"type": 2,
+			"name": "oGeoRegionAll",
+			"title": "Регион. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 74,
+			"type": 2,
+			"name": "oGeoRegionOne",
+			"title": "Регион. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 75,
+			"type": 2,
+			"name": "oGeoRegionCreate",
+			"title": "Регион. Создание",
+			"description": null
+		},
+		{
+			"id": 76,
+			"type": 2,
+			"name": "oGeoRegionUpdate",
+			"title": "Регион. Редактирование",
+			"description": null
+		},
+		{
+			"id": 77,
+			"type": 2,
+			"name": "oGeoRegionDelete",
+			"title": "Регион. Удаление",
+			"description": null
+		},
+		{
+			"id": 78,
+			"type": 2,
+			"name": "oReferenceBookCrud",
+			"title": "Справочник. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 79,
+			"type": 2,
+			"name": "oReferenceBookAll",
+			"title": "Справочник. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 80,
+			"type": 2,
+			"name": "oReferenceBookOne",
+			"title": "Справочник. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 81,
+			"type": 2,
+			"name": "oReferenceBookCreate",
+			"title": "Справочник. Создание",
+			"description": null
+		},
+		{
+			"id": 82,
+			"type": 2,
+			"name": "oReferenceBookUpdate",
+			"title": "Справочник. Редактирование",
+			"description": null
+		},
+		{
+			"id": 83,
+			"type": 2,
+			"name": "oReferenceBookDelete",
+			"title": "Справочник. Удаление",
+			"description": null
+		},
+		{
+			"id": 84,
+			"type": 2,
+			"name": "oReferenceBookRestore",
+			"title": "Справочник. Восстановление",
+			"description": null
+		},
+		{
+			"id": 85,
+			"type": 2,
+			"name": "oReferenceItemCrud",
+			"title": "Значения справочника. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 86,
+			"type": 2,
+			"name": "oReferenceItemAll",
+			"title": "Значения справочника. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 87,
+			"type": 2,
+			"name": "oReferenceItemOne",
+			"title": "Значения справочника. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 88,
+			"type": 2,
+			"name": "oReferenceItemCreate",
+			"title": "Значения справочника. Создание",
+			"description": null
+		},
+		{
+			"id": 89,
+			"type": 2,
+			"name": "oReferenceItemUpdate",
+			"title": "Значения справочника. Редактирование",
+			"description": null
+		},
+		{
+			"id": 90,
+			"type": 2,
+			"name": "oReferenceItemDelete",
+			"title": "Значения справочника. Удаление",
+			"description": null
+		},
+		{
+			"id": 91,
+			"type": 2,
+			"name": "oReferenceItemRestore",
+			"title": "Значения справочника. Восстановление",
+			"description": null
+		},
+		{
+			"id": 92,
+			"type": 2,
+			"name": "oStorageFileCrud",
+			"title": "Файлы. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 93,
+			"type": 2,
+			"name": "oStorageFileAll",
+			"title": "Файлы. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 94,
+			"type": 2,
+			"name": "oStorageFileOne",
+			"title": "Файлы. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 95,
+			"type": 2,
+			"name": "oStorageFileCreate",
+			"title": "Файлы. Загрузка файла",
+			"description": null
+		},
+		{
+			"id": 96,
+			"type": 2,
+			"name": "oStorageFileUpdate",
+			"title": "Файлы. Редактирование",
+			"description": null
+		},
+		{
+			"id": 97,
+			"type": 2,
+			"name": "oStorageFileDelete",
+			"title": "Файлы. Удаление",
+			"description": null
+		},
+		{
+			"id": 98,
+			"type": 2,
+			"name": "oStorageFileRestore",
+			"title": "Файлы. Восстановление",
+			"description": null
+		},
+		{
+			"id": 99,
+			"type": 2,
+			"name": "oStorageMyFileCrud",
+			"title": "Мои файлы. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 100,
+			"type": 2,
+			"name": "oStorageMyFileAll",
+			"title": "Мои файлы. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 101,
+			"type": 2,
+			"name": "oStorageMyFileOne",
+			"title": "Мои файлы. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 102,
+			"type": 2,
+			"name": "oStorageMyFileCreate",
+			"title": "Мои файлы. Загрузка файла",
+			"description": null
+		},
+		{
+			"id": 103,
+			"type": 2,
+			"name": "oStorageMyFileUpdate",
+			"title": "Мои файлы. Редактирование",
+			"description": null
+		},
+		{
+			"id": 104,
+			"type": 2,
+			"name": "oStorageMyFileDelete",
+			"title": "Мои файлы. Удаление",
+			"description": null
+		},
+		{
+			"id": 105,
+			"type": 2,
+			"name": "oStorageMyFileRestore",
+			"title": "Мои файлы. Восстановление",
+			"description": null
+		},
+		{
+			"id": 106,
+			"type": 2,
+			"name": "oStorageServiceCrud",
+			"title": "Сервис файлохранилища. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 107,
+			"type": 2,
+			"name": "oStorageServiceAll",
+			"title": "Сервис файлохранилища. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 108,
+			"type": 2,
+			"name": "oStorageServiceOne",
+			"title": "Сервис файлохранилища. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 109,
+			"type": 2,
+			"name": "oStorageServiceCreate",
+			"title": "Сервис файлохранилища. Создание",
+			"description": null
+		},
+		{
+			"id": 110,
+			"type": 2,
+			"name": "oStorageServiceUpdate",
+			"title": "Сервис файлохранилища. Редактирование",
+			"description": null
+		},
+		{
+			"id": 111,
+			"type": 2,
+			"name": "oStorageServiceDelete",
+			"title": "Сервис файлохранилища. Удаление",
+			"description": null
+		},
+		{
+			"id": 112,
+			"type": 2,
+			"name": "oStorageServiceRestore",
+			"title": "Сервис файлохранилища. Восстановление",
+			"description": null
+		},
+		{
+			"id": 113,
+			"type": 2,
+			"name": "oRestorePasswordRequestActivationCode",
+			"title": "Восстановление пароля. Запроса кода активации",
+			"description": null
+		},
+		{
+			"id": 114,
+			"type": 2,
+			"name": "oRestorePasswordCreatePassword",
+			"title": "Восстановление пароля. Создание пароля",
+			"description": null
+		},
+		{
+			"id": 115,
+			"type": 2,
+			"name": "oUpdatePasswordUpdate",
+			"title": "Изменение пароля",
+			"description": null
+		},
+		{
+			"id": 116,
+			"type": 2,
+			"name": "oValidatePasswordValidate",
+			"title": "Валидация пароля",
+			"description": null
+		},
+		{
+			"id": 117,
+			"type": 2,
+			"name": "oRegistrationRequestActivationCode",
+			"title": "Запросить код активации",
+			"description": null
+		},
+		{
+			"id": 118,
+			"type": 2,
+			"name": "oRegistrationCreateAccount",
+			"title": "Создать аккаунт",
+			"description": null
+		},
+		{
+			"id": 119,
+			"type": 2,
+			"name": "oPersonMyPersonUpdate",
+			"title": "Моя персона. Изменение данных",
+			"description": null
+		},
+		{
+			"id": 120,
+			"type": 2,
+			"name": "oPersonMyPersonOne",
+			"title": "Моя персона. Чтение данных",
+			"description": null
+		},
+		{
+			"id": 121,
+			"type": 2,
+			"name": "oPersonMyContactAll",
+			"title": "Мои контакты. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 122,
+			"type": 2,
+			"name": "oPersonMyContactOne",
+			"title": "Мои контакты. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 123,
+			"type": 2,
+			"name": "oPersonMyContactCreate",
+			"title": "Мои контакты. Создание",
+			"description": null
+		},
+		{
+			"id": 124,
+			"type": 2,
+			"name": "oPersonMyContactUpdate",
+			"title": "Мои контакты. Редактирование",
+			"description": null
+		},
+		{
+			"id": 125,
+			"type": 2,
+			"name": "oPersonMyContactDelete",
+			"title": "Мои контакты. Удаление",
+			"description": null
+		},
+		{
+			"id": 126,
+			"type": 2,
+			"name": "oPersonContactAll",
+			"title": "Контакты. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 127,
+			"type": 2,
+			"name": "oPersonContactOne",
+			"title": "Контакты. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 128,
+			"type": 2,
+			"name": "oPersonContactCreate",
+			"title": "Контакты. Создание",
+			"description": null
+		},
+		{
+			"id": 129,
+			"type": 2,
+			"name": "oPersonContactUpdate",
+			"title": "Контакты. Редактирование",
+			"description": null
+		},
+		{
+			"id": 130,
+			"type": 2,
+			"name": "oPersonContactDelete",
+			"title": "Контакты. Удаление",
+			"description": null
+		},
+		{
+			"id": 131,
+			"type": 2,
+			"name": "oPersonMyChildAll",
+			"title": "Мои дети. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 132,
+			"type": 2,
+			"name": "oPersonMyChildOne",
+			"title": "Мои дети. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 133,
+			"type": 2,
+			"name": "oPersonMyChildCreate",
+			"title": "Мои дети. Создание",
+			"description": null
+		},
+		{
+			"id": 134,
+			"type": 2,
+			"name": "oPersonMyChildUpdate",
+			"title": "Мои дети. Редактирование",
+			"description": null
+		},
+		{
+			"id": 135,
+			"type": 2,
+			"name": "oPersonMyChildDelete",
+			"title": "Мои дети. Удаление",
+			"description": null
+		},
+		{
+			"id": 136,
+			"type": 2,
+			"name": "oPersonChildAll",
+			"title": "Дети. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 137,
+			"type": 2,
+			"name": "oPersonChildOne",
+			"title": "Дети. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 138,
+			"type": 2,
+			"name": "oPersonChildCreate",
+			"title": "Дети. Создание",
+			"description": null
+		},
+		{
+			"id": 139,
+			"type": 2,
+			"name": "oPersonChildUpdate",
+			"title": "Дети. Редактирование",
+			"description": null
+		},
+		{
+			"id": 140,
+			"type": 2,
+			"name": "oPersonChildDelete",
+			"title": "Дети. Удаление",
+			"description": null
+		},
+		{
+			"id": 141,
+			"type": 2,
+			"name": "oPersonPersonChildAll",
+			"title": "Персона. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 142,
+			"type": 2,
+			"name": "oPersonPersonChildOne",
+			"title": "Персона. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 143,
+			"type": 2,
+			"name": "oPersonPersonChildCreate",
+			"title": "Персона. Создание",
+			"description": null
+		},
+		{
+			"id": 144,
+			"type": 2,
+			"name": "oPersonPersonChildUpdate",
+			"title": "Персона. Редактирование",
+			"description": null
+		},
+		{
+			"id": 145,
+			"type": 2,
+			"name": "oPersonPersonChildDelete",
+			"title": "Персона. Удаление",
+			"description": null
+		},
+		{
+			"id": 146,
+			"type": 2,
+			"name": "oPersonContactTypeAll",
+			"title": "Тип контакта. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 147,
+			"type": 2,
+			"name": "oPersonContactTypeOne",
+			"title": "Тип контакта. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 148,
+			"type": 2,
+			"name": "oPersonContactTypeCreate",
+			"title": "Тип контакта. Создание",
+			"description": null
+		},
+		{
+			"id": 149,
+			"type": 2,
+			"name": "oPersonContactTypeUpdate",
+			"title": "Тип контакта. Редактирование",
+			"description": null
+		},
+		{
+			"id": 150,
+			"type": 2,
+			"name": "oPersonContactTypeDelete",
+			"title": "Тип контакта. Удаление",
+			"description": null
+		},
+		{
+			"id": 151,
+			"type": 2,
+			"name": "oGameCategoryAll",
+			"title": "Категория игры. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 152,
+			"type": 2,
+			"name": "oGameCategoryOne",
+			"title": "Категория игры. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 153,
+			"type": 2,
+			"name": "oGameCategoryCreate",
+			"title": "Категория игры. Создание",
+			"description": null
+		},
+		{
+			"id": 154,
+			"type": 2,
+			"name": "oGameCategoryUpdate",
+			"title": "Категория игры. Редактирование",
+			"description": null
+		},
+		{
+			"id": 155,
+			"type": 2,
+			"name": "oGameCategoryDelete",
+			"title": "Категория игры. Удаление",
+			"description": null
+		},
+		{
+			"id": 156,
+			"type": 2,
+			"name": "oGameCategoryRestore",
+			"title": "Категория игры. Восстановление",
+			"description": null
+		},
+		{
+			"id": 157,
+			"type": 2,
+			"name": "oGameGameAll",
+			"title": "Игра. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 158,
+			"type": 2,
+			"name": "oGameGameOne",
+			"title": "Игра. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 159,
+			"type": 2,
+			"name": "oGameGameCreate",
+			"title": "Игра. Создание",
+			"description": null
+		},
+		{
+			"id": 160,
+			"type": 2,
+			"name": "oGameGameUpdate",
+			"title": "Игра. Редактирование",
+			"description": null
+		},
+		{
+			"id": 161,
+			"type": 2,
+			"name": "oGameGameDelete",
+			"title": "Игра. Удаление",
+			"description": null
+		},
+		{
+			"id": 162,
+			"type": 2,
+			"name": "oGameGameRestore",
+			"title": "Игра. Восстановление",
+			"description": null
+		},
+		{
+			"id": 163,
+			"type": 2,
+			"name": "oGamePartnerAll",
+			"title": "Партнер игры. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 164,
+			"type": 2,
+			"name": "oGamePartnerOne",
+			"title": "Партнер игры. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 165,
+			"type": 2,
+			"name": "oGamePartnerCreate",
+			"title": "Партнер игры. Создание",
+			"description": null
+		},
+		{
+			"id": 166,
+			"type": 2,
+			"name": "oGamePartnerUpdate",
+			"title": "Партнер игры. Редактирование",
+			"description": null
+		},
+		{
+			"id": 167,
+			"type": 2,
+			"name": "oGamePartnerDelete",
+			"title": "Партнер игры. Удаление",
+			"description": null
+		},
+		{
+			"id": 168,
+			"type": 2,
+			"name": "oGamePartnerRestore",
+			"title": "Партнер игры. Восстановление",
+			"description": null
+		},
+		{
+			"id": 169,
+			"type": 2,
+			"name": "oTournamentScrambleAll",
+			"title": "Схватка. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 170,
+			"type": 2,
+			"name": "oTournamentScrambleOne",
+			"title": "Схватка. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 171,
+			"type": 2,
+			"name": "oTournamentScrambleCreate",
+			"title": "Схватка. Создание",
+			"description": null
+		},
+		{
+			"id": 172,
+			"type": 2,
+			"name": "oTournamentScrambleUpdate",
+			"title": "Схватка. Редактирование",
+			"description": null
+		},
+		{
+			"id": 173,
+			"type": 2,
+			"name": "oTournamentScrambleDelete",
+			"title": "Схватка. Удаление",
+			"description": null
+		},
+		{
+			"id": 174,
+			"type": 2,
+			"name": "oTournamentScrambleRestore",
+			"title": "Схватка. Восстановление",
+			"description": null
+		},
+		{
+			"id": 175,
+			"type": 2,
+			"name": "oTournamentSubscriptionAll",
+			"title": "Подписка на уведомление о старте турнира. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 176,
+			"type": 2,
+			"name": "oTournamentSubscriptionOne",
+			"title": "Подписка на уведомление о старте турнира. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 177,
+			"type": 2,
+			"name": "oTournamentSubscriptionCreate",
+			"title": "Подписка на уведомление о старте турнира. Создание",
+			"description": null
+		},
+		{
+			"id": 178,
+			"type": 2,
+			"name": "oTournamentSubscriptionUpdate",
+			"title": "Подписка на уведомление о старте турнира. Редактирование",
+			"description": null
+		},
+		{
+			"id": 179,
+			"type": 2,
+			"name": "oTournamentSubscriptionDelete",
+			"title": "Подписка на уведомление о старте турнира. Удаление",
+			"description": null
+		},
+		{
+			"id": 180,
+			"type": 2,
+			"name": "oTournamentSubscriptionRestore",
+			"title": "Подписка на уведомление о старте турнира. Восстановление",
+			"description": null
+		},
+		{
+			"id": 181,
+			"type": 2,
+			"name": "oTournamentTournamentAll",
+			"title": "Турнир. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 182,
+			"type": 2,
+			"name": "oTournamentTournamentOne",
+			"title": "Турнир. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 183,
+			"type": 2,
+			"name": "oTournamentTournamentCreate",
+			"title": "Турнир. Создание",
+			"description": null
+		},
+		{
+			"id": 184,
+			"type": 2,
+			"name": "oTournamentTournamentUpdate",
+			"title": "Турнир. Редактирование",
+			"description": null
+		},
+		{
+			"id": 185,
+			"type": 2,
+			"name": "oTournamentTournamentDelete",
+			"title": "Турнир. Удаление",
+			"description": null
+		},
+		{
+			"id": 186,
+			"type": 2,
+			"name": "oTournamentTournamentRestore",
+			"title": "Турнир. Восстановление",
+			"description": null
+		},
+		{
+			"id": 187,
+			"type": 2,
+			"name": "oMoneyIssueIssue",
+			"title": "Эмиссия средств",
+			"description": null
+		},
+		{
+			"id": 188,
+			"type": 2,
+			"name": "oMoneyTransactionAll",
+			"title": "История транзакций. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 189,
+			"type": 2,
+			"name": "oMoneyTransactionOne",
+			"title": "История транзакций. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 190,
+			"type": 2,
+			"name": "oMoneyTransferTransfer",
+			"title": "Перевод средств на кошелек",
+			"description": null
+		},
+		{
+			"id": 191,
+			"type": 2,
+			"name": "oMoneyWalletAll",
+			"title": "Просмотр баланса на кошельках",
+			"description": null
+		},
+		{
+			"id": 192,
+			"type": 2,
+			"name": "oCertificationSignatureCrud",
+			"title": "ЭЦП. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 193,
+			"type": 2,
+			"name": "oCertificationSignatureCreate",
+			"title": "ЭЦП. Создание",
+			"description": null
+		},
+		{
+			"id": 194,
+			"type": 2,
+			"name": "oCertificationSignatureVerify",
+			"title": "ЭЦП. Верификация",
+			"description": null
+		},
+		{
+			"id": 195,
+			"type": 2,
+			"name": "oCertificationSignatureOne",
+			"title": "ЭЦП. Просмотр подписанного документа",
+			"description": null
+		},
+		{
+			"id": 196,
+			"type": 2,
+			"name": "oCertificationDocumentCrud",
+			"title": "Документы. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 197,
+			"type": 2,
+			"name": "oCertificationDocumentAll",
+			"title": "Документы. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 198,
+			"type": 2,
+			"name": "oCertificationDocumentOne",
+			"title": "Документы. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 199,
+			"type": 2,
+			"name": "oCertificationDocumentCreate",
+			"title": "Документы. Создание",
+			"description": null
+		},
+		{
+			"id": 200,
+			"type": 2,
+			"name": "oCertificationDocumentUpdate",
+			"title": "Документы. Редактирование",
+			"description": null
+		},
+		{
+			"id": 201,
+			"type": 2,
+			"name": "oCertificationDocumentDelete",
+			"title": "Документы. Удаление",
+			"description": null
+		},
+		{
+			"id": 202,
+			"type": 2,
+			"name": "oCertificationTemplateCrud",
+			"title": "Шаблон документа. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 203,
+			"type": 2,
+			"name": "oCertificationTemplateAll",
+			"title": "Шаблон документа. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 204,
+			"type": 2,
+			"name": "oCertificationTemplateOne",
+			"title": "Шаблон документа. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 205,
+			"type": 2,
+			"name": "oCertificationTemplateCreate",
+			"title": "Шаблон документа. Создание",
+			"description": null
+		},
+		{
+			"id": 206,
+			"type": 2,
+			"name": "oCertificationTemplateUpdate",
+			"title": "Шаблон документа. Редактирование",
+			"description": null
+		},
+		{
+			"id": 207,
+			"type": 2,
+			"name": "oCertificationTemplateDelete",
+			"title": "Шаблон документа. Удаление",
+			"description": null
+		},
+		{
+			"id": 208,
+			"type": 2,
+			"name": "oMessengerChatCrud",
+			"title": "Мессенджер. Чаты. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 209,
+			"type": 2,
+			"name": "oMessengerChatAll",
+			"title": "Мессенджер. Чаты. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 210,
+			"type": 2,
+			"name": "oMessengerChatOne",
+			"title": "Мессенджер. Чаты. Просмотр записи",
+			"description": null
+		},
+		{
+			"id": 211,
+			"type": 2,
+			"name": "oMessengerChatCreate",
+			"title": "Мессенджер. Чаты. Создание",
+			"description": null
+		},
+		{
+			"id": 212,
+			"type": 2,
+			"name": "oMessengerChatUpdate",
+			"title": "Мессенджер. Чаты. Редактирование",
+			"description": null
+		},
+		{
+			"id": 213,
+			"type": 2,
+			"name": "oMessengerChatDelete",
+			"title": "Мессенджер. Чаты. Удаление",
+			"description": null
+		},
+		{
+			"id": 214,
+			"type": 2,
+			"name": "oMessengerChatRestore",
+			"title": "Мессенджер. Чаты. Восстановление",
+			"description": null
+		},
+		{
+			"id": 215,
+			"type": 2,
+			"name": "oMessengerMessageCrud",
+			"title": "Мессенджер. Сообщения. Полный доступ",
+			"description": null
+		},
+		{
+			"id": 216,
+			"type": 2,
+			"name": "oMessengerMessageAll",
+			"title": "Мессенджер. Сообщения. Просмотр списка",
+			"description": null
+		},
+		{
+			"id": 217,
+			"type": 2,
+			"name": "oMessengerMessageOne",
+			"title": "Мессенджер. Сообщения. Просмотр записи",
+			"description": null
+		}
+	],
+	"meta": {
+		"totalCount": 309
+	}
+}

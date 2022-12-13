@@ -1,0 +1,4 @@
+
+Добавить ключ в SSH-agent
+
+    ssh-add ~/.ssh/my-gitlab

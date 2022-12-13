@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "method": "...",
+  "params": {
+    "body": {
+      "identityId": 1234,
+      "roleName": "rAdmin"
+    }
+  }
+}

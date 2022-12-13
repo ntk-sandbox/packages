@@ -1,0 +1,22 @@
+{
+  "name": "zncore/event-dispatcher",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zn Developer",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "psr/event-dispatcher": "^1",
+    "symfony/event-dispatcher": "^4.4|^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZnCore\\EventDispatcher\\": "src",
+      "ZnCore\\EventDispatcher\\Tests\\": "tests"
+    }
+  }
+}

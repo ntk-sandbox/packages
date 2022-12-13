@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use ZnCore\DotEnv\Domain\Libs\DotEnv;
+use ZnCore\Container\Libs\Container;
+use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
+use ZnDatabase\Eloquent\Domain\Capsule\Manager;
+
+require __DIR__ . '/../../../autoload.php';
+DotEnv::init();
+
+$container = new Container();
+$container->bind(Application::class, Application::class, true);
+$container->bind(Manager::class, function () {
+    return ManagerFactory::createManagerFromEnv();
+}, true);
+$application = $container->get(Application::class);
+
+require __DIR__ . '/bootstrap.php';
+
+$application->run();

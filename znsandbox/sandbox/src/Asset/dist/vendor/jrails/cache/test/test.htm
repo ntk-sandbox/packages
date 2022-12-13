@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.css">
+</head>
+
+<body>
+
+<div id="mocha"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script class="script_main" src="../../../vendor/lodash/4.17.15/lodash.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.min.js"></script>
+
+
+<!--<script src="../../../vendor/fast-clone/fast-clone-v1.0.0.js"></script>-->
+
+<script src="../../kernel/namespace.js"></script>
+
+<!--bundles-->
+
+<script class="script_main" src="../../helper/ajax.js"></script>
+<script class="script_main" src="../../helper/array.js"></script>
+<script class="script_main" src="../../helper/class.js"></script>
+<script class="script_main" src="../../helper/func.js"></script>
+<script class="script_main" src="../../helper/php.js"></script>
+<script class="script_main" src="../../helper/url.js"></script>
+<script class="script_main" src="../../helper/value.js"></script>
+<script class="script_main" src="../../helper/jquery.js"></script>
+
+<!--<script class="script_main" src="../../log/logService.js"></script>
+<script class="script_main" src="../../notify/notifyService.js"></script>
+<script class="script_main" src="../../notify/notifyTypeEnum.js"></script>
+<script class="script_main" src="../../queue/queueService.js"></script>
+<script class="script_main" src="../../ui/baseElementService.js"></script>-->
+
+<!--kernel-->
+
+<script class="script_main" src="../../kernel/container.js"></script>
+<!--<script class="script_main" src="../../kernel/app.js"></script>-->
+
+<!--kernel component-->
+
+<!--<script class="script_main" src="../../kernel/component/factory.js"></script>
+<script class="script_main" src="../../kernel/bootstrap.js"></script>
+<script class="script_main" src="../../kernel/component/env.js"></script>-->
+<script class="script_main" src="../../kernel/enum/envEnum.js"></script>
+
+<!--<script class="script_main" src="../../kernel/func.js"></script>-->
+
+<!--store-->
+
+<!--<script src="../../domain/baseMemoryStore.js"></script>-->
+
+<!--service-->
+
+<script src="../cacheService.js"></script>
+<!--<script src="../../event/eventService.js"></script>-->
+
+<!--misc-->
+
+<!--<script src="../../kernel/config.js"></script>-->
+
+
+
+
+
+<script src="cacheService.js"></script>
+
+<script>
+    mocha.setup('bdd');
+    space(function() {
+        mocha.run();
+    });
+</script>
+
+</body>
+
+</html>

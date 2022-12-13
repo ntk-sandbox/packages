@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<script src="/vendor/jquery/jquery-2.2.4.min.js"></script>
+<script src="/vendor/jquery/jquery-ui-1.12.1.min.js"></script>
+<script src="/vendor/lodash/4.17.15/lodash.js"></script>
+<script src="/vendor/bootstrap/3.3.7/bootstrap.min.js"></script>
+
+<script src="/scripts/bundle/kernel/namespace.js"></script>
+
+<script src="/scripts/bundle/helper/ajax.js"></script>
+<script src="/scripts/bundle/helper/array.js"></script>
+<script src="/scripts/bundle/helper/class.js"></script>
+<script src="/scripts/bundle/helper/func.js"></script>
+<script src="/scripts/bundle/helper/php.js"></script>
+<script src="/scripts/bundle/helper/url.js"></script>
+<script src="/scripts/bundle/helper/value.js"></script>
+<script src="/scripts/bundle/helper/jquery.js"></script>
+
+<script src="/scripts/bundle/log/logService.js"></script>
+<script src="/scripts/bundle/notify/notifyService.js"></script>
+<script src="/scripts/bundle/notify/notifyTypeEnum.js"></script>
+<!--<script src="/scripts/bundle/queue/queueService.js"></script>-->
+<script src="/scripts/bundle/ui/baseElementService.js"></script>
+<script src="/scripts/bundle/ui/baseModule.js"></script>
+
+<script src="/scripts/bundle/env/envEnum.js"></script>
+<script src="/scripts/bundle/env/envService.js"></script>
+
+<script src="/scripts/bundle/kernel/container.js"></script>
+<script src="/scripts/bundle/kernel/bootstrap.js"></script>
+<script src="/scripts/bundle/kernel/func.js"></script>
+
+<script src="/scripts/bundle/domain/baseMemoryStore.js"></script>
+<script src="/scripts/bundle/cache/cacheService.js"></script>
+<script src="/scripts/bundle/event/eventService.js"></script>
+
+<!--Tests core-->
+
+<script src="/vendor/mocha/mocha_2.1.0.min.js"></script>
+<link  href="/vendor/mocha/mocha_2.1.0.min.css" rel="stylesheet">
+<script src="/vendor/chai/chai_2.0.0.min.js"></script>
+
+<!--Tests cases-->
+
+<script src="cache/test/cacheService.js"></script>
+<script src="domain/test/baseMemoryStore.js"></script>
+
+<div id="mocha"></div>
+
+<script>
+    mocha.setup('bdd');
+    space(function() {
+        mocha.run();
+    });
+</script>
+
+</body>
+</html>

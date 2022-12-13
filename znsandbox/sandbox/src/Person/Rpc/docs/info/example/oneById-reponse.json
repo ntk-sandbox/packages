@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "firstName": "Григорий",
+      "middleName": "Васильевич",
+      "lastName": "Песков",
+      "birthDate": "1976-04-03",
+      "iin": "760403300198"
+    },
+    "meta": null
+  }
+}

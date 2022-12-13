@@ -1,0 +1,22 @@
+<div>
+    <h1>RSA Generator</h1>
+
+    <b-button @click="generate" variant="info" class="m-1">
+        Generate
+    </b-button>
+
+    <b-button @click="download" v-if="entity.privateKey" variant="info" class="m-1">
+        Download
+    </b-button>
+
+    <div class="row">
+        <div class="col-md-6">
+            <code><pre>{{ entity.privateKey }}</pre></code>
+        </div>
+        <div class="col-md-6">
+            <code><pre>{{ entity.publicKey }}</pre></code>
+        </div>
+    </div>
+
+
+</div>

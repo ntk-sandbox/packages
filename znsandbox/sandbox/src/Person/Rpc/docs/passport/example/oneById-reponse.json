@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "issued": "МВД РК",
+      "issuedDate": "2008.02.01",
+      "number": "12313213213",
+      "series": "1211111",
+      "validDate": "2020.02.01"
+    },
+    "meta": null
+  }
+}

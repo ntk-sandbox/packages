@@ -1,0 +1,19 @@
+{% extends '@Article/base.html.twig' %}
+
+{% block title %}Main page{% endblock %}
+
+{% block body %}
+
+    {{ breadcrumbAdd('Post', '/article') }}
+
+    {% include '@Article/post/index.list.html.twig' %}
+
+    <span class="pull-right">
+        <a class="btn btn-success" href="{{ path('web_article_post_create') }}">Create</a>
+    </span>
+
+    <span>
+        {{ pagination(dataProviderEntity, app.request) }}
+    </span>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "id": 1,
+      "name": "email",
+      "type": "string",
+      "title": "Email"
+    },
+    "meta": null
+  }
+}

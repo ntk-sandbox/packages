@@ -1,0 +1,33 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": [
+      {
+        "id": 1,
+        "value": "support@example.com",
+        "attributeId": 1,
+        "attribute": {
+          "id": 1,
+          "name": "email",
+          "title": "Email"
+        }
+      },
+      {
+        "id": 2,
+        "value": "+77771112233",
+        "attributeId": 3,
+        "attribute": {
+          "id": 3,
+          "name": "mobile",
+          "title": "Мобильный номер"
+        }
+      }
+    ],
+    "meta": {
+      "perPage": 20,
+      "totalCount": 2,
+      "page": 1,
+      "timestamp": "2021-08-20T10:27:30+0000"
+    }
+  }
+}

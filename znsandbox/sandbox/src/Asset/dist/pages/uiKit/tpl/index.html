@@ -1,0 +1,12 @@
+<div>
+    <h1>UI Kit</h1>
+
+    <div class="list-group">
+        <b-list-group-item class="list-group-item" v-for="item in items">
+            <router-link :to="/ui-kit/ + item.name">
+                {{ item.title }}
+            </router-link>
+        </b-list-group-item>
+    </div>
+
+</div>

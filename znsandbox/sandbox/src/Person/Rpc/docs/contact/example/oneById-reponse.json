@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "email": "qwerty@example.com",
+      "home": "45566",
+      "mobile": "+77771112233",
+      "work": "+77774445566"
+    },
+    "meta": null
+  }
+}

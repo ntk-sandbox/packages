@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "issueDate": "1999.06.02",
+      "number": "123456789",
+      "series": "455888"
+    },
+    "meta": null
+  }
+}

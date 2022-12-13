@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "id": 1,
+      "title": "Приложение 1"
+    },
+    "meta": null
+  }
+}

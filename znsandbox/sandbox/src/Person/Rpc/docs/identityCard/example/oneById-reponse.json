@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": {
+      "issued": "МВД РК",
+      "issuedDate": "2010.07.08",
+      "number": "012345678",
+      "validDate": "2028.07.08"
+    },
+    "meta": null
+  }
+}

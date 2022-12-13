@@ -90,11 +90,9 @@
       "ZnUser\\Password\\": "znuser/password/src",
       "ZnUser\\Person\\": "znuser/person/src",
       "ZnUser\\Rbac\\": "znuser/rbac/src",
-      "ZnUser\\Registration\\": "znuser/registration/src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
+      "ZnUser\\Registration\\": "znuser/registration/src",
+
+
       "ZnBundle\\Article\\Tests\\": "znbundle/article/tests",
       "ZnBundle\\Dashboard\\Tests\\": "znbundle/dashboard/tests",
       "ZnBundle\\Eav\\Tests\\": "znbundle/eav/tests",
@@ -178,6 +176,11 @@
       "ZnUser\\Person\\Tests\\": "znuser/person/tests",
       "ZnUser\\Rbac\\Tests\\": "znuser/rbac/tests",
       "ZnUser\\Registration\\Tests\\": "znuser/registration/tests"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+
     }
   }
 }

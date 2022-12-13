@@ -1,0 +1,75 @@
+<div>
+    <!--<b-list-group style="max-width: 300px;">
+        <b-list-group-item class="d-flex align-items-center" :to="/messenger/ + item.id" v-for="item in items">
+            <b-avatar variant="info" src="{{ item.logo }}" class="mr-3"></b-avatar>
+            <span class="mr-auto">{{ item.title }}</span>
+            <b-badge>9</b-badge>
+        </b-list-group-item>
+    </b-list-group>-->
+
+
+    <div class="messaging">
+        <div class="inbox_msg">
+            <div class="inbox_people">
+                <div class="headind_srch">
+                    <div class="recent_heading">
+                        <h4>Recent</h4>
+                    </div>
+                    <div class="srch_bar">
+                        <div class="stylish-input-group">
+                            <input type="text" class="search-bar" placeholder="Search">
+                            <span class="input-group-addon">
+                                <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbox_chat">
+
+                    <div id="chatList">
+                        <div :class="'chat_list ' + (chat.id === chatId ? 'active_chat' : '')" v-for="chat in chatCollection">
+                            <div class="chat_people">
+                                <router-link :to="/messenger/ + chat.id">
+                                    <div class="chat_img">
+                                        <b-avatar variant="info" :src="chat.logo" class="mr-3"></b-avatar>
+                                    </div>
+                                    <div class="chat_ib">
+                                        <h5>{{ chat.title }} <span class="chat_date text-muted">Dec 25</span></h5>
+                                        <p>Test, which is a new approach to have all solutions
+                                            astrology under one roof.</p>
+                                    </div>
+                                </router-link>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mesgs">
+
+                <router-view></router-view>
+
+                <template v-if="chatId > 0">
+                    <div class="type_msg">
+                        <div class="input_msg_write">
+                            <form class="form-inline" v-on:submit="sendMessage">
+                                <input v-model="form.text" type="text" class="write_msg" placeholder="Type a message">
+                                <button type="submit" class="msg_send_btn">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </template>
+
+                <template v-else>
+                    <b-alert show>Select chat</b-alert>
+                </template>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

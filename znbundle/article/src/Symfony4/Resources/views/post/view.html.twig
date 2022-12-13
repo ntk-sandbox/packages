@@ -1,0 +1,28 @@
+{% extends '@Article/base.html.twig' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block body %}
+
+    {{ breadcrumbAdd('Post', '/article') }}
+    {{ breadcrumbAdd(post.title, '/article/view/' ~ post.id) }}
+
+    <div class="float-right">
+        <a class="btn btn-primary" href="{{ path('web_article_post_update', {id: post.id}) }}">update</a>
+        <a class="btn btn-danger" href="#deleteModal" data-toggle="modal">delete</a>
+    </div>
+
+    <h3>
+        {{ post.title }}
+        <span class="label label-default">{{ post.category.title }}</span>
+    </h3>
+
+    {% set footer %}
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form id="post_delete_form" method="post" action="{{ path('web_article_post_delete', {id: post.id}) }}"></form>
+        <button class="btn btn-danger" onclick="$('#post_delete_form').submit()">Delete</button>
+    {% endset %}
+
+    {{ modal('deleteModal', 'Delete item', 'A you sure delete item?', footer) }}
+
+{% endblock %}

@@ -1,0 +1,6 @@
+{% for post in postCollection %}
+    <a href="{{ path('web_article_post_view', {id: post.id}) }}" class="list-group-item">
+        {{ post.title }}
+        <span class="badge">{{ post.category.title }}</span>
+    </a>
+{% endfor %}
