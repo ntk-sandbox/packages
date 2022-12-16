@@ -2,6 +2,11 @@
 
 return [
     [
+        'name' => 'ntk-sandbox',
+        'provider_name' => 'github',
+        'authors' => [],
+    ],
+    [
         'name' => 'znbundle',
         'provider_name' => 'github',
         'authors' => [],
