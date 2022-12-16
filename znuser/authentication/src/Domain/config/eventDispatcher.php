@@ -1,9 +1,12 @@
 <?php
 
+use ZnCore\Env\Helpers\EnvHelper;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 
 return function (EventDispatcherConfiguratorInterface $configurator): void {
-    $configurator->addSubscriber(\ZnUser\Authentication\Domain\Subscribers\SymfonyAuthenticationIdentitySubscriber::class);
+    if(EnvHelper::isWeb()) {
+        $configurator->addSubscriber(\ZnUser\Authentication\Domain\Subscribers\SymfonyAuthenticationIdentitySubscriber::class);
+    }
     /*$configurator->addSubscriber(
         [
             'class' => \ZnUser\Authentication\Domain\Subscribers\AuthenticationAttemptSubscriber::class,

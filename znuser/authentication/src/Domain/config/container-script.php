@@ -6,7 +6,6 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use ZnUser\Authentication\Domain\Enums\CredentialTypeEnum;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnUser\Authentication\Domain\Services\AuthService;
-use ZnUser\Authentication\Domain\Subscribers\SymfonyAuthenticationIdentitySubscriber;
 use ZnUser\Authentication\Domain\UserProviders\ApiTokenUserProvider;
 use ZnUser\Authentication\Domain\UserProviders\CredentialsUserProvider;
 

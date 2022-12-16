@@ -13,9 +13,9 @@ class ControllerResolver implements ControllerResolverInterface
 
     use ContainerAwareTrait;
 
-    public function __construct(ContainerInterface $container, UrlMatcher $matcher)
+    public function __construct(ContainerInterface $container, private UrlMatcher $matcher)
     {
-        $this->matcher = $matcher;
+//        $this->matcher = $matcher;
         $this->setContainer($container);
     }
 
