@@ -41,22 +41,22 @@ class InheritanceEntity implements ValidationByMetadataInterface, UniqueInterfac
 
     public function setParentName($value) : void
     {
-        $this->parent = $value;
+        $this->parentName = $value;
     }
 
     public function getParentName()
     {
-        return $this->parent;
+        return $this->parentName;
     }
 
     public function setChildName($value) : void
     {
-        $this->child = $value;
+        $this->childName = $value;
     }
 
     public function getChildName()
     {
-        return $this->child;
+        return $this->childName;
     }
 
 }

@@ -45,12 +45,14 @@ trait CrudRepositoryFindOneTrait
     public function checkExists(EntityIdInterface $entity): void
     {
         try {
-            $existedEntity = $this->findOneByUnique($entity);
-            if ($existedEntity) {
-                $message = I18Next::t('core', 'domain.message.entity_already_exist');
-                $e = new AlreadyExistsException($message);
-                $e->setEntity($existedEntity);
-                throw $e;
+            if($entity instanceof UniqueInterface) {
+                $existedEntity = $this->findOneByUnique($entity);
+                if ($existedEntity) {
+                    $message = I18Next::t('core', 'domain.message.entity_already_exist');
+                    $e = new AlreadyExistsException($message);
+                    $e->setEntity($existedEntity);
+                    throw $e;
+                }
             }
         } catch (NotFoundException $e) {
         }
