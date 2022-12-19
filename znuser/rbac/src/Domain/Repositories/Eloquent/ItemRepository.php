@@ -18,7 +18,4 @@ class ItemRepository extends BaseEloquentCrudRepository implements ItemRepositor
     {
         return ItemEntity::class;
     }
-
-
 }
-
