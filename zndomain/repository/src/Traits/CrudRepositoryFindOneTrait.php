@@ -2,6 +2,7 @@
 
 namespace ZnDomain\Repository\Traits;
 
+use ZnCore\Code\Factories\PropertyAccess;
 use ZnCore\Code\Helpers\PropertyHelper;
 use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
 use ZnCore\Text\Helpers\Inflector;
@@ -45,14 +46,20 @@ trait CrudRepositoryFindOneTrait
     public function checkExists(EntityIdInterface $entity): void
     {
         try {
-            if($entity instanceof UniqueInterface) {
+            /*if($entity instanceof UniqueInterface) {
                 $existedEntity = $this->findOneByUnique($entity);
-                if ($existedEntity) {
-                    $message = I18Next::t('core', 'domain.message.entity_already_exist');
-                    $e = new AlreadyExistsException($message);
-                    $e->setEntity($existedEntity);
-                    throw $e;
+            } else {
+                $isReadable = PropertyAccess::createPropertyAccessor()->isReadable($entity, 'id');
+                if ($isReadable) {
+                    $existedEntity = $this->findOneById(PropertyHelper::getValue($entity, 'id'));
                 }
+            }*/
+            $existedEntity = $this->findOneByUnique($entity);
+            if (!empty($existedEntity)) {
+                $message = I18Next::t('core', 'domain.message.entity_already_exist');
+                $e = new AlreadyExistsException($message);
+                $e->setEntity($existedEntity);
+                throw $e;
             }
         } catch (NotFoundException $e) {
         }
