@@ -45,12 +45,6 @@ abstract class BaseCrudService extends BaseService implements CrudServiceInterfa
         $repository->forgeQueryByFilter($filterModel, $query);
     }
 
-    /**
-     * @param $id
-     * @param Query|null $query
-     * @return object|EntityIdInterface
-     * @throws NotFoundException
-     */
     public function persist(object $entity)
     {
         ValidationHelper::validateEntity($entity);
