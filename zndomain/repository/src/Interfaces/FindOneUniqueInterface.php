@@ -16,6 +16,6 @@ interface FindOneUniqueInterface
      * @throws NotFoundException
      * @throws InvalidMethodParameterException
      */
-    public function findOneByUnique(UniqueInterface $entity): EntityIdInterface;
+    public function findOneByUnique(object $entity): EntityIdInterface;
 
 }

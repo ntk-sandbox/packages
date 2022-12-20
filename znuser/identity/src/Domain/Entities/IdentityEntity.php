@@ -18,15 +18,15 @@ use ZnLib\Components\Status\Enums\StatusEnum;
 class IdentityEntity implements ValidationByMetadataInterface, EntityIdInterface, IdentityEntityInterface
 {
 
-    protected $id = null;
-    protected $username = null;
-    protected $statusId = StatusEnum::ENABLED;
-    protected $createdAt = null;
-    protected $updatedAt = null;
-    protected $roles = [];
-    protected $credentials = null;
-    protected $assignments = null;
-    protected $person = null;
+    protected ?int $id = null;
+    protected ?string $username = null;
+    protected int $statusId = StatusEnum::ENABLED;
+    protected ?DateTime $createdAt = null;
+    protected ?DateTime $updatedAt = null;
+    protected array $roles = [];
+    protected ?Enumerable $credentials = null;
+    protected ?Enumerable $assignments = null;
+    protected ?PersonEntityInterface $person = null;
 
     public function __construct()
     {

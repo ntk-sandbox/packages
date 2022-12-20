@@ -15,7 +15,7 @@ trait CrudServiceCreateTrait
             $this->getEntityManager()->beginTransaction();
         }
         try {
-            $entityClass = $this->getEntityClass();
+//            $entityClass = $this->getEntityClass();
             $entity = $this->getEntityManager()->createEntity($this->getEntityClass(), $data);
             $event = $this->dispatchEntityEvent($entity, EventEnum::BEFORE_CREATE_ENTITY);
             if ($event->isPropagationStopped()) {

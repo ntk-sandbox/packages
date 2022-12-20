@@ -65,21 +65,25 @@ trait CrudRepositoryFindOneTrait
         }
     }
 
-    public function findOneByUnique(UniqueInterface $entity): EntityIdInterface
+    public function findOneByUnique(object $entity): EntityIdInterface
     {
-        $unique = $entity->unique();
-        if (!empty($unique)) {
-            foreach ($unique as $uniqueConfig) {
-                $oneEntity = $this->findOneByUniqueGroup($entity, $uniqueConfig);
-                if ($oneEntity) {
-                    return $oneEntity;
+        if($entity instanceof UniqueInterface) {
+            $unique = $entity->unique();
+            if (!empty($unique)) {
+                foreach ($unique as $uniqueConfig) {
+                    $oneEntity = $this->findOneByUniqueGroup($entity, $uniqueConfig);
+                    if ($oneEntity) {
+                        return $oneEntity;
+                    }
                 }
             }
+        } else {
+
         }
         throw new NotFoundException();
     }
 
-    private function findOneByUniqueGroup(UniqueInterface $entity, $uniqueConfig): ?EntityIdInterface
+    private function findOneByUniqueGroup(object $entity, $uniqueConfig): ?EntityIdInterface
     {
         $query = new Query();
         foreach ($uniqueConfig as $uniqueName) {

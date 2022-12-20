@@ -195,7 +195,7 @@ class EntityManager implements EntityManagerInterface
         $repository->update($entity);
     }
 
-    public function findOneByUnique(UniqueInterface $entity): EntityIdInterface
+    public function findOneByUnique(object $entity): EntityIdInterface
     {
         $entityClass = get_class($entity);
         $repository = $this->getRepository($entityClass);

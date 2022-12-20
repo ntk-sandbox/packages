@@ -13,6 +13,7 @@ use Symfony\Component\VarDumper\Dumper\ServerDumper;
 use Symfony\Component\VarDumper\VarDumper;
 use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
 use ZnCore\Env\Helpers\EnvHelper;
+use ZnTool\Dev\VarDumper\Dumper\JsonDumper;
 use ZnTool\Dev\VarDumper\Dumper\TelegramDumper;
 
 class SymfonyDumperFacade
@@ -37,7 +38,9 @@ class SymfonyDumperFacade
 
     private static function createServerDumper(): DataDumperInterface
     {
-        if (self::$driver == 'telegram') {
+        if (self::$driver == 'json') {
+            return new JsonDumper($_ENV['VAR_DUMPER_JSON_DIRECTORY']);
+        } elseif (self::$driver == 'telegram') {
             return new TelegramDumper($_ENV['VAR_DUMPER_BOT_TOKEN'], $_ENV['VAR_DUMPER_BOT_CHAT_ID']);
         } elseif (self::$driver == 'console') {
             $fallbackDumper = self::getDumper();
