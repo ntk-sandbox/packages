@@ -8,9 +8,10 @@ use Symfony\Component\HttpFoundation\Response;
 class EmptyDashboardController
 {
 
+    public string $content = 'Empty dashboard!';
+
     public function index(Request $request): Response
     {
-//        throw new \Exception('Empty dashboard!');
-        return new Response('Empty dashboard!');
+        return new Response($this->content);
     }
 }
