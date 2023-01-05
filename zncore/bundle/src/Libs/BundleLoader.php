@@ -117,8 +117,8 @@ class BundleLoader
         $resultBundles = [];
         foreach ($bundles as $bundle) {
             /** @var BaseBundle $bundle */
-            $importList = $bundle->getImportList();
-            if (in_array($loaderName, $importList) || in_array('all', $importList)) {
+            $loaders = $bundle->getLoaders();
+            if (in_array($loaderName, $loaders) || in_array('all', $loaders)) {
                 $resultBundles[] = $bundle;
             }
         }

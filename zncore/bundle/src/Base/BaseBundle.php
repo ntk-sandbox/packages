@@ -3,6 +3,8 @@
 namespace ZnCore\Bundle\Base;
 
 
+use ZnCore\Bundle\Interfaces\BundleDepsInterface;
+
 /**
  * Абстрактный класс бандла.
  *
@@ -20,10 +22,10 @@ namespace ZnCore\Bundle\Base;
  * @method array symfonyWeb() роуты пользовательской части
  * @method array telegramRoutes() роуты для Telegram-бота
  */
-abstract class BaseBundle
+abstract class BaseBundle implements BundleDepsInterface
 {
 
-    private $importList;
+    private $loaders;
 
     /**
      * Зависимости (бандлы)
@@ -48,20 +50,22 @@ abstract class BaseBundle
      * symfonyWeb - роуты пользовательской части
      * telegramRoutes - роуты для Telegram-бота
      *
+     * Имена загрузчиков совпадают с названиями методов с конфигурацией в калссе бандла.
+     *
      * @return array
      */
-    public function getImportList(): array
+    public function getLoaders(): array
     {
-        return $this->importList;
+        return $this->loaders;
     }
 
     /**
      *
-     * @param array $importList
+     * @param array $loaders Массив имен загрузчиков
      */
-    public function __construct(array $importList = [])
+    public function __construct(array $loaders = [])
     {
-        $this->importList = $importList;
+        $this->loaders = $loaders;
     }
 
 //    /**
