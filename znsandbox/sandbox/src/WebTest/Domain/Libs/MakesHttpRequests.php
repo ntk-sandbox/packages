@@ -527,7 +527,10 @@ class MakesHttpRequests
     {
     }*/
 
-    public function __construct(private ContainerInterface $container)
+    public function __construct(
+        private ContainerInterface $container
+//        , private HttpKernelInterface $httpKernel
+    )
     {
     }
 
@@ -539,9 +542,10 @@ class MakesHttpRequests
      * @throws \Psr\Container\ContainerExceptionInterface
      * @throws \Psr\Container\NotFoundExceptionInterface
      */
-    public function handleRequest(SymfonyRequest $request): Response
+    protected function handleRequest(SymfonyRequest $request): Response
     {
         /** @var HttpKernelInterface | TerminableInterface $framework */
+//        $framework = $this->httpKernel;
         $framework = $this->container->get(HttpKernelInterface::class);
 
         // actually execute the kernel, which turns the request into a response
@@ -549,7 +553,7 @@ class MakesHttpRequests
         $response = $framework->handle($request);
 
         // send the headers and echo the content
-        //    $response->send();
+        // $response->send();
 
         // trigger the kernel.terminate event
         $framework->terminate($request, $response);
@@ -569,20 +573,23 @@ class MakesHttpRequests
             $content
         );
 
+        $this->forgeServerVar($request);
+        $this->includeEndpoint($request);
+        
+        $response = $this->handleRequest($request);
+
+        return $response;
+    }
+    
+    protected function includeEndpoint(SymfonyRequest $request) {
+        $func = include __DIR__. '/endpoint.php';
+        call_user_func($func, $this->container, $request);
+    }
+    
+    protected function forgeServerVar(SymfonyRequest $request): void {
         foreach ($request->server->all() as $key => $value) {
             $_SERVER[$key] = $value;
         }
-
-        $func = include __DIR__. '/index2.php';
-        call_user_func($func, $this->container, $request);
-        $response = $this->handleRequest($request);
-
-//        dd($response);
-
-//        dd($_SERVER);
-//        dd($request->server->all());
-
-        return $response;
     }
 
     /**
