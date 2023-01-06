@@ -550,7 +550,11 @@ class MakesHttpRequests
 
         // trigger the kernel.terminate event
         $framework->terminate($request, $response);
-
+        
+        if ($this->followRedirects) {
+            $response = $this->followRedirects($response);
+        }
+        
         return $response;
     }
 
@@ -565,14 +569,18 @@ class MakesHttpRequests
             array_replace($this->serverVariables, $server),
             $content
         );
-        $this->includeEndpoint($request);
+        $this->initEndpoint($request);
         return $this->handleRequest($request);
     }
     
-    protected function includeEndpoint(Request $request) {
+    protected function initEndpoint(Request $request) {
         $this->forgeServerVar($request);
-        $func = include __DIR__. '/endpoint.php';
-        call_user_func($func, $this->container);
+        $this->includeEndpoint();
+    }
+
+    protected function includeEndpoint() {
+        $container = $this->container;
+        include __DIR__. '/endpoint.php';
     }
     
     protected function forgeServerVar(Request $request): void {
@@ -718,8 +726,8 @@ class MakesHttpRequests
     /**
      * Follow a redirect chain until a non-redirect is received.
      *
-     * @param  \Illuminate\Http\Response  $response
-     * @return \Illuminate\Http\Response|\Illuminate\Testing\TestResponse
+     * @param  Response $response
+     * @return Response
      */
     protected function followRedirects($response)
     {

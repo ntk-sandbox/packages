@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @var ContainerInterface $container
+ */
+
 use App\Application\Admin\Libs\AdminApp;
 use App\Application\Rpc\Libs\RpcApp;
 use App\Application\Web\Libs\WebApp;
@@ -16,67 +20,63 @@ use ZnCore\Container\Libs\Container;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnTool\Dev\VarDumper\Subscribers\SymfonyDumperSubscriber;
 
-return function (ContainerInterface $container): void {
+$_SERVER['MICRO_TIME'] = microtime(true);
 
-//    defined('MICRO_TIME') or define('MICRO_TIME', microtime(true));
-    $_SERVER['MICRO_TIME'] = microtime(true);
+//require __DIR__ . '/../vendor/autoload.php';
 
-    //require __DIR__ . '/../vendor/autoload.php';
+/**
+ * Инициализация ядра.
+ *
+ * Инициализируются/конфигурируются компоненты:
+ * - DotEnv
+ * - контейнер
+ *   - EventDispatcher
+ *   - ConfigManager
+ *   - ContainerConfigurator
+ * - загрузчик бандлов
+ */
+//$container = new Container();
+//$znCore = new ZnCore($container);
+//$znCore->init();
 
-    /**
-     * Инициализация ядра.
-     *
-     * Инициализируются/конфигурируются компоненты:
-     * - DotEnv
-     * - контейнер
-     *   - EventDispatcher
-     *   - ConfigManager
-     *   - ContainerConfigurator
-     * - загрузчик бандлов
-     */
-    //$container = new Container();
-    //$znCore = new ZnCore($container);
-    //$znCore->init();
+//\ZnCore\Env\Helpers\EnvHelper::setErrorVisibleFromEnv();
 
-    //\ZnCore\Env\Helpers\EnvHelper::setErrorVisibleFromEnv();
+/** @var ContainerConfiguratorInterface $containerConfigurator */
+$containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
 
-    /** @var ContainerConfiguratorInterface $containerConfigurator */
-    $containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
+$envServer = new EnvServer($_SERVER);
+if ($envServer->isContainsSegmentUri('admin')) {
+    $envServer->fixUri('admin');
+    $containerConfigurator->singleton(AppInterface::class, AdminApp::class);
+//} elseif ($envServer->isContainsSegmentUri('wsdl')) {
+//    $containerConfigurator->singleton(AppInterface::class, WsdlApp::class);
+} elseif ($envServer->isEqualUri('json-rpc') && ($envServer->isPostMethod() || $envServer->isOptionsMethod())) {
+    $containerConfigurator->singleton(AppInterface::class, RpcApp::class);
+} else {
+    $containerConfigurator->singleton(AppInterface::class, WebApp::class);
+}
 
-    $envServer = new EnvServer($_SERVER);
-    if ($envServer->isContainsSegmentUri('admin')) {
-        $envServer->fixUri('admin');
-        $containerConfigurator->singleton(AppInterface::class, AdminApp::class);
-    //} elseif ($envServer->isContainsSegmentUri('wsdl')) {
-    //    $containerConfigurator->singleton(AppInterface::class, WsdlApp::class);
-    } elseif ($envServer->isEqualUri('json-rpc') && ($envServer->isPostMethod() || $envServer->isOptionsMethod())) {
-        $containerConfigurator->singleton(AppInterface::class, RpcApp::class);
-    } else {
-        $containerConfigurator->singleton(AppInterface::class, WebApp::class);
-    }
+/**
+ * Инициализация приложения.
+ *
+ * Инициализируются/конфигурируются компоненты:
+ * - dotEnv
+ * - контейнер
+ * - бандлы
+ * - диспетчер событий: подписка на события приложения
+ * - Cors (для приложения RPC)
+ * - команды консоли
+ * - поведения
+ *   - layout
+ *   - обработчик ошибок
+ */
 
-    /**
-     * Инициализация приложения.
-     *
-     * Инициализируются/конфигурируются компоненты:
-     * - dotEnv
-     * - контейнер
-     * - бандлы
-     * - диспетчер событий: подписка на события приложения
-     * - Cors (для приложения RPC)
-     * - команды консоли
-     * - поведения
-     *   - layout
-     *   - обработчик ошибок
-     */
+/** @var EventDispatcherConfiguratorInterface $eventDispatcherConfigurator */
+$eventDispatcherConfigurator = $container->get(EventDispatcherConfiguratorInterface::class);
 
-    /** @var EventDispatcherConfiguratorInterface $eventDispatcherConfigurator */
-    $eventDispatcherConfigurator = $container->get(EventDispatcherConfiguratorInterface::class);
+/** Подключаем дампер */
+$eventDispatcherConfigurator->addSubscriber(SymfonyDumperSubscriber::class);
 
-    /** Подключаем дампер */
-    $eventDispatcherConfigurator->addSubscriber(SymfonyDumperSubscriber::class);
-
-    /** @var AppInterface $appFactory */
-    $appFactory = $container->get(AppInterface::class);
-    $appFactory->init();
-};
+/** @var AppInterface $appFactory */
+$appFactory = $container->get(AppInterface::class);
+$appFactory->init();
