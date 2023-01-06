@@ -12,7 +12,7 @@
 //use ZnCore\App\Interfaces\AppInterface;
 //
 //define('MICRO_TIME', microtime(true));
-//
+//$_SERVER['MICRO_TIME'] = microtime(true);
 //require __DIR__ . '/../../../autoload.php';
 //
 //\ZnCore\Code\Helpers\DeprecateHelper::hardThrow();

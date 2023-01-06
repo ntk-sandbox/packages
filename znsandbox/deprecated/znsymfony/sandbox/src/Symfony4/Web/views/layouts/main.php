@@ -62,7 +62,7 @@ $menu = ModuleHelper::map('App\\' . Inflector::camelize($moduleId));
 
 <div>
     <small class="text-muted">
-        <?= round(microtime(true) - MICRO_TIME, 5) ?>
+        <?= round(microtime(true) - $_SERVER['MICRO_TIME'], 5) ?>
     </small>
 </div>
 

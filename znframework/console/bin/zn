@@ -10,7 +10,8 @@ use ZnCore\DotEnv\Domain\Libs\DotEnvLoader;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnFramework\Console\Domain\Libs\ConsoleApp;
 
-define('MICRO_TIME', microtime(true));
+//define('MICRO_TIME', microtime(true));
+$_SERVER['MICRO_TIME'] = microtime(true);
 
 require __DIR__ . '/../../../../../../vendor/autoload.php';
 

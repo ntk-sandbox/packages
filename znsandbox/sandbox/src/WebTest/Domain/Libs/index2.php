@@ -18,7 +18,8 @@ use ZnTool\Dev\VarDumper\Subscribers\SymfonyDumperSubscriber;
 
 return function (ContainerInterface $container, Request $request): void {
 
-    defined('MICRO_TIME') or define('MICRO_TIME', microtime(true));
+//    defined('MICRO_TIME') or define('MICRO_TIME', microtime(true));
+    $_SERVER['MICRO_TIME'] = microtime(true);
 
     //require __DIR__ . '/../vendor/autoload.php';
 
@@ -78,27 +79,4 @@ return function (ContainerInterface $container, Request $request): void {
     /** @var AppInterface $appFactory */
     $appFactory = $container->get(AppInterface::class);
     $appFactory->init();
-
-    /**
-     * Обработка HTTP-запроса средствами HTTP-фрэймворка
-     */
-
-    // создаем объект запроса из глобальных переменных окружения
-//    $request = $request ?? Request::createFromGlobals();
-    //$request->attributes->set('REQUEST_ID', Uuid::v4()->toRfc4122());
-
-//    /** @var HttpKernelInterface | TerminableInterface $framework */
-//    $framework = $container->get(HttpKernelInterface::class);
-//
-//    // actually execute the kernel, which turns the request into a response
-//    // by dispatching events, calling a controller, and returning the response
-//    $response = $framework->handle($request);
-//
-//    // send the headers and echo the content
-//    //    $response->send();
-//
-//    // trigger the kernel.terminate event
-//    $framework->terminate($request, $response);
-
-//    return $response;
 };

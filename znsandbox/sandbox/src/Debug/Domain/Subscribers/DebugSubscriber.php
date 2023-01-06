@@ -94,7 +94,7 @@ class DebugSubscriber implements EventSubscriberInterface
 
         $profilingCollection = Profiler::all();
         $lastTimestamp = $profilingCollection->last()->getTimestamp();
-        $totalRuntime = round($lastTimestamp - MICRO_TIME, 4);
+        $totalRuntime = round($lastTimestamp - $_SERVER['MICRO_TIME'], 4);
 
         $requestEntity = new RequestEntity();
         $requestEntity->setUuid(Uuid::v4()->toRfc4122());

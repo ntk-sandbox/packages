@@ -14,5 +14,5 @@ use Packages\Application\Facades\BrandFacade;
 
 <!-- Default to the left -->
 <small class="text-muted">
-    <?= round(microtime(true) - MICRO_TIME, 3) ?>
+    <?= round(microtime(true) - $_SERVER['MICRO_TIME'], 3) ?>
 </small>

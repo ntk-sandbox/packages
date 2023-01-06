@@ -61,7 +61,7 @@ class SetLayoutSubscriber implements EventSubscriberInterface
                     'content' => $response->getContent(),
                     'breadcrumb' => BreadcrumbWidget::widget(),
                     'alert' => AlertWidget::widget(),
-                    'runtime' => round(microtime(true) - MICRO_TIME, 3),
+                    'runtime' => round(microtime(true) - $_SERVER['MICRO_TIME'], 3),
                 ],
             ]);
             $event->setResponse($jsonResponse);

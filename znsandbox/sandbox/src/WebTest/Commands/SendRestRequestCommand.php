@@ -30,9 +30,7 @@ class SendRestRequestCommand extends Command
             ],
         ]);
 
-        dd($response->getContent());
-
-        $output->writeln('');
+        $output->writeln($response->getContent());
         return 0;
     }
 }

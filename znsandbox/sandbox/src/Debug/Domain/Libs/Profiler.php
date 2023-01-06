@@ -34,7 +34,7 @@ class Profiler
             if ($prevProfilingEntity) {
                 $lastMicrotime = $prevProfilingEntity->getTimestamp();
             } else {
-                $lastMicrotime = MICRO_TIME;
+                $lastMicrotime = $_SERVER['MICRO_TIME'];
             }
             $relativeMicrotime = round($profilingEntity->getTimestamp() - $lastMicrotime, 4);
             $profilingEntity->setRuntime($relativeMicrotime);
@@ -49,7 +49,7 @@ class Profiler
     {
         if (!self::$collection) {
             self::$collection = new Collection();
-            self::$collection->add(self::createEntity('start', MICRO_TIME));
+            self::$collection->add(self::createEntity('start', $_SERVER['MICRO_TIME']));
         }
         return self::$collection;
     }
