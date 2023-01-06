@@ -16,7 +16,7 @@ use ZnCore\Container\Libs\Container;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnTool\Dev\VarDumper\Subscribers\SymfonyDumperSubscriber;
 
-return function (ContainerInterface $container, Request $request): void {
+return function (ContainerInterface $container): void {
 
 //    defined('MICRO_TIME') or define('MICRO_TIME', microtime(true));
     $_SERVER['MICRO_TIME'] = microtime(true);

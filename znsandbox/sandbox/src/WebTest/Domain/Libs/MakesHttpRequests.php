@@ -4,12 +4,11 @@ namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
 
 use Illuminate\Contracts\Http\Kernel as HttpKernel;
 use Illuminate\Cookie\CookieValuePrefix;
-use Illuminate\Http\Request;
 use Illuminate\Testing\LoggedExceptionCollection;
 use Illuminate\Testing\TestResponse;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\File\UploadedFile as SymfonyUploadedFile;
-use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
@@ -523,13 +522,8 @@ class MakesHttpRequests
         );
     }
 
-    /*public function __construct(private HttpKernelInterface $httpKernel)
-    {
-    }*/
-
     public function __construct(
         private ContainerInterface $container
-//        , private HttpKernelInterface $httpKernel
     )
     {
     }
@@ -537,15 +531,14 @@ class MakesHttpRequests
     /**
      * Обработка HTTP-запроса средствами HTTP-фрэймворка.
      *
-     * @param SymfonyRequest $request
+     * @param Request $request
      * @return Response
      * @throws \Psr\Container\ContainerExceptionInterface
      * @throws \Psr\Container\NotFoundExceptionInterface
      */
-    protected function handleRequest(SymfonyRequest $request): Response
+    protected function handleRequest(Request $request): Response
     {
         /** @var HttpKernelInterface | TerminableInterface $framework */
-//        $framework = $this->httpKernel;
         $framework = $this->container->get(HttpKernelInterface::class);
 
         // actually execute the kernel, which turns the request into a response
@@ -563,7 +556,7 @@ class MakesHttpRequests
 
     public function call($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Response
     {
-        $request = SymfonyRequest::create(
+        $request = Request::create(
             $this->prepareUrlForRequest($uri),
             $method,
             $parameters,
@@ -572,21 +565,17 @@ class MakesHttpRequests
             array_replace($this->serverVariables, $server),
             $content
         );
-
-        $this->forgeServerVar($request);
         $this->includeEndpoint($request);
-        
-        $response = $this->handleRequest($request);
-
-        return $response;
+        return $this->handleRequest($request);
     }
     
-    protected function includeEndpoint(SymfonyRequest $request) {
+    protected function includeEndpoint(Request $request) {
+        $this->forgeServerVar($request);
         $func = include __DIR__. '/endpoint.php';
-        call_user_func($func, $this->container, $request);
+        call_user_func($func, $this->container);
     }
     
-    protected function forgeServerVar(SymfonyRequest $request): void {
+    protected function forgeServerVar(Request $request): void {
         foreach ($request->server->all() as $key => $value) {
             $_SERVER[$key] = $value;
         }
@@ -610,13 +599,13 @@ class MakesHttpRequests
 
         $files = array_merge($files, $this->extractFilesFromDataArray($parameters));
 
-        $symfonyRequest = SymfonyRequest::create(
+        $symfonyRequest = Request::create(
             $this->prepareUrlForRequest($uri), $method, $parameters,
             $cookies, $files, array_replace($this->serverVariables, $server), $content
         );
 
         $response = $kernel->handle(
-            $request = Request::createFromBase($symfonyRequest)
+            $request = \Illuminate\Http\Request::createFromBase($symfonyRequest)
         );
 
         $kernel->terminate($request, $response);
