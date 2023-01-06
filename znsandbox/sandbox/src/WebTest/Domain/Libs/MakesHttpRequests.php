@@ -573,8 +573,6 @@ class MakesHttpRequests
             $_SERVER[$key] = $value;
         }
 
-//        $container = ContainerHelper::getContainer();
-
         $func = include __DIR__. '/index2.php';
         call_user_func($func, $this->container, $request);
         $response = $this->handleRequest($request);
