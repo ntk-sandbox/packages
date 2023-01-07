@@ -108,30 +108,30 @@ class JsonHttpClient extends HttpClient
     }
 
 
-    /**
-     * Call the given URI with a JSON request.
-     *
-     * @param  string  $method
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function json($method, $uri, array $data = [], array $headers = [])
-    {
-        $request = $this->createRequest($method, $uri, $data, $headers);
-        return $this->handleRequest($request);
-
-        /*return $this->call(
-            $method,
-            $uri,
-            $parameters,
-            $cookies,
-            $files,
-            $server,
-            $content
-        );*/
-    }
+//    /**
+//     * Call the given URI with a JSON request.
+//     *
+//     * @param  string  $method
+//     * @param  string  $uri
+//     * @param  array  $data
+//     * @param  array  $headers
+//     * @return Response
+//     */
+//    public function json($method, $uri, array $data = [], array $headers = [])
+//    {
+//        $request = $this->createRequest($method, $uri, $data, $headers);
+//        return $this->handleRequest($request);
+//
+//        /*return $this->call(
+//            $method,
+//            $uri,
+//            $parameters,
+//            $cookies,
+//            $files,
+//            $server,
+//            $content
+//        );*/
+//    }
 
     public function createRequest($method, $uri, array $data = [], array $headers = []): Request {
         $files = $this->extractFilesFromDataArray($data);
