@@ -123,22 +123,10 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function get($uri, array $headers = [])
     {
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-
-        return $this->call('GET', $uri, [], $cookies, [], $server);
-    }
-
-    /**
-     * Visit the given URI with a GET request, expecting a JSON response.
-     *
-     * @param  string  $uri
-     * @param  array  $headers
-     * @return Response
-     */
-    public function getJson($uri, array $headers = [])
-    {
-        return $this->json('GET', $uri, [], $headers);
+        return $this->callRequest('GET', $uri, [], $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('GET', $uri, [], $cookies, [], $server);
     }
 
     /**
@@ -151,23 +139,10 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function post($uri, array $data = [], array $headers = [])
     {
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-
-        return $this->call('POST', $uri, $data, $cookies, [], $server);
-    }
-
-    /**
-     * Visit the given URI with a POST request, expecting a JSON response.
-     *
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function postJson($uri, array $data = [], array $headers = [])
-    {
-        return $this->json('POST', $uri, $data, $headers);
+        return $this->callRequest('POST', $uri, $data, $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('POST', $uri, $data, $cookies, [], $server);
     }
 
     /**
@@ -180,25 +155,29 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function put($uri, array $data = [], array $headers = [])
     {
+        return $this->callRequest('PUT', $uri, $data, $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('PUT', $uri, $data, $cookies, [], $server);
+    }
+
+    public function createJsonRequest($method, $uri, array $data = [], array $headers = []): Request {
+        $parameters = [];
+        $server = $this->transformHeadersToServerVars($headers);
+        $cookies = $this->prepareCookiesForRequest();
+        $files = $this->extractFilesFromDataArray($data);
+
+        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
+        return $request;
+    }
+
+    protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
         $server = $this->transformHeadersToServerVars($headers);
         $cookies = $this->prepareCookiesForRequest();
 
-        return $this->call('PUT', $uri, $data, $cookies, [], $server);
+        return $this->call($method, $uri, $data, $cookies, [], $server);
     }
-
-    /**
-     * Visit the given URI with a PUT request, expecting a JSON response.
-     *
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function putJson($uri, array $data = [], array $headers = [])
-    {
-        return $this->json('PUT', $uri, $data, $headers);
-    }
-
+    
     /**
      * Visit the given URI with a PATCH request.
      *
@@ -209,23 +188,10 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function patch($uri, array $data = [], array $headers = [])
     {
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-
-        return $this->call('PATCH', $uri, $data, $cookies, [], $server);
-    }
-
-    /**
-     * Visit the given URI with a PATCH request, expecting a JSON response.
-     *
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function patchJson($uri, array $data = [], array $headers = [])
-    {
-        return $this->json('PATCH', $uri, $data, $headers);
+        return $this->callRequest('PATCH', $uri, $data, $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('PATCH', $uri, $data, $cookies, [], $server);
     }
 
     /**
@@ -238,23 +204,10 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function delete($uri, array $data = [], array $headers = [])
     {
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-
-        return $this->call('DELETE', $uri, $data, $cookies, [], $server);
-    }
-
-    /**
-     * Visit the given URI with a DELETE request, expecting a JSON response.
-     *
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function deleteJson($uri, array $data = [], array $headers = [])
-    {
-        return $this->json('DELETE', $uri, $data, $headers);
+        return $this->callRequest('DELETE', $uri, $data, $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('DELETE', $uri, $data, $cookies, [], $server);
     }
 
     /**
@@ -267,24 +220,10 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function options($uri, array $data = [], array $headers = [])
     {
-        $server = $this->transformHeadersToServerVars($headers);
-
-        $cookies = $this->prepareCookiesForRequest();
-
-        return $this->call('OPTIONS', $uri, $data, $cookies, [], $server);
-    }
-
-    /**
-     * Visit the given URI with an OPTIONS request, expecting a JSON response.
-     *
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function optionsJson($uri, array $data = [], array $headers = [])
-    {
-        return $this->json('OPTIONS', $uri, $data, $headers);
+        return $this->callRequest('OPTIONS', $uri, $data, $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('OPTIONS', $uri, $data, $cookies, [], $server);
     }
 
     /**
@@ -296,38 +235,10 @@ class MakesHttpRequests extends BaseMockHttpClient
      */
     public function head($uri, array $headers = [])
     {
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-        return $this->call('HEAD', $uri, [], $cookies, [], $server);
-    }
-
-    /**
-     * Call the given URI with a JSON request.
-     *
-     * @param  string  $method
-     * @param  string  $uri
-     * @param  array  $data
-     * @param  array  $headers
-     * @return Response
-     */
-    public function json($method, $uri, array $data = [], array $headers = [])
-    {
-        $files = $this->extractFilesFromDataArray($data);
-        $content = json_encode($data);
-        $headers = array_merge([
-            'CONTENT_LENGTH' => mb_strlen($content, '8bit'),
-            'CONTENT_TYPE' => 'application/json',
-            'Accept' => 'application/json',
-        ], $headers);
-        return $this->call(
-            $method,
-            $uri,
-            [],
-            $this->prepareCookiesForJsonRequest(),
-            $files,
-            $this->transformHeadersToServerVars($headers),
-            $content
-        );
+        return $this->callRequest('HEAD', $uri, [], $headers);
+//        $server = $this->transformHeadersToServerVars($headers);
+//        $cookies = $this->prepareCookiesForRequest();
+//        return $this->call('HEAD', $uri, [], $cookies, [], $server);
     }
 
 //    /**

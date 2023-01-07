@@ -47,7 +47,6 @@ class CommandHelper
         }, $files);
 
         foreach ($commands as $commandClassName) {
-
             if(is_dir($namespace)) {
                 $classes = get_declared_classes();
                 $file = realpath(FilePathHelper::up($namespace)) . '/' . basename($commandClassName) . '.php';

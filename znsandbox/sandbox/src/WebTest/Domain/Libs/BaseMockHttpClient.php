@@ -222,8 +222,15 @@ abstract class BaseMockHttpClient
     {
     }
 
+    
+    
     public function call($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Response
     {
+        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
+        return $this->handleRequest($request);
+    }
+    
+    protected function createRequestInstance($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Request {
         $request = Request::create(
             $this->prepareUrlForRequest($uri),
             $method,
@@ -233,7 +240,7 @@ abstract class BaseMockHttpClient
             array_replace($this->serverVariables, $server),
             $content
         );
-        return $this->handleRequest($request);
+        return $request;
     }
 
     /**
@@ -244,7 +251,7 @@ abstract class BaseMockHttpClient
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
-    protected function handleRequest(Request $request): Response
+    public function handleRequest(Request $request): Response
     {
         /** @var HttpKernelInterface | TerminableInterface $framework */
 //        $framework = $this->container->get(HttpKernelInterface::class);
