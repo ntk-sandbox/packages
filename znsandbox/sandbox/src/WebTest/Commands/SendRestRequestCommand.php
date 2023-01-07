@@ -7,13 +7,10 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
-use Symfony\Component\HttpKernel\HttpKernelInterface;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use ZnCore\Container\Helpers\ContainerHelper;
 use ZnFramework\Console\Domain\Libs\ZnShell;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
-use ZnLib\Components\Format\Encoders\PhpSerializeEncoder;
-use ZnLib\Components\Format\Encoders\SafeBase64Encoder;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 
 //use Symfony\Component\BrowserKit\HttpBrowser;
 
@@ -21,6 +18,8 @@ class SendRestRequestCommand extends BaseCommand
 {
 
     protected static $defaultName = 'http:request:send';
+
+    protected AppFactory $appFactory;
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -35,7 +34,10 @@ class SendRestRequestCommand extends BaseCommand
             ],
         ];
 
-        $httpClient = $this->createHttpClient();
+        $container = ContainerHelper::getContainer();
+        $this->appFactory = new \App\Application\Common\Factories\AppFactory($container);
+
+        $httpClient = $this->createHttpClient($this->appFactory);
         $request = $httpClient->createRequest('POST', '/json-rpc', $jsonRpcRequest);
         $response = $this->handleRequest($request);
         $output->writeln($response->getContent());
@@ -47,8 +49,15 @@ class SendRestRequestCommand extends BaseCommand
     {
         $httpKernel = new ConsoleHttpKernel($this->createEncoder());
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
-        $httpKernelBrowser->request($request->getMethod(), $request->getUri(), [], [], $request->server->all(), $request->getContent());
-        return $httpKernelBrowser->getResponse();   
+        $httpKernelBrowser->request(
+            $request->getMethod(),
+            $request->getUri(),
+            [],
+            [],
+            $request->server->all(),
+            $request->getContent()
+        );
+        return $httpKernelBrowser->getResponse();
     }
 
     protected function handleRequest____(Request $request): Response
@@ -66,53 +75,10 @@ class SendRestRequestCommand extends BaseCommand
         $encodedResponse = $shell->runProcess(
             [
                 'http:request:run',
-                $encodedRequest
+                "--factory-class" => \App\Application\Common\Factories\AppFactory::class,
+                $encodedRequest,
             ]
         )->getOutput();
         return $encodedResponse;
-    }
-}
-
-
-class ConsoleHttpKernel implements HttpKernelInterface {
-    
-    protected EncoderInterface $encoder;
-    
-    public function __construct()
-    {
-        $this->encoder = $this->createEncoder();
-    }
-
-    public function handle(Request $request, int $type = self::MAIN_REQUEST, bool $catch = true): Response
-    {
-        $encodedRequest = $this->encoder->encode($request);
-        $encodedResponse = $this->runConsoleCommand($encodedRequest);
-        $response = $this->encoder->decode($encodedResponse);
-        return $response;
-    }
-
-    protected function runConsoleCommand(string $encodedRequest): string
-    {
-        $shell = new ZnShell();
-        $encodedResponse = $shell->runProcess(
-            [
-                'http:request:run',
-                $encodedRequest
-            ]
-        )->getOutput();
-        return $encodedResponse;
-    }
-
-    protected function createEncoder()
-    {
-        $requestEncoder = new ChainEncoder(
-            new Collection(
-                [
-                    new PhpSerializeEncoder(),
-                    new SafeBase64Encoder(),
-                ]
-            )
-        );
-        return $requestEncoder;
     }
 }

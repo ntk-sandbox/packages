@@ -19,13 +19,15 @@ use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnTool\Dev\VarDumper\Subscribers\SymfonyDumperSubscriber;
 
 
-class AppFactory
+abstract class AppFactory
 {
-
-    public function __construct(private ContainerInterface $container, private array $apps)
+    
+    public function __construct(private ContainerInterface $container)
     {
     }
 
+    abstract protected function apps(): array;
+    
     public function createKernelInstance(Request $request): HttpKernelInterface
     {
         $this->forgeServerVar($request);
@@ -44,7 +46,7 @@ class AppFactory
     
     public function createAppInstance(Request $request): AppInterface
     {
-        $this->assignApp($this->container, $request, $this->apps);
+        $this->assignApp($this->container, $request, $this->apps());
 
         /** @var EventDispatcherConfiguratorInterface $eventDispatcherConfigurator */
         $eventDispatcherConfigurator = $this->container->get(EventDispatcherConfiguratorInterface::class);
