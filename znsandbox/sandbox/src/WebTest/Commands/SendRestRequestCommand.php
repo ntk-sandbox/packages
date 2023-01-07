@@ -6,7 +6,12 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\HttpKernelBrowser;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
 use ZnFramework\Console\Domain\Libs\ZnShell;
+
+//use Symfony\Component\BrowserKit\HttpBrowser;
 
 class SendRestRequestCommand extends BaseCommand
 {
@@ -36,10 +41,46 @@ class SendRestRequestCommand extends BaseCommand
 
     protected function handleRequest(Request $request): Response
     {
+        $httpKernel = new ConsoleHttpKernel($this->createEncoder());
+        $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
+        $httpKernelBrowser->request($request->getMethod(), $request->getUri(), [], [], $request->server->all(), $request->getContent());
+        return $httpKernelBrowser->getResponse();   
+    }
+
+    protected function handleRequest____(Request $request): Response
+    {
         $requestEncoder = $this->createEncoder();
         $encodedRequest = $requestEncoder->encode($request);
         $encodedResponse = $this->runConsoleCommand($encodedRequest);
         $response = $requestEncoder->decode($encodedResponse);
+        return $response;
+    }
+
+    protected function runConsoleCommand(string $encodedRequest): string
+    {
+        $shell = new ZnShell();
+        $encodedResponse = $shell->runProcess(
+            [
+                'http:request:run',
+                $encodedRequest
+            ]
+        )->getOutput();
+        return $encodedResponse;
+    }
+}
+
+
+class ConsoleHttpKernel implements HttpKernelInterface {
+    
+    public function __construct(private EncoderInterface $encoder)
+    {
+    }
+
+    public function handle(Request $request, int $type = self::MAIN_REQUEST, bool $catch = true): Response
+    {
+        $encodedRequest = $this->encoder->encode($request);
+        $encodedResponse = $this->runConsoleCommand($encodedRequest);
+        $response = $this->encoder->decode($encodedResponse);
         return $response;
     }
 

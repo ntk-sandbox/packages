@@ -243,6 +243,11 @@ abstract class BaseMockHttpClient
         return $request;
     }
 
+    public function createKernelInstance(Request $request): HttpKernelInterface {
+        $framework = $this->appFactory->createKernelInstance($request);
+        return $framework;
+    }
+    
     /**
      * Обработка HTTP-запроса средствами HTTP-фрэймворка.
      *
