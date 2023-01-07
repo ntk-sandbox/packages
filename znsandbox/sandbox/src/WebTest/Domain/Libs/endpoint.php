@@ -2,6 +2,7 @@
 
 /**
  * @var ContainerInterface $container
+ * @var Request $request
  */
 
 use App\Application\Admin\Libs\AdminApp;
@@ -44,7 +45,7 @@ $_SERVER['MICRO_TIME'] = microtime(true);
 /** @var ContainerConfiguratorInterface $containerConfigurator */
 $containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
 
-$envServer = new EnvServer($_SERVER);
+$envServer = new EnvServer($request->server->all());
 if ($envServer->isContainsSegmentUri('admin')) {
     $envServer->fixUri('admin');
     $containerConfigurator->singleton(AppInterface::class, AdminApp::class);
