@@ -16,8 +16,8 @@ abstract class BaseCommand extends Command
 
     protected function createHttpClient(AppFactory $appFactory = null): JsonHttpClient
     {
-//        $httpClient = new JsonHttpClient($appFactory);
-        $httpClient = new HttpClient($appFactory);
+        $httpClient = new JsonHttpClient($appFactory);
+//        $httpClient = new HttpClient($appFactory);
         return $httpClient;
     }
 
