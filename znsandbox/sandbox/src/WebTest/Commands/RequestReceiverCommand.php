@@ -65,10 +65,10 @@ class RequestReceiverCommand extends BaseCommand
         return $httpKernelBrowser->getResponse();
     }
 
-    protected function handleRequest_______________(Request $request): Response
+    /*protected function handleRequest_______________(Request $request): Response
     {
         $httpClient = $this->createHttpClient($this->appFactory);
         $response = $httpClient->handleRequest($request);
         return $response;
-    }
+    }*/
 }

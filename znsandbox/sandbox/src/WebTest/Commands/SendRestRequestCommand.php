@@ -37,7 +37,7 @@ class SendRestRequestCommand extends BaseCommand
         $container = ContainerHelper::getContainer();
         $this->appFactory = new \App\Application\Common\Factories\AppFactory($container);
 
-        $httpClient = $this->createHttpClient($this->appFactory);
+        $httpClient = $this->createHttpClient(/*$this->appFactory*/);
         $request = $httpClient->createRequest('POST', '/json-rpc', $jsonRpcRequest);
         $response = $this->handleRequest($request);
         $output->writeln($response->getContent());
@@ -60,7 +60,7 @@ class SendRestRequestCommand extends BaseCommand
         return $httpKernelBrowser->getResponse();
     }
 
-    protected function handleRequest____(Request $request): Response
+    /*protected function handleRequest____(Request $request): Response
     {
         $requestEncoder = $this->createEncoder();
         $encodedRequest = $requestEncoder->encode($request);
@@ -80,5 +80,5 @@ class SendRestRequestCommand extends BaseCommand
             ]
         )->getOutput();
         return $encodedResponse;
-    }
+    }*/
 }

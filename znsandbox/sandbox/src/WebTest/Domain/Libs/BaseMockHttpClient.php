@@ -17,6 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
+use ZnCore\Code\Helpers\DeprecateHelper;
 use ZnCore\Container\Helpers\ContainerHelper;
 
 abstract class BaseMockHttpClient
@@ -72,7 +73,12 @@ abstract class BaseMockHttpClient
      * @var bool
      */
     protected $withCredentials = false;
-
+    
+    public function __construct(
+        private ?AppFactory $appFactory = null
+    )
+    {
+    }
 
     /**
      * Define additional headers to be sent with the request.
@@ -216,14 +222,6 @@ abstract class BaseMockHttpClient
 //        return $this;
 //    }
 
-    public function __construct(
-        private AppFactory $appFactory
-    )
-    {
-    }
-
-    
-    
     public function call($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Response
     {
         $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
@@ -255,9 +253,12 @@ abstract class BaseMockHttpClient
      * @return Response
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
+     * @deprecated 
      */
     public function handleRequest(Request $request): Response
     {
+        DeprecateHelper::hardThrow();
+        
         /** @var HttpKernelInterface | TerminableInterface $framework */
 //        $framework = $this->container->get(HttpKernelInterface::class);
 

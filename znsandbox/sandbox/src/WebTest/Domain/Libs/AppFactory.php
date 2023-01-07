@@ -44,7 +44,7 @@ abstract class AppFactory
         }
     }
     
-    public function createAppInstance(Request $request): AppInterface
+    protected function createAppInstance(Request $request): AppInterface
     {
         $this->assignApp($this->container, $request, $this->apps());
 
@@ -60,7 +60,7 @@ abstract class AppFactory
         return $appFactory;
     }
 
-    public function assignApp(ContainerInterface $container, Request $request, array $apps)
+    protected function assignApp(ContainerInterface $container, Request $request, array $apps)
     {
         /** @var ContainerConfiguratorInterface $containerConfigurator */
         $containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
