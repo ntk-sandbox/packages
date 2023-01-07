@@ -19,7 +19,7 @@ use ZnLib\Components\Format\Encoders\PhpSerializeEncoder;
 use ZnLib\Components\Format\Encoders\SafeBase64Encoder;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\JsonHttpClient;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\MakesHttpRequests;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
 
 class SendRestRequestCommand extends BaseCommand
 {
@@ -43,7 +43,7 @@ class SendRestRequestCommand extends BaseCommand
             ],
         ];
 
-        $request = $httpClient->createJsonRequest('POST', '/json-rpc', $jsonRpcRequest);
+        $request = $httpClient->createRequest('POST', '/json-rpc', $jsonRpcRequest);
 
         $requestEncoder = $this->createEncoder();
 

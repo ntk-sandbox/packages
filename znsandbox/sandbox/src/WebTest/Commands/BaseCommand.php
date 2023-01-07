@@ -18,7 +18,7 @@ use ZnLib\Components\Format\Encoders\PhpSerializeEncoder;
 use ZnLib\Components\Format\Encoders\SafeBase64Encoder;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\JsonHttpClient;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\MakesHttpRequests;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
 
 abstract class BaseCommand extends Command
 {

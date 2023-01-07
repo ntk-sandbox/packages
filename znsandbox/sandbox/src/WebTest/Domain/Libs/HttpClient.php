@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\Container\Helpers\ContainerHelper;
 
-class MakesHttpRequests extends BaseMockHttpClient
+class HttpClient extends BaseMockHttpClient
 {
     
 //    /**
@@ -161,7 +161,7 @@ class MakesHttpRequests extends BaseMockHttpClient
 //        return $this->call('PUT', $uri, $data, $cookies, [], $server);
     }
 
-    public function createJsonRequest($method, $uri, array $data = [], array $headers = []): Request {
+    public function createRequest($method, $uri, array $data = [], array $headers = []): Request {
         $parameters = [];
         $server = $this->transformHeadersToServerVars($headers);
         $cookies = $this->prepareCookiesForRequest();

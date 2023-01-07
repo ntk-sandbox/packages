@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\Container\Helpers\ContainerHelper;
 
-class JsonHttpClient extends MakesHttpRequests
+class JsonHttpClient extends HttpClient
 {
 
 
@@ -103,7 +103,7 @@ class JsonHttpClient extends MakesHttpRequests
 
 
     protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
-        $request = $this->createJsonRequest($method, $uri, $data, $headers);
+        $request = $this->createRequest($method, $uri, $data, $headers);
         return $this->handleRequest($request);
     }
 
@@ -119,7 +119,7 @@ class JsonHttpClient extends MakesHttpRequests
      */
     public function json($method, $uri, array $data = [], array $headers = [])
     {
-        $request = $this->createJsonRequest($method, $uri, $data, $headers);
+        $request = $this->createRequest($method, $uri, $data, $headers);
         return $this->handleRequest($request);
 
         /*return $this->call(
@@ -133,7 +133,7 @@ class JsonHttpClient extends MakesHttpRequests
         );*/
     }
 
-    public function createJsonRequest($method, $uri, array $data = [], array $headers = []): Request {
+    public function createRequest($method, $uri, array $data = [], array $headers = []): Request {
         $files = $this->extractFilesFromDataArray($data);
         $content = json_encode($data);
         $jsonHeaders = [
