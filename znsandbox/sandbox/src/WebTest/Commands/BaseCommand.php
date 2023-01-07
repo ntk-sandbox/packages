@@ -14,9 +14,9 @@ use ZnSandbox\Sandbox\WebTest\Domain\Libs\JsonHttpClient;
 abstract class BaseCommand extends Command
 {
 
-    protected function createHttpClient(AppFactory $appFactory = null): JsonHttpClient
+    protected function createHttpClient(/*AppFactory $appFactory = null*/): JsonHttpClient
     {
-        $httpClient = new JsonHttpClient($appFactory);
+        $httpClient = new JsonHttpClient(/*$appFactory*/);
 //        $httpClient = new HttpClient($appFactory);
         return $httpClient;
     }
