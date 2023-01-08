@@ -2,8 +2,6 @@
 
 namespace ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins;
 
-use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\JsonHttpClient;
 use ZnSandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
 
 class JsonAuthPlugin

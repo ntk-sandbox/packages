@@ -17,9 +17,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
+use ZnCore\Code\Helpers\DeprecateHelper;
 use ZnCore\Container\Helpers\ContainerHelper;
 use ZnCore\Text\Helpers\Inflector;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
+
+DeprecateHelper::hardThrow();
 
 class JsonHttpClient extends HttpClient
 {

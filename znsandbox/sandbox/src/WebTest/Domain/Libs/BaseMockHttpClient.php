@@ -2,26 +2,19 @@
 
 namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
 
-use App\Application\Admin\Libs\AdminApp;
-use App\Application\Rpc\Libs\RpcApp;
-use App\Application\Web\Libs\WebApp;
-use Illuminate\Contracts\Http\Kernel as HttpKernel;
 use Illuminate\Cookie\CookieValuePrefix;
 use Illuminate\Testing\LoggedExceptionCollection;
 use Illuminate\Testing\TestResponse;
 use Psr\Container\ContainerExceptionInterface;
-use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
-use Symfony\Component\HttpFoundation\File\UploadedFile as SymfonyUploadedFile;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Container\Helpers\ContainerHelper;
 use ZnCore\Text\Helpers\Inflector;
 use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
-use ZnSandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
 
 abstract class BaseMockHttpClient
 {
@@ -238,13 +231,9 @@ abstract class BaseMockHttpClient
         if(empty($name)) {
             $name = get_class($plugin);
         }
-
         if(property_exists($plugin, 'client')) {
-//            dump(111);
             $plugin->client = $this;
-
         }
-
         $this->plugins[$name] = $plugin;
     }
 
@@ -360,9 +349,9 @@ abstract class BaseMockHttpClient
      */
     protected function transformHeadersToServerVars(array $headers)
     {
-//        $headers = $this->prepareHeaderKeys($headers);
+        $headers = $this->prepareHeaderKeys($headers);
         return collect($headers)->mapWithKeys(function ($value, $name) {
-            $name = strtr(strtoupper($name), '-', '_');
+//            $name = $this->prepareHeaderKey($name);
 
             return [$this->formatServerHeaderKey($name) => $value];
         })->all();
@@ -394,7 +383,7 @@ abstract class BaseMockHttpClient
         $files = [];
 
         foreach ($data as $key => $value) {
-            if ($value instanceof SymfonyUploadedFile) {
+            if ($value instanceof UploadedFile) {
                 $files[$key] = $value;
 
                 unset($data[$key]);
@@ -453,6 +442,17 @@ abstract class BaseMockHttpClient
     }
 
     protected function prepareHeaderKeys(array $headers): array {
+        return collect($headers)->mapWithKeys(function ($value, $name) {
+            $name = $this->prepareHeaderKey($name);
+            return [$name => $value];
+        })->all();
+    }
+
+    protected function prepareHeaderKey(string $name): string {
+        return strtr(strtoupper($name), '-', '_');
+    }
+
+    protected function prepareHeaderKeys___(array $headers): array {
         $newHeaders = [];
         foreach ($headers as $headerKey => $headerValue) {
             $headerKey = Inflector::underscore($headerKey);
@@ -464,6 +464,7 @@ abstract class BaseMockHttpClient
     }
 
     protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
+        DeprecateHelper::hardThrow();
         $server = $this->transformHeadersToServerVars($headers);
         $cookies = $this->prepareCookiesForRequest();
         return $this->call($method, $uri, $data, $cookies, [], $server);

@@ -7,17 +7,14 @@ use ZnCore\Collection\Libs\Collection;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnLib\Components\Format\Encoders\PhpSerializeEncoder;
 use ZnLib\Components\Format\Encoders\SafeBase64Encoder;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\JsonHttpClient;
 
 abstract class BaseCommand extends Command
 {
 
-    protected function createHttpClient(/*AppFactory $appFactory = null*/): HttpClient
+    protected function createHttpClient(): HttpClient
     {
-        $httpClient = new JsonHttpClient(/*$appFactory*/);
-//        $httpClient = new HttpClient();
+        $httpClient = new HttpClient();
         return $httpClient;
     }
 

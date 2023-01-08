@@ -14,14 +14,10 @@ use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonAuthPlugin;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
 
-//use Symfony\Component\BrowserKit\HttpBrowser;
-
 class SendRestRequestCommand extends BaseCommand
 {
 
     protected static $defaultName = 'http:request:send';
-
-//    protected AppFactory $appFactory;
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -36,28 +32,19 @@ class SendRestRequestCommand extends BaseCommand
             ],
         ];
 
-//        $container = ContainerHelper::getContainer();
-//        $this->appFactory = new \App\Application\Common\Factories\AppFactory($container);
-
-        $httpClient = $this->createHttpClient(/*$this->appFactory*/);
+        $httpClient = $this->createHttpClient();
         $httpClient->addPlugin(new JsonPlugin());
         $httpClient->addPlugin(new JsonAuthPlugin());
 
         /** @var JsonAuthPlugin $jsonAuthPlugin */
-//        $jsonAuthPlugin = $httpClient->getPlugin(JsonAuthPlugin::class);
+        $jsonAuthPlugin = $httpClient->getPlugin(JsonAuthPlugin::class);
 //        $jsonAuthPlugin->withToken('asdadasdasdsa');
 
         /** @var JsonPlugin $jsonPlugin */
         $jsonPlugin = $httpClient->getPlugin(JsonPlugin::class);
         $jsonPlugin->asJson();
 
-//        $content = json_encode($data);
-        $content = null;
-        $headers = [
-//            'Content-Type' => 'application/json',
-//            'Accept' => 'application/json',
-        ];
-        $request = $httpClient->createRequest('POST', '/json-rpc', $data, $headers, $content);
+        $request = $httpClient->createRequest('POST', '/json-rpc', $data);
         $response = $this->handleRequest($request);
         $output->writeln($response->getContent());
 
