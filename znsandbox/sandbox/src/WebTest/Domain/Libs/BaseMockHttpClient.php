@@ -19,6 +19,9 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\Code\Helpers\DeprecateHelper;
 use ZnCore\Container\Helpers\ContainerHelper;
+use ZnCore\Text\Helpers\Inflector;
+use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
+use ZnSandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
 
 abstract class BaseMockHttpClient
 {
@@ -73,7 +76,9 @@ abstract class BaseMockHttpClient
      * @var bool
      */
     protected $withCredentials = false;
-    
+
+    protected $plugins = [];
+
     public function __construct(
         private ?AppFactory $appFactory = null
     )
@@ -103,6 +108,13 @@ abstract class BaseMockHttpClient
     public function withHeader(string $name, string $value)
     {
         $this->defaultHeaders[$name] = $value;
+
+        return $this;
+    }
+
+    public function removeHeader(string $name)
+    {
+        unset($this->defaultHeaders[$name]);
 
         return $this;
     }
@@ -222,12 +234,39 @@ abstract class BaseMockHttpClient
 //        return $this;
 //    }
 
+    public function addPlugin(object $plugin, string $name = null) {
+        if(empty($name)) {
+            $name = get_class($plugin);
+        }
+
+        if(property_exists($plugin, 'client')) {
+//            dump(111);
+            $plugin->client = $this;
+
+        }
+
+        $this->plugins[$name] = $plugin;
+    }
+
+    public function getPlugin(string $name): object {
+        return $this->plugins[$name];
+    }
+
+    protected function runPlugins(array $requestData): array {
+        foreach ($this->plugins as $plugin) {
+            if ($plugin instanceof PluginInterface) {
+                $requestData = $plugin->run($requestData);
+            }
+        }
+        return $requestData;
+    }
+
     public function call($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Response
     {
         $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
         return $this->handleRequest($request);
     }
-    
+
     protected function createRequestInstance($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Request {
         $request = Request::create(
             $this->prepareUrlForRequest($uri),
@@ -321,7 +360,8 @@ abstract class BaseMockHttpClient
      */
     protected function transformHeadersToServerVars(array $headers)
     {
-        return collect(array_merge($this->defaultHeaders, $headers))->mapWithKeys(function ($value, $name) {
+//        $headers = $this->prepareHeaderKeys($headers);
+        return collect($headers)->mapWithKeys(function ($value, $name) {
             $name = strtr(strtoupper($name), '-', '_');
 
             return [$this->formatServerHeaderKey($name) => $value];
@@ -396,4 +436,37 @@ abstract class BaseMockHttpClient
     {
         return $this->withCredentials ? $this->prepareCookiesForRequest() : [];
     }
+
+    public function createRequest($method, $uri, array $data = [], array $headers = [], ?string $content = null, array $parameters = []): Request {
+        $headers = array_merge($this->defaultHeaders, $headers);
+        $headers = $this->prepareHeaderKeys($headers);
+
+        $requestData = compact('method', 'uri', 'data', 'headers', 'content');
+        $requestData = $this->runPlugins($requestData);
+        extract($requestData);
+
+        $server = $this->transformHeadersToServerVars($headers);
+        $cookies = $this->prepareCookiesForRequest();
+        $files = $this->extractFilesFromDataArray($data);
+        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
+        return $request;
+    }
+
+    protected function prepareHeaderKeys(array $headers): array {
+        $newHeaders = [];
+        foreach ($headers as $headerKey => $headerValue) {
+            $headerKey = Inflector::underscore($headerKey);
+            $headerKey = strtoupper($headerKey);
+            $newHeaders[$headerKey] = $headerValue;
+        }
+        $headers = $newHeaders;
+        return $headers;
+    }
+
+    protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
+        $server = $this->transformHeadersToServerVars($headers);
+        $cookies = $this->prepareCookiesForRequest();
+        return $this->call($method, $uri, $data, $cookies, [], $server);
+    }
+
 }

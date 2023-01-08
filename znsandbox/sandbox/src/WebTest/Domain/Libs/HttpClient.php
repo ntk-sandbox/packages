@@ -21,98 +21,6 @@ use ZnCore\Container\Helpers\ContainerHelper;
 
 class HttpClient extends BaseMockHttpClient
 {
-    
-//    /**
-//     * The latest test response (if any).
-//     *
-//     * @var \Illuminate\Testing\TestResponse|null
-//     */
-//    public static $latestResponse;
-
-    /**
-     * Add an authorization token for the request.
-     *
-     * @param  string  $token
-     * @param  string  $type
-     * @return $this
-     */
-    public function withToken(string $token, string $type = 'Bearer')
-    {
-        return $this->withHeader('Authorization', $type.' '.$token);
-    }
-
-    /**
-     * Remove the authorization token from the request.
-     *
-     * @return $this
-     */
-    public function withoutToken()
-    {
-        unset($this->defaultHeaders['Authorization']);
-
-        return $this;
-    }
-
-//    /**
-//     * Disable middleware for the test.
-//     *
-//     * @param  string|array|null  $middleware
-//     * @return $this
-//     */
-//    public function withoutMiddleware($middleware = null)
-//    {
-//        if (is_null($middleware)) {
-//            $this->app->instance('middleware.disable', true);
-//
-//            return $this;
-//        }
-//
-//        foreach ((array) $middleware as $abstract) {
-//            $this->app->instance($abstract, new class
-//            {
-//                public function handle($request, $next)
-//                {
-//                    return $next($request);
-//                }
-//            });
-//        }
-//
-//        return $this;
-//    }
-
-//    /**
-//     * Enable the given middleware for the test.
-//     *
-//     * @param  string|array|null  $middleware
-//     * @return $this
-//     */
-//    public function withMiddleware($middleware = null)
-//    {
-//        if (is_null($middleware)) {
-//            unset($this->app['middleware.disable']);
-//
-//            return $this;
-//        }
-//
-//        foreach ((array) $middleware as $abstract) {
-//            unset($this->app[$abstract]);
-//        }
-//
-//        return $this;
-//    }
-
-//    /**
-//     * Set the referer header and previous URL session value in order to simulate a previous request.
-//     *
-//     * @param  string  $url
-//     * @return $this
-//     */
-//    public function from(string $url)
-//    {
-//        $this->app['session']->setPreviousUrl($url);
-//
-//        return $this->withHeader('referer', $url);
-//    }
 
     /**
      * Visit the given URI with a GET request.
@@ -161,23 +69,6 @@ class HttpClient extends BaseMockHttpClient
 //        return $this->call('PUT', $uri, $data, $cookies, [], $server);
     }
 
-    public function createRequest($method, $uri, array $data = [], array $headers = []): Request {
-        $parameters = [];
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-        $files = $this->extractFilesFromDataArray($data);
-
-        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
-        return $request;
-    }
-
-    protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-
-        return $this->call($method, $uri, $data, $cookies, [], $server);
-    }
-    
     /**
      * Visit the given URI with a PATCH request.
      *
@@ -293,4 +184,74 @@ class HttpClient extends BaseMockHttpClient
 //            );
 //        });
 //    }
+
+
+//    /**
+//     * The latest test response (if any).
+//     *
+//     * @var \Illuminate\Testing\TestResponse|null
+//     */
+//    public static $latestResponse;
+
+//    /**
+//     * Disable middleware for the test.
+//     *
+//     * @param  string|array|null  $middleware
+//     * @return $this
+//     */
+//    public function withoutMiddleware($middleware = null)
+//    {
+//        if (is_null($middleware)) {
+//            $this->app->instance('middleware.disable', true);
+//
+//            return $this;
+//        }
+//
+//        foreach ((array) $middleware as $abstract) {
+//            $this->app->instance($abstract, new class
+//            {
+//                public function handle($request, $next)
+//                {
+//                    return $next($request);
+//                }
+//            });
+//        }
+//
+//        return $this;
+//    }
+
+//    /**
+//     * Enable the given middleware for the test.
+//     *
+//     * @param  string|array|null  $middleware
+//     * @return $this
+//     */
+//    public function withMiddleware($middleware = null)
+//    {
+//        if (is_null($middleware)) {
+//            unset($this->app['middleware.disable']);
+//
+//            return $this;
+//        }
+//
+//        foreach ((array) $middleware as $abstract) {
+//            unset($this->app[$abstract]);
+//        }
+//
+//        return $this;
+//    }
+
+//    /**
+//     * Set the referer header and previous URL session value in order to simulate a previous request.
+//     *
+//     * @param  string  $url
+//     * @return $this
+//     */
+//    public function from(string $url)
+//    {
+//        $this->app['session']->setPreviousUrl($url);
+//
+//        return $this->withHeader('referer', $url);
+//    }
+
 }

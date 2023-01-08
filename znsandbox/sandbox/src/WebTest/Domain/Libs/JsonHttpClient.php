@@ -18,10 +18,33 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\Container\Helpers\ContainerHelper;
+use ZnCore\Text\Helpers\Inflector;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
 
 class JsonHttpClient extends HttpClient
 {
 
+//    protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
+//        $content = json_encode($data);
+//        $request = $this->createRequest($method, $uri, [], $headers, $content);
+//        return $this->handleRequest($request);
+//    }
+
+//    public function createRequest($method, $uri, array $data = [], array $headers = [], ?string $content = null): Request {
+//        /* $jsonHeaders = [
+//             'CONTENT_LENGTH' => mb_strlen($content, '8bit'),
+//         ];
+//         $headers = array_merge($jsonHeaders, $headers);*/
+//
+//        return parent::createRequest($method, $uri, $data, $headers, $content);
+//
+////        $parameters = [];
+////        $server = $this->transformHeadersToServerVars($headers);
+////        $cookies = $this->prepareCookiesForJsonRequest();
+////        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
+////        $request = $this->createRequestInstance2($method, $uri, $parameters, $cookies, $files, $server, $content, $headers);
+////        return $request;
+//    }
 
 //    /**
 //     * Visit the given URI with a GET request, expecting a JSON response.
@@ -99,56 +122,5 @@ class JsonHttpClient extends HttpClient
 //    {
 //        return $this->json('OPTIONS', $uri, $data, $headers);
 //    }
-
-
-
-    protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
-        $request = $this->createRequest($method, $uri, $data, $headers);
-        return $this->handleRequest($request);
-    }
-
-
-//    /**
-//     * Call the given URI with a JSON request.
-//     *
-//     * @param  string  $method
-//     * @param  string  $uri
-//     * @param  array  $data
-//     * @param  array  $headers
-//     * @return Response
-//     */
-//    public function json($method, $uri, array $data = [], array $headers = [])
-//    {
-//        $request = $this->createRequest($method, $uri, $data, $headers);
-//        return $this->handleRequest($request);
-//
-//        /*return $this->call(
-//            $method,
-//            $uri,
-//            $parameters,
-//            $cookies,
-//            $files,
-//            $server,
-//            $content
-//        );*/
-//    }
-
-    public function createRequest($method, $uri, array $data = [], array $headers = []): Request {
-        $files = $this->extractFilesFromDataArray($data);
-        $content = json_encode($data);
-        $jsonHeaders = [
-            'CONTENT_LENGTH' => mb_strlen($content, '8bit'),
-            'CONTENT_TYPE' => 'application/json',
-            'Accept' => 'application/json',
-        ];
-        $headers = array_merge($jsonHeaders, $headers);
-
-        $parameters = [];
-        $cookies = $this->prepareCookiesForJsonRequest();
-        $server = $this->transformHeadersToServerVars($headers);
-
-        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
-        return $request;
-    }
 
 }
