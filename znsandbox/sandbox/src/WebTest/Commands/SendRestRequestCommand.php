@@ -19,7 +19,7 @@ class SendRestRequestCommand extends BaseCommand
 
     protected static $defaultName = 'http:request:send';
 
-    protected AppFactory $appFactory;
+//    protected AppFactory $appFactory;
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -34,8 +34,8 @@ class SendRestRequestCommand extends BaseCommand
             ],
         ];
 
-        $container = ContainerHelper::getContainer();
-        $this->appFactory = new \App\Application\Common\Factories\AppFactory($container);
+//        $container = ContainerHelper::getContainer();
+//        $this->appFactory = new \App\Application\Common\Factories\AppFactory($container);
 
         $httpClient = $this->createHttpClient(/*$this->appFactory*/);
         $request = $httpClient->createRequest('POST', '/json-rpc', $jsonRpcRequest);
