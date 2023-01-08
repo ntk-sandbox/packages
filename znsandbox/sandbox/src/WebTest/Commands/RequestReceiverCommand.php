@@ -41,7 +41,6 @@ class RequestReceiverCommand extends BaseCommand
         /** @var Request $request */
         $request = $requestEncoder->decode($encodedRequest);
 
-//        $response = $httpClient->postJson('/json-rpc', $jsonRpcRequest);
         $response = $this->handleRequest($request);
         $encodedResponse = $requestEncoder->encode($response);
         $output->write($encodedResponse);
@@ -52,7 +51,6 @@ class RequestReceiverCommand extends BaseCommand
     protected function handleRequest(Request $request): Response
     {
         $httpKernel = $this->appFactory->createKernelInstance($request);
-//        $httpKernel = $this->createHttpClient($this->appFactory)->createKernelInstance($request);
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
         $httpKernelBrowser->request(
             $request->getMethod(),

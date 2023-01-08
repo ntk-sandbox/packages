@@ -11,6 +11,7 @@ use ZnCore\Container\Helpers\ContainerHelper;
 use ZnFramework\Console\Domain\Libs\ZnShell;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonAuthPlugin;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
 
@@ -32,7 +33,7 @@ class SendRestRequestCommand extends BaseCommand
             ],
         ];
 
-        $httpClient = $this->createHttpClient();
+        $httpClient = new HttpClient();
         $httpClient->addPlugin(new JsonPlugin());
         $httpClient->addPlugin(new JsonAuthPlugin());
 
