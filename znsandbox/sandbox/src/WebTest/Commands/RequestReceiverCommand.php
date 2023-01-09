@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use ZnCore\Container\Helpers\ContainerHelper;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
 
 class RequestReceiverCommand extends BaseCommand
 {
@@ -18,7 +18,7 @@ class RequestReceiverCommand extends BaseCommand
     protected static $defaultName = 'http:request:run';
 
     protected string $factoryClass;
-    protected AppFactory $appFactory;
+    protected BaseHttpKernelFactory $appFactory;
 
     protected function configure()
     {

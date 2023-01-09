@@ -5,6 +5,8 @@
  * @var Request $request
  */
 
+\ZnCore\Code\Helpers\DeprecateHelper::hardThrow();
+
 use App\Application\Admin\Libs\AdminApp;
 use App\Application\Rpc\Libs\RpcApp;
 use App\Application\Web\Libs\WebApp;

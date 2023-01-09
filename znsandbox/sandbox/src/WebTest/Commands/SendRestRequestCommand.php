@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use ZnCore\Container\Helpers\ContainerHelper;
 use ZnFramework\Console\Domain\Libs\ZnShell;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\AppFactory;
+use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonAuthPlugin;
@@ -82,7 +82,7 @@ class SendRestRequestCommand extends BaseCommand
         $encodedResponse = $shell->runProcess(
             [
                 'http:request:run',
-                "--factory-class" => \App\Application\Common\Factories\AppFactory::class,
+                "--factory-class" => \App\Application\Common\Factories\HttpKernelFactory::class,
                 $encodedRequest,
             ]
         )->getOutput();

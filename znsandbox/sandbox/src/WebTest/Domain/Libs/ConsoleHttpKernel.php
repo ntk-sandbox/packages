@@ -36,7 +36,7 @@ class ConsoleHttpKernel implements HttpKernelInterface
         $encodedResponse = $shell->runProcess(
             [
                 'http:request:run',
-                "--factory-class" => \App\Application\Common\Factories\AppFactory::class,
+                "--factory-class" => \App\Application\Common\Factories\HttpKernelFactory::class,
                 $encodedRequest
             ]
         )->getOutput();
