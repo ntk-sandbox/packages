@@ -21,19 +21,19 @@ use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
 class ErrorController2 extends BaseWebController implements ErrorControllerInterface
 {
 
-    protected $layout = null;
-    protected $viewsDir = __DIR__ . '/../views/error';
-    private $session;
+//    protected $layout = null;
+//    protected $viewsDir = __DIR__ . '/../views/error';
+//    private $session;
     private $logger;
     private $urlGenerator;
 
     public function __construct(
-        SessionInterface $session,
+//        SessionInterface $session,
         LoggerInterface $logger,
         UrlGeneratorInterface $urlGenerator
     )
     {
-        $this->session = $session;
+//        $this->session = $session;
         $this->logger = $logger;
         $this->urlGenerator = $urlGenerator;
     }
@@ -98,7 +98,7 @@ class ErrorController2 extends BaseWebController implements ErrorControllerInter
         if ($request->getRequestUri() == $authUrl) {
             return $this->commonRender('Unauthorized', 'Unauthorized!', $exception);
         }
-        $this->session->set(WebUserEnum::UNAUTHORIZED_URL_SESSION_KEY, $request->getRequestUri());
+//        $this->session->set(WebUserEnum::UNAUTHORIZED_URL_SESSION_KEY, $request->getRequestUri());
         return $this->redirect($authUrl);
     }
 
