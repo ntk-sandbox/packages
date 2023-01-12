@@ -2,11 +2,11 @@
 
 namespace ZnLib\Web\RestApiApp\Symfony4\Controllers;
 
+use Exception;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
@@ -16,26 +16,18 @@ use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnCore\Env\Helpers\EnvHelper;
 use ZnLib\Web\Controller\Base\BaseWebController;
 use ZnLib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
-use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
 
 class ErrorController2 extends BaseWebController implements ErrorControllerInterface
 {
 
-//    protected $layout = null;
-//    protected $viewsDir = __DIR__ . '/../views/error';
-//    private $session;
-    private $logger;
-    private $urlGenerator;
+    protected $logger;
 
     public function __construct(
-//        SessionInterface $session,
         LoggerInterface $logger,
         UrlGeneratorInterface $urlGenerator
-    )
-    {
-//        $this->session = $session;
+    ) {
         $this->logger = $logger;
-        $this->urlGenerator = $urlGenerator;
+        $this->setUrlGenerator($urlGenerator);
     }
 
     public function handleError(Request $request, \Exception $exception): Response
@@ -52,10 +44,13 @@ class ErrorController2 extends BaseWebController implements ErrorControllerInter
             'method' => $request->getMethod(),
         ];
         $logMessage = $exception->getMessage() ?: get_class($exception);
-        $this->logger->error($logMessage, [
-            'request' => $data,
-            'trace' => debug_backtrace()
-        ]);
+        $this->logger->error(
+            $logMessage,
+            [
+                'request' => $data,
+                'trace' => debug_backtrace()
+            ]
+        );
         if ($exception instanceof AccessDeniedException) {
             return $this->forbidden($request, $exception);
         }
@@ -74,8 +69,12 @@ class ErrorController2 extends BaseWebController implements ErrorControllerInter
         return $this->commonRender('Error!', $exception->getMessage(), $exception);
     }
 
-    private function commonRender(string $title, string $message, \Throwable $exception): Response
-    {
+    protected function commonRender(
+        string $title,
+        string $message,
+        \Throwable $exception,
+        int $statusCode = 500
+    ): Response {
         $params = [
             'title' => $title,
             'message' => $message,
@@ -83,27 +82,21 @@ class ErrorController2 extends BaseWebController implements ErrorControllerInter
         if (EnvHelper::isDebug()) {
             $params['exception'] = $exception;
         }
-        return new JsonResponse($params, 500);
-//        return $this->render('handle-error', $params);
+        return new JsonResponse($params, $statusCode);
     }
 
-    private function notFound(Request $request, \Exception $exception): Response
+    private function notFound(Request $request, Exception $exception): Response
     {
-        return $this->commonRender('Not found', 'Page not exists!', $exception);
+        return $this->commonRender('Not found', 'Page not exists!', $exception, 404);
     }
 
-    private function unauthorized(Request $request, \Exception $exception): Response
+    private function unauthorized(Request $request, Exception $exception): Response
     {
-        $authUrl = $this->urlGenerator->generate('user/auth');
-        if ($request->getRequestUri() == $authUrl) {
-            return $this->commonRender('Unauthorized', 'Unauthorized!', $exception);
-        }
-//        $this->session->set(WebUserEnum::UNAUTHORIZED_URL_SESSION_KEY, $request->getRequestUri());
-        return $this->redirect($authUrl);
+        return $this->commonRender('Unauthorized', 'Unauthorized', $exception, 401);
     }
 
-    private function forbidden(Request $request, \Exception $exception): Response
+    private function forbidden(Request $request, Exception $exception): Response
     {
-        return $this->commonRender('Forbidden', 'Access error', $exception);
+        return $this->commonRender('Forbidden', 'Access error', $exception, 403);
     }
 }
