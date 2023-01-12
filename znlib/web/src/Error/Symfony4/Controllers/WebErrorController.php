@@ -17,7 +17,7 @@ use ZnLib\Web\Controller\Base\BaseWebController;
 use ZnLib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
 use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
 
-class ErrorController2 extends BaseWebController implements ErrorControllerInterface
+class WebErrorController extends BaseWebController implements ErrorControllerInterface
 {
 
     protected $layout = null;

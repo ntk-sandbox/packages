@@ -17,7 +17,7 @@ use ZnCore\Env\Helpers\EnvHelper;
 use ZnLib\Web\Controller\Base\BaseWebController;
 use ZnLib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
 
-class ErrorController2 extends BaseWebController implements ErrorControllerInterface
+class RestApiErrorController extends BaseWebController implements ErrorControllerInterface
 {
 
     protected $logger;

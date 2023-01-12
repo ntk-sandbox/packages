@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Throwable;
 use ZnLib\Web\Error\Libs\CallAction;
-use ZnLib\Web\Error\Symfony4\Controllers\ErrorController2;
+use ZnLib\Web\Error\Symfony4\Controllers\WebErrorController;
 use ZnLib\Web\View\Libs\View;
 
 class ErrorHandleSubscriber implements EventSubscriberInterface
@@ -65,7 +65,7 @@ class ErrorHandleSubscriber implements EventSubscriberInterface
 
     protected function forgeResponse(Request $request, Throwable $e): Response
     {
-        $request->attributes->set('_controller', ErrorController2::class);
+        $request->attributes->set('_controller', WebErrorController::class);
         $request->attributes->set('_action', 'handleError');
         $arguments = [
             $request,

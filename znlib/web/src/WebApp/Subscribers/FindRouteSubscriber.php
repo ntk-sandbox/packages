@@ -49,6 +49,7 @@ class FindRouteSubscriber implements EventSubscriberInterface
         if (is_array($parameters['_controller'])) {
             list($parameters['_controller'], $parameters['_action']) = $parameters['_controller'];
         }
+        $parameters['_method'] = $request->getMethod();
         $request->attributes->add($parameters);
         unset($parameters['_route'], $parameters['_controller']);
         $request->attributes->set('_route_params', $parameters);
