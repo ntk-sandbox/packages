@@ -13,7 +13,9 @@ abstract class BaseHttpRepository
 
     protected Client $client;
 
-    abstract public function url(): string;
+    public function url(): ?string {
+        return null;
+    }
 
     abstract protected function handleError(array $body, array $codeToField): void;
 
