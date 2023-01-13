@@ -19,8 +19,13 @@ abstract class BaseHttpRepository
 
     protected function request(string $uri, string $method, array $postParams = []): Response
     {
+        $baseUrl = $this->url();
         $options = $this->getOptions($uri, $method, $postParams);
-        $endpoint = $this->url() . '/' . $uri;
+        if($baseUrl) {
+            $endpoint = $baseUrl . '/' . $uri;
+        } else {
+            $endpoint = $uri;
+        }
         return $this->runRequest($method, $endpoint, $options);
     }
 
