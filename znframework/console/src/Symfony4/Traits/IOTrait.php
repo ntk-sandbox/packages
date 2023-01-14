@@ -3,18 +3,23 @@
 namespace ZnFramework\Console\Symfony4\Traits;
 
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\ConsoleOutputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Style\SymfonyStyle;
 
 trait IOTrait
 {
 
     private $input;
     private $output;
+    private $style;
 
     protected function setInputOutput(InputInterface $input, OutputInterface $output): void
     {
         $this->input = $input;
         $this->output = $output;
+
+        $this->style = new SymfonyStyle($input, $output);
     }
 
     public function getInput(): InputInterface
@@ -25,5 +30,9 @@ trait IOTrait
     public function getOutput(): OutputInterface
     {
         return $this->output;
+    }
+
+    public function getStyle(): SymfonyStyle {
+        return $this->style;
     }
 }
