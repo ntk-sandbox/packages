@@ -15,6 +15,9 @@ class Zip
     public function __construct(string $zipFile)
     {
         $this->zipArchive = new ZipArchive();
+        if(!is_dir(dirname($zipFile))) {
+            mkdir(dirname($zipFile));
+        }
         $this->resource = $this->zipArchive->open($zipFile, ZipArchive::CREATE);
         if ($this->resource === TRUE) {
 
