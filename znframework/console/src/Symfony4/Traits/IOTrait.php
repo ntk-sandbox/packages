@@ -3,9 +3,8 @@
 namespace ZnFramework\Console\Symfony4\Traits;
 
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\ConsoleOutputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Style\SymfonyStyle;
+use ZnFramework\Console\Symfony4\Style\SymfonyStyle;
 
 trait IOTrait
 {
@@ -32,7 +31,8 @@ trait IOTrait
         return $this->output;
     }
 
-    public function getStyle(): SymfonyStyle {
+    public function getStyle(): SymfonyStyle
+    {
         return $this->style;
     }
 }
