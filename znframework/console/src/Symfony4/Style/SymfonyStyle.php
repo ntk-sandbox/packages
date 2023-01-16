@@ -36,9 +36,8 @@ class SymfonyStyle extends \Symfony\Component\Console\Style\SymfonyStyle
     }
 
 
-    public function inputFormValues(object $reportForm)
+    public function inputFormValues(object $reportForm, array $attributes = null)
     {
-        $attributes = null;
         do {
             $this->inputFormAttributes($reportForm, $attributes);
             $errorCollection = $this->validateForm($reportForm);
@@ -59,11 +58,11 @@ class SymfonyStyle extends \Symfony\Component\Console\Style\SymfonyStyle
         }
         foreach ($attributes as $attributeName) {
             $value = PropertyHelper::getValue($reportForm, $attributeName);
-//            if ($value == null) {
-            $attributeTitle = Inflector::titleize($attributeName);
+//            if (!is_object($value)) {
+                $attributeTitle = Inflector::titleize($attributeName);
 //                $value = $this->inputString("Input \"$attributeTitle\"");
-            $value = $this->ask($attributeTitle,$value);
-            PropertyHelper::setValue($reportForm, $attributeName, $value);
+                $value = $this->ask($attributeTitle, $value);
+                PropertyHelper::setValue($reportForm, $attributeName, $value);
 //            }
         }
     }
