@@ -150,9 +150,10 @@ class OpenApi3
 //        dd($res);
         $endPointPath = $this->getEndpointFileName($requestDto);
 
-//        dd($endPointPath);
+        $config = $this->loadYaml($endPointPath);
+        $config = array_merge($config, $res);
 
-        $this->saveYaml($endPointPath, $res);
+        $this->saveYaml($endPointPath, $config);
     }
 
     protected function saveYaml($fileName, $data)
