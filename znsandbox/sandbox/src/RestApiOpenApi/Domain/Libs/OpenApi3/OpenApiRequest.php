@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\RestApiOpenApi\Domain\Libs\OpenApi3;
 
+use Symfony\Component\Serializer\Encoder\YamlEncoder;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\FileSystem\Helpers\FileStorageHelper;
 use ZnCore\Text\Helpers\Inflector;
@@ -113,24 +114,16 @@ class OpenApiRequest
         return $data;
     }
 
-    public function createPostRequest(RequestDto $requestDto) {
-
-        // Request $request, Response $response, RequestForm $requestForm
+    public function createPostRequest(RequestDto $requestDto) {// Request $request, Response $response, RequestForm $requestForm
         $dataSchemaEncoder = new DataSchema();
 
 //        $rpcRequest = $this->generateRpcRequest($request, $response);
 
-
-
-        $requestSchema = $dataSchemaEncoder->encode($requestDto->body);
-//        dd($requestSchema);
-
-        $requestSchema['example'] = $requestDto->body;
-
-//        $rpcResponse = $this->generateRpcResponse($request, $response);
+//        dd($requestDto->body);
 
         $responseSchema = $dataSchemaEncoder->encode($requestDto->response->body);
         $responseSchema['example'] = $requestDto->response->body;
+//        $rpcResponse = $this->generateRpcResponse($request, $response);
 
 //        $methodName = $request->getMethod();
 //        list($tag, $actionName) = explode('.', $methodName);
@@ -145,13 +138,6 @@ class OpenApiRequest
                 $tag
             ],
             'summary' => 'Description',
-            'requestBody' => [
-                'content' => [
-                    'application/json' => [
-                        'schema' => $requestSchema
-                    ]
-                ],
-            ],
             'responses' => [
                 200 => [
                     'content' => [
@@ -163,7 +149,23 @@ class OpenApiRequest
             ],
         ];
 
-//        dd($postConfig);
+
+        if($requestDto->body) {
+            $requestSchema = $dataSchemaEncoder->encode($requestDto->body);
+            $requestSchema['example'] = $requestDto->body;
+            $postConfig['requestBody'] = [
+                'content' => [
+                    'application/json' => [
+                        'schema' => $requestSchema
+                    ]
+                ]
+            ];
+        }
+
+
+        if($requestDto->query) {
+            $postConfig['parameters'] = $dataSchemaEncoder->encodeParameters($requestDto->query);
+        }
 
         /*$responseMeta = $response->getMeta();
         if ($responseMeta) {

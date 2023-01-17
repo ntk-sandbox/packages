@@ -2,6 +2,7 @@
 
 namespace ZnLib\Components\Http\Helpers;
 
+use GuzzleHttp\Psr7\Query;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnLib\Web\Html\Helpers\Url;
 use function GuzzleHttp\Psr7\parse_query;
@@ -85,7 +86,8 @@ class UrlHelper
     {
         $r = parse_url($url);
         if (!empty($r['query'])) {
-            $r['query'] = parse_query($r['query']);
+//            $r['query'] = parse_query($r['query']);
+            $r['query'] = Query::parse($r['query']);
         }
         if ($key) {
             return ArrayHelper::getValue($r, $key);

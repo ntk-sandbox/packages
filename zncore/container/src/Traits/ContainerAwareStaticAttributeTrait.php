@@ -12,9 +12,9 @@ trait ContainerAwareStaticAttributeTrait
 
     public static function setContainer(ContainerInterface $container): void
     {
-        if (self::$container) {
+        /*if (self::$container) {
             throw new ReadOnlyException();
-        }
+        }*/
         self::$container = $container;
     }
 

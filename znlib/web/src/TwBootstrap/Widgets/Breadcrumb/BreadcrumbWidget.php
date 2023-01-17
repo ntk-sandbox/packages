@@ -27,8 +27,8 @@ class BreadcrumbWidget extends MenuWidget
         ];
     }
 
-    public function addItem(array $item)
+    /*public function addItem(array $item)
     {
         $this->items[] = $item;
-    }
+    }*/
 }

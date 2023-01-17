@@ -20,7 +20,7 @@ class JsonPlugin implements PluginInterface
             if ($requestData['data']) {
                 $requestData['content'] = json_encode($requestData['data']);
             }
-            $requestData['headers']['CONTENT_LENGTH'] = mb_strlen($requestData['content'], '8bit');
+//            $requestData['headers']['CONTENT_LENGTH'] = mb_strlen($requestData['content'], '8bit');
         }
 
         return $requestData;

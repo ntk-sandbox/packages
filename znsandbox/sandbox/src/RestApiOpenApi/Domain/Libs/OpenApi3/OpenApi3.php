@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\RestApiOpenApi\Domain\Libs\OpenApi3;
 
+use GuzzleHttp\Psr7\Query;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use ZnCore\Arr\Helpers\ArrayHelper;
@@ -10,6 +11,7 @@ use ZnCore\Text\Helpers\Inflector;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use ZnLib\Components\Http\Helpers\UrlHelper;
 use ZnLib\Components\Store\Drivers\Php;
 use ZnLib\Components\Store\Drivers\Yaml;
 use ZnSandbox\Sandbox\RestApiOpenApi\Domain\Dto\RequestDto;
@@ -39,15 +41,30 @@ class OpenApi3
     }
 
     protected function createRequsetDto(Request $request, Response $response): RequestDto {
+
+//        $r = parse_url($request->getUri());
+//        dd($r);
+//        dd((Query::parse($r['query'])));
+
+        $urlData = UrlHelper::parse($request->getUri());
+
         $requestDto = new RequestDto();
         $requestDto->method = $request->getMethod();
-        $requestDto->uri = $request->getRequestUri();
+        $requestDto->uri = $urlData['path'];
 
         $requestDto->uri = str_replace('/rest-api', '', $requestDto->uri);
 
+        if($urlData['query']) {
+            $requestDto->query = $urlData['query'];
+//            dd($urlData['query']);
+        }
         $requestDto->headers = $this->extractHeaders($request->headers->all());
 
-        $requestDto->body = json_decode($request->getContent(), JSON_OBJECT_AS_ARRAY);
+        $content = $request->getContent();
+        $content = trim($content);
+        if($content) {
+            $requestDto->body = json_decode($content, JSON_OBJECT_AS_ARRAY);
+        }
 
         $responseDto = new ResponsetDto();
         $responseDto->statusCode = $response->getStatusCode();
@@ -61,7 +78,6 @@ class OpenApi3
 
     public function encode(Request $request, Response $response) {
         $requestDto = $this->createRequsetDto($request, $response);
-//        dd($requestDto);
 
         $postConfig = $this->openApiRequest->createPostRequest($requestDto);
 
