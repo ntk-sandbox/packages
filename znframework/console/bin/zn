@@ -1,14 +1,9 @@
 #!/usr/bin/env php
 <?php
 
-use Symfony\Component\Console\Application;
-use ZnCore\App\Interfaces\AppInterface;
 use ZnCore\App\Libs\ZnCore;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\Container\Libs\Container;
-use ZnCore\DotEnv\Domain\Libs\DotEnvLoader;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnFramework\Console\Domain\Libs\ConsoleApp;
+use ZnFramework\Console\Domain\Factories\ConsoleApplicationFactory;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
 
@@ -29,26 +24,6 @@ $container = new Container();
 $znCore = new ZnCore($container);
 $znCore->init();
 
-/** @var ContainerConfiguratorInterface $containerConfigurator */
-$containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
-
-/** @var EventDispatcherConfiguratorInterface $eventDispatcherConfigurator */
-$eventDispatcherConfigurator = $container->get(EventDispatcherConfiguratorInterface::class);
-
-if(isset($_ENV['CONSOLE_APP_CLASS'])) {
-    $consoleAppClass = $_ENV['CONSOLE_APP_CLASS'];
-} else {
-    $loader = new DotEnvLoader();
-    $mainEnv = $loader->loadFromFile(__DIR__ . '/../../../../../../.env');
-    $consoleAppClass = $mainEnv['CONSOLE_APP_CLASS'] ?? ConsoleApp::class;
-}
-
-$containerConfigurator->singleton(AppInterface::class, $consoleAppClass);
-
-/** @var AppInterface $appFactory */
-$appFactory = $container->get(AppInterface::class);
-$appFactory->init();
-
-/** @var Application $application */
-$application = $container->get(Application::class);
+$applicationFactory = new ConsoleApplicationFactory($container);
+$application = $applicationFactory->createApplicationInstance();
 $application->run();

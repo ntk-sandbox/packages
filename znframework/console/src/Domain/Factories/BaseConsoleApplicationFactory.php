@@ -1,43 +1,22 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
+namespace ZnFramework\Console\Domain\Factories;
 
 use Psr\Container\ContainerInterface;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\HttpKernelInterface;
-use Symfony\Component\HttpKernel\TerminableInterface;
+use Symfony\Component\Console\Application;
 use ZnCore\App\Interfaces\AppInterface;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
+use ZnCore\DotEnv\Domain\Libs\DotEnvLoader;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use ZnFramework\Console\Domain\Libs\ConsoleApp;
 
-abstract class BaseHttpKernelFactory
+abstract class BaseConsoleApplicationFactory
 {
 
-    public function __construct(protected ContainerInterface $container)
-    {
-    }
-
-    abstract protected function initApp(Request $request): void;
-
-    public function createKernelInstance(Request $request): HttpKernelInterface|TerminableInterface
-    {
-        $this->forgeServerVar($request);
-        $this->initApp($request);
-        return $this->getKernelInstance();
-    }
-
-    protected function forgeServerVar(Request $request): void
-    {
-        foreach ($request->server->all() as $key => $value) {
-            $_SERVER[$key] = $value;
-        }
-    }
-
-    protected function getKernelInstance(): HttpKernelInterface|TerminableInterface
-    {
-        /** @var HttpKernelInterface $framework */
-        $framework = $this->container->get(HttpKernelInterface::class);
-        return $framework;
+    protected function getConsoleApplicationInstance(): Application {
+        /** @var Application $application */
+        $application = $this->container->get(Application::class);
+        return $application;
     }
 
     protected function getApp(): AppInterface
@@ -46,7 +25,7 @@ abstract class BaseHttpKernelFactory
         $app = $this->container->get(AppInterface::class);
         return $app;
     }
-
+    
     protected function getEventDispatcherConfigurator(): EventDispatcherConfiguratorInterface
     {
         /** @var EventDispatcherConfiguratorInterface $eventDispatcherConfigurator */
