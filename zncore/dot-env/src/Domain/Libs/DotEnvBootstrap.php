@@ -97,6 +97,7 @@ class DotEnvBootstrap
 
         try {
             $dotEnv = new Dotenv(false);
+            $dotEnv->usePutenv(true);
             $dotEnv->bootEnv($basePath . '/.env', 'dev', ['test'], true);
         } catch (\Symfony\Component\Dotenv\Exception\PathException $e) {
             
