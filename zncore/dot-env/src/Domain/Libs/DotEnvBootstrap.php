@@ -95,10 +95,13 @@ class DotEnvBootstrap
     {
 //        (new Dotenv('APP_ENV', 'APP_DEBUG'))->bootEnv($basePath . '/.env', 'dev', ['test'], true);
 
-
-        $dotEnv = new Dotenv(false);
-        $dotEnv->bootEnv($basePath . '/.env', 'dev', ['test'], true);
-
+        try {
+            $dotEnv = new Dotenv(false);
+            $dotEnv->bootEnv($basePath . '/.env', 'dev', ['test'], true);
+        } catch (\Symfony\Component\Dotenv\Exception\PathException $e) {
+            
+        }
+        
 
         // load all the .env files
 //        $dotEnv->loadEnv($basePath . '/.env');
