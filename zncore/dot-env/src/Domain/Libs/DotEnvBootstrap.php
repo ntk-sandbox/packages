@@ -36,6 +36,9 @@ class DotEnvBootstrap
         $this->initMode($mode);
         $this->initRootDirectory($basePath);
         $this->bootSymfonyDotenv($basePath);
+
+        // todo: оптимизировать
+        (new DotEnvResolver())->resolve();
     }
 
     /**
