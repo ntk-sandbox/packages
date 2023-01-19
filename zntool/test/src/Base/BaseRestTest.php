@@ -42,7 +42,7 @@ abstract class BaseRestTest extends BaseTest
     protected function setUp(): void
     {
         parent::setUp();
-        $this->setBaseUrl($_ENV['API_URL']);
+        $this->setBaseUrl(getenv('API_URL'));
     }
 
     /*protected function sendRequest(string $method, string $uri = '', array $options = []): ResponseInterface

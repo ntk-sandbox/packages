@@ -39,9 +39,9 @@ class SymfonyDumperFacade
     private static function createServerDumper(): DataDumperInterface
     {
         if (self::$driver == 'json') {
-            return new JsonDumper($_ENV['VAR_DUMPER_JSON_DIRECTORY']);
+            return new JsonDumper(getenv('VAR_DUMPER_JSON_DIRECTORY'));
         } elseif (self::$driver == 'telegram') {
-            return new TelegramDumper($_ENV['VAR_DUMPER_BOT_TOKEN'], $_ENV['VAR_DUMPER_BOT_CHAT_ID']);
+            return new TelegramDumper(getenv('VAR_DUMPER_BOT_TOKEN'), getenv('VAR_DUMPER_BOT_CHAT_ID'));
         } elseif (self::$driver == 'console') {
             $fallbackDumper = self::getDumper();
             $contextProviders = [

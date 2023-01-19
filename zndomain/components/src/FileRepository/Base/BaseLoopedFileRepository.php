@@ -2,6 +2,7 @@
 
 namespace ZnDomain\Components\FileRepository\Base;
 
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
 use ZnDomain\Entity\Helpers\EntityHelper;
 
@@ -12,7 +13,11 @@ abstract class BaseLoopedFileRepository extends BaseFileCrudRepository
 
     public function oneLast(): object
     {
-        return $this->findAll()->last();
+        $all = $this->findAll();
+        if(!$all->isEmpty()) {
+            return $this->findAll()->last();
+        }
+        throw new NotFoundException();
     }
 
     protected function insert(object $entity) {

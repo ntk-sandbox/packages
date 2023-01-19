@@ -62,7 +62,7 @@ abstract class BaseCrudRpcController extends BaseRpcController
     {
         // todo: получать data provider, в meta передавать параметры пагинации: totalCount, pageCount, currentPage, perPage
         $this->forgeWith($requestEntity, $query);
-        $perPageDefault = $this->pageSizeDefault ?? ($_ENV['PAGE_SIZE_DEFAULT'] ?? 20);
+        $perPageDefault = $this->pageSizeDefault ?? (getenv('PAGE_SIZE_DEFAULT') ?: 20);
         $perPage = $requestEntity->getParamItem('perPage', $perPageDefault);
         if ($perPage) {
             $query->perPage($perPage);
@@ -101,7 +101,7 @@ abstract class BaseCrudRpcController extends BaseRpcController
         $this->forgeQueryPagination($query, $requestEntity);
 
         $dp = $this->service->getDataProvider($query);
-        $perPageMax = $this->pageSizeMax ?? ($_ENV['PAGE_SIZE_MAX'] ?? 50);
+        $perPageMax = $this->pageSizeMax ?? (getenv('PAGE_SIZE_MAX') ?: 50);
         $dp->getEntity()->setMaxPageSize($perPageMax);
 
         if ($this->filterModel) {

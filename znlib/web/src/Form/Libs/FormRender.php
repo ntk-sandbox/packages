@@ -139,7 +139,7 @@ class FormRender
 
     private function csrfTokenInput(): string
     {
-        $token = $this->tokenManager->getToken($_ENV['CSRF_TOKEN_ID']);
+        $token = $this->tokenManager->getToken(getenv('CSRF_TOKEN_ID'));
         return Html::hiddenInput('csrfToken', $token->getValue());
     }
 

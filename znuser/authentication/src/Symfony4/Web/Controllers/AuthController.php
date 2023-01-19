@@ -92,7 +92,7 @@ class AuthController extends BaseWebController implements ControllerAccessInterf
                 $response = new RedirectResponse('/', HttpStatusCodeEnum::MOVED_TEMPORARILY);
 
                 if($form->getRememberMe()) {
-                    $cookieValue = new CookieValue($_ENV['CSRF_TOKEN_ID']);
+                    $cookieValue = new CookieValue(getenv('CSRF_TOKEN_ID'));
                     $hashedValue = $cookieValue->encode($identityEntity->getId());
                     $cookie = new Cookie(WebCookieEnum::IDENTITY_ID, $hashedValue, new DateTime('+ 3650 day'));
                     $response->headers->setCookie($cookie);

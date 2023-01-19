@@ -16,7 +16,7 @@ class CorsHelper
     public static function autoload(array $origins = null): void
     {
         if(empty($origins)) {
-            $envOrigins = $_ENV['CORS_ALLOW_ORIGINS'] ?? null;
+            $envOrigins = getenv('CORS_ALLOW_ORIGINS') ?: null;
             $origins = explode(',', $envOrigins);
         }
 
@@ -28,8 +28,8 @@ class CorsHelper
 
         self::header(HttpHeaderEnum::ACCESS_CONTROL_ALLOW_ORIGIN, $allowOrigin);
         self::header(HttpHeaderEnum::ACCESS_CONTROL_ALLOW_CREDENTIALS, 'true');
-        if (!empty($_ENV['CORS_MAX_AGE'])) {
-            self::header(HttpHeaderEnum::ACCESS_CONTROL_MAX_AGE, $_ENV['CORS_MAX_AGE']);
+        if (getenv('CORS_MAX_AGE')) {
+            self::header(HttpHeaderEnum::ACCESS_CONTROL_MAX_AGE, getenv('CORS_MAX_AGE'));
         }
         // Access-Control headers are received during OPTIONS requests
         if ($_SERVER[HttpServerEnum::REQUEST_METHOD] == HttpMethodEnum::OPTIONS) {

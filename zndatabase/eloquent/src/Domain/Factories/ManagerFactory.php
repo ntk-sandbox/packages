@@ -21,8 +21,8 @@ class ManagerFactory
 
     public static function createManagerFromConnections(array $connections): Manager
     {
-        $config = StoreHelper::load($_ENV['DATABASE_CONFIG_FILE']);
-//        $config = LoadHelper::loadConfig($_ENV['DATABASE_CONFIG_FILE']);
+        $config = StoreHelper::load(getenv('DATABASE_CONFIG_FILE'));
+//        $config = LoadHelper::loadConfig(getenv('DATABASE_CONFIG_FILE'));
         $connectionMap = ArrayHelper::getValue($config, 'connection.connectionMap', []);
 
         $map = ArrayHelper::getValue($config, 'connection.map', []);

@@ -67,11 +67,11 @@ class EnvHelper
 
     public static function getAppEnv(): ?string
     {
-        return $_ENV['APP_ENV'] ?? EnvEnum::DEVELOP;
+        return getenv('APP_ENV') ?: EnvEnum::DEVELOP;
     }
 
     public static function getAppDebug(): ?string
     {
-        return $_ENV['APP_DEBUG'] ?? '0';
+        return getenv('APP_DEBUG') ?: '0';
     }
 }

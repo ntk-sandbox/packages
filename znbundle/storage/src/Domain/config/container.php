@@ -5,7 +5,7 @@ use ZnBundle\Storage\Domain\Libs\FileHash;
 return [
 	'singletons' => [
         FileHash::class => function () {
-            return new FileHash($_ENV['STORAGE_HASH_ALGORITHM'], $_ENV['STORAGE_HASH_INCLUDE_SIZE'], $_ENV['STORAGE_PATH_DIRECTORY_SIZE'], $_ENV['STORAGE_PATH_DIRECTORY_COUNT'], $_ENV['STORAGE_PATH_ENCODER']);
+            return new FileHash(getenv('STORAGE_HASH_ALGORITHM'), getenv('STORAGE_HASH_INCLUDE_SIZE'), getenv('STORAGE_PATH_DIRECTORY_SIZE'), getenv('STORAGE_PATH_DIRECTORY_COUNT'), getenv('STORAGE_PATH_ENCODER'));
         },
 		'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\FileServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\FileService',
 		'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\ServiceServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\ServiceService',

@@ -7,21 +7,21 @@ return [
     'singletons' => [
         CorsService::class => function () {
             $options = [];
-            if (!empty($_ENV['CORS_ALLOW_ORIGINS'])) {
-                $options['allowedOrigins'] = explode(',', $_ENV['CORS_ALLOW_ORIGINS']);
+            if (getenv('CORS_ALLOW_ORIGINS')) {
+                $options['allowedOrigins'] = explode(',', getenv('CORS_ALLOW_ORIGINS'));
             }
-            if (!empty($_ENV['CORS_MAX_AGE'])) {
-                $options['maxAge'] = (int)$_ENV['CORS_MAX_AGE'];
+            if (getenv('CORS_MAX_AGE')) {
+                $options['maxAge'] = (int)getenv('CORS_MAX_AGE');
             }
-            if (!empty($_ENV['CORS_ALLOW_HEADERS'])) {
-                $options['allowedHeaders'] = explode(',', $_ENV['CORS_ALLOW_HEADERS']);
+            if (getenv('CORS_ALLOW_HEADERS')) {
+                $options['allowedHeaders'] = explode(',', getenv('CORS_ALLOW_HEADERS'));
             }
-            if (!empty($_ENV['CORS_ALLOW_METHODS'])) {
-                $options['allowedMethods'] = explode(',', $_ENV['CORS_ALLOW_METHODS']);
+            if (getenv('CORS_ALLOW_METHODS')) {
+                $options['allowedMethods'] = explode(',', getenv('CORS_ALLOW_METHODS'));
             } else {
                 $options['allowedMethods'] = [HttpMethodEnum::POST];
             }
-            if (!empty($_ENV['CORS_SUPPORTS_CREDENTIALS'])) {
+            if (getenv('CORS_SUPPORTS_CREDENTIALS')) {
                 $options['supportsCredentials'] = true;
             }
             return new CorsService($options);

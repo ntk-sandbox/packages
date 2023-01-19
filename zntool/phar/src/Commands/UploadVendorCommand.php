@@ -46,7 +46,7 @@ class UploadVendorCommand extends Command
 
         $output->writeln('<fg=white># Upload vendor to phar</>');
 
-        $basePath = $_ENV['VENDOR_FTP_DIRECTORY'];
+        $basePath = getenv('VENDOR_FTP_DIRECTORY');
         $pharFile = __DIR__ . '/../../../../../../../vendor.phar';
         $pharGzFile = $pharFile . '.gz';
 
@@ -56,11 +56,11 @@ class UploadVendorCommand extends Command
         $logWidget->setPretty(true);
 
         $logWidget->start('Connect');
-        $conn_id = ftp_connect($_ENV['VENDOR_FTP_SERVER']);
+        $conn_id = ftp_connect(getenv('VENDOR_FTP_SERVER'));
         $logWidget->finishSuccess();
 
         $logWidget->start('Login');
-        $login_result = ftp_login($conn_id, $_ENV['VENDOR_FTP_USERNAME'], $_ENV['VENDOR_FTP_PASSWORD']);
+        $login_result = ftp_login($conn_id, getenv('VENDOR_FTP_USERNAME'), getenv('VENDOR_FTP_PASSWORD'));
         $logWidget->finishSuccess();
 
         $logWidget->start('Get version list');

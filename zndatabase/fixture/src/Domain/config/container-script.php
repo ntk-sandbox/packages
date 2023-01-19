@@ -7,7 +7,7 @@ return [
     'definitions' => [],
     'singletons' => [
         FileRepository::class => function () {
-            $config = StoreHelper::load($_ENV['FIXTURE_CONFIG_FILE']);
+            $config = StoreHelper::load(getenv('FIXTURE_CONFIG_FILE'));
             return new FileRepository($config);
         },
     ],

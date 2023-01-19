@@ -44,7 +44,7 @@ class ContainerLoader extends BaseLoader
 
     public function loadAll222222(array $bundles): void
     {
-        $cacheFile = $_ENV['VAR_DIRECTORY'] . '/ddd.php';
+        $cacheFile = getenv('VAR_DIRECTORY') . '/ddd.php';
         if ($this->enableCache && file_exists($cacheFile)) {
             $requiredConfig = require $cacheFile;
             $this->loadFromArray($requiredConfig);

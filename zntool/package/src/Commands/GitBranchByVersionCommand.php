@@ -55,7 +55,7 @@ class GitBranchByVersionCommand extends BaseCommand
         /** @var PackageEntity[] | Enumerable $totalCollection */
         $totalCollection = new Collection();
 
-        $targetVersion = $_ENV['ZN_VERSION'] ?? '0.x';
+        $targetVersion = getenv('ZN_VERSION') ?: '0.x';
         $fastCommands = [];
         foreach ($collection as $packageEntity) {
             $packageId = $packageEntity->getId();

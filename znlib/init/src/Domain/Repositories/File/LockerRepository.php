@@ -10,12 +10,12 @@ class LockerRepository implements LockerRepositoryInterface
 
     public function lock()
     {
-        touch(__DIR__ . '/../../../../../../../../../' . $_ENV['INIT_LOCKER_FILE']);
+        touch(__DIR__ . '/../../../../../../../../../' . getenv('INIT_LOCKER_FILE'));
     }
 
     public function isLocked(): bool
     {
         $rootDir = realpath(__DIR__ . '/../../../../../../../../..');
-        return file_exists($rootDir . '/' . $_ENV['INIT_LOCKER_FILE']);
+        return file_exists($rootDir . '/' . getenv('INIT_LOCKER_FILE'));
     }
 }

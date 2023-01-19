@@ -14,7 +14,7 @@ class RequirementRepository implements RequirementRepositoryInterface
 
     public function findAll() {
         $requirements = [];
-        $arr = explode(',', $_ENV['REQUIREMENT_CONFIG']);
+        $arr = explode(',', getenv('REQUIREMENT_CONFIG'));
         foreach ($arr as $item) {
             $itemRequirements = include($this->fileName($item));
             $requirements = array_merge($requirements, $itemRequirements);

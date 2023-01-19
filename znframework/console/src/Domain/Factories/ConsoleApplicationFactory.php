@@ -32,8 +32,8 @@ class ConsoleApplicationFactory extends BaseConsoleApplicationFactory
     }
     
     protected function getConsoleAppClass(): string {
-        if (isset($_ENV['CONSOLE_APP_CLASS'])) {
-            $consoleAppClass = $_ENV['CONSOLE_APP_CLASS'];
+        if (getenv('CONSOLE_APP_CLASS')) {
+            $consoleAppClass = getenv('CONSOLE_APP_CLASS');
         } else {
             $loader = new DotEnvLoader();
             $mainEnv = $loader->loadFromFile(__DIR__ . '/../../../../../../../../.env');

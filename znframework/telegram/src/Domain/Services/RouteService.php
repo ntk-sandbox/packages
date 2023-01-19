@@ -94,8 +94,8 @@ class RouteService
 
     private function humanizeResponseDelay($update)
     {
-        if ($_ENV['APP_ENV'] == 'prod') {
-            $seconds = mt_rand($_ENV['HUMANIZE_RESPONSE_DELAY_MIN'] ?? 1, $_ENV['HUMANIZE_RESPONSE_DELAY_MAX'] ?? 4);
+        if (getenv('APP_ENV') == 'prod') {
+            $seconds = mt_rand(getenv('HUMANIZE_RESPONSE_DELAY_MIN') ?: 1, getenv('HUMANIZE_RESPONSE_DELAY_MAX') ?: 4);
             sleep($seconds);
         }
     }

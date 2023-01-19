@@ -19,7 +19,7 @@ class IsAdminMatcher implements MatcherInterface
 			return false;
 		}
         $isSelf = $fromId == $toId;
-        $isAdmin = $fromId == $_ENV['ADMIN_ID'];
+        $isAdmin = $fromId == getenv('ADMIN_ID');
         return $isSelf || $isAdmin;
     }
 

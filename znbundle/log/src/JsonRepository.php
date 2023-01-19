@@ -11,7 +11,7 @@ class JsonRepository
 
     public function findAll()
     {
-        $env = $_ENV['APP_ENV'];
+        $env = getenv('APP_ENV');
         $logFileName = __DIR__ . '/../../../../../' . $env . '.json';
         $lines = file($logFileName, \FILE_IGNORE_NEW_LINES);
         $collection = new Collection();

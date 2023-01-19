@@ -35,7 +35,7 @@ class CookieValue
 
     private function generateHash($value): string {
         $jsonValue = json_encode($value);
-        $scopedValue = $_ENV['CSRF_TOKEN_ID'] . $jsonValue;
+        $scopedValue = getenv('CSRF_TOKEN_ID') . $jsonValue;
         return hash(HashAlgoEnum::SHA256, $scopedValue);
     }
 }

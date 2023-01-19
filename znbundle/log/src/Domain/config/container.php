@@ -24,11 +24,11 @@ return [
              * @var ContainerInterface $container
              * @var AbstractProcessingHandler $handler
              */
-            $driver = $_ENV['LOG_DRIVER'] ?? null;
+            $driver = getenv('LOG_DRIVER') ?: null;
             if ($driver == 'file') {
-                $logFileName = $_ENV['LOG_DIRECTORY'] . '/application.json';
+                $logFileName = getenv('LOG_DIRECTORY') . '/application.json';
                 $handler = new StreamHandler($logFileName);
-                $formatterClass = $_ENV['LOG_FORMATTER'] ?? JsonFormatter::class;
+                $formatterClass = getenv('LOG_FORMATTER') ?: JsonFormatter::class;
                 $formatter = $container->get($formatterClass);
                 $handler->setFormatter($formatter);
             } elseif ($driver == 'db') {
@@ -40,7 +40,7 @@ return [
             return $handler;
         },
         LoggerInterface::class => function (ContainerInterface $container) {
-            $driver = $_ENV['LOG_DRIVER'] ?? null;
+            $driver = getenv('LOG_DRIVER') ?: null;
             if ($driver == null) {
                 $logger = new NullLogger();
             } else {

@@ -81,7 +81,7 @@ class GitChangedCommand extends BaseCommand
         $output->writeln('<fg=yellow>Has changes:</>');
         $output->writeln('');
 
-        $targetVersion = $_ENV['ZN_VERSION'] ?? '0.x';
+        $targetVersion = getenv('ZN_VERSION') ?: '0.x';
 
         $fastCommands = [];
         foreach ($totalCollection as $changedEntity) {

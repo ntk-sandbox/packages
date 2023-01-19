@@ -78,8 +78,8 @@ class DotEnvResolver
             $name = $matches['name'];
             if (isset($loadedVars[$name]) && isset($this->values[$name])) {
                 $value = $this->values[$name];
-            } elseif (isset($_ENV[$name])) {
-                $value = $_ENV[$name];
+            } elseif (getenv($name)) {
+                $value = getenv($name);
             } elseif (isset($_SERVER[$name]) && 0 !== strpos($name, 'HTTP_')) {
                 $value = $_SERVER[$name];
             } elseif (isset($this->values[$name])) {

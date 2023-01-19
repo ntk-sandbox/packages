@@ -175,7 +175,7 @@ class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, Un
         if (isset($parsedUri['scheme'])) {
             return $uri;
         }
-        return $_ENV['WEB_URL'] . $this->getUri();
+        return getenv('WEB_URL') . $this->getUri();
     }
 
     public function getUri(): ?string
@@ -183,7 +183,7 @@ class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, Un
         if ($this->uri) {
             return $this->uri;
         }
-        $publicUrl = $_ENV['STORAGE_PUBLIC_URI'];
+        $publicUrl = getenv('STORAGE_PUBLIC_URI');
         return '/' . $publicUrl . '/' . $this->_fileHash->getPath($this->getHash(), $this->getExtension());
 //        return '/' . $publicUrl . '/' . UploadHelper::getTargetFileName($this->getHash(), $this->getExtension());
     }
@@ -205,7 +205,7 @@ class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, Un
 
     public function getRelativeFileName(): string
     {
-        $publicDirectory = $_ENV['STORAGE_PUBLIC_DIRECTORY'];
+        $publicDirectory = getenv('STORAGE_PUBLIC_DIRECTORY');
         return $publicDirectory . '/' . $this->_fileHash->getPath($this->getHash(), $this->getExtension());
     }
 

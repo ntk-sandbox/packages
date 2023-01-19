@@ -62,7 +62,7 @@ class DumpCreateCommand extends Command
             $version = $version . '-' . $comment;
         }
 
-        $dumpPath = $_ENV['DUMP_DIRECTORY'] . '/' . $version;
+        $dumpPath = getenv('DUMP_DIRECTORY') . '/' . $version;
 
         $this->currentDumpPath = $dumpPath;
         $this->version = $version;
@@ -88,7 +88,7 @@ class DumpCreateCommand extends Command
 //                }
 //            }
 
-            //$currentDumpPath = $_ENV['ROOT_DIRECTORY'] . '/' . $_ENV['DUMP_DIRECTORY'] . '/' . date('Y-m/d/H-i-s');
+            //$currentDumpPath = getenv('ROOT_DIRECTORY') . '/' . getenv('DUMP_DIRECTORY') . '/' . date('Y-m/d/H-i-s');
 //            FileHelper::createDirectory($this->currentDumpPath);
 
             /** @var DbStorage $dbStorage */

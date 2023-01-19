@@ -41,7 +41,7 @@ class TempHelper
 
     private static function getTempDirectory(): string
     {
-        return /*$_ENV['TEMP_DIRECTORY'] ??*/ sys_get_temp_dir();
+        return /*getenv('TEMP_DIRECTORY') ?:*/ sys_get_temp_dir();
     }
 
     private static function getUuid(): string

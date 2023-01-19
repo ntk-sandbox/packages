@@ -70,7 +70,7 @@ class DeprecateHelper
 
     private static function getStrictMode(): bool
     {
-        return $_ENV['DEPRECATE_STRICT_MODE'] ?? self::$isStrictMode;
+        return getenv('DEPRECATE_STRICT_MODE') ?: self::$isStrictMode;
     }
 
     private static function log(string $message = '', $trace = [], $level = \Monolog\Logger::NOTICE)

@@ -91,9 +91,9 @@ class EdsService extends BaseCrudService implements EdsServiceInterface
 
         // dd($verifyEntity);
 
-        //dd($_ENV['PKI_CA_FILE']);
+        //dd(getenv('PKI_CA_FILE'));
 
-        /*$caPem = FileHelper::load($_ENV['PKI_CA_FILE']);
+        /*$caPem = FileHelper::load(getenv('PKI_CA_FILE'));
         $x509 = new X509();
         $x509->loadCA($caPem);*/
         $certArray = $x509->loadX509($certificatePem);
@@ -129,9 +129,9 @@ class EdsService extends BaseCrudService implements EdsServiceInterface
 
     protected function loadCa(): KeyEntity
     {
-        $caPem = FileStorageHelper::load($_ENV['PKI_CA_FILE']);
-        $caPrivateKeyPassword = FileStorageHelper::load($_ENV['PKI_CA_PRIVATE_KEY_PASSWORD_FILE']);
-        $privateKeyPem = FileStorageHelper::load($_ENV['PKI_CA_PRIVATE_KEY_FILE']);
+        $caPem = FileStorageHelper::load(getenv('PKI_CA_FILE'));
+        $caPrivateKeyPassword = FileStorageHelper::load(getenv('PKI_CA_PRIVATE_KEY_PASSWORD_FILE'));
+        $privateKeyPem = FileStorageHelper::load(getenv('PKI_CA_PRIVATE_KEY_FILE'));
         $caKeyEntity = new KeyEntity();
         $caKeyEntity->setCertificate($caPem);
         $caKeyEntity->setPrivateKey($privateKeyPem);

@@ -20,6 +20,6 @@ abstract class BaseRestWebTest extends BaseRestTest
     protected function setUp(): void
     {
         parent::setUp();
-        $this->setBaseUrl($_ENV['WEB_URL']);
+        $this->setBaseUrl(getenv('WEB_URL'));
     }
 }

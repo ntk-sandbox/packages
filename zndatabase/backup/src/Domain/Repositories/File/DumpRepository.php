@@ -38,7 +38,7 @@ class DumpRepository implements CrudRepositoryInterface
         $this->dbRepository = $dbRepository;
         $this->setEntityManager($em);
 
-        $this->dumpPath = $_ENV['DUMP_DIRECTORY'];
+        $this->dumpPath = getenv('DUMP_DIRECTORY');
         $this->currentDumpPath = $this->dumpPath . '/' . date('Y-m/d/H-i-s');
     }
 

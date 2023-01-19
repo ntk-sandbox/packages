@@ -16,7 +16,7 @@ abstract class BaseFileCrudRepository extends BaseFileRepository implements Crud
 
     public function directory(): string
     {
-        return $_ENV['FILE_DB_DIRECTORY'];
+        return getenv('FILE_DB_DIRECTORY');
     }
 
     public function fileExt(): string

@@ -46,7 +46,7 @@ trait ProviderTrait
 //        return $this->createRpcProvider($baseUrl);
 
         /*if(empty($this->rpcProvider)) {
-            $this->initRpcProvider($_ENV['API_URL']);
+            $this->initRpcProvider(getenv('API_URL'));
         }
         return $this->rpcProvider;*/
     }

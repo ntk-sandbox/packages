@@ -11,8 +11,8 @@ class DbFacade
 
     public static function getConfigFromEnv(): array
     {
-        if (!empty($_ENV['DATABASE_URL'])) {
-            $connections['default'] = ConfigHelper::parseDsn($_ENV['DATABASE_URL']);
+        if (getenv('DATABASE_URL')) {
+            $connections['default'] = ConfigHelper::parseDsn(getenv('DATABASE_URL'));
         } else {
             $config = DotEnvMap::get('db');
             $isFlatConfig = !is_array(ArrayHelper::first($config));

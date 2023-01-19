@@ -33,7 +33,7 @@ class SendMessageCommand extends Command
         $botService = $container->get(BotService::class);
 //        $config = include __DIR__ . '/../../../config/main.php';
 //        $botService->authByToken($config['telegram']['bot']['token']);
-        $botService->authByToken($_ENV['TELEGRAM_BOT_TOKEN']);
+        $botService->authByToken(getenv('TELEGRAM_BOT_TOKEN'));
         $responseService->sendMessage($input->getArgument('chatId'), $input->getArgument('text'));
         return Command::SUCCESS;
     }

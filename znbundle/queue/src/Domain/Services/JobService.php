@@ -55,7 +55,7 @@ class JobService extends BaseService implements JobServiceInterface
         //$jobEntity->setDelay();
         ValidationHelper::validateEntity($jobEntity);
 
-        if ($_ENV['CRON_DIRECT_RUN'] ?? false) {
+        if (getenv('CRON_DIRECT_RUN') ?: false) {
             $jobInstance = $this->getJobInstance($jobEntity, $this->container);
             $jobInstance->run();
             return $jobEntity;
@@ -70,7 +70,7 @@ class JobService extends BaseService implements JobServiceInterface
 
     public function touch(): void
     {
-        if ($_ENV['CRON_AUTORUN'] ?? false) {
+        if (getenv('CRON_AUTORUN') ?: false) {
             $this->runAll();
         }
     }

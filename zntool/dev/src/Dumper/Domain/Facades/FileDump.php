@@ -8,7 +8,7 @@ class FileDump
 {
 
     public static function dump($value) {
-        FileStorageHelper::save($_ENV['VAR_DIRECTORY'] . '/dump.json', json_encode($value, JSON_PRETTY_PRINT));
-//        file_put_contents($_ENV['VAR_DIRECTORY'] . '/111.json', json_encode($value, JSON_PRETTY_PRINT));
+        FileStorageHelper::save(getenv('VAR_DIRECTORY') . '/dump.json', json_encode($value, JSON_PRETTY_PRINT));
+//        file_put_contents(getenv('VAR_DIRECTORY') . '/111.json', json_encode($value, JSON_PRETTY_PRINT));
     }
 }

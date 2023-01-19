@@ -11,7 +11,7 @@ foreach ($css->getFiles() as $item) {
     $options = $item['options'];
     $options['rel'] = 'stylesheet';
     $options['href'] = $item['file'];
-    if ($_ENV['ASSET_FORCE_RELOAD'] ?? false) {
+    if (getenv('ASSET_FORCE_RELOAD') ?: false) {
         $options['href'] .= '?timestamp=' . time();
     }
     echo \ZnLib\Web\Html\Helpers\Html::tag('link', '', $options);

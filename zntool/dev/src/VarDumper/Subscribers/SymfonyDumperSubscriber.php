@@ -39,8 +39,8 @@ class SymfonyDumperSubscriber implements EventSubscriberInterface
 
     public function onAnyEvent(Event $event, string $eventName)
     {
-        if (isset($_ENV['VAR_DUMPER_OUTPUT'])) {
-            SymfonyDumperFacade::dumpInConsole($_ENV['VAR_DUMPER_OUTPUT']);
+        if (getenv('VAR_DUMPER_OUTPUT')) {
+            SymfonyDumperFacade::dumpInConsole(getenv('VAR_DUMPER_OUTPUT'));
         }
     }
 }

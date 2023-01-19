@@ -26,20 +26,20 @@ use ZnCore\FileSystem\Helpers\FileHelper;
 $containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
 //$containerConfigurator = ContainerHelper::getContainerConfiguratorByContainer($container);
 $containerConfigurator->bind(RsaStoreFile::class, function () {
-    $rsaDirectory = $_ENV['RSA_CA_DIRECTORY'];
+    $rsaDirectory = getenv('RSA_CA_DIRECTORY');
     return new RsaStoreFile($rsaDirectory);
 }, true);
 $containerConfigurator->bind(AbstractAdapter::class, function () {
-    $cacheDirectory = $_ENV['CACHE_DIRECTORY'];
+    $cacheDirectory = getenv('CACHE_DIRECTORY');
     return new FilesystemAdapter('cryptoSession', TimeEnum::SECOND_PER_DAY, $cacheDirectory);
 }, true);
 
 /*$container->bind(RsaStoreFile::class, function () {
-    $rsaDirectory = FileHelper::rootPath() . '/' . $_ENV['RSA_CA_DIRECTORY'];
+    $rsaDirectory = FileHelper::rootPath() . '/' . getenv('RSA_CA_DIRECTORY');
     return new RsaStoreFile($rsaDirectory);
 }, true);
 $container->bind(AbstractAdapter::class, function () {
-    $cacheDirectory = FileHelper::rootPath() . '/' . $_ENV['CACHE_DIRECTORY'];
+    $cacheDirectory = FileHelper::rootPath() . '/' . getenv('CACHE_DIRECTORY');
     return new FilesystemAdapter('cryptoSession', TimeEnum::SECOND_PER_DAY, $cacheDirectory);
 }, true);*/
 

@@ -15,7 +15,7 @@ class DocController extends AbstractController
 
     public function __construct(DocServiceInterface $docService)
     {
-        if($_ENV['APP_ENV'] == 'prod') {
+        if(getenv('APP_ENV') == 'prod') {
             throw new NotFoundHttpException('Deny for production!');
         }
         $this->docService = $docService;

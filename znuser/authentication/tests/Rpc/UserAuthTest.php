@@ -50,7 +50,7 @@ class UserAuthTest extends BaseRpcTest
 
     public function testFailAttempt()
     {
-        if (empty($_ENV['MY_PROJECT_DIRECTORY'])) {
+        if (getenv('MY_PROJECT_DIRECTORY') == null) {
             $this->markTestSkipped();
         }
         $request = $this->createRequest();

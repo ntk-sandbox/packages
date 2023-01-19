@@ -7,7 +7,7 @@ return [
     'definitions' => [],
     'singletons' => [
         ServerRepository::class => function () {
-            return new ServerRepository($_ENV['HOST_CONF_DIR'], new HostsRepository());
+            return new ServerRepository(getenv('HOST_CONF_DIR'), new HostsRepository());
         },
     ],
 ];

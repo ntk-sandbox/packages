@@ -9,7 +9,7 @@ return [
     'singletons' => [
         \ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface::class => function (ContainerInterface $container) {
 
-            $config = include($_ENV['DEPLOYER_CONFIG_FILE']);
+            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
             $vars = $config['vars'];
 
             $user = $config['connections']['default']['user'];
@@ -26,7 +26,7 @@ return [
             return $varProcessor;
         },
         \ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\ConfigRepositoryInterface::class => function (ContainerInterface $container) {
-            $config = include($_ENV['DEPLOYER_CONFIG_FILE']);
+            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
             $configProcessor = new \ZnLib\Components\ShellRobot\Domain\Repositories\File\ConfigRepository($config);
 //            $configProcessor->setConfig($config);
             return $configProcessor;
@@ -40,7 +40,7 @@ return [
 
 //        VarProcessor::class => function (ContainerInterface $container) {
 //
-//            $config = include($_ENV['DEPLOYER_CONFIG_FILE']);
+//            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
 //            $vars = $config['vars'];
 //
 //            $user = $config['connections']['default']['user'];
@@ -58,7 +58,7 @@ return [
 //        },
 //        ConfigProcessor::class => function (ContainerInterface $container) {
 //
-//            $config = include($_ENV['DEPLOYER_CONFIG_FILE']);
+//            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
 //
 //            $configProcessor = new ConfigProcessor($config);
 ////            $configProcessor->setConfig($config);

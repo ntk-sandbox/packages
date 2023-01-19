@@ -31,7 +31,7 @@ class RpcClientFacade
         $authLogin = $authLogin ?: $this->authLogin;
         $authPassword = $authPassword ?: $this->authPassword;
 
-        $rpcProvider = self::createRpcProvider($_ENV['RPC_URL']);
+        $rpcProvider = self::createRpcProvider(getenv('RPC_URL'));
         $rpcProvider->authByLogin($authLogin, $authPassword);
 
 //        $authProvider = new RpcAuthProvider($rpcProvider);

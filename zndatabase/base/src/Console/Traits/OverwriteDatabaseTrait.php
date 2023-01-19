@@ -41,7 +41,7 @@ trait OverwriteDatabaseTrait
 
     protected function isExcludeDatabaseNames(string $database): bool
     {
-        $exclude = $_ENV['DATABASE_PROTECT_EXCLUDE'] ?? null;
+        $exclude = getenv('DATABASE_PROTECT_EXCLUDE') ?: null;
         $exclude = !empty($exclude) ? explode(',', $exclude) : $this->defaultExclideDatabaseNames();
 //        dd($exclude);
         foreach ($exclude as $ex) {

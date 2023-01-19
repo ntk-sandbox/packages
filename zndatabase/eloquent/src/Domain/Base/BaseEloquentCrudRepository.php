@@ -58,7 +58,7 @@ abstract class BaseEloquentCrudRepository extends BaseEloquentRepository impleme
         } catch (QueryException $e) {
             $errors = new UnprocessibleEntityException;
             $this->checkExists($entity);
-            if ($_ENV['APP_DEBUG']) {
+            if (getenv('APP_DEBUG')) {
                 $message = $e->getMessage();
                 $message = TextHelper::removeDoubleSpace($message);
                 $message = str_replace("'", "\\'", $message);

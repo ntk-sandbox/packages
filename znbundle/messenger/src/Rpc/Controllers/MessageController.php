@@ -29,7 +29,7 @@ class MessageController extends BaseCrudRpcController
         $query->orderBy(['id'=>SORT_DESC]);
         $this->forgeQueryByRequest($query, $requestEntity);
         $dp = $this->service->getDataProvider($query);
-        $perPageMax = $this->pageSizeMax ?? $_ENV['PAGE_SIZE_MAX'] ?? 50;
+        $perPageMax = $this->pageSizeMax ?? (getenv('PAGE_SIZE_MAX') ?: 50);
         $dp->getEntity()->setMaxPageSize($perPageMax);
 
         if ($this->filterModel) {

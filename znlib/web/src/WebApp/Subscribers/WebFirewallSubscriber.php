@@ -94,7 +94,7 @@ class WebFirewallSubscriber implements EventSubscriberInterface
             $identityIdCookie = $event->getRequest()->cookies->get(WebCookieEnum::IDENTITY_ID);
             if ($identityIdCookie) {
                 try {
-                    $cookieValue = new CookieValue($_ENV['CSRF_TOKEN_ID']);
+                    $cookieValue = new CookieValue(getenv('CSRF_TOKEN_ID'));
                     $identityId = $cookieValue->decode($identityIdCookie);
                     $identity = $this->identityService->findOneById($identityId);
 

@@ -62,8 +62,8 @@ class InitCommand extends Command
             'createSymlink' => 'ZnLib\Init\Symfony4\Console\Tasks\CreateSymlinkTask',
         ];
 
-//$configFile = $_ENV['ENVIRONMENTS_CONFIG_FILE'] ?? __DIR__ . '/../../../../environments/config.php';
-        $configFile = $_ENV['ENVIRONMENTS_CONFIG_FILE'];
+//$configFile = getenv('ENVIRONMENTS_CONFIG_FILE') ?: __DIR__ . '/../../../../environments/config.php';
+        $configFile = getenv('ENVIRONMENTS_CONFIG_FILE');
         $config = require $configFile;
 
         if (empty($config['definitions'])) {

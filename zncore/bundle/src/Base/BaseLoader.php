@@ -62,7 +62,7 @@ abstract class BaseLoader
 
     public function getCache(): AdapterInterface
     {
-        $cacheDirectory = $_ENV['CACHE_DIRECTORY'];
+        $cacheDirectory = getenv('CACHE_DIRECTORY');
         $adapter = new FilesystemAdapter('bootstrapApp', TimeEnum::SECOND_PER_DAY, $cacheDirectory);
 //        $adapter->setLogger($container->get(LoggerInterface::class));
         return $adapter;

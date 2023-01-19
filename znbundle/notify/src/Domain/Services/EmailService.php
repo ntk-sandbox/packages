@@ -28,7 +28,7 @@ class EmailService implements EmailServiceInterface
     public function push(EmailEntity $emailEntity, $priority = PriorityEnum::NORMAL)
     {
         if($emailEntity->getFrom() == null) {
-            $emailEntity->setFrom($_ENV['EMAIL_FROM']);
+            $emailEntity->setFrom(getenv('EMAIL_FROM'));
         }
         $emailJob = new SendEmailJob($this->container);
         $emailJob->entity = $emailEntity;

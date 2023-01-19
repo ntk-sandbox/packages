@@ -13,8 +13,8 @@ class DoctrineFacade
 
     public static function createConnection(): Connection
     {
-        if (isset($_ENV['DATABASE_URL'])) {
-            $dbconfig = ConfigHelper::parseDsn($_ENV['DATABASE_URL']);
+        if (getenv('DATABASE_URL')) {
+            $dbconfig = ConfigHelper::parseDsn(getenv('DATABASE_URL'));
         } else {
             $dbconfig = DotEnvMap::get('db');
         }

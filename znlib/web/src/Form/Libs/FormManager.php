@@ -122,7 +122,7 @@ class FormManager
 
     protected static function validCsrfToken(CsrfTokenManagerInterface $tokenManager, Request $request)
     {
-        $csrfToken = new CsrfToken($_ENV['CSRF_TOKEN_ID'], $request->get('csrfToken'));
+        $csrfToken = new CsrfToken(getenv('CSRF_TOKEN_ID'), $request->get('csrfToken'));
         $isValidToken = $tokenManager->isTokenValid($csrfToken);
         if (!$isValidToken) {
             throw new BadRequestException('CSRF token validate error!');

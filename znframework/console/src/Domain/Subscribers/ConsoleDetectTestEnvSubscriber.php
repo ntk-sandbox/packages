@@ -23,7 +23,9 @@ class ConsoleDetectTestEnvSubscriber implements EventSubscriberInterface
         $isTest = $envDetector->isTest();
         if ($isTest) {
             $_ENV['APP_ENV'] = 'test';
+            putenv("APP_ENV=test");
         }
         $_ENV['APP_MODE'] = $isTest ? 'test' : 'main';
+        putenv("APP_MODE={$_ENV['APP_MODE']}");
     }
 }

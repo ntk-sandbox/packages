@@ -28,9 +28,9 @@ class Bot
     public static function sendMessage(string $messageText, int $chatId = null, $envPrefix = 'DUMPER_BOT')
     {
         $chatId = $chatId ?: self::$chatId;
-        $chatId = $chatId ?: $_ENV[$envPrefix . '_ADMIN_ID'];
+        $chatId = $chatId ?: getenv($envPrefix . '_ADMIN_ID');
         if (empty(self::$responseService)) {
-            self::$responseService = BotFacade::getResponseService($_ENV[$envPrefix . '_TOKEN']);
+            self::$responseService = BotFacade::getResponseService(getenv($envPrefix . '_TOKEN'));
         }
         self::$responseService->sendMessage($chatId, $messageText);
     }

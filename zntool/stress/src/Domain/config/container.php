@@ -17,11 +17,11 @@ return [
         },*/
         ProfileRepository::class => function () {
             $config = [];
-            /*if(!isset($_ENV['STRESS_PROFILE_CONFIG'])) {
+            /*if(!isset(getenv('STRESS_PROFILE_CONFIG'))) {
                 throw new InvalidConfigException('Empty ENV "STRESS_PROFILE_CONFIG"!');
             }*/
-            if(!empty($_ENV['STRESS_PROFILE_CONFIG'])) {
-                $configFileName = $_ENV['STRESS_PROFILE_CONFIG'];
+            if(getenv('STRESS_PROFILE_CONFIG')) {
+                $configFileName = getenv('STRESS_PROFILE_CONFIG');
                 $config = include ($configFileName);
             }
             return new ProfileRepository($config);

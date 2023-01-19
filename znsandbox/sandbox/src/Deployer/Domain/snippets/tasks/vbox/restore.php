@@ -1,8 +1,8 @@
 <?php
 
-$virtualMachineName = $_ENV['DEPLOYER_VIRTUAL_BOX_NAME'];
-$virtualBoxDirectory = $_ENV['DEPLOYER_VIRTUAL_BOX_DIRECTORY'];
-$backupZipFile = $_ENV['DEPLOYER_VIRTUAL_BOX_BACKUP_FILE'];
+$virtualMachineName = getenv('DEPLOYER_VIRTUAL_BOX_NAME');
+$virtualBoxDirectory = getenv('DEPLOYER_VIRTUAL_BOX_DIRECTORY');
+$backupZipFile = getenv('DEPLOYER_VIRTUAL_BOX_BACKUP_FILE');
 
 return [
     'title' => 'Server. Hard reset',

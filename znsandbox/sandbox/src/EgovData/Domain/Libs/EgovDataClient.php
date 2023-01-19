@@ -26,7 +26,7 @@ class EgovDataClient
 
     private function getApiKey(): string {
         if(empty($this->apiKey)) {
-            $this->apiKey = $_ENV['EGOV_API_KEY'];
+            $this->apiKey = getenv('EGOV_API_KEY');
             if(empty($this->apiKey)) {
                 throw new \Exception('Empty e.gov token!');
             }

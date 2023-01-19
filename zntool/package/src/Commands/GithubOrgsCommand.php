@@ -23,7 +23,7 @@ class GithubOrgsCommand extends BaseCommand
     {
         $output->writeln('<fg=white># github orgs</>');
 
-        $url = 'https://api.github.com/user/orgs?access_token=' . $_ENV['GITHUB_TOKEN'];
+        $url = 'https://api.github.com/user/orgs?access_token=' . getenv('GITHUB_TOKEN');
         $output->writeln('getting groups');
         $collection = $this->sendRequest(HttpMethodEnum::GET, $url);
         $orgs = ArrayHelper::getColumn($collection, 'login');

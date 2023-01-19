@@ -69,9 +69,9 @@ class NotifyService implements NotifyServiceInterface, GetEntityClassInterface
         ];
         foreach ($envAttributes as $name) {
             $upperName = strtoupper($name);
-            if (isset($_ENV[$upperName])) {
+            if (getenv($upperName)) {
                 $lowerName = strtolower($name);
-                $value = rtrim($_ENV[$upperName], '/');
+                $value = rtrim(getenv($upperName), '/');
                 $notifyEntity->addAttribute('env.' . $lowerName, $value);
             }
         }
