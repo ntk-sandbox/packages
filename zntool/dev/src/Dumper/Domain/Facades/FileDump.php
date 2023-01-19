@@ -7,8 +7,13 @@ use ZnCore\FileSystem\Helpers\FileStorageHelper;
 class FileDump
 {
 
-    public static function dump($value) {
-        FileStorageHelper::save(getenv('VAR_DIRECTORY') . '/dump.json', json_encode($value, JSON_PRETTY_PRINT));
-//        file_put_contents(getenv('VAR_DIRECTORY') . '/111.json', json_encode($value, JSON_PRETTY_PRINT));
+    private static $id = 1;
+
+    public static function dump($value)
+    {
+        $json = json_encode($value, JSON_PRETTY_PRINT);
+        $fileName = getenv('VAR_DIRECTORY') . '/dump/' . date('Y.m.d') . '/'.date('H:i:s').'_' . self::$id . '.json';
+        FileStorageHelper::save($fileName, $json);
+        self::$id++;
     }
 }
