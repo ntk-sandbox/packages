@@ -16,5 +16,8 @@ $znCore->init();
 $appFactory = $container->get(TestApp::class);
 $appFactory->setBundles([
     new \ZnUser\Password\Bundle(['all']),
+    new \ZnDatabase\Eloquent\Bundle(['all']),
+    new \ZnDatabase\Fixture\Bundle(['all']),
+    new \ZnBundle\Queue\Bundle(['all']),
 ]);
 $appFactory->init();

@@ -36,9 +36,6 @@ class DotEnvBootstrap
         $this->initMode($mode);
         $this->initRootDirectory($basePath);
         $this->bootSymfonyDotenv($basePath);
-
-        // todo: оптимизировать
-        (new DotEnvResolver())->resolve();
     }
 
     /**
@@ -72,7 +69,9 @@ class DotEnvBootstrap
      */
     private function initRootDirectory(string $basePath): void
     {
-        $_ENV['ROOT_DIRECTORY'] = realpath($basePath);
+        $value = realpath($basePath);
+        $_ENV['ROOT_DIRECTORY'] = $value;
+        putenv("ROOT_DIRECTORY={$value}");
     }
 
     /**
