@@ -79,13 +79,13 @@ abstract class BaseApp implements AppInterface
      */
     public function init(): void
     {
-        $this->dispatchEvent(AppEventEnum::BEFORE_INIT_ENV);
-        $this->initEnv();
-        $this->dispatchEvent(AppEventEnum::AFTER_INIT_ENV);
-
         $this->dispatchEvent(AppEventEnum::BEFORE_INIT_CONTAINER);
         $this->initContainer();
         $this->dispatchEvent(AppEventEnum::AFTER_INIT_CONTAINER);
+
+        $this->dispatchEvent(AppEventEnum::BEFORE_INIT_ENV);
+        $this->initEnv();
+        $this->dispatchEvent(AppEventEnum::AFTER_INIT_ENV);
 
         $this->dispatchEvent(AppEventEnum::BEFORE_INIT_BUNDLES);
         $this->initBundles();
