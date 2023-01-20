@@ -4,6 +4,7 @@ namespace ZnCore\App\Libs;
 
 use ZnCore\App\Interfaces\EnvironmentInterface;
 use ZnCore\Container\Traits\ContainerAwareTrait;
+use ZnCore\DotEnv\Domain\Libs\DotEnvLoader;
 use ZnCore\DotEnv\Domain\Libs\DotEnvResolver;
 use ZnCore\DotEnv\Domain\Libs\DotEnvWriter;
 
@@ -32,5 +33,12 @@ abstract class BaseEnvironment implements EnvironmentInterface
         /** @var DotEnvWriter $writer */
         $writer = $this->getContainer()->get(DotEnvWriter::class);
         return $writer;
+    }
+
+    protected function getLoader(): DotEnvLoader
+    {
+        /** @var DotEnvLoader $loader */
+        $loader = $this->getContainer()->get(DotEnvLoader::class);
+        return $loader;
     }
 }
