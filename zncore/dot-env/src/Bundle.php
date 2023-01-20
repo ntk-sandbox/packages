@@ -12,12 +12,12 @@ class Bundle extends BaseBundle
         return 'dotEnv';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
             __DIR__ . '/../../../../../../vendor/symfony/dotenv/Command',
         ];
-    }
+    }*/
 
     public function container(): array
     {
