@@ -13,7 +13,7 @@ use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnFramework\Console\Domain\Libs\BundleLoaders\ConsoleLoader;
 use ZnFramework\Console\Domain\Subscribers\ConsoleDetectTestEnvSubscriber;
-use ZnFramework\Console\Symfony4\Helpers\CommandHelper;
+use ZnFramework\Console\Symfony4\Libs\CommandConfigurator;
 
 abstract class BaseConsoleApp extends BaseApp
 {
@@ -99,7 +99,8 @@ abstract class BaseConsoleApp extends BaseApp
             ]
         );
         if (!empty($consoleCommands)) {
-            CommandHelper::registerFromNamespaceList($consoleCommands, $container, $application);
+            $commandConfigurator = new CommandConfigurator($container, $application);
+            $commandConfigurator->registerFromNamespaceList($consoleCommands);
         }
     }
 }
