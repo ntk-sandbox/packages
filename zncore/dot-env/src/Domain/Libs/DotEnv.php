@@ -11,4 +11,8 @@ class DotEnv
     {
         DotEnvBootstrap::getInstance()->init($mode, $basePath);
     }
+
+    /*public static function getWriter(): DotEnvWriter {
+        return new DotEnvWriter();
+    }*/
 }

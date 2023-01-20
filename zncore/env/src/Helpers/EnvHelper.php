@@ -7,6 +7,7 @@ use ZnCore\Env\Enums\EnvEnum;
 class EnvHelper
 {
 
+    // todo: отделить работу с ошибками в отдельный класс
     public static function setErrorVisibleFromEnv(): void
     {
         $isDebug = self::isDebug();
@@ -14,7 +15,7 @@ class EnvHelper
         self::setErrorVisible($isDebug, $level);
     }
 
-    public static function setErrorVisible(bool $isDebug, int $level): void
+    protected static function setErrorVisible(bool $isDebug, int $level): void
     {
         if ($isDebug) {
             self::showErrors($level);

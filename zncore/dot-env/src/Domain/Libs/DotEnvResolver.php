@@ -20,8 +20,9 @@ class DotEnvResolver
 
     public const VARNAME_REGEX = '(?i:[A-Z][A-Z0-9_]*+)';
 
-    public function resolve() {
-        $env = ArrayHelper::merge(getenv(), $_ENV);
+    public function resolve(array $env): array {
+        
+//        $env = ArrayHelper::merge(getenv(), $_ENV);
 
         $isUpdated = true;
         while ($isUpdated) {
@@ -31,18 +32,26 @@ class DotEnvResolver
                 if($newValue != $value) {
                     $env[$key] = $newValue;
 //                    putenv("{$key}={$newValue}");
-                    $this->setEnv($key, $newValue);
+//                    $this->setEnv($key, $newValue);
                     $isUpdated = true;
                 }
             }
         }
-        $_ENV = $env;
+//        $_ENV = $env;
+//        $this->setEnvs($env);
+        return $env;
     }
-
-    protected function setEnv(string $key, string $value): void {
-        putenv("{$key}={$value}");
+//
+//    protected function setEnvs(array $env): void {
+//        foreach ($env as $key => $value) {
+//            $this->setEnv($key, $value);
+//        }
+//    }
+//
+//    protected function setEnv(string $key, string $value): void {
+//        putenv("{$key}={$value}");
 //        $_ENV[$key] = $value;
-    }
+//    }
 
     protected function resolveVariables(string $value, array $loadedVars) {
         if (false === strpos($value, '$')) {
