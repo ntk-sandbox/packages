@@ -7,35 +7,6 @@ use ZnCore\Env\Enums\EnvEnum;
 class EnvHelper
 {
 
-    // todo: отделить работу с ошибками в отдельный класс
-    public static function setErrorVisibleFromEnv(): void
-    {
-        $isDebug = self::isDebug();
-        $level = $isDebug ? E_ALL : E_PARSE | E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR;
-        self::setErrorVisible($isDebug, $level);
-    }
-
-    protected static function setErrorVisible(bool $isDebug, int $level): void
-    {
-        if ($isDebug) {
-            self::showErrors($level);
-        } else {
-            self::hideErrors($level);
-        }
-    }
-
-    protected static function showErrors(int $level = E_ALL): void
-    {
-        error_reporting($level);
-        ini_set('display_errors', '1');
-    }
-
-    protected static function hideErrors(int $level = 0): void
-    {
-        error_reporting($level);
-        ini_set('display_errors', '0');
-    }
-
     public static function isWeb(): bool
     {
         return !self::isConsole();
@@ -66,12 +37,12 @@ class EnvHelper
         return self::getAppEnv() == EnvEnum::TEST;
     }
 
-    public static function getAppEnv(): ?string
+    private static function getAppEnv(): ?string
     {
         return getenv('APP_ENV') ?: EnvEnum::DEVELOP;
     }
 
-    public static function getAppDebug(): ?string
+    private static function getAppDebug(): ?string
     {
         return getenv('APP_DEBUG') ?: '0';
     }

@@ -14,6 +14,7 @@ use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\Matcher\UrlMatcherInterface;
 use Symfony\Component\Routing\RouteCollection;
 use ZnCore\App\Base\BaseApp;
+use ZnCore\App\Subscribers\PhpErrorSubscriber;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnLib\Web\View\Libs\View;
@@ -33,6 +34,7 @@ abstract class BaseRestApiApp extends BaseApp
     {
         return [
             WebDetectTestEnvSubscriber::class,
+            PhpErrorSubscriber::class,
         ];
     }
 

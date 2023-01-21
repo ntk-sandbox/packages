@@ -5,6 +5,7 @@ namespace ZnFramework\Rpc\Domain\Base;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use ZnCore\App\Subscribers\PhpErrorSubscriber;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnFramework\Rpc\Domain\Subscribers\ApplicationAuthenticationSubscriber;
@@ -31,6 +32,7 @@ abstract class BaseRpcApp extends BaseApp
     {
         return [
             WebDetectTestEnvSubscriber::class,
+            PhpErrorSubscriber::class,
         ];
     }
 

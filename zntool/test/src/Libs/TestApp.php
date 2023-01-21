@@ -4,6 +4,7 @@ namespace ZnTool\Test\Libs;
 
 use ZnCore\App\Interfaces\EnvironmentInterface;
 use ZnCore\App\Libs\VlucasEnvironment;
+use ZnCore\App\Subscribers\PhpErrorSubscriber;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\App\Base\BaseApp;
@@ -37,6 +38,7 @@ class TestApp extends BaseApp
     {
         return [
 //            WebDetectTestEnvSubscriber::class,
+            PhpErrorSubscriber::class,
         ];
     }
 

@@ -38,7 +38,7 @@ abstract class BaseRpcRepository extends BaseRepository implements GetEntityClas
     {
         $baseUrl = $this->baseUrl();
         $rpcProvider =
-            (new RpcClientFacade(EnvHelper::getAppEnv()))
+            (new RpcClientFacade(getenv('APP_ENV')))
                 ->createRpcProvider($baseUrl);
         $authProvider = new RpcAuthProvider($rpcProvider);
         $rpcProvider->setAuthProvider($authProvider);

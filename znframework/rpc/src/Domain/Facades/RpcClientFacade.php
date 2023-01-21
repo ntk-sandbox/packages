@@ -15,9 +15,9 @@ class RpcClientFacade
     private $authPassword;
     private $appEnv;
 
-    public function __construct(string $appEnv = null)
+    public function __construct(string $appEnv)
     {
-        $this->appEnv = $appEnv ?: EnvHelper::getAppEnv();
+        $this->appEnv = $appEnv/* ?: getenv('APP_ENV')*/;
     }
 
     public function authBy(string $authLogin = null, string $authPassword = null)

@@ -9,13 +9,13 @@ use ZnCore\FileSystem\Helpers\FilePathHelper;
 return [
     'definitions' => [
         DotenvDumpCommand::class => function () {
-            $env = EnvHelper::getAppEnv();
+            $env = getenv('APP_ENV');
             $path = FilePathHelper::rootPath();
 
             return new DotenvDumpCommand($path, $env);
         },
         DebugCommand::class => function (ContainerInterface $container) {
-            $env = EnvHelper::getAppEnv();
+            $env = getenv('APP_ENV');
             $path = FilePathHelper::rootPath();
 
             return new DebugCommand($env, $path);

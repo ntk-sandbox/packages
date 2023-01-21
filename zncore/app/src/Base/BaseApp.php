@@ -14,8 +14,6 @@ use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\Bundle\Libs\BundleLoader;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\Container\Traits\ContainerAttributeTrait;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnCore\Env\Helpers\EnvHelper;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
 
@@ -100,13 +98,14 @@ abstract class BaseApp implements AppInterface
 
     private $mode = null;
 
-    public function setMode(string $mode): void {
+    public function setMode(string $mode): void
+    {
         $this->mode = $mode;
     }
 
-    protected function getMode(): string {
+    protected function getMode(): string
+    {
         return $this->mode;
-//        return $this->mode ?: getenv('APP_MODE');
     }
 
     /**
@@ -118,7 +117,6 @@ abstract class BaseApp implements AppInterface
         $environment = $this->getContainer()->get(EnvironmentInterface::class);
         $rootDirectory = realpath(__DIR__ . '/../../../../../../..');
         $environment->init($this->getMode(), $rootDirectory);
-        EnvHelper::setErrorVisibleFromEnv();
     }
 
     /**
