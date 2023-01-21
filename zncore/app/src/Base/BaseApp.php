@@ -6,6 +6,7 @@ use Psr\Container\ContainerInterface;
 use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use ZnCore\App\Enums\AppEventEnum;
+use ZnCore\App\Events\AppEvent;
 use ZnCore\App\Interfaces\AppInterface;
 use ZnCore\App\Libs\ZnCore;
 use ZnCore\Arr\Helpers\ArrayHelper;
@@ -96,12 +97,23 @@ abstract class BaseApp implements AppInterface
         $this->dispatchEvent(AppEventEnum::AFTER_INIT_DISPATCHER);
     }
 
+    private $mode = null;
+
+    public function setMode(string $mode): void {
+        $this->mode = $mode;
+    }
+
+    protected function getMode(): string {
+        return $this->mode;
+//        return $this->mode ?: getenv('APP_MODE');
+    }
+
     /**
      * Инициализация окружения
      */
     protected function initEnv(): void
     {
-        DotEnv::init(getenv('APP_MODE'));
+        DotEnv::init($this->getMode());
         EnvHelper::setErrorVisibleFromEnv();
     }
 
@@ -196,7 +208,7 @@ abstract class BaseApp implements AppInterface
      */
     protected function dispatchEvent(string $eventName): void
     {
-        $event = new Event();
+        $event = new AppEvent($this);
         $this->getEventDispatcher()->dispatch($event, $eventName);
     }
 }

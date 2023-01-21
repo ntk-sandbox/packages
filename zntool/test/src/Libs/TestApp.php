@@ -9,6 +9,11 @@ use ZnCore\App\Base\BaseApp;
 class TestApp extends BaseApp
 {
 
+    protected function getMode(): string {
+//        return $this->mode;
+        return 'test';
+    }
+
     protected function bundles(): array
     {
         $bundles = [

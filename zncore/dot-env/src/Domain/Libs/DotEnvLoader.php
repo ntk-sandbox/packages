@@ -14,4 +14,11 @@ class DotEnvLoader
         $parsedEnv = $dotEnv->parse($content, $path);
         return $parsedEnv;
     }
+
+    public function loadFromContent(string $content): array
+    {
+        $dotEnv = new Dotenv();
+        $parsedEnv = $dotEnv->parse($content);
+        return $parsedEnv;
+    }
 }

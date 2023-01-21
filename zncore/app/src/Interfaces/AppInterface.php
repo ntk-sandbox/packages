@@ -21,4 +21,6 @@ interface AppInterface
      * Инициализация приложения
      */
     public function init(): void;
+
+    public function setMode(string $mode): void;
 }
