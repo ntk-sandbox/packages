@@ -10,9 +10,12 @@ return [
     'singletons' => [
 //		'ZnSandbox\\Sandbox\\Synchronize\\Domain\\Interfaces\\Services\\SynchronizeServiceInterface' => 'ZnSandbox\\Sandbox\\Synchronize\\Domain\\Services\\SynchronizeService',
         SynchronizeServiceInterface::class => function (ContainerInterface $container) {
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
             /** @var SynchronizeService $service */
             $service = $container->get(SynchronizeService::class);
-            $configFile = getenv('SYNCHRONIZE_CONFIG_FILE');
+            $configFile = $envStorage->get('SYNCHRONIZE_CONFIG_FILE');
 //            dd($configFile);
 
             $store = new StoreFile($configFile);

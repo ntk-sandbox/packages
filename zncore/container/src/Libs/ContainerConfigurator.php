@@ -29,6 +29,11 @@ class ContainerConfigurator implements ContainerConfiguratorInterface
         $this->configurator = $this->getContainerConfiguratorByContainer($container);
     }
 
+    public function getContainer(): ContainerInterface
+    {
+        return $this->container;
+    }
+
     public function importFromDir(array $dirs): void {
         foreach ($dirs as &$dir) {
             $dir = realpath($dir);

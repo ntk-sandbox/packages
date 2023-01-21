@@ -16,6 +16,11 @@ class IlluminateContainerConfigurator implements ContainerConfiguratorInterface
         $this->container = $container;
     }
 
+    public function getContainer(): ContainerInterface
+    {
+        return $this->container;
+    }
+
     public function importFromDir(array $dirs): void {
         foreach ($dirs as &$dir) {
             $dir = realpath($dir);

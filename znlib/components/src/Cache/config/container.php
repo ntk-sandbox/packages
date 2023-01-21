@@ -11,9 +11,12 @@ use ZnLib\Components\Time\Enums\TimeEnum;
 return [
     'singletons' => [
         AdapterInterface::class => function (ContainerInterface $container) {
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
             $isEnableCache = EnvHelper::isProd();
             if ($isEnableCache) {
-                $cacheDirectory = getenv('CACHE_DIRECTORY');
+                $cacheDirectory = $envStorage->get('CACHE_DIRECTORY');
                 $adapter = new FilesystemAdapter('app', TimeEnum::SECOND_PER_DAY, $cacheDirectory);
                 $adapter->setLogger($container->get(LoggerInterface::class));
             } else {

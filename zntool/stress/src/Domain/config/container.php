@@ -15,13 +15,16 @@ return [
         /*Manager::class => function () {
             return ManagerFactory::createManagerFromEnv();
         },*/
-        ProfileRepository::class => function () {
+        ProfileRepository::class => function (\Psr\Container\ContainerInterface $container) {
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
             $config = [];
-            /*if(!isset(getenv('STRESS_PROFILE_CONFIG'))) {
+            /*if(!$envStorage->has('STRESS_PROFILE_CONFIG')) {
                 throw new InvalidConfigException('Empty ENV "STRESS_PROFILE_CONFIG"!');
             }*/
-            if(getenv('STRESS_PROFILE_CONFIG')) {
-                $configFileName = getenv('STRESS_PROFILE_CONFIG');
+            if($envStorage->get('STRESS_PROFILE_CONFIG')) {
+                $configFileName = $envStorage->get('STRESS_PROFILE_CONFIG');
                 $config = include ($configFileName);
             }
             return new ProfileRepository($config);

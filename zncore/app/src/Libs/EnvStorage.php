@@ -15,6 +15,11 @@ class EnvStorage implements EnvStorageInterface
         return $this->env[$name] ?? $default;
     }
 
+    public function has(string $name): bool
+    {
+        return array_key_exists($name, $this->env);
+    }
+
     public function init(array $env) {
         /*if($this->env) {
             throw new AlreadyExistsException('Env config already inited!');

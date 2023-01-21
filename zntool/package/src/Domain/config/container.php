@@ -7,8 +7,11 @@ return [
         \ZnTool\Dev\Composer\Domain\Interfaces\Services\ConfigServiceInterface::class => \ZnTool\Dev\Composer\Domain\Services\ConfigService::class,
         \ZnTool\Package\Domain\Interfaces\Services\GitServiceInterface::class => \ZnTool\Package\Domain\Services\GitService::class,
         \ZnTool\Package\Domain\Interfaces\Services\PackageServiceInterface::class => \ZnTool\Package\Domain\Services\PackageService::class,
-        \ZnTool\Package\Domain\Repositories\File\GroupRepository::class => function () {
-            $fileName = getenv('PACKAGE_GROUP_CONFIG') ? getenv('PACKAGE_GROUP_CONFIG') : __DIR__ . '/../../../src/Domain/Data/package_group.php';
+        \ZnTool\Package\Domain\Repositories\File\GroupRepository::class => function (\Psr\Container\ContainerInterface $container) {
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
+            $fileName = $envStorage->get('PACKAGE_GROUP_CONFIG') ? $envStorage->get('PACKAGE_GROUP_CONFIG') : __DIR__ . '/../../../src/Domain/Data/package_group.php';
             $repo = new \ZnTool\Package\Domain\Repositories\File\GroupRepository($fileName);
             return $repo;
         },

@@ -30,7 +30,10 @@ return [
                 TestResponseRepository::class :
                 TelegramResponseRepository::class,
         ConfigRepository::class => function (ContainerInterface $container) {
-            $repo = new ConfigRepository(getenv('TELEGRAM_BOT_TOKEN') ?: null);
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
+            $repo = new ConfigRepository($envStorage->get('TELEGRAM_BOT_TOKEN') ?: null);
             return $repo;
         },
     ],

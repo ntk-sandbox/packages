@@ -11,6 +11,17 @@ class ArrayContainerConfigurator implements ContainerConfiguratorInterface
 {
 
     private $config = [];
+    private $container;
+
+    public function __construct(ContainerInterface $container)
+    {
+        $this->container = $container;
+    }
+
+    public function getContainer(): ContainerInterface
+    {
+        return $this->container;
+    }
 
     public function importFromDir(array $dirs): void {
         foreach ($dirs as &$dir) {

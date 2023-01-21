@@ -8,8 +8,10 @@ use Psr\Container\ContainerInterface;
 return [
     'singletons' => [
         \ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface::class => function (ContainerInterface $container) {
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
 
-            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
+            $config = include($envStorage->get('DEPLOYER_CONFIG_FILE'));
             $vars = $config['vars'];
 
             $user = $config['connections']['default']['user'];
@@ -26,7 +28,10 @@ return [
             return $varProcessor;
         },
         \ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\ConfigRepositoryInterface::class => function (ContainerInterface $container) {
-            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
+            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
+            $config = include($envStorage->get('DEPLOYER_CONFIG_FILE'));
             $configProcessor = new \ZnLib\Components\ShellRobot\Domain\Repositories\File\ConfigRepository($config);
 //            $configProcessor->setConfig($config);
             return $configProcessor;
@@ -39,8 +44,10 @@ return [
 
 
 //        VarProcessor::class => function (ContainerInterface $container) {
-//
-//            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
+///             ** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+//            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
+//            $config = include($envStorage->get('DEPLOYER_CONFIG_FILE'));
 //            $vars = $config['vars'];
 //
 //            $user = $config['connections']['default']['user'];
@@ -57,8 +64,10 @@ return [
 //            return $varProcessor;
 //        },
 //        ConfigProcessor::class => function (ContainerInterface $container) {
-//
-//            $config = include(getenv('DEPLOYER_CONFIG_FILE'));
+//            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
+//            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+
+//            $config = include($envStorage->get('DEPLOYER_CONFIG_FILE'));
 //
 //            $configProcessor = new ConfigProcessor($config);
 ////            $configProcessor->setConfig($config);

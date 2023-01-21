@@ -2,11 +2,20 @@
 
 namespace ZnCore\Container\Interfaces;
 
+use Psr\Container\ContainerInterface;
+
 /**
  * Конфигуратор контейнера.
  */
 interface ContainerConfiguratorInterface
 {
+
+    /**
+     * Получить DI-контейнер.
+     *
+     * @return ContainerInterface
+     */
+    public function getContainer(): ContainerInterface;
 
     /**
      * Поиск и автовайринг классов из списка директорий.

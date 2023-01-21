@@ -42,49 +42,49 @@ class ContainerLoader extends BaseLoader
         }
     }
 
-    public function loadAll222222(array $bundles): void
-    {
-        $cacheFile = getenv('VAR_DIRECTORY') . '/ddd.php';
-        if ($this->enableCache && file_exists($cacheFile)) {
-            $requiredConfig = require $cacheFile;
-            $this->loadFromArray($requiredConfig);
-        } else {
-            foreach ($bundles as $bundle) {
-                $containerConfigList = $this->load($bundle);
-                foreach ($containerConfigList as $containerConfig) {
-                    $this->importFromConfig($containerConfig);
-                }
-            }
-            if ($this->enableCache) {
-                file_put_contents(
-                    $cacheFile,
-                    "<?php return [
-                        'singletons' => [
-                            {$this->compiledSingletons}
-                        ],
-                        'definitions' => [
-                            {$this->compiledDefinitions}
-                        ],
-                    ];"
-                );
-            }
-        }
-        /*$cc = '';
-        foreach ($this->container->getBindings() as $abstract => $vv) {
-            $concreteCode = $this->genVal3333($vv['concrete']);
-            $abstractValueGenerator = new ValueGenerator();
-            $abstractValueGenerator->setValue($abstract);
-            $rr = $abstractValueGenerator->generate();
-            $cc .= "
-            {$rr} => 
-            [
-                'concrete' => $concreteCode,
-                'shared' => ".($vv['shared'] ? 'true' : 'false').",
-            ],
-            ";
-        }
-        dd($cc);*/
-    }
+//    public function loadAll222222(array $bundles): void
+//    {
+//        $cacheFile = getenv('VAR_DIRECTORY') . '/ddd.php';
+//        if ($this->enableCache && file_exists($cacheFile)) {
+//            $requiredConfig = require $cacheFile;
+//            $this->loadFromArray($requiredConfig);
+//        } else {
+//            foreach ($bundles as $bundle) {
+//                $containerConfigList = $this->load($bundle);
+//                foreach ($containerConfigList as $containerConfig) {
+//                    $this->importFromConfig($containerConfig);
+//                }
+//            }
+//            if ($this->enableCache) {
+//                file_put_contents(
+//                    $cacheFile,
+//                    "<?php return [
+//                        'singletons' => [
+//                            {$this->compiledSingletons}
+//                        ],
+//                        'definitions' => [
+//                            {$this->compiledDefinitions}
+//                        ],
+//                    ];"
+//                );
+//            }
+//        }
+//        /*$cc = '';
+//        foreach ($this->container->getBindings() as $abstract => $vv) {
+//            $concreteCode = $this->genVal3333($vv['concrete']);
+//            $abstractValueGenerator = new ValueGenerator();
+//            $abstractValueGenerator->setValue($abstract);
+//            $rr = $abstractValueGenerator->generate();
+//            $cc .= "
+//            {$rr} =>
+//            [
+//                'concrete' => $concreteCode,
+//                'shared' => ".($vv['shared'] ? 'true' : 'false').",
+//            ],
+//            ";
+//        }
+//        dd($cc);*/
+//    }
 
     private function importFromConfig($configFile): void
     {

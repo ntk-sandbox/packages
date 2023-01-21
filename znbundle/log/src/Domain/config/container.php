@@ -12,6 +12,7 @@ use ZnCore\Env\Helpers\EnvHelper;
 use ZnBundle\Log\Domain\Interfaces\Repositories\LogRepositoryInterface;
 use ZnBundle\Log\Domain\Monolog\Handler\EloquentHandler;
 use ZnBundle\Log\Domain\Repositories\Eloquent\LogRepository;
+use ZnCore\App\Interfaces\EnvStorageInterface;
 
 return [
     'singletons' => [
@@ -20,18 +21,18 @@ return [
 
         LogRepositoryInterface::class => LogRepository::class,
         HandlerInterface::class => function (ContainerInterface $container) {
-            /**
-             * @var ContainerInterface $container
-             * @var AbstractProcessingHandler $handler
-             */
-            $driver = getenv('LOG_DRIVER') ?: null;
+            /** @var EnvStorageInterface $envStorage */
+            $envStorage = $container->get(EnvStorageInterface::class);
+
+            $driver = $envStorage->get('LOG_DRIVER') ?: null;
             if ($driver == 'file') {
-                $logFileName = getenv('LOG_DIRECTORY') . '/application.json';
+                $logFileName = $envStorage->get('LOG_DIRECTORY') . '/application.json';
                 $handler = new StreamHandler($logFileName);
-                $formatterClass = getenv('LOG_FORMATTER') ?: JsonFormatter::class;
+                $formatterClass = $envStorage->get('LOG_FORMATTER') ?: JsonFormatter::class;
                 $formatter = $container->get($formatterClass);
                 $handler->setFormatter($formatter);
             } elseif ($driver == 'db') {
+                /** @var AbstractProcessingHandler $handler */
                 $handler = $container->get(EloquentHandler::class);
             } else {
 //                $handler = new \Monolog\Handler\NullHandler();
@@ -40,7 +41,10 @@ return [
             return $handler;
         },
         LoggerInterface::class => function (ContainerInterface $container) {
-            $driver = getenv('LOG_DRIVER') ?: null;
+            /** @var EnvStorageInterface $envStorage */
+            $envStorage = $container->get(EnvStorageInterface::class);
+
+            $driver = $envStorage->get('LOG_DRIVER') ?: null;
             if ($driver == null) {
                 $logger = new NullLogger();
             } else {

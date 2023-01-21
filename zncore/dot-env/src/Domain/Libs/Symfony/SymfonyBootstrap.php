@@ -201,10 +201,10 @@ class SymfonyBootstrap implements BootstrapInterface
      */
     private function initMode(string $mode): void
     {
-        if (getenv('APP_MODE') == null || empty($_ENV['APP_MODE'])) {
+//        if (getenv('APP_MODE') == null || empty($_ENV['APP_MODE'])) {
             $_ENV['APP_MODE'] = $mode;
             putenv("APP_MODE=$mode");
-        }
+//        }
     }
 
     /**
