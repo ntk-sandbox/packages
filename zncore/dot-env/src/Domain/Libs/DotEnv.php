@@ -8,12 +8,22 @@ use ZnCore\DotEnv\Domain\Enums\DotEnvModeEnum;
 use ZnCore\DotEnv\Domain\Interfaces\BootstrapInterface;
 use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
 
+/**
+ * Class DotEnv
+ * @package ZnCore\DotEnv\Domain\Libs
+ * @deprecated
+ */
 class DotEnv
 {
 
+    /**
+     * @param string $mode
+     * @throws \ZnCore\Code\Exceptions\DeprecatedException
+     * @deprecated
+     */
     public static function init(string $mode = DotEnvModeEnum::MAIN): void
     {
-//        DeprecateHelper::hardThrow('DotEnv::init deprecated!');
+        DeprecateHelper::hardThrow('DotEnv::init deprecated!');
 //        dd(getenv());
         $rootDirectory = realpath(__DIR__ . '/../../../../../../../..');
         $basePath = $rootDirectory;

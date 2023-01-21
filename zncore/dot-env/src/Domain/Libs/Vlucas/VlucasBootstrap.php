@@ -18,25 +18,31 @@ use ZnLib\Components\Store\StoreFile;
 class VlucasBootstrap implements BootstrapInterface
 {
 
-    public function __construct(protected string $mode, protected string $rootDirectory)
+    public function __construct(protected ?string $mode = null, protected ?string $rootDirectory = null)
     {
     }
 
-    /**
-     * @return string
-     */
     public function getMode(): string
     {
         return $this->mode;
     }
 
-    /**
-     * @return string
-     */
+    public function setMode(string $mode): void
+    {
+        $this->mode = $mode;
+    }
+
     public function getRootDirectory(): string
     {
         return $this->rootDirectory;
     }
+
+    public function setRootDirectory(string $rootDirectory): void
+    {
+        $this->rootDirectory = $rootDirectory;
+    }
+
+
 
     public function loadFromPath(
         string $basePath = null,

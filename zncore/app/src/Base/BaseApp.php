@@ -2,12 +2,14 @@
 
 namespace ZnCore\App\Base;
 
+use App\Application\Common\Libs\Environment;
 use Psr\Container\ContainerInterface;
 use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use ZnCore\App\Enums\AppEventEnum;
 use ZnCore\App\Events\AppEvent;
 use ZnCore\App\Interfaces\AppInterface;
+use ZnCore\App\Interfaces\EnvironmentInterface;
 use ZnCore\App\Libs\ZnCore;
 use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\Bundle\Libs\BundleLoader;
@@ -113,9 +115,18 @@ abstract class BaseApp implements AppInterface
      */
     protected function initEnv(): void
     {
-        DotEnv::init($this->getMode());
+        /** @var EnvironmentInterface $environment */
+        $environment = $this->getContainer()->get(EnvironmentInterface::class);
+        $rootDirectory = realpath(__DIR__ . '/../../../../../../..');
+        $environment->init($this->getMode(), $rootDirectory);
         EnvHelper::setErrorVisibleFromEnv();
     }
+
+    /*protected function initEnv(): void
+    {
+        DotEnv::init($this->getMode());
+        EnvHelper::setErrorVisibleFromEnv();
+    }*/
 
     /**
      * Инициализация DI-контейнера
