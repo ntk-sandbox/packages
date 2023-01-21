@@ -3,11 +3,10 @@
 
 use ZnCore\App\Libs\ZnCore;
 use ZnCore\Container\Libs\Container;
-use ZnFramework\Console\Domain\Factories\ConsoleApplicationFactory;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
 
-require __DIR__ . '/../../../../../autoload.php';
+require __DIR__ . '/../../../../../../../../autoload.php';
 
 /**
  * Инициализация ядра.
@@ -24,6 +23,9 @@ $container = new Container();
 $znCore = new ZnCore($container);
 $znCore->init();
 
-$applicationFactory = new ConsoleApplicationFactory($container);
-$application = $applicationFactory->createApplicationInstance();
+use Symfony\Component\Console\Application;
+use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
+
+$application = new Application();
+$application->add(new RequestReceiverCommand());
 $application->run();

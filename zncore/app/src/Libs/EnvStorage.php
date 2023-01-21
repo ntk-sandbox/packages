@@ -21,9 +21,9 @@ class EnvStorage implements EnvStorageInterface
     }
 
     public function init(array $env) {
-        /*if($this->env) {
+        if($this->env) {
             throw new AlreadyExistsException('Env config already inited!');
-        }*/
+        }
         $this->env = $env;
     }
 }
