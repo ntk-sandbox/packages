@@ -38,7 +38,7 @@ trait SingletonTrait
      * @param string|null $className
      * @return static
      */
-    private static function createInstance(string $className = null): self
+    protected static function createInstance(string $className = null): self
     {
         $className = $className ?: static::class;
         $constructorParameters = static::getConstructorParameters();
