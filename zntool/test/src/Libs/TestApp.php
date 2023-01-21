@@ -10,7 +10,6 @@ class TestApp extends BaseApp
 {
 
     protected function getMode(): string {
-//        return $this->mode;
         return 'test';
     }
 
