@@ -2,18 +2,16 @@
 
 namespace ZnFramework\Console\Domain\Factories;
 
-use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
 use ZnCore\App\Interfaces\AppInterface;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\DotEnv\Domain\Libs\DotEnvLoader;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnFramework\Console\Domain\Libs\ConsoleApp;
 
 abstract class BaseConsoleApplicationFactory
 {
 
-    protected function getConsoleApplicationInstance(): Application {
+    protected function getConsoleApplicationInstance(): Application
+    {
         /** @var Application $application */
         $application = $this->container->get(Application::class);
         return $application;
@@ -25,7 +23,7 @@ abstract class BaseConsoleApplicationFactory
         $app = $this->container->get(AppInterface::class);
         return $app;
     }
-    
+
     protected function getEventDispatcherConfigurator(): EventDispatcherConfiguratorInterface
     {
         /** @var EventDispatcherConfiguratorInterface $eventDispatcherConfigurator */
