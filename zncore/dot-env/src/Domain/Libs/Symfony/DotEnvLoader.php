@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs;
+namespace ZnCore\DotEnv\Domain\Libs\Symfony;
 
 use Symfony\Component\Dotenv\Dotenv;
 

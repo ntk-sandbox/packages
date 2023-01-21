@@ -42,7 +42,20 @@ class VlucasBootstrap implements BootstrapInterface
         $this->rootDirectory = $rootDirectory;
     }
 
+    public function parseFile(string $fileName): array {
+        $content = file_get_contents($fileName);
+        return $this->parse($content);
+    }
 
+    public function parse(string $content): array {
+        $parser = new Parser();
+        $collection = $parser->parse($content);
+        $env = [];
+        foreach ($collection as $entry) {
+            $env[$entry->getName()] = $entry->getValue()->get()->getChars();
+        }
+        return $env;
+    }
 
     public function loadFromPath(
         string $basePath = null,

@@ -5,9 +5,12 @@ namespace ZnCore\DotEnv\Domain\Libs;
 use Symfony\Component\Dotenv\Dotenv;
 use ZnCore\Code\Exceptions\NotFoundDependencyException;
 use ZnCore\Code\Helpers\ComposerHelper;
+use ZnCore\Code\Helpers\DeprecateHelper;
 use ZnCore\DotEnv\Domain\Enums\DotEnvModeEnum;
 use ZnCore\FileSystem\Helpers\FilePathHelper;
 use ZnCore\Pattern\Singleton\SingletonTrait;
+
+DeprecateHelper::hardThrow();
 
 /**
  * Загрузчик переменных окружения

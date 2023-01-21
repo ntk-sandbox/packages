@@ -3,20 +3,17 @@
 namespace ZnCore\App\Libs;
 
 use ZnCore\App\Interfaces\EnvironmentInterface;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\DotEnv\Domain\Interfaces\BootstrapInterface;
+use ZnCore\DotEnv\Domain\Libs\Symfony\SymfonyBootstrap;
 use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
 
-DeprecateHelper::hardThrow();
-
-class VlucasEnvironment extends BaseEnvironment implements EnvironmentInterface
+class SymfonyEnvironment extends BaseEnvironment implements EnvironmentInterface
 {
 
     protected ?string $content = null;
     protected ?array $env = null;
     protected ?string $path = null;
 
-    public function __construct(BootstrapInterface $bootstrap)
+    public function __construct(SymfonyBootstrap $bootstrap)
     {
         $this->bootstrap = $bootstrap;
     }

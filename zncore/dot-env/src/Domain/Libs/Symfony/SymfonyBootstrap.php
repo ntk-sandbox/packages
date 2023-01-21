@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs;
+namespace ZnCore\DotEnv\Domain\Libs\Symfony;
 
 use Dotenv\Loader\Loader;
 use Dotenv\Parser\Entry;
@@ -46,6 +46,16 @@ class SymfonyBootstrap implements BootstrapInterface
     public function setRootDirectory(string $rootDirectory): void
     {
         $this->rootDirectory = $rootDirectory;
+    }
+
+    public function parseFile(string $fileName): array {
+        $loader = new DotEnvLoader();
+        return $loader->loadFromFile($fileName);
+    }
+
+    public function parse(string $content): array {
+        $loader = new DotEnvLoader();
+        return $loader->loadFromContent($content);
     }
 
     public function loadFromPath(string $basePath = null, array $names = null): void
@@ -118,7 +128,7 @@ class SymfonyBootstrap implements BootstrapInterface
 
     private function dump($env, $name) {
         ksort($env);
-        file_put_contents(__DIR__ . '/../../../../../../../../var/'.$name.'_'.$this->mode.'.json', json_encode($env, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+        file_put_contents(__DIR__ . '/../../../../../../../../var/' .$name.'_'.$this->mode.'.json', json_encode($env, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
     }
 
 

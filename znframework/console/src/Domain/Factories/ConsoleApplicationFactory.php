@@ -4,11 +4,8 @@ namespace ZnFramework\Console\Domain\Factories;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
-use Symfony\Component\HttpFoundation\Request;
 use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\DotEnv\Domain\Libs\DotEnvLoader;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
 use ZnFramework\Console\Domain\Libs\ConsoleApp;
 
 class ConsoleApplicationFactory extends BaseConsoleApplicationFactory
@@ -24,19 +21,21 @@ class ConsoleApplicationFactory extends BaseConsoleApplicationFactory
         $this->getContainerConfigurator()->singleton(AppInterface::class, $consoleAppClass);
         $this->getApp()->init();
     }
-    
+
     public function createApplicationInstance(): Application
     {
         $this->initApp();
         return $this->getConsoleApplicationInstance();
     }
-    
-    protected function getConsoleAppClass(): string {
+
+    protected function getConsoleAppClass(): string
+    {
         if (getenv('CONSOLE_APP_CLASS')) {
             $consoleAppClass = getenv('CONSOLE_APP_CLASS');
         } else {
-            $loader = new DotEnvLoader();
-            $mainEnv = $loader->loadFromFile(__DIR__ . '/../../../../../../../../.env');
+            $mainEnvFile = __DIR__ . '/../../../../../../../../.env';
+            $bootstrap = new VlucasBootstrap();
+            $mainEnv = $bootstrap->parseFile($mainEnvFile);
             $consoleAppClass = $mainEnv['CONSOLE_APP_CLASS'] ?? ConsoleApp::class;
         }
         return $consoleAppClass;
