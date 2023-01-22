@@ -74,19 +74,6 @@ class RequestReceiverCommand extends BaseCommand
         $httpKernel = $this->appFactory->createKernelInstance($request);
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
 
-        $data = [
-            $request->getMethod(),
-            $request->getUri(),
-            $request->attributes->all(),
-            [],
-            $request->server->all(),
-            $request->getContent()
-        ];
-//        $data = EntityHelper::toArray($request->request->all());
-        file_put_contents(__DIR__ . '/../../../../../../../../var/ffff.json', json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-
-
-
         $httpKernelBrowser->request(
             $request->getMethod(),
             $request->getUri(),
