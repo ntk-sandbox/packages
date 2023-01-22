@@ -250,12 +250,6 @@ abstract class BaseMockHttpClient
         return $requestData;
     }
 
-    public function call($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Response
-    {
-        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
-        return $this->handleRequest($request);
-    }
-
     protected function createRequestInstance($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Request {
         $request = Request::create(
             $this->prepareUrlForRequest($uri),
@@ -286,9 +280,6 @@ abstract class BaseMockHttpClient
     public function handleRequest(Request $request): Response
     {
         DeprecateHelper::hardThrow();
-        
-        /** @var HttpKernelInterface | TerminableInterface $framework */
-//        $framework = $this->container->get(HttpKernelInterface::class);
 
         $framework = $this->appFactory->createKernelInstance($request);
 
@@ -452,22 +443,17 @@ abstract class BaseMockHttpClient
         return strtr(strtoupper($name), '-', '_');
     }
 
-    protected function prepareHeaderKeys___(array $headers): array {
-        $newHeaders = [];
-        foreach ($headers as $headerKey => $headerValue) {
-            $headerKey = Inflector::underscore($headerKey);
-            $headerKey = strtoupper($headerKey);
-            $newHeaders[$headerKey] = $headerValue;
-        }
-        $headers = $newHeaders;
-        return $headers;
-    }
-
     protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
         DeprecateHelper::hardThrow();
         $server = $this->transformHeadersToServerVars($headers);
         $cookies = $this->prepareCookiesForRequest();
         return $this->call($method, $uri, $data, $cookies, [], $server);
+    }
+
+    protected function call($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Response
+    {
+        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
+        return $this->handleRequest($request);
     }
 
 }
