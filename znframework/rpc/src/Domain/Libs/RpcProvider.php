@@ -56,8 +56,8 @@ class RpcProvider
         if (empty($this->rpcClient)) {
             $guzzleClient = $this->getGuzzleClient();
 //            $authAgent = $this->getAuthorizationContract($guzzleClient);
-//            $this->rpcClient = new HttpRpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
-            $this->rpcClient = new IsolateRpcClient($this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
+            $this->rpcClient = new HttpRpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
+//            $this->rpcClient = new IsolateRpcClient($this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
 //            $this->rpcClient = new RpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
         }
         return $this->rpcClient;

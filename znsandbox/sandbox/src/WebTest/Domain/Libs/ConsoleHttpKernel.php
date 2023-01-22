@@ -42,7 +42,8 @@ class ConsoleHttpKernel implements HttpKernelInterface
             $encodedRequest
         ];
         $commandString = CommandLineHelper::argsToString($command);
-        $process = Process::fromShellCommandline($commandString, realpath(__DIR__ . '/../../../../../../znsandbox/sandbox/src/WebTest/resouces/bin'));
+        $cwd = realpath(__DIR__ . '/../../../../../../znsandbox/sandbox/src/WebTest/resouces/bin');
+        $process = Process::fromShellCommandline($commandString, $cwd);
         $res = $process->run();
         $encodedResponse = $process->getOutput();
 
