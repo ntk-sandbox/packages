@@ -2,15 +2,20 @@
 
 namespace ZnFramework\Rpc\Test;
 
+use ZnCore\Env\Enums\EnvEnum;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
 use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
+use ZnFramework\Rpc\Domain\Facades\RpcClientFacade;
 use ZnFramework\Rpc\Domain\Forms\BaseRpcAuthForm;
 use ZnFramework\Rpc\Domain\Forms\RpcAuthByLoginForm;
 use ZnFramework\Rpc\Domain\Forms\RpcAuthByTokenForm;
 use ZnFramework\Rpc\Domain\Forms\RpcAuthGuestForm;
 use ZnFramework\Rpc\Domain\Libs\BaseRpcClient;
+use ZnFramework\Rpc\Domain\Libs\RpcAuthProvider;
+use ZnFramework\Rpc\Domain\Libs\RpcProvider;
+use ZnFramework\Rpc\Domain\Libs\TestRpcProvider;
 use ZnTool\Test\Base\BaseTestCase;
 use ZnTool\Test\Traits\AssertTrait;
 use ZnTool\Test\Traits\BaseUrlTrait;
@@ -36,6 +41,25 @@ abstract class BaseRpcTest extends BaseTestCase
         parent::__construct($name, $data, $dataName);
         $this->rpcProvider = $this->getRpcProvider($this->getBaseUrl());
 //        $this->authProvider = new RpcAuthProvider($this->rpcProvider);
+    }
+
+    public function getRpcProvider(string $baseUrl): RpcProvider
+    {
+        $rpcProvider = new TestRpcProvider();
+        $rpcProvider->setBaseUrl($baseUrl);
+        $rpcProvider->getRpcClient()->setHeaders([
+            'env-name' => 'test',
+        ]);
+        $rpcVersion = 1;
+        $rpcProvider->setDefaultRpcMethodVersion($rpcVersion);
+
+//        $rpcProvider =
+//            (new RpcClientFacade(EnvEnum::TEST))
+//                ->createRpcProvider($baseUrl);
+
+        $authProvider = new RpcAuthProvider($rpcProvider);
+        $rpcProvider->setAuthProvider($authProvider);
+        return $rpcProvider;
     }
 
     protected function defaultRpcMethod(): ?string
