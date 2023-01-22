@@ -39,7 +39,7 @@ class SendRestRequestCommand extends BaseCommand
 
         /** @var JsonAuthPlugin $jsonAuthPlugin */
         $jsonAuthPlugin = $httpClient->getPlugin(JsonAuthPlugin::class);
-//        $jsonAuthPlugin->withToken('asdadasdasdsa');
+//        $jsonAuthPlugin->withToken('qwerty123456');
 
         /** @var JsonPlugin $jsonPlugin */
         $jsonPlugin = $httpClient->getPlugin(JsonPlugin::class);

@@ -12,6 +12,8 @@ use ZnLib\Components\Http\Enums\HttpMethodEnum;
 class HttpRpcClient extends BaseRpcClient
 {
 
+    protected $guzzleClient;
+
     public function __construct(
         Client $guzzleClient,
         RequestEncoder $requestEncoder,
@@ -23,6 +25,16 @@ class HttpRpcClient extends BaseRpcClient
         $this->responseEncoder = $responseEncoder;
 //        $this->setAuthAgent($authAgent);
     }
+
+    /*public function getGuzzleClient(): Client
+    {
+        return $this->guzzleClient;
+    }
+
+    public function setGuzzleClient(Client $guzzleClient): void
+    {
+        $this->guzzleClient = $guzzleClient;
+    }*/
 
     protected function sendRawRequest(array $body = [])
     {

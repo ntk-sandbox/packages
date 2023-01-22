@@ -2,6 +2,7 @@
 
 namespace ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins;
 
+use ZnSandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
 use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
 use ZnSandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
 
@@ -12,18 +13,16 @@ class JsonPlugin implements PluginInterface
 
     const MIME_TYPE = 'application/json';
 
-    public function run(array $requestData): array
+    public function run(RequestDataDto $requestDataDto): void
     {
-        $isJsonType = isset($requestData['headers']['CONTENT_TYPE']) && $requestData['headers']['CONTENT_TYPE'] == self::MIME_TYPE;
+        $isJsonType = isset($requestDataDto->headers['CONTENT_TYPE']) && $requestDataDto->headers['CONTENT_TYPE'] == self::MIME_TYPE;
 
         if($isJsonType) {
-            if ($requestData['data']) {
-                $requestData['content'] = json_encode($requestData['data']);
+            if ($requestDataDto->data) {
+                $requestDataDto->content = json_encode($requestDataDto->data);
             }
-//            $requestData['headers']['CONTENT_LENGTH'] = mb_strlen($requestData['content'], '8bit');
+//            $requestDataDto->headers['CONTENT_LENGTH'] = mb_strlen($requestDataDto->content, '8bit');
         }
-
-        return $requestData;
     }
 
     public function asJson(): void

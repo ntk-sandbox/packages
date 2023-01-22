@@ -32,7 +32,6 @@ use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
 abstract class BaseRpcClient
 {
 
-    protected $guzzleClient;
     protected $isStrictMode = true;
     protected $accept = 'application/json';
 //    protected $authAgent;
@@ -58,16 +57,6 @@ abstract class BaseRpcClient
     public function setHeaders(array $headers): void
     {
         $this->headers = $headers;
-    }
-
-    public function getGuzzleClient(): Client
-    {
-        return $this->guzzleClient;
-    }
-
-    public function setGuzzleClient(Client $guzzleClient): void
-    {
-        $this->guzzleClient = $guzzleClient;
     }
 
     /* public function getAuthAgent(): ?AuthorizationInterface

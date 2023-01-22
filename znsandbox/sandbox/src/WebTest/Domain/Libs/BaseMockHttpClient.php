@@ -14,6 +14,8 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\Code\Helpers\DeprecateHelper;
 use ZnCore\Text\Helpers\Inflector;
+use ZnSandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
+use ZnSandbox\Sandbox\WebTest\Domain\Helpers\TestHttpRequestHelper;
 use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
 
 abstract class BaseMockHttpClient
@@ -74,14 +76,13 @@ abstract class BaseMockHttpClient
 
     public function __construct(
         private ?AppFactory $appFactory = null
-    )
-    {
+    ) {
     }
 
     /**
      * Define additional headers to be sent with the request.
      *
-     * @param  array  $headers
+     * @param array $headers
      * @return $this
      */
     public function withHeaders(array $headers)
@@ -94,8 +95,8 @@ abstract class BaseMockHttpClient
     /**
      * Add a header to be sent with the request.
      *
-     * @param  string  $name
-     * @param  string  $value
+     * @param string $name
+     * @param string $value
      * @return $this
      */
     public function withHeader(string $name, string $value)
@@ -127,7 +128,7 @@ abstract class BaseMockHttpClient
     /**
      * Define a set of server variables to be sent with the requests.
      *
-     * @param  array  $server
+     * @param array $server
      * @return $this
      */
     public function withServerVariables(array $server)
@@ -140,7 +141,7 @@ abstract class BaseMockHttpClient
     /**
      * Define additional cookies to be sent with the request.
      *
-     * @param  array  $cookies
+     * @param array $cookies
      * @return $this
      */
     public function withCookies(array $cookies)
@@ -153,8 +154,8 @@ abstract class BaseMockHttpClient
     /**
      * Add a cookie to be sent with the request.
      *
-     * @param  string  $name
-     * @param  string  $value
+     * @param string $name
+     * @param string $value
      * @return $this
      */
     public function withCookie(string $name, string $value)
@@ -163,33 +164,6 @@ abstract class BaseMockHttpClient
 
         return $this;
     }
-
-//    /**
-//     * Define additional cookies will not be encrypted before sending with the request.
-//     *
-//     * @param  array  $cookies
-//     * @return $this
-//     */
-//    public function withUnencryptedCookies(array $cookies)
-//    {
-//        $this->unencryptedCookies = array_merge($this->unencryptedCookies, $cookies);
-//
-//        return $this;
-//    }
-
-//    /**
-//     * Add a cookie will not be encrypted before sending with the request.
-//     *
-//     * @param  string  $name
-//     * @param  string  $value
-//     * @return $this
-//     */
-//    public function withUnencryptedCookie(string $name, string $value)
-//    {
-//        $this->unencryptedCookies[$name] = $value;
-//
-//        return $this;
-//    }
 
     /**
      * Automatically follow any redirects returned from the response.
@@ -215,95 +189,86 @@ abstract class BaseMockHttpClient
         return $this;
     }
 
-//    /**
-//     * Disable automatic encryption of cookie values.
-//     *
-//     * @return $this
-//     */
-//    public function disableCookieEncryption()
-//    {
-//        $this->encryptCookies = false;
-//
-//        return $this;
-//    }
-
-    public function addPlugin(object $plugin, string $name = null) {
-        if(empty($name)) {
+    public function addPlugin(object $plugin, string $name = null)
+    {
+        if (empty($name)) {
             $name = get_class($plugin);
         }
-        if(property_exists($plugin, 'client')) {
+        if (property_exists($plugin, 'client')) {
             $plugin->client = $this;
         }
         $this->plugins[$name] = $plugin;
     }
 
-    public function getPlugin(string $name): object {
+    public function getPlugin(string $name): object
+    {
         return $this->plugins[$name];
     }
 
-    protected function runPlugins(array $requestData): array {
-        foreach ($this->plugins as $plugin) {
-            if ($plugin instanceof PluginInterface) {
-                $requestData = $plugin->run($requestData);
-            }
-        }
-        return $requestData;
-    }
+    public function createRequestByDto(RequestDataDto $requestDataDto): Request
+    {
+        $requestDataDto->headers = array_merge($this->defaultHeaders, $requestDataDto->headers);
+        $requestDataDto->headers = TestHttpRequestHelper::prepareHeaderKeys($requestDataDto->headers);
 
-    protected function createRequestInstance($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null): Request {
-        $request = Request::create(
-            $this->prepareUrlForRequest($uri),
-            $method,
-            $parameters,
-            $cookies,
-            $files,
-            array_replace($this->serverVariables, $server),
-            $content
-        );
+        $this->runPlugins($requestDataDto);
+
+        $requestDataDto->server = TestHttpRequestHelper::transformHeadersToServerVars($requestDataDto->headers);
+
+        $requestDataDto->cookies = $this->prepareCookiesForRequest();
+        $requestDataDto->files = TestHttpRequestHelper::extractFilesFromDataArray($requestDataDto->data);
+        $request = $this->createRequestInstance($requestDataDto);
         return $request;
     }
 
-    /*protected function createKernelInstance(Request $request): HttpKernelInterface {
-        $framework = $this->appFactory->createKernelInstance($request);
-        return $framework;
-    }*/
-    
-    /**
-     * Обработка HTTP-запроса средствами HTTP-фрэймворка.
-     *
-     * @param Request $request
-     * @return Response
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
-     * @deprecated 
-     */
-    public function handleRequest(Request $request): Response
+    public function createRequest(
+        $method,
+        $uri,
+        array $data = [],
+        array $headers = [],
+        ?string $content = null,
+        array $parameters = []
+    ): Request {
+
+
+        $requestData = compact(
+            'method',
+            'uri',
+            'data',
+            'headers',
+            'content',
+            'parameters'/*, 'cookies', 'files', 'server'*/
+        );
+        $requestDataDto = new RequestDataDto($requestData);
+        return $this->createRequestByDto($requestDataDto);
+    }
+
+    protected function runPlugins(RequestDataDto $requestDataDto): void
     {
-        DeprecateHelper::hardThrow();
-
-        $framework = $this->appFactory->createKernelInstance($request);
-
-        // actually execute the kernel, which turns the request into a response
-        // by dispatching events, calling a controller, and returning the response
-        $response = $framework->handle($request);
-
-        // send the headers and echo the content
-        // $response->send();
-
-        // trigger the kernel.terminate event
-        $framework->terminate($request, $response);
-
-        if ($this->followRedirects) {
-            $response = $this->followRedirects($response);
+        foreach ($this->plugins as $plugin) {
+            if ($plugin instanceof PluginInterface) {
+                $plugin->run($requestDataDto);
+            }
         }
+    }
 
-        return $response;
+    protected function createRequestInstance(RequestDataDto $requestDataDto): Request
+    {
+        $request = Request::create(
+            $this->prepareUrlForRequest($requestDataDto->uri),
+            $requestDataDto->method,
+            $requestDataDto->parameters,
+            $requestDataDto->cookies,
+            $requestDataDto->files,
+            array_replace($this->serverVariables, $requestDataDto->server),
+            $requestDataDto->content
+        );
+        return $request;
     }
 
     /**
      * Follow a redirect chain until a non-redirect is received.
      *
-     * @param  Response $response
+     * @param Response $response
      * @return Response
      */
     protected function followRedirects($response)
@@ -320,7 +285,7 @@ abstract class BaseMockHttpClient
     /**
      * Turn the given URI into a fully qualified URL.
      *
-     * @param  string  $uri
+     * @param string $uri
      * @return string
      */
     protected function prepareUrlForRequest($uri)
@@ -330,64 +295,6 @@ abstract class BaseMockHttpClient
         }
 
         return trim($uri, '/');
-    }
-
-    /**
-     * Transform headers array to array of $_SERVER vars with HTTP_* format.
-     *
-     * @param  array  $headers
-     * @return array
-     */
-    protected function transformHeadersToServerVars(array $headers)
-    {
-        $headers = $this->prepareHeaderKeys($headers);
-        return collect($headers)->mapWithKeys(function ($value, $name) {
-//            $name = $this->prepareHeaderKey($name);
-
-            return [$this->formatServerHeaderKey($name) => $value];
-        })->all();
-    }
-
-    /**
-     * Format the header name for the server array.
-     *
-     * @param  string  $name
-     * @return string
-     */
-    protected function formatServerHeaderKey($name)
-    {
-        if (! str_starts_with($name, 'HTTP_') && $name !== 'CONTENT_TYPE' && $name !== 'REMOTE_ADDR') {
-            return 'HTTP_'.$name;
-        }
-
-        return $name;
-    }
-
-    /**
-     * Extract the file uploads from the given data array.
-     *
-     * @param  array  $data
-     * @return array
-     */
-    protected function extractFilesFromDataArray(&$data)
-    {
-        $files = [];
-
-        foreach ($data as $key => $value) {
-            if ($value instanceof UploadedFile) {
-                $files[$key] = $value;
-
-                unset($data[$key]);
-            }
-
-            if (is_array($value)) {
-                $files[$key] = $this->extractFilesFromDataArray($value);
-
-                $data[$key] = $value;
-            }
-        }
-
-        return $files;
     }
 
     /**
@@ -417,33 +324,18 @@ abstract class BaseMockHttpClient
         return $this->withCredentials ? $this->prepareCookiesForRequest() : [];
     }
 
-    public function createRequest($method, $uri, array $data = [], array $headers = [], ?string $content = null, array $parameters = []): Request {
-        $headers = array_merge($this->defaultHeaders, $headers);
-        $headers = $this->prepareHeaderKeys($headers);
-
-        $requestData = compact('method', 'uri', 'data', 'headers', 'content');
-        $requestData = $this->runPlugins($requestData);
-        extract($requestData);
-
-        $server = $this->transformHeadersToServerVars($headers);
-        $cookies = $this->prepareCookiesForRequest();
-        $files = $this->extractFilesFromDataArray($data);
-        $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
-        return $request;
-    }
-
-    protected function prepareHeaderKeys(array $headers): array {
+    /*protected function prepareHeaderKeys(array $headers): array {
         return collect($headers)->mapWithKeys(function ($value, $name) {
             $name = $this->prepareHeaderKey($name);
             return [$name => $value];
         })->all();
-    }
+    }*/
 
-    protected function prepareHeaderKey(string $name): string {
+    /*protected function prepareHeaderKey(string $name): string {
         return strtr(strtoupper($name), '-', '_');
-    }
+    }*/
 
-    protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
+    /*protected function callRequest(string $method, $uri, array $data = [], array $headers = []) {
         DeprecateHelper::hardThrow();
         $server = $this->transformHeadersToServerVars($headers);
         $cookies = $this->prepareCookiesForRequest();
@@ -454,6 +346,141 @@ abstract class BaseMockHttpClient
     {
         $request = $this->createRequestInstance($method, $uri, $parameters, $cookies, $files, $server, $content);
         return $this->handleRequest($request);
-    }
+    }*/
+
+//    /**
+//     * Transform headers array to array of $_SERVER vars with HTTP_* format.
+//     *
+//     * @param  array  $headers
+//     * @return array
+//     */
+//    protected function transformHeadersToServerVars(array $headers)
+//    {
+//        $headers = $this->prepareHeaderKeys($headers);
+//        return collect($headers)->mapWithKeys(function ($value, $name) {
+////            $name = $this->prepareHeaderKey($name);
+//
+//            return [$this->formatServerHeaderKey($name) => $value];
+//        })->all();
+//    }
+
+//    /**
+//     * Format the header name for the server array.
+//     *
+//     * @param  string  $name
+//     * @return string
+//     */
+//    protected function formatServerHeaderKey($name)
+//    {
+//        if (! str_starts_with($name, 'HTTP_') && $name !== 'CONTENT_TYPE' && $name !== 'REMOTE_ADDR') {
+//            return 'HTTP_'.$name;
+//        }
+//
+//        return $name;
+//    }
+
+//    /**
+//     * Extract the file uploads from the given data array.
+//     *
+//     * @param  array  $data
+//     * @return array
+//     */
+//    protected function extractFilesFromDataArray(&$data)
+//    {
+//        $files = [];
+//
+//        foreach ($data as $key => $value) {
+//            if ($value instanceof UploadedFile) {
+//                $files[$key] = $value;
+//
+//                unset($data[$key]);
+//            }
+//
+//            if (is_array($value)) {
+//                $files[$key] = $this->extractFilesFromDataArray($value);
+//
+//                $data[$key] = $value;
+//            }
+//        }
+//
+//        return $files;
+//    }
+
+    /*protected function createKernelInstance(Request $request): HttpKernelInterface {
+        $framework = $this->appFactory->createKernelInstance($request);
+        return $framework;
+    }*/
+
+//    /**
+//     * Обработка HTTP-запроса средствами HTTP-фрэймворка.
+//     *
+//     * @param Request $request
+//     * @return Response
+//     * @throws ContainerExceptionInterface
+//     * @throws NotFoundExceptionInterface
+//     * @deprecated
+//     */
+//    public function handleRequest(Request $request): Response
+//    {
+//        DeprecateHelper::hardThrow();
+//
+//        $framework = $this->appFactory->createKernelInstance($request);
+//
+//        // actually execute the kernel, which turns the request into a response
+//        // by dispatching events, calling a controller, and returning the response
+//        $response = $framework->handle($request);
+//
+//        // send the headers and echo the content
+//        // $response->send();
+//
+//        // trigger the kernel.terminate event
+//        $framework->terminate($request, $response);
+//
+//        if ($this->followRedirects) {
+//            $response = $this->followRedirects($response);
+//        }
+//
+//        return $response;
+//    }
+
+
+//    /**
+//     * Define additional cookies will not be encrypted before sending with the request.
+//     *
+//     * @param  array  $cookies
+//     * @return $this
+//     */
+//    public function withUnencryptedCookies(array $cookies)
+//    {
+//        $this->unencryptedCookies = array_merge($this->unencryptedCookies, $cookies);
+//
+//        return $this;
+//    }
+
+//    /**
+//     * Add a cookie will not be encrypted before sending with the request.
+//     *
+//     * @param  string  $name
+//     * @param  string  $value
+//     * @return $this
+//     */
+//    public function withUnencryptedCookie(string $name, string $value)
+//    {
+//        $this->unencryptedCookies[$name] = $value;
+//
+//        return $this;
+//    }
+
+//    /**
+//     * Disable automatic encryption of cookie values.
+//     *
+//     * @return $this
+//     */
+//    public function disableCookieEncryption()
+//    {
+//        $this->encryptCookies = false;
+//
+//        return $this;
+//    }
 
 }
