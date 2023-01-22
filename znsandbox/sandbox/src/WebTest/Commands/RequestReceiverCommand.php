@@ -80,7 +80,7 @@ class RequestReceiverCommand extends BaseCommand
             [], //$request->request->all(),
             [],
             $request->server->all(),
-            $request->getContent(), // json_encode($request->request->all())
+            $request->getContent() // json_encode($request->request->all())
         );
         return $httpKernelBrowser->getResponse();
     }
