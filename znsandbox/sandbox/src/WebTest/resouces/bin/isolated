@@ -1,8 +1,19 @@
 #!/usr/bin/env php
 <?php
 
+/**
+ * Изолированное выполнение HTTP-запросов.
+ *
+ * Используется при выполнении авто-тестов Web-части приложения.
+ * Выполнять HTTP-запросы можно без хоста.
+ *
+ * Для выполнения HTTP-запросов используется ядро ConsoleHttpKernel.
+ */
+
+use Symfony\Component\Console\Application;
 use ZnCore\App\Libs\ZnCore;
 use ZnCore\Container\Libs\Container;
+use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
 
@@ -22,9 +33,6 @@ require __DIR__ . '/../../../../../../../../autoload.php';
 $container = new Container();
 $znCore = new ZnCore($container);
 $znCore->init();
-
-use Symfony\Component\Console\Application;
-use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
 
 $application = new Application();
 $application->add(new RequestReceiverCommand());

@@ -4,6 +4,7 @@ namespace ZnCore\App\Libs;
 
 use Psr\Container\ContainerInterface;
 use ZnCore\App\Interfaces\EnvStorageInterface;
+use ZnCore\App\Libs\EnvStorageDrivers\EnvStorageGetenv;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\ConfigManager\Libs\ConfigManager;
 use ZnCore\Container\Helpers\ContainerHelper;
@@ -76,6 +77,6 @@ class ZnCore
         call_user_func($eventDispatcherConfigCallback, $containerConfigurator);
 
         $containerConfigurator->singleton(ConfigManagerInterface::class, ConfigManager::class);
-        $containerConfigurator->singleton(EnvStorageInterface::class, EnvStorage::class);
+        $containerConfigurator->singleton(EnvStorageInterface::class, EnvStorageGetenv::class);
     }
 }

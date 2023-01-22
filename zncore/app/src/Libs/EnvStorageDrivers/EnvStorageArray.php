@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\App\Libs;
+namespace ZnCore\App\Libs\EnvStorageDrivers;
 
 use ZnCore\App\Interfaces\EnvStorageInterface;
 use ZnDomain\Entity\Exceptions\AlreadyExistsException;
 
-class EnvStorage implements EnvStorageInterface
+class EnvStorageArray implements EnvStorageInterface
 {
 
     protected $env = [];
