@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use ZnCore\Container\Helpers\ContainerHelper;
+use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
 
 /**
@@ -72,13 +73,27 @@ class RequestReceiverCommand extends BaseCommand
     {
         $httpKernel = $this->appFactory->createKernelInstance($request);
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
-        $httpKernelBrowser->request(
+
+        $data = [
             $request->getMethod(),
             $request->getUri(),
-            [],
+            $request->attributes->all(),
             [],
             $request->server->all(),
             $request->getContent()
+        ];
+//        $data = EntityHelper::toArray($request->request->all());
+        file_put_contents(__DIR__ . '/../../../../../../../../var/ffff.json', json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+
+
+        $httpKernelBrowser->request(
+            $request->getMethod(),
+            $request->getUri(),
+            [], //$request->request->all(),
+            [],
+            $request->server->all(),
+            $request->getContent(), // json_encode($request->request->all())
         );
         return $httpKernelBrowser->getResponse();
     }
