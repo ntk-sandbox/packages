@@ -9,7 +9,7 @@ use ZnFramework\Rpc\Domain\Encoders\ResponseEncoder;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
 use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
-use ZnFramework\Rpc\Domain\Libs\RpcClient;
+use ZnFramework\Rpc\Domain\Libs\IsolateRpcClient;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -17,7 +17,7 @@ $config = [
     'base_uri' =>'https://example.com/json-rpc' ,
 ];
 $guzzleClient = new Client($config);
-$rpcClient = new RpcClient($guzzleClient, new RequestEncoder(), new ResponseEncoder());
+$rpcClient = new IsolateRpcClient($guzzleClient, new RequestEncoder(), new ResponseEncoder());
 ```
 
 Делаем запрос:

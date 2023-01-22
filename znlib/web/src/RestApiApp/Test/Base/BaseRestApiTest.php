@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use ZnLib\Web\RestApiApp\Test\Asserts\RestApiAssert;
+use ZnSandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonAuthPlugin;
@@ -32,23 +33,8 @@ abstract class BaseRestApiTest extends BaseTestCase
     {
         $httpClient = $this->createHttpClient();
         $request = $httpClient->createRequest($method, $uri, $data);
-        $response = $this->handleRequest($request);
+        $response = TestHttpFacade::handleRequest($request);
         return $response;
-    }
-
-    protected function handleRequest(Request $request): Response
-    {
-        $httpKernel = new ConsoleHttpKernel();
-        $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
-        $httpKernelBrowser->request(
-            $request->getMethod(),
-            $request->getUri(),
-            [],
-            [],
-            $request->server->all(),
-            $request->getContent()
-        );
-        return $httpKernelBrowser->getResponse();
     }
 
     protected function createHttpClient(): HttpClient

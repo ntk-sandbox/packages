@@ -11,6 +11,7 @@ use ZnCore\Text\Helpers\Inflector;
 use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
 use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use ZnLib\Components\Http\Helpers\SymfonyHttpResponseHelper;
 use ZnLib\Components\Http\Helpers\UrlHelper;
 use ZnLib\Components\Store\Drivers\Php;
 use ZnLib\Components\Store\Drivers\Yaml;
@@ -58,7 +59,7 @@ class OpenApi3
             $requestDto->query = $urlData['query'];
 //            dd($urlData['query']);
         }
-        $requestDto->headers = $this->extractHeaders($request->headers->all());
+        $requestDto->headers = SymfonyHttpResponseHelper::extractHeaders($request->headers->all());
 
         $content = $request->getContent();
         $content = trim($content);
@@ -69,7 +70,7 @@ class OpenApi3
         $responseDto = new ResponsetDto();
         $responseDto->statusCode = $response->getStatusCode();
         $responseDto->body = json_decode($response->getContent(), JSON_OBJECT_AS_ARRAY);
-        $responseDto->headers = $this->extractHeaders($response->headers->all());
+        $responseDto->headers = SymfonyHttpResponseHelper::extractHeaders($response->headers->all());
 
         $requestDto->response = $responseDto;
 

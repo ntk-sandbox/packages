@@ -51,12 +51,14 @@ class RpcProvider
         return new BearerAuthorization($guzzleClient);
     }*/
 
-    public function getRpcClient(): RpcClient
+    public function getRpcClient(): BaseRpcClient
     {
         if (empty($this->rpcClient)) {
             $guzzleClient = $this->getGuzzleClient();
 //            $authAgent = $this->getAuthorizationContract($guzzleClient);
-            $this->rpcClient = new RpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
+            $this->rpcClient = new HttpRpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
+//            $this->rpcClient = new IsolateRpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
+//            $this->rpcClient = new RpcClient($guzzleClient, $this->requestEncoder, $this->responseEncoder/*, $authAgent*/);
         }
         return $this->rpcClient;
     }

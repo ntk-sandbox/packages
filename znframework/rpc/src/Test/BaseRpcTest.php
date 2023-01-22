@@ -10,7 +10,7 @@ use ZnFramework\Rpc\Domain\Forms\BaseRpcAuthForm;
 use ZnFramework\Rpc\Domain\Forms\RpcAuthByLoginForm;
 use ZnFramework\Rpc\Domain\Forms\RpcAuthByTokenForm;
 use ZnFramework\Rpc\Domain\Forms\RpcAuthGuestForm;
-use ZnFramework\Rpc\Domain\Libs\RpcClient;
+use ZnFramework\Rpc\Domain\Libs\BaseRpcClient;
 use ZnTool\Test\Base\BaseTestCase;
 use ZnTool\Test\Traits\AssertTrait;
 use ZnTool\Test\Traits\BaseUrlTrait;
@@ -73,7 +73,7 @@ abstract class BaseRpcTest extends BaseTestCase
         return $request;
     }
 
-    protected function getRpcClient(): RpcClient
+    protected function getRpcClient(): BaseRpcClient
     {
         return $this->rpcProvider->getRpcClient();
     }
@@ -110,10 +110,11 @@ abstract class BaseRpcTest extends BaseTestCase
         return $assert;
     }
 
-    protected function sendRequestByEntity(RpcRequestEntity $requestEntity, ?BaseRpcAuthForm $authForm = null): RpcResponseEntity
-    {
+    protected function sendRequestByEntity(
+        RpcRequestEntity $requestEntity,
+        ?BaseRpcAuthForm $authForm = null
+    ): RpcResponseEntity {
         if ($authForm) {
-
         } elseif (is_numeric($this->authLogin)) {
             $tokenFixture = new TokenTestFixture();
             $tokenValue = $tokenFixture->generateToken($this->authLogin);
@@ -127,8 +128,12 @@ abstract class BaseRpcTest extends BaseTestCase
         //return $this->rpcProvider->sendRequestByEntity($requestEntity);
     }
 
-    protected function sendRequest(string $method, array $params = [], array $meta = [], int $id = null): RpcResponseEntity
-    {
+    protected function sendRequest(
+        string $method,
+        array $params = [],
+        array $meta = [],
+        int $id = null
+    ): RpcResponseEntity {
         $request = new RpcRequestEntity();
         $request->setMethod($method);
         $request->setParams($params);
