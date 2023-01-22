@@ -3,7 +3,7 @@
 namespace ZnLib\Web\Test;
 
 use PHPUnit\Framework\ExpectationFailedException;
-use Symfony\Component\BrowserKit\HttpBrowser;
+use Symfony\Component\BrowserKit\AbstractBrowser;
 use ZnTool\Test\Asserts\BaseAssert;
 
 class WebAssert extends BaseAssert
@@ -12,7 +12,7 @@ class WebAssert extends BaseAssert
     protected $crawler;
     protected $browser;
 
-    public function __construct($name = null, array $data = [], $dataName = '', HttpBrowser $browser = null)
+    public function __construct($name = null, array $data = [], $dataName = '', AbstractBrowser $browser = null)
     {
         parent::__construct($name, $data, $dataName);
         $this->crawler = $browser->getCrawler();

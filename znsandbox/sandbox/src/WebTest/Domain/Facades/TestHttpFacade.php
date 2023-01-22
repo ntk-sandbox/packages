@@ -10,10 +10,16 @@ use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 class TestHttpFacade
 {
 
-    public static function handleRequest(Request $request): Response
+    public static function createHttpKernelBrowser(): HttpKernelBrowser
     {
         $httpKernel = new ConsoleHttpKernel();
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
+        return $httpKernelBrowser;
+    }
+
+    public static function handleRequest(Request $request): Response
+    {
+        $httpKernelBrowser = self::createHttpKernelBrowser();
         $httpKernelBrowser->request(
             $request->getMethod(),
             $request->getUri(),

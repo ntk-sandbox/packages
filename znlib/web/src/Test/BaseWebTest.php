@@ -3,10 +3,12 @@
 namespace ZnLib\Web\Test;
 
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\BrowserKit\AbstractBrowser;
 use Symfony\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HttpClient\HttpClient;
-
+use Symfony\Component\HttpKernel\HttpKernelBrowser;
+use ZnSandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
 use ZnTool\Test\Traits\BaseUrlTrait;
 use ZnTool\Test\Traits\FixtureTrait;
 
@@ -29,23 +31,23 @@ abstract class BaseWebTest extends TestCase
         parent::setUp();
     }
 
-    protected function sendRequest(HttpBrowser $browser, string $uri, string $method = 'GET'): Crawler
+    protected function sendRequest(AbstractBrowser $browser, string $uri, string $method = 'GET'): Crawler
     {
         $url = $this->getBaseUrl() . '/' . $uri;
+//        dump($method);
         return $browser->request($method, $url, [], [], [
             //'HTTP_ENV_NAME' => 'test',
         ]);
     }
 
-    protected function createAssert(HttpBrowser $browser): WebAssert
+    protected function createAssert(AbstractBrowser $browser): WebAssert
     {
         return new WebAssert(null, [], '', $browser);
     }
 
-    protected function sendForm(HttpBrowser $browser, string $uri, string $buttonValue, array $formValues): Crawler
+    protected function sendForm(AbstractBrowser $browser, string $uri, string $buttonValue, array $formValues): Crawler
     {
         $crawler = $this->sendRequest($browser, $uri);
-//        dd($browser->getResponse());
         $form = $crawler->selectButton($buttonValue)->form();
         foreach ($formValues as $name => $value) {
             $form[$name] = $value;
@@ -62,14 +64,15 @@ abstract class BaseWebTest extends TestCase
             ->assertUnauthorized();
     }
 
-    protected function getBrowser(): HttpBrowser
+    protected function getBrowser(): AbstractBrowser
     {
+//        $browser = TestHttpFacade::createHttpKernelBrowser();
         $browser = new HttpBrowser(HttpClient::create());
         $browser->setServerParameter('HTTP_ENV_NAME', 'test');
         return $browser;
     }
 
-    protected function getBrowserByLogin(string $login = null, string $password = "Wwwqqq111"): HttpBrowser
+    protected function getBrowserByLogin(string $login = null, string $password = "Wwwqqq111"): AbstractBrowser
     {
         $browser = $this->getBrowser();
         if ($login == null) {
@@ -79,7 +82,7 @@ abstract class BaseWebTest extends TestCase
         return $browser;
     }
 
-    private function authByLogin(HttpBrowser $browser, string $login = null, string $password = "Wwwqqq111")
+    private function authByLogin(AbstractBrowser $browser, string $login = null, string $password = "Wwwqqq111")
     {
         $this->sendForm($browser, 'auth', 'Вход', [
             'form[login]' => $login,
