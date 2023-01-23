@@ -19,7 +19,7 @@ class TestHttpFacade
         return new ConsoleHttpKernel($encoder);
     }
 
-    public static function createHttpKernelBrowser(): HttpKernelBrowser
+    private static function createHttpKernelBrowser(): HttpKernelBrowser
     {
         $httpKernel = self::createHttpKernel();
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
@@ -27,7 +27,30 @@ class TestHttpFacade
         return $httpKernelBrowser;
     }
 
-    public static function handleRequest(Request $request): Response
+//    public static function handleRequest(Request $request): Response
+//    {
+////        $kernel = self::createHttpKernel();
+////        return $kernel->handle($request);
+//
+//        $httpKernelBrowser = self::createHttpKernelBrowser();
+//        $httpKernelBrowser->request(
+//            $request->getMethod(),
+//            $request->getUri(),
+//            $request->request->all(),
+//            [],
+//            $request->server->all(),
+//            $request->getContent()
+//        );
+//        return $httpKernelBrowser->getResponse();
+//    }
+
+    public static function handleRequestViaIsolateKernel(Request $request): Response
+    {
+        $kernel = self::createHttpKernel();
+        return $kernel->handle($request);
+    }
+
+    public static function handleRequestViaBrowser(Request $request): Response
     {
         $httpKernelBrowser = self::createHttpKernelBrowser();
         $httpKernelBrowser->request(
