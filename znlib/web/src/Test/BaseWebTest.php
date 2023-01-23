@@ -66,8 +66,8 @@ abstract class BaseWebTest extends TestCase
 
     protected function getBrowser(): AbstractBrowser
     {
-//        $browser = TestHttpFacade::createHttpKernelBrowser();
-        $browser = new HttpBrowser(HttpClient::create());
+        $browser = TestHttpFacade::createHttpKernelBrowser();
+//        $browser = new HttpBrowser(HttpClient::create());
         $browser->setServerParameter('HTTP_ENV_NAME', 'test');
         return $browser;
     }

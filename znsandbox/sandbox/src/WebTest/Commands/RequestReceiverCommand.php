@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
 
 /**
@@ -62,7 +61,25 @@ class RequestReceiverCommand extends BaseCommand
         /** @var Request $request */
         $request = $requestEncoder->decode($encodedRequest);
 
+        $clientSessId = $request->cookies->get('PHPSESSID');
+        if ($clientSessId) {
+            session_id($clientSessId);
+        }
+
         $response = $this->handleRequest($request);
+
+//        file_put_contents(__DIR__ . '/../../../../../../../../var/qqq_'.date("Y.m.d_H:i:s_u") . '_' .$request->getMethod() . '_' . $response->getStatusCode().'.html', $response->getContent());
+
+        /*file_put_contents(
+            __DIR__ . '/../../../../../../../../var/qqq_' . date("Y.m.d_H:i:s") . '_' . mt_rand(100, 999) . '.json',
+            json_encode($request->getMethod(), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
+        );*/
+
+
+        if (session_id() != $clientSessId) {
+            $response->headers->set('Set-Cookie', "PHPSESSID=" . session_id() . "; path=/");
+        }
+
         $encodedResponse = $requestEncoder->encode($response);
         $output->write($encodedResponse);
 
@@ -77,18 +94,11 @@ class RequestReceiverCommand extends BaseCommand
         $httpKernelBrowser->request(
             $request->getMethod(),
             $request->getUri(),
-            [], //$request->request->all(),
+            $request->request->all(),
             [],
             $request->server->all(),
             $request->getContent() // json_encode($request->request->all())
         );
         return $httpKernelBrowser->getResponse();
     }
-
-    /*protected function handleRequest_______________(Request $request): Response
-    {
-        $httpClient = $this->createHttpClient($this->appFactory);
-        $response = $httpClient->handleRequest($request);
-        return $response;
-    }*/
 }

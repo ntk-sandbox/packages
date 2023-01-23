@@ -16,6 +16,7 @@ class TestHttpFacade
     {
         $httpKernel = new ConsoleHttpKernel();
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
+        $httpKernelBrowser->followRedirects();
         return $httpKernelBrowser;
     }
 
@@ -25,7 +26,7 @@ class TestHttpFacade
         $httpKernelBrowser->request(
             $request->getMethod(),
             $request->getUri(),
-            [],
+            $request->request->all(),
             [],
             $request->server->all(),
             $request->getContent()
