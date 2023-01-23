@@ -12,8 +12,6 @@ use ZnCore\App\Interfaces\EnvStorageInterface;
 class EnvStorageGetenv implements EnvStorageInterface
 {
 
-    protected $env = [];
-
     public function get(string $name, $default = null): mixed
     {
         return getenv($name) ?: $default;

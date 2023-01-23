@@ -14,17 +14,17 @@ use ZnDomain\Entity\Exceptions\AlreadyExistsException;
 class EnvStorageArray implements EnvStorageInterface
 {
 
-    protected $env = [];
+    protected array $env = [];
 
     public function get(string $name, $default = null): mixed
     {
-//        $this->checkInit();
+        $this->checkInit();
         return $this->env[$name] ?? $default;
     }
 
     public function has(string $name): bool
     {
-//        $this->checkInit();
+        $this->checkInit();
         return array_key_exists($name, $this->env);
     }
 
@@ -38,7 +38,7 @@ class EnvStorageArray implements EnvStorageInterface
      * @throws AlreadyExistsException Переменные уже были назначены ранее
      */
     public function init(array $env) {
-        if($this->env) {
+        if(!empty($this->env)) {
             throw new AlreadyExistsException('Env config already inited!');
         }
         $this->env = $env;
