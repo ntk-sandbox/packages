@@ -26,6 +26,10 @@ abstract class BaseHttpKernelFactory
         return $this->getKernelInstance();
     }
 
+    protected function configureEventDispatcher(EventDispatcherConfiguratorInterface $eventDispatcherConfigurator): void
+    {
+    }
+
     protected function forgeServerVar(Request $request): void
     {
         foreach ($request->server->all() as $key => $value) {

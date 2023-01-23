@@ -22,7 +22,7 @@ class ZnCore
     use ContainerAwareTrait;
 
     /**
-     * Инициализация и конфигурация DI-контейнера
+     * Инициализация и конфигурация DI-контейнера.
      */
     public function init(): void
     {

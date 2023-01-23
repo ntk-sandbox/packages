@@ -4,6 +4,11 @@ namespace ZnCore\App\Libs\EnvStorageDrivers;
 
 use ZnCore\App\Interfaces\EnvStorageInterface;
 
+/**
+ * Хранилище переменных окружения.
+ *
+ * Получает переменные их глобальной переменной $_ENV.
+ */
 class EnvStorageGlobalVar implements EnvStorageInterface
 {
 

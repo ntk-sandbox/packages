@@ -4,6 +4,11 @@ namespace ZnCore\App\Libs\EnvStorageDrivers;
 
 use ZnCore\App\Interfaces\EnvStorageInterface;
 
+/**
+ * Хранилище переменных окружения.
+ *
+ * Получает переменные с помощью функции getenv.
+ */
 class EnvStorageGetenv implements EnvStorageInterface
 {
 
