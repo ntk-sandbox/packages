@@ -9,6 +9,7 @@ use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnCore\App\Interfaces\AppInterface;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use ZnLib\Components\Http\Helpers\SymfonyHttpResponseHelper;
 
 abstract class BaseHttpKernelFactory
 {
@@ -21,20 +22,9 @@ abstract class BaseHttpKernelFactory
 
     public function createKernelInstance(Request $request): HttpKernelInterface|TerminableInterface
     {
-        $this->forgeServerVar($request);
+        SymfonyHttpResponseHelper::forgeServerVar($request);
         $this->initApp($request);
         return $this->getKernelInstance();
-    }
-
-    protected function configureEventDispatcher(EventDispatcherConfiguratorInterface $eventDispatcherConfigurator): void
-    {
-    }
-
-    protected function forgeServerVar(Request $request): void
-    {
-        foreach ($request->server->all() as $key => $value) {
-            $_SERVER[$key] = $value;
-        }
     }
 
     protected function getKernelInstance(): HttpKernelInterface|TerminableInterface
