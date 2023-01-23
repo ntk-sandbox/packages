@@ -2,15 +2,17 @@
 
 namespace ZnSandbox\Sandbox\WebTest\Commands;
 
+use Psr\Container\ContainerInterface;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\HttpKernelBrowser;
-use ZnCore\Container\Helpers\ContainerHelper;
+use ZnSandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
+use ZnSandbox\Sandbox\WebTest\Domain\Services\HttpRequestService;
 
 /**
  * Обработчик изолированных HTTP-запросов.
@@ -27,13 +29,17 @@ use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
  *
  * php isolated http:request:run --factory-class="App\Application\Common\Factories\HttpKernelFactory" "Tzo0MDoiU39ueV1wb...vdW5R25cUmVxdWV"
  */
-class RequestReceiverCommand extends BaseCommand
+class RequestReceiverCommand extends Command
 {
 
     protected static $defaultName = 'http:request:run';
 
-    protected string $factoryClass;
-    protected BaseHttpKernelFactory $appFactory;
+    private HttpRequestService $httpRequestService;
+
+    public function __construct(private ContainerInterface $container)
+    {
+        parent::__construct();
+    }
 
     public function getDescription()
     {
@@ -53,52 +59,61 @@ class RequestReceiverCommand extends BaseCommand
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $factoryClass = $input->getOption('factory-class');
-        $container = ContainerHelper::getContainer();
-        $this->appFactory = $container->get($factoryClass);
-
         $encodedRequest = $input->getArgument('request');
-        $requestEncoder = $this->createEncoder();
+        $requestEncoder = new IsolateEncoder();
         /** @var Request $request */
         $request = $requestEncoder->decode($encodedRequest);
+        $this->fixSessionIdBeforeHandle($request);
 
+        /** @var BaseHttpKernelFactory $kernelFactory */
+        $kernelFactory = $this->container->get($factoryClass);
+        $httpKernel = $kernelFactory->createKernelInstance($request);
+        $response = $httpKernel->handle($request);
+
+        /*$response = $this
+            ->getService($factoryClass)
+            ->handle($request);*/
+        $this->fixSessionIdAfterHandle($request, $response);
+        $encodedResponse = $requestEncoder->encode($response);
+        $output->write($encodedResponse);
+        return Command::SUCCESS;
+    }
+
+    protected function getService(string $factoryClass): HttpRequestService
+    {
+        /** @var BaseHttpKernelFactory $kernelFactory */
+        $kernelFactory = $this->container->get($factoryClass);
+        return new HttpRequestService($kernelFactory);
+    }
+
+    /**
+     * Фикс недостающего session_id.
+     *
+     * Такая проблема проявляется только под CLI.
+     *
+     * @param Request $request
+     */
+    protected function fixSessionIdBeforeHandle(Request $request): void
+    {
         $clientSessId = $request->cookies->get('PHPSESSID');
         if ($clientSessId) {
             session_id($clientSessId);
         }
+    }
 
-        $response = $this->handleRequest($request);
-
-//        file_put_contents(__DIR__ . '/../../../../../../../../var/qqq_'.date("Y.m.d_H:i:s_u") . '_' .$request->getMethod() . '_' . $response->getStatusCode().'.html', $response->getContent());
-
-        /*file_put_contents(
-            __DIR__ . '/../../../../../../../../var/qqq_' . date("Y.m.d_H:i:s") . '_' . mt_rand(100, 999) . '.json',
-            json_encode($request->getMethod(), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
-        );*/
-
-
+    /**
+     * Фиск: добавление ID сесси в куки ответа.
+     *
+     * Такая проблема проявляется только под CLI.
+     *
+     * @param Request $request
+     * @param Response $response
+     */
+    protected function fixSessionIdAfterHandle(Request $request, Response $response): void
+    {
+        $clientSessId = $request->cookies->get('PHPSESSID');
         if (session_id() != $clientSessId) {
             $response->headers->set('Set-Cookie', "PHPSESSID=" . session_id() . "; path=/");
         }
-
-        $encodedResponse = $requestEncoder->encode($response);
-        $output->write($encodedResponse);
-
-        return 0;
-    }
-
-    protected function handleRequest(Request $request): Response
-    {
-        $httpKernel = $this->appFactory->createKernelInstance($request);
-        $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
-
-        $httpKernelBrowser->request(
-            $request->getMethod(),
-            $request->getUri(),
-            $request->request->all(),
-            [],
-            $request->server->all(),
-            $request->getContent() // json_encode($request->request->all())
-        );
-        return $httpKernelBrowser->getResponse();
     }
 }

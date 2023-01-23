@@ -35,5 +35,5 @@ $znCore = new ZnCore($container);
 $znCore->init();
 
 $application = new Application();
-$application->add(new RequestReceiverCommand());
+$application->add(new RequestReceiverCommand($container));
 $application->run();

@@ -16,13 +16,8 @@ use ZnCore\Collection\Interfaces\Enumerable;
  *
  * @todo переименовать в ChainEncoder
  */
-class ChainEncoder implements EncoderInterface
+class ChainEncoder extends BaseChainEncoder implements EncoderInterface
 {
-
-    /**
-     * @var Enumerable|EncoderInterface[] Коллекция кодеров
-     */
-    private $encoderCollection;
 
     /**
      * ChainEncoder constructor.
@@ -31,45 +26,5 @@ class ChainEncoder implements EncoderInterface
     public function __construct(Enumerable $encoderCollection)
     {
         $this->encoderCollection = $encoderCollection;
-    }
-
-    /**
-     * Получить коллекцию кодеров
-     * @return Enumerable|EncoderInterface[] Коллекция кодеров
-     */
-    public function getEncoders(): Enumerable
-    {
-        return $this->encoderCollection;
-    }
-
-    public function encode($data)
-    {
-        $encoders = $this->encoderCollection->toArray();
-        foreach ($encoders as $encoderClass) {
-            $encoderInstance = $this->getEncoderInstance($encoderClass);
-            $data = $encoderInstance->encode($data);
-        }
-        return $data;
-    }
-
-    public function decode($data)
-    {
-        $encoders = $this->encoderCollection->toArray();
-        $encoders = array_reverse($encoders);
-        foreach ($encoders as $encoderClass) {
-            $encoderInstance = $this->getEncoderInstance($encoderClass);
-            $data = $encoderInstance->decode($data);
-        }
-        return $data;
-    }
-
-    /**
-     * Создать инстанс кодера
-     * @param string|array $encoderClass Описание инстанса
-     * @return EncoderInterface
-     */
-    private function getEncoderInstance($encoderClass): EncoderInterface
-    {
-        return InstanceHelper::ensure($encoderClass);
     }
 }

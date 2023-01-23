@@ -149,7 +149,6 @@ abstract class BaseRpcTest extends BaseTestCase
             $authForm = new RpcAuthGuestForm();
         }
         return $this->rpcProvider->sendRequestByEntity($requestEntity, $authForm);
-        //return $this->rpcProvider->sendRequestByEntity($requestEntity);
     }
 
     protected function sendRequest(
