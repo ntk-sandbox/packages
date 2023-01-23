@@ -31,7 +31,11 @@ class IsolateRpcClient extends BaseRpcClient
     {
         $httpClient = $this->createHttpClient();
         $request = $httpClient->createRequest(HttpMethodEnum::POST, '/json-rpc', $body);
-        $response = TestHttpFacade::handleRequest($request);
+//        $response = TestHttpFacade::handleRequest($request);
+
+        $httpKernel = TestHttpFacade::createHttpKernel();
+        $response = $httpKernel->handle($request);
+
         return SymfonyHttpResponseHelper::toPsr7Response($response);
     }
 

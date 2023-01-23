@@ -15,9 +15,9 @@ class ConsoleHttpKernel implements HttpKernelInterface
 
     protected EncoderInterface $encoder;
 
-    public function __construct()
+    public function __construct(IsolateEncoder $encoder)
     {
-        $this->encoder = new IsolateEncoder();
+        $this->encoder = $encoder;
     }
 
     public function handle(Request $request, int $type = self::MAIN_REQUEST, bool $catch = true): Response

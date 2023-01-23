@@ -12,9 +12,15 @@ use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 class TestHttpFacade
 {
 
+    public static function createHttpKernel(): HttpKernelInterface
+    {
+        $encoder = new IsolateEncoder();
+        return new ConsoleHttpKernel($encoder);
+    }
+
     public static function createHttpKernelBrowser(): HttpKernelBrowser
     {
-        $httpKernel = new ConsoleHttpKernel();
+        $httpKernel = self::createHttpKernel();
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
         $httpKernelBrowser->followRedirects();
         return $httpKernelBrowser;
