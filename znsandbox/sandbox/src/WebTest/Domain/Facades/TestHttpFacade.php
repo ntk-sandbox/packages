@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\Process\PhpProcess;
+use ZnSandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 
 class TestHttpFacade

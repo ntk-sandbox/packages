@@ -34,6 +34,10 @@ abstract class BaseRestApiTest extends BaseTestCase
         $httpClient = $this->createHttpClient();
         $request = $httpClient->createRequest($method, $uri, $data);
         $response = TestHttpFacade::handleRequest($request);
+
+//        $httpKernel = TestHttpFacade::createHttpKernel();
+//        $response = $httpKernel->handle($request);
+
         return $response;
     }
 
