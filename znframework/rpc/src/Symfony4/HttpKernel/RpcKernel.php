@@ -48,8 +48,6 @@ class RpcKernel extends BaseHttpKernel
             return $this->filterResponse($event->getResponse(), $request, $type);
         }
 
-
-
         $jsonData = $request->getContent();
         $responseData = $this->rpcRequestHandler->handleJsonData($jsonData);
         $response = $this->createJsonResponse($responseData);

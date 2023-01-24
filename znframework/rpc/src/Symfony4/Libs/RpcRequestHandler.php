@@ -64,7 +64,7 @@ class RpcRequestHandler
         $responseCollection = new RpcResponseCollection();
         foreach ($requestCollection->getCollection() as $requestEntity) {
             /** @var RpcRequestEntity $requestEntity */
-            $requestEntity->addMeta(HttpHeaderEnum::IP, $_SERVER['REMOTE_ADDR']);
+//            $requestEntity->addMeta(HttpHeaderEnum::IP, $_SERVER['REMOTE_ADDR']);
             try {
                 ob_start();
                 $responseEntity = $this->procedureService->callOneProcedure($requestEntity);

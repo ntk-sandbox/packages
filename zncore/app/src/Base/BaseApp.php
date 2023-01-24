@@ -3,6 +3,7 @@
 namespace ZnCore\App\Base;
 
 use Psr\Container\ContainerInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use ZnCore\App\Enums\AppEventEnum;
@@ -39,6 +40,17 @@ abstract class BaseApp implements AppInterface
     protected $bundles = [];
     private $import = [];
     private $bundleLoader;
+    private ?Request $request = null;
+
+    public function getRequest(): ?Request
+    {
+        return $this->request;
+    }
+
+    public function setRequest(Request $request): void
+    {
+        $this->request = $request;
+    }
 
     abstract public function appName(): string;
 

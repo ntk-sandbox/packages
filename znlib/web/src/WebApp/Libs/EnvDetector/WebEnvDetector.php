@@ -2,22 +2,26 @@
 
 namespace ZnLib\Web\WebApp\Libs\EnvDetector;
 
+use Symfony\Component\HttpFoundation\Request;
 use ZnCore\Env\Interfaces\EnvDetectorInterface;
 
 class WebEnvDetector implements EnvDetectorInterface
 {
 
+    public function __construct(private Request $request)
+    {
+    }
+
     public function isMatch(): bool
     {
-        global $_GET, $_SERVER;
-        return isset($_SERVER['REQUEST_URI']);
+        return $this->request->getRequestUri() != null;
     }
 
     public function isTest(): bool
     {
-        global $_GET, $_SERVER;
-//        $isWebTest = isset($_GET['env']) && $_GET['env'] == 'test';
-        $isWebTest = (isset($_SERVER['HTTP_ENV_NAME']) && $_SERVER['HTTP_ENV_NAME'] == 'test') || (isset($_GET['env']) && $_GET['env'] == 'test');
+        $envNameFromHeader = $this->request->headers->get('env-name');
+        $envNameFromQuery = $this->request->query->get('env');
+        $isWebTest = $envNameFromHeader == 'test' || $envNameFromQuery == 'test';
         return $isWebTest;
     }
 }

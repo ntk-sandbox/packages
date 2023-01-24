@@ -87,7 +87,6 @@ class DebugSubscriber implements EventSubscriberInterface
 
     protected function persistLog()
     {
-        global $_ENV;
         if (getenv('DEBUG_PROFILING_LOG')) {
             return;
         }
