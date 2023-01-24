@@ -10,14 +10,17 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use Symfony\Component\HttpKernel\TerminableInterface;
 use ZnSandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
+use ZnSandbox\Sandbox\WebTest\Domain\Helpers\IsolateFixerHelper;
 use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
 use ZnSandbox\Sandbox\WebTest\Domain\Services\HttpRequestService;
 
 /**
  * Обработчик изолированных HTTP-запросов.
  *
- * Опция factory-class указывает на класс фабрики HTTP-приложения.
+ * Опция kernel указывает на класс HTTP-приложения.
  *
  * Аргумент request содержит сериализованный HTTP-запрос.
  * Сериализация/десериализвация выполняется в 2 шага:
@@ -27,7 +30,7 @@ use ZnSandbox\Sandbox\WebTest\Domain\Services\HttpRequestService;
  *
  * Пример команды:
  *
- * php isolated http:request:run --factory-class="App\Application\Common\Factories\HttpKernelFactory" "Tzo0MDoiU39ueV1wb...vdW5R25cUmVxdWV"
+ * php isolated http:request:run --kernel="App\Application\Common\Libs\HttpServer" "Tzo0MDoiU39ueV1wb...vdW5R25cUmVxdWV"
  */
 class RequestReceiverCommand extends Command
 {
@@ -50,7 +53,7 @@ class RequestReceiverCommand extends Command
     {
         $this->addArgument('request', InputArgument::REQUIRED);
         $this->addOption(
-            'factory-class',
+            'kernel',
             null,
             InputOption::VALUE_REQUIRED,
         );
@@ -58,62 +61,38 @@ class RequestReceiverCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $factoryClass = $input->getOption('factory-class');
+        $kernelClass = $input->getOption('kernel');
         $encodedRequest = $input->getArgument('request');
         $requestEncoder = new IsolateEncoder();
         /** @var Request $request */
         $request = $requestEncoder->decode($encodedRequest);
-        $this->fixSessionIdBeforeHandle($request);
 
+        /** @var HttpKernelInterface | TerminableInterface $server */
+        $server = $this->container->get($kernelClass);
+        $response = $this->handleRequest($request, $server);
+
+        $encodedResponse = $requestEncoder->encode($response);
+        $output->write($encodedResponse);
+        $server->terminate($request, $response);
+        return Command::SUCCESS;
+    }
+
+    private function handleRequest(Request $request, HttpKernelInterface|TerminableInterface $server): Response
+    {
+        IsolateFixerHelper::fixBeforeHandle($request);
+        $response = $server->handle($request);
+        IsolateFixerHelper::fixAfterHandle($request, $response);
+        return $response;
+    }
+
+    private function handle(Request $request, string $factoryClass): Response
+    {
+        IsolateFixerHelper::fixBeforeHandle($request);
         /** @var BaseHttpKernelFactory $kernelFactory */
         $kernelFactory = $this->container->get($factoryClass);
         $httpKernel = $kernelFactory->createKernelInstance($request);
         $response = $httpKernel->handle($request);
-
-        /*$response = $this
-            ->getService($factoryClass)
-            ->handle($request);*/
-        $this->fixSessionIdAfterHandle($request, $response);
-        $encodedResponse = $requestEncoder->encode($response);
-        $output->write($encodedResponse);
-        return Command::SUCCESS;
-    }
-
-    protected function getService(string $factoryClass): HttpRequestService
-    {
-        /** @var BaseHttpKernelFactory $kernelFactory */
-        $kernelFactory = $this->container->get($factoryClass);
-        return new HttpRequestService($kernelFactory);
-    }
-
-    /**
-     * Фикс недостающего session_id.
-     *
-     * Такая проблема проявляется только под CLI.
-     *
-     * @param Request $request
-     */
-    protected function fixSessionIdBeforeHandle(Request $request): void
-    {
-        $clientSessId = $request->cookies->get('PHPSESSID');
-        if ($clientSessId) {
-            session_id($clientSessId);
-        }
-    }
-
-    /**
-     * Фиск: добавление ID сесси в куки ответа.
-     *
-     * Такая проблема проявляется только под CLI.
-     *
-     * @param Request $request
-     * @param Response $response
-     */
-    protected function fixSessionIdAfterHandle(Request $request, Response $response): void
-    {
-        $clientSessId = $request->cookies->get('PHPSESSID');
-        if (session_id() != $clientSessId) {
-            $response->headers->set('Set-Cookie', "PHPSESSID=" . session_id() . "; path=/");
-        }
+        IsolateFixerHelper::fixAfterHandle($request, $response);
+        return $response;
     }
 }

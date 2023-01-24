@@ -85,7 +85,7 @@ class SendRestRequestCommand extends Command
         $encodedResponse = $shell->runProcess(
             [
                 'http:request:run',
-                "--factory-class" => \App\Application\Common\Factories\HttpKernelFactory::class,
+                "--kernel" => \App\Application\Common\Libs\HttpServer::class,
                 $encodedRequest,
             ]
         )->getOutput();
