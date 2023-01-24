@@ -34,7 +34,7 @@ class ConsoleHttpKernel implements HttpKernelInterface
             'php',
             'isolated',
             'http:request:run',
-            "--factory-class" => \App\Application\Common\Factories\HttpKernelFactory::class,
+            "--kernel" => \App\Application\Common\Libs\HttpServer::class,
             $encodedRequest
         ];
         $commandString = CommandLineHelper::argsToString($command);
