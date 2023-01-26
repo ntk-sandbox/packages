@@ -59,7 +59,6 @@
       "ZnDomain\\Repository\\": "zndomain/repository/src",
       "ZnDomain\\Service\\": "zndomain/service/src",
       "ZnDomain\\Validator\\": "zndomain/validator/src",
-      "Casbin\\": "znfork/casbin/src",
       "ZnFramework\\Rpc\\": "znframework/rpc/src",
       "ZnFramework\\Telegram\\": "znframework/telegram/src",
       "ZnFramework\\Wsdl\\": "znframework/wsdl/src",
@@ -144,7 +143,6 @@
       "ZnDomain\\Repository\\Tests\\": "zndomain/repository/tests",
       "ZnDomain\\Service\\Tests\\": "zndomain/service/tests",
       "ZnDomain\\Validator\\Tests\\": "zndomain/validator/tests",
-      "Casbin\\Tests\\": "znfork/casbin/tests",
       "ZnFramework\\Rpc\\Tests\\": "znframework/rpc/tests",
       "ZnFramework\\Telegram\\Tests\\": "znframework/telegram/tests",
       "ZnFramework\\Wsdl\\Tests\\": "znframework/wsdl/tests",
@@ -175,7 +173,12 @@
       "ZnUser\\Password\\Tests\\": "znuser/password/tests",
       "ZnUser\\Person\\Tests\\": "znuser/person/tests",
       "ZnUser\\Rbac\\Tests\\": "znuser/rbac/tests",
-      "ZnUser\\Registration\\Tests\\": "znuser/registration/tests"
+      "ZnUser\\Registration\\Tests\\": "znuser/registration/tests",
+
+
+      "Casbin\\": "znfork/casbin/src",
+      "Casbin\\Tests\\": "znfork/casbin/tests",
+      "axy\\backtrace\\": "vendor/ntk-sandbox/packages/znfork/backtrace/src/"
     }
   },
   "autoload-dev": {

@@ -115,16 +115,6 @@ class Trace //implements Countable, IteratorAggregate, ArrayAccess
         ];
     }
 
-    public function getOriginalItems(): array
-    {
-        return $this->originalItems;
-    }
-
-    public function setOriginalItems(array $originalItems): void
-    {
-        $this->originalItems = $originalItems;
-    }
-
     public function getItems(): mixed
     {
         return $this->items;
