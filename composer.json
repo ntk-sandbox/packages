@@ -178,7 +178,7 @@
 
       "Casbin\\": "znfork/casbin/src",
       "Casbin\\Tests\\": "znfork/casbin/tests",
-      "axy\\backtrace\\": "vendor/ntk-sandbox/packages/znfork/backtrace/src/"
+      "axy\\backtrace\\": "znfork/backtrace/src/"
     }
   },
   "autoload-dev": {
