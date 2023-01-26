@@ -85,10 +85,8 @@ abstract class BaseConsoleApp extends BaseApp
 
     protected function createConsole(array $consoleCommands)
     {
-        $container = $this->getContainer();
-
         /** @var Application $application */
-        $application = $container->get(Application::class);
+        $application = $this->getContainer()->get(Application::class);
         $application->getDefinition()->addOptions(
             [
                 new InputOption(
@@ -101,7 +99,8 @@ abstract class BaseConsoleApp extends BaseApp
             ]
         );
         if (!empty($consoleCommands)) {
-            $commandConfigurator = new CommandConfigurator($container, $application);
+            /** @var CommandConfigurator $commandConfigurator */
+            $commandConfigurator = $this->getContainer()->get(CommandConfigurator::class);
             $commandConfigurator->registerFromNamespaceList($consoleCommands);
         }
     }
