@@ -50,46 +50,50 @@ class DropDatabaseCommand extends Command
 
         $connections = DbFacade::getConfigFromEnv();
         foreach ($connections as $connectionName => $connection) {
-            $conn = $this->capsule->getConnection($connectionName);
-            $tableList = $this->schemaRepository->allTables();
-            //dd($tableList);
-
-            /*$tableList = $conn->select('
-                SELECT *
-                FROM pg_catalog.pg_tables
-                WHERE schemaname != \'pg_catalog\' AND schemaname != \'information_schema\';');*/
-            $tables = [];
-            $schemas = [];
-            foreach ($tableList as $tableEntity) {
-                $tableName = $tableEntity->getName();
-                if ($tableEntity->getSchemaName()) {
-                    $tableName = $tableEntity->getSchemaName() . '.' . $tableName;
-                }
-                //dd($tableEntity->getSchemaName());
-
-                $tables[] = $tableName;
-                if ($tableEntity->getSchemaName() && $tableEntity->getSchemaName() != 'public') {
-                    $schemas[] = $tableEntity->getSchemaName();
-                }
-            }
-//            dd($tables);
-            if (empty($tables)) {
-                $output->writeln(['', '<fg=yellow>Not found tables!</>', '']);
+            if($connection['driver'] == 'sqlite') {
+                unlink($connection['database']);
             } else {
+                $conn = $this->capsule->getConnection($connectionName);
+                $tableList = $this->schemaRepository->allTables();
+                //dd($tableList);
 
-                /*foreach ($tables as $t) {
-                    $this->capsule->getSchemaByTableName($t)->dropIfExists($t);
-                }*/
+                /*$tableList = $conn->select('
+                    SELECT *
+                    FROM pg_catalog.pg_tables
+                    WHERE schemaname != \'pg_catalog\' AND schemaname != \'information_schema\';');*/
+                $tables = [];
+                $schemas = [];
+                foreach ($tableList as $tableEntity) {
+                    $tableName = $tableEntity->getName();
+                    if ($tableEntity->getSchemaName()) {
+                        $tableName = $tableEntity->getSchemaName() . '.' . $tableName;
+                    }
+                    //dd($tableEntity->getSchemaName());
 
-                $sql = 'DROP TABLE ' . implode(', ', $tables);
-                $conn->statement($sql);
-            }
+                    $tables[] = $tableName;
+                    if ($tableEntity->getSchemaName() && $tableEntity->getSchemaName() != 'public') {
+                        $schemas[] = $tableEntity->getSchemaName();
+                    }
+                }
+//            dd($tables);
+                if (empty($tables)) {
+                    $output->writeln(['', '<fg=yellow>Not found tables!</>', '']);
+                } else {
 
-            $schemaList = $conn->select('select nspname from pg_catalog.pg_namespace;');
-            foreach ($schemaList as $schemaRecord) {
-                if (strpos($schemaRecord->nspname, 'pg_') === false && !in_array($schemaRecord->nspname, ['information_schema', 'public'])) {
-                    $sql = 'DROP SCHEMA ' . $schemaRecord->nspname;
+                    /*foreach ($tables as $t) {
+                        $this->capsule->getSchemaByTableName($t)->dropIfExists($t);
+                    }*/
+
+                    $sql = 'DROP TABLE ' . implode(', ', $tables);
                     $conn->statement($sql);
+                }
+
+                $schemaList = $conn->select('select nspname from pg_catalog.pg_namespace;');
+                foreach ($schemaList as $schemaRecord) {
+                    if (strpos($schemaRecord->nspname, 'pg_') === false && !in_array($schemaRecord->nspname, ['information_schema', 'public'])) {
+                        $sql = 'DROP SCHEMA ' . $schemaRecord->nspname;
+                        $conn->statement($sql);
+                    }
                 }
             }
         }

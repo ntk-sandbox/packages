@@ -44,7 +44,7 @@ class ManagerFactory
     public static function touchSqlite(array $connections)
     {
         foreach ($connections as $connectionName => $connectionConfig) {
-            if (isset($connectionConfig['driver']) && $connectionConfig['driver'] == DbDriverEnum::SQLITE) {
+            if (isset($connectionConfig['driver']) && $connectionConfig['driver'] == DbDriverEnum::SQLITE && $connectionConfig['database'] != ':memory:') {
 //                $isExists = file_exists($connectionConfig['database']);
                 FileStorageHelper::touchFile($connectionConfig['database']);
             }
