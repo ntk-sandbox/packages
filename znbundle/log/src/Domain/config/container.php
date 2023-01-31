@@ -13,6 +13,7 @@ use ZnBundle\Log\Domain\Interfaces\Repositories\LogRepositoryInterface;
 use ZnBundle\Log\Domain\Monolog\Handler\EloquentHandler;
 use ZnBundle\Log\Domain\Repositories\Eloquent\LogRepository;
 use ZnCore\App\Interfaces\EnvStorageInterface;
+use ZnCore\Text\Helpers\TemplateHelper;
 
 return [
     'singletons' => [
@@ -24,9 +25,28 @@ return [
             /** @var EnvStorageInterface $envStorage */
             $envStorage = $container->get(EnvStorageInterface::class);
 
+            $channel = 'application';
+            
             $driver = $envStorage->get('LOG_DRIVER') ?: null;
             if ($driver == 'file') {
-                $logFileName = $envStorage->get('LOG_DIRECTORY') . '/application.json';
+                
+                $fileMask = $envStorage->get('LOG_FILE_MASK');
+                if($fileMask) {
+                    $now = new \DateTime();
+                    $replacement = [
+                        'channel' => $channel,
+                        'year' => $now->format('Y'),
+                        'month' => $now->format('m'),
+                        'day' => $now->format('d'),
+                        'hour' => $now->format('H'),
+                        'minute' => $now->format('i'),
+                        'second' => $now->format('s'),
+                    ];
+                    $logFileName = $envStorage->get('LOG_DIRECTORY') . '/' . TemplateHelper::render($fileMask, $replacement, '{{', '}}');
+                } else {
+                    $logFileName = $envStorage->get('LOG_DIRECTORY') . '/'.$channel.'.json';
+                }
+                
                 $handler = new StreamHandler($logFileName);
                 $formatterClass = $envStorage->get('LOG_FORMATTER') ?: JsonFormatter::class;
                 $formatter = $container->get($formatterClass);
