@@ -5,9 +5,12 @@ namespace ZnDomain\Components\FileRepository\Base;
 use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
 use ZnDomain\Entity\Helpers\EntityHelper;
+use ZnDomain\Repository\Traits\RepositoryMapperTrait;
 
 abstract class BaseLoopedFileRepository extends BaseFileCrudRepository
 {
+
+    use RepositoryMapperTrait;
 
     public $limitItems = 3;
 
@@ -20,9 +23,15 @@ abstract class BaseLoopedFileRepository extends BaseFileCrudRepository
         throw new NotFoundException();
     }
 
+    public function truncate(): void {
+        parent::setItems([]);
+    }
+
     protected function insert(object $entity) {
         $items = $this->getItems();
-        $items[] = EntityHelper::toArray($entity);
+//        $item = $this->mapperEncodeEntity($entity);
+        $item = EntityHelper::toArray($entity);
+        $items[] = $item;
         $this->setItems($items);
     }
 

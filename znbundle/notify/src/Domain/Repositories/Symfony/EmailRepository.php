@@ -15,7 +15,7 @@ use ZnDomain\Repository\Base\BaseRepository;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 
 ComposerHelper::requireAssert(Mailer::class, 'symfony/mailer');
-ComposerHelper::requireAssert(MessageBus::class, 'symfony/messenger');
+//ComposerHelper::requireAssert(MessageBus::class, 'symfony/messenger');
 
 class EmailRepository extends BaseRepository implements EmailRepositoryInterface
 {

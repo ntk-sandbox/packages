@@ -40,7 +40,7 @@ trait RepositoryMapperTrait
         return new MapperEncoder($mappers ?: $this->mappers());
     }
 
-    protected function mapperEncodeEntity(EntityIdInterface $entity): array
+    protected function mapperEncodeEntity(object $entity): array
     {
         /*$attributes = EntityHelper::toArray($entity);
         $attributes = $this->underscore($attributes);
