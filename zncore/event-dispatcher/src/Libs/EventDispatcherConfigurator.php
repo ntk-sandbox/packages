@@ -40,6 +40,13 @@ class EventDispatcherConfigurator implements EventDispatcherConfiguratorInterfac
         $this->getEventDispatcher()->addSubscriber($subscriberInstance);
     }
 
+    public function addListener(string $eventName, callable $listener, int $priority = 0)
+    {
+//        $listenerInstance = $this->forgeSubscriberInstance($listenerDefinition);
+//        $this->getEventDispatcher()->addListener($callback, $listenerInstance);
+        $this->getEventDispatcher()->addListener($eventName, $listener, $priority);
+    }
+
     private function forgeSubscriberInstance($subscriberDefinition): EventSubscriberInterface
     {
         if ($subscriberDefinition instanceof EventSubscriberInterface) {

@@ -47,10 +47,11 @@ trait EventDispatcherTrait
         }
     }
 
-    public function addSubscriber($subscriberDefinition): void
+    public function addListener(string $eventName, callable $listener, int $priority = 0)
     {
-        $subscriberInstance = $this->forgeSubscriberInstance($subscriberDefinition);
-        $this->getEventDispatcher()->addSubscriber($subscriberInstance);
+//        $listenerInstance = $this->forgeSubscriberInstance($listenerDefinition);
+//        $this->getEventDispatcher()->addListener($callback, $listenerInstance);
+        $this->getEventDispatcher()->addListener($eventName, $listener, $priority);
     }
 
     private function forgeSubscriberInstance($subscriberDefinition): EventSubscriberInterface
