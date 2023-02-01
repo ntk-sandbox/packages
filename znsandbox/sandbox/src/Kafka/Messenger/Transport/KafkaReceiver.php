@@ -2,41 +2,31 @@
 
 namespace ZnSandbox\Sandbox\Kafka\Messenger\Transport;
 
-use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\ConsumeMessageStamp;
-use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\TopicStamp;
+use longlang\phpkafka\Consumer\ConsumeMessage;
 use longlang\phpkafka\Consumer\Consumer;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\Stamp\TransportMessageIdStamp;
 use Symfony\Component\Messenger\Transport\Receiver\ReceiverInterface;
 use Symfony\Component\Messenger\Transport\Sender\SenderInterface;
 use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;
+use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\ConsumeMessageStamp;
+use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\TopicStamp;
 
 class KafkaReceiver implements ReceiverInterface
 {
 
-    private string $topicForReject;
-
     public function __construct(
-        private SerializerInterface $serializer,
-        private Consumer $consumer,
-        private SenderInterface $sender
+        protected SerializerInterface $serializer,
+        protected Consumer $consumer,
+        protected SenderInterface $sender
     ) {
-    }
-
-    public function setTopicForReject(string $topicForReject): void
-    {
-        $this->topicForReject = $topicForReject;
     }
 
     public function get(): iterable
     {
         $consumeMessage = $this->consumer->consume();
         if ($consumeMessage) {
-            $data = json_decode($consumeMessage->getValue(), JSON_OBJECT_AS_ARRAY);
-            $envelope = $this->serializer->decode($data);
-            $envelope = $envelope->with(new TransportMessageIdStamp($consumeMessage->getKey()));
-            $envelope = $envelope->with(new TopicStamp($consumeMessage->getTopic()));
-            $envelope = $envelope->with(new ConsumeMessageStamp($consumeMessage));
+            $envelope = $this->decode($consumeMessage);
             return [$envelope];
         }
         return [];
@@ -51,12 +41,16 @@ class KafkaReceiver implements ReceiverInterface
 
     public function reject(Envelope $envelope): void
     {
-        if (isset($this->topicForReject)) {
-            /** @var TopicStamp $topicStamp */
-            $topicStamp = $envelope->last(TopicStamp::class);
-            $topicStamp->setTopic($this->topicForReject);
-            $this->sender->send($envelope);
-        }
         $this->ack($envelope);
+    }
+
+    protected function decode(ConsumeMessage $consumeMessage): Envelope
+    {
+        $data = json_decode($consumeMessage->getValue(), JSON_OBJECT_AS_ARRAY);
+        $envelope = $this->serializer->decode($data);
+        $envelope = $envelope->with(new TransportMessageIdStamp($consumeMessage->getKey()));
+        $envelope = $envelope->with(new TopicStamp($consumeMessage->getTopic()));
+        $envelope = $envelope->with(new ConsumeMessageStamp($consumeMessage));
+        return $envelope;
     }
 }
