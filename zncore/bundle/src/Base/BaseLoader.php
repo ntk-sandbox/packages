@@ -9,6 +9,7 @@ use Symfony\Contracts\Cache\ItemInterface;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\Container\Traits\ContainerAttributeTrait;
 use ZnCore\Instance\Libs\Resolvers\ArgumentMetadataResolver;
+use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
 use ZnLib\Components\Time\Enums\TimeEnum;
 
 /**
@@ -120,11 +121,13 @@ abstract class BaseLoader
         if (!$this->isAllow($bundle)) {
             return [];
         }
+
+//        $instanceResolver = new InstanceResolver($this->container);
+//        return $instanceResolver->callMethod($bundle, $this->name);
+        
         $callback = [$bundle, $this->name];
         $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
         return $argumentResolver->call($callback);
-//        $resolvedArguments = $argumentResolver->resolve($callback);
-//        return call_user_func_array($callback, $resolvedArguments);
     }
 
     /**

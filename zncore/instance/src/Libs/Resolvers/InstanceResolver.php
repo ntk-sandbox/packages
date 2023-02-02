@@ -18,9 +18,13 @@ class InstanceResolver
         return call_user_func_array([$instance, $methodName], $parameters);
     }
 
-    public function make($definition, array $constructParams = []): object
+    public function make(string $definition, array $constructParams = []): object
     {
-
+        $callable = [$definition, '__construct'];
+        /** @var ArgumentMetadataResolver $argumentResolver */
+        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
+        $resolvedArguments = $argumentResolver->resolve($callable, $constructParams);
+        return $this->create($definition, $resolvedArguments);
     }
 
     /**
