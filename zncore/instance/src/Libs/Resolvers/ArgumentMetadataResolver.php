@@ -19,7 +19,7 @@ class ArgumentMetadataResolver
 
     public function __construct(
         protected ?ContainerInterface $container = null,
-        protected ?ArgumentDescriptor $argumentDescriptor = null,
+        protected ?\ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null,
         protected ?ConstraintResolver $constraintResolver = null,
     ) {
     }
@@ -29,12 +29,12 @@ class ArgumentMetadataResolver
         $resolvedArguments = $this->resolve($callback);
         return call_user_func_array($callback, $resolvedArguments);
     }
-    
+
     public function resolve($callback, array $availableArguments = [])
     {
         $descriptions = $this->argumentDescriptor->getDescriptions($callback);
         $constraints = $this->constraintResolver->resolveConstraints($descriptions);
-        
+
         foreach ($descriptions as $argument) {
             /** @var ArgumentDescription $argument */
             if(!array_key_exists($argument->getName(), $availableArguments)) {
@@ -55,7 +55,7 @@ class ArgumentMetadataResolver
         $arguments = $resolutions->sortByPriority()->toArgumentsArray();
         return $arguments;
     }
-    
+
     /**
      * @param ResolutionConstraintCollection $constraints
      * @param ArgumentDescription            $description
@@ -99,13 +99,19 @@ class ArgumentMetadataResolver
 
         if ($description->getType() === $this->argumentDescriptor->getValueType($argumentValue)) {
             $priority += 2;
-        } elseif ($constraints->hasConstraint(ResolutionConstraint::STRICT_MATCHING, [
-            'type' => $description->getType(),
-        ])) {
-            throw new ResolutionException(sprintf(
-                                              'Strict matching for type "%s" can\'t be resolved',
-                                              $description->getType()
-                                          ));
+        } elseif ($constraints->hasConstraint(
+            ResolutionConstraint::STRICT_MATCHING,
+            [
+                'type' => $description->getType(),
+            ]
+        )) {
+            
+            /*throw new ResolutionException(
+                sprintf(
+                    'Strict matching for type "%s" can\'t be resolved',
+                    $description->getType()
+                )
+            );*/
         }
 
         return $priority;
