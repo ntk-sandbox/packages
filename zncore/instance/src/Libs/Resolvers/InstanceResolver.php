@@ -14,6 +14,7 @@ class InstanceResolver
 
     public function callMethod(object $instance, string $methodName, array $parameters = [])
     {
+//        return $this->callMethod2($instance, $methodName, $parameters);
         $parameters = $this->prepareParameters(get_class($instance), $methodName, $parameters);
         return call_user_func_array([$instance, $methodName], $parameters);
     }
@@ -21,7 +22,8 @@ class InstanceResolver
     public function callMethod2(object $instance, string $methodName, array $parameters = [])
     {
         $callable = [$instance, $methodName];
-        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
+        $argumentResolver = new ArgumentMetadataResolver($this->container);
+//        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
         $parameters = $argumentResolver->resolve($callable, $parameters);
 //        $parameters = $this->prepareParameters(get_class($instance), $methodName, $parameters);
         return call_user_func_array($callable, $parameters);

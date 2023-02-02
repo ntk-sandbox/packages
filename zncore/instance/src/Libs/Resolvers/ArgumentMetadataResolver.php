@@ -17,11 +17,20 @@ use Psr\Container\ContainerInterface;
 class ArgumentMetadataResolver
 {
 
+    protected ?ContainerInterface $container = null;
+        protected ?\ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null;
+        protected ?ConstraintResolver $constraintResolver = null;
+
     public function __construct(
-        protected ?ContainerInterface $container = null,
-        protected ?\ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null,
-        protected ?ConstraintResolver $constraintResolver = null,
+        ?ContainerInterface $container = null,
+        ?\ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null,
+        ?ConstraintResolver $constraintResolver = null,
     ) {
+        if($container) {
+            $this->container = $container;
+        }
+        $this->argumentDescriptor = $argumentDescriptor ?: new \ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor();
+        $this->constraintResolver = $constraintResolver ?: new ConstraintResolver();
     }
 
     public function call($callback, array $availableArguments = []): mixed
