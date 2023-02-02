@@ -18,6 +18,15 @@ class InstanceResolver
         return call_user_func_array([$instance, $methodName], $parameters);
     }
 
+    public function callMethod2(object $instance, string $methodName, array $parameters = [])
+    {
+        $callable = [$instance, $methodName];
+        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
+        $parameters = $argumentResolver->resolve($callable, $parameters);
+//        $parameters = $this->prepareParameters(get_class($instance), $methodName, $parameters);
+        return call_user_func_array($callable, $parameters);
+    }
+
     public function make(string $definition, array $constructParams = []): object
     {
         $callable = [$definition, '__construct'];
