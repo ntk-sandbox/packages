@@ -4,7 +4,7 @@
   "type": "project",
   "minimum-stability": "dev",
   "require": {
-
+    "sroze/argument-resolver": "dev-master"
   },
   "autoload": {
     "psr-4": {
