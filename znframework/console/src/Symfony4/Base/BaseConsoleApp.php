@@ -56,6 +56,7 @@ abstract class BaseConsoleApp extends BaseApp
             'eventDispatcher',
             'rbac',
             'console',
+//            'consoleCommands',
             'migration',
             'symfonyRpc',
             'telegramRoutes'
@@ -66,6 +67,7 @@ abstract class BaseConsoleApp extends BaseApp
     {
         $loaders = parent::bundleLoaders();
         $loaders['console'] = ConsoleLoader::class;
+//        $loaders['consoleCommands'] = CallMethodLoader::class;
         return $loaders;
     }
 
