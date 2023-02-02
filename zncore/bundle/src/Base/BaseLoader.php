@@ -8,6 +8,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Contracts\Cache\ItemInterface;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\Container\Traits\ContainerAttributeTrait;
+use ZnCore\Instance\Libs\Resolvers\ArgumentMetadataResolver;
 use ZnLib\Components\Time\Enums\TimeEnum;
 
 /**
@@ -99,7 +100,31 @@ abstract class BaseLoader
         if (!$this->isAllow($bundle)) {
             return [];
         }
-        return call_user_func([$bundle, $this->getName()]);
+        $arguments = [];
+        $handler = [$bundle, $this->getName()];
+        return call_user_func_array($handler, $arguments);
+    }
+
+    /**
+     * Вызов метода конфигурации.
+     * 
+     * Агрументы метода резолвятся из DI-конейнера.
+     * 
+     * @param BaseBundle $bundle
+     * @return mixed
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
+     */
+    protected function callMethod(BaseBundle $bundle): mixed
+    {
+        if (!$this->isAllow($bundle)) {
+            return [];
+        }
+        $callback = [$bundle, $this->name];
+        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
+        return $argumentResolver->call($callback);
+//        $resolvedArguments = $argumentResolver->resolve($callback);
+//        return call_user_func_array($callback, $resolvedArguments);
     }
 
     /**

@@ -2,9 +2,11 @@
 
 namespace ZnFramework\Console\Symfony4\Libs;
 
+use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Command\Command;
 use ZnCore\Code\Helpers\ComposerHelper;
 use ZnCore\FileSystem\Helpers\FindFileHelper;
 
@@ -27,18 +29,23 @@ class CommandConfigurator
         $files = $this->scanByNamespace($namespace);
         $commands = $this->forgeFullClassNames($files, $namespace);
         foreach ($commands as $commandClassName) {
-            $this->addCommand($commandClassName);
+            $this->registerCommandClass($commandClassName);
         }
     }
 
-    protected function addCommand(string $commandClassName): void
+    public function registerCommandInstance(Command $commandInstance): void
+    {
+        $this->application->add($commandInstance);
+    }
+
+    public function registerCommandClass(string $commandClassName): void
     {
         $reflictionClass = new \ReflectionClass($commandClassName);
         if (!$reflictionClass->isAbstract()) {
             try {
                 $commandInstance = $this->container->get($commandClassName);
-                $this->application->add($commandInstance);
-            } catch (\Illuminate\Contracts\Container\BindingResolutionException | \Illuminate\Container\EntryNotFoundException $e) {
+                $this->registerCommandInstance($commandInstance);
+            } catch (ContainerExceptionInterface $e) {
                 $message = "DI dependencies not resolved for class \"$commandClassName\"!";
 //                echo $message . PHP_EOL;
                 $this->logger->warning($message);

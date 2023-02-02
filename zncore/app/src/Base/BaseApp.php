@@ -176,7 +176,7 @@ abstract class BaseApp implements AppInterface
      */
     protected function createBundleLoaderInstance(): BundleLoader
     {
-        return new BundleLoader($this->getContainer());
+        return $this->getContainer()->get(BundleLoader::class);
     }
 
     /**

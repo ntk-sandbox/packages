@@ -99,6 +99,16 @@ class BundleLoader
         return $bundleInstance;
     }
 
+    public function callMethod(string $loaderName, $loaderDefinition) {
+        /** @var BaseLoader $loaderInstance */
+        $loaderInstance = ClassHelper::createObject($loaderDefinition);
+        if ($loaderInstance->getName() == null) {
+            $loaderInstance->setName($loaderName);
+        }
+        $bundles = $this->filterBundlesByLoader($this->bundles, $loaderName);
+        $loaderInstance->loadAll($bundles);
+    }
+    
     private function load(string $loaderName, $loaderDefinition): void
     {
         /** @var BaseLoader $loaderInstance */
@@ -119,7 +129,9 @@ class BundleLoader
             /** @var BaseBundle $bundle */
             $loaders = $bundle->getLoaders();
             if (in_array($loaderName, $loaders) || in_array('all', $loaders)) {
-                $resultBundles[] = $bundle;
+                if(method_exists($bundle, $loaderName)) {
+                    $resultBundles[] = $bundle;
+                }
             }
         }
         return $resultBundles;

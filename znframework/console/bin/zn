@@ -6,6 +6,7 @@ use ZnCore\Container\Libs\Container;
 use ZnFramework\Console\Domain\Factories\ConsoleApplicationFactory;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
+$_SERVER['REQUEST_ID'] = uniqid();
 
 require __DIR__ . '/../../../../../autoload.php';
 

@@ -9,6 +9,8 @@ use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use ZnCore\App\Base\BaseApp;
 use ZnCore\App\Libs\ZnCore;
 use ZnCore\App\Subscribers\PhpErrorSubscriber;
+use ZnCore\Bundle\Base\CallMethodLoader;
+use ZnCore\Bundle\Libs\BundleLoader;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
 use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
@@ -101,6 +103,8 @@ abstract class BaseConsoleApp extends BaseApp
         if (!empty($consoleCommands)) {
             /** @var CommandConfigurator $commandConfigurator */
             $commandConfigurator = $this->getContainer()->get(CommandConfigurator::class);
+            $bundleLoader = $this->getContainer()->get(BundleLoader::class);
+            $bundleLoader->callMethod('consoleCommands', CallMethodLoader::class);
             $commandConfigurator->registerFromNamespaceList($consoleCommands);
         }
     }

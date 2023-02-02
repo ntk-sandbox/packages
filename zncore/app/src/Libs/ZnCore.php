@@ -5,6 +5,7 @@ namespace ZnCore\App\Libs;
 use Psr\Container\ContainerInterface;
 use ZnCore\App\Interfaces\EnvStorageInterface;
 use ZnCore\App\Libs\EnvStorageDrivers\EnvStorageGetenv;
+use ZnCore\Bundle\Libs\BundleLoader;
 use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
 use ZnCore\ConfigManager\Libs\ConfigManager;
 use ZnCore\Container\Helpers\ContainerHelper;
@@ -78,5 +79,6 @@ class ZnCore
 
         $containerConfigurator->singleton(ConfigManagerInterface::class, ConfigManager::class);
         $containerConfigurator->singleton(EnvStorageInterface::class, EnvStorageGetenv::class);
+        $containerConfigurator->singleton(BundleLoader::class, BundleLoader::class);
     }
 }

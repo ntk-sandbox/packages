@@ -16,6 +16,7 @@ use ZnCore\Container\Libs\Container;
 use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
+$_SERVER['REQUEST_ID'] = uniqid();
 
 require __DIR__ . '/../../../../../../../../autoload.php';
 
