@@ -122,12 +122,12 @@ abstract class BaseLoader
             return [];
         }
 
-//        $instanceResolver = new InstanceResolver($this->container);
-//        return $instanceResolver->callMethod($bundle, $this->name);
+        $instanceResolver = new InstanceResolver($this->container);
+        return $instanceResolver->callMethod2($bundle, $this->name);
         
-        $callback = [$bundle, $this->name];
-        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
-        return $argumentResolver->call($callback);
+//        $callback = [$bundle, $this->name];
+//        $argumentResolver = $this->container->get(ArgumentMetadataResolver::class);
+//        return $argumentResolver->call($callback);
     }
 
     /**

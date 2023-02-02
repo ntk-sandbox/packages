@@ -24,7 +24,7 @@ class Bundle extends BaseBundle
     }
 
     public function consoleCommands(Application $application, ContainerInterface $container, CommandConfigurator $commandConfigurator) {
-        $commandConfigurator->registerCommandClass(ConsumeMessageCommand::class);
+//        $commandConfigurator->registerCommandClass(ConsumeMessageCommand::class);
 
 //      example 2
         /*$callable = [ConsumeMessageCommand::class, '__construct'];
@@ -32,7 +32,13 @@ class Bundle extends BaseBundle
         $resolvedArguments = $argumentResolver->resolve($callable);
         $instanceResolver = new InstanceResolver($container);
         $command = $instanceResolver->create(ConsumeMessageCommand::class, $resolvedArguments);
-        $application->add($command);*/
+        $application->add($command);
+        */
+        
+//      example 2.5
+        $instanceResolver = new InstanceResolver($container);
+        $command = $instanceResolver->make(ConsumeMessageCommand::class);
+        $application->add($command);
         
         // example 3
         /*$commandConfigurator->registerFromNamespaceList([
