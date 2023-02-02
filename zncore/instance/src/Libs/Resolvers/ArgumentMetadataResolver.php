@@ -35,7 +35,7 @@ class ArgumentMetadataResolver
 
     public function call($callback, array $availableArguments = []): mixed
     {
-        $resolvedArguments = $this->resolve($callback);
+        $resolvedArguments = $this->resolve($callback, $availableArguments);
         return call_user_func_array($callback, $resolvedArguments);
     }
 
