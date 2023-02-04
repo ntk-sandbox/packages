@@ -14,9 +14,9 @@
 * [untek-kaz](https://github.com/untek-kaz) - Работа с гос. сервисами Казахстана
 * [untek-lib](https://github.com/untek-lib) - Библиотеки
 * [untek-pack](https://github.com/untek-pack) - Наборы зависимостей для краткой декларации
-* [znsandbox](https://github.com/znsandbox) - Песочница для пакетов (сырые, испытательные наработки)
-* [zntool](https://github.com/zntool) - Инструменты для разработки
-* [znuser](https://github.com/znuser) - Пользователь, права доступа
+* [untek-sandbox](https://github.com/untek-sandbox) - Песочница для пакетов (сырые, испытательные наработки)
+* [untek-tool](https://github.com/untek-tool) - Инструменты для разработки
+* [untek-user](https://github.com/untek-user) - Пользователь, права доступа
 * [zntpl](https://github.com/zntpl) - Шаблоны проектов
 * [znyii](https://github.com/znyii) - Пакеты для Yii
-* [znuser](https://github.com/znuser) - Пользователь
+* [untek-user](https://github.com/untek-user) - Пользователь

@@ -13,8 +13,8 @@
     "symfony/debug-pack": "^1.0",
     "untek-database/backup": "0.x-dev",
     "untek-database/tool": "0.x-dev",
-    "zntool/generator": "0.x-dev",
-    "zntool/package": "0.x-dev",
-    "zntool/test": "0.x-dev"
+    "untek-tool/generator": "0.x-dev",
+    "untek-tool/package": "0.x-dev",
+    "untek-tool/test": "0.x-dev"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "untek-user/identity",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ZnDeveloper",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "Untek\\User\\Identity\\": "src",
+      "Untek\\User\\Identity\\Tests\\": "tests"
+    }
+  }
+}
