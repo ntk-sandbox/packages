@@ -3,7 +3,7 @@
 Группы:
 
 * [untek-bundle](https://github.com/untek-bundle) - Различные модули для бизнеса
-* [zncore](https://github.com/zncore) - Основные пакеты (ядро)
+* [untek-core](https://github.com/untek-core) - Основные пакеты (ядро)
 * [zncrypt](https://github.com/zncrypt) - Криптография
 * [zndatabase](https://github.com/zndatabase) - Работа с базой данных
 * [zndoc](https://github.com/zndoc) - Документация общего назначения

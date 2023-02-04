@@ -76,7 +76,7 @@ class RestResponseHelper
 
     /*private static function mimeToFileExtension(string $contentType, string $default = 'html'): string
     {
-        $mimeTypes = include __DIR__ . '/../../../../zncore/base/src/Legacy/Yii/Helpers/mimeTypes.php';
+        $mimeTypes = include __DIR__ . '/../../../../untek-core/base/src/Legacy/Yii/Helpers/mimeTypes.php';
         $mimeTypes = array_flip($mimeTypes);
         $extension = ArrayHelper::getValue($mimeTypes, $contentType, $default);
         return strtolower($extension);
