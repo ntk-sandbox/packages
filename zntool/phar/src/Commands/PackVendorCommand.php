@@ -54,7 +54,7 @@ class PackVendorCommand extends Command
             //'/symfony/service-contracts/',
             '/zntool/dev/',
             '/zntool/test/',
-            '/zndoc/',
+            '/untek-doc/',
             //'/symfony/web-server-bundle',
             '/phpunit/',
             //'/codeception/',

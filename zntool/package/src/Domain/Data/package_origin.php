@@ -321,10 +321,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zndoc/team',
+		'id' => 'untek-doc/team',
 		'name' => 'team',
 		'group' => [
-			'name' => 'zndoc',
+			'name' => 'untek-doc',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -332,10 +332,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zndoc/rest-api',
+		'id' => 'untek-doc/rest-api',
 		'name' => 'rest-api',
 		'group' => [
-			'name' => 'zndoc',
+			'name' => 'untek-doc',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -343,10 +343,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zndoc/linux',
+		'id' => 'untek-doc/linux',
 		'name' => 'linux',
 		'group' => [
-			'name' => 'zndoc',
+			'name' => 'untek-doc',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -354,10 +354,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zndoc/rails',
+		'id' => 'untek-doc/rails',
 		'name' => 'rails',
 		'group' => [
-			'name' => 'zndoc',
+			'name' => 'untek-doc',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -365,10 +365,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncrypt/base',
+		'id' => 'untek-crypt/base',
 		'name' => 'base',
 		'group' => [
-			'name' => 'zncrypt',
+			'name' => 'untek-crypt',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -376,10 +376,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncrypt/pki',
+		'id' => 'untek-crypt/pki',
 		'name' => 'pki',
 		'group' => [
-			'name' => 'zncrypt',
+			'name' => 'untek-crypt',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -387,10 +387,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncrypt/jwt',
+		'id' => 'untek-crypt/jwt',
 		'name' => 'jwt',
 		'group' => [
-			'name' => 'zncrypt',
+			'name' => 'untek-crypt',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -398,10 +398,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncrypt/tunnel',
+		'id' => 'untek-crypt/tunnel',
 		'name' => 'tunnel',
 		'group' => [
-			'name' => 'zncrypt',
+			'name' => 'untek-crypt',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -541,10 +541,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znfork/danog_madelineproto',
+		'id' => 'untek-fork/danog_madelineproto',
 		'name' => 'danog_madelineproto',
 		'group' => [
-			'name' => 'znfork',
+			'name' => 'untek-fork',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,

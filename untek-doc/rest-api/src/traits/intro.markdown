@@ -1,0 +1,1 @@
+API основано на контрактах - https://github.com/untek-doc/rest-api/blob/master/docs/contract/README.md

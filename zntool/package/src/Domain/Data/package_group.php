@@ -22,12 +22,12 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'zncrypt',
+        'name' => 'untek-crypt',
         'provider_name' => 'github',
         'authors' => [],
     ],
     [
-        'name' => 'zndoc',
+        'name' => 'untek-doc',
         'provider_name' => 'github',
         'authors' => [],
     ],
@@ -42,7 +42,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'znfork',
+        'name' => 'untek-fork',
         'provider_name' => 'github',
         'authors' => [],
     ],
@@ -87,7 +87,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'zndatabase',
+        'name' => 'untek-database',
         'provider_name' => 'github',
         'authors' => [],
     ],

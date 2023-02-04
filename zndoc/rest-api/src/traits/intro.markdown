@@ -1,1 +1,0 @@
-API основано на контрактах - https://github.com/zndoc/rest-api/blob/master/docs/contract/README.md

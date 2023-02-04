@@ -1,5 +1,5 @@
 {
-  "name": "znuser/rbac",
+  "name": "untek-database/backup",
   "type": "extension",
   "license": "MIT",
   "authors": [
@@ -10,12 +10,12 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "untek-fork/casbin": "0.x-dev"
+    "untek-database/base": "0.x-dev"
   },
   "autoload": {
     "psr-4": {
-      "Untek\\User\\Rbac\\": "src",
-      "Untek\\User\\Rbac\\Tests\\": "tests"
+      "Untek\\Database\\Backup\\": "src",
+      "Untek\\Database\\Backup\\Tests\\": "tests"
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+	"name": "untek-doc/rpc",
+	"type": "library",
+	"keywords": ["rpc","api"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Zn Developer",
+			"email": "zndev@ya.ru"
+		}
+	],
+	"minimum-stability": "dev"
+}
