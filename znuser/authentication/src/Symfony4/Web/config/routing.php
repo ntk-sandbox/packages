@@ -1,6 +1,6 @@
 <?php
 
-use ZnUser\Authentication\Symfony4\Web\Controllers\AuthController;
+use Untek\User\Authentication\Symfony4\Web\Controllers\AuthController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 return function (RoutingConfigurator $routes) {

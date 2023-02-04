@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Zip\Libs;
+namespace Untek\Lib\Components\Zip\Libs;
 
 use App\Common\Base\BaseController;
 use Exception;

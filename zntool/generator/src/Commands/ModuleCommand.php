@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Generator\Commands;
+namespace Untek\Tool\Generator\Commands;
 
-use ZnTool\Generator\Domain\Dto\BuildDto;
-use ZnTool\Generator\Domain\Interfaces\Services\ModuleServiceInterface;
-use ZnTool\Generator\Domain\Scenarios\Input\ModuleNamespaceInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\NameInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\TypeModuleInputScenario;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Interfaces\Services\ModuleServiceInterface;
+use Untek\Tool\Generator\Domain\Scenarios\Input\ModuleNamespaceInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\NameInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\TypeModuleInputScenario;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Enums\Rbac;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 class RpcClientRequestPermissionEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {

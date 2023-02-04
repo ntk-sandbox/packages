@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\Http\Helpers;
+namespace Untek\Lib\Components\Http\Helpers;
 
 use GuzzleHttp\Psr7\Query;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Web\Html\Helpers\Url;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Web\Html\Helpers\Url;
 use function GuzzleHttp\Psr7\parse_query;
 
 class UrlHelper

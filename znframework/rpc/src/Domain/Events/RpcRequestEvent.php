@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Events;
+namespace Untek\Framework\Rpc\Domain\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\EventDispatcher\Traits\EventSkipHandleTrait;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Core\EventDispatcher\Traits\EventSkipHandleTrait;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 
 class RpcRequestEvent extends Event
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Test\Traits;
+namespace Untek\Framework\Rpc\Test\Traits;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Test\Enums\CrudMethodEnum;
-use ZnFramework\Rpc\Test\RpcAssert;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Test\Enums\CrudMethodEnum;
+use Untek\Framework\Rpc\Test\RpcAssert;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 
 trait CrudRpcTestTrait
 {

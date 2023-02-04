@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Facades;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Facades;
 
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnSandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
-use ZnSandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockHandleMethodPermissionEnum;
-use ZnSandbox\Sandbox\RpcMock\Domain\Interfaces\Repositories\MethodRepositoryInterface;
-use ZnSandbox\Sandbox\RpcMock\Rpc\Controllers\HandleController;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockHandleMethodPermissionEnum;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Repositories\MethodRepositoryInterface;
+use Untek\Sandbox\Sandbox\RpcMock\Rpc\Controllers\HandleController;
 
 class RpcMockFacade
 {

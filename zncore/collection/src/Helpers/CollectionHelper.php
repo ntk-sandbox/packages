@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\Collection\Helpers;
+namespace Untek\Core\Collection\Helpers;
 
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Common\Collections\Expr\Comparison;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
 
 /**
  * Хэлпер для работы с коллекциями.

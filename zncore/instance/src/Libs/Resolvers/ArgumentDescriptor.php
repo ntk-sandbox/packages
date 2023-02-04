@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Instance\Libs\Resolvers;
+namespace Untek\Core\Instance\Libs\Resolvers;
 
 use ArgumentResolver\Argument\ArgumentDescription;
 use ArgumentResolver\Argument\ArgumentDescriptions;

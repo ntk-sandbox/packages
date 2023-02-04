@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Interfaces\Services;
+namespace Untek\Bundle\Storage\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface FileServiceInterface extends CrudServiceInterface
 {

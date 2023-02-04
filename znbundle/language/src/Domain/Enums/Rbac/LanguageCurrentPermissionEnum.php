@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Enums\Rbac;
+namespace Untek\Bundle\Language\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class LanguageCurrentPermissionEnum implements GetLabelsInterface
 {

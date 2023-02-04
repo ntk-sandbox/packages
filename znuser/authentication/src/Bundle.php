@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Authentication;
+namespace Untek\User\Authentication;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

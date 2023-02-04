@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs;
+namespace Untek\Framework\Console\Domain\Libs;
 
 use Symfony\Component\Console\Helper\HelperInterface;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnFramework\Console\Symfony4\Helpers\InputHelper;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Framework\Console\Symfony4\Helpers\InputHelper;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 
 class IO
 {

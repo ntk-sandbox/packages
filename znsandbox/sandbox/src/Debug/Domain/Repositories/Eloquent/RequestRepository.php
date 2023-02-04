@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Debug\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Debug\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Debug\Domain\Entities\RequestEntity;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Debug\Domain\Entities\RequestEntity;
 
 class RequestRepository extends BaseEloquentCrudRepository
 {

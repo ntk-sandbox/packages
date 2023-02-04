@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4;
+namespace Untek\Bundle\Dashboard\Symfony4;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

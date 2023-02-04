@@ -1,7 +1,7 @@
 <?php
 
-use ZnSandbox\Sandbox\RpcMock\Rpc\Controllers\MethodController;
-use ZnSandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockMethodPermissionEnum;
+use Untek\Sandbox\Sandbox\RpcMock\Rpc\Controllers\MethodController;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockMethodPermissionEnum;
 
 return [
     [

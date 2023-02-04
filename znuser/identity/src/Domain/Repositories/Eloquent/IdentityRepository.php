@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnUser\Identity\Domain\Repositories\Eloquent;
+namespace Untek\User\Identity\Domain\Repositories\Eloquent;
 
 use App\Organization\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
-use ZnUser\Identity\Domain\Relations\IdentityRelation;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDomain\Repository\Mappers\TimeMapper;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\User\Identity\Domain\Relations\IdentityRelation;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
 
 class IdentityRepository extends BaseEloquentCrudRepository implements IdentityRepositoryInterface
 {

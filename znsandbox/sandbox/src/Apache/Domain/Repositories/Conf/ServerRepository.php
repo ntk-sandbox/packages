@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Repositories\Conf;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Repositories\Conf;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnSandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
-use ZnSandbox\Sandbox\Apache\Domain\Helpers\ConfParser;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
+use Untek\Sandbox\Sandbox\Apache\Domain\Helpers\ConfParser;
 
 class ServerRepository
 {

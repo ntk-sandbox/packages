@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Domain\Enums;
+namespace Untek\Domain\Domain\Enums;
 
 class EventEnum
 {

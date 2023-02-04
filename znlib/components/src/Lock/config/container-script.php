@@ -5,8 +5,8 @@ use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\Store\FlockStore;
 use Symfony\Component\Lock\Store\PostgreSqlStore;
 use Symfony\Component\Lock\Store\SemaphoreStore;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 return [
     'definitions' => [],

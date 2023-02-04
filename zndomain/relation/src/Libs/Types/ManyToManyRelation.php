@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDomain\Relation\Libs\Types;
+namespace Untek\Domain\Relation\Libs\Types;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Code\Factories\PropertyAccess;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Domain\Interfaces\FindAllInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Relation\Interfaces\RelationInterface;
+use Untek\Core\Code\Factories\PropertyAccess;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Domain\Interfaces\FindAllInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Relation\Interfaces\RelationInterface;
 
 class ManyToManyRelation extends BaseRelation implements RelationInterface
 {

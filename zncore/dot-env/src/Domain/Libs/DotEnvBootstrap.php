@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs;
+namespace Untek\Core\DotEnv\Domain\Libs;
 
 use Symfony\Component\Dotenv\Dotenv;
-use ZnCore\Code\Exceptions\NotFoundDependencyException;
-use ZnCore\Code\Helpers\ComposerHelper;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\DotEnv\Domain\Enums\DotEnvModeEnum;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\Pattern\Singleton\SingletonTrait;
+use Untek\Core\Code\Exceptions\NotFoundDependencyException;
+use Untek\Core\Code\Helpers\ComposerHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\DotEnv\Domain\Enums\DotEnvModeEnum;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\Pattern\Singleton\SingletonTrait;
 
 DeprecateHelper::hardThrow();
 

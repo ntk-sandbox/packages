@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Exceptions;
+namespace Untek\Framework\Console\Domain\Exceptions;
 
 use Exception;
 

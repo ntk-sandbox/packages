@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Authentication\Rpc\Controllers;
+namespace Untek\User\Authentication\Rpc\Controllers;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseRpcController;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 class AuthIdentityController extends BaseRpcController
 {

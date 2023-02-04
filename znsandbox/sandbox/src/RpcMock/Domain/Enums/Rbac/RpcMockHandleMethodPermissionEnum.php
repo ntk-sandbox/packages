@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Enums\Rbac;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class RpcMockHandleMethodPermissionEnum implements GetLabelsInterface
 {

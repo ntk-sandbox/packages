@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Services;
+namespace Untek\Framework\Rpc\Domain\Services;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnFramework\Rpc\Domain\Entities\SettingsEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Services\SettingsServiceInterface;
-use ZnSandbox\Sandbox\Settings\Domain\Interfaces\Services\SystemServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Framework\Rpc\Domain\Entities\SettingsEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\SettingsServiceInterface;
+use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Services\SystemServiceInterface;
 
 class SettingsService implements SettingsServiceInterface
 {

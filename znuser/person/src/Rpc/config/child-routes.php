@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Person\Domain\Enums\Rbac\ChildPermissionEnum;
-use ZnUser\Person\Rpc\Controllers\ChildController;
+use Untek\User\Person\Domain\Enums\Rbac\ChildPermissionEnum;
+use Untek\User\Person\Rpc\Controllers\ChildController;
 
 return [
     /*[

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Enums;
+namespace Untek\Database\Migration\Domain\Enums;
 
 class ForeignActionEnum
 {

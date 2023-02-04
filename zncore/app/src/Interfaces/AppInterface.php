@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\App\Interfaces;
+namespace Untek\Core\App\Interfaces;
 
 /**
  * Интерфейс приложения.

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Validator\Libs\Validators;
+namespace Untek\Domain\Validator\Libs\Validators;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 
 class BaseValidator
 {

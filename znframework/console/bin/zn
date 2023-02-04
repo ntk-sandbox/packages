@@ -1,9 +1,9 @@
 #!/usr/bin/env php
 <?php
 
-use ZnCore\App\Libs\ZnCore;
-use ZnCore\Container\Libs\Container;
-use ZnFramework\Console\Domain\Factories\ConsoleApplicationFactory;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Core\Container\Libs\Container;
+use Untek\Framework\Console\Domain\Factories\ConsoleApplicationFactory;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
 $_SERVER['REQUEST_ID'] = uniqid();

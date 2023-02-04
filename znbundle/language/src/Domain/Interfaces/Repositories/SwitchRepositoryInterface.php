@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Language\Domain\Interfaces\Repositories;
 
 interface SwitchRepositoryInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDomain\DataProvider\Libs;
+namespace Untek\Domain\DataProvider\Libs;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\DataProvider\Entities\DataProviderEntity;
-use ZnDomain\DataProvider\Interfaces\DataProviderInterface;
-use ZnDomain\Domain\Interfaces\ReadAllInterface;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\DataProvider\Entities\DataProviderEntity;
+use Untek\Domain\DataProvider\Interfaces\DataProviderInterface;
+use Untek\Domain\Domain\Interfaces\ReadAllInterface;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
 
 class DataProvider implements DataProviderInterface
 {

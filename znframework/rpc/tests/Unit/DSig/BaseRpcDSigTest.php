@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Rest\Tests\Unit\DSig;
+namespace Untek\Lib\Rest\Tests\Unit\DSig;
 
-use ZnFramework\Rpc\Symfony4\Web\Libs\JsonDSigCryptoProvider;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Framework\Rpc\Symfony4\Web\Libs\JsonDSigCryptoProvider;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
+use Untek\Tool\Test\Base\BaseTest;
 
 abstract class BaseRpcDSigTest extends BaseTest
 {

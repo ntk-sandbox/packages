@@ -1,10 +1,10 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Interfaces\Repositories;
+namespace Untek\Framework\Telegram\Domain\Interfaces\Repositories;
 
-use ZnFramework\Telegram\Domain\Entities\BotEntity;
-use ZnFramework\Telegram\Domain\Entities\ResponseEntity;
+use Untek\Framework\Telegram\Domain\Entities\BotEntity;
+use Untek\Framework\Telegram\Domain\Entities\ResponseEntity;
 
 interface ResponseRepositoryInterface
 {

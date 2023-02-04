@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\QrBox\Factories;
+namespace Untek\Lib\QrBox\Factories;
 
-use ZnLib\QrBox\Libs\ClassEncoder;
-use ZnLib\QrBox\Libs\DataSize;
-use ZnLib\QrBox\Libs\WrapperDetector;
-use ZnLib\QrBox\Services\EncoderService;
-use ZnLib\QrBox\Wrappers\WrapperInterface;
+use Untek\Lib\QrBox\Libs\ClassEncoder;
+use Untek\Lib\QrBox\Libs\DataSize;
+use Untek\Lib\QrBox\Libs\WrapperDetector;
+use Untek\Lib\QrBox\Services\EncoderService;
+use Untek\Lib\QrBox\Wrappers\WrapperInterface;
 
 class EncoderServiceFactory
 {

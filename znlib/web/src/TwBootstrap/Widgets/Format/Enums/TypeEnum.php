@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Enums;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Enums;
 
 class TypeEnum
 {

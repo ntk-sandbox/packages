@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Traits;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Traits;
 
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseMockHttpClient;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\BaseMockHttpClient;
 
 trait PluginParentTrait
 {

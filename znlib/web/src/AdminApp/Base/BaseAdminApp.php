@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\AdminApp\Base;
+namespace Untek\Lib\Web\AdminApp\Base;
 
-use ZnLib\Web\WebApp\Base\BaseWebApp;
+use Untek\Lib\Web\WebApp\Base\BaseWebApp;
 
 abstract class BaseAdminApp extends BaseWebApp
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Services;
+namespace Untek\Bundle\TalkBox\Domain\Services;
 
-use ZnBundle\TalkBox\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
-use ZnBundle\TalkBox\Domain\Interfaces\Services\AnswerTagServiceInterface;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerTagServiceInterface;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class AnswerTagService extends BaseCrudService implements AnswerTagServiceInterface
 {

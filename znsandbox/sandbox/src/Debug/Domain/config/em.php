@@ -2,7 +2,7 @@
 
 return [
 	'entities' => [
-		'ZnSandbox\\Sandbox\\Debug\\Domain\\Entities\\RequestEntity' => 'ZnSandbox\\Sandbox\\Debug\\Domain\\Interfaces\\Repositories\\RequestRepositoryInterface',
-		'ZnSandbox\\Sandbox\\Debug\\Domain\\Entities\\ProfilingEntity' => 'ZnSandbox\\Sandbox\\Debug\\Domain\\Interfaces\\Repositories\\ProfilingRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Debug\\Domain\\Entities\\RequestEntity' => 'Untek\\Sandbox\\Sandbox\\Debug\\Domain\\Interfaces\\Repositories\\RequestRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Debug\\Domain\\Entities\\ProfilingEntity' => 'Untek\\Sandbox\\Sandbox\\Debug\\Domain\\Interfaces\\Repositories\\ProfilingRepositoryInterface',
 	],
 ];

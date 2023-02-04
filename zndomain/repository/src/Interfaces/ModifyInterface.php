@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Repository\Interfaces;
+namespace Untek\Domain\Repository\Interfaces;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 
 interface ModifyInterface
 {

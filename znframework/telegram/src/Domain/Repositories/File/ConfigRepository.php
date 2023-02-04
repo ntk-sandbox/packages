@@ -1,10 +1,10 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Repositories\File;
+namespace Untek\Framework\Telegram\Domain\Repositories\File;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\Store\StoreFile;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\Store\StoreFile;
 
 class ConfigRepository
 {

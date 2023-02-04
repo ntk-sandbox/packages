@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Rbac;
+namespace Untek\User\Rbac;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {
@@ -15,7 +15,7 @@ class Bundle extends BaseBundle
     /*public function deps(): array
     {
         return [
-            new \ZnBundle\User\Bundle(['all']),
+            new \Untek\Bundle\User\Bundle(['all']),
         ];
     }*/
 

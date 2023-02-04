@@ -6,10 +6,10 @@
  * @var string $userMenuHtml
  */
 
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnLib\Web\View\Libs\View;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Lib\Web\View\Libs\View;
 
 ?>
 

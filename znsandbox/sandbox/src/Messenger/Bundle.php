@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Messenger;
+namespace Untek\Sandbox\Sandbox\Messenger;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Messenger\Command\ConsumeMessagesCommand;
-use ZnCore\Bundle\Base\BaseBundle;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnCore\Instance\Libs\Resolvers\ArgumentMetadataResolver;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
-use ZnCore\Instance\Libs\Resolvers\MethodParametersResolver;
-use ZnCore\Instance\Libs\Resolvers\MethodParametersResolver2;
-use ZnCore\Instance\Metadata\ArgumentMetadataFactory;
-use ZnFramework\Console\Symfony4\Libs\CommandConfigurator;
-use ZnSandbox\Sandbox\Messenger\Commands\ConsumeMessageCommand;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\Instance\Libs\Resolvers\ArgumentMetadataResolver;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver;
+use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver2;
+use Untek\Core\Instance\Metadata\ArgumentMetadataFactory;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Sandbox\Sandbox\Messenger\Commands\ConsumeMessageCommand;
 
 class Bundle extends BaseBundle
 {
@@ -42,7 +42,7 @@ class Bundle extends BaseBundle
         
         // example 3
         /*$commandConfigurator->registerFromNamespaceList([
-            'ZnSandbox\Sandbox\Messenger\Commands',
+            'Untek\Sandbox\Sandbox\Messenger\Commands',
         ]);*/
         
 //        example 4
@@ -50,10 +50,10 @@ class Bundle extends BaseBundle
         $application->add($command);*/
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-//            'ZnSandbox\Sandbox\Messenger\Commands',
+//            'Untek\Sandbox\Sandbox\Messenger\Commands',
         ];
-    }
+    }*/
 }

@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnCore\\ConfigManager\\": "src",
-      "ZnCore\\ConfigManager\\Tests\\": "tests"
+      "Untek\\Core\\ConfigManager\\": "src",
+      "Untek\\Core\\ConfigManager\\Tests\\": "tests"
     }
   }
 }

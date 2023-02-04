@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\RestApiApp\Base;
+namespace Untek\Lib\Web\RestApiApp\Base;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
 use Throwable;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
 
 abstract class BaseHttpRepository
 {

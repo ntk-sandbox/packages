@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Dashboard;
+namespace Untek\Bundle\Dashboard;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

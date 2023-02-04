@@ -1,26 +1,26 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Commands;
+namespace Untek\Sandbox\Sandbox\Generator\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\Input\SelectClassesInput;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\Input\SelectDomainInput;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\Input\SelectEntityInput;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters\BaseAdapter;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters\EntityAdapter;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters\RepositoryAdapter;
-use ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters\ServiceAdapter;
-use ZnSandbox\Sandbox\Generator\Domain\Services\GeneratorService;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\Input\SelectClassesInput;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\Input\SelectDomainInput;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\Input\SelectEntityInput;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters\BaseAdapter;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters\EntityAdapter;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters\RepositoryAdapter;
+use Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters\ServiceAdapter;
+use Untek\Sandbox\Sandbox\Generator\Domain\Services\GeneratorService;
 
 class GenerateCommand extends Command
 {

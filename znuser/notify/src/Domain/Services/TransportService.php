@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
-use ZnCore\Instance\Exceptions\NotInstanceOfException;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Entities\TransportEntity;
-use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;
+use Untek\Core\Instance\Exceptions\NotInstanceOfException;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Entities\TransportEntity;
+use Untek\User\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\TransportServiceInterface;
 
 /**
  * @method TransportRepositoryInterface getRepository()

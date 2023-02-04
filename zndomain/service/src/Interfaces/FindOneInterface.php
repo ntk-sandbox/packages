@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Service\Interfaces;
+namespace Untek\Domain\Service\Interfaces;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
 
 interface FindOneInterface
 {

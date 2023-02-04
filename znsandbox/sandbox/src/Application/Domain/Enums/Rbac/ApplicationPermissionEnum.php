@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Enums\Rbac;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class ApplicationPermissionEnum implements GetLabelsInterface
 {

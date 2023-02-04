@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Services;
+namespace Untek\Bundle\Language\Domain\Services;
 
-use ZnBundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
-use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\Bundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 class LanguageService extends BaseCrudService implements LanguageServiceInterface
 {

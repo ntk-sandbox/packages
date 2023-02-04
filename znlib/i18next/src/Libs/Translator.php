@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\I18Next\Libs;
+namespace Untek\Lib\I18Next\Libs;
 
-use ZnLib\I18Next\Helpers\TranslatorHelper;
+use Untek\Lib\I18Next\Helpers\TranslatorHelper;
 
 class Translator
 {

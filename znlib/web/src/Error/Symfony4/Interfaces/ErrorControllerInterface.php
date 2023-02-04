@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Error\Symfony4\Interfaces;
+namespace Untek\Lib\Web\Error\Symfony4\Interfaces;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace ZnBundle\Log\Domain\Monolog\Formatter;
+namespace Untek\Bundle\Log\Domain\Monolog\Formatter;
 
 use Monolog\DateTimeImmutable;
 use Monolog\Formatter\NormalizerFormatter;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnBundle\Log\Domain\Entities\LogEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Bundle\Log\Domain\Entities\LogEntity;
 
 class EloquentFormatter extends NormalizerFormatter
 {

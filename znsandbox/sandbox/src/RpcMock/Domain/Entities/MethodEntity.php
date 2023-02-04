@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Entities;
 
-use ZnCrypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\C14n;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Crypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\C14n;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 use DateTime;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnSandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
 
 class MethodEntity implements EntityIdInterface, ValidationByMetadataInterface, UniqueInterface
 {

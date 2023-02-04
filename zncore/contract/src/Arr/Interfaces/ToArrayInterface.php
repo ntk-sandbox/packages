@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\Arr\Interfaces;
+namespace Untek\Core\Contract\Arr\Interfaces;
 
 /**
  * Возможность преобразовать данные в массив.

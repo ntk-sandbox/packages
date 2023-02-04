@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Libs;
 
 /**
  * Class PhpConfig
- * @package ZnSandbox\Sandbox\Deployer\Domain\Libs
+ * @package Untek\Sandbox\Sandbox\Deployer\Domain\Libs
  * @todo Как отсюда забрать результат?
  */
 class PhpConfig

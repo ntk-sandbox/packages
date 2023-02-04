@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\QrBox\Tests\Unit;
+namespace Untek\Lib\QrBox\Tests\Unit;
 
-abstract class BaseTest extends \ZnTool\Test\Base\BaseTest
+abstract class BaseTest extends \Untek\Tool\Test\Base\BaseTest
 {
 
     public function assertZipContent(string $actual)

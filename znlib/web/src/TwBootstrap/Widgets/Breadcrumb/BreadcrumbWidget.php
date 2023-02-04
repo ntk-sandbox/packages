@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Breadcrumb;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb;
 
-use ZnLib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
 
 class BreadcrumbWidget extends MenuWidget
 {

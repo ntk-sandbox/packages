@@ -1,8 +1,8 @@
 <?php
 
-use ZnSandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockHandleMethodPermissionEnum;
-use ZnSandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockMethodPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockHandleMethodPermissionEnum;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockMethodPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

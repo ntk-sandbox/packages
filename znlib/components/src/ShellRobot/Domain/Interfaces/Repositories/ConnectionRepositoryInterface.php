@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories;
+namespace Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 interface ConnectionRepositoryInterface extends RepositoryInterface
 {

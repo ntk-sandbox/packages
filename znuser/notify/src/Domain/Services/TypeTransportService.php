@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
-use ZnUser\Notify\Domain\Interfaces\Services\TypeTransportServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
+use Untek\User\Notify\Domain\Interfaces\Services\TypeTransportServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Notify\Domain\Entities\TypeTransportEntity;
 
 class TypeTransportService extends BaseCrudService implements TypeTransportServiceInterface
 {

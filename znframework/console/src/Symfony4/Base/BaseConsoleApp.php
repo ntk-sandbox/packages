@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Base;
+namespace Untek\Framework\Console\Symfony4\Base;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\App\Base\BaseApp;
-use ZnCore\App\Libs\ZnCore;
-use ZnCore\App\Subscribers\PhpErrorSubscriber;
-use ZnCore\Bundle\Base\CallMethodLoader;
-use ZnCore\Bundle\Libs\BundleLoader;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnFramework\Console\Domain\Libs\BundleLoaders\ConsoleLoader;
-use ZnFramework\Console\Domain\Subscribers\ConsoleDetectTestEnvSubscriber;
-use ZnFramework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Core\App\Base\BaseApp;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Core\App\Subscribers\PhpErrorSubscriber;
+use Untek\Core\Bundle\Base\CallMethodLoader;
+use Untek\Core\Bundle\Libs\BundleLoader;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Framework\Console\Domain\Libs\BundleLoaders\ConsoleLoader;
+use Untek\Framework\Console\Domain\Subscribers\ConsoleDetectTestEnvSubscriber;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
 
 abstract class BaseConsoleApp extends BaseApp
 {
@@ -102,11 +102,13 @@ abstract class BaseConsoleApp extends BaseApp
                 )
             ]
         );
+
+        /** @var CommandConfigurator $commandConfigurator */
+        $commandConfigurator = $this->getContainer()->get(CommandConfigurator::class);
+        $bundleLoader = $this->getContainer()->get(BundleLoader::class);
+        $bundleLoader->callMethod('consoleCommands', CallMethodLoader::class);
+
         if (!empty($consoleCommands)) {
-            /** @var CommandConfigurator $commandConfigurator */
-            $commandConfigurator = $this->getContainer()->get(CommandConfigurator::class);
-            $bundleLoader = $this->getContainer()->get(BundleLoader::class);
-            $bundleLoader->callMethod('consoleCommands', CallMethodLoader::class);
             $commandConfigurator->registerFromNamespaceList($consoleCommands);
         }
     }

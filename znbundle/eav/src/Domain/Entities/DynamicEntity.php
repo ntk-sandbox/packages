@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Entities;
+namespace Untek\Bundle\Eav\Domain\Entities;
 
 use InvalidArgumentException;
-use ZnBundle\Eav\Domain\Libs\Rules;
-use ZnBundle\Eav\Domain\Traits\DynamicAttribute;
-use ZnLib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
+use Untek\Bundle\Eav\Domain\Libs\Rules;
+use Untek\Bundle\Eav\Domain\Traits\DynamicAttribute;
+use Untek\Lib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
 
 class DynamicEntity implements ValidateDynamicEntityInterface, EntityIdInterface, DynamicEntityAttributesInterface
 {

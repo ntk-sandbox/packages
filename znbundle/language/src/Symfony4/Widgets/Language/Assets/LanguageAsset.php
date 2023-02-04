@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Language\Symfony4\Widgets\Language\Assets;
+namespace Untek\Bundle\Language\Symfony4\Widgets\Language\Assets;
 
-use ZnLib\Web\Asset\Base\BaseAsset;
-use ZnLib\Web\View\Libs\View;
+use Untek\Lib\Web\Asset\Base\BaseAsset;
+use Untek\Lib\Web\View\Libs\View;
 
 class LanguageAsset extends BaseAsset
 {

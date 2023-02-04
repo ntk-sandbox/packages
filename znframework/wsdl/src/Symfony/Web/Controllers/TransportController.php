@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Wsdl\Symfony\Web\Controllers;
+namespace Untek\Framework\Wsdl\Symfony\Web\Controllers;
 
-use ZnFramework\Wsdl\Domain\Interfaces\Services\RequestServiceInterface;
+use Untek\Framework\Wsdl\Domain\Interfaces\Services\RequestServiceInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Web\Xml\Libs\XmlResponse;
+use Untek\Lib\Web\Xml\Libs\XmlResponse;
 
 class TransportController
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\SignedCookie\Libs;
+namespace Untek\Lib\Web\SignedCookie\Libs;
 
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
 
 class CookieValue
 {

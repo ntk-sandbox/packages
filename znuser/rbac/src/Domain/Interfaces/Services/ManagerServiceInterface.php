@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Interfaces\Services;
+namespace Untek\User\Rbac\Domain\Interfaces\Services;
 
 interface ManagerServiceInterface
 {

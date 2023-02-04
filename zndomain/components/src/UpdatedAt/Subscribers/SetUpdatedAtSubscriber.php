@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Components\UpdatedAt\Subscribers;
+namespace Untek\Domain\Components\UpdatedAt\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
 
 class SetUpdatedAtSubscriber implements EventSubscriberInterface
 {

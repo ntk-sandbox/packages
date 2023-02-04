@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Queue\Domain\Subscribers\AutorunQueueSubscriber;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Bundle\Queue\Domain\Subscribers\AutorunQueueSubscriber;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 
 return function (EventDispatcherConfiguratorInterface $configurator): void {
 

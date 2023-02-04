@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
 class HtmlFormatter extends BaseFormatter implements FormatterInterface
 {

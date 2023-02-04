@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDatabase\Doctrine\Domain\Base;
+namespace Untek\Database\Doctrine\Domain\Base;
 
 //use Illuminate\Database\Query\Builder as QueryBuilder;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\PDOStatement;
 use Doctrine\DBAL\Query\QueryBuilder;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDatabase\Base\Domain\Traits\TableNameTrait;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Database\Base\Domain\Traits\TableNameTrait;
 
 abstract class BaseDoctrineRepository implements GetEntityClassInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Actions;
+namespace Untek\Framework\Telegram\Domain\Actions;
 
 use danog\MadelineProto\APIFactory;
-use ZnFramework\Telegram\Domain\Base\BaseAction;
-use ZnFramework\Telegram\Domain\Entities\MessageEntity;
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Handlers\BaseInputMessageEventHandler;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Framework\Telegram\Domain\Base\BaseAction;
+use Untek\Framework\Telegram\Domain\Entities\MessageEntity;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Handlers\BaseInputMessageEventHandler;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class HelpAction extends BaseAction
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Rpc\Tests\Rpc;
+namespace Untek\Lib\Rpc\Tests\Rpc;
 
-use ZnFramework\Rpc\Test\BaseRpcTest;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
 
 class RpcSettingsTest extends BaseRpcTest
 {

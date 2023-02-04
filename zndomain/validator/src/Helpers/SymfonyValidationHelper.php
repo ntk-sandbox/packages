@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Validator\Helpers;
+namespace Untek\Domain\Validator\Helpers;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Translation\Translator;
@@ -8,17 +8,17 @@ use Symfony\Component\Validator\ConstraintViolationList;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Component\Validator\ValidatorBuilder;
 use Symfony\Contracts\Translation\TranslatorInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class SymfonyValidationHelper
 {
 
     /**
-     * @return array | \ZnCore\Collection\Interfaces\Enumerable | ValidationErrorEntity[]
+     * @return array | \Untek\Core\Collection\Interfaces\Enumerable | ValidationErrorEntity[]
      */
     public static function validate(ValidationByMetadataInterface $entity): Enumerable
     {

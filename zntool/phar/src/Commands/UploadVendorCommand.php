@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Phar\Commands;
+namespace Untek\Tool\Phar\Commands;
 
-use ZnCore\Container\Libs\Container;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnFramework\Console\Symfony4\Widgets\LogWidget;
-use ZnFramework\Console\Symfony4\Widgets\TextWidget;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Container\Libs\Container;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
+use Untek\Framework\Console\Symfony4\Widgets\TextWidget;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

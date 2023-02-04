@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Services;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Services;
 
-use ZnSandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
-use ZnSandbox\Sandbox\RpcMock\Domain\Interfaces\Repositories\MethodRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Repositories\MethodRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 
 /**
  * @method

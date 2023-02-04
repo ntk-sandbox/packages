@@ -3,7 +3,7 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnDatabase\Migration\Domain\Base\BaseCreateTableMigration;
+use Untek\Database\Migration\Domain\Base\BaseCreateTableMigration;
 
 class m_2021_05_26_092947_create_system_table extends BaseCreateTableMigration
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\ApacheShell;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\HostsShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\ApacheShell;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\HostsShell;
 
 class ConfigureDomainTask extends BaseShell implements TaskInterface
 {

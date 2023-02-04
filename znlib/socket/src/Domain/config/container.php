@@ -1,6 +1,6 @@
 <?php
 
-use ZnLib\Socket\Domain\Repositories\Ram\ConnectionRepository;
+use Untek\Lib\Socket\Domain\Repositories\Ram\ConnectionRepository;
 
 return [
     'singletons' => [

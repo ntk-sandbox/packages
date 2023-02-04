@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Interfaces\Services;
+namespace Untek\Bundle\Summary\Domain\Interfaces\Services;
 
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface CounterServiceInterface extends CrudServiceInterface
 {

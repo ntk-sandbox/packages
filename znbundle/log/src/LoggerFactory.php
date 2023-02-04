@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Log;
+namespace Untek\Bundle\Log;
 
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\Domain\Interfaces\DomainInterface;
-use ZnBundle\Log\Domain\Monolog\Handler\EloquentHandler;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
+use Untek\Bundle\Log\Domain\Monolog\Handler\EloquentHandler;
 
 class LoggerFactory
 {
@@ -45,7 +45,7 @@ class LoggerFactory
         $handler = new StreamHandler($logFileName, $level);
         $handler->setFormatter(new \Monolog\Formatter\JsonFormatter);
         $logger->pushHandler($handler);
-        //$repo = new \ZnBundle\Log\JsonRepository;
+        //$repo = new \Untek\Bundle\Log\JsonRepository;
         //prr($repo->all());
 
         return $logger;
@@ -53,7 +53,7 @@ class LoggerFactory
 
     /*public static function createYiiLogger(string $env): LoggerInterface
     {
-        $logger = new \ZnBundle\Log\Yii2\Logger;
+        $logger = new \Untek\Bundle\Log\Yii2\Logger;
         return $logger;
     }*/
 

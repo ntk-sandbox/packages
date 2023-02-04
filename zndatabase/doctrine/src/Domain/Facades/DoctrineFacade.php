@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDatabase\Doctrine\Domain\Facades;
+namespace Untek\Database\Doctrine\Domain\Facades;
 
 use Doctrine\DBAL\Configuration;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\DriverManager;
-use ZnCore\DotEnv\Domain\Libs\DotEnvMap;
-use ZnDatabase\Base\Domain\Helpers\ConfigHelper;
+use Untek\Core\DotEnv\Domain\Libs\DotEnvMap;
+use Untek\Database\Base\Domain\Helpers\ConfigHelper;
 
 class DoctrineFacade
 {

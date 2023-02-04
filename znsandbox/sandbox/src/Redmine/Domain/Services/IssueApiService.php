@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Services;
 
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\IssueApiEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Services\IssueApiServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\IssueApiEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Services\IssueApiServiceInterface;
 
 /**
  * @method IssueApiRepositoryInterface getRepository()

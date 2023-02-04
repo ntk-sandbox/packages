@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Libs\Shell;
+namespace Untek\Lib\Components\ShellRobot\Domain\Libs\Shell;
 
-use ZnLib\Components\ShellRobot\Domain\Entities\HostEntity;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Entities\HostEntity;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
 
 class RemoteShell extends LocalShell
 {

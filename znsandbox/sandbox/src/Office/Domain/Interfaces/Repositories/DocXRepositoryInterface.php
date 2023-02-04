@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Office\Domain\Interfaces\Repositories;
+namespace Untek\Sandbox\Sandbox\Office\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface DocXRepositoryInterface extends CrudRepositoryInterface
 {

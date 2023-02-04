@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Dev\Runtime\Domain;
+namespace Untek\Tool\Dev\Runtime\Domain;
 
-use ZnDomain\Domain\Interfaces\DomainInterface;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
 
 class Domain implements DomainInterface
 {

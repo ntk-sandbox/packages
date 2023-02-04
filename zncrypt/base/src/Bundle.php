@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Base;
+namespace Untek\Crypt\Base;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

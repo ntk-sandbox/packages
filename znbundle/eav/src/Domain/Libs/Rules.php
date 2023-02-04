@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Libs;
+namespace Untek\Bundle\Eav\Domain\Libs;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnBundle\Eav\Domain\Entities\AttributeEntity;
-use ZnDomain\Validator\Constraints\Boolean;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
+use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
+use Untek\Domain\Validator\Constraints\Boolean;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
 
 class Rules
 {

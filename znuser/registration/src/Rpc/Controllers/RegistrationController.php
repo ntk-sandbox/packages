@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Registration\Rpc\Controllers;
+namespace Untek\User\Registration\Rpc\Controllers;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseRpcController;
-use ZnUser\Registration\Domain\Forms\CreateAccountForm;
-use ZnUser\Registration\Domain\Forms\RequestActivationCodeForm;
-use ZnUser\Registration\Domain\Interfaces\Services\RegistrationServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\User\Registration\Domain\Forms\CreateAccountForm;
+use Untek\User\Registration\Domain\Forms\RequestActivationCodeForm;
+use Untek\User\Registration\Domain\Interfaces\Services\RegistrationServiceInterface;
 
 class RegistrationController extends BaseRpcController
 {

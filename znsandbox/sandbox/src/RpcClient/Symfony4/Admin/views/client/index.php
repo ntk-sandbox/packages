@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @var $this \ZnLib\Web\View\Libs\View
+ * @var $this \Untek\Lib\Web\View\Libs\View
  * @var $formView FormView|AbstractType[]
- * @var $formRender \ZnLib\Web\Form\Libs\FormRender
+ * @var $formRender \Untek\Lib\Web\Form\Libs\FormRender
  * @var $dataProvider DataProvider
  * @var $baseUri string
- * @var $rpcResponseEntity \ZnFramework\Rpc\Domain\Entities\RpcResponseEntity
- * @var $rpcRequestEntity \ZnFramework\Rpc\Domain\Entities\RpcRequestEntity
- * @var $favoriteEntity \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
- * @var $favoriteCollection \ZnCore\Collection\Interfaces\Enumerable | \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
- * @var $historyCollection \ZnCore\Collection\Interfaces\Enumerable | \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
+ * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
+ * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
+ * @var $favoriteEntity \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
+ * @var $favoriteCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
+ * @var $historyCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
  */
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 $activeTab = 'favorite';
 foreach ($historyCollection as $favoriteEntityItem) {

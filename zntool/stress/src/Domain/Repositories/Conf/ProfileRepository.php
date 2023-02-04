@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnTool\Stress\Domain\Repositories\Conf;
+namespace Untek\Tool\Stress\Domain\Repositories\Conf;
 
 //use Illuminate\Support\Arr;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnTool\Stress\Domain\Entities\ProfileEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Tool\Stress\Domain\Entities\ProfileEntity;
 
 class ProfileRepository implements CrudRepositoryInterface
 {

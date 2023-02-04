@@ -1,7 +1,7 @@
 <?php
 
-use ZnFramework\Rpc\Rpc\Controllers\MethodController;
-use ZnFramework\Rpc\Domain\Enums\Rbac\RpcMethodPermissionEnum;
+use Untek\Framework\Rpc\Rpc\Controllers\MethodController;
+use Untek\Framework\Rpc\Domain\Enums\Rbac\RpcMethodPermissionEnum;
 
 return [
     [

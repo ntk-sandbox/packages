@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Question;
+namespace Untek\Framework\Console\Symfony4\Question;
 
 class ChoiceQuestion extends \Symfony\Component\Console\Question\ChoiceQuestion
 {

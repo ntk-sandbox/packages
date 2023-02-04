@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Authentication\Tests\Web;
+namespace Untek\User\Authentication\Tests\Web;
 
-use ZnLib\Web\Test\BaseWebTest;
+use Untek\Lib\Web\Test\BaseWebTest;
 
 class UserAuthTest extends BaseWebTest
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnFramework\Console\Domain\Base\BaseShellNew;
-use ZnFramework\Console\Domain\Libs\IO;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\ZnShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Framework\Console\Domain\Base\BaseShellNew;
+use Untek\Framework\Console\Domain\Libs\IO;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\ZnShell;
 
 class ZnInitTask extends BaseShell implements TaskInterface
 {

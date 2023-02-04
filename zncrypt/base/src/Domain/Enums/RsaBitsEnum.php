@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Enums;
+namespace Untek\Crypt\Base\Domain\Enums;
 
 class RsaBitsEnum
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Base;
+namespace Untek\Framework\Wsdl\Domain\Base;
 
 use SoapClient;
-use ZnDomain\Repository\Base\BaseRepository;
+use Untek\Domain\Repository\Base\BaseRepository;
 
 abstract class BaseWsdlRepository extends BaseRepository
 {

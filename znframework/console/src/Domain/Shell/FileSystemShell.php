@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Shell;
+namespace Untek\Framework\Console\Domain\Shell;
 
-use ZnFramework\Console\Domain\Base\BaseShellNew;
-use ZnFramework\Console\Domain\Libs\ShellParsers\ShellItemsParser;
+use Untek\Framework\Console\Domain\Base\BaseShellNew;
+use Untek\Framework\Console\Domain\Libs\ShellParsers\ShellItemsParser;
 
 /**
  * @deprecated
@@ -15,7 +15,7 @@ class FileSystemShell extends BaseShellNew
      * @param string $path
      * @return array
      * @deprecated
-     * @see \ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell::list()
+     * @see \Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell::list()
      */
     public function directoryFiles(string $path): array
     {

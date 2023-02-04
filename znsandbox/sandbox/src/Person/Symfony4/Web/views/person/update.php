@@ -2,16 +2,16 @@
 
 /**
  * @var $formView FormView|AbstractType[]
- * @var $entityCollection \ZnCore\Collection\Interfaces\Enumerable | EntityEntity[]
+ * @var $entityCollection \Untek\Core\Collection\Interfaces\Enumerable | EntityEntity[]
  */
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
-use ZnBundle\Eav\Symfony4\Widgets\DynamicForm\DynamicFormWidget;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\Web\TwBootstrap\Widgets\Tab\TabWidget;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Bundle\Eav\Symfony4\Widgets\DynamicForm\DynamicFormWidget;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\Web\TwBootstrap\Widgets\Tab\TabWidget;
 
 /** @var CsrfTokenManagerInterface $tokenManager */
 //$tokenManager = ContainerHelper::getContainer()->get(CsrfTokenManagerInterface::class);

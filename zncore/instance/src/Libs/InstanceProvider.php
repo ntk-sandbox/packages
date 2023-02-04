@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCore\Instance\Libs;
+namespace Untek\Core\Instance\Libs;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Instance\Exceptions\MethodNotFoundException;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Instance\Exceptions\MethodNotFoundException;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
 
 class InstanceProvider
 {

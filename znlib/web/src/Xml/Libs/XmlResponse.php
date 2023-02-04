@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\Xml\Libs;
+namespace Untek\Lib\Web\Xml\Libs;
 
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
 
 class XmlResponse extends Response
 {

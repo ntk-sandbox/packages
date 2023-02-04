@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
 use App\Organization\Domain\Enums\Rbac\OrganizationOrganizationPermissionEnum;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Security;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\ManagerRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\ManagerRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 
 class ManagerService implements ManagerServiceInterface
 {

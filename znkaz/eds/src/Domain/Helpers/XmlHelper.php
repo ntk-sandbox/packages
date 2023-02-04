@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Helpers;
+namespace Untek\Kaz\Eds\Domain\Helpers;
 
 use phpseclib\File\X509;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
 
-use ZnCore\Text\Helpers\TextHelper;
-use ZnCrypt\Base\Domain\Exceptions\CertificateExpiredException;
-use ZnCrypt\Base\Domain\Exceptions\FailCertificateSignatureException;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;
+use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
 
 class XmlHelper
 {

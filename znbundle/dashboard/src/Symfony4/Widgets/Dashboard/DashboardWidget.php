@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Widgets\Dashboard;
+namespace Untek\Bundle\Dashboard\Symfony4\Widgets\Dashboard;
 
-use ZnBundle\Dashboard\Symfony4\Widgets\Dashboard\Helpers\DashboardHelper;
+use Untek\Bundle\Dashboard\Symfony4\Widgets\Dashboard\Helpers\DashboardHelper;
 
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class DashboardWidget extends BaseWidget2
 {

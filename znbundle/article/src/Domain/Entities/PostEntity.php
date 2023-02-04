@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Entities;
+namespace Untek\Bundle\Article\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Constraints;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class PostEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

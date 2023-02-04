@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
-use ZnCore\Code\Exceptions\DeprecatedException;
-use ZnCore\Container\Helpers\ContainerHelper;
+use Untek\Core\Code\Exceptions\DeprecatedException;
+use Untek\Core\Container\Helpers\ContainerHelper;
 
 /**
  * Работа с устаревшим кодом

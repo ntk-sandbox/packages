@@ -7,7 +7,7 @@ return [
         'is_verify_eds' => false,
         'is_verify_auth' => false,
         'permission_name' => 'oFixtureImport',
-        'handler_class' => 'ZnFramework\Rpc\Rpc\Controllers\FixtureController',
+        'handler_class' => 'Untek\Framework\Rpc\Rpc\Controllers\FixtureController',
         'handler_method' => 'import',
         'status_id' => 100,
         'title' => null,

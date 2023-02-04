@@ -17,7 +17,7 @@
       "config/namespace.php"
     ],
     "psr-4": {
-      "ZnSandbox\\Sandbox\\": "src"
+      "Untek\\Sandbox\\Sandbox\\": "src"
     }
   }
 }

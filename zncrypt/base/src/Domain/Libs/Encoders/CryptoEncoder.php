@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Libs\Encoders;
+namespace Untek\Crypt\Base\Domain\Libs\Encoders;
 
-use ZnCrypt\Tunnel\Domain\Libs\Tunnel\JsonFormatter;
-use ZnCrypt\Tunnel\Domain\Libs\Tunnel\StringFormatter;
-use ZnCrypt\Tunnel\Domain\Libs\Tunnel\TokenFormatter;
+use Untek\Crypt\Tunnel\Domain\Libs\Tunnel\JsonFormatter;
+use Untek\Crypt\Tunnel\Domain\Libs\Tunnel\StringFormatter;
+use Untek\Crypt\Tunnel\Domain\Libs\Tunnel\TokenFormatter;
 use phpDocumentor\Reflection\Types\Object_;
 
 class CryptoEncoder

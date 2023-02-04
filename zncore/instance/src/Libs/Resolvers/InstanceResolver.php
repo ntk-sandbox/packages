@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\Instance\Libs\Resolvers;
+namespace Untek\Core\Instance\Libs\Resolvers;
 
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Instance\Exceptions\ClassNotFoundException;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Instance\Exceptions\ClassNotFoundException;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 class InstanceResolver
 {
@@ -43,7 +43,7 @@ class InstanceResolver
      * @param $definition
      * @param array $constructParams
      * @return object
-     * @throws \ZnCore\Contract\Common\Exceptions\InvalidConfigException
+     * @throws \Untek\Core\Contract\Common\Exceptions\InvalidConfigException
      */
     public function create($definition, array $constructParams = []): object
     {

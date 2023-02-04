@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Base;
+namespace Untek\Database\Migration\Domain\Base;
 
 use Illuminate\Database\Schema\Builder;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Eloquent\Domain\Traits\EloquentTrait;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 
 abstract class BaseMigration
 {

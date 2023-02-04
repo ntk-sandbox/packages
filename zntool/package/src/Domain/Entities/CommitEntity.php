@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Package\Domain\Entities;
+namespace Untek\Tool\Package\Domain\Entities;
 
 class CommitEntity
 {

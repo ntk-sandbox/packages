@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace ZnCore\Arr\Libs\ArrayValues;
+namespace Untek\Core\Arr\Libs\ArrayValues;
 
 /**
  * Object that represents the removal of array value while performing [[ArrayHelper::merge()]].
@@ -27,10 +27,10 @@ namespace ZnCore\Arr\Libs\ArrayValues;
  *     'ids' => [
  *         2,
  *     ],
- *     'validDomains' => new \ZnCore\Base\Legacy\Yii\Helpers\UnsetArrayValue(),
+ *     'validDomains' => new \Untek\Core\Base\Legacy\Yii\Helpers\UnsetArrayValue(),
  * ];
  *
- * $result = \ZnCore\Arr\Helpers\ArrayHelper::merge($array1, $array2);
+ * $result = \Untek\Core\Arr\Helpers\ArrayHelper::merge($array1, $array2);
  * ```
  *
  * The result will be

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Identity\Domain\Events;
+namespace Untek\User\Identity\Domain\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\EventDispatcher\Traits\EventSkipHandleTrait;
+use Untek\Core\EventDispatcher\Traits\EventSkipHandleTrait;
 
 class UserActionEvent extends Event
 {

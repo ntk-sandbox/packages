@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Forms;
+namespace Untek\Framework\Rpc\Domain\Forms;
 
 class RpcAuthByLoginForm extends BaseRpcAuthForm
 {

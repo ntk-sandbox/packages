@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Entities;
+namespace Untek\Bundle\Storage\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Storage\Domain\Libs\FileHash;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Components\Status\Enums\StatusEnum;
+use Untek\Bundle\Storage\Domain\Libs\FileHash;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
 
-//use ZnCore\DotEnv\Domain\Libs\DotEnvConfigInterface;
+//use Untek\Core\DotEnv\Domain\Libs\DotEnvConfigInterface;
 
 class FileEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface
 {

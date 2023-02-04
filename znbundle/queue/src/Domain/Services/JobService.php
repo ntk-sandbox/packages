@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Services;
+namespace Untek\Bundle\Queue\Domain\Services;
 
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
-use ZnBundle\Queue\Domain\Entities\JobEntity;
-use ZnBundle\Queue\Domain\Entities\TotalEntity;
-use ZnBundle\Queue\Domain\Enums\PriorityEnum;
-use ZnBundle\Queue\Domain\Interfaces\JobInterface;
-use ZnBundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
-use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnBundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
-use ZnBundle\Queue\Domain\Queries\NewTaskQuery;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\Components\Status\Enums\StatusEnum;
+use Untek\Bundle\Queue\Domain\Entities\JobEntity;
+use Untek\Bundle\Queue\Domain\Entities\TotalEntity;
+use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
+use Untek\Bundle\Queue\Domain\Interfaces\JobInterface;
+use Untek\Bundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
+use Untek\Bundle\Queue\Domain\Queries\NewTaskQuery;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 /**
  * @method JobEntity createEntity(array $attributes = [])
@@ -94,7 +94,7 @@ class JobService extends BaseService implements JobServiceInterface
         $jobCollection = $this->newTasks($channel);
 
 //        $query = new NewTaskQuery($channel);
-        /** @var \ZnCore\Collection\Interfaces\Enumerable | JobEntity[] $jobCollection */
+        /** @var \Untek\Core\Collection\Interfaces\Enumerable | JobEntity[] $jobCollection */
 //        $jobCollection = $this->getRepository()->findAll($query);
 
 

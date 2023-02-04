@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Helpers;
+namespace Untek\Database\Base\Domain\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\DotEnv\Domain\Libs\DotEnv;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
 
 class SqlHelper
 {

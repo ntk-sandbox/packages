@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
 use DomainException;
 use InvalidArgumentException;
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCrypt\Jwt\Domain\Dto\TokenDto;
-use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
-use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
-use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
-use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
-use ZnCrypt\Jwt\Domain\Enums\EncryptKeyTypeEnum;
-use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
-use ZnCrypt\Jwt\Domain\Exceptions\SignatureInvalidException;
-use ZnCrypt\Jwt\Domain\Strategies\Func\FuncContext;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Crypt\Jwt\Domain\Dto\TokenDto;
+use Untek\Crypt\Jwt\Domain\Entities\JwtHeaderEntity;
+use Untek\Crypt\Jwt\Domain\Entities\JwtProfileEntity;
+use Untek\Crypt\Jwt\Domain\Entities\KeyEntity;
+use Untek\Crypt\Base\Domain\Enums\EncryptFunctionEnum;
+use Untek\Crypt\Jwt\Domain\Enums\EncryptKeyTypeEnum;
+use Untek\Crypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use Untek\Crypt\Jwt\Domain\Exceptions\SignatureInvalidException;
+use Untek\Crypt\Jwt\Domain\Strategies\Func\FuncContext;
 
 class JwtEncodeHelper
 {

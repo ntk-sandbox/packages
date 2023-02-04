@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use ZnCore\Enum\Helpers\EnumHelper;
+use Untek\Core\Enum\Helpers\EnumHelper;
 
 class EnumFormatter extends BaseFormatter implements FormatterInterface
 {

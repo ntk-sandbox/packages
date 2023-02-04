@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Components\SoftDelete\Traits\Entity;
+namespace Untek\Domain\Components\SoftDelete\Traits\Entity;
 
-use ZnLib\Components\Status\Enums\StatusEnum;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 /**
  * @todo: перенести в отдельный пакет

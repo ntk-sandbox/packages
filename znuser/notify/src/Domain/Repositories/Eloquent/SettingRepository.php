@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Repositories\Eloquent;
+namespace Untek\User\Notify\Domain\Repositories\Eloquent;
 
-use ZnUser\Notify\Domain\Entities\SettingEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
-use ZnBundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Notify\Domain\Entities\SettingEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
+use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class SettingRepository extends BaseEloquentCrudRepository implements SettingRepositoryInterface
 {

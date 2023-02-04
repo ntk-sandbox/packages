@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Entities;
+namespace Untek\Framework\Wsdl\Domain\Entities;
 
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
 
 class ServiceEntity implements EntityIdInterface, ValidationByMetadataInterface, UniqueInterface
 {

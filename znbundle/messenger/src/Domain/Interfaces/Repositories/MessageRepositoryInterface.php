@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Messenger\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface MessageRepositoryInterface extends CrudRepositoryInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Libs\Rsa;
+namespace Untek\Crypt\Pki\Domain\Libs\Rsa;
 
-use ZnCrypt\Base\Domain\Libs\Encoders\EncoderInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Crypt\Base\Domain\Libs\Encoders\EncoderInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
 
 class RsaStoreRoot extends BaseRsaStore implements RsaStoreInterface

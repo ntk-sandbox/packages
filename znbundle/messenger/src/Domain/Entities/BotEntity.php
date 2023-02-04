@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Entities;
+namespace Untek\Bundle\Messenger\Domain\Entities;
 
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class BotEntity implements EntityIdInterface
 {

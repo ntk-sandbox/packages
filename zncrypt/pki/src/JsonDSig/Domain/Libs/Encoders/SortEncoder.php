@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders;
 
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\C14nSort;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\C14nSort;
 
 class SortEncoder extends BaseEncoder
 {

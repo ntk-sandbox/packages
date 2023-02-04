@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Libs;
+namespace Untek\User\Authentication\Domain\Libs;
 
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
-use ZnCrypt\Base\Domain\Services\PasswordService;
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidPasswordException;
+use Untek\Crypt\Base\Domain\Services\PasswordService;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
 
 class CredentialsPasswordValidator
 {

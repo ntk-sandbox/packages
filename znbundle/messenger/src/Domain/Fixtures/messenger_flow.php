@@ -1,6 +1,6 @@
 <?php
 
-use ZnDatabase\Fixture\Domain\Libs\FixtureGenerator;
+use Untek\Database\Fixture\Domain\Libs\FixtureGenerator;
 
 $fixture = new FixtureGenerator;
 $fixture->setCount(300);

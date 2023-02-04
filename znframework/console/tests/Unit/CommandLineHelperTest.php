@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Console\Tests\Unit;
+namespace Untek\Framework\Console\Tests\Unit;
 
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class CommandLineHelperTest extends BaseTest {
 

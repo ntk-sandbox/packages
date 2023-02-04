@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Repositories\Eloquent;
 
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 
 class InheritanceRepository extends BaseEloquentCrudRepository implements InheritanceRepositoryInterface
 {

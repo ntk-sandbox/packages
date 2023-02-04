@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Libs\Encoders;
+namespace Untek\Crypt\Base\Domain\Libs\Encoders;
 
 use phpseclib\Crypt\AES;
 use phpseclib\Crypt\Base;

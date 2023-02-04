@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Dev\Trace\Facades;
+namespace Untek\Tool\Dev\Trace\Facades;
 
 use axy\backtrace\helpers\Represent;
 use axy\backtrace\Trace;

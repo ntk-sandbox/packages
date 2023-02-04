@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcOpenApi\Domain\Subscribers;
+namespace Untek\Sandbox\Sandbox\RpcOpenApi\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcClientRequestEvent;
-use ZnSandbox\Sandbox\RpcOpenApi\Domain\Libs\OpenApi3\OpenApi3;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcClientRequestEvent;
+use Untek\Sandbox\Sandbox\RpcOpenApi\Domain\Libs\OpenApi3\OpenApi3;
 
 class GenerateOpenApiDocsSubscriber implements EventSubscriberInterface
 {

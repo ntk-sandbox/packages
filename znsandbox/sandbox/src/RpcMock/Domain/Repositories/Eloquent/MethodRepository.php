@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnDomain\Repository\Mappers\JsonMapper;
-use ZnSandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 
 class MethodRepository extends BaseEloquentCrudRepository
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Query\Enums;
+namespace Untek\Domain\Query\Enums;
 
 class OperatorEnum
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\View\Resources;
+namespace Untek\Lib\Web\View\Resources;
 
 abstract class BaseResource
 {

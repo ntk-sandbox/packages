@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Entities;
+namespace Untek\Lib\Components\ShellRobot\Domain\Entities;
 
 use GuzzleHttp\Psr7\Uri;
 

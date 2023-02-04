@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Strategies\Func\Handlers;
+namespace Untek\Crypt\Jwt\Domain\Strategies\Func\Handlers;
 
 interface HandlerInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Wsdl\Symfony\Web\Controllers;
+namespace Untek\Framework\Wsdl\Symfony\Web\Controllers;
 
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnLib\Web\Xml\Libs\XmlResponse;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Lib\Web\Xml\Libs\XmlResponse;
 
 class DefinitionController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Http\Enums;
+namespace Untek\Lib\Components\Http\Enums;
 
 /**
  * HTTP-статус ответа

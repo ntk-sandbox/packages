@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Test\Base;
+namespace Untek\Tool\Test\Base;
 
-use ZnTool\Test\Libs\FixtureLoader;
-use ZnTool\Test\Traits\AssertTrait;
+use Untek\Tool\Test\Libs\FixtureLoader;
+use Untek\Tool\Test\Traits\AssertTrait;
 
 abstract class BaseTest extends BaseTestCase
 {

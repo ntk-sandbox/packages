@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Libs\BundleLoaders;
+namespace Untek\User\Rbac\Domain\Libs\BundleLoaders;
 
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class RbacConfigLoader extends BaseLoader
 {

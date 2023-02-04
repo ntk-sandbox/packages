@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Package\Domain\Helpers;
+namespace Untek\Tool\Package\Domain\Helpers;
 
 class VersionHelper
 {

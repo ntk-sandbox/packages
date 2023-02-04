@@ -1,7 +1,7 @@
 <?php
 
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnSandbox\Sandbox\RpcMock\Domain\Subscribers\CreateRpcMockSubscriber;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Subscribers\CreateRpcMockSubscriber;
 
 return function (EventDispatcherConfiguratorInterface $configurator): void {
     if (getenv('RPC_MOCK_ENABLED')) {

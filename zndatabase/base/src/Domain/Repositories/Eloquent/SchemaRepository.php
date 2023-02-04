@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Repositories\Eloquent;
+namespace Untek\Database\Base\Domain\Repositories\Eloquent;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Eloquent\Domain\Traits\EloquentTrait;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;
 
 class SchemaRepository
 {
@@ -22,11 +22,11 @@ class SchemaRepository
         $driver = $this->getConnection()->getDriverName();
 
         if ($driver == DbDriverEnum::SQLITE) {
-            $this->dbRepository = new \ZnDatabase\Base\Domain\Repositories\Sqlite\DbRepository($capsule);
+            $this->dbRepository = new \Untek\Database\Base\Domain\Repositories\Sqlite\DbRepository($capsule);
         } elseif ($driver == DbDriverEnum::PGSQL) {
-            $this->dbRepository = new \ZnDatabase\Base\Domain\Repositories\Postgres\DbRepository($capsule);
+            $this->dbRepository = new \Untek\Database\Base\Domain\Repositories\Postgres\DbRepository($capsule);
         } else {
-            $this->dbRepository = new \ZnDatabase\Base\Domain\Repositories\Mysql\DbRepository($capsule);
+            $this->dbRepository = new \Untek\Database\Base\Domain\Repositories\Mysql\DbRepository($capsule);
         }
     }
 

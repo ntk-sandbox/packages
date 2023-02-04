@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Console\Tests\Unit;
+namespace Untek\Framework\Console\Tests\Unit;
 
 use Symfony\Component\Process\Process;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
-use ZnFramework\Console\Domain\Shell\FileSystemShell;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Framework\Console\Domain\Shell\FileSystemShell;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class CommandProcessTest extends BaseTest
 {

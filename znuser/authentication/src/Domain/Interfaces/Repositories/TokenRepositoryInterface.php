@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Interfaces\Repositories;
+namespace Untek\User\Authentication\Domain\Interfaces\Repositories;
 
-use ZnUser\Authentication\Domain\Entities\TokenEntity;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\User\Authentication\Domain\Entities\TokenEntity;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface TokenRepositoryInterface extends CrudRepositoryInterface
 {

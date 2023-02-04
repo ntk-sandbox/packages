@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Repositories\Eloquent;
+namespace Untek\Framework\Wsdl\Domain\Repositories\Eloquent;
 
-use ZnFramework\Wsdl\Domain\Entities\TransportEntity;
-use ZnFramework\Wsdl\Domain\Enums\StatusEnum;
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\TransportRepositoryInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Framework\Wsdl\Domain\Entities\TransportEntity;
+use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\TransportRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class TransportRepository extends BaseEloquentCrudRepository implements TransportRepositoryInterface
 {

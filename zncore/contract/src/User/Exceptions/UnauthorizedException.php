@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\Contract\User\Exceptions;
+namespace Untek\Core\Contract\User\Exceptions;
 
 //use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Exception;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnCore\Code\Helpers\DeprecateHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 
 DeprecateHelper::hardThrow();
 

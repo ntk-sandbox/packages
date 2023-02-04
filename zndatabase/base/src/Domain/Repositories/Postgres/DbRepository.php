@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Repositories\Postgres;
+namespace Untek\Database\Base\Domain\Repositories\Postgres;
 
 use App\Example\Controllers\ExampleEntity;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDatabase\Base\Domain\Entities\ColumnEntity;
-use ZnDatabase\Base\Domain\Entities\RelationEntity;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Database\Base\Domain\Entities\ColumnEntity;
+use Untek\Database\Base\Domain\Entities\RelationEntity;
+use Untek\Database\Base\Domain\Entities\TableEntity;
 
-class DbRepository extends \ZnDatabase\Base\Domain\Repositories\Base\DbRepository
+class DbRepository extends \Untek\Database\Base\Domain\Repositories\Base\DbRepository
 {
 
     public function allTables(): Enumerable

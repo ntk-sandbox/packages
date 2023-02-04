@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Services;
+namespace Untek\Bundle\Eav\Domain\Services;
 
-use ZnBundle\Eav\Domain\Entities\DynamicEntity;
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
-use ZnBundle\Eav\Domain\Forms\DynamicForm;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EntityRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
-use ZnBundle\Eav\Domain\Libs\TypeNormalizer;
-use ZnBundle\Eav\Domain\Libs\Validator;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Bundle\Eav\Domain\Forms\DynamicForm;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
+use Untek\Bundle\Eav\Domain\Libs\TypeNormalizer;
+use Untek\Bundle\Eav\Domain\Libs\Validator;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 class EntityService extends BaseCrudService implements EntityServiceInterface
 {

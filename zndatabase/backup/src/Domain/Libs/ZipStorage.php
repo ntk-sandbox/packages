@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Libs;
+namespace Untek\Database\Backup\Domain\Libs;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnDatabase\Backup\Domain\Interfaces\Storages\StorageInterface;
-use ZnLib\Components\Store\Store;
-use ZnLib\Components\Zip\Libs\Zip;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Database\Backup\Domain\Interfaces\Storages\StorageInterface;
+use Untek\Lib\Components\Store\Store;
+use Untek\Lib\Components\Zip\Libs\Zip;
 
 class ZipStorage extends BaseStorage implements StorageInterface
 {

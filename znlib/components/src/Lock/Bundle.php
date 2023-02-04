@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Lock;
+namespace Untek\Lib\Components\Lock;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

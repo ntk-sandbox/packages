@@ -2,6 +2,6 @@
 
 return [
 	'entities' => [
-		'ZnBundle\\Eav\\Domain\\Entities\\ValueEntity' => 'ZnBundle\\Eav\\Domain\\Interfaces\\Repositories\\ValueRepositoryInterface',
+		'Untek\\Bundle\\Eav\\Domain\\Entities\\ValueEntity' => 'Untek\\Bundle\\Eav\\Domain\\Interfaces\\Repositories\\ValueRepositoryInterface',
 	],
 ];

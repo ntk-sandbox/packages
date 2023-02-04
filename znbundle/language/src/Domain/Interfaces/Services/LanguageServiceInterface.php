@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Interfaces\Services;
+namespace Untek\Bundle\Language\Domain\Interfaces\Services;
 
-use ZnBundle\Language\Domain\Entities\LanguageEntity;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\Language\Domain\Entities\LanguageEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface LanguageServiceInterface extends CrudServiceInterface
 {

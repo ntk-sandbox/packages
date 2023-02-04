@@ -1,14 +1,14 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Repositories\Test;
+namespace Untek\Framework\Telegram\Domain\Repositories\Test;
 
-use ZnFramework\Telegram\Domain\Entities\BotEntity;
-use ZnFramework\Telegram\Domain\Entities\ResponseEntity;
-use ZnFramework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
-use ZnFramework\Telegram\Domain\Services\RequestService;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Components\Store\StoreFile;
+use Untek\Framework\Telegram\Domain\Entities\BotEntity;
+use Untek\Framework\Telegram\Domain\Entities\ResponseEntity;
+use Untek\Framework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
+use Untek\Framework\Telegram\Domain\Services\RequestService;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Components\Store\StoreFile;
 
 class ResponseRepository implements ResponseRepositoryInterface
 {

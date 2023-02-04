@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnUser\\Notify\\": "src",
-      "ZnUser\\Notify\\Tests\\": "tests"
+      "Untek\\User\\Notify\\": "src",
+      "Untek\\User\\Notify\\Tests\\": "tests"
     }
   }
 }

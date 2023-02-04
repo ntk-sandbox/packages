@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\Pattern\Strategy\Base;
+namespace Untek\Core\Pattern\Strategy\Base;
 
 /**
  * Class BaseStrategyContext
  *
- * @package ZnCore\Base\Scenario\Base
+ * @package Untek\Core\Base\Scenario\Base
  *
  * @property-read Object $strategyInstance
  */

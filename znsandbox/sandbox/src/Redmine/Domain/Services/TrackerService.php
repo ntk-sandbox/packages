@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Services;
 
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Services\TrackerServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\TrackerRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\TrackerEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Services\TrackerServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\TrackerRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\TrackerEntity;
 
 /**
  * @method TrackerRepositoryInterface getRepository()

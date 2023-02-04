@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Web\Menu\Domain\Repositories\File;
+namespace Untek\Lib\Web\Menu\Domain\Repositories\File;
 
-use ZnLib\Web\Menu\Domain\Entities\MenuEntity;
-use ZnLib\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface;
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Lib\Web\Menu\Domain\Entities\MenuEntity;
+use Untek\Lib\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
 
 class MenuRepository extends BaseFileCrudRepository implements MenuRepositoryInterface
 {

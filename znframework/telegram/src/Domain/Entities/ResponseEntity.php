@@ -1,10 +1,10 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Entities;
+namespace Untek\Framework\Telegram\Domain\Entities;
 
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class ResponseEntity
 {

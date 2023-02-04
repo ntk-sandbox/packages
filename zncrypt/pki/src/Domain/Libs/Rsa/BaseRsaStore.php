@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Libs\Rsa;
+namespace Untek\Crypt\Pki\Domain\Libs\Rsa;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCrypt\Pki\Domain\Entities\CertificateSubjectEntity;
-use ZnCrypt\Pki\Domain\Enums\CertificateFormatEnum;
-use ZnCrypt\Pki\Domain\Enums\RsaKeyFormatEnum;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;
+use Untek\Crypt\Pki\Domain\Enums\CertificateFormatEnum;
+use Untek\Crypt\Pki\Domain\Enums\RsaKeyFormatEnum;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 abstract class BaseRsaStore implements RsaStoreInterface
 {

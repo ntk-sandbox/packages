@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Test\Asserts;
+namespace Untek\Tool\Test\Asserts;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnTool\Test\Base\BaseTestCase;
-use ZnTool\Test\Helpers\RestHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Tool\Test\Base\BaseTestCase;
+use Untek\Tool\Test\Helpers\RestHelper;
 
 abstract class BaseAssert extends BaseTestCase
 {

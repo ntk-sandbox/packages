@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\Components\ArrayRepository\Base;
+namespace Untek\Domain\Components\ArrayRepository\Base;
 
-use ZnDomain\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
-use ZnDomain\Domain\Traits\ForgeQueryTrait;
-use ZnDomain\Repository\Base\BaseRepository;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
+use Untek\Domain\Domain\Traits\ForgeQueryTrait;
+use Untek\Domain\Repository\Base\BaseRepository;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 abstract class BaseArrayCrudRepository extends BaseRepository implements CrudRepositoryInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Pattern\Singleton;
+namespace Untek\Core\Pattern\Singleton;
 
 /**
  * Паттерн "Singleton"

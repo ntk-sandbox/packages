@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\I18n\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\I18n\Domain\Repositories\Eloquent;
 
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
-use ZnSandbox\Sandbox\I18n\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
+use Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
 
 class TranslateRepository extends BaseEloquentCrudRepository implements TranslateRepositoryInterface
 {
@@ -28,7 +28,7 @@ class TranslateRepository extends BaseEloquentCrudRepository implements Translat
                 'class' => OneToOneRelation::class,
                 'relationAttribute' => 'language_id',
                 'relationEntityAttribute' => 'language',
-                'foreignRepositoryClass' => \ZnBundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface::class
+                'foreignRepositoryClass' => \Untek\Bundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface::class
             ],
         ];
     }

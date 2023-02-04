@@ -3,15 +3,15 @@
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Security\Core\User\ChainUserProvider;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
-use ZnUser\Authentication\Domain\Enums\CredentialTypeEnum;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnUser\Authentication\Domain\Services\AuthService;
-use ZnUser\Authentication\Domain\UserProviders\ApiTokenUserProvider;
-use ZnUser\Authentication\Domain\UserProviders\CredentialsUserProvider;
+use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\User\Authentication\Domain\Services\AuthService;
+use Untek\User\Authentication\Domain\UserProviders\ApiTokenUserProvider;
+use Untek\User\Authentication\Domain\UserProviders\CredentialsUserProvider;
 
 return [
     'singletons' => [
-//        UserProviderInterface::class => \ZnUser\Authentication\Domain\UserProviders\ApiTokenUserProvider::class,
+//        UserProviderInterface::class => \Untek\User\Authentication\Domain\UserProviders\ApiTokenUserProvider::class,
         UserProviderInterface::class => function (ContainerInterface $container) {
             /** @var CredentialsUserProvider $credentialsUserProvider */
             $credentialsUserProvider = $container->get(CredentialsUserProvider::class);
@@ -35,7 +35,7 @@ return [
 //            $authService->addSubscriber(SymfonyAuthenticationIdentitySubscriber::class);
             /*$authService->addSubscriber(
                 [
-                    'class' => \ZnUser\Authentication\Domain\Subscribers\AuthenticationAttemptSubscriber::class,
+                    'class' => \Untek\User\Authentication\Domain\Subscribers\AuthenticationAttemptSubscriber::class,
                     'action' => 'authorization',
                     // todo: вынести в настройки
                     'attemptCount' => 3,

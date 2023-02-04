@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Pki\Tests\Unit\JsonDSig;
+namespace Untek\Crypt\Pki\Tests\Unit\JsonDSig;
 
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\C14n;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\C14n;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class C14nTest extends BaseTest {
     

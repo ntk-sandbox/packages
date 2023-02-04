@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Services;
+namespace Untek\Bundle\Notify\Domain\Services;
 
 use Psr\Container\ContainerInterface;
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Enums\ChannelEnum;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
-use ZnBundle\Notify\Domain\Jobs\SendEmailJob;
-use ZnBundle\Queue\Domain\Enums\PriorityEnum;
-use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Notify\Domain\Enums\ChannelEnum;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
+use Untek\Bundle\Notify\Domain\Jobs\SendEmailJob;
+use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
 
 class EmailService implements EmailServiceInterface
 {

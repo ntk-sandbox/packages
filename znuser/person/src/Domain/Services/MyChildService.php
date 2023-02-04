@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnUser\Person\Domain\Services;
+namespace Untek\User\Person\Domain\Services;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Person\Domain\Entities\InheritanceEntity;
-use ZnUser\Person\Domain\Entities\PersonEntity;
-use ZnUser\Person\Domain\Interfaces\Services\MyChildServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnUser\Person\Domain\Subscribers\MyChildSubscriber;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Person\Domain\Entities\InheritanceEntity;
+use Untek\User\Person\Domain\Entities\PersonEntity;
+use Untek\User\Person\Domain\Interfaces\Services\MyChildServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\User\Person\Domain\Subscribers\MyChildSubscriber;
 
 class MyChildService extends BaseCrudService implements MyChildServiceInterface
 {

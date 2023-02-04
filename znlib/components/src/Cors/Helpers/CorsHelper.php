@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Components\Cors\Helpers;
+namespace Untek\Lib\Components\Cors\Helpers;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnLib\Components\Http\Enums\HttpHeaderEnum;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
-use ZnLib\Components\Http\Enums\HttpServerEnum;
-use ZnCore\Enum\Helpers\EnumHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Lib\Components\Http\Enums\HttpServerEnum;
+use Untek\Core\Enum\Helpers\EnumHelper;
 
 DeprecateHelper::hardThrow();
 

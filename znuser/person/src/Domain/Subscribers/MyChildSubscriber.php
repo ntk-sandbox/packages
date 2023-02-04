@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Person\Domain\Subscribers;
+namespace Untek\User\Person\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnUser\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class MyChildSubscriber implements EventSubscriberInterface
 {

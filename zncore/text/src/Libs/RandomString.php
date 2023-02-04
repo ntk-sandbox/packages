@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Text\Libs;
+namespace Untek\Core\Text\Libs;
 
 use Symfony\Component\String\ByteString;
 

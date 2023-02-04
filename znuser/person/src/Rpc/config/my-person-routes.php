@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Person\Domain\Enums\Rbac\MyPersonPermissionEnum;
-use ZnUser\Person\Rpc\Controllers\MyPersonController;
+use Untek\User\Person\Domain\Enums\Rbac\MyPersonPermissionEnum;
+use Untek\User\Person\Rpc\Controllers\MyPersonController;
 
 return [
     [

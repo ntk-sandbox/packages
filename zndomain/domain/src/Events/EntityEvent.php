@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Domain\Events;
+namespace Untek\Domain\Domain\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\EventDispatcher\Traits\EventSkipHandleTrait;
+use Untek\Core\EventDispatcher\Traits\EventSkipHandleTrait;
 
 class EntityEvent extends Event
 {

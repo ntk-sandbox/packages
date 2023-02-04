@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Libs\Input;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Libs\Input;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

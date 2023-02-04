@@ -1,14 +1,14 @@
 <?php
 
-use ZnLib\Components\ShellRobot\Domain\Tasks\FileSystem\SetPermissionTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerInstallTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy\ConfigureDomainTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy\InitReleaseTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy\MakeLinkForCurrentReleaseTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Git\GitCloneTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnImportFixtureTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnInitTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnMigrateUpTask;
+use Untek\Lib\Components\ShellRobot\Domain\Tasks\FileSystem\SetPermissionTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerInstallTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy\ConfigureDomainTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy\InitReleaseTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy\MakeLinkForCurrentReleaseTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Git\GitCloneTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnImportFixtureTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnInitTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnMigrateUpTask;
 
 return [
     [
@@ -66,7 +66,7 @@ return [
         ],
     ],
     [
-        'class' => \ZnSandbox\Sandbox\Deployer\Domain\Tasks\Apache\ApacheRestartTask::class,
+        'class' => \Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Apache\ApacheRestartTask::class,
     ],
 ];
 

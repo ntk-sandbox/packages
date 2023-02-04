@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Service\Interfaces;
+namespace Untek\Domain\Service\Interfaces;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Domain\Interfaces\ReadAllInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Interfaces\ReadAllInterface;
 
 interface CrudServiceInterface extends ServiceDataProviderInterface, ServiceInterface, GetEntityClassInterface, ReadAllInterface, FindOneInterface, ModifyInterface
 {

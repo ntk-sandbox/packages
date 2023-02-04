@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDomain\Components\Author\Subscribers;
+namespace Untek\Domain\Components\Author\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class SetAuthorIdSubscriber implements EventSubscriberInterface
 {

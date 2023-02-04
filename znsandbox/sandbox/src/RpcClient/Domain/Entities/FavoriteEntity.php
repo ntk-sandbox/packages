@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Entities;
 
 use Symfony\Component\Uid\Uuid;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnLib\Components\ReadOnly\Helpers\ReadOnlyHelper;
-use ZnCore\Text\Helpers\StringHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Lib\Components\ReadOnly\Helpers\ReadOnlyHelper;
+use Untek\Core\Text\Helpers\StringHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class FavoriteEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

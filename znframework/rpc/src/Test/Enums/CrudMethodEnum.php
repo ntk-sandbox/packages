@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Test\Enums;
+namespace Untek\Framework\Rpc\Test\Enums;
 
 class CrudMethodEnum
 {

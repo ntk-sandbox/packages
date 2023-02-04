@@ -1,27 +1,27 @@
 <?php
 
-namespace ZnUser\Password\Domain\Services;
+namespace Untek\User\Password\Domain\Services;
 
-use ZnDomain\Validator\Helpers\UnprocessableHelper;
-use ZnUser\Password\Domain\Enums\UserSecurityNotifyTypeEnum;
-use ZnUser\Password\Domain\Forms\CreatePasswordForm;
-use ZnUser\Password\Domain\Forms\RequestActivationCodeForm;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordServiceInterface;
-use ZnUser\Password\Domain\Interfaces\Services\RestorePasswordServiceInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
-use ZnBundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
-use ZnUser\Confirm\Domain\Entities\ConfirmEntity;
-use ZnUser\Confirm\Domain\Enums\ConfirmActionEnum;
-use ZnUser\Authentication\Domain\Enums\CredentialTypeEnum;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnUser\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
+use Untek\Domain\Validator\Helpers\UnprocessableHelper;
+use Untek\User\Password\Domain\Enums\UserSecurityNotifyTypeEnum;
+use Untek\User\Password\Domain\Forms\CreatePasswordForm;
+use Untek\User\Password\Domain\Forms\RequestActivationCodeForm;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordServiceInterface;
+use Untek\User\Password\Domain\Interfaces\Services\RestorePasswordServiceInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
+use Untek\Bundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
+use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
+use Untek\User\Confirm\Domain\Enums\ConfirmActionEnum;
+use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\User\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 
 class RestorePasswordService implements RestorePasswordServiceInterface
 {

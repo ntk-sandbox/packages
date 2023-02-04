@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnTool\\Package\\": "src",
-      "ZnTool\\Package\\Tests\\": "tests"
+      "Untek\\Tool\\Package\\": "src",
+      "Untek\\Tool\\Package\\Tests\\": "tests"
     }
   }
 }

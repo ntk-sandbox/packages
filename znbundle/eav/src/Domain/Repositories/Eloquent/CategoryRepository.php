@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Entities\CategoryEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Eav\Domain\Entities\CategoryEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class CategoryRepository extends BaseEloquentCrudRepository implements CategoryRepositoryInterface
 {

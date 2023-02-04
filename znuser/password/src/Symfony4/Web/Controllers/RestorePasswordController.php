@@ -1,25 +1,25 @@
 <?php
 
-namespace ZnUser\Password\Symfony4\Web\Controllers;
+namespace Untek\User\Password\Symfony4\Web\Controllers;
 
-use ZnUser\Password\Domain\Forms\CreatePasswordForm;
-use ZnUser\Password\Domain\Forms\RequestActivationCodeForm;
-use ZnUser\Password\Domain\Interfaces\Services\RestorePasswordServiceInterface;
+use Untek\User\Password\Domain\Forms\CreatePasswordForm;
+use Untek\User\Password\Domain\Forms\RequestActivationCodeForm;
+use Untek\User\Password\Domain\Interfaces\Services\RestorePasswordServiceInterface;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Traits\ControllerFormTrait;
-use ZnUser\Password\Domain\Enums\Rbac\SecurityPermissionEnum;
-use ZnUser\Password\Symfony4\Web\Enums\WebUserSecurityEnum;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Traits\ControllerFormTrait;
+use Untek\User\Password\Domain\Enums\Rbac\SecurityPermissionEnum;
+use Untek\User\Password\Symfony4\Web\Enums\WebUserSecurityEnum;
 
 class RestorePasswordController extends BaseWebController implements ControllerAccessInterface
 {

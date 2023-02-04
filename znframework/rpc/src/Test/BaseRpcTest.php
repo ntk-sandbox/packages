@@ -1,26 +1,26 @@
 <?php
 
-namespace ZnFramework\Rpc\Test;
+namespace Untek\Framework\Rpc\Test;
 
-use ZnCore\Env\Enums\EnvEnum;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
-use ZnFramework\Rpc\Domain\Facades\RpcClientFacade;
-use ZnFramework\Rpc\Domain\Forms\BaseRpcAuthForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthByLoginForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthByTokenForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthGuestForm;
-use ZnFramework\Rpc\Domain\Libs\BaseRpcClient;
-use ZnFramework\Rpc\Domain\Libs\RpcAuthProvider;
-use ZnFramework\Rpc\Domain\Libs\RpcProvider;
-use ZnFramework\Rpc\Domain\Libs\TestRpcProvider;
-use ZnTool\Test\Base\BaseTestCase;
-use ZnTool\Test\Traits\AssertTrait;
-use ZnTool\Test\Traits\BaseUrlTrait;
-use ZnTool\Test\Traits\FixtureTrait;
-use ZnUser\Authentication\Domain\Fixtures\TokenTestFixture;
+use Untek\Core\Env\Enums\EnvEnum;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Facades\RpcClientFacade;
+use Untek\Framework\Rpc\Domain\Forms\BaseRpcAuthForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthByLoginForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthByTokenForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthGuestForm;
+use Untek\Framework\Rpc\Domain\Libs\BaseRpcClient;
+use Untek\Framework\Rpc\Domain\Libs\RpcAuthProvider;
+use Untek\Framework\Rpc\Domain\Libs\RpcProvider;
+use Untek\Framework\Rpc\Domain\Libs\TestRpcProvider;
+use Untek\Tool\Test\Base\BaseTestCase;
+use Untek\Tool\Test\Traits\AssertTrait;
+use Untek\Tool\Test\Traits\BaseUrlTrait;
+use Untek\Tool\Test\Traits\FixtureTrait;
+use Untek\User\Authentication\Domain\Fixtures\TokenTestFixture;
 
 abstract class BaseRpcTest extends BaseTestCase
 {

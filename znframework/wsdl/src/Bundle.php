@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Wsdl;
+namespace Untek\Framework\Wsdl;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

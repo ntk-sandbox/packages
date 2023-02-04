@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Geo\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface LocalityRepositoryInterface extends CrudRepositoryInterface
 {

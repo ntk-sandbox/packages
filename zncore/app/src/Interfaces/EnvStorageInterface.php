@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\App\Interfaces;
+namespace Untek\Core\App\Interfaces;
 
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 
 /**
  * Хранилище переменных окружения.

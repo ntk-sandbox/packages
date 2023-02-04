@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Exceptions;
+namespace Untek\Framework\Rpc\Domain\Exceptions;
 
 use Exception;
 use Throwable;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
 
 class ParamNotFoundException extends ServerErrorException
 {

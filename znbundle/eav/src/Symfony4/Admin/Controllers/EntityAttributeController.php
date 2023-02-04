@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnBundle\Eav\Symfony4\Admin\Controllers;
+namespace Untek\Bundle\Eav\Symfony4\Admin\Controllers;
 
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnBundle\Eav\Domain\Entities\EntityAttributeEntity;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityAttributeServiceInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnLib\Web\Controller\Base\BaseWebCrudController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Bundle\Eav\Domain\Entities\EntityAttributeEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityAttributeServiceInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class EntityAttributeController extends BaseWebCrudController implements ControllerAccessInterface
 {

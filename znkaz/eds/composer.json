@@ -13,8 +13,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnKaz\\Eds\\": "src",
-      "ZnKaz\\Eds\\Tests\\": "tests"
+      "Untek\\Kaz\\Eds\\": "src",
+      "Untek\\Kaz\\Eds\\Tests\\": "tests"
     }
   }
 }

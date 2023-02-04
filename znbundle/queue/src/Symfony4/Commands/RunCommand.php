@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Queue\Symfony4\Commands;
+namespace Untek\Bundle\Queue\Symfony4\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -9,13 +9,13 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Lock\Exception\LockAcquiringException;
 use Symfony\Component\Lock\LockFactory;
-use ZnBundle\Queue\Domain\Entities\TotalEntity;
-use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnBundle\Queue\Symfony4\Widgets\TotalQueueWidget;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnFramework\Console\Symfony4\Traits\IOTrait;
-use ZnFramework\Console\Symfony4\Traits\LockTrait;
-use ZnFramework\Console\Symfony4\Widgets\LogWidget;
+use Untek\Bundle\Queue\Domain\Entities\TotalEntity;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use Untek\Bundle\Queue\Symfony4\Widgets\TotalQueueWidget;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Framework\Console\Symfony4\Traits\IOTrait;
+use Untek\Framework\Console\Symfony4\Traits\LockTrait;
+use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
 
 class RunCommand extends Command
 {

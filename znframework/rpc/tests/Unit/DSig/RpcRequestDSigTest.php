@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnLib\Rest\Tests\Unit\DSig;
+namespace Untek\Lib\Rest\Tests\Unit\DSig;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCrypt\Base\Domain\Exceptions\FailSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\InvalidDigestException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnTool\Test\Traits\DataTestTrait;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Tool\Test\Traits\DataTestTrait;
 
 final class RpcRequestDSigTest extends BaseRpcDSigTest
 {

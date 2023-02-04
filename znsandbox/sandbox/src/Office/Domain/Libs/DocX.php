@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Office\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\Office\Domain\Libs;
 
 use App\Common\Base\BaseController;
-use ZnCore\Text\Helpers\TemplateHelper;
+use Untek\Core\Text\Helpers\TemplateHelper;
 
 class DocX
 {

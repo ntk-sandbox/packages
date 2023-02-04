@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Repositories\Base;
+namespace Untek\Database\Base\Domain\Repositories\Base;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Domain\Helpers\EntityHelper;
-use ZnDatabase\Base\Domain\Entities\ColumnEntity;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Eloquent\Domain\Traits\EloquentTrait;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Domain\Helpers\EntityHelper;
+use Untek\Database\Base\Domain\Entities\ColumnEntity;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;
 
 abstract class DbRepository
 {

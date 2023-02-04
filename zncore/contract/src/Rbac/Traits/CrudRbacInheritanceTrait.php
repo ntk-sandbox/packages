@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\Rbac\Traits;
+namespace Untek\Core\Contract\Rbac\Traits;
 
 /**
  * Наследование всех CRUD-полномочий в общее полномочие

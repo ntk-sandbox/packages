@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Article\Domain\Repositories\Eloquent;
 
-use ZnBundle\Article\Domain\Entities\PostEntity;
-use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use ZnBundle\Article\Domain\Repositories\Relations\PostRelation;
-use ZnDomain\Repository\Interfaces\RelationConfigInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
+use Untek\Bundle\Article\Domain\Entities\PostEntity;
+use Untek\Bundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use Untek\Bundle\Article\Domain\Repositories\Relations\PostRelation;
+use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 class PostRepository extends BaseEloquentCrudRepository implements PostRepositoryInterface
 {

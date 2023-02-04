@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\Tests\Unit;
+namespace Untek\Lib\Components\Tests\Unit;
 
-use ZnLib\Components\Byte\Helpers\ByteSizeFormatHelper;
-use ZnTool\Test\Asserts\DataAssert;
-use ZnTool\Test\Asserts\DataTestCase;
+use Untek\Lib\Components\Byte\Helpers\ByteSizeFormatHelper;
+use Untek\Tool\Test\Asserts\DataAssert;
+use Untek\Tool\Test\Asserts\DataTestCase;
 
 final class ByteSizeFormatTest extends DataTestCase
 {

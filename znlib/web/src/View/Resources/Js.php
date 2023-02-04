@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\View\Resources;
+namespace Untek\Lib\Web\View\Resources;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class Js extends BaseResource
 {

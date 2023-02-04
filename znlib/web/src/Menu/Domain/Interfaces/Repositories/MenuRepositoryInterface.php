@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\Menu\Domain\Interfaces\Repositories;
+namespace Untek\Lib\Web\Menu\Domain\Interfaces\Repositories;
 
-use ZnDomain\Domain\Interfaces\ReadAllInterface;
-use ZnDomain\Repository\Interfaces\FindOneInterface;
+use Untek\Domain\Domain\Interfaces\ReadAllInterface;
+use Untek\Domain\Repository\Interfaces\FindOneInterface;
 
 interface MenuRepositoryInterface extends ReadAllInterface, FindOneInterface
 {

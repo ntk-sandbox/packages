@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Interfaces;
+namespace Untek\Bundle\Article\Domain\Interfaces;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface TagPostRepositoryInterface extends CrudRepositoryInterface
 {

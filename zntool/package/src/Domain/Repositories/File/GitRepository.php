@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnTool\Package\Domain\Repositories\File;
+namespace Untek\Tool\Package\Domain\Repositories\File;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnTool\Package\Domain\Entities\CommitEntity;
-use ZnTool\Package\Domain\Entities\GitEntity;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Entities\TagEntity;
-use ZnTool\Package\Domain\Interfaces\Repositories\GitRepositoryInterface;
-use ZnTool\Package\Domain\Libs\GitShell;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Tool\Package\Domain\Entities\CommitEntity;
+use Untek\Tool\Package\Domain\Entities\GitEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Entities\TagEntity;
+use Untek\Tool\Package\Domain\Interfaces\Repositories\GitRepositoryInterface;
+use Untek\Tool\Package\Domain\Libs\GitShell;
 
 class GitRepository implements GitRepositoryInterface
 {

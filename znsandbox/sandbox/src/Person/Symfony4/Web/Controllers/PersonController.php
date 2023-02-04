@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person\Symfony4\Web\Controllers;
+namespace Untek\Sandbox\Sandbox\Person\Symfony4\Web\Controllers;
 
-use ZnSandbox\Sandbox\Person\Domain\Enums\Rbac\AppPersonPermissionEnum;
-use ZnSandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Sandbox\Sandbox\Person\Domain\Enums\Rbac\AppPersonPermissionEnum;
+use Untek\Sandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Traits\ControllerFormTrait;
-use ZnLib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Traits\ControllerFormTrait;
+use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class PersonController extends BaseWebController implements ControllerAccessInterface
 {

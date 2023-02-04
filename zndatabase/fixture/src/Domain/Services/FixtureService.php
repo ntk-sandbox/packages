@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnDatabase\Fixture\Domain\Services;
+namespace Untek\Database\Fixture\Domain\Services;
 
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Common\Collections\Expr\Comparison;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDatabase\Fixture\Domain\Entities\FixtureEntity;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
-use ZnDatabase\Fixture\Domain\Repositories\FileRepository;
-use ZnDatabase\Migration\Domain\Repositories\HistoryRepository;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Database\Fixture\Domain\Entities\FixtureEntity;
+use Untek\Database\Fixture\Domain\Repositories\DbRepository;
+use Untek\Database\Fixture\Domain\Repositories\FileRepository;
+use Untek\Database\Migration\Domain\Repositories\HistoryRepository;
 
 class FixtureService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\TalkBox\Commands;
+namespace Untek\Bundle\TalkBox\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

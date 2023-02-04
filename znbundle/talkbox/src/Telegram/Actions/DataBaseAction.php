@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnBundle\TalkBox\Telegram\Actions;
+namespace Untek\Bundle\TalkBox\Telegram\Actions;
 
-use ZnCore\Container\Libs\Container;
-use ZnBundle\TalkBox\Domain\Helpers\WordHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Container\Libs\Container;
+use Untek\Bundle\TalkBox\Domain\Helpers\WordHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnFramework\Telegram\Domain\Base\BaseAction;
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Helpers\MatchHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Framework\Telegram\Domain\Base\BaseAction;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Helpers\MatchHelper;
 
 class DataBaseAction extends BaseAction
 {
@@ -43,8 +43,8 @@ class DataBaseAction extends BaseAction
         $words = TextHelper::getWordArray($request);
 
         $container = ContainerHelper::getContainer();
-        /** @var \ZnBundle\TalkBox\Domain\Services\PredictService $predictService */
-        $predictService = $container->get(\ZnBundle\TalkBox\Domain\Services\PredictService::class);
+        /** @var \Untek\Bundle\TalkBox\Domain\Services\PredictService $predictService */
+        $predictService = $container->get(\Untek\Bundle\TalkBox\Domain\Services\PredictService::class);
         $answerText = $predictService->predict($words);
         return $answerText;
     }

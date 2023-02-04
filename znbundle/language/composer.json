@@ -17,8 +17,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\Language\\": "src",
-			"ZnBundle\\Language\\Tests\\": "tests"
+			"Untek\\Bundle\\Language\\": "src",
+			"Untek\\Bundle\\Language\\Tests\\": "tests"
 		}
 	}
 }

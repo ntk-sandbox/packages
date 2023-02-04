@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Dev\VarDumper;
+namespace Untek\Tool\Dev\VarDumper;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

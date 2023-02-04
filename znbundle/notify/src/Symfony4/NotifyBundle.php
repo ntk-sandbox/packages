@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Notify\Symfony4;
+namespace Untek\Bundle\Notify\Symfony4;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

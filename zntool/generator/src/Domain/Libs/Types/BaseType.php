@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\Types;
+namespace Untek\Tool\Generator\Domain\Libs\Types;
 
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Helpers\TypeAttributeHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Helpers\TypeAttributeHelper;
 
 abstract class BaseType
 {

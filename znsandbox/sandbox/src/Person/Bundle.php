@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person;
+namespace Untek\Sandbox\Sandbox\Person;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

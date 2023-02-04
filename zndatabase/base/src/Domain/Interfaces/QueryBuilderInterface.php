@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Interfaces;
+namespace Untek\Database\Base\Domain\Interfaces;
 
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Query;
 
 interface QueryBuilderInterface
 {

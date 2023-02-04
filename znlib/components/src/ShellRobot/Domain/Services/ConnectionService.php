@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Services;
+namespace Untek\Lib\Components\ShellRobot\Domain\Services;
 
-use ZnLib\Components\ShellRobot\Domain\Entities\HostEntity;
-use ZnLib\Components\ShellRobot\Domain\Enums\VarEnum;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Services\ConnectionServiceInterface;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\ConnectionRepositoryInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Entities\HostEntity;
+use Untek\Lib\Components\ShellRobot\Domain\Enums\VarEnum;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\ConnectionServiceInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\ConnectionRepositoryInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method ConnectionRepositoryInterface getRepository()

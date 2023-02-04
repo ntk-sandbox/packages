@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\File;
+namespace Untek\User\Rbac\Domain\Repositories\File;
 
 use Casbin\ManagementEnforcer;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Contracts\Cache\ItemInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnUser\Rbac\Domain\Entities\InheritanceEntity;
-use ZnUser\Rbac\Domain\Enums\RbacCacheEnum;
-use ZnUser\Rbac\Domain\Factories\EnforcerFactory;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\ManagerRepositoryInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
+use Untek\User\Rbac\Domain\Enums\RbacCacheEnum;
+use Untek\User\Rbac\Domain\Factories\EnforcerFactory;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\ManagerRepositoryInterface;
 
 class ManagerRepository implements ManagerRepositoryInterface
 {

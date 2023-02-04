@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Instance\Libs\Resolvers;
+namespace Untek\Core\Instance\Libs\Resolvers;
 
 use ArgumentResolver\Argument\ArgumentDescription;
 use ArgumentResolver\Argument\ArgumentDescriptions;
@@ -18,18 +18,18 @@ class ArgumentMetadataResolver
 {
 
     protected ?ContainerInterface $container = null;
-        protected ?\ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null;
+        protected ?\Untek\Core\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null;
         protected ?ConstraintResolver $constraintResolver = null;
 
     public function __construct(
         ?ContainerInterface $container = null,
-        ?\ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null,
+        ?\Untek\Core\Instance\Libs\Resolvers\ArgumentDescriptor $argumentDescriptor = null,
         ?ConstraintResolver $constraintResolver = null,
     ) {
         if($container) {
             $this->container = $container;
         }
-        $this->argumentDescriptor = $argumentDescriptor ?: new \ZnCore\Instance\Libs\Resolvers\ArgumentDescriptor();
+        $this->argumentDescriptor = $argumentDescriptor ?: new \Untek\Core\Instance\Libs\Resolvers\ArgumentDescriptor();
         $this->constraintResolver = $constraintResolver ?: new ConstraintResolver();
     }
 

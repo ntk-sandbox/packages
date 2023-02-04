@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Enums;
+namespace Untek\Crypt\Jwt\Domain\Enums;
 
-use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
-use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
+use Untek\Crypt\Base\Domain\Enums\EncryptAlgorithmEnum;
+use Untek\Crypt\Base\Domain\Enums\EncryptFunctionEnum;
 
 class JwtAlgorithmEnum
 {

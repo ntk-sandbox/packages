@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Registration\Tests\Rpc\User;
+namespace Untek\User\Registration\Tests\Rpc\User;
 
-use ZnBundle\Notify\Test\Helpers\EmailHelper;
-use ZnFramework\Rpc\Test\BaseRpcTest;
+use Untek\Bundle\Notify\Test\Helpers\EmailHelper;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
 
 class RegistrationTest extends BaseRpcTest
 {

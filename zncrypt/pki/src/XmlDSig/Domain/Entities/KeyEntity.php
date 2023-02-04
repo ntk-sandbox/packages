@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\XmlDSig\Domain\Entities;
+namespace Untek\Crypt\Pki\XmlDSig\Domain\Entities;
 
 class KeyEntity
 {

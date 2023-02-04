@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\QrBox\Entities;
+namespace Untek\Lib\QrBox\Entities;
 
 use DateTime;
 

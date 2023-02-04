@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use ZnLib\Init\Domain\Libs\InitConsoleApp;
+use Untek\Lib\Init\Domain\Libs\InitConsoleApp;
 
-\ZnCore\Code\Helpers\DeprecateHelper::hardThrow('use vendor/ntk-sandbox/packages/znframework/console/bin');
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow('use vendor/ntk-sandbox/packages/znframework/console/bin');

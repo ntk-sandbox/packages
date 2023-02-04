@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\File;
+namespace Untek\User\Rbac\Domain\Repositories\File;
 
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
-use ZnUser\Rbac\Domain\Entities\InheritanceEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
 
 class InheritanceRepository extends BaseFileCrudRepository implements InheritanceRepositoryInterface
 {

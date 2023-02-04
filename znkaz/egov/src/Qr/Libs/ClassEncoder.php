@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Libs;
+namespace Untek\Kaz\Egov\Qr\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Libs\Collection;
 
 class ClassEncoder
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Facades;
+namespace Untek\Database\Base\Domain\Facades;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnvMap;
-use ZnDatabase\Base\Domain\Helpers\ConfigHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\DotEnv\Domain\Libs\DotEnvMap;
+use Untek\Database\Base\Domain\Helpers\ConfigHelper;
 
 class DbFacade
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Enums;
+namespace Untek\Database\Base\Domain\Enums;
 
 class DbDriverEnum
 {

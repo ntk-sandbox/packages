@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Interfaces\Storages;
+namespace Untek\Database\Backup\Domain\Interfaces\Storages;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 interface StorageInterface
 {

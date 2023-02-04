@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnUser\Person\Rpc\Controllers;
+namespace Untek\User\Person\Rpc\Controllers;
 
-use ZnUser\Person\Domain\Entities\PersonStrictEntity;
+use Untek\User\Person\Domain\Entities\PersonStrictEntity;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnFramework\Rpc\Rpc\Serializers\SerializerInterface;
-use ZnUser\Person\Domain\Interfaces\Services\ChildServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnUser\Person\Rpc\Serializers\MyChildSerializer;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Rpc\Serializers\SerializerInterface;
+use Untek\User\Person\Domain\Interfaces\Services\ChildServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\User\Person\Rpc\Serializers\MyChildSerializer;
 
 class ChildController extends BaseCrudRpcController
 {

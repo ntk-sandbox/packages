@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Notify\Domain\Entities\SettingEntity;
-use ZnUser\Notify\Domain\Interfaces\Services\SettingServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Notify\Domain\Entities\SettingEntity;
+use Untek\User\Notify\Domain\Interfaces\Services\SettingServiceInterface;
 
 class SettingService /*extends BaseCrudService*/
     implements SettingServiceInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Password\Domain\Enums;
+namespace Untek\User\Password\Domain\Enums;
 
 class UserActionEnum
 {

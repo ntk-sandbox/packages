@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Tool\Commands;
+namespace Untek\Database\Tool\Commands;
 
-use ZnDatabase\Fixture\Domain\Services\FixtureService;
+use Untek\Database\Fixture\Domain\Services\FixtureService;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;

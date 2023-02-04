@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
 
 class EntityEntity extends ClassEntity implements ValidationByMetadataInterface, UniqueInterface
 {

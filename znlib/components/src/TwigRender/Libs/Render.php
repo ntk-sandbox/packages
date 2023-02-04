@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\TwigRender\Libs;
+namespace Untek\Lib\Components\TwigRender\Libs;
 
 use Twig\Environment;
 use Twig\Loader\ArrayLoader;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
 
 class Render
 {

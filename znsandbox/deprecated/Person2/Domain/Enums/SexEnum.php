@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Enums;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Enums;
 
 class SexEnum
 {

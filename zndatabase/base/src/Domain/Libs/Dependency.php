@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Libs;
+namespace Untek\Database\Base\Domain\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 
 class Dependency
 {

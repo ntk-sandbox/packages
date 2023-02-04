@@ -2,7 +2,7 @@
 
 return [
     'entities' => [
-        'ZnUser\Authentication\Domain\Entities\CredentialEntity' => 'ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface',
-        'ZnUser\Authentication\Domain\Entities\TokenEntity' => 'ZnUser\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface',
+        'Untek\User\Authentication\Domain\Entities\CredentialEntity' => 'Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface',
+        'Untek\User\Authentication\Domain\Entities\TokenEntity' => 'Untek\User\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface',
     ],
 ];

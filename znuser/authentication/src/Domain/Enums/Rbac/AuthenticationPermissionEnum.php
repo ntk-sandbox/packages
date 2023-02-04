@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Enums\Rbac;
+namespace Untek\User\Authentication\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class AuthenticationPermissionEnum implements GetLabelsInterface
 {

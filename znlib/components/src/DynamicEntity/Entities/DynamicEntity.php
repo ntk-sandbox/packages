@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Components\DynamicEntity\Entities;
+namespace Untek\Lib\Components\DynamicEntity\Entities;
 
 use Exception;
-use ZnLib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
-use ZnFramework\Telegram\Domain\Facades\Bot;
+use Untek\Lib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
+use Untek\Framework\Telegram\Domain\Facades\Bot;
 
 class DynamicEntity implements ValidateDynamicEntityInterface, EntityIdInterface, DynamicEntityAttributesInterface
 {

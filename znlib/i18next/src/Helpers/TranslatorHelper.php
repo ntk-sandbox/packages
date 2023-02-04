@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\I18Next\Helpers;
+namespace Untek\Lib\I18Next\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class TranslatorHelper
 {

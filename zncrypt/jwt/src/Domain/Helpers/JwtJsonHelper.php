@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
 use DomainException;
 

@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnUser\Identity\Domain\Services;
+namespace Untek\User\Identity\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
-use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * Class IdentityService
- * @package ZnBundle\User\Domain\Services
+ * @package Untek\Bundle\User\Domain\Services
  * @method IdentityRepositoryInterface getRepository()
  */
 class IdentityService extends BaseCrudService implements IdentityServiceInterface

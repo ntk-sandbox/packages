@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Base;
+namespace Untek\Lib\Components\ShellRobot\Domain\Base;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnFramework\Console\Domain\Base\BaseShellNew;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Framework\Console\Domain\Base\BaseShellNew;
 
 abstract class BaseShellDriver
 {

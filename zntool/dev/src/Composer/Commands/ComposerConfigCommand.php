@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnTool\Dev\Composer\Commands;
+namespace Untek\Tool\Dev\Composer\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnTool\Dev\Composer\Domain\Interfaces\Services\ConfigServiceInterface;
-use ZnTool\Package\Domain\Entities\ConfigEntity;
-use ZnTool\Package\Domain\Helpers\ComposerConfigHelper;
-use ZnTool\Package\Domain\Interfaces\Services\GitServiceInterface;
-use ZnTool\Package\Domain\Libs\Depend;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Tool\Dev\Composer\Domain\Interfaces\Services\ConfigServiceInterface;
+use Untek\Tool\Package\Domain\Entities\ConfigEntity;
+use Untek\Tool\Package\Domain\Helpers\ComposerConfigHelper;
+use Untek\Tool\Package\Domain\Interfaces\Services\GitServiceInterface;
+use Untek\Tool\Package\Domain\Libs\Depend;
 
 class ComposerConfigCommand extends Command
 {

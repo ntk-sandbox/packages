@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Scenarios\Input;
+namespace Untek\Database\Migration\Domain\Scenarios\Input;
 
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;

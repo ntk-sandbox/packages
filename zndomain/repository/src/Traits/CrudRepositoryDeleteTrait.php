@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Repository\Traits;
+namespace Untek\Domain\Repository\Traits;
 
-use ZnDomain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Enums\EventEnum;
 
 trait CrudRepositoryDeleteTrait
 {

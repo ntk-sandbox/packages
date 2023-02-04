@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Interfaces\Repositories;
+namespace Untek\Database\Backup\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface DumpRepositoryInterface extends CrudRepositoryInterface
 {

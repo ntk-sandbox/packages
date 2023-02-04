@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\EntityManager\Interfaces;
+namespace Untek\Domain\EntityManager\Interfaces;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Repository\Interfaces\FindOneUniqueInterface;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Repository\Interfaces\FindOneUniqueInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 interface EntityManagerInterface extends TransactionInterface, FindOneUniqueInterface
 {

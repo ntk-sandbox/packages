@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Base;
+namespace Untek\Framework\Console\Domain\Base;
 
 use Symfony\Component\Process\Process;
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
 
 abstract class BaseShellNew
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Rpc\Tests\Unit;
+namespace Untek\Lib\Rpc\Tests\Unit;
 
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
-use ZnFramework\Rpc\Test\BaseRpcTest;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
 
 class RpcContractTest extends BaseRpcTest
 {

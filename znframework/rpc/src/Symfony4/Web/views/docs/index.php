@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @var $docs \ZnCore\Collection\Interfaces\Enumerable | DocEntity[]
+ * @var $docs \Untek\Core\Collection\Interfaces\Enumerable | DocEntity[]
  */
 
-use ZnFramework\Rpc\Domain\Entities\DocEntity;
+use Untek\Framework\Rpc\Domain\Entities\DocEntity;
 
 ?>
 

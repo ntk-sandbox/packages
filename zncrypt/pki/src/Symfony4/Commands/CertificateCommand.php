@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnCrypt\Pki\Symfony4\Commands;
+namespace Untek\Crypt\Pki\Symfony4\Commands;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnCrypt\Base\Domain\Entities\CertificateInfoEntity;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
-use ZnCrypt\Pki\Domain\Services\CertificateService;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
+use Untek\Crypt\Base\Domain\Entities\CertificateInfoEntity;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
+use Untek\Crypt\Pki\Domain\Services\CertificateService;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 
 class CertificateCommand extends BaseGeneratorCommand
 {

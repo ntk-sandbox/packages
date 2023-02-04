@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnCore\App\Base;
+namespace Untek\Core\App\Base;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\App\Enums\AppEventEnum;
-use ZnCore\App\Events\AppEvent;
-use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\App\Interfaces\EnvironmentInterface;
-use ZnCore\App\Libs\ZnCore;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Bundle\Libs\BundleLoader;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Traits\ContainerAttributeTrait;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Core\App\Enums\AppEventEnum;
+use Untek\Core\App\Events\AppEvent;
+use Untek\Core\App\Interfaces\AppInterface;
+use Untek\Core\App\Interfaces\EnvironmentInterface;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Libs\BundleLoader;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Traits\ContainerAttributeTrait;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
 
 /**
  * Абстрактный класс инициализатора приложения.

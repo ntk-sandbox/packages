@@ -1,7 +1,7 @@
 <?php
 
-use ZnFramework\Rpc\Domain\Enums\Rbac\RpcSettingsPermissionEnum;
-use ZnFramework\Rpc\Rpc\Controllers\SettingsController;
+use Untek\Framework\Rpc\Domain\Enums\Rbac\RpcSettingsPermissionEnum;
+use Untek\Framework\Rpc\Rpc\Controllers\SettingsController;
 
 return [
     [

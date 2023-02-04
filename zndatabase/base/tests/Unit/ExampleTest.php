@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDadabase\Base\Tests\Unit;
+namespace Untek\Dadabase\Base\Tests\Unit;
 
-use ZnTool\Test\Base\BaseTest;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class ExampleTest extends BaseTest {
 

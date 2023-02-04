@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Libs;
+namespace Untek\Kaz\Egov\Qr\Libs;
 
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnKaz\Egov\Qr\Encoders\EncoderInterface;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Kaz\Egov\Qr\Encoders\EncoderInterface;
 
 class CollectionEncoder implements EncoderInterface
 {

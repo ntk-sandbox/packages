@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Subscribers;
+namespace Untek\Bundle\Queue\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnCore\App\Enums\AppEventEnum;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnFramework\Console\Domain\Libs\ZnShell;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use Untek\Core\App\Enums\AppEventEnum;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Framework\Console\Domain\Libs\ZnShell;
 
 /**
  * Автозапуск CRON-задач при каждом запросе.

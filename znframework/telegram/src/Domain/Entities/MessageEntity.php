@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Entities;
+namespace Untek\Framework\Telegram\Domain\Entities;
 
 
 class MessageEntity

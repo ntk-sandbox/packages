@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Services;
+namespace Untek\Crypt\Jwt\Domain\Services;
 
-use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
-use ZnCrypt\Jwt\Domain\Helpers\JwtEncodeHelper;
-use ZnCrypt\Jwt\Domain\Helpers\JwtHelper;
-use ZnCrypt\Jwt\Domain\Helpers\JwtModelHelper;
-use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
-use ZnCrypt\Jwt\Domain\Interfaces\Services\JwtServiceInterface;
-use ZnCrypt\Jwt\Domain\Libs\ProfileContainer;
+use Untek\Crypt\Jwt\Domain\Entities\JwtEntity;
+use Untek\Crypt\Jwt\Domain\Helpers\JwtEncodeHelper;
+use Untek\Crypt\Jwt\Domain\Helpers\JwtHelper;
+use Untek\Crypt\Jwt\Domain\Helpers\JwtModelHelper;
+use Untek\Crypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
+use Untek\Crypt\Jwt\Domain\Interfaces\Services\JwtServiceInterface;
+use Untek\Crypt\Jwt\Domain\Libs\ProfileContainer;
 
 class JwtService implements JwtServiceInterface
 {

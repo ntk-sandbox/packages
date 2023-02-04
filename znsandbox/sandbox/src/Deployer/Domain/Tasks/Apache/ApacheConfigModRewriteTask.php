@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Apache;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Apache;
 
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\ApacheShell;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\ApacheShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
 
 class ApacheConfigModRewriteTask extends BaseShell implements TaskInterface
 {

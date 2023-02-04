@@ -1,29 +1,29 @@
 <?php
 
 /**
- * @var $this \ZnLib\Web\View\Libs\View
+ * @var $this \Untek\Lib\Web\View\Libs\View
  * @var $formView FormView|AbstractType[]
  * @var $dataProvider DataProvider
- * @var $collection \ZnCore\Collection\Interfaces\Enumerable | \ZnSandbox\Sandbox\Apache\Domain\Entities\ServerEntity[]
+ * @var $collection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity[]
  * @var $baseUri string
  */
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnLib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Lib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 
 $attributes = [
     [
         'label' => 'ServerName',
         'attributeName' => 'ServerName',
         'format' => 'html',
-        'value' => function (\ZnSandbox\Sandbox\Apache\Domain\Entities\ServerEntity $serverEntity) {
-            return \ZnLib\Web\Html\Helpers\Html::a($serverEntity->getServerName(), 'http://' . $serverEntity->getServerName(), ['target' => '_blank']);
+        'value' => function (\Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity $serverEntity) {
+            return \Untek\Lib\Web\Html\Helpers\Html::a($serverEntity->getServerName(), 'http://' . $serverEntity->getServerName(), ['target' => '_blank']);
         },
     ],
     [

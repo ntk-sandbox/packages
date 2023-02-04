@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Libs\Loaders\BundleLoaders;
+namespace Untek\Framework\Telegram\Domain\Libs\Loaders\BundleLoaders;
 
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class TelegramRoutesLoader extends BaseLoader
 {

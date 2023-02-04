@@ -1,8 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot;
+namespace Untek\Lib\Components\ShellRobot;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Lib\Components\ShellRobot\Commands\ShellRobotTaskCommand;
 
 class Bundle extends BaseBundle
 {
@@ -12,11 +14,16 @@ class Bundle extends BaseBundle
         return 'shellRobot';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnLib\Components\ShellRobot\Commands',
+            'Untek\Lib\Components\ShellRobot\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(ShellRobotTaskCommand::class);
     }
 
     public function container(): array

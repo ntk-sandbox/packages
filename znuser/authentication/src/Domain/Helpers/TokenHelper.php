@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Helpers;
+namespace Untek\User\Authentication\Domain\Helpers;
 
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
 
 class TokenHelper
 {

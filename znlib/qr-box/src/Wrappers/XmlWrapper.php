@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\QrBox\Wrappers;
+namespace Untek\Lib\QrBox\Wrappers;
 
 
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnLib\QrBox\Entities\BarCodeEntity;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\QrBox\Entities\BarCodeEntity;
 use DateTime;
 
 class XmlWrapper extends BaseWrapper implements WrapperInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Init\Domain\Interfaces\Repositories;
+namespace Untek\Lib\Init\Domain\Interfaces\Repositories;
 
 interface RequirementRepositoryInterface
 {

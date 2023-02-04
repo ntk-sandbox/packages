@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\WebApp;
+namespace Untek\Lib\Web\WebApp;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {
@@ -15,9 +15,9 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            \ZnLib\Web\Form\Bundle::class,
-            \ZnLib\Web\View\Bundle::class,
-            \ZnLib\Web\Layout\Bundle::class,
+            \Untek\Lib\Web\Form\Bundle::class,
+            \Untek\Lib\Web\View\Bundle::class,
+            \Untek\Lib\Web\Layout\Bundle::class,
         ];
     }
 

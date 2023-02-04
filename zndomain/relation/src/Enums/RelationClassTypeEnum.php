@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Relation\Enums;
+namespace Untek\Domain\Relation\Enums;
 
 class RelationClassTypeEnum
 {

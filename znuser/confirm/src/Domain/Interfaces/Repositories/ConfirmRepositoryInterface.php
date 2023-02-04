@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Confirm\Domain\Interfaces\Repositories;
+namespace Untek\User\Confirm\Domain\Interfaces\Repositories;
 
-use ZnUser\Confirm\Domain\Entities\ConfirmEntity;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ConfirmRepositoryInterface extends CrudRepositoryInterface
 {

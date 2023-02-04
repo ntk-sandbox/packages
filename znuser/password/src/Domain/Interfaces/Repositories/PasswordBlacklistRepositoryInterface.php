@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Password\Domain\Interfaces\Repositories;
+namespace Untek\User\Password\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface PasswordBlacklistRepositoryInterface extends CrudRepositoryInterface
 {

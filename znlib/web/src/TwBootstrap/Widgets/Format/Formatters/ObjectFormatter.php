@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class ObjectFormatter extends BaseFormatter implements FormatterInterface
 {

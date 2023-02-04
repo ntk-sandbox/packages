@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Repositories\Shell;
+namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\StringHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShellDriver;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\StringHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShellDriver;
 
 class PackageShell extends BaseShellDriver
 {

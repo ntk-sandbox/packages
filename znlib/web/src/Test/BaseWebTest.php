@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Test;
+namespace Untek\Lib\Web\Test;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\BrowserKit\AbstractBrowser;
@@ -8,9 +8,9 @@ use Symfony\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
-use ZnSandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
-use ZnTool\Test\Traits\BaseUrlTrait;
-use ZnTool\Test\Traits\FixtureTrait;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
+use Untek\Tool\Test\Traits\BaseUrlTrait;
+use Untek\Tool\Test\Traits\FixtureTrait;
 
 abstract class BaseWebTest extends TestCase
 {

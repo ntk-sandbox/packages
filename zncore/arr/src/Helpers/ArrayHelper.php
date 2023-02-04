@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Arr\Helpers;
+namespace Untek\Core\Arr\Helpers;
 
 use ArrayAccess;
 use Closure;

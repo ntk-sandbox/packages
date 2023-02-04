@@ -1,13 +1,13 @@
 <?php
 
 use Fruitcake\Cors\CorsService;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
 
 return [
     'singletons' => [
         CorsService::class => function (\Psr\Container\ContainerInterface $container) {
-            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+            /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
             $options = [];
             if ($envStorage->get('CORS_ALLOW_ORIGINS')) {

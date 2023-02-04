@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Package\Domain\Entities;
+namespace Untek\Tool\Package\Domain\Entities;
 
-use ZnTool\Package\Domain\Enums\StatusEnum;
+use Untek\Tool\Package\Domain\Enums\StatusEnum;
 
 class ChangedEntity
 {

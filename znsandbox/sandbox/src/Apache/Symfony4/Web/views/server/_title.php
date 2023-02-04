@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \ZnSandbox\Sandbox\Apache\Domain\Entities\ServerEntity $serverEntity
+ * @var \Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity $serverEntity
  */
 ?>
 

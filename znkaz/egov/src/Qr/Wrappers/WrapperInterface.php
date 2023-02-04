@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Wrappers;
+namespace Untek\Kaz\Egov\Qr\Wrappers;
 
-use ZnKaz\Egov\Qr\Entities\BarCodeEntity;
+use Untek\Kaz\Egov\Qr\Entities\BarCodeEntity;
 
 interface WrapperInterface
 {

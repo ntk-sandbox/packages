@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Helpers;
+namespace Untek\Framework\Rpc\Domain\Helpers;
 
 use Illuminate\Database\Query\Builder;
-use ZnDomain\Query\Entities\Join;
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Join;
+use Untek\Domain\Query\Entities\Query;
 
 class RpcQueryHelper
 {

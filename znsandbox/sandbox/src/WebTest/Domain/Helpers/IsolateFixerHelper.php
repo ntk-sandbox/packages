@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Helpers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Components\Http\Helpers\SymfonyHttpResponseHelper;
+use Untek\Lib\Components\Http\Helpers\SymfonyHttpResponseHelper;
 
 class IsolateFixerHelper
 {

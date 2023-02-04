@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Identity\Domain\Interfaces\Services;
+namespace Untek\User\Identity\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface IdentityServiceInterface extends CrudServiceInterface
 {

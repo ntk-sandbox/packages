@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Package\Domain\Enums;
+namespace Untek\Tool\Package\Domain\Enums;
 
 class StatusEnum
 {

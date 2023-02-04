@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Package\Domain\Libs\Deps;
+namespace Untek\Tool\Package\Domain\Libs\Deps;
 
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 class PhpClassNameParser
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Person\Domain\Services;
+namespace Untek\Bundle\Person\Domain\Services;
 
-use ZnBundle\Person\Domain\Entities\ContactEntity;
-use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
-use ZnBundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Person\Domain\Entities\ContactEntity;
+use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
+use Untek\Bundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Entities\Query;
 
 class ContactService extends BaseCrudService implements ContactServiceInterface
 {

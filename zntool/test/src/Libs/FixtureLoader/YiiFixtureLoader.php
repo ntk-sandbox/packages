@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Test\Libs\FixtureLoader;
+namespace Untek\Tool\Test\Libs\FixtureLoader;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Instance\Helpers\InstanceHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Instance\Helpers\InstanceHelper;
 use yii\test\Fixture;
 
 DeprecateHelper::hardThrow();

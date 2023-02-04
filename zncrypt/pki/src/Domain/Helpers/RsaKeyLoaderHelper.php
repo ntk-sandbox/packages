@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Helpers;
+namespace Untek\Crypt\Pki\Domain\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreRam;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreRam;
 
 class RsaKeyLoaderHelper
 {

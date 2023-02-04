@@ -1,7 +1,7 @@
 <?php
 
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnLib\Components\Cors\Subscribers\CorsSubscriber;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Lib\Components\Cors\Subscribers\CorsSubscriber;
 
 return function(EventDispatcherConfiguratorInterface $configurator): void
 {

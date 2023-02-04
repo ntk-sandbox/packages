@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Test\Libs;
+namespace Untek\Tool\Test\Libs;
 
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\EntityManager\Libs\EntityManager;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
-use ZnDatabase\Fixture\Domain\Repositories\FileRepository;
-use ZnDatabase\Fixture\Domain\Services\FixtureService;
-use ZnTool\Test\Libs\FixtureLoader\FixtureLoaderInterface;
-/*use ZnTool\Test\Libs\FixtureLoader\YiiFixtureLoader;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\EntityManager\Libs\EntityManager;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Fixture\Domain\Repositories\DbRepository;
+use Untek\Database\Fixture\Domain\Repositories\FileRepository;
+use Untek\Database\Fixture\Domain\Services\FixtureService;
+use Untek\Tool\Test\Libs\FixtureLoader\FixtureLoaderInterface;
+/*use Untek\Tool\Test\Libs\FixtureLoader\YiiFixtureLoader;
 use yii\test\Fixture;*/
 
 class FixtureLoader

@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\Components\FileRepository\Base;
+namespace Untek\Domain\Components\FileRepository\Base;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
-use ZnLib\Components\Store\StoreFile;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Lib\Components\Store\StoreFile;
 
 abstract class BaseFileRepository implements RepositoryInterface
 {

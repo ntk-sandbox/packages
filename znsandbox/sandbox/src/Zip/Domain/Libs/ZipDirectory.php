@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Zip\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\Zip\Domain\Libs;
 
 use Exception;
 use Symfony\Component\Uid\Uuid;
 use ZipArchive;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
 
 class ZipDirectory
 {

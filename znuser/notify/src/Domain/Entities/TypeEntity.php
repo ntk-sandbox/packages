@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Entities;
+namespace Untek\User\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class TypeEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

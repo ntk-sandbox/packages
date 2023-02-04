@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Service\Traits;
+namespace Untek\Domain\Service\Traits;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnDomain\Query\Entities\Query;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Domain\Query\Entities\Query;
 
 trait CrudServiceFindAllTrait
 {

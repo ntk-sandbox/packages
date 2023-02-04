@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs;
+namespace Untek\Framework\Rpc\Domain\Libs;
 
 use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 class ResponseFormatter
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Validator\Libs\Validators;
+namespace Untek\Domain\Validator\Libs\Validators;
 
-use ZnDomain\Validator\Helpers\SymfonyValidationHelper;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Validator\Interfaces\ValidatorInterface;
+use Untek\Domain\Validator\Helpers\SymfonyValidationHelper;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidatorInterface;
 
 class ClassMetadataValidator extends BaseValidator implements ValidatorInterface
 {

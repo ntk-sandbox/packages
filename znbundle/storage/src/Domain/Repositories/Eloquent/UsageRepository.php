@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Storage\Domain\Repositories\Eloquent;
 
-use ZnBundle\Storage\Domain\Interfaces\Repositories\FileRepositoryInterface;
-use ZnBundle\Storage\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnBundle\Storage\Domain\Entities\UsageEntity;
-use ZnBundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\FileRepositoryInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Storage\Domain\Entities\UsageEntity;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
 
 class UsageRepository extends BaseEloquentCrudRepository implements UsageRepositoryInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Rpc\Test\Traits;
+namespace Untek\Framework\Rpc\Test\Traits;
 
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\Components\FileRepository\Repositories\Dynamic\DynamicFileRepository;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\Components\FileRepository\Repositories\Dynamic\DynamicFileRepository;
 
 trait RepositoryTestTrait
 {

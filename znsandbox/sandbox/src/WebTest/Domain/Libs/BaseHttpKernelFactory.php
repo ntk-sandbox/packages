@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
-use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnLib\Components\Http\Helpers\SymfonyHttpResponseHelper;
+use Untek\Core\App\Interfaces\AppInterface;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Lib\Components\Http\Helpers\SymfonyHttpResponseHelper;
 
 abstract class BaseHttpKernelFactory
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Entities;
+namespace Untek\Framework\Wsdl\Domain\Entities;
 
-use ZnFramework\Wsdl\Domain\Enums\StatusEnum;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 use DateTime;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Arr\Constraints\Arr;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
+use Untek\Core\Arr\Constraints\Arr;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
 
 class TransportEntity implements EntityIdInterface, ValidationByMetadataInterface, UniqueInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Interfaces;
+namespace Untek\User\Rbac\Domain\Interfaces;
 
 interface InheritanceMapInterface
 {

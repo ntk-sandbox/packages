@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Storage\Rpc\Controllers;
+namespace Untek\Bundle\Storage\Rpc\Controllers;
 
-use ZnBundle\Storage\Domain\Interfaces\Services\MyFileServiceInterface;
-use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\MyFileServiceInterface;
+use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
 
 class MyFileController extends BaseCrudRpcController
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\Eloquent;
+namespace Untek\User\Rbac\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
 
 class ItemRepository extends BaseEloquentCrudRepository implements ItemRepositoryInterface
 {

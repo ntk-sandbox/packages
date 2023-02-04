@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Services;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\FavoriteServiceInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services\FavoriteServiceInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 /**
  * @method FavoriteRepositoryInterface getRepository()

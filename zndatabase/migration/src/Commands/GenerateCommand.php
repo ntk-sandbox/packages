@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnDatabase\Migration\Commands;
+namespace Untek\Database\Migration\Commands;
 
-use ZnDatabase\Migration\Domain\Interfaces\Services\GenerateServiceInterface;
-use ZnDatabase\Migration\Domain\Scenarios\Input\ActionInputScenario;
-use ZnDatabase\Migration\Domain\Scenarios\Input\BaseInputScenario;
-use ZnDatabase\Migration\Domain\Scenarios\Input\DomainNamespaceInputScenario;
-use ZnDatabase\Migration\Domain\Scenarios\Input\TableNameInputScenario;
-use ZnDatabase\Migration\Domain\Scenarios\Input\TypeInputScenario;
+use Untek\Database\Migration\Domain\Interfaces\Services\GenerateServiceInterface;
+use Untek\Database\Migration\Domain\Scenarios\Input\ActionInputScenario;
+use Untek\Database\Migration\Domain\Scenarios\Input\BaseInputScenario;
+use Untek\Database\Migration\Domain\Scenarios\Input\DomainNamespaceInputScenario;
+use Untek\Database\Migration\Domain\Scenarios\Input\TableNameInputScenario;
+use Untek\Database\Migration\Domain\Scenarios\Input\TypeInputScenario;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

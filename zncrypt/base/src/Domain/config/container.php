@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'ZnCrypt\\Base\\Domain\\Interfaces\\Services\\PasswordServiceInterface' => 'ZnCrypt\\Base\\Domain\\Services\\PasswordService',
+    'Untek\\Crypt\\Base\\Domain\\Interfaces\\Services\\PasswordServiceInterface' => 'Untek\\Crypt\\Base\\Domain\\Services\\PasswordService',
 ];

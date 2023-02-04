@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDatabase\Base\Console\Traits;
+namespace Untek\Database\Base\Console\Traits;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnLib\Components\Http\Helpers\UrlHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Lib\Components\Http\Helpers\UrlHelper;
 
 trait OverwriteDatabaseTrait
 {

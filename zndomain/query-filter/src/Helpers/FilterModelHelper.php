@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDomain\QueryFilter\Helpers;
+namespace Untek\Domain\QueryFilter\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\QueryFilter\Exceptions\BadFilterValidateException;
-use ZnDomain\QueryFilter\Interfaces\DefaultSortInterface;
-use ZnDomain\QueryFilter\Interfaces\IgnoreAttributesInterface;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\QueryFilter\Exceptions\BadFilterValidateException;
+use Untek\Domain\QueryFilter\Interfaces\DefaultSortInterface;
+use Untek\Domain\QueryFilter\Interfaces\IgnoreAttributesInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
 
 class FilterModelHelper
 {

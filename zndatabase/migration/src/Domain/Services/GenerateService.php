@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Services;
+namespace Untek\Database\Migration\Domain\Services;
 
-use ZnDomain\Service\Base\BaseService;
-use ZnDatabase\Migration\Domain\Interfaces\Repositories\GenerateRepositoryInterface;
-use ZnDatabase\Migration\Domain\Interfaces\Services\GenerateServiceInterface;
-use ZnDatabase\Migration\Domain\Scenarios\Render\CreateTableRender;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Database\Migration\Domain\Interfaces\Repositories\GenerateRepositoryInterface;
+use Untek\Database\Migration\Domain\Interfaces\Services\GenerateServiceInterface;
+use Untek\Database\Migration\Domain\Scenarios\Render\CreateTableRender;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 class GenerateService extends BaseService implements GenerateServiceInterface
 {

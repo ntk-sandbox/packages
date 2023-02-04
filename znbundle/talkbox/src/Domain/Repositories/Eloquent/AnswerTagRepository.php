@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\TalkBox\Domain\Repositories\Eloquent;
 
-use ZnBundle\TalkBox\Domain\Entities\AnswerTagEntity;
-use ZnBundle\TalkBox\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\TalkBox\Domain\Entities\AnswerTagEntity;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class AnswerTagRepository extends BaseEloquentCrudRepository implements AnswerTagRepositoryInterface
 {

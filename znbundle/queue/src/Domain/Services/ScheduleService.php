@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Services;
+namespace Untek\Bundle\Queue\Domain\Services;
 
 use Cron\CronExpression;
 use DateTime;
 use Psr\Log\LoggerInterface;
-use ZnBundle\Queue\Domain\Entities\JobEntity;
-use ZnBundle\Queue\Domain\Entities\ScheduleEntity;
-use ZnBundle\Queue\Domain\Interfaces\Repositories\ScheduleRepositoryInterface;
-use ZnBundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
+use Untek\Bundle\Queue\Domain\Entities\JobEntity;
+use Untek\Bundle\Queue\Domain\Entities\ScheduleEntity;
+use Untek\Bundle\Queue\Domain\Interfaces\Repositories\ScheduleRepositoryInterface;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
 
 /**
  * @method ScheduleRepositoryInterface getRepository()

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\XmlDSig\Domain\Libs;
+namespace Untek\Crypt\Pki\XmlDSig\Domain\Libs;
 
 use DOMDocument;
 use Exception;
@@ -9,12 +9,12 @@ use phpseclib\File\X509;
 use RobRichards\XMLSecLibs\XMLSecEnc;
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
 use RobRichards\XMLSecLibs\XMLSecurityKey;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnCrypt\Pki\X509\Domain\Helpers\X509Helper;
-use ZnCrypt\Pki\X509\Domain\Services\SignatureService;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\FingerprintEntity;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\HashEntity;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\VerifyEntity;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Crypt\Pki\X509\Domain\Helpers\X509Helper;
+use Untek\Crypt\Pki\X509\Domain\Services\SignatureService;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\FingerprintEntity;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\HashEntity;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\VerifyEntity;
 
 class Signature
 {

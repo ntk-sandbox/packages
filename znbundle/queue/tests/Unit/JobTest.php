@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Queue\Tests\Unit;
+namespace Untek\Bundle\Queue\Tests\Unit;
 
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Libs\Container;
 use Illuminate\Database\Capsule\Manager;
-use ZnBundle\Queue\Domain\Enums\PriorityEnum;
-use ZnBundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
-use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnBundle\Queue\Domain\Repositories\Eloquent\JobRepository;
-use ZnBundle\Queue\Domain\Services\JobService;
-use ZnBundle\Queue\Tests\Libs\Jobs\ExampleJob;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
+use Untek\Bundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use Untek\Bundle\Queue\Domain\Repositories\Eloquent\JobRepository;
+use Untek\Bundle\Queue\Domain\Services\JobService;
+use Untek\Bundle\Queue\Tests\Libs\Jobs\ExampleJob;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Tool\Test\Base\BaseTest;
 use Psr\Container\ContainerInterface;
 
 final class JobTest extends BaseTest
@@ -40,13 +40,13 @@ final class JobTest extends BaseTest
         /** @var ContainerConfiguratorInterface $containerConfigurator */
         $containerConfigurator = $container->get(ContainerConfiguratorInterface::class);
 //        $containerConfigurator = ContainerHelper::getContainerConfiguratorByContainer($container);
-        $containerConfigurator->bind(Manager::class, \ZnDatabase\Eloquent\Domain\Capsule\Manager::class, true);
+        $containerConfigurator->bind(Manager::class, \Untek\Database\Eloquent\Domain\Capsule\Manager::class, true);
         $containerConfigurator->bind(JobRepositoryInterface::class, JobRepository::class, true);
         $containerConfigurator->bind(JobServiceInterface::class, JobService::class, true);
         $containerConfigurator->bind(ContainerInterface::class, Container::class, true);
 
 
-        /*$container->bind(Manager::class, \ZnDatabase\Eloquent\Domain\Capsule\Manager::class, true);
+        /*$container->bind(Manager::class, \Untek\Database\Eloquent\Domain\Capsule\Manager::class, true);
         $container->bind(JobRepositoryInterface::class, JobRepository::class, true);
         $container->bind(JobServiceInterface::class, JobService::class, true);
         $container->bind(ContainerInterface::class, Container::class, true);*/

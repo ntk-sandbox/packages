@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Widgets;
+namespace Untek\Framework\Console\Symfony4\Widgets;
 
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Question\ConfirmationQuestion;

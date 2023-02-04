@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Subscribers;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
-use ZnSandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 
 class CreateRpcMockSubscriber implements EventSubscriberInterface
 {

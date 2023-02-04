@@ -5,7 +5,7 @@ return [
         
     ],
     'singletons' => [
-        'ZnUser\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface' => 'ZnUser\Confirm\Domain\Services\ConfirmService',
-        'ZnUser\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface' => 'ZnUser\Confirm\Domain\Repositories\Eloquent\ConfirmRepository',
+        'Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface' => 'Untek\User\Confirm\Domain\Services\ConfirmService',
+        'Untek\User\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface' => 'Untek\User\Confirm\Domain\Repositories\Eloquent\ConfirmRepository',
     ],
 ];

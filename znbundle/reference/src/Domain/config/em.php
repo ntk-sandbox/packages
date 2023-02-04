@@ -2,8 +2,8 @@
 
 return [
     'entities' => [
-        'ZnBundle\Reference\Domain\Entities\BookEntity' => 'ZnBundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface',
-        'ZnBundle\Reference\Domain\Entities\ItemEntity' => 'ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface',
-        'ZnBundle\Reference\Domain\Entities\ItemTranslationEntity' => 'ZnBundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface',
+        'Untek\Bundle\Reference\Domain\Entities\BookEntity' => 'Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface',
+        'Untek\Bundle\Reference\Domain\Entities\ItemEntity' => 'Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface',
+        'Untek\Bundle\Reference\Domain\Entities\ItemTranslationEntity' => 'Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface',
     ],
 ];

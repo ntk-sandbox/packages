@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Repository\Traits;
+namespace Untek\Domain\Repository\Traits;
 
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Helpers\ValidationHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
 
 trait CrudRepositoryUpdateTrait
 {

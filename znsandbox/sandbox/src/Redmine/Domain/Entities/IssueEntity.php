@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class IssueEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

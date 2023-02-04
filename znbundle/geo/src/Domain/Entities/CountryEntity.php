@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Entities;
+namespace Untek\Bundle\Geo\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\I18n\Traits\I18nTrait;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\I18n\Traits\I18nTrait;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class CountryEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

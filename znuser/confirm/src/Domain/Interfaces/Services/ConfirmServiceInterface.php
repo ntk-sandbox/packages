@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Confirm\Domain\Interfaces\Services;
+namespace Untek\User\Confirm\Domain\Interfaces\Services;
 
-use ZnUser\Confirm\Domain\Entities\ConfirmEntity;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ConfirmServiceInterface extends CrudServiceInterface
 {

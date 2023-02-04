@@ -1,14 +1,14 @@
 <?php
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnFramework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
-use ZnFramework\Telegram\Domain\Repositories\File\ConfigRepository;
-use ZnFramework\Telegram\Domain\Repositories\Telegram\ResponseRepository as TelegramResponseRepository;
-use ZnFramework\Telegram\Domain\Repositories\Test\ResponseRepository as TestResponseRepository;
-use ZnFramework\Telegram\Domain\Services\RouteService;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Framework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
+use Untek\Framework\Telegram\Domain\Repositories\File\ConfigRepository;
+use Untek\Framework\Telegram\Domain\Repositories\Telegram\ResponseRepository as TelegramResponseRepository;
+use Untek\Framework\Telegram\Domain\Repositories\Test\ResponseRepository as TestResponseRepository;
+use Untek\Framework\Telegram\Domain\Services\RouteService;
 
 return [
     'singletons' => [
@@ -30,8 +30,8 @@ return [
                 TestResponseRepository::class :
                 TelegramResponseRepository::class,
         ConfigRepository::class => function (ContainerInterface $container) {
-            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+            /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
             $repo = new ConfigRepository($envStorage->get('TELEGRAM_BOT_TOKEN') ?: null);
             return $repo;

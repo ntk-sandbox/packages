@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\TalkBox\Telegram\Actions;
+namespace Untek\Bundle\TalkBox\Telegram\Actions;
 
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Base\BaseAction;
-use ZnFramework\Telegram\Domain\Entities\MessageEntity;
-use ZnFramework\Telegram\Domain\Helpers\MatchHelper;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Base\BaseAction;
+use Untek\Framework\Telegram\Domain\Entities\MessageEntity;
+use Untek\Framework\Telegram\Domain\Helpers\MatchHelper;
 use danog\MadelineProto\APIFactory;
 
 

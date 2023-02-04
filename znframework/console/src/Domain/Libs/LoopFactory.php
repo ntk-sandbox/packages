@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs;
+namespace Untek\Framework\Console\Domain\Libs;
 
 use React\EventLoop\Loop;
 

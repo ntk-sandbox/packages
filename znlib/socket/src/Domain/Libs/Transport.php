@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Libs;
+namespace Untek\Lib\Socket\Domain\Libs;
 
 use Workerman\Connection\ConnectionInterface;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Socket\Domain\Entities\SocketEventEntity;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
 
 class Transport
 {

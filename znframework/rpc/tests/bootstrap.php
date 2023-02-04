@@ -1,15 +1,15 @@
 <?php
 
-//\ZnCore\DotEnv\Domain\Libs\DotEnv::init();
+//\Untek\Core\DotEnv\Domain\Libs\DotEnv::init();
 
 
 
-$container = new \ZnCore\Container\Libs\Container();
-$znCore = new \ZnCore\App\Libs\ZnCore($container);
+$container = new \Untek\Core\Container\Libs\Container();
+$Untek\Core = new \Untek\Core\App\Libs\ZnCore($container);
 $znCore->init();
 
-/** @var \ZnCore\App\Interfaces\AppInterface $appFactory */
-//$appFactory = $container->get(\ZnTool\Test\Libs\TestApp::class);
+/** @var \Untek\Core\App\Interfaces\AppInterface $appFactory */
+//$appFactory = $container->get(\Untek\Tool\Test\Libs\TestApp::class);
 /*$appFactory->setBundles([
     
 ]);*/

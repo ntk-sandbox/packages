@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Repositories\Eloquent;
+namespace Untek\User\Notify\Domain\Repositories\Eloquent;
 
-use ZnUser\Notify\Domain\Entities\ActivityEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Notify\Domain\Entities\ActivityEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ActivityRepository extends BaseEloquentCrudRepository implements ActivityRepositoryInterface
 {

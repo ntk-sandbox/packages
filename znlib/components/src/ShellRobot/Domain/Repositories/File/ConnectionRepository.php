@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Repositories\File;
+namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\File;
 
-use ZnLib\Components\ShellRobot\Domain\Entities\HostEntity;
-use ZnLib\Components\ShellRobot\Domain\Enums\VarEnum;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\ConnectionRepositoryInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Entities\HostEntity;
+use Untek\Lib\Components\ShellRobot\Domain\Enums\VarEnum;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\ConnectionRepositoryInterface;
 
 class ConnectionRepository implements ConnectionRepositoryInterface
 {

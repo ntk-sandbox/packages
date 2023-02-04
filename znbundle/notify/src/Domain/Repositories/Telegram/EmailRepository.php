@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\Telegram;
+namespace Untek\Bundle\Notify\Domain\Repositories\Telegram;
 
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnFramework\Telegram\Domain\Facades\Bot;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use Untek\Framework\Telegram\Domain\Facades\Bot;
 
 class EmailRepository implements EmailRepositoryInterface
 {

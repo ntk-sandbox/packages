@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain;
+namespace Untek\Framework\Wsdl\Domain;
 
-use ZnDomain\Domain\Interfaces\DomainInterface;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
 
 class Domain implements DomainInterface
 {

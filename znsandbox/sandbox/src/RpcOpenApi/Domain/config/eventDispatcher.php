@@ -1,7 +1,7 @@
 <?php
 
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnSandbox\Sandbox\RpcOpenApi\Domain\Subscribers\GenerateOpenApiDocsSubscriber;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Sandbox\Sandbox\RpcOpenApi\Domain\Subscribers\GenerateOpenApiDocsSubscriber;
 
 return function (EventDispatcherConfiguratorInterface $configurator): void {
     if(getenv('OPEN_API_ENABLED')) {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\TabContent;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\TabContent;
 
-use ZnCore\Text\Helpers\Inflector;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class TabContentWidget extends BaseWidget2
 {

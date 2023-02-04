@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Dashboard\Domain\Interfaces\Services;
+namespace Untek\Bundle\Dashboard\Domain\Interfaces\Services;
 
 interface DashboardServiceInterface
 {

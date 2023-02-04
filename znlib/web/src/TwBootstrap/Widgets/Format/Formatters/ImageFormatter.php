@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnLib\Web\Html\Helpers\Html;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Lib\Web\Html\Helpers\Html;
 
 class ImageFormatter extends LinkFormatter implements FormatterInterface
 {

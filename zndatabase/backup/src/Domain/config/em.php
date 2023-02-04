@@ -2,6 +2,6 @@
 
 return [
 	'entities' => [
-		'ZnDatabase\\Backup\\Domain\\Entities\\DumpEntity' => 'ZnDatabase\\Backup\\Domain\\Interfaces\\Repositories\\DumpRepositoryInterface',
+		'Untek\\Database\\Backup\\Domain\\Entities\\DumpEntity' => 'Untek\\Database\\Backup\\Domain\\Interfaces\\Repositories\\DumpRepositoryInterface',
 	],
 ];

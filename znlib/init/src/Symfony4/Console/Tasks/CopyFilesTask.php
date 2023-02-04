@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Init\Symfony4\Console\Tasks;
+namespace Untek\Lib\Init\Symfony4\Console\Tasks;
 
-use ZnFramework\Console\Symfony4\Helpers\InputHelper;
+use Untek\Framework\Console\Symfony4\Helpers\InputHelper;
 
 class CopyFilesTask extends BaseTask
 {

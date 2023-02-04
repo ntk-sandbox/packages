@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Helpers;
+namespace Untek\Crypt\Pki\X509\Domain\Helpers;
 
 use phpseclib\File\X509;
 use SimpleXMLElement;

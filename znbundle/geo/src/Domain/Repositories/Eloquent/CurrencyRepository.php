@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Geo\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnBundle\Geo\Domain\Entities\CurrencyEntity;
-use ZnBundle\Geo\Domain\Interfaces\Repositories\CurrencyRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Geo\Domain\Entities\CurrencyEntity;
+use Untek\Bundle\Geo\Domain\Interfaces\Repositories\CurrencyRepositoryInterface;
 
 class CurrencyRepository extends BaseEloquentCrudRepository implements CurrencyRepositoryInterface
 {

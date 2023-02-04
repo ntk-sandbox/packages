@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Repositories\Eloquent;
+namespace Untek\Kaz\Eds\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnKaz\Eds\Domain\Entities\LogEntity;
-use ZnKaz\Eds\Domain\Interfaces\Repositories\LogRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Kaz\Eds\Domain\Entities\LogEntity;
+use Untek\Kaz\Eds\Domain\Interfaces\Repositories\LogRepositoryInterface;
 
 class LogRepository extends BaseEloquentCrudRepository implements LogRepositoryInterface
 {

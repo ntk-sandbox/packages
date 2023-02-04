@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\SymfonyTranslation;
+namespace Untek\Lib\Components\SymfonyTranslation;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

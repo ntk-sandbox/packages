@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Entities\AttributeEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class AttributeRepository extends BaseEloquentCrudRepository implements AttributeRepositoryInterface
 {

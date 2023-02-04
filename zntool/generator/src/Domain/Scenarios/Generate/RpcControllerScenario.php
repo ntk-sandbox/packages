@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Laminas\Code\Generator\PropertyGenerator;
-use ZnCore\Text\Helpers\Inflector;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 
 class RpcControllerScenario extends BaseScenario
 {
@@ -39,7 +39,7 @@ class RpcControllerScenario extends BaseScenario
             $parameterGenerator->setName($name);
             $this->getFileGenerator()->setUse($type);
             $parameterGenerator->setType(basename($type));
-//            $parameterGenerator->setType(\ZnCore\Instance\Helpers\ClassHelper::getClassOfClassName($type));
+//            $parameterGenerator->setType(\Untek\Core\Instance\Helpers\ClassHelper::getClassOfClassName($type));
 //            $fileGenerator->setUse($type);
             $methodGenerator->setParameter($parameterGenerator);
             $methodBody .= "\$this->{$name} = \${$name};\n";

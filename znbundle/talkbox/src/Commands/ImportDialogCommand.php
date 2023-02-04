@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\TalkBox\Commands;
+namespace Untek\Bundle\TalkBox\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -24,8 +24,8 @@ class ImportDialogCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('<fg=white># Import dialog</>');
-        /** @var \ZnBundle\TalkBox\Domain\Interfaces\Services\TagServiceInterface $tagService */
-        //$tagService = $this->container->get(\ZnBundle\TalkBox\Domain\Services\TagService::class);
+        /** @var \Untek\Bundle\TalkBox\Domain\Interfaces\Services\TagServiceInterface $tagService */
+        //$tagService = $this->container->get(\Untek\Bundle\TalkBox\Domain\Services\TagService::class);
         //$tagService->import($this->container);
         return Command::SUCCESS;
     }

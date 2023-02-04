@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\FileSystem\Entities;
+namespace Untek\Core\FileSystem\Entities;
 
 abstract class BaseEntity
 {

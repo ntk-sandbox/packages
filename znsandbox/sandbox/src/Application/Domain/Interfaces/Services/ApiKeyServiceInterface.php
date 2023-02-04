@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ApiKeyServiceInterface extends CrudServiceInterface
 {

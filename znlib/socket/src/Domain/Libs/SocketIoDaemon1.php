@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Libs;
+namespace Untek\Lib\Socket\Domain\Libs;
 
 use Workerman\Worker;
-use ZnLib\Socket\Domain\Libs\Handlers\TcpHandler;
-use ZnLib\Socket\Domain\Libs\Handlers\WsHandler;
-use ZnLib\Socket\Domain\Repositories\Ram\ConnectionRepository;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\Lib\Socket\Domain\Libs\Handlers\TcpHandler;
+use Untek\Lib\Socket\Domain\Libs\Handlers\WsHandler;
+use Untek\Lib\Socket\Domain\Repositories\Ram\ConnectionRepository;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 
 //use PHPSocketIO\SocketIO;
 

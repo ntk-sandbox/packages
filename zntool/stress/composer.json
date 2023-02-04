@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnTool\\Stress\\": "src",
-      "ZnTool\\Stress\\Tests\\": "tests"
+      "Untek\\Tool\\Stress\\": "src",
+      "Untek\\Tool\\Stress\\Tests\\": "tests"
     }
   }
 }

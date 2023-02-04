@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Traits;
+namespace Untek\User\Authentication\Domain\Traits;
 
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;

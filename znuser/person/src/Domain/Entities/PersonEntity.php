@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnUser\Person\Domain\Entities;
+namespace Untek\User\Person\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Reference\Domain\Constraints\ReferenceItem;
-use ZnDomain\Components\Constraints\Enum;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
+use Untek\Bundle\Reference\Domain\Constraints\ReferenceItem;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
 
 class PersonEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

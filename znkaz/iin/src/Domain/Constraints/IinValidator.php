@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Constraints;
+namespace Untek\Kaz\Iin\Domain\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnKaz\Iin\Domain\Helpers\IinParser;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Kaz\Iin\Domain\Helpers\IinParser;
 use Exception;
 
 class IinValidator extends ConstraintValidator

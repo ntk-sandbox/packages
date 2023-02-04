@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\QrBox\Wrappers;
+namespace Untek\Lib\QrBox\Wrappers;
 
 abstract class BaseWrapper
 {

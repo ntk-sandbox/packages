@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters;
 
 abstract class BaseAdapter
 {

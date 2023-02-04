@@ -1,35 +1,35 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Services;
+namespace Untek\Framework\Rpc\Domain\Services;
 
 use Illuminate\Container\EntryNotFoundException;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnCore\Instance\Libs\InstanceProvider;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\QueryFilter\Exceptions\BadFilterValidateException;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ErrorCollectionHelper;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
-use ZnFramework\Rpc\Domain\Events\RpcResponseEvent;
-use ZnFramework\Rpc\Domain\Exceptions\InvalidRequestException;
-use ZnFramework\Rpc\Domain\Exceptions\RpcMethodNotFoundException;
-use ZnFramework\Rpc\Domain\Exceptions\SystemErrorException;
-use ZnFramework\Rpc\Domain\Helpers\RequestHelper;
-use ZnFramework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
-use ZnFramework\Rpc\Domain\Interfaces\Services\ProcedureServiceInterface;
-use ZnFramework\Rpc\Domain\Libs\ResponseFormatter;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Core\Instance\Libs\InstanceProvider;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\QueryFilter\Exceptions\BadFilterValidateException;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ErrorCollectionHelper;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;
+use Untek\Framework\Rpc\Domain\Events\RpcResponseEvent;
+use Untek\Framework\Rpc\Domain\Exceptions\InvalidRequestException;
+use Untek\Framework\Rpc\Domain\Exceptions\RpcMethodNotFoundException;
+use Untek\Framework\Rpc\Domain\Exceptions\SystemErrorException;
+use Untek\Framework\Rpc\Domain\Helpers\RequestHelper;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\ProcedureServiceInterface;
+use Untek\Framework\Rpc\Domain\Libs\ResponseFormatter;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 
 class ProcedureService implements ProcedureServiceInterface
 {

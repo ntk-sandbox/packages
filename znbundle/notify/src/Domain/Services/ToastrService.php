@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Services;
+namespace Untek\Bundle\Notify\Domain\Services;
 
-use ZnBundle\Notify\Domain\Entities\ToastrEntity;
-use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Service\Base\BaseService;
-use ZnLib\I18Next\Facades\I18Next;
+use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
+use Untek\Bundle\Notify\Domain\Enums\FlashMessageTypeEnum;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Lib\I18Next\Facades\I18Next;
 
 class ToastrService extends BaseService implements ToastrServiceInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\PersonServiceInterface;
 
 /**
  * @method PersonRepositoryInterface getRepository()

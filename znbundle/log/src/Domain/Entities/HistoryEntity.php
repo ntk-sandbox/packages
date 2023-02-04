@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Entities;
+namespace Untek\Bundle\Log\Domain\Entities;
 
 use Monolog\DateTimeImmutable;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use DateTime;
 
 class HistoryEntity implements EntityIdInterface, ValidationByMetadataInterface

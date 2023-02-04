@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Git;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Git;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\GitShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\GitShell;
 
 class GitCloneTask extends BaseShell implements TaskInterface
 {

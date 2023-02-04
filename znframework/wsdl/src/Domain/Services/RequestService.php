@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Services;
+namespace Untek\Framework\Wsdl\Domain\Services;
 
-use ZnFramework\Wsdl\Domain\Entities\TransportEntity;
-use ZnFramework\Wsdl\Domain\Enums\DirectionEnum;
-use ZnFramework\Wsdl\Domain\Enums\StatusEnum;
-use ZnFramework\Wsdl\Domain\Interfaces\Services\RequestServiceInterface;
-use ZnFramework\Wsdl\Domain\Libs\SoapHandler;
+use Untek\Framework\Wsdl\Domain\Entities\TransportEntity;
+use Untek\Framework\Wsdl\Domain\Enums\DirectionEnum;
+use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
+use Untek\Framework\Wsdl\Domain\Interfaces\Services\RequestServiceInterface;
+use Untek\Framework\Wsdl\Domain\Libs\SoapHandler;
 use Psr\Container\ContainerInterface;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class RequestService extends BaseService implements RequestServiceInterface
 {

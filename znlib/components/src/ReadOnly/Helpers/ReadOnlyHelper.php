@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\ReadOnly\Helpers;
+namespace Untek\Lib\Components\ReadOnly\Helpers;
 
-use ZnCore\Contract\Common\Exceptions\ReadOnlyAttributeException;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyAttributeException;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class ReadOnlyHelper
 {

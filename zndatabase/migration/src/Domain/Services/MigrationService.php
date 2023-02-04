@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Services;
+namespace Untek\Database\Migration\Domain\Services;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDatabase\Migration\Domain\Entities\MigrationEntity;
-use ZnDatabase\Migration\Domain\Repositories\HistoryRepository;
-use ZnDatabase\Migration\Domain\Repositories\SourceRepository;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Database\Migration\Domain\Entities\MigrationEntity;
+use Untek\Database\Migration\Domain\Repositories\HistoryRepository;
+use Untek\Database\Migration\Domain\Repositories\SourceRepository;
 
 class MigrationService
 {

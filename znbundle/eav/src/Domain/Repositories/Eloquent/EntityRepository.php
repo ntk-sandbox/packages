@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Entities\EntityAttributeEntity;
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EntityAttributeRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EntityRepositoryInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Eav\Domain\Entities\EntityAttributeEntity;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityAttributeRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class EntityRepository extends BaseEloquentCrudRepository implements EntityRepositoryInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\Repository\Interfaces;
+namespace Untek\Domain\Repository\Interfaces;
 
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
 
 interface FindOneUniqueInterface
 {

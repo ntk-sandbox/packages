@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Reference\Rpc\Controllers\BookController;
-use ZnBundle\Reference\Domain\Enums\Rbac\ReferenceBookPermissionEnum;
+use Untek\Bundle\Reference\Rpc\Controllers\BookController;
+use Untek\Bundle\Reference\Domain\Enums\Rbac\ReferenceBookPermissionEnum;
 
 return [
     [

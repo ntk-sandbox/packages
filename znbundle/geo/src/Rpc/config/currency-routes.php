@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Geo\Domain\Enums\Rbac\GeoCurrencyPermissionEnum;
-use ZnBundle\Geo\Rpc\Controllers\CurrencyController;
+use Untek\Bundle\Geo\Domain\Enums\Rbac\GeoCurrencyPermissionEnum;
+use Untek\Bundle\Geo\Rpc\Controllers\CurrencyController;
 
 return [
     [

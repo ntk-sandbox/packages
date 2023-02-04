@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Package\Domain\Interfaces\Repositories;
+namespace Untek\Tool\Package\Domain\Interfaces\Repositories;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnTool\Package\Domain\Entities\PackageEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
 
 interface GitRepositoryInterface extends GetEntityClassInterface
 {

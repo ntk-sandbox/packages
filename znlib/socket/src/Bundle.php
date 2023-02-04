@@ -1,8 +1,11 @@
 <?php
 
-namespace ZnLib\Socket;
+namespace Untek\Lib\Socket;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Lib\Socket\Symfony4\Commands\SocketCommand;
+use Untek\Lib\Socket\Symfony4\Commands\SocketIoCommand;
 
 class Bundle extends BaseBundle
 {
@@ -12,11 +15,17 @@ class Bundle extends BaseBundle
         return 'webSocket';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnLib\Socket\Symfony4\Commands',
+            'Untek\Lib\Socket\Symfony4\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(SocketCommand::class);
+        $commandConfigurator->registerCommandClass(SocketIoCommand::class);
     }
 
     public function container(): array

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Interfaces;
+namespace Untek\Bundle\Article\Domain\Interfaces;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface PostServiceInterface extends CrudServiceInterface
 {

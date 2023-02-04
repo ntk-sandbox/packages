@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Libs\App;
+namespace Untek\Lib\Components\ShellRobot\Domain\Libs\App;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
 
 DeprecateHelper::hardThrow();
 

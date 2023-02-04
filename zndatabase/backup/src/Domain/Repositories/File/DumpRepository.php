@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Repositories\File;
+namespace Untek\Database\Backup\Domain\Repositories\File;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnDatabase\Backup\Domain\Entities\DumpEntity;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Database\Backup\Domain\Entities\DumpEntity;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Eloquent\Domain\Factories\ManagerFactory;
+use Untek\Database\Fixture\Domain\Repositories\DbRepository;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 class DumpRepository implements CrudRepositoryInterface
 {

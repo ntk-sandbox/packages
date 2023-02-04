@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\Menu\Domain\Entities;
+namespace Untek\Lib\Web\Menu\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class MenuEntity implements ValidationByMetadataInterface, EntityIdInterface
 {
@@ -217,7 +217,7 @@ class MenuEntity implements ValidationByMetadataInterface, EntityIdInterface
     }
 
     /**
-     * @return \ZnCore\Collection\Interfaces\Enumerable | MenuEntity[]
+     * @return \Untek\Core\Collection\Interfaces\Enumerable | MenuEntity[]
      */
     public function getItems()
     {

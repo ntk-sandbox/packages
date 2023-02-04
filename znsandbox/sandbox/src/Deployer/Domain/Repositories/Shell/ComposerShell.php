@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShellDriver;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShellDriver;
 
 class ComposerShell extends BaseShellDriver
 {

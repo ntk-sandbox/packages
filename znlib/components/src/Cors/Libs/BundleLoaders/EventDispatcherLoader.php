@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\Cors\Libs\BundleLoaders;
+namespace Untek\Lib\Components\Cors\Libs\BundleLoaders;
 
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnCore\Instance\Libs\Resolvers\MethodParametersResolver;
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 /**
  * Загрузчик конфигурации диспетчера событий

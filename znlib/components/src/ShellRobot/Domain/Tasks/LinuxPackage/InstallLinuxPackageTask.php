@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Tasks\LinuxPackage;
+namespace Untek\Lib\Components\ShellRobot\Domain\Tasks\LinuxPackage;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\PackageShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\PackageShell;
 
 class InstallLinuxPackageTask extends BaseShell implements TaskInterface
 {

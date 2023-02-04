@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\TrackerEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\TrackerRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\TrackerEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\TrackerRepositoryInterface;
 
 class TrackerRepository extends BaseEloquentCrudRepository implements TrackerRepositoryInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnDatabase\Doctrine\Domain\Helpers\QueryBuilder;
+namespace Untek\Database\Doctrine\Domain\Helpers\QueryBuilder;
 
 use Illuminate\Database\Query\Builder;
-use ZnDatabase\Base\Domain\Helpers\DbHelper;
-use ZnDatabase\Base\Domain\Interfaces\QueryBuilderInterface;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
+use Untek\Database\Base\Domain\Helpers\DbHelper;
+use Untek\Database\Base\Domain\Interfaces\QueryBuilderInterface;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
 use Doctrine\DBAL\Query\QueryBuilder;
 
 class DoctrineQueryBuilderHelper implements QueryBuilderInterface

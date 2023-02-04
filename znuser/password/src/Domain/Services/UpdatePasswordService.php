@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnUser\Password\Domain\Services;
+namespace Untek\User\Password\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Password\Domain\Forms\UpdatePasswordForm;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordServiceInterface;
-use ZnUser\Password\Domain\Interfaces\Services\UpdatePasswordServiceInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Password\Domain\Forms\UpdatePasswordForm;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordServiceInterface;
+use Untek\User\Password\Domain\Interfaces\Services\UpdatePasswordServiceInterface;
 
 class UpdatePasswordService implements UpdatePasswordServiceInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Libs;
+namespace Untek\Bundle\Eav\Domain\Libs;
 
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
 
 class TypeNormalizer
 {

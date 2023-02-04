@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Contract\Common\Exceptions;
+namespace Untek\Core\Contract\Common\Exceptions;
 
 use Exception;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 /**
  * Значение атрибута объекта только для чтения

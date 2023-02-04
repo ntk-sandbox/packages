@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
 /**
  * Работа с конфигурацией PHP (php.ini)

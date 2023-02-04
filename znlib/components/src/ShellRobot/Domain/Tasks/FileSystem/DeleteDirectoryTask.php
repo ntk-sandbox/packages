@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Tasks\FileSystem;
+namespace Untek\Lib\Components\ShellRobot\Domain\Tasks\FileSystem;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
 
 class DeleteDirectoryTask extends BaseShell implements TaskInterface
 {

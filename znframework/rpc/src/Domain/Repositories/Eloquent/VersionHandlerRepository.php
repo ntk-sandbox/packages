@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Repositories\Eloquent;
+namespace Untek\Framework\Rpc\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnFramework\Rpc\Domain\Entities\VersionHandlerEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\VersionHandlerRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Framework\Rpc\Domain\Entities\VersionHandlerEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\VersionHandlerRepositoryInterface;
 
 class VersionHandlerRepository extends BaseEloquentCrudRepository implements VersionHandlerRepositoryInterface
 {

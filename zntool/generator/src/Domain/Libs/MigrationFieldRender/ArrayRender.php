@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\MigrationFieldRender;
+namespace Untek\Tool\Generator\Domain\Libs\MigrationFieldRender;
 
-use ZnTool\Generator\Domain\Libs\Types\ArrayType;
+use Untek\Tool\Generator\Domain\Libs\Types\ArrayType;
 
 class ArrayRender extends BaseRender
 {

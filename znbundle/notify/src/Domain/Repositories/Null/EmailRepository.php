@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\Null;
+namespace Untek\Bundle\Notify\Domain\Repositories\Null;
 
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnDomain\Repository\Base\BaseRepository;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use Untek\Domain\Repository\Base\BaseRepository;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
 
 class EmailRepository extends BaseRepository implements EmailRepositoryInterface, GetEntityClassInterface
 {

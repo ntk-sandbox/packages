@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Password\Domain\Entities;
+namespace Untek\User\Password\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class PasswordHistoryEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

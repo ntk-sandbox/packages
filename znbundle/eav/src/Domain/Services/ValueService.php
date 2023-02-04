@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Services;
+namespace Untek\Bundle\Eav\Domain\Services;
 
 use DateTime;
-use ZnBundle\Eav\Domain\Entities\AttributeEntity;
-use ZnBundle\Eav\Domain\Entities\DynamicEntity;
-use ZnBundle\Eav\Domain\Entities\ValueEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\ValueRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
+use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
+use Untek\Bundle\Eav\Domain\Entities\ValueEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\ValueRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 /**
  * @method ValueRepositoryInterface getRepository()

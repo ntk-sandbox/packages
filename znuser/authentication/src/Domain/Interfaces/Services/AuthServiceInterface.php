@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Interfaces\Services;
+namespace Untek\User\Authentication\Domain\Interfaces\Services;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnUser\Authentication\Domain\Forms\AuthForm;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\User\Authentication\Domain\Forms\AuthForm;
 
 interface AuthServiceInterface
 {

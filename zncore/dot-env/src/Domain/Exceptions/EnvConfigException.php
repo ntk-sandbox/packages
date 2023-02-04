@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Exceptions;
+namespace Untek\Core\DotEnv\Domain\Exceptions;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 
 DeprecateHelper::hardThrow();
 

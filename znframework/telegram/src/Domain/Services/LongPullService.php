@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Services;
+namespace Untek\Framework\Telegram\Domain\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ServerException;
 use GuzzleHttp\RequestOptions;
 use Psr\Log\LoggerInterface;
-use ZnCore\Contract\Common\Exceptions\InternalServerErrorException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Telegram\Domain\Helpers\RequestHelper;
-use ZnFramework\Telegram\Domain\Repositories\File\ConfigRepository;
-use ZnFramework\Telegram\Domain\Repositories\File\StoreRepository;
-use ZnFramework\Telegram\Domain\Repositories\Http\UpdatesRepository;
+use Untek\Core\Contract\Common\Exceptions\InternalServerErrorException;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Telegram\Domain\Helpers\RequestHelper;
+use Untek\Framework\Telegram\Domain\Repositories\File\ConfigRepository;
+use Untek\Framework\Telegram\Domain\Repositories\File\StoreRepository;
+use Untek\Framework\Telegram\Domain\Repositories\Http\UpdatesRepository;
 
 class LongPullService
 {

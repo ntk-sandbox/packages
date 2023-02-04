@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Eav\Tests\Unit;
+namespace Untek\Bundle\Eav\Tests\Unit;
 
-use ZnBundle\Eav\Domain\Services\EntityService;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnTool\Test\Base\BaseRestApiTest;
+use Untek\Bundle\Eav\Domain\Services\EntityService;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Tool\Test\Base\BaseRestApiTest;
 
 include __DIR__ . '/../bootstrap.php';
 

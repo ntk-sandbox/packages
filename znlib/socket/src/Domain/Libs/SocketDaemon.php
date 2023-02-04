@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Libs;
+namespace Untek\Lib\Socket\Domain\Libs;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Workerman\Connection\ConnectionInterface;
 use Workerman\Worker;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Socket\Domain\Entities\SocketEventEntity;
-use ZnLib\Socket\Domain\Enums\SocketEventEnum;
-use ZnLib\Socket\Domain\Repositories\Ram\ConnectionRepository;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
+use Untek\Lib\Socket\Domain\Enums\SocketEventEnum;
+use Untek\Lib\Socket\Domain\Repositories\Ram\ConnectionRepository;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 
 class SocketDaemon
 {

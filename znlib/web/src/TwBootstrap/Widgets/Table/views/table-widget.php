@@ -7,7 +7,7 @@
  * @var array $bodyRows
  */
 
-use ZnLib\Web\View\Libs\View;
+use Untek\Lib\Web\View\Libs\View;
 
 ?>
 

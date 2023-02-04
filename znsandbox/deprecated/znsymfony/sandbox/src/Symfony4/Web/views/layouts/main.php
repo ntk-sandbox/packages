@@ -6,13 +6,13 @@
  * @var string $content
  */
 
-use ZnSymfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnLib\Web\WebApp\Assets\AppAsset;
-use ZnLib\Web\Layout\Widgets\Script\ScriptWidget;
-use ZnLib\Web\Layout\Widgets\Style\StyleWidget;
-use ZnLib\Web\View\Libs\View;
-use ZnLib\Web\Widget\Widgets\Toastr\ToastrWidget;
+use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Lib\Web\WebApp\Assets\AppAsset;
+use Untek\Lib\Web\Layout\Widgets\Script\ScriptWidget;
+use Untek\Lib\Web\Layout\Widgets\Style\StyleWidget;
+use Untek\Lib\Web\View\Libs\View;
+use Untek\Lib\Web\Widget\Widgets\Toastr\ToastrWidget;
 
 $moduleId = ModuleHelper::getCurrentModule();
 

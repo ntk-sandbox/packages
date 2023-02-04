@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Helpers;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Helpers;
 
 class OpenSslHelper
 {

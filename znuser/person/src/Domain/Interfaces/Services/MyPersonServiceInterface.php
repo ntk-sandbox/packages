@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Person\Domain\Interfaces\Services;
+namespace Untek\User\Person\Domain\Interfaces\Services;
 
-use ZnDomain\Query\Entities\Query;
-use ZnUser\Person\Domain\Entities\PersonEntity;
+use Untek\Domain\Query\Entities\Query;
+use Untek\User\Person\Domain\Entities\PersonEntity;
 
 interface MyPersonServiceInterface
 {

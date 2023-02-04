@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Stress\Domain\Services;
+namespace Untek\Tool\Stress\Domain\Services;
 
 use GuzzleHttp\Client;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnTool\Stress\Domain\Entities\ProfileEntity;
-use ZnTool\Stress\Domain\Entities\TestEntity;
-use ZnTool\Stress\Domain\Libs\Runtime;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Tool\Stress\Domain\Entities\ProfileEntity;
+use Untek\Tool\Stress\Domain\Entities\TestEntity;
+use Untek\Tool\Stress\Domain\Libs\Runtime;
 use function GuzzleHttp\Promise\settle;
 
 class StressService

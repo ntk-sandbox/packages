@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\Collection\Libs;
+namespace Untek\Core\Collection\Libs;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 /**
  * Коллекция сущностей

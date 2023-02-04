@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Enums\Rbac;
+namespace Untek\Bundle\Queue\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
 
 class QueueSchedulePermissionEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {

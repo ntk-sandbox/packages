@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Package\Domain\Repositories\File;
+namespace Untek\Tool\Package\Domain\Repositories\File;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Interfaces\ReadRepositoryInterface;
-use ZnLib\Components\Store\StoreFile;
-use ZnTool\Package\Domain\Entities\GroupEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Interfaces\ReadRepositoryInterface;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Tool\Package\Domain\Entities\GroupEntity;
 
 class GroupRepository implements ReadRepositoryInterface
 {

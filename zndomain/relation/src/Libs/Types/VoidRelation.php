@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Relation\Libs\Types;
+namespace Untek\Domain\Relation\Libs\Types;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Relation\Interfaces\RelationInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Relation\Interfaces\RelationInterface;
 
 class VoidRelation extends BaseRelation implements RelationInterface
 {

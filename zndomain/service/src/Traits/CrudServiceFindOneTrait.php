@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDomain\Service\Traits;
+namespace Untek\Domain\Service\Traits;
 
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Query\Entities\Query;
 
 trait CrudServiceFindOneTrait
 {

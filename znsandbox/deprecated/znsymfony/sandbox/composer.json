@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnSymfony\\Sandbox\\": "src",
-      "ZnSymfony\\Sandbox\\Tests\\": "tests"
+      "Untek\\Symfony\\Sandbox\\": "src",
+      "Untek\\Symfony\\Sandbox\\Tests\\": "tests"
     }
   }
 }

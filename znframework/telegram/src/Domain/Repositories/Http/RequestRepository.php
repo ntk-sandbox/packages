@@ -1,14 +1,14 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Repositories\Http;
+namespace Untek\Framework\Telegram\Domain\Repositories\Http;
 
-use ZnFramework\Telegram\Domain\Entities\ChatEntity;
-use ZnFramework\Telegram\Domain\Entities\FromEntity;
-use ZnFramework\Telegram\Domain\Entities\MessageEntity;
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Telegram\Domain\Helpers\RequestHelper;
+use Untek\Framework\Telegram\Domain\Entities\ChatEntity;
+use Untek\Framework\Telegram\Domain\Entities\FromEntity;
+use Untek\Framework\Telegram\Domain\Entities\MessageEntity;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Telegram\Domain\Helpers\RequestHelper;
 
 class RequestRepository
 {

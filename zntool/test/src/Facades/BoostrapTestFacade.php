@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Test\Facades;
+namespace Untek\Tool\Test\Facades;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Container\Libs\Container;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\App\Libs\ZnCore;
-use ZnTool\Test\Libs\TestApp;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Container\Libs\Container;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\App\Interfaces\AppInterface;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Tool\Test\Libs\TestApp;
 
 DeprecateHelper::hardThrow();
 

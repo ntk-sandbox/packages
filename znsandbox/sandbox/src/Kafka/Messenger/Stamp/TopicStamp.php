@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Kafka\Messenger\Stamp;
+namespace Untek\Sandbox\Sandbox\Kafka\Messenger\Stamp;
 
 use Symfony\Component\Messenger\Stamp\StampInterface;
 

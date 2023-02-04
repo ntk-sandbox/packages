@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 
 class RepositoryInterfaceScenario extends BaseInterfaceScenario
 {

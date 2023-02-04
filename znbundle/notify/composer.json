@@ -15,8 +15,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\Notify\\": "src",
-			"ZnBundle\\Notify\\Tests\\": "tests"
+			"Untek\\Bundle\\Notify\\": "src",
+			"Untek\\Bundle\\Notify\\Tests\\": "tests"
 		}
 	}
 }

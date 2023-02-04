@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Tasks\Common;
+namespace Untek\Lib\Components\ShellRobot\Domain\Tasks\Common;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
 
 class WaitTask extends BaseShell implements TaskInterface
 {

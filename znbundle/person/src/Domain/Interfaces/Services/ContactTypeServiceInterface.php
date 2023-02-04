@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Person\Domain\Interfaces\Services;
+namespace Untek\Bundle\Person\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ContactTypeServiceInterface extends CrudServiceInterface
 {

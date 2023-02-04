@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Person\Rpc\Controllers;
+namespace Untek\User\Person\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnUser\Person\Domain\Interfaces\Services\ContactTypeServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\User\Person\Domain\Interfaces\Services\ContactTypeServiceInterface;
 
 class ContactTypeController extends BaseCrudRpcController
 {

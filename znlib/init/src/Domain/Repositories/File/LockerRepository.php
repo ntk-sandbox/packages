@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Init\Domain\Repositories\File;
+namespace Untek\Lib\Init\Domain\Repositories\File;
 
-use ZnLib\Init\Domain\Entities\LockerEntity;
-use ZnLib\Init\Domain\Interfaces\Repositories\LockerRepositoryInterface;
+use Untek\Lib\Init\Domain\Entities\LockerEntity;
+use Untek\Lib\Init\Domain\Interfaces\Repositories\LockerRepositoryInterface;
 
 class LockerRepository implements LockerRepositoryInterface
 {

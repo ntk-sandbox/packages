@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Eav\Symfony4\Admin\Controllers;
+namespace Untek\Bundle\Eav\Symfony4\Admin\Controllers;
 
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\AttributeServiceInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\Web\Controller\Base\BaseWebCrudController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\AttributeServiceInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class AttributeController extends BaseWebCrudController implements ControllerAccessInterface
 {

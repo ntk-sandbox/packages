@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Services;
+namespace Untek\Crypt\Pki\X509\Domain\Services;
 
 use phpseclib\File\X509;
 use phpseclib\Crypt\RSA;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCrypt\Pki\X509\Domain\Entities\CertificateEntity;
-use ZnCrypt\Pki\X509\Domain\Entities\InfoEntity;
-use ZnCrypt\Pki\X509\Domain\Entities\PersonEntity;
-use ZnCrypt\Pki\X509\Domain\Entities\SignatureEntity;
-use ZnCrypt\Pki\X509\Domain\Helpers\NcaLayerHelper;
-use ZnCrypt\Pki\X509\Domain\Helpers\X509Helper;
-use ZnCrypt\Pki\X509\Domain\Helpers\XmlHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Crypt\Pki\X509\Domain\Entities\CertificateEntity;
+use Untek\Crypt\Pki\X509\Domain\Entities\InfoEntity;
+use Untek\Crypt\Pki\X509\Domain\Entities\PersonEntity;
+use Untek\Crypt\Pki\X509\Domain\Entities\SignatureEntity;
+use Untek\Crypt\Pki\X509\Domain\Helpers\NcaLayerHelper;
+use Untek\Crypt\Pki\X509\Domain\Helpers\X509Helper;
+use Untek\Crypt\Pki\X509\Domain\Helpers\XmlHelper;
 use DateTime;
 
 class SignatureService

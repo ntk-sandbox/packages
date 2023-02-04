@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Repositories\Sqlite;
+namespace Untek\Database\Base\Domain\Repositories\Sqlite;
 
 use App\Example\Controllers\ExampleEntity;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Database\Schema\MySqlBuilder;
 use Illuminate\Database\Schema\PostgresBuilder;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDatabase\Base\Domain\Entities\ColumnEntity;
-use ZnDatabase\Base\Domain\Entities\RelationEntity;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Eloquent\Domain\Traits\EloquentTrait;
-use ZnDatabase\Fixture\Domain\Helpers\StructHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Database\Base\Domain\Entities\ColumnEntity;
+use Untek\Database\Base\Domain\Entities\RelationEntity;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;
+use Untek\Database\Fixture\Domain\Helpers\StructHelper;
 
 class DbRepository
 {
@@ -66,7 +66,7 @@ class DbRepository
             // select * from pg_tables where schemaname='public';
             $tableNames = ArrayHelper::getColumn($tables, 'table_name');
             foreach ($tableNames as $tableName) {
-                $tableEntity = new \ZnDatabase\Base\Domain\Entities\TableEntity;
+                $tableEntity = new \Untek\Database\Base\Domain\Entities\TableEntity;
                 $tableEntity->setName($tableName);
                 $tableEntity->setSchema($schemaEntity);
                 $tableCollection->add($tableEntity);

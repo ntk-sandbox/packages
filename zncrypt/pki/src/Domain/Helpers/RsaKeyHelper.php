@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Helpers;
+namespace Untek\Crypt\Pki\Domain\Helpers;
 
-use ZnCrypt\Pki\Domain\Entities\CertificateSubjectEntity;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 
 class RsaKeyHelper

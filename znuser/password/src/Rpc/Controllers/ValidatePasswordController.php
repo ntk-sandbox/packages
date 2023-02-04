@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Password\Rpc\Controllers;
+namespace Untek\User\Password\Rpc\Controllers;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnUser\Password\Domain\Entities\PasswordValidatorEntity;
-use ZnUser\Password\Domain\Entities\ValidatorEntity;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\User\Password\Domain\Entities\PasswordValidatorEntity;
+use Untek\User\Password\Domain\Entities\ValidatorEntity;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
 
 class ValidatePasswordController
 {

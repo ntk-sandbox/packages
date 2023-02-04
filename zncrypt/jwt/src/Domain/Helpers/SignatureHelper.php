@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
 use domain\union\v1\entities\MemberEntity;
-use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
-use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
+use Untek\Crypt\Base\Domain\Enums\EncryptAlgorithmEnum;
+use Untek\Crypt\Base\Domain\Enums\EncryptFunctionEnum;
 
 class SignatureHelper
 {

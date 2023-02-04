@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\Components\I18n\Traits;
+namespace Untek\Lib\Components\I18n\Traits;
 
-use ZnBundle\Language\Domain\Entities\LanguageEntity;
-use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
-use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnLib\Components\I18n\Enums\LanguageI18nEnum;
+use Untek\Bundle\Language\Domain\Entities\LanguageEntity;
+use Untek\Bundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Lib\Components\I18n\Enums\LanguageI18nEnum;
 
 trait I18nTrait
 {
@@ -17,7 +17,7 @@ trait I18nTrait
     protected $_languageService;
     protected $_runtimeLanguageService;
 
-    /** @var \ZnCore\Collection\Interfaces\Enumerable | LanguageEntity[] */
+    /** @var \Untek\Core\Collection\Interfaces\Enumerable | LanguageEntity[] */
     static protected $_languages = null;
 
     protected function _forgeLanguages(LanguageServiceInterface $languageService = null)

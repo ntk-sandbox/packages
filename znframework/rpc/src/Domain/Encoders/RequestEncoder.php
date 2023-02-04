@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Encoders;
+namespace Untek\Framework\Rpc\Domain\Encoders;
 
-use ZnFramework\Rpc\Domain\Interfaces\Encoders\RequestEncoderInterface;
+use Untek\Framework\Rpc\Domain\Interfaces\Encoders\RequestEncoderInterface;
 
 class RequestEncoder implements RequestEncoderInterface
 {

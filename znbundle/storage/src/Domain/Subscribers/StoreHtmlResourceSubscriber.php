@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Subscribers;
+namespace Untek\Bundle\Storage\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnBundle\Storage\Domain\Dto\MatchDto;
-use ZnBundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\FileSystem\Helpers\MimeTypeHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Bundle\Storage\Domain\Dto\MatchDto;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class StoreHtmlResourceSubscriber implements EventSubscriberInterface
 {

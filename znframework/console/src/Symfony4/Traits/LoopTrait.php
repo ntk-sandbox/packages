@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Traits;
+namespace Untek\Framework\Console\Symfony4\Traits;
 
 use React\EventLoop\Loop;
 use Symfony\Component\Console\Input\InputInterface;

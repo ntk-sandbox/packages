@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Code\Libs;
+namespace Untek\Core\Code\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Contract\Common\Exceptions\InternalServerErrorException;
-use ZnCore\Text\Libs\RandomString;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Contract\Common\Exceptions\InternalServerErrorException;
+use Untek\Core\Text\Libs\RandomString;
 
 /**
  * Замер производительности в произвольных местах кода.

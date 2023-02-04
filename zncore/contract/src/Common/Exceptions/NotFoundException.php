@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\Common\Exceptions;
+namespace Untek\Core\Contract\Common\Exceptions;
 
 use Exception;
 

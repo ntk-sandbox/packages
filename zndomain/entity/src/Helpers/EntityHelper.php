@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnDomain\Entity\Helpers;
+namespace Untek\Domain\Entity\Helpers;
 
 use ReflectionClass;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
-//use ZnCore\Code\Factories\PropertyAccess;
-use ZnLib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+//use Untek\Core\Code\Factories\PropertyAccess;
+use Untek\Lib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
 
 class EntityHelper
 {

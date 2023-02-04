@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\QrBox\Wrappers;
+namespace Untek\Lib\QrBox\Wrappers;
 
-use ZnLib\QrBox\Entities\BarCodeEntity;
+use Untek\Lib\QrBox\Entities\BarCodeEntity;
 use DateTime;
 
 class JsonWrapper extends BaseWrapper implements WrapperInterface

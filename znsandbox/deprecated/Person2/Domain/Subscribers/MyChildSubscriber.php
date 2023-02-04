@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Subscribers;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
-use ZnCore\Contract\User\Exceptions\ForbiddenException;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
+use Untek\Core\Contract\User\Exceptions\ForbiddenException;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class MyChildSubscriber implements EventSubscriberInterface
 {

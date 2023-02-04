@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\TalkBox\Commands;
+namespace Untek\Bundle\TalkBox\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnBundle\TalkBox\Domain\Entities\TagEntity;
-use ZnBundle\TalkBox\Domain\Services\TagService;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Bundle\TalkBox\Domain\Entities\TagEntity;
+use Untek\Bundle\TalkBox\Domain\Services\TagService;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 class SoundexCommand extends Command
 {

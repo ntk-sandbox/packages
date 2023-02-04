@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Services;
+namespace Untek\Bundle\Storage\Domain\Services;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use ZnBundle\Storage\Domain\Entities\FileEntity;
-use ZnBundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
-use ZnBundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
-use ZnBundle\Storage\Domain\Libs\FileHash;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnDomain\Service\Base\BaseService;
+use Untek\Bundle\Storage\Domain\Entities\FileEntity;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
+use Untek\Bundle\Storage\Domain\Libs\FileHash;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Domain\Service\Base\BaseService;
 
 class UploadService extends BaseService implements UploadServiceInterface
 {

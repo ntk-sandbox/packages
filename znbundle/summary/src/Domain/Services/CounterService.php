@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Services;
+namespace Untek\Bundle\Summary\Domain\Services;
 
 use Packages\User\Domain\Interfaces\Services\SessionServiceInterface;
 use Symfony\Component\Security\Core\Security;
-use ZnBundle\Summary\Domain\Entities\CounterEntity;
-use ZnBundle\Summary\Domain\Interfaces\Repositories\CounterRepositoryInterface;
-use ZnBundle\Summary\Domain\Interfaces\Services\CounterServiceInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Bundle\Summary\Domain\Entities\CounterEntity;
+use Untek\Bundle\Summary\Domain\Interfaces\Repositories\CounterRepositoryInterface;
+use Untek\Bundle\Summary\Domain\Interfaces\Services\CounterServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 class CounterService extends BaseCrudService implements CounterServiceInterface
 {

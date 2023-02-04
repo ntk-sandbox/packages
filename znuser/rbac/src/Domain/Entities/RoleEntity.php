@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Entities;
+namespace Untek\User\Rbac\Domain\Entities;
 
-use ZnUser\Rbac\Domain\Enums\ItemTypeEnum;
+use Untek\User\Rbac\Domain\Enums\ItemTypeEnum;
 
 class RoleEntity extends ItemEntity
 {

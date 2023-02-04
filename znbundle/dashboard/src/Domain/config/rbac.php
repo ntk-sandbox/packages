@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Dashboard\Domain\Enums\Rbac\DashboardPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Bundle\Dashboard\Domain\Enums\Rbac\DashboardPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

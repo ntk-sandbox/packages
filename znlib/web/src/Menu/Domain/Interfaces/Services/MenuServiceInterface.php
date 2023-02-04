@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\Menu\Domain\Interfaces\Services;
+namespace Untek\Lib\Web\Menu\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface MenuServiceInterface extends CrudServiceInterface
 {

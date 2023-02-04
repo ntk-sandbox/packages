@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Query\Entities;
+namespace Untek\Domain\Query\Entities;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Query\Enums\OperatorEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Query\Enums\OperatorEnum;
 
 // todo: refactor
 

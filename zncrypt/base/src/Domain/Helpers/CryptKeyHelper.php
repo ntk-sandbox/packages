@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Helpers;
+namespace Untek\Crypt\Base\Domain\Helpers;
 
 class CryptKeyHelper
 {

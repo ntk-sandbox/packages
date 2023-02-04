@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\EntityManager\Traits;
+namespace Untek\Domain\EntityManager\Traits;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 trait EntityManagerAwareTrait
 {

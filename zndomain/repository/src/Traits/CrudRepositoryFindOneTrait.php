@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnDomain\Repository\Traits;
+namespace Untek\Domain\Repository\Traits;
 
-use ZnCore\Code\Factories\PropertyAccess;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Text\Helpers\Inflector;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnLib\I18Next\Facades\I18Next;
+use Untek\Core\Code\Factories\PropertyAccess;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Lib\I18Next\Facades\I18Next;
 
 trait CrudRepositoryFindOneTrait
 {

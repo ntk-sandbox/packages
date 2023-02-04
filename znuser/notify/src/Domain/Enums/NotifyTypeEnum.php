@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Enums;
+namespace Untek\User\Notify\Domain\Enums;
 
 class NotifyTypeEnum
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Entities;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Entities;
 
 class SignatureEntity
 {

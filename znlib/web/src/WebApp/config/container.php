@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Csrf\TokenStorage\SessionTokenStorage;
 use Symfony\Component\Security\Csrf\TokenStorage\TokenStorageInterface;
-use ZnLib\Web\WebApp\Libs\ControllerResolver;
+use Untek\Lib\Web\WebApp\Libs\ControllerResolver;
 
 return [
     'singletons' => [

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Repositories\Console;
+namespace Untek\Bundle\Language\Domain\Repositories\Console;
 
-use ZnBundle\Language\Domain\Interfaces\Repositories\SwitchRepositoryInterface;
-use ZnLib\I18Next\Facades\I18Next;
+use Untek\Bundle\Language\Domain\Interfaces\Repositories\SwitchRepositoryInterface;
+use Untek\Lib\I18Next\Facades\I18Next;
 
 class SwitchRepository implements SwitchRepositoryInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\File;
+namespace Untek\Bundle\Notify\Domain\Repositories\File;
 
-use ZnBundle\Notify\Domain\Entities\SmsEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use ZnDomain\Components\FileRepository\Base\BaseLoopedFileRepository;
+use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use Untek\Domain\Components\FileRepository\Base\BaseLoopedFileRepository;
 
 class SmsRepository extends BaseLoopedFileRepository implements SmsRepositoryInterface
 {

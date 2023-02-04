@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\Common\Interfaces;
+namespace Untek\Core\Contract\Common\Interfaces;
 
 interface GetNameInterface
 {

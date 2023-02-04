@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Services;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Services;
 
-use ZnFramework\Rpc\Domain\Entities\SettingsEntity;
+use Untek\Framework\Rpc\Domain\Entities\SettingsEntity;
 
 interface SettingsServiceInterface
 {

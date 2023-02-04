@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters;
 
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
-use ZnSandbox\Sandbox\Generator\Domain\Entities\RepositoryEntity;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnSandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Sandbox\Sandbox\Generator\Domain\Entities\RepositoryEntity;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Sandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
 
 class RepositoryAdapter extends BaseAdapter
 {

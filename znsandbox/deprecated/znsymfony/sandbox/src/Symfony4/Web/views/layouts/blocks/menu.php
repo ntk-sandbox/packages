@@ -5,11 +5,11 @@
  * @var string $moduleId
  */
 
-use ZnSymfony\Sandbox\Symfony4\Web\Helpers\UrlHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnLib\Web\Html\Helpers\Url;
+use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\UrlHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Lib\Web\Html\Helpers\Url;
 
-$currentUri = \ZnLib\Components\Http\Helpers\UrlHelper::requestUri();
+$currentUri = \Untek\Lib\Components\Http\Helpers\UrlHelper::requestUri();
 
 ?>
 

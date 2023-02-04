@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Geo\Rpc\Controllers;
+namespace Untek\Bundle\Geo\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnBundle\Geo\Domain\Interfaces\Services\LocalityServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Geo\Domain\Interfaces\Services\LocalityServiceInterface;
 
 class LocalityController extends BaseCrudRpcController
 {

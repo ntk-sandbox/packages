@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Services;
+namespace Untek\Crypt\Base\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
-use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
-use ZnCrypt\Base\Domain\Interfaces\Services\PasswordServiceInterface;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidPasswordException;
+use Untek\Crypt\Base\Domain\Interfaces\Services\PasswordServiceInterface;
 
 class PasswordService implements PasswordServiceInterface
 {

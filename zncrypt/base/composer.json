@@ -15,8 +15,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnCrypt\\Base\\": "src",
-			"ZnCrypt\\Base\\Tests\\": "tests"
+			"Untek\\Crypt\\Base\\": "src",
+			"Untek\\Crypt\\Base\\Tests\\": "tests"
 		}
 	}
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Mappers;
+namespace Untek\Bundle\Log\Domain\Mappers;
 
-use ZnDomain\Repository\Interfaces\MapperInterface;
+use Untek\Domain\Repository\Interfaces\MapperInterface;
 
 class HistoryMapper implements MapperInterface
 {

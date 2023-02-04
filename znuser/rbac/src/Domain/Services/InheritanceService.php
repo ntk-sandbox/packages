@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
-use ZnUser\Rbac\Domain\Interfaces\Services\InheritanceServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Rbac\Domain\Entities\InheritanceEntity;
+use Untek\User\Rbac\Domain\Interfaces\Services\InheritanceServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
 
 class InheritanceService extends BaseCrudService implements InheritanceServiceInterface
 {

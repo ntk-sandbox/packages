@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Scenarios\Input;
+namespace Untek\Database\Migration\Domain\Scenarios\Input;
 
-use ZnDatabase\Migration\Domain\Enums\GenerateActionEnum;
+use Untek\Database\Migration\Domain\Enums\GenerateActionEnum;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\Question;
 

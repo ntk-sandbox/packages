@@ -1,9 +1,9 @@
 <?php
 
 
-namespace ZnUser\Notify\Domain\Interfaces\Libs;
+namespace Untek\User\Notify\Domain\Interfaces\Libs;
 
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
 
 interface ContactDriverInterface
 {

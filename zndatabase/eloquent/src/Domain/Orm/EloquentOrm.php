@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDatabase\Eloquent\Domain\Orm;
+namespace Untek\Database\Eloquent\Domain\Orm;
 
-use ZnDomain\EntityManager\Interfaces\OrmInterface;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
+use Untek\Domain\EntityManager\Interfaces\OrmInterface;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 class EloquentOrm implements OrmInterface
 {

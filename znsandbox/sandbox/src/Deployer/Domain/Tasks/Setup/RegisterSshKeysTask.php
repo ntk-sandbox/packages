@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Setup;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Setup;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\SshShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\SshShell;
 
 class RegisterSshKeysTask extends BaseShell implements TaskInterface
 {

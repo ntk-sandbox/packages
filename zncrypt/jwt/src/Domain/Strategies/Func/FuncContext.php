@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Strategies\Func;
+namespace Untek\Crypt\Jwt\Domain\Strategies\Func;
 
-use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
-use ZnCrypt\Jwt\Domain\Strategies\Func\Handlers\HandlerInterface;
-use ZnCrypt\Jwt\Domain\Strategies\Func\Handlers\HmacStrategy;
-use ZnCrypt\Jwt\Domain\Strategies\Func\Handlers\OpenSslStrategy;
-use ZnCore\Pattern\Strategy\Base\BaseStrategyContextHandlers;
+use Untek\Crypt\Base\Domain\Enums\EncryptFunctionEnum;
+use Untek\Crypt\Jwt\Domain\Strategies\Func\Handlers\HandlerInterface;
+use Untek\Crypt\Jwt\Domain\Strategies\Func\Handlers\HmacStrategy;
+use Untek\Crypt\Jwt\Domain\Strategies\Func\Handlers\OpenSslStrategy;
+use Untek\Core\Pattern\Strategy\Base\BaseStrategyContextHandlers;
 
 /**
  * @property-read HandlerInterface $strategyInstance

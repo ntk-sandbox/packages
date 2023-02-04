@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Libs;
+namespace Untek\Crypt\Jwt\Domain\Libs;
 
-use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
-use ZnCrypt\Jwt\Domain\Helpers\ConfigProfileHelper;
+use Untek\Crypt\Jwt\Domain\Entities\JwtProfileEntity;
+use Untek\Crypt\Jwt\Domain\Helpers\ConfigProfileHelper;
 
-//use ZnCore\Base\Traits\ClassAttribute\MagicSetTrait;
+//use Untek\Core\Base\Traits\ClassAttribute\MagicSetTrait;
 
 class ProfileContainer //extends BaseContainer
 {

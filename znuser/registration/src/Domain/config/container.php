@@ -2,6 +2,6 @@
 
 return [
 	'singletons' => [
-		'ZnUser\\Registration\\Domain\\Interfaces\\Services\\RegistrationServiceInterface' => 'ZnUser\\Registration\\Domain\\Services\\RegistrationService',
+		'Untek\\User\\Registration\\Domain\\Interfaces\\Services\\RegistrationServiceInterface' => 'Untek\\User\\Registration\\Domain\\Services\\RegistrationService',
 	],
 ];

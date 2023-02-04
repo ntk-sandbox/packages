@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Notify\Symfony4\Widgets\NotifyMenu;
+namespace Untek\User\Notify\Symfony4\Widgets\NotifyMenu;
 
-use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
-use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Entities\Query;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;
+use Untek\User\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class NotifyMenuWidget extends BaseWidget2
 {

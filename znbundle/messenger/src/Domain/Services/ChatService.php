@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Services;
+namespace Untek\Bundle\Messenger\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnBundle\Messenger\Domain\Entities\ChatEntity;
-use ZnBundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\ChatServiceInterface;
-use ZnBundle\Messenger\Domain\Interfaces\MemberRepositoryInterface;
-use ZnBundle\User\Domain\Entities\User;
-use ZnBundle\User\Domain\Services\AuthService;
-use ZnBundle\User\Domain\Services\AuthService2;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Bundle\Messenger\Domain\Entities\ChatEntity;
+use Untek\Bundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\ChatServiceInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\MemberRepositoryInterface;
+use Untek\Bundle\User\Domain\Entities\User;
+use Untek\Bundle\User\Domain\Services\AuthService;
+use Untek\Bundle\User\Domain\Services\AuthService2;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 /**
  * @property ChatRepositoryInterface | GetEntityClassInterface $repository

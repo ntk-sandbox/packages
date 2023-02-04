@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Password\Domain\Entities;
+namespace Untek\User\Password\Domain\Entities;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class PasswordValidatorEntity implements ValidationByMetadataInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Confirm\Domain\Enums;
+namespace Untek\User\Confirm\Domain\Enums;
 
 class ConfirmActionEnum
 {

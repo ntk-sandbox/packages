@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Services;
 
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Application\Domain\Entities\ApplicationEntity;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApplicationEntity;
 
 /**
  * @method

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Init\Domain\Interfaces\Services;
+namespace Untek\Lib\Init\Domain\Interfaces\Services;
 
 interface RequirementServiceInterface
 {

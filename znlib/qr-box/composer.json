@@ -16,8 +16,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnLib\\QrBox\\": "src",
-      "ZnLib\\QrBox\\Tests\\": "tests"
+      "Untek\\Lib\\QrBox\\": "src",
+      "Untek\\Lib\\QrBox\\Tests\\": "tests"
     }
   }
 }

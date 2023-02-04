@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Storage\Rpc\Controllers\MyFileController;
-use ZnBundle\Storage\Domain\Enums\Rbac\StorageMyFilePermissionEnum;
+use Untek\Bundle\Storage\Rpc\Controllers\MyFileController;
+use Untek\Bundle\Storage\Domain\Enums\Rbac\StorageMyFilePermissionEnum;
 
 return [
     [

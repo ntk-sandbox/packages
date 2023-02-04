@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Subscribers;
+namespace Untek\Framework\Rpc\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
+use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;
 
 class LanguageSubscriber implements EventSubscriberInterface
 {

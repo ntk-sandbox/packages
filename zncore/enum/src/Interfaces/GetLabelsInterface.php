@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Enum\Interfaces;
+namespace Untek\Core\Enum\Interfaces;
 
 /**
  * Возможность получения названий констант

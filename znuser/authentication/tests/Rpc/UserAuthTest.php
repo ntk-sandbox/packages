@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Authentication\Tests\Rpc\User;
+namespace Untek\User\Authentication\Tests\Rpc\User;
 
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Test\BaseRpcTest;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
 
 class UserAuthTest extends BaseRpcTest
 {

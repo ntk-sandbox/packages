@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface MethodServiceInterface extends CrudServiceInterface
 {

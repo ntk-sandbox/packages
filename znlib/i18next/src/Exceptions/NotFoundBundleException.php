@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\I18Next\Exceptions;
+namespace Untek\Lib\I18Next\Exceptions;
 
 use Exception;
 

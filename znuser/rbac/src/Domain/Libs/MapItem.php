@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Libs;
+namespace Untek\User\Rbac\Domain\Libs;
 
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnUser\Rbac\Domain\Entities\InheritanceEntity;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
-use ZnUser\Rbac\Domain\Enums\ItemTypeEnum;
-use ZnUser\Rbac\Domain\Interfaces\InheritanceMapInterface;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Enums\ItemTypeEnum;
+use Untek\User\Rbac\Domain\Interfaces\InheritanceMapInterface;
 
 class MapItem
 {

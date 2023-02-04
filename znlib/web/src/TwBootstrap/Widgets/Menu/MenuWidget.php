@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Menu;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Menu;
 
 use Closure;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\Web\Widget\Base\BaseWidget;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\Web\Widget\Base\BaseWidget;
 
 class MenuWidget extends BaseWidget
 {

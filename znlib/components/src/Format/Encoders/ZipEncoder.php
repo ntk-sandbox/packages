@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Components\Format\Encoders;
+namespace Untek\Lib\Components\Format\Encoders;
 
 use Exception;
 use Symfony\Component\Uid\Uuid;
 use ZipArchive;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 
 /**
  * Сжатие данных Zip

@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Services;
+namespace Untek\Bundle\Reference\Domain\Services;
 
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\ItemBookServiceInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
-use ZnBundle\Reference\Domain\Subscribers\BookIdSubscriber;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemBookServiceInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
+use Untek\Bundle\Reference\Domain\Subscribers\BookIdSubscriber;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
 
 class ItemBookService extends ItemService implements ItemBookServiceInterface
 {

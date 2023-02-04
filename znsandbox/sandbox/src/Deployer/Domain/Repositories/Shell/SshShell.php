@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell;
 
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
-use ZnSandbox\Sandbox\Deployer\Domain\Libs\SshConfig;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShellDriver;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Libs\SshConfig;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShellDriver;
 
 class SshShell extends BaseShellDriver
 {

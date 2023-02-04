@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Setup;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Setup;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
 
 class SetSudoPasswordTask extends BaseShell implements TaskInterface
 {

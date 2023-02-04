@@ -2,7 +2,7 @@
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
-use ZnUser\Rbac\Domain\Services\AuthorizationCheckerService;
+use Untek\User\Rbac\Domain\Services\AuthorizationCheckerService;
 
 $isDbDriver = true;
 //$isDbDriver = !EnvHelper::isDev();
@@ -11,45 +11,45 @@ return [
     'singletons' => [
         AuthorizationCheckerInterface::class => AuthorizationCheckerService::class,
         'security.authorization_checker' => AuthorizationCheckerInterface::class,
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\RoleRepositoryInterface' => $isDbDriver
-            ? 'ZnUser\\Rbac\\Domain\\Repositories\\Eloquent\\RoleRepository'
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\RoleRepositoryInterface' => $isDbDriver
+            ? 'Untek\\User\\Rbac\\Domain\\Repositories\\Eloquent\\RoleRepository'
             : function (ContainerInterface $container) {
-                /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-                $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+                /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+                $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
                 $fileName = $envStorage->get('FIXTURE_DIRECTORY') ? $envStorage->get('FIXTURE_DIRECTORY') . '/rbac_item.php' : __DIR__ . '/../../../../../../fixtures/rbac_item.php';
-                $repository = $container->get('ZnUser\\Rbac\\Domain\\Repositories\\File\\RoleRepository');
+                $repository = $container->get('Untek\\User\\Rbac\\Domain\\Repositories\\File\\RoleRepository');
                 $repository->setFileName($fileName);
             },
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\InheritanceRepositoryInterface' => $isDbDriver
-            ? 'ZnUser\\Rbac\\Domain\\Repositories\\Eloquent\\InheritanceRepository'
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\InheritanceRepositoryInterface' => $isDbDriver
+            ? 'Untek\\User\\Rbac\\Domain\\Repositories\\Eloquent\\InheritanceRepository'
             : function (ContainerInterface $container) {
-                /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-                $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+                /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+                $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
                 $fileName = $envStorage->get('FIXTURE_DIRECTORY') ? $envStorage->get('FIXTURE_DIRECTORY') . '/rbac_inheritance.php' : __DIR__ . '/../../../../../../fixtures/rbac_inheritance.php';
-                $repository = $container->get('ZnUser\\Rbac\\Domain\\Repositories\\File\\InheritanceRepository');
+                $repository = $container->get('Untek\\User\\Rbac\\Domain\\Repositories\\File\\InheritanceRepository');
                 $repository->setFileName($fileName);
                 return $repository;
             },
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\ItemRepositoryInterface' => $isDbDriver
-            ? 'ZnUser\\Rbac\\Domain\\Repositories\\Eloquent\\ItemRepository'
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\ItemRepositoryInterface' => $isDbDriver
+            ? 'Untek\\User\\Rbac\\Domain\\Repositories\\Eloquent\\ItemRepository'
             : function (ContainerInterface $container) {
-                /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-                $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+                /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+                $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
                 $fileName = $envStorage->get('FIXTURE_DIRECTORY') ? $envStorage->get('FIXTURE_DIRECTORY') . '/rbac_item.php' : __DIR__ . '/../../../../../../fixtures/rbac_item.php';
-                $repository = $container->get('ZnUser\\Rbac\\Domain\\Repositories\\File\\ItemRepository');
+                $repository = $container->get('Untek\\User\\Rbac\\Domain\\Repositories\\File\\ItemRepository');
                 $repository->setFileName($fileName);
             },
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\PermissionRepositoryInterface' => $isDbDriver
-            ? 'ZnUser\\Rbac\\Domain\\Repositories\\Eloquent\\PermissionRepository'
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\PermissionRepositoryInterface' => $isDbDriver
+            ? 'Untek\\User\\Rbac\\Domain\\Repositories\\Eloquent\\PermissionRepository'
             : function (ContainerInterface $container) {
-                /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-                $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+                /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+                $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
                 $fileName = $envStorage->get('FIXTURE_DIRECTORY') ? $envStorage->get('FIXTURE_DIRECTORY') . '/rbac_item.php' : __DIR__ . '/../../../../../../fixtures/rbac_item.php';
-                $repository = $container->get('ZnUser\\Rbac\\Domain\\Repositories\\File\\PermissionRepository');
+                $repository = $container->get('Untek\\User\\Rbac\\Domain\\Repositories\\File\\PermissionRepository');
                 $repository->setFileName($fileName);
             },
 

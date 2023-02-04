@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Interfaces\Services;
+namespace Untek\Database\Backup\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface DumpServiceInterface extends CrudServiceInterface
 {

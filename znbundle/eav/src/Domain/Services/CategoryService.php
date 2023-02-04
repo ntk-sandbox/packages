@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Services;
+namespace Untek\Bundle\Eav\Domain\Services;
 
-use ZnBundle\Eav\Domain\Entities\CategoryEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\CategoryServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Eav\Domain\Entities\CategoryEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\CategoryServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
 
 /**
  * Class CategoryService
- * @package ZnBundle\Eav\Domain\Services
+ * @package Untek\Bundle\Eav\Domain\Services
  * @method CategoryRepositoryInterface getRepository()
  */
 class CategoryService extends BaseCrudService implements CategoryServiceInterface

@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
 use ArrayAccess;
 use DateTime;
 use DomainException;
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
-use ZnCrypt\Jwt\Domain\Dto\TokenDto;
-use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
-use ZnCrypt\Jwt\Domain\Exceptions\BeforeValidException;
-use ZnCrypt\Jwt\Domain\Exceptions\ExpiredException;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Crypt\Jwt\Domain\Dto\TokenDto;
+use Untek\Crypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use Untek\Crypt\Jwt\Domain\Exceptions\BeforeValidException;
+use Untek\Crypt\Jwt\Domain\Exceptions\ExpiredException;
 use UnexpectedValueException;
 
 class JwtModelHelper

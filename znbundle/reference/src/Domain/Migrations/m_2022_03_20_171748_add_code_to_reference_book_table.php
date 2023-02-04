@@ -3,7 +3,7 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnDatabase\Migration\Domain\Base\BaseColumnMigration;
+use Untek\Database\Migration\Domain\Base\BaseColumnMigration;
 
 class m_2022_03_20_171748_add_code_to_reference_book_table extends BaseColumnMigration
 {

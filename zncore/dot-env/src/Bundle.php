@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\DotEnv;
+namespace Untek\Core\DotEnv;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

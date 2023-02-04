@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Enums;
+namespace Untek\Kaz\Iin\Domain\Enums;
 
 class SexEnum
 {

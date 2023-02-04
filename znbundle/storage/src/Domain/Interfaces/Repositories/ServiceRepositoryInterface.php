@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Storage\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ServiceRepositoryInterface extends CrudRepositoryInterface
 {

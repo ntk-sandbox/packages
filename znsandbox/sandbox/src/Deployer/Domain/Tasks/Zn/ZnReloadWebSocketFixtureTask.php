@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\ZnShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\ZnShell;
 
 class ZnReloadWebSocketFixtureTask extends BaseShell implements TaskInterface
 {

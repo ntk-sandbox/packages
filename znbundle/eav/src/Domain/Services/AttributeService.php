@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Services;
+namespace Untek\Bundle\Eav\Domain\Services;
 
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\AttributeServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\AttributeServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class AttributeService extends BaseCrudService implements AttributeServiceInterface
 {

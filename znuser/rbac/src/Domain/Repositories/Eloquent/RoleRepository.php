@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\Eloquent;
+namespace Untek\User\Rbac\Domain\Repositories\Eloquent;
 
-use ZnDomain\Query\Entities\Query;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
-use ZnUser\Rbac\Domain\Entities\RoleEntity;
-use ZnUser\Rbac\Domain\Enums\ItemTypeEnum;
+use Untek\Domain\Query\Entities\Query;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Entities\RoleEntity;
+use Untek\User\Rbac\Domain\Enums\ItemTypeEnum;
 
 class RoleRepository extends ItemRepository
 {

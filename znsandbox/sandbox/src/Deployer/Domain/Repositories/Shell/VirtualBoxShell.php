@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell;
 
 use Symfony\Component\Process\Exception\ProcessFailedException;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShellDriver;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShellDriver;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
 
 class VirtualBoxShell extends BaseShellDriver
 {

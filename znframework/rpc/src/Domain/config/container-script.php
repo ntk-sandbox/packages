@@ -1,21 +1,21 @@
 <?php
 
-use ZnCore\Env\Helpers\EnvHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
 
 use Fruitcake\Cors\CorsService;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
 
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
-use ZnFramework\Rpc\Symfony4\Web\Libs\CryptoProviderInterface;
-use ZnFramework\Rpc\Symfony4\Web\Libs\JsonDSigCryptoProvider;
-use ZnFramework\Rpc\Symfony4\Web\Libs\NullCryptoProvider;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
+use Untek\Framework\Rpc\Symfony4\Web\Libs\CryptoProviderInterface;
+use Untek\Framework\Rpc\Symfony4\Web\Libs\JsonDSigCryptoProvider;
+use Untek\Framework\Rpc\Symfony4\Web\Libs\NullCryptoProvider;
 
 return [
     'singletons' => [
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Repositories\\MethodRepositoryInterface' => !EnvHelper::isDev()
-            ? 'ZnFramework\Rpc\Domain\Repositories\Eloquent\MethodRepository'
-            : 'ZnFramework\Rpc\Domain\Repositories\File\MethodRepository',
-//            : 'ZnFramework\Rpc\Domain\Repositories\ConfigManager\MethodRepository',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Repositories\\MethodRepositoryInterface' => !EnvHelper::isDev()
+            ? 'Untek\Framework\Rpc\Domain\Repositories\Eloquent\MethodRepository'
+            : 'Untek\Framework\Rpc\Domain\Repositories\File\MethodRepository',
+//            : 'Untek\Framework\Rpc\Domain\Repositories\ConfigManager\MethodRepository',
         CryptoProviderInterface::class => NullCryptoProvider::class,
 
         /*CryptoProviderInterface::class => function () {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Entities;
+namespace Untek\Lib\Socket\Domain\Entities;
 
-use ZnLib\Socket\Domain\Enums\SocketEventStatusEnum;
+use Untek\Lib\Socket\Domain\Enums\SocketEventStatusEnum;
 
 class SocketEventEntity {
 

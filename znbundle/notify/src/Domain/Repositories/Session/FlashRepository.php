@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\Session;
+namespace Untek\Bundle\Notify\Domain\Repositories\Session;
 
 use LogicException;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use ZnCore\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
 
 class FlashRepository implements FlashRepositoryInterface
 {

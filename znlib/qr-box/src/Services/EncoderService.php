@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnLib\QrBox\Services;
+namespace Untek\Lib\QrBox\Services;
 
 use DateTime;
 use Exception;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
-use ZnLib\QrBox\Entities\BarCodeEntity;
-use ZnLib\QrBox\Libs\DataSize;
-use ZnLib\QrBox\Libs\WrapperDetector;
-use ZnLib\QrBox\Wrappers\WrapperInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Lib\QrBox\Entities\BarCodeEntity;
+use Untek\Lib\QrBox\Libs\DataSize;
+use Untek\Lib\QrBox\Libs\WrapperDetector;
+use Untek\Lib\QrBox\Wrappers\WrapperInterface;
 
 class EncoderService
 {

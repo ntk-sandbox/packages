@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Entities;
+namespace Untek\Crypt\Pki\X509\Domain\Entities;
 
 
 

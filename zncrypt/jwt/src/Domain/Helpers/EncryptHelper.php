@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
-use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
-use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
+use Untek\Crypt\Jwt\Domain\Entities\KeyEntity;
+use Untek\Crypt\Base\Domain\Enums\EncryptFunctionEnum;
 
 class EncryptHelper
 {

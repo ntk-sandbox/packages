@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Validator\Helpers;
+namespace Untek\Domain\Validator\Helpers;
 
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 
 class UnprocessableHelper
 {

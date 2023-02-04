@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Repositories\File;
+namespace Untek\Framework\Rpc\Domain\Repositories\File;
 
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
 
 class DocsRepository implements DocsRepositoryInterface
 {

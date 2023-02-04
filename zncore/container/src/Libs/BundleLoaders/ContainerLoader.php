@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnCore\Container\Libs\BundleLoaders;
+namespace Untek\Core\Container\Libs\BundleLoaders;
 
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Laminas\Code\Generator\ValueGenerator;
 use Opis\Closure\ReflectionClosure;
 use Opis\Closure\SerializableClosure;
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\Code\Helpers\ClosureHelper;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Libs\ContainerConfigurators\ArrayContainerConfigurator;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
-use ZnCore\Instance\Libs\Resolvers\MethodParametersResolver;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\Code\Helpers\ClosureHelper;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Libs\ContainerConfigurators\ArrayContainerConfigurator;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver;
 
-class Container1 extends \ZnCore\Container\Libs\Container
+class Container1 extends \Untek\Core\Container\Libs\Container
 {
 
 

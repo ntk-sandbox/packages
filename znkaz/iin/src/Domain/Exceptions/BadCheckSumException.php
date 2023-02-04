@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Exceptions;
+namespace Untek\Kaz\Iin\Domain\Exceptions;
 
 use Exception;
 

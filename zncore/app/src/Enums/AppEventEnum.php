@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\App\Enums;
+namespace Untek\Core\App\Enums;
 
 /**
  * Перечисление событий инициализации приложения

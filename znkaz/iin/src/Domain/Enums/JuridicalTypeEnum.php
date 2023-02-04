@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Enums;
+namespace Untek\Kaz\Iin\Domain\Enums;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class JuridicalTypeEnum implements GetLabelsInterface
 {

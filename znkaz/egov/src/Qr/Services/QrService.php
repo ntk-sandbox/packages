@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Services;
+namespace Untek\Kaz\Egov\Qr\Services;
 
 use BaconQrCode\Renderer\Image\EpsImageBackEnd;
 use BaconQrCode\Renderer\Image\ImagickImageBackEnd;
@@ -9,14 +9,14 @@ use BaconQrCode\Renderer\ImageRenderer;
 use BaconQrCode\Renderer\PlainTextRenderer;
 use BaconQrCode\Renderer\RendererStyle\RendererStyle;
 use BaconQrCode\Writer;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnCore\FileSystem\Helpers\MimeTypeHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnKaz\Egov\Qr\Enums\ImageExtensionEnum;
-use ZnLib\QrBox\Entities\FileEntity;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Kaz\Egov\Qr\Enums\ImageExtensionEnum;
+use Untek\Lib\QrBox\Entities\FileEntity;
 
-//use ZnKaz\Egov\Qr\Entities\FileEntity;
+//use Untek\Kaz\Egov\Qr\Entities\FileEntity;
 
 class QrService
 {

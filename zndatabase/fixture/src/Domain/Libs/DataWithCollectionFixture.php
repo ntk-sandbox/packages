@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Fixture\Domain\Libs;
+namespace Untek\Database\Fixture\Domain\Libs;
 
-use ZnDatabase\Fixture\Domain\Libs\FixtureGenerator;
+use Untek\Database\Fixture\Domain\Libs\FixtureGenerator;
 
 abstract class DataWithCollectionFixture extends DataFixture
 {

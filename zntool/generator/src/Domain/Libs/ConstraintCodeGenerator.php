@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs;
+namespace Untek\Tool\Generator\Domain\Libs;
 
 use Laminas\Code\Generator\FileGenerator;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Helpers\FieldRenderHelper;
-use ZnTool\Generator\Domain\Helpers\TypeAttributeHelper;
-use ZnTool\Generator\Domain\Libs\Types\ArrayType;
-use ZnTool\Generator\Domain\Libs\Types\BaseType;
-use ZnTool\Generator\Domain\Libs\Types\BoolType;
-use ZnTool\Generator\Domain\Libs\Types\I18nType;
-use ZnTool\Generator\Domain\Libs\Types\IntPositiveOrZeroType;
-use ZnTool\Generator\Domain\Libs\Types\IntPositiveType;
-use ZnTool\Generator\Domain\Libs\Types\IntType;
-use ZnTool\Generator\Domain\Libs\Types\StatusIdType;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Helpers\FieldRenderHelper;
+use Untek\Tool\Generator\Domain\Helpers\TypeAttributeHelper;
+use Untek\Tool\Generator\Domain\Libs\Types\ArrayType;
+use Untek\Tool\Generator\Domain\Libs\Types\BaseType;
+use Untek\Tool\Generator\Domain\Libs\Types\BoolType;
+use Untek\Tool\Generator\Domain\Libs\Types\I18nType;
+use Untek\Tool\Generator\Domain\Libs\Types\IntPositiveOrZeroType;
+use Untek\Tool\Generator\Domain\Libs\Types\IntPositiveType;
+use Untek\Tool\Generator\Domain\Libs\Types\IntType;
+use Untek\Tool\Generator\Domain\Libs\Types\StatusIdType;
 
 class ConstraintCodeGenerator
 {
@@ -56,8 +56,8 @@ class ConstraintCodeGenerator
 
 //        $isStatus = $attribute == 'status_id';
         if(StatusIdType::match($attributeName)) {
-            $this->fileGenerator->setUse(\ZnLib\Components\Status\Enums\StatusEnum::class);
-            $this->fileGenerator->setUse(\ZnDomain\Components\Constraints\Enum::class);
+            $this->fileGenerator->setUse(\Untek\Lib\Components\Status\Enums\StatusEnum::class);
+            $this->fileGenerator->setUse(\Untek\Domain\Components\Constraints\Enum::class);
             $validationRules[] =
                 "\$metadata->addPropertyConstraint('$attributeName', new Enum([
     'class' => StatusEnum::class,
@@ -66,7 +66,7 @@ class ConstraintCodeGenerator
 
         //$isBoolean = FieldRenderHelper::isMatchPrefix($attribute, 'is_');
         if(BoolType::match($attributeName)) {
-            $this->fileGenerator->setUse(\ZnDomain\Validator\Constraints\Boolean::class);
+            $this->fileGenerator->setUse(\Untek\Domain\Validator\Constraints\Boolean::class);
             $validationRules[] = "\$metadata->addPropertyConstraint('$attributeName', new Boolean());";
         }
 
@@ -76,7 +76,7 @@ class ConstraintCodeGenerator
         }
 
         if(ArrayType::match($attributeName) || I18nType::match($attributeName)) {
-            $this->fileGenerator->setUse(\ZnDomain\Components\Constraints\Arr::class);
+            $this->fileGenerator->setUse(\Untek\Domain\Components\Constraints\Arr::class);
             $validationRules[] = "\$metadata->addPropertyConstraint('$attributeName', new Arr());";
         }
 

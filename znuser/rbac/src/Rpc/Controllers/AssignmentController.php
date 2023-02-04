@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Rbac\Rpc\Controllers;
+namespace Untek\User\Rbac\Rpc\Controllers;
 
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
-use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
+use Untek\User\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
 
 class AssignmentController
 {

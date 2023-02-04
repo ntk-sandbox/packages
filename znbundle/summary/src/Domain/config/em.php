@@ -2,6 +2,6 @@
 
 return [
 	'entities' => [
-		'ZnBundle\\Summary\\Domain\\Entities\\AttemptEntity' => 'ZnBundle\\Summary\\Domain\\Interfaces\\Repositories\\AttemptRepositoryInterface',
+		'Untek\\Bundle\\Summary\\Domain\\Entities\\AttemptEntity' => 'Untek\\Bundle\\Summary\\Domain\\Interfaces\\Repositories\\AttemptRepositoryInterface',
 	],
 ];

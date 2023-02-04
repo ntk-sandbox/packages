@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnDomain\\Query\\": "src",
-      "ZnDomain\\Query\\Tests\\": "tests"
+      "Untek\\Domain\\Query\\": "src",
+      "Untek\\Domain\\Query\\Tests\\": "tests"
     }
   }
 }

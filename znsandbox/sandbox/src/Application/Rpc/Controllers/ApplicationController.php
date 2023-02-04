@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Rpc\Controllers;
+namespace Untek\Sandbox\Sandbox\Application\Rpc\Controllers;
 
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
 
 class ApplicationController extends BaseCrudRpcController
 {

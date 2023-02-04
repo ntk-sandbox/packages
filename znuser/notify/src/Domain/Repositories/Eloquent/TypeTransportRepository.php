@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Repositories\Eloquent;
+namespace Untek\User\Notify\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Notify\Domain\Entities\TypeTransportEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
 
 class TypeTransportRepository extends BaseEloquentCrudRepository implements TypeTransportRepositoryInterface
 {

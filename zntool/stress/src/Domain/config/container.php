@@ -1,12 +1,12 @@
 <?php
 
 use Symfony\Component\Console\Application;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnCore\Container\Libs\Container;
-use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnTool\Stress\Domain\Repositories\Conf\ProfileRepository;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\DotEnv\Domain\Libs\DotEnv;
+use Untek\Core\Container\Libs\Container;
+use Untek\Database\Eloquent\Domain\Factories\ManagerFactory;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Tool\Stress\Domain\Repositories\Conf\ProfileRepository;
 
 return [
     'definitions' => [],
@@ -16,8 +16,8 @@ return [
             return ManagerFactory::createManagerFromEnv();
         },*/
         ProfileRepository::class => function (\Psr\Container\ContainerInterface $container) {
-            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+            /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
             $config = [];
             /*if(!$envStorage->has('STRESS_PROFILE_CONFIG')) {

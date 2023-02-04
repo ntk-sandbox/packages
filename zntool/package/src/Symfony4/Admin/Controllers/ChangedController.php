@@ -1,25 +1,25 @@
 <?php
 
-namespace ZnTool\Package\Symfony4\Admin\Controllers;
+namespace Untek\Tool\Package\Symfony4\Admin\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Libs\FormManager;
-use ZnLib\Web\Layout\Libs\LayoutManager;
-use ZnTool\Package\Domain\Entities\FavoriteEntity;
-use ZnTool\Package\Domain\Helpers\FavoriteHelper;
-use ZnTool\Package\Domain\Helpers\TableMapperHelper;
-use ZnTool\Package\Domain\Interfaces\Services\ClientServiceInterface;
-use ZnTool\Package\Domain\Interfaces\Services\FavoriteServiceInterface;
-use ZnTool\Package\Domain\Interfaces\Services\GitServiceInterface;
-use ZnTool\Package\Domain\Interfaces\Services\PackageServiceInterface;
-use ZnTool\Package\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnUser\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Libs\FormManager;
+use Untek\Lib\Web\Layout\Libs\LayoutManager;
+use Untek\Tool\Package\Domain\Entities\FavoriteEntity;
+use Untek\Tool\Package\Domain\Helpers\FavoriteHelper;
+use Untek\Tool\Package\Domain\Helpers\TableMapperHelper;
+use Untek\Tool\Package\Domain\Interfaces\Services\ClientServiceInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\FavoriteServiceInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\GitServiceInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\PackageServiceInterface;
+use Untek\Tool\Package\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
 
 class ChangedController extends BaseWebController implements ControllerAccessInterface
 {

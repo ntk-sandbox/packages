@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Interfaces\Services;
+namespace Untek\Framework\Wsdl\Domain\Interfaces\Services;
 
-use ZnFramework\Wsdl\Domain\Entities\TransportEntity;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Framework\Wsdl\Domain\Entities\TransportEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface TransportServiceInterface extends CrudServiceInterface
 {

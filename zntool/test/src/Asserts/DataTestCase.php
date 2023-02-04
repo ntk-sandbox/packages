@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Test\Asserts;
+namespace Untek\Tool\Test\Asserts;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
 
 class DataTestCase extends BaseAssert
 {

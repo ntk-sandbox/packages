@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Enums;
+namespace Untek\Bundle\Eav\Domain\Enums;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class AttributeTypeEnum implements GetLabelsInterface
 {

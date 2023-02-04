@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Services;
+namespace Untek\Crypt\Pki\Domain\Services;
 
-use ZnCrypt\Base\Domain\Entities\CertificateInfoEntity;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
+use Untek\Crypt\Base\Domain\Entities\CertificateInfoEntity;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
 
 class RsaService
 {

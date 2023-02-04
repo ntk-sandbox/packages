@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Package\Domain\Interfaces\Services;
+namespace Untek\Tool\Package\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface PackageServiceInterface extends CrudServiceInterface
 {

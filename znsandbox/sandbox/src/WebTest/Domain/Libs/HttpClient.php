@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs;
 
 use App\Application\Admin\Libs\AdminApp;
 use App\Application\Rpc\Libs\RpcApp;
@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
 
 class HttpClient extends BaseMockHttpClient
 {

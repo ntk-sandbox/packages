@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Traits;
+namespace Untek\User\Authentication\Domain\Traits;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 
 /**
  * Работа с сущностью аутентифицированного пользователя

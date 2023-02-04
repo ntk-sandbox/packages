@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\ConfigManager\Libs;
+namespace Untek\Core\ConfigManager\Libs;
 
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
 
 /**
  * Реестр для хранения конфигов.

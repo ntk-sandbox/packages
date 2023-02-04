@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnKaz\Eds\Commands;
+namespace Untek\Kaz\Eds\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnKaz\Eds\Domain\Entities\HostEntity;
-use ZnKaz\Eds\Domain\Entities\LogEntity;
-use ZnKaz\Eds\Domain\Interfaces\Services\CrlServiceInterface;
-use ZnKaz\Eds\Domain\Interfaces\Services\HostServiceInterface;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Kaz\Eds\Domain\Entities\HostEntity;
+use Untek\Kaz\Eds\Domain\Entities\LogEntity;
+use Untek\Kaz\Eds\Domain\Interfaces\Services\CrlServiceInterface;
+use Untek\Kaz\Eds\Domain\Interfaces\Services\HostServiceInterface;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 
 class CrlRefreshCommand extends Command
 {

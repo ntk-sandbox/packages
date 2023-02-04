@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Entities;
+namespace Untek\Kaz\Egov\Qr\Entities;
 
 class BarCodeEntity
 {

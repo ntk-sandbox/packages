@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Api\Controllers;
+namespace Untek\Bundle\Dashboard\Symfony4\Api\Controllers;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;

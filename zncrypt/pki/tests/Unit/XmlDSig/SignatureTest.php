@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\Tests\Unit\XmlDSig;
+namespace Untek\Crypt\Pki\Tests\Unit\XmlDSig;
 
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
-use ZnTool\Test\Base\BaseTest;
-use ZnCrypt\Pki\XmlDSig\Domain\Libs\Signature;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
+use Untek\Tool\Test\Base\BaseTest;
+use Untek\Crypt\Pki\XmlDSig\Domain\Libs\Signature;
 
 final class SignatureTest extends BaseTest
 {

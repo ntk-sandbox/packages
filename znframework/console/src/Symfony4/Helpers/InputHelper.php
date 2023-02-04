@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Helpers;
+namespace Untek\Framework\Console\Symfony4\Helpers;
 
 use Symfony\Component\Console\Helper\DebugFormatterHelper;
 use Symfony\Component\Console\Helper\FormatterHelper;

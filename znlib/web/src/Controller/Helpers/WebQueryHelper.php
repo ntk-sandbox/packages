@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\Controller\Helpers;
+namespace Untek\Lib\Web\Controller\Helpers;
 
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
 
 /**
  *

@@ -1,8 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator;
+namespace Untek\Sandbox\Sandbox\Generator;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Sandbox\Sandbox\Generator\Commands\GenerateCommand;
 
 class Bundle extends BaseBundle
 {
@@ -15,15 +17,20 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            new \ZnSandbox\Sandbox\Bundle\Bundle(['all'])
+            new \Untek\Sandbox\Sandbox\Bundle\Bundle(['all'])
         ];
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnSandbox\Sandbox\Generator\Commands',
+            'Untek\Sandbox\Sandbox\Generator\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(GenerateCommand::class);
     }
 
     public function symfonyAdmin(): array

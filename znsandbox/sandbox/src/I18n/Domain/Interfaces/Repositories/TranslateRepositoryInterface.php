@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\I18n\Domain\Interfaces\Repositories;
+namespace Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnSandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Sandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
 
 interface TranslateRepositoryInterface extends CrudRepositoryInterface
 {

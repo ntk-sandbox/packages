@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Rbac\Rpc\Controllers;
+namespace Untek\User\Rbac\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnUser\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\User\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
 
 class RoleController extends BaseCrudRpcController
 {

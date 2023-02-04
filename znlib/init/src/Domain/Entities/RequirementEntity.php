@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Init\Domain\Entities;
+namespace Untek\Lib\Init\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class RequirementEntity implements ValidationByMetadataInterface
 {

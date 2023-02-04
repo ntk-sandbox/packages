@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
 
 class DeleteAction extends BaseAction
 {

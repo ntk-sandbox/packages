@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\Eloquent;
+namespace Untek\User\Rbac\Domain\Repositories\Eloquent;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
 
 class AssignmentRepository extends BaseEloquentCrudRepository implements AssignmentRepositoryInterface
 {

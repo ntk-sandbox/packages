@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Helpers;
+namespace Untek\Framework\Telegram\Domain\Helpers;
 
 class HttpHelper
 {

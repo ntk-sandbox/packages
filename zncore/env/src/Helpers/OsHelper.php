@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\Env\Helpers;
+namespace Untek\Core\Env\Helpers;
 
-use ZnCore\Env\Enums\OsFamilyEnum;
+use Untek\Core\Env\Enums\OsFamilyEnum;
 
 /**
  * Работа с семействами операционных систем

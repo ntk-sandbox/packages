@@ -5,9 +5,9 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace ZnCore\Arr\Libs\ArrayValues;
+namespace Untek\Core\Arr\Libs\ArrayValues;
 
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 
 /**
  * Object that represents the replacement of array value while performing [[ArrayHelper::merge()]].
@@ -29,13 +29,13 @@ use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
  *     'ids' => [
  *         2,
  *     ],
- *     'validDomains' => new \ZnCore\Base\Legacy\Yii\Helpers\ReplaceArrayValue([
+ *     'validDomains' => new \Untek\Core\Base\Legacy\Yii\Helpers\ReplaceArrayValue([
  *         'yiiframework.com',
  *         'www.yiiframework.com',
  *     ]),
  * ];
  *
- * $result = \ZnCore\Arr\Helpers\ArrayHelper::merge($array1, $array2);
+ * $result = \Untek\Core\Arr\Helpers\ArrayHelper::merge($array1, $array2);
  * ```
  *
  * The result will be

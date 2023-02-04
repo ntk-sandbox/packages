@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnTool\Generator\Commands;
+namespace Untek\Tool\Generator\Commands;
 
 use Symfony\Component\Console\Question\Question;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\BundleEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
-use ZnTool\Generator\Domain\Dto\BuildDto;
-use ZnTool\Generator\Domain\Interfaces\Services\DomainServiceInterface;
-use ZnTool\Generator\Domain\Scenarios\Input\DomainNameInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\DomainNamespaceInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\DriverInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\EntityAttributesInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\IsCrudRepositoryInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\IsCrudServiceInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\NameInputScenario;
-use ZnTool\Generator\Domain\Scenarios\Input\TypeInputScenario;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\BundleEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Interfaces\Services\DomainServiceInterface;
+use Untek\Tool\Generator\Domain\Scenarios\Input\DomainNameInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\DomainNamespaceInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\DriverInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\EntityAttributesInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\IsCrudRepositoryInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\IsCrudServiceInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\NameInputScenario;
+use Untek\Tool\Generator\Domain\Scenarios\Input\TypeInputScenario;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

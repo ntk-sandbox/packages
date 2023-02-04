@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnDatabase\Fixture\Commands;
+namespace Untek\Database\Fixture\Commands;
 
 use Illuminate\Database\Eloquent\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDatabase\Base\Console\Traits\OverwriteDatabaseTrait;
-use ZnFramework\Console\Symfony4\Widgets\LogWidget;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDatabase\Fixture\Domain\Entities\FixtureEntity;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Database\Base\Console\Traits\OverwriteDatabaseTrait;
+use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Database\Fixture\Domain\Entities\FixtureEntity;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

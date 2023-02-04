@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\PhpUnit;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\PhpUnit;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\PhpUnitShell;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\PhpUnitShell;
 
 class RunPhpUnitTestTask extends BaseShell implements TaskInterface
 {

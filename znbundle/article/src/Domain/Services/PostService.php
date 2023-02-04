@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Services;
+namespace Untek\Bundle\Article\Domain\Services;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Bundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\PostServiceInterface;
 
 /**
  * Class PostService
- * @package ZnBundle\Article\Domain\Services
+ * @package Untek\Bundle\Article\Domain\Services
  *
  * @property PostRepositoryInterface | GetEntityClassInterface $repository
  */

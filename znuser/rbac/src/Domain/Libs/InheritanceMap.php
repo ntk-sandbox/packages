@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Libs;
+namespace Untek\User\Rbac\Domain\Libs;
 
-use ZnLib\Components\Store\Helpers\StoreHelper;
-use ZnUser\Rbac\Domain\Interfaces\InheritanceMapInterface;
+use Untek\Lib\Components\Store\Helpers\StoreHelper;
+use Untek\User\Rbac\Domain\Interfaces\InheritanceMapInterface;
 
 class InheritanceMap implements InheritanceMapInterface
 {

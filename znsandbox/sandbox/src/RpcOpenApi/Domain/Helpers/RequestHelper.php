@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcOpenApi\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\RpcOpenApi\Domain\Helpers;
 
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnSandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
 
 class RequestHelper
 {

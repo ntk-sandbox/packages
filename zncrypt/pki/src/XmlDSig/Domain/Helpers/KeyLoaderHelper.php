@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\XmlDSig\Domain\Helpers;
+namespace Untek\Crypt\Pki\XmlDSig\Domain\Helpers;
 
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\KeyEntity;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\KeyEntity;
 
 class KeyLoaderHelper
 {

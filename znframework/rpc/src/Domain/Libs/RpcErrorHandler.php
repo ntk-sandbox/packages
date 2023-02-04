@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs;
+namespace Untek\Framework\Rpc\Domain\Libs;
 
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ErrorCollectionHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ErrorCollectionHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
 
 class RpcErrorHandler
 {

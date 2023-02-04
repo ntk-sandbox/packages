@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Bundle\Interfaces;
+namespace Untek\Core\Bundle\Interfaces;
 
 /**
  * Загрузчики конфигураций бандла.

@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Geo\Domain\Enums\Rbac\GeoRegionPermissionEnum;
-use ZnBundle\Geo\Rpc\Controllers\RegionController;
+use Untek\Bundle\Geo\Domain\Enums\Rbac\GeoRegionPermissionEnum;
+use Untek\Bundle\Geo\Rpc\Controllers\RegionController;
 
 return [
     [

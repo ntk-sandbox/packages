@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnDatabase\Fixture\Domain\Repositories;
+namespace Untek\Database\Fixture\Domain\Repositories;
 
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Database\Schema\MySqlBuilder;
 use Illuminate\Database\Schema\PostgresBuilder;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
-use ZnDatabase\Base\Domain\Traits\TableNameTrait;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Eloquent\Domain\Traits\EloquentTrait;
-use ZnDatabase\Fixture\Domain\Helpers\StructHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
+use Untek\Database\Base\Domain\Traits\TableNameTrait;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;
+use Untek\Database\Fixture\Domain\Helpers\StructHelper;
 
 class DbRepository //extends BaseEloquentRepository
 {

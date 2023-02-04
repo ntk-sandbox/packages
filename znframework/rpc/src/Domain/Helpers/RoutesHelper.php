@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Helpers;
+namespace Untek\Framework\Rpc\Domain\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnUser\Rbac\Domain\Facades\FixtureGeneratorFacade;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\User\Rbac\Domain\Facades\FixtureGeneratorFacade;
 
 class RoutesHelper
 {

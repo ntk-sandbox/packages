@@ -1,31 +1,31 @@
 <?php
 
-namespace ZnUser\Registration\Domain\Services;
+namespace Untek\User\Registration\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Entities\SmsEntity;
-use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
-use ZnBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\Validator\Helpers\UnprocessableHelper;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
-use ZnUser\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
-use ZnUser\Confirm\Domain\Entities\ConfirmEntity;
-use ZnUser\Confirm\Domain\Enums\ConfirmActionEnum;
-use ZnUser\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
-use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
-use ZnUser\Registration\Domain\Forms\CreateAccountForm;
-use ZnUser\Registration\Domain\Forms\RequestActivationCodeForm;
-use ZnUser\Registration\Domain\Interfaces\Services\RegistrationServiceInterface;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\Validator\Helpers\UnprocessableHelper;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
+use Untek\User\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
+use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
+use Untek\User\Confirm\Domain\Enums\ConfirmActionEnum;
+use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
+use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\User\Registration\Domain\Forms\CreateAccountForm;
+use Untek\User\Registration\Domain\Forms\RequestActivationCodeForm;
+use Untek\User\Registration\Domain\Interfaces\Services\RegistrationServiceInterface;
 
 class RegistrationService extends BaseService implements RegistrationServiceInterface
 {

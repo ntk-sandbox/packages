@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnTool\Package\Domain\Libs\Deps;
+namespace Untek\Tool\Package\Domain\Libs\Deps;
 
-use ZnCore\Code\Helpers\PhpHelper;
-use ZnCore\Code\Helpers\PhpTokenHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\TextHelper;
+use Untek\Core\Code\Helpers\PhpHelper;
+use Untek\Core\Code\Helpers\PhpTokenHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\TextHelper;
 
 class PhpNameParser
 {

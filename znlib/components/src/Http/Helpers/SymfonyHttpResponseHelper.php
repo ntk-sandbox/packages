@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Http\Helpers;
+namespace Untek\Lib\Components\Http\Helpers;
 
 use GuzzleHttp\Psr7\Response as GuzzleHttpResponse;
 use Psr\Http\Message\ResponseInterface;

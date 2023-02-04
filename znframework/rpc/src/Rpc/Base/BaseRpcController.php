@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Base;
+namespace Untek\Framework\Rpc\Rpc\Base;
 
-use ZnCore\Text\Helpers\Inflector;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Helpers\ResponseHelper;
-use ZnFramework\Rpc\Rpc\Interfaces\RpcAuthInterface;
-use ZnFramework\Rpc\Rpc\Serializers\DefaultSerializer;
-use ZnFramework\Rpc\Rpc\Serializers\SerializerInterface;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Helpers\ResponseHelper;
+use Untek\Framework\Rpc\Rpc\Interfaces\RpcAuthInterface;
+use Untek\Framework\Rpc\Rpc\Serializers\DefaultSerializer;
+use Untek\Framework\Rpc\Rpc\Serializers\SerializerInterface;
 
 abstract class BaseRpcController implements RpcAuthInterface
 {

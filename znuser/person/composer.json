@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnUser\\Person\\": "src",
-      "ZnUser\\Person\\Tests\\": "tests"
+      "Untek\\User\\Person\\": "src",
+      "Untek\\User\\Person\\Tests\\": "tests"
     }
   }
 }

@@ -1,8 +1,11 @@
 <?php
 
-namespace ZnDatabase\Fixture;
+namespace Untek\Database\Fixture;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Database\Fixture\Commands\ExportCommand;
+use Untek\Database\Fixture\Commands\ImportCommand;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
 
 class Bundle extends BaseBundle
 {
@@ -12,11 +15,17 @@ class Bundle extends BaseBundle
         return 'databaseFixture';
     }
 
-    public function console(): array
+//    public function console(): array
+//    {
+//        return [
+//            'Untek\Database\Fixture\Commands',
+//        ];
+//    }
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
     {
-        return [
-            'ZnDatabase\Fixture\Commands',
-        ];
+        $commandConfigurator->registerCommandClass(ExportCommand::class);
+        $commandConfigurator->registerCommandClass(ImportCommand::class);
     }
 
     public function container(): array

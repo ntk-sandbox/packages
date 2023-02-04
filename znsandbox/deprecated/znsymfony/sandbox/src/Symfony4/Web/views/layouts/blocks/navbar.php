@@ -1,10 +1,10 @@
 <?php
 
-use ZnSymfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnBundle\Language\Symfony4\Widgets\Language\LanguageWidget;
-use ZnLib\Web\View\Libs\View;
-use ZnLib\Web\TwBootstrap\Widgets\UserNavbarMenu\UserNavbarMenuWidget;
+use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Bundle\Language\Symfony4\Widgets\Language\LanguageWidget;
+use Untek\Lib\Web\View\Libs\View;
+use Untek\Lib\Web\TwBootstrap\Widgets\UserNavbarMenu\UserNavbarMenuWidget;
 
 $modules = ModuleHelper::getModules();
 $currentModule = ModuleHelper::getCurrentModule();

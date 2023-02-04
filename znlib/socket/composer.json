@@ -16,8 +16,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnLib\\Socket\\": "src",
-      "ZnLib\\Socket\\Tests\\": "tests"
+      "Untek\\Lib\\Socket\\": "src",
+      "Untek\\Lib\\Socket\\Tests\\": "tests"
     }
   }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs;
+namespace Untek\Framework\Console\Domain\Libs;
 
-use ZnFramework\Console\Symfony4\Base\BaseConsoleApp;
+use Untek\Framework\Console\Symfony4\Base\BaseConsoleApp;
 
 class ConsoleApp extends BaseConsoleApp
 {

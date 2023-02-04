@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Helpers;
+namespace Untek\User\Authentication\Domain\Helpers;
 
-use ZnCore\Env\Helpers\EnvHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
 
 class UserTokenFixtureHelper
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\QueryFilter\Interfaces;
+namespace Untek\Domain\QueryFilter\Interfaces;
 
 interface DefaultSortInterface
 {

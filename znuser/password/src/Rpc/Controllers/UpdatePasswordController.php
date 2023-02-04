@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Password\Rpc\Controllers;
+namespace Untek\User\Password\Rpc\Controllers;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnUser\Password\Domain\Forms\UpdatePasswordForm;
-use ZnUser\Password\Domain\Interfaces\Services\UpdatePasswordServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\User\Password\Domain\Forms\UpdatePasswordForm;
+use Untek\User\Password\Domain\Interfaces\Services\UpdatePasswordServiceInterface;
 
 class UpdatePasswordController
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnDomain\Validator\Libs\Validators;
+namespace Untek\Domain\Validator\Libs\Validators;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Container\Traits\ContainerAwareAttributeTrait;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
-use ZnDomain\Validator\Interfaces\ValidatorInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Container\Traits\ContainerAwareAttributeTrait;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Domain\Validator\Interfaces\ValidatorInterface;
 
 class ChainValidator implements ValidatorInterface
 {

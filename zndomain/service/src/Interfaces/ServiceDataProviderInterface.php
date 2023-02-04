@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Service\Interfaces;
+namespace Untek\Domain\Service\Interfaces;
 
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Domain\Query\Entities\Query;
 
 interface ServiceDataProviderInterface
 {

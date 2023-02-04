@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\QrBox\Encoders;
+namespace Untek\Lib\QrBox\Encoders;
 
-class HexEncoder extends \ZnLib\Components\Format\Encoders\HexEncoder implements EntityEncoderInterface
+class HexEncoder extends \Untek\Lib\Components\Format\Encoders\HexEncoder implements EntityEncoderInterface
 {
 
     public function compressionRate(): float

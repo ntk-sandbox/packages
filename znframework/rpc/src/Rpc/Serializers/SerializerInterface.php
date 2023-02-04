@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Serializers;
+namespace Untek\Framework\Rpc\Rpc\Serializers;
 
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 interface SerializerInterface
 {

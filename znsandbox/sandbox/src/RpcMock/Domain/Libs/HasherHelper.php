@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Libs;
 
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\C14n;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\C14n;
 
 class HasherHelper
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Interfaces\Services;
+namespace Untek\Bundle\Notify\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface TestServiceInterface extends CrudServiceInterface
 {

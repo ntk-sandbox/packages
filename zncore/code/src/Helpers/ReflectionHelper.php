@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
 use ReflectionClass;
 

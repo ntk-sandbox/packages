@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\InheritanceServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\InheritanceServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
 
 /**
  * @method

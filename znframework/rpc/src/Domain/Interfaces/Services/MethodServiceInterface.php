@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Services;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
 
 interface MethodServiceInterface extends CrudServiceInterface
 {

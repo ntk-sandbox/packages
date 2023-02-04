@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Helpers;
 
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Domain\Interfaces\DomainInterface;
-use ZnSandbox\Sandbox\Apache\Domain\Entities\HostEntity;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
+use Untek\Sandbox\Sandbox\Apache\Domain\Entities\HostEntity;
 
 class HostsParser {
 

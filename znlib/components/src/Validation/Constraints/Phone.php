@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\Validation\Constraints;
+namespace Untek\Lib\Components\Validation\Constraints;
 
-use ZnDomain\Validator\Constraints\BaseRegex;
-use ZnLib\Components\Regexp\Enums\RegexpPatternEnum;
+use Untek\Domain\Validator\Constraints\BaseRegex;
+use Untek\Lib\Components\Regexp\Enums\RegexpPatternEnum;
 
 class Phone extends BaseRegex
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Enums\Rbac;
+namespace Untek\User\Notify\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class NotifyMyHistoryPermissionEnum implements GetLabelsInterface
 {

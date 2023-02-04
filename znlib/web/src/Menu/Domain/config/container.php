@@ -2,7 +2,7 @@
 
 return [
     'singletons' => [
-        'ZnLib\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface' => 'ZnLib\Web\Menu\Domain\Services\MenuService',
-        'ZnLib\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface' => 'ZnLib\Web\Menu\Domain\Repositories\File\MenuRepository',
+        'Untek\Lib\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface' => 'Untek\Lib\Web\Menu\Domain\Services\MenuService',
+        'Untek\Lib\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface' => 'Untek\Lib\Web\Menu\Domain\Repositories\File\MenuRepository',
     ],
 ];

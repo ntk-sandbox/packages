@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Libs;
+namespace Untek\Kaz\Eds\Domain\Libs;
 
 use phpseclib\File\X509;
-use ZnCrypt\Base\Domain\Exceptions\CertificateExpiredException;
-use ZnCrypt\Base\Domain\Exceptions\FailCertificateSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;
+use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
 
 class Certificate
 {

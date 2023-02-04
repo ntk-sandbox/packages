@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnDatabase\\Backup\\": "src",
-      "ZnDatabase\\Backup\\Tests\\": "tests"
+      "Untek\\Database\\Backup\\": "src",
+      "Untek\\Database\\Backup\\Tests\\": "tests"
     }
   }
 }

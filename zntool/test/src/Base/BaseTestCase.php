@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Test\Base;
+namespace Untek\Tool\Test\Base;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 use PHPUnit\Framework\TestCase;

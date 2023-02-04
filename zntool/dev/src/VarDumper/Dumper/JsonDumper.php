@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Dev\VarDumper\Dumper;
+namespace Untek\Tool\Dev\VarDumper\Dumper;
 
 use Symfony\Component\VarDumper\Cloner\Data;
 use Symfony\Component\VarDumper\Dumper\DataDumperInterface;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
 class JsonDumper implements DataDumperInterface
 {

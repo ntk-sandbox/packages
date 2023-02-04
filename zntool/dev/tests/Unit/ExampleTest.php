@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Dev\Tests\Unit;
+namespace Untek\Tool\Dev\Tests\Unit;
 
-use ZnTool\Test\Base\BaseTest;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class ExampleTest extends BaseTest {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Validator\Entities;
+namespace Untek\Domain\Validator\Entities;
 
 use Symfony\Component\Validator\ConstraintViolationInterface;
 

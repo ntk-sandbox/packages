@@ -1,6 +1,6 @@
 <?php
 
-use ZnBundle\Language\Symfony4\Web\Controllers\CurrentController;
+use Untek\Bundle\Language\Symfony4\Web\Controllers\CurrentController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 return function (RoutingConfigurator $routes) {

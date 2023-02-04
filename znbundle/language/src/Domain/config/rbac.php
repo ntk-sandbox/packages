@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Language\Domain\Enums\Rbac\LanguageCurrentPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Bundle\Language\Domain\Enums\Rbac\LanguageCurrentPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

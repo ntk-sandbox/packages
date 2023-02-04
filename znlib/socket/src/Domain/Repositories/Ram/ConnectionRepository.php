@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Repositories\Ram;
+namespace Untek\Lib\Socket\Domain\Repositories\Ram;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Workerman\Connection\ConnectionInterface;
 
 class ConnectionRepository {

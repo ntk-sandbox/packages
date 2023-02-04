@@ -1,7 +1,7 @@
 <?php
 
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnFramework\Rpc\Symfony4\Web\Controllers\DocsController;
+use Untek\Framework\Rpc\Symfony4\Web\Controllers\DocsController;
 
 return function (RoutingConfigurator $routes) {
     $routes

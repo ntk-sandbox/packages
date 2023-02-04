@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Libs\Rsa;
+namespace Untek\Crypt\Pki\Domain\Libs\Rsa;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
 class RsaStoreRam implements RsaStoreInterface
 {

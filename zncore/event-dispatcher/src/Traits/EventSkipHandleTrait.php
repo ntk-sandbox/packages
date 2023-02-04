@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\EventDispatcher\Traits;
+namespace Untek\Core\EventDispatcher\Traits;
 
 trait EventSkipHandleTrait
 {

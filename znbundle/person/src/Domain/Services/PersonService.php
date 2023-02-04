@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Person\Domain\Services;
+namespace Untek\Bundle\Person\Domain\Services;
 
-use ZnBundle\Person\Domain\Entities\PersonEntity;
-use ZnBundle\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnDomain\Validator\Helpers\ValidationHelper;
+use Untek\Bundle\Person\Domain\Entities\PersonEntity;
+use Untek\Bundle\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
 
 class PersonService implements PersonServiceInterface
 {

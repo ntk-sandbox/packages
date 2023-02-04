@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Repositories\Eloquent;
+namespace Untek\User\Authentication\Domain\Repositories\Eloquent;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
-use ZnUser\Authentication\Domain\Enums\CredentialTypeEnum;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
+use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 
-class CredentialRepository extends \ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository implements CredentialRepositoryInterface
+class CredentialRepository extends \Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository implements CredentialRepositoryInterface
 {
 
     public function tableName(): string

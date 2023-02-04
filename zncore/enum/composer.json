@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnCore\\Enum\\": "src",
-      "ZnCore\\Enum\\Tests\\": "tests"
+      "Untek\\Core\\Enum\\": "src",
+      "Untek\\Core\\Enum\\Tests\\": "tests"
     }
   }
 }

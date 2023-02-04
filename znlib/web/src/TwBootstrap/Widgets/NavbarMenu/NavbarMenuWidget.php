@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\NavbarMenu;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\NavbarMenu;
 
-use ZnLib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
 
 class NavbarMenuWidget extends MenuWidget
 {

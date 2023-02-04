@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnCore\\Contract\\": "src"
+      "Untek\\Core\\Contract\\": "src"
     }
   }
 }

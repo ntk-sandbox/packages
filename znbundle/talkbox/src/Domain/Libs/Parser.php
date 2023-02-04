@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Libs;
+namespace Untek\Bundle\TalkBox\Domain\Libs;
 
-use ZnCore\Text\Helpers\TextHelper;
-use ZnFramework\Telegram\Domain\Helpers\MatchHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Framework\Telegram\Domain\Helpers\MatchHelper;
 
 
 class Parser {

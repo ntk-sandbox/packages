@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Query\Helpers;
+namespace Untek\Domain\Query\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Query\Entities\Query;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Query\Entities\Query;
 
 class QueryHelper
 {

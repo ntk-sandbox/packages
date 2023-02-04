@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Contact\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Contact\Domain\Repositories\Eloquent;
 
-use ZnSandbox\Sandbox\Contact\Domain\Entities\ValueEntity;
-use ZnSandbox\Sandbox\Contact\Domain\Interfaces\Repositories\ValueRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Contact\Domain\Entities\ValueEntity;
+use Untek\Sandbox\Sandbox\Contact\Domain\Interfaces\Repositories\ValueRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ValueRepository extends BaseEloquentCrudRepository implements ValueRepositoryInterface
 {

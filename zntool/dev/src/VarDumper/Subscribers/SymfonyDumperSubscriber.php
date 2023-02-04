@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Dev\VarDumper\Subscribers;
+namespace Untek\Tool\Dev\VarDumper\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\App\Enums\AppEventEnum;
-use ZnTool\Dev\VarDumper\Facades\SymfonyDumperFacade;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\App\Enums\AppEventEnum;
+use Untek\Tool\Dev\VarDumper\Facades\SymfonyDumperFacade;
 
 /**
  * Инициализация дампера (dd() и dump())

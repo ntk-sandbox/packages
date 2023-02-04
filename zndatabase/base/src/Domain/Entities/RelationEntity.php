@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Entities;
+namespace Untek\Database\Base\Domain\Entities;
 
 class RelationEntity
 {

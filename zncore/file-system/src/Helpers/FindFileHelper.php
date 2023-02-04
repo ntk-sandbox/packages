@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\FileSystem\Helpers;
+namespace Untek\Core\FileSystem\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\FileSystem\Entities\DirectoryEntity;
-use ZnCore\FileSystem\Entities\FileEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\FileSystem\Entities\DirectoryEntity;
+use Untek\Core\FileSystem\Entities\FileEntity;
 
 class FindFileHelper
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Enums;
+namespace Untek\Lib\Components\ShellRobot\Domain\Enums;
 
 class VarEnum
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
 use Composer\Autoload\ClassLoader;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Exceptions\NotFoundDependencyException;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Exceptions\NotFoundDependencyException;
 
 /**
  * Работа с Composer
@@ -36,7 +36,7 @@ class ComposerHelper
      * @param string $packageName
      * @param string|null $version
      * @throws NotFoundDependencyException
-     * @example ComposerHelper::requireAssert(ZnGroup\Package\Class::class, 'zngroup/package', 'v1.23.45');
+     * @example ComposerHelper::requireAssert(Untek\Group\Package\Class::class, 'zngroup/package', 'v1.23.45');
      */
     public static function requireAssert(string $className, string $packageName, string $version = null): void
     {
@@ -72,7 +72,12 @@ class ComposerHelper
         $path = str_replace('/', '\\', $path);
         $paths = self::find($path);
         $resPath = ArrayHelper::first($paths);
+/*if(is_null($resPath)) {
+//    dump($path, $paths);
+    return null;
+}*/
         $resPath = str_replace('\\', '/', $resPath);
+
         return realpath($resPath);
     }
 

@@ -1,8 +1,8 @@
 <?php
 
-use ZnFramework\Wsdl\Symfony\Web\Controllers\DefinitionController;
+use Untek\Framework\Wsdl\Symfony\Web\Controllers\DefinitionController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnFramework\Wsdl\Symfony\Web\Controllers\TransportController;
+use Untek\Framework\Wsdl\Symfony\Web\Controllers\TransportController;
 
 return function (RoutingConfigurator $routes) {
     /*$routes
@@ -25,6 +25,6 @@ return function (RoutingConfigurator $routes) {
 
     /*$routes
         ->add('wsdl/client', '/wsdl/client')
-        ->controller([\ZnFramework\Wsdl\Symfony\Web\Controllers\WsdlClientController::class, 'index'])
+        ->controller([\Untek\Framework\Wsdl\Symfony\Web\Controllers\WsdlClientController::class, 'index'])
         ->methods(['POST', 'GET']);*/
 };

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Input;
+namespace Untek\Tool\Generator\Domain\Scenarios\Input;
 
-use ZnTool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;

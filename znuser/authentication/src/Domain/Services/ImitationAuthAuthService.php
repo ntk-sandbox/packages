@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Services;
+namespace Untek\User\Authentication\Domain\Services;
 
-use ZnUser\Authentication\Domain\Forms\AuthImitationForm;
-use ZnUser\Authentication\Domain\Interfaces\Services\ImitationAuthServiceInterface;
+use Untek\User\Authentication\Domain\Forms\AuthImitationForm;
+use Untek\User\Authentication\Domain\Interfaces\Services\ImitationAuthServiceInterface;
 use Symfony\Component\Validator\Constraints\Email;
-use ZnDomain\Validator\Helpers\UnprocessableHelper;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\Domain\Validator\Helpers\UnprocessableHelper;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
 
 class ImitationAuthAuthService extends AuthService implements ImitationAuthServiceInterface
 {

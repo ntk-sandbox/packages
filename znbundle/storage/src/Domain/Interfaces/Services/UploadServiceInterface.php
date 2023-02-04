@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Interfaces\Services;
+namespace Untek\Bundle\Storage\Domain\Interfaces\Services;
 
-use ZnBundle\Storage\Domain\Entities\FileEntity;
+use Untek\Bundle\Storage\Domain\Entities\FileEntity;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 interface UploadServiceInterface

@@ -1,8 +1,8 @@
 <?php
 
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnUser\Password\Symfony4\Web\Controllers\RestorePasswordController;
-use ZnUser\Password\Symfony4\Web\Controllers\UpdatePasswordController;
+use Untek\User\Password\Symfony4\Web\Controllers\RestorePasswordController;
+use Untek\User\Password\Symfony4\Web\Controllers\UpdatePasswordController;
 
 return function (RoutingConfigurator $routes) {
     $routes

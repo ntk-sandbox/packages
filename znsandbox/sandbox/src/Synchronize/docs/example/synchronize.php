@@ -1,6 +1,6 @@
 <?php
 
-use ZnUser\Rbac\Domain\Enums\RbacCacheEnum;
+use Untek\User\Rbac\Domain\Enums\RbacCacheEnum;
 
 return [
     [

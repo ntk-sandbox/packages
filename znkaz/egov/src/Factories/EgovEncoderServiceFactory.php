@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnKaz\Egov\Factories;
+namespace Untek\Kaz\Egov\Factories;
 
-use ZnLib\QrBox\Factories\ClassEncoderFactory;
-use ZnLib\QrBox\Factories\EncoderServiceFactory;
-use ZnLib\QrBox\Services\EncoderService;
-use ZnKaz\Egov\Wrappers\XmlWrapper;
+use Untek\Lib\QrBox\Factories\ClassEncoderFactory;
+use Untek\Lib\QrBox\Factories\EncoderServiceFactory;
+use Untek\Lib\QrBox\Services\EncoderService;
+use Untek\Kaz\Egov\Wrappers\XmlWrapper;
 
 class EgovEncoderServiceFactory
 {

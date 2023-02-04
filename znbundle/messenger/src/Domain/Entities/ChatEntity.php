@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Entities;
+namespace Untek\Bundle\Messenger\Domain\Entities;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class ChatEntity implements EntityIdInterface
 {

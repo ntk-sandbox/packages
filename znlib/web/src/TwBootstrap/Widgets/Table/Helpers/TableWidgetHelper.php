@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Table\Helpers;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Table\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class TableWidgetHelper
 {

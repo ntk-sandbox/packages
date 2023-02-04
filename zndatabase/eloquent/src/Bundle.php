@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Eloquent;
+namespace Untek\Database\Eloquent;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {
@@ -15,7 +15,7 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            \ZnDatabase\Base\Bundle::class,
+            \Untek\Database\Base\Bundle::class,
         ];
     }
 

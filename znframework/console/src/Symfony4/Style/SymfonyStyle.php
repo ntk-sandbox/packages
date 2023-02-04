@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Style;
+namespace Untek\Framework\Console\Symfony4\Style;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Text\Helpers\Inflector;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 
 class SymfonyStyle extends \Symfony\Component\Console\Style\SymfonyStyle
 {

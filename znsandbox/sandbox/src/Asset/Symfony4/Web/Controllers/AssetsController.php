@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Asset\Symfony4\Web\Controllers;
+namespace Untek\Sandbox\Sandbox\Asset\Symfony4\Web\Controllers;
 
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mime\MimeTypes;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnLib\Components\Http\Enums\HttpHeaderEnum;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
-use ZnLib\Web\Controller\Base\BaseWebController;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
 
 class AssetsController extends BaseWebController
 {

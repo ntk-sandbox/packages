@@ -1,17 +1,17 @@
 #!/usr/bin/env php
 <?php
 
-//use ZnLib\Socket\Domain\Entities\SocketEventEntity;
-//use ZnLib\Socket\Domain\Enums\SocketEventEnum;
+//use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
+//use Untek\Lib\Socket\Domain\Enums\SocketEventEnum;
 //use Symfony\Component\Console\Application;
-//use ZnCore\DotEnv\Domain\Libs\DotEnv;
-//use ZnCore\Container\Libs\Container;
+//use Untek\Core\DotEnv\Domain\Libs\DotEnv;
+//use Untek\Core\Container\Libs\Container;
 //
 //use Symfony\Component\Console\Input\InputInterface;
 //use Symfony\Component\Console\Output\OutputInterface;
 //use Workerman\Connection\ConnectionInterface;
 //use Workerman\Worker;
-//use ZnLib\Socket\Domain\Libs\SocketDaemon;
+//use Untek\Lib\Socket\Domain\Libs\SocketDaemon;
 //
 //require __DIR__ . '/../../../autoload.php';
 //DotEnv::init();

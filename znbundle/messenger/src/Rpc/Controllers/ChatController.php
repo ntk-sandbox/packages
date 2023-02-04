@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Messenger\Rpc\Controllers;
+namespace Untek\Bundle\Messenger\Rpc\Controllers;
 
-use ZnBundle\Messenger\Domain\Interfaces\ChatServiceInterface;
-use ZnBundle\Messenger\Domain\Interfaces\Services\TournamentServiceInterface;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Messenger\Domain\Interfaces\ChatServiceInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Services\TournamentServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
 
 class ChatController extends BaseCrudRpcController
 {

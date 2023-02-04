@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Enums;
+namespace Untek\User\Notify\Domain\Enums;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnLib\I18Next\Facades\I18Next;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Lib\I18Next\Facades\I18Next;
 
 class NotifyStatusEnum implements GetLabelsInterface
 {

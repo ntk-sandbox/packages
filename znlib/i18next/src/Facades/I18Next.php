@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\I18Next\Facades;
+namespace Untek\Lib\I18Next\Facades;
 
-use ZnCore\Container\Traits\ContainerAwareStaticAttributeTrait;
-use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Core\Container\Traits\ContainerAwareStaticAttributeTrait;
+use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
 
 class I18Next
 {

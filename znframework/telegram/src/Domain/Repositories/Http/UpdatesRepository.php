@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Repositories\Http;
+namespace Untek\Framework\Telegram\Domain\Repositories\Http;
 
 use GuzzleHttp\Client;
 

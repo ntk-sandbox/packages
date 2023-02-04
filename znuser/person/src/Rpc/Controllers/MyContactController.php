@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Person\Rpc\Controllers;
+namespace Untek\User\Person\Rpc\Controllers;
 
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnUser\Person\Domain\Interfaces\Services\MyContactServiceInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\User\Person\Domain\Interfaces\Services\MyContactServiceInterface;
 
 class MyContactController extends BaseCrudRpcController
 {

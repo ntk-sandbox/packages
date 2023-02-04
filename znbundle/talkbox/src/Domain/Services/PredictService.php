@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Services;
+namespace Untek\Bundle\TalkBox\Domain\Services;
 
-use ZnBundle\TalkBox\Domain\Entities\AnswerEntity;
-use ZnBundle\TalkBox\Domain\Helpers\WordHelper;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnFramework\Telegram\Domain\Helpers\MatchHelper;
+use Untek\Bundle\TalkBox\Domain\Entities\AnswerEntity;
+use Untek\Bundle\TalkBox\Domain\Helpers\WordHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Framework\Telegram\Domain\Helpers\MatchHelper;
 
 class PredictService
 {

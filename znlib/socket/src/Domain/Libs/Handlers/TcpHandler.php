@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Libs\Handlers;
+namespace Untek\Lib\Socket\Domain\Libs\Handlers;
 
 use Workerman\Connection\ConnectionInterface;
 use Workerman\Worker;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnLib\Socket\Domain\Entities\SocketEventEntity;
-use ZnLib\Socket\Domain\Libs\Transport;
-use ZnLib\Socket\Domain\Repositories\Ram\ConnectionRepository;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
+use Untek\Lib\Socket\Domain\Libs\Transport;
+use Untek\Lib\Socket\Domain\Repositories\Ram\ConnectionRepository;
 
 class TcpHandler
 {

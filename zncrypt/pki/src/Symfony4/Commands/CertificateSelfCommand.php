@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnCrypt\Pki\Symfony4\Commands;
+namespace Untek\Crypt\Pki\Symfony4\Commands;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnCrypt\Base\Domain\Entities\CertificateInfoEntity;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Pki\Domain\Entities\CertificateSubjectEntity;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
-use ZnCrypt\Pki\Domain\Services\CertificateService;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
+use Untek\Crypt\Base\Domain\Entities\CertificateInfoEntity;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
+use Untek\Crypt\Pki\Domain\Services\CertificateService;
 
 class CertificateSelfCommand extends BaseGeneratorCommand
 {

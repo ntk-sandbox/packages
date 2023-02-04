@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs\Plugins;
 
-use ZnSandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
-use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
-use ZnSandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
 
 class JsonPlugin implements PluginInterface
 {

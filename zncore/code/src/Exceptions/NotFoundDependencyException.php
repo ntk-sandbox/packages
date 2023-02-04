@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Code\Exceptions;
+namespace Untek\Core\Code\Exceptions;
 
 use RuntimeException;
 

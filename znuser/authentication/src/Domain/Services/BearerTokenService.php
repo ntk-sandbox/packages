@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Services;
+namespace Untek\User\Authentication\Domain\Services;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnUser\Authentication\Domain\Entities\TokenEntity;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
-use ZnUser\Authentication\Domain\Interfaces\AuthorizationTokenGeneratorInterface;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\User\Authentication\Domain\Entities\TokenEntity;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\User\Authentication\Domain\Interfaces\AuthorizationTokenGeneratorInterface;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
 
 class BearerTokenService implements TokenServiceInterface
 {

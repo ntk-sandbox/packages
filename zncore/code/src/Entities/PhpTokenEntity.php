@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Code\Entities;
+namespace Untek\Core\Code\Entities;
 
 class PhpTokenEntity
 {

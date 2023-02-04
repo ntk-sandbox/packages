@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Dev\Runtime\Domain\Helpers;
+namespace Untek\Tool\Dev\Runtime\Domain\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
 class UsedHelper
 {

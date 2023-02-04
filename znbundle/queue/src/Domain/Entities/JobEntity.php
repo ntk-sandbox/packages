@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Entities;
+namespace Untek\Bundle\Queue\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Queue\Domain\Enums\PriorityEnum;
-use ZnBundle\Queue\Domain\Helpers\JobHelper;
-use ZnBundle\Queue\Domain\Interfaces\JobInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Components\Status\Enums\StatusEnum;
+use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
+use Untek\Bundle\Queue\Domain\Helpers\JobHelper;
+use Untek\Bundle\Queue\Domain\Interfaces\JobInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class JobEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface
 {

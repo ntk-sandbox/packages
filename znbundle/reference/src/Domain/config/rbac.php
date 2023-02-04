@@ -1,8 +1,8 @@
 <?php
 
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
-use ZnBundle\Reference\Domain\Enums\Rbac\ReferenceBookPermissionEnum;
-use ZnBundle\Reference\Domain\Enums\Rbac\ReferenceItemPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Bundle\Reference\Domain\Enums\Rbac\ReferenceBookPermissionEnum;
+use Untek\Bundle\Reference\Domain\Enums\Rbac\ReferenceItemPermissionEnum;
 
 return [
     'roleEnums' => [

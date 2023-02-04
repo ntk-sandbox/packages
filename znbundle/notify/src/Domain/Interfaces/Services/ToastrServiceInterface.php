@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Interfaces\Services;
+namespace Untek\Bundle\Notify\Domain\Interfaces\Services;
 
-use ZnBundle\Notify\Domain\Entities\ToastrEntity;
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 interface ToastrServiceInterface
 {

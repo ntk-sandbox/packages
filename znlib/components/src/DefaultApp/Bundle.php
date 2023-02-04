@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\DefaultApp;
+namespace Untek\Lib\Components\DefaultApp;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

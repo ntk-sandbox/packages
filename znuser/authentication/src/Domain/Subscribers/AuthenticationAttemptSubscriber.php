@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Subscribers;
+namespace Untek\User\Authentication\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
-use ZnBundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnUser\Authentication\Domain\Enums\AuthEventEnum;
-use ZnUser\Authentication\Domain\Enums\UserNotifyTypeEnum;
-use ZnUser\Authentication\Domain\Events\AuthEvent;
-use ZnUser\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
+use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
+use Untek\Bundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\User\Authentication\Domain\Enums\AuthEventEnum;
+use Untek\User\Authentication\Domain\Enums\UserNotifyTypeEnum;
+use Untek\User\Authentication\Domain\Events\AuthEvent;
+use Untek\User\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 
 class AuthenticationAttemptSubscriber implements EventSubscriberInterface
 {

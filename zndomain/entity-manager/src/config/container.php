@@ -1,11 +1,11 @@
 <?php
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Libs\EntityManager;
-use ZnDomain\EntityManager\Libs\EntityManagerConfigurator;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Libs\EntityManager;
+use Untek\Domain\EntityManager\Libs\EntityManagerConfigurator;
 
 return function (ContainerConfiguratorInterface $containerConfigurator) {
     $containerConfigurator->singleton(EntityManagerInterface::class, function (ContainerInterface $container) {

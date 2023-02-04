@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Laminas\Code\Generator\ValueGenerator;
-use ZnCore\Text\Helpers\StringHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnTool\Package\Domain\Libs\Deps\PhpUsesParser;
+use Untek\Core\Text\Helpers\StringHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Tool\Package\Domain\Libs\Deps\PhpUsesParser;
 
 /**
  * Работа с замыканиями

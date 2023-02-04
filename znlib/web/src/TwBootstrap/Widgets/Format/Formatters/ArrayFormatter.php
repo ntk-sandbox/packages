@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
 
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class ArrayFormatter extends BaseFormatter implements FormatterInterface
 {

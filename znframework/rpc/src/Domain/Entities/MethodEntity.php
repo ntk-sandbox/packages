@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Entities;
+namespace Untek\Framework\Rpc\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
 
 class MethodEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

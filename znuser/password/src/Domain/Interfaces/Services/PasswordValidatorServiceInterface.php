@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Password\Domain\Interfaces\Services;
+namespace Untek\User\Password\Domain\Interfaces\Services;
 
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnUser\Password\Domain\Entities\PasswordValidatorEntity;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\User\Password\Domain\Entities\PasswordValidatorEntity;
 
 interface PasswordValidatorServiceInterface
 {

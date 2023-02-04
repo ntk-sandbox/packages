@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Repositories\Eloquent;
+namespace Untek\Kaz\Eds\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnKaz\Eds\Domain\Entities\CertificateEntity;
-use ZnKaz\Eds\Domain\Interfaces\Repositories\CertificateRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Kaz\Eds\Domain\Entities\CertificateEntity;
+use Untek\Kaz\Eds\Domain\Interfaces\Repositories\CertificateRepositoryInterface;
 
 class CertificateRepository extends BaseEloquentCrudRepository implements CertificateRepositoryInterface
 {

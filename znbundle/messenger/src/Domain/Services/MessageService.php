@@ -1,27 +1,27 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Services;
+namespace Untek\Bundle\Messenger\Domain\Services;
 
 use FOS\UserBundle\Model\FosUserInterface;
 use GuzzleHttp\Client;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Security\Core\User\UserInterface;
-use ZnBundle\Messenger\Domain\Entities\FlowEntity;
-use ZnBundle\Messenger\Domain\Entities\MessageEntity;
-use ZnBundle\Messenger\Domain\Forms\MessageForm;
-use ZnBundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\FlowRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
-use ZnBundle\User\Domain\Services\AuthService;
-use ZnBundle\User\Domain\Services\AuthService2;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\Socket\Domain\Entities\SocketEventEntity;
-use ZnLib\Socket\Domain\Libs\SocketDaemon;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Entities\FlowEntity;
+use Untek\Bundle\Messenger\Domain\Entities\MessageEntity;
+use Untek\Bundle\Messenger\Domain\Forms\MessageForm;
+use Untek\Bundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\FlowRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
+use Untek\Bundle\User\Domain\Services\AuthService;
+use Untek\Bundle\User\Domain\Services\AuthService2;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
+use Untek\Lib\Socket\Domain\Libs\SocketDaemon;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 
 class MessageService extends BaseCrudService implements MessageServiceInterface
 {

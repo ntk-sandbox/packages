@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDatabase\Eloquent\Domain\Helpers\QueryBuilder;
+namespace Untek\Database\Eloquent\Domain\Helpers\QueryBuilder;
 
 use Illuminate\Database\Query\Builder;
 //use Illuminate\Support\Str;
-use ZnDomain\Query\Entities\Join;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
-use ZnDatabase\Base\Domain\Helpers\DbHelper;
-use ZnDatabase\Base\Domain\Interfaces\QueryBuilderInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
+use Untek\Domain\Query\Entities\Join;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
+use Untek\Database\Base\Domain\Helpers\DbHelper;
+use Untek\Database\Base\Domain\Interfaces\QueryBuilderInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
 
 class EloquentQueryBuilderHelper implements QueryBuilderInterface
 {

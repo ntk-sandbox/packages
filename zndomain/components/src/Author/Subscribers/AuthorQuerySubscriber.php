@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDomain\Components\Author\Subscribers;
+namespace Untek\Domain\Components\Author\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\QueryEvent;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\QueryEvent;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class AuthorQuerySubscriber implements EventSubscriberInterface
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnUser\Rbac\Symfony4\Admin\Controllers;
+namespace Untek\User\Rbac\Symfony4\Admin\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Libs\FormManager;
-use ZnLib\Web\Layout\Libs\LayoutManager;
-use ZnUser\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
-use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Libs\FormManager;
+use Untek\Lib\Web\Layout\Libs\LayoutManager;
+use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
+use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
 
 class InfoController extends BaseWebController implements ControllerAccessInterface
 {

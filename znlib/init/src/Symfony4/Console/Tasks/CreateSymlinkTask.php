@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Init\Symfony4\Console\Tasks;
+namespace Untek\Lib\Init\Symfony4\Console\Tasks;
 
 class CreateSymlinkTask extends BaseTask
 {

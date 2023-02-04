@@ -2,7 +2,7 @@
 
 return [
 	'entities' => [
-		'ZnSandbox\\Sandbox\\RpcClient\\Domain\\Entities\\UserEntity' => 'ZnSandbox\\Sandbox\\RpcClient\\Domain\\Interfaces\\Repositories\\UserRepositoryInterface',
-		'ZnSandbox\\Sandbox\\RpcClient\\Domain\\Entities\\FavoriteEntity' => 'ZnSandbox\\Sandbox\\RpcClient\\Domain\\Interfaces\\Repositories\\FavoriteRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\RpcClient\\Domain\\Entities\\UserEntity' => 'Untek\\Sandbox\\Sandbox\\RpcClient\\Domain\\Interfaces\\Repositories\\UserRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\RpcClient\\Domain\\Entities\\FavoriteEntity' => 'Untek\\Sandbox\\Sandbox\\RpcClient\\Domain\\Interfaces\\Repositories\\FavoriteRepositoryInterface',
 	],
 ];

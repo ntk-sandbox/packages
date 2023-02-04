@@ -1,9 +1,9 @@
 <?php
 
 use Psr\Container\ContainerInterface;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
-use ZnLib\I18Next\Services\TranslationService;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Lib\I18Next\Services\TranslationService;
 
 return [
     'singletons' => [

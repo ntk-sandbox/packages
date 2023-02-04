@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\Encoder\Interfaces;
+namespace Untek\Core\Contract\Encoder\Interfaces;
 
 /**
  * Возможность кодирования данных

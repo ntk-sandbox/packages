@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Entities;
+namespace Untek\Crypt\Pki\Domain\Entities;
 
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyHelper;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
 
 class CertificateSubjectEntity
 {

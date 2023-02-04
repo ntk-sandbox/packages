@@ -1,23 +1,23 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Person\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnBundle\Eav\Domain\Entities\DynamicEntity;
-use ZnBundle\Eav\Domain\Forms\DynamicForm;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnKaz\Iin\Domain\Helpers\IinParser;
-use ZnSandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Identity\Domain\Entities\IdentityEntity;
-use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
+use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
+use Untek\Bundle\Eav\Domain\Forms\DynamicForm;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Kaz\Iin\Domain\Helpers\IinParser;
+use Untek\Sandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Identity\Domain\Entities\IdentityEntity;
+use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
 
 class PersonService extends BaseService implements PersonServiceInterface
 {

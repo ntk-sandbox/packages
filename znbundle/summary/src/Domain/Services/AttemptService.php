@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Services;
+namespace Untek\Bundle\Summary\Domain\Services;
 
-use ZnBundle\Summary\Domain\Entities\AttemptEntity;
-use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
-use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use ZnBundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
-use ZnBundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Bundle\Summary\Domain\Entities\AttemptEntity;
+use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
+use Untek\Bundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
+use Untek\Bundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
+use Untek\Bundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
 
 /**
  * @method AttemptRepositoryInterface getRepository()

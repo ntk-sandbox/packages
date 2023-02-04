@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock;
+namespace Untek\Sandbox\Sandbox\RpcMock;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {
@@ -15,7 +15,7 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            new \ZnFramework\Rpc\Bundle(['all']),
+            new \Untek\Framework\Rpc\Bundle(['all']),
         ];
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs\BundleLoaders;
+namespace Untek\Framework\Console\Domain\Libs\BundleLoaders;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
 
 class ConsoleLoader extends BaseLoader
 {

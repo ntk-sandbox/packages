@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\Process\Process;
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
-use ZnSandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
 
 class ConsoleHttpKernel implements HttpKernelInterface
 {

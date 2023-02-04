@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Helpers;
+namespace Untek\Crypt\Pki\X509\Domain\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
 
 class QrDecoderHelper
 {

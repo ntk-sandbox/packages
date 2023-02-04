@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Matchers;
+namespace Untek\Framework\Telegram\Domain\Matchers;
 
-use ZnFramework\Telegram\Domain\Helpers\MatchHelper;
-use ZnFramework\Telegram\Domain\Interfaces\MatcherInterface;
+use Untek\Framework\Telegram\Domain\Helpers\MatchHelper;
+use Untek\Framework\Telegram\Domain\Interfaces\MatcherInterface;
 
 class EqualAndOfPatternsMatcher implements MatcherInterface
 {

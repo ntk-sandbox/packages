@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Repository\Mappers;
+namespace Untek\Domain\Repository\Mappers;
 
-use ZnDomain\Repository\Interfaces\MapperInterface;
-use ZnCore\Text\Helpers\Inflector;
+use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Core\Text\Helpers\Inflector;
 
 class TimeMapper implements MapperInterface
 {

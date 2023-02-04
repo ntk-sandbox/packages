@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs\BundleLoaders;
+namespace Untek\Framework\Rpc\Domain\Libs\BundleLoaders;
 
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class SymfonyRpcRoutesLoader extends BaseLoader
 {

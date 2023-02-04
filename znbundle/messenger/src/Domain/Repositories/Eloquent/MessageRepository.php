@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Messenger\Domain\Repositories\Eloquent;
 
-use ZnBundle\Messenger\Domain\Entities\MessageEntity;
-use ZnBundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
-use ZnDomain\Domain\Enums\RelationEnum;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDomain\Repository\Mappers\TimeMapper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Entities\MessageEntity;
+use Untek\Bundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
+use Untek\Domain\Domain\Enums\RelationEnum;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 
 class MessageRepository extends BaseEloquentCrudRepository implements MessageRepositoryInterface
 {

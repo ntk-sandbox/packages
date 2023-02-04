@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Symfony4\Components\Core;
+namespace Untek\User\Authentication\Symfony4\Components\Core;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\NullToken;

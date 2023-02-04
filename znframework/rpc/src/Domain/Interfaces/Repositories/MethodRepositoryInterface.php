@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Repositories;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Repositories;
 
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface MethodRepositoryInterface extends CrudRepositoryInterface
 {

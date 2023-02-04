@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Entities\MeasureEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Eav\Domain\Entities\MeasureEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class MeasureRepository extends BaseEloquentCrudRepository implements MeasureRepositoryInterface
 {

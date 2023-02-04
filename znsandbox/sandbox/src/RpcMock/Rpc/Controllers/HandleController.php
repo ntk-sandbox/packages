@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Rpc\Controllers;
+namespace Untek\Sandbox\Sandbox\RpcMock\Rpc\Controllers;
 
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Rpc\Base\BaseRpcController;
-use ZnSandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
-use ZnSandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
-use ZnSandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
 
 class HandleController extends BaseRpcController
 {
@@ -72,7 +72,7 @@ class HandleController extends BaseRpcController
                         "message" => 'Not found magic response',
                     ]
                 );
-                $entity = new \ZnSandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity();
+                $entity = new \Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity();
                 $entity->setMethodName($rpcRequestEntity->getMethod());
                 $entity->setRequest(
                     [

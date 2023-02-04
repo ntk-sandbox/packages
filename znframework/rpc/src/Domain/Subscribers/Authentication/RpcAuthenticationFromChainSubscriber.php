@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Subscribers\Authentication;
+namespace Untek\Framework\Rpc\Domain\Subscribers\Authentication;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;
 
 class RpcAuthenticationFromChainSubscriber implements EventSubscriberInterface
 {

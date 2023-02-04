@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Libs\Handlers;
+namespace Untek\Lib\Socket\Domain\Libs\Handlers;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Workerman\Connection\ConnectionInterface;
 use Workerman\Worker;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnLib\Socket\Domain\Entities\SocketEventEntity;
-use ZnLib\Socket\Domain\Enums\SocketEventEnum;
-use ZnLib\Socket\Domain\Libs\Transport;
-use ZnLib\Socket\Domain\Repositories\Ram\ConnectionRepository;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
+use Untek\Lib\Socket\Domain\Enums\SocketEventEnum;
+use Untek\Lib\Socket\Domain\Libs\Transport;
+use Untek\Lib\Socket\Domain\Repositories\Ram\ConnectionRepository;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 
 class WsHandler
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Test\Helpers;
+namespace Untek\Tool\Test\Helpers;
 
 class TestHelper
 {

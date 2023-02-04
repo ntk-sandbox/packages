@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Facades;
+namespace Untek\Framework\Telegram\Domain\Facades;
 
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Libs\Container;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnFramework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
-use ZnFramework\Telegram\Domain\Repositories\Telegram\ResponseRepository;
-use ZnFramework\Telegram\Domain\Services\BotService;
-use ZnFramework\Telegram\Domain\Services\RequestService;
-use ZnFramework\Telegram\Domain\Services\ResponseService;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Libs\Container;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Framework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
+use Untek\Framework\Telegram\Domain\Repositories\Telegram\ResponseRepository;
+use Untek\Framework\Telegram\Domain\Services\BotService;
+use Untek\Framework\Telegram\Domain\Services\RequestService;
+use Untek\Framework\Telegram\Domain\Services\ResponseService;
 
 class BotFacade
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Services;
+namespace Untek\Bundle\Reference\Domain\Services;
 
-use ZnBundle\Reference\Domain\Entities\BookEntity;
-use ZnDomain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Components\SoftDelete\Traits\Service\SoftDeleteTrait;
-use ZnDomain\Components\SoftDelete\Traits\Service\SoftRestoreTrait;
+use Untek\Bundle\Reference\Domain\Entities\BookEntity;
+use Untek\Domain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Components\SoftDelete\Traits\Service\SoftDeleteTrait;
+use Untek\Domain\Components\SoftDelete\Traits\Service\SoftRestoreTrait;
 
 class BookService extends BaseCrudService implements BookServiceInterface
 {

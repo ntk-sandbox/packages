@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Helpers;
 
-use ZnUser\Authentication\Domain\Enums\CredentialTypeEnum;
+use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
 
 class UserFixtureHelper
 {
 
     public static function generate($identityCollection, $credentialCollection): array
     {
-        $identityCollection = \ZnCore\Arr\Helpers\ArrayHelper::index($identityCollection, 'id');
+        $identityCollection = \Untek\Core\Arr\Helpers\ArrayHelper::index($identityCollection, 'id');
         $collection = [];
         foreach ($credentialCollection as $credential) {
             if (in_array($credential['type'], [CredentialTypeEnum::LOGIN, CredentialTypeEnum::EMAIL])) {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Helpers;
+namespace Untek\Tool\Generator\Domain\Helpers;
 
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Enums\TypeEnum;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Enums\TypeEnum;
 
 class LocationHelper
 {

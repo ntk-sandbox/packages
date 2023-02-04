@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Services;
+namespace Untek\Framework\Rpc\Domain\Services;
 
-use ZnFramework\Rpc\Domain\Interfaces\Services\VersionHandlerServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnFramework\Rpc\Domain\Entities\VersionHandlerEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\VersionHandlerServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Framework\Rpc\Domain\Entities\VersionHandlerEntity;
 
 class VersionHandlerService extends BaseCrudService implements VersionHandlerServiceInterface
 {

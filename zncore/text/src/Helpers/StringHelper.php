@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace ZnCore\Text\Helpers;
+namespace Untek\Core\Text\Helpers;
 
 /**
  * StringHelper.

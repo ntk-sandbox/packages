@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Synchronize\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\Synchronize\Domain\Entities;
 
 class DiffCollectionEntity
 {
@@ -118,7 +118,7 @@ class DiffCollectionEntity
     }
 
     /**
-     * @return \ZnCore\Collection\Interfaces\Enumerable | DiffItemEntity[]
+     * @return \Untek\Core\Collection\Interfaces\Enumerable | DiffItemEntity[]
      */
     public function getDiff()
     {

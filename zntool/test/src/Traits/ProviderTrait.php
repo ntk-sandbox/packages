@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnTool\Test\Traits;
+namespace Untek\Tool\Test\Traits;
 
-use ZnCore\Env\Enums\EnvEnum;
-use ZnFramework\Rpc\Domain\Facades\RpcClientFacade;
-use ZnFramework\Rpc\Domain\Libs\RpcAuthProvider;
-use ZnFramework\Rpc\Domain\Libs\RpcProvider;
+use Untek\Core\Env\Enums\EnvEnum;
+use Untek\Framework\Rpc\Domain\Facades\RpcClientFacade;
+use Untek\Framework\Rpc\Domain\Libs\RpcAuthProvider;
+use Untek\Framework\Rpc\Domain\Libs\RpcProvider;
 
 trait ProviderTrait
 {

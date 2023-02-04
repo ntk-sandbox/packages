@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Libs;
+namespace Untek\Framework\Wsdl\Domain\Libs;
 
 use GuzzleHttp\Client;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnLib\Components\Http\Enums\HttpHeaderEnum;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
 
 class SoapClient
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Mappers;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Mappers;
 
-use ZnDomain\Repository\Interfaces\MapperInterface;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\PriorityEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\ProjectEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\StatusEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\TrackerEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\UserEntity;
+use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\PriorityEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\ProjectEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\StatusEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\TrackerEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\UserEntity;
 
 class IssueApiMapper implements MapperInterface
 {

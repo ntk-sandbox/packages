@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Storage\Domain\Repositories\Eloquent;
 
-use ZnBundle\Storage\Domain\Entities\FileEntity;
-use ZnBundle\Storage\Domain\Interfaces\Repositories\FileRepositoryInterface;
-use ZnBundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Storage\Domain\Entities\FileEntity;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\FileRepositoryInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class FileRepository extends BaseEloquentCrudRepository implements FileRepositoryInterface
 {

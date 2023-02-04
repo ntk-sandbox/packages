@@ -16,8 +16,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\TalkBox\\": "src",
-			"ZnBundle\\TalkBox\\Tests\\": "tests"
+			"Untek\\Bundle\\TalkBox\\": "src",
+			"Untek\\Bundle\\TalkBox\\Tests\\": "tests"
 		}
 	}
 }

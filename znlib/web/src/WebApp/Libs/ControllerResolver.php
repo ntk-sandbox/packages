@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\WebApp\Libs;
+namespace Untek\Lib\Web\WebApp\Libs;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
-use ZnCore\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
 
 class ControllerResolver implements ControllerResolverInterface
 {

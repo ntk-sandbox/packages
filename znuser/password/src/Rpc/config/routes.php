@@ -1,8 +1,8 @@
 <?php
 
-use ZnUser\Password\Domain\Enums\Rbac\SecurityPermissionEnum;
-use ZnUser\Password\Rpc\Controllers\RestorePasswordController;
-use ZnUser\Password\Rpc\Controllers\UpdatePasswordController;
+use Untek\User\Password\Domain\Enums\Rbac\SecurityPermissionEnum;
+use Untek\User\Password\Rpc\Controllers\RestorePasswordController;
+use Untek\User\Password\Rpc\Controllers\UpdatePasswordController;
 
 return [
     [
@@ -47,7 +47,7 @@ return [
         'is_verify_eds' => false,
         'is_verify_auth' => false,
         'permission_name' => SecurityPermissionEnum::VALIDATE_PASSWORD_UPDATE,
-        'handler_class' => \ZnUser\Password\Rpc\Controllers\ValidatePasswordController::class,
+        'handler_class' => \Untek\User\Password\Rpc\Controllers\ValidatePasswordController::class,
         'handler_method' => 'validate',
         'status_id' => 100,
         'title' => null,

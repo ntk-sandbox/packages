@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders;
 
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 
 interface C14nEncoderInterface extends EncoderInterface
 {

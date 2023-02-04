@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine;
+namespace Untek\Sandbox\Sandbox\Redmine;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

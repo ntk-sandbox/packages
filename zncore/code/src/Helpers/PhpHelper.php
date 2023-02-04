@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
-use ZnCore\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
 
 class PhpHelper
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Format\Encoders;
+namespace Untek\Lib\Components\Format\Encoders;
 
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 
 /**
  * Сжатие данных GZip

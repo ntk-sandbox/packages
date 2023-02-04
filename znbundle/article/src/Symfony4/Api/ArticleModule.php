@@ -1,25 +1,25 @@
 <?php
 
-namespace ZnBundle\Article\Symfony4\Api;
+namespace Untek\Bundle\Article\Symfony4\Api;
 
 use Doctrine\DBAL\Connection;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Routing\RouteCollection;
-use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\PostRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
-use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use ZnBundle\Article\Domain\Repositories\Doctrine\PostRepository;
-use ZnBundle\Article\Domain\Repositories\Eloquent\CategoryRepository;
-use ZnBundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
-use ZnBundle\Article\Domain\Repositories\Eloquent\TagRepository;
-use ZnBundle\Article\Domain\Services\PostService;
-use ZnBundle\Article\Symfony4\Api\Controllers\ArticleController;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnLib\Db\Facades\DoctrineFacade;
-use ZnLib\Rest\Helpers\RestApiRouteHelper;
+use Untek\Bundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\PostRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\PostServiceInterface;
+use Untek\Bundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use Untek\Bundle\Article\Domain\Repositories\Doctrine\PostRepository;
+use Untek\Bundle\Article\Domain\Repositories\Eloquent\CategoryRepository;
+use Untek\Bundle\Article\Domain\Repositories\Eloquent\TagPostRepository;
+use Untek\Bundle\Article\Domain\Repositories\Eloquent\TagRepository;
+use Untek\Bundle\Article\Domain\Services\PostService;
+use Untek\Bundle\Article\Symfony4\Api\Controllers\ArticleController;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Lib\Db\Facades\DoctrineFacade;
+use Untek\Lib\Rest\Helpers\RestApiRouteHelper;
 
 class ArticleModule
 {

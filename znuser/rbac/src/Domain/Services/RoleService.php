@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
-use ZnUser\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Rbac\Domain\Entities\RoleEntity;
+use Untek\User\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Rbac\Domain\Entities\RoleEntity;
 
 class RoleService extends BaseCrudService implements RoleServiceInterface
 {

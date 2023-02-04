@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs;
+namespace Untek\Framework\Rpc\Domain\Libs;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
@@ -9,25 +9,25 @@ use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
-use ZnLib\Components\Http\Helpers\RestResponseHelper;
-use ZnFramework\Rpc\Domain\Encoders\RequestEncoder;
-use ZnFramework\Rpc\Domain\Encoders\ResponseEncoder;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestCollection;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseCollection;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
-use ZnFramework\Rpc\Domain\Exceptions\InvalidRpcVersionException;
-use ZnLib\Components\Http\Helpers\SymfonyHttpResponseHelper;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonAuthPlugin;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Lib\Components\Http\Helpers\RestResponseHelper;
+use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
+use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestCollection;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseCollection;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
+use Untek\Framework\Rpc\Domain\Exceptions\InvalidRpcVersionException;
+use Untek\Lib\Components\Http\Helpers\SymfonyHttpResponseHelper;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\HttpClient;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonAuthPlugin;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\Plugins\JsonPlugin;
 
 abstract class BaseRpcClient
 {

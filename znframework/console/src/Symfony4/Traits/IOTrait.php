@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Traits;
+namespace Untek\Framework\Console\Symfony4\Traits;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnFramework\Console\Symfony4\Style\SymfonyStyle;
+use Untek\Framework\Console\Symfony4\Style\SymfonyStyle;
 
 trait IOTrait
 {

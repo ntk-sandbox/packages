@@ -1,10 +1,10 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Services;
+namespace Untek\Framework\Telegram\Domain\Services;
 
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Repositories\Http\RequestRepository;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Repositories\Http\RequestRepository;
 
 class RequestService
 {

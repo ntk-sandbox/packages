@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Commands;
+namespace Untek\Sandbox\Sandbox\WebTest\Commands;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Command\Command;
@@ -12,10 +12,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
-use ZnSandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
-use ZnSandbox\Sandbox\WebTest\Domain\Helpers\IsolateFixerHelper;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
-use ZnSandbox\Sandbox\WebTest\Domain\Services\HttpRequestService;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Helpers\IsolateFixerHelper;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\BaseHttpKernelFactory;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Services\HttpRequestService;
 
 /**
  * Обработчик изолированных HTTP-запросов.

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Storage;
+namespace Untek\Bundle\Storage;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

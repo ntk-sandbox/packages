@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDatabase\Eloquent\Domain\Factories;
+namespace Untek\Database\Eloquent\Domain\Factories;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
-use ZnDatabase\Base\Domain\Facades\DbFacade;
-use ZnDatabase\Base\Domain\Libs\TableAlias;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnLib\Components\Store\Helpers\StoreHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
+use Untek\Database\Base\Domain\Facades\DbFacade;
+use Untek\Database\Base\Domain\Libs\TableAlias;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Lib\Components\Store\Helpers\StoreHelper;
 
 class ManagerFactory
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Libs\Input;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Libs\Input;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
 
 class SelectClassesInput extends BaseInput
 {

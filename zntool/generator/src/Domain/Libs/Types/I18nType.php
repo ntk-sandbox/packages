@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\Types;
+namespace Untek\Tool\Generator\Domain\Libs\Types;
 
-use ZnTool\Generator\Domain\Helpers\TypeAttributeHelper;
+use Untek\Tool\Generator\Domain\Helpers\TypeAttributeHelper;
 
 class I18nType extends ArrayType
 {

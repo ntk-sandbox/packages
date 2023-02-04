@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Filters;
+namespace Untek\Bundle\Storage\Domain\Filters;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\QueryFilter\Interfaces\DefaultSortInterface;
-use ZnLib\Components\Status\Enums\StatusSimpleEnum;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\QueryFilter\Interfaces\DefaultSortInterface;
+use Untek\Lib\Components\Status\Enums\StatusSimpleEnum;
 
 class FileFilter implements ValidationByMetadataInterface, DefaultSortInterface
 {

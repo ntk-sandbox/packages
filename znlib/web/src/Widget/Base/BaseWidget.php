@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Web\Widget\Base;
+namespace Untek\Lib\Web\Widget\Base;
 
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnLib\Web\Widget\Interfaces\WidgetInterface;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Lib\Web\Widget\Interfaces\WidgetInterface;
 
 abstract class BaseWidget implements WidgetInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Interfaces;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Interfaces;
 
-use ZnSandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
 
 interface PluginInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Package\Domain\Interfaces\Repositories;
+namespace Untek\Tool\Package\Domain\Interfaces\Repositories;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Domain\Interfaces\ReadAllInterface;
-use ZnDomain\Repository\Interfaces\FindOneInterface;
-//use ZnDomain\Repository\Interfaces\RelationConfigInterface;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Interfaces\ReadAllInterface;
+use Untek\Domain\Repository\Interfaces\FindOneInterface;
+//use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 interface PackageRepositoryInterface extends RepositoryInterface, GetEntityClassInterface, ReadAllInterface, FindOneInterface//, RelationConfigInterface
 {

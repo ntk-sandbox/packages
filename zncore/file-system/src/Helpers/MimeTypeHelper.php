@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\FileSystem\Helpers;
+namespace Untek\Core\FileSystem\Helpers;
 
 use PATHINFO_EXTENSION;
 use Symfony\Component\Mime\MimeTypes;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class MimeTypeHelper
 {

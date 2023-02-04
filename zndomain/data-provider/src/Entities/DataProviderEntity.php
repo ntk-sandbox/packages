@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\DataProvider\Entities;
+namespace Untek\Domain\DataProvider\Entities;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 class DataProviderEntity
 {

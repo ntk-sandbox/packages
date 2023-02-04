@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Repositories\Eloquent;
+namespace Untek\User\Authentication\Domain\Repositories\Eloquent;
 
-use ZnUser\Authentication\Domain\Entities\TokenEntity;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Authentication\Domain\Entities\TokenEntity;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class TokenRepository extends BaseEloquentCrudRepository implements TokenRepositoryInterface
 {

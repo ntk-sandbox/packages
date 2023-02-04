@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\EventDispatcher\Interfaces;
+namespace Untek\Core\EventDispatcher\Interfaces;
 
 interface EventDispatcherConfiguratorInterface
 {

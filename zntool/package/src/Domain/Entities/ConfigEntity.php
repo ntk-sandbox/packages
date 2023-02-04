@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Package\Domain\Entities;
+namespace Untek\Tool\Package\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ConfigEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

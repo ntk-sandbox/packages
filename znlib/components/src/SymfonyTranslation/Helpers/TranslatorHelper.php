@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\SymfonyTranslation\Helpers;
+namespace Untek\Lib\Components\SymfonyTranslation\Helpers;
 
 class TranslatorHelper
 {

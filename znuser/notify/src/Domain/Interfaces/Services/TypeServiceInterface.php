@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Interfaces\Services;
+namespace Untek\User\Notify\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnUser\Notify\Domain\Entities\TypeEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\User\Notify\Domain\Entities\TypeEntity;
 
 interface TypeServiceInterface extends CrudServiceInterface
 {

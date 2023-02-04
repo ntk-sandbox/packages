@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Kafka\Messenger\Transport;
+namespace Untek\Sandbox\Sandbox\Kafka\Messenger\Transport;
 
-use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\TopicStamp;
+use Untek\Sandbox\Sandbox\Kafka\Messenger\Stamp\TopicStamp;
 use longlang\phpkafka\Producer\ProduceMessage;
 use longlang\phpkafka\Producer\Producer;
 use longlang\phpkafka\Producer\ProducerConfig;

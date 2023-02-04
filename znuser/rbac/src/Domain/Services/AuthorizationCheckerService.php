@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
-use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\User\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 
 class AuthorizationCheckerService implements AuthorizationCheckerInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\RestApiApp\Symfony4\Controllers;
+namespace Untek\Lib\Web\RestApiApp\Symfony4\Controllers;
 
 use Exception;
 use Psr\Log\LoggerInterface;
@@ -11,11 +11,11 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
 
 class RestApiErrorController extends BaseWebController implements ErrorControllerInterface
 {

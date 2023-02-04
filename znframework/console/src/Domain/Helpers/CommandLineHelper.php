@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Helpers;
+namespace Untek\Framework\Console\Domain\Helpers;
 
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;

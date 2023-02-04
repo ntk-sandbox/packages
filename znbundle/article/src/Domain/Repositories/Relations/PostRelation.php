@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Repositories\Relations;
+namespace Untek\Bundle\Article\Domain\Repositories\Relations;
 
-use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
-use ZnBundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use ZnDomain\Domain\Enums\RelationEnum;
-use ZnDomain\Domain\Libs\Relation\ManyToMany;
-use ZnDomain\Domain\Libs\Relation\OneToOne;
-use ZnDomain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Bundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
+use Untek\Bundle\Article\Domain\Interfaces\TagRepositoryInterface;
+use Untek\Domain\Domain\Enums\RelationEnum;
+use Untek\Domain\Domain\Libs\Relation\ManyToMany;
+use Untek\Domain\Domain\Libs\Relation\OneToOne;
+use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
 
 class PostRelation
 {

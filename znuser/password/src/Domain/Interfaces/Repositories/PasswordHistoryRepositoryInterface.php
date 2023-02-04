@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Password\Domain\Interfaces\Repositories;
+namespace Untek\User\Password\Domain\Interfaces\Repositories;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnUser\Password\Domain\Entities\PasswordHistoryEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\User\Password\Domain\Entities\PasswordHistoryEntity;
 
 interface PasswordHistoryRepositoryInterface extends CrudRepositoryInterface
 {

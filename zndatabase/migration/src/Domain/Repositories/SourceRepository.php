@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Repositories;
+namespace Untek\Database\Migration\Domain\Repositories;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Exceptions\DeprecatedException;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnDatabase\Migration\Domain\Entities\MigrationEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Exceptions\DeprecatedException;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Database\Migration\Domain\Entities\MigrationEntity;
 
 class SourceRepository
 {

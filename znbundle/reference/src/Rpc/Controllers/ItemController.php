@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Reference\Rpc\Controllers;
+namespace Untek\Bundle\Reference\Rpc\Controllers;
 
-use ZnBundle\Reference\Domain\Filters\ItemFilter;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnBundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
+use Untek\Bundle\Reference\Domain\Filters\ItemFilter;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
 
 class ItemController extends BaseCrudRpcController
 {

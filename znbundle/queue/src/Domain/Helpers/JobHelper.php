@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Helpers;
+namespace Untek\Bundle\Queue\Domain\Helpers;
 
 class JobHelper
 {

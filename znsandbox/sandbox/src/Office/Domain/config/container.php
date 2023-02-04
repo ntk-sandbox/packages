@@ -2,7 +2,7 @@
 
 return [
 	'singletons' => [
-		'ZnSandbox\\Sandbox\\Office\\Domain\\Interfaces\\Services\\DocXServiceInterface' => 'ZnSandbox\\Sandbox\\Office\\Domain\\Services\\DocXService',
-		'ZnSandbox\\Sandbox\\Office\\Domain\\Interfaces\\Repositories\\DocXRepositoryInterface' => 'ZnSandbox\\Sandbox\\Office\\Domain\\Repositories\\File\\DocXRepository',
+		'Untek\\Sandbox\\Sandbox\\Office\\Domain\\Interfaces\\Services\\DocXServiceInterface' => 'Untek\\Sandbox\\Sandbox\\Office\\Domain\\Services\\DocXService',
+		'Untek\\Sandbox\\Sandbox\\Office\\Domain\\Interfaces\\Repositories\\DocXRepositoryInterface' => 'Untek\\Sandbox\\Sandbox\\Office\\Domain\\Repositories\\File\\DocXRepository',
 	],
 ];

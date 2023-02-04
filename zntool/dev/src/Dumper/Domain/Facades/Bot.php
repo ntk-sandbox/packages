@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Dev\Dumper\Domain\Facades;
+namespace Untek\Tool\Dev\Dumper\Domain\Facades;
 
 /** @deprecated */
-class Bot extends \ZnFramework\Telegram\Domain\Facades\Bot
+class Bot extends \Untek\Framework\Telegram\Domain\Facades\Bot
 {
 
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Helpers;
+namespace Untek\Tool\Generator\Domain\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
 
 class ClassHelper
 {

@@ -1,8 +1,11 @@
 <?php
 
-namespace ZnTool\Generator;
+namespace Untek\Tool\Generator;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Tool\Generator\Commands\DomainCommand;
+use Untek\Tool\Generator\Commands\ModuleCommand;
 
 class Bundle extends BaseBundle
 {
@@ -15,15 +18,21 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            new \ZnSandbox\Sandbox\Bundle\Bundle(['all']),
+            new \Untek\Sandbox\Sandbox\Bundle\Bundle(['all']),
         ];
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnTool\Generator\Commands',
+            'Untek\Tool\Generator\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(DomainCommand::class);
+        $commandConfigurator->registerCommandClass(ModuleCommand::class);
     }
 
     public function container(): array

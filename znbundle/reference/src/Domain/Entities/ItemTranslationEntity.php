@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Entities;
+namespace Untek\Bundle\Reference\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class ItemTranslationEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

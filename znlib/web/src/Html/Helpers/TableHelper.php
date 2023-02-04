@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\Html\Helpers;
+namespace Untek\Lib\Web\Html\Helpers;
 
-use ZnLib\Web\TwBootstrap\Widgets\Table\TableWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Table\TableWidget;
 
 class TableHelper
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Laminas\Code\Generator\PropertyGenerator;
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 abstract class BaseEntityScenario extends BaseScenario
 {

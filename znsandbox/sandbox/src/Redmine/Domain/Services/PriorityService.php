@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Services;
 
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Services\PriorityServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\PriorityRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\PriorityEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Services\PriorityServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\PriorityRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\PriorityEntity;
 
 /**
  * @method PriorityRepositoryInterface getRepository()

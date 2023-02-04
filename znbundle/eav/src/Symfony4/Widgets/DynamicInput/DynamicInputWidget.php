@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Eav\Symfony4\Widgets\DynamicInput;
+namespace Untek\Bundle\Eav\Symfony4\Widgets\DynamicInput;
 
 use Symfony\Component\Form\FormView;
-use ZnLib\Web\Form\Libs\FormRender;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Lib\Web\Form\Libs\FormRender;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class DynamicInputWidget extends BaseWidget2
 {

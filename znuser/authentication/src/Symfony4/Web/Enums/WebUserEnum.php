@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Symfony4\Web\Enums;
+namespace Untek\User\Authentication\Symfony4\Web\Enums;
 
 class WebUserEnum
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Messenger\Symfony4;
+namespace Untek\Bundle\Messenger\Symfony4;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

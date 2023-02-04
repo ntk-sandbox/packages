@@ -1,10 +1,10 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Services;
+namespace Untek\Framework\Telegram\Domain\Services;
 
-use ZnFramework\Telegram\Domain\Entities\ResponseEntity;
-use ZnFramework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
+use Untek\Framework\Telegram\Domain\Entities\ResponseEntity;
+use Untek\Framework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
 use Throwable;
 
 class ResponseService

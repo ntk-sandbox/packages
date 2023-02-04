@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Container\Libs\ContainerConfigurators;
+namespace Untek\Core\Container\Libs\ContainerConfigurators;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Libs\Container;
 
 class IlluminateContainerConfigurator implements ContainerConfiguratorInterface
 {

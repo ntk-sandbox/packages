@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Store\Drivers;
+namespace Untek\Lib\Components\Store\Drivers;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
 class Html implements DriverInterface
 {

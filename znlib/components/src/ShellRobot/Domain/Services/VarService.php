@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Services;
+namespace Untek\Lib\Components\ShellRobot\Domain\Services;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Services\VarServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\VarServiceInterface;
 
 /**
  * @method VarRepositoryInterface getRepository()

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\App\Libs;
+namespace Untek\Core\App\Libs;
 
 class EnvServer
 {

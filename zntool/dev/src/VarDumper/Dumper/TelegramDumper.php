@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnTool\Dev\VarDumper\Dumper;
+namespace Untek\Tool\Dev\VarDumper\Dumper;
 
 use Symfony\Component\VarDumper\Cloner\Data;
 use Symfony\Component\VarDumper\Dumper\DataDumperInterface;
-use ZnFramework\Telegram\Domain\Facades\Bot;
-use ZnFramework\Telegram\Domain\Facades\BotFacade;
+use Untek\Framework\Telegram\Domain\Facades\Bot;
+use Untek\Framework\Telegram\Domain\Facades\BotFacade;
 
 class TelegramDumper implements DataDumperInterface
 {

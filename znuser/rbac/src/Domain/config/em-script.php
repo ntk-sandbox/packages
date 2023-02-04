@@ -1,12 +1,12 @@
 <?php
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 return function (EntityManagerConfiguratorInterface $entityManagerConfigurator) {
-    $entityManagerConfigurator->bindEntity('ZnUser\\Rbac\\Domain\\Entities\\RoleEntity', 'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\RoleRepositoryInterface');
-    $entityManagerConfigurator->bindEntity('ZnUser\\Rbac\\Domain\\Entities\\InheritanceEntity', 'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\InheritanceRepositoryInterface');
-    $entityManagerConfigurator->bindEntity('ZnUser\\Rbac\\Domain\\Entities\\ItemEntity', 'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\ItemRepositoryInterface');
-    $entityManagerConfigurator->bindEntity('ZnUser\\Rbac\\Domain\\Entities\\ItemEntity', 'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\ItemRepositoryInterface');
-    $entityManagerConfigurator->bindEntity('ZnUser\\Rbac\\Domain\\Entities\\PermissionEntity', 'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\PermissionRepositoryInterface');
-    $entityManagerConfigurator->bindEntity('ZnUser\\Rbac\\Domain\\Entities\\AssignmentEntity', 'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\AssignmentRepositoryInterface');
+    $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\RoleEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\RoleRepositoryInterface');
+    $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\InheritanceEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\InheritanceRepositoryInterface');
+    $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\ItemEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\ItemRepositoryInterface');
+    $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\ItemEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\ItemRepositoryInterface');
+    $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\PermissionEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\PermissionRepositoryInterface');
+    $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\AssignmentEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\AssignmentRepositoryInterface');
 };

@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnDomain\Components\ArrayRepository\Traits;
+namespace Untek\Domain\Components\ArrayRepository\Traits;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Domain\Traits\DispatchEventTrait;
-use ZnDomain\Repository\Traits\CrudRepositoryFindAllTrait;
-use ZnDomain\Repository\Traits\CrudRepositoryFindOneTrait;
-use ZnDomain\Components\ArrayRepository\Helpers\FilterHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Domain\Traits\DispatchEventTrait;
+use Untek\Domain\Repository\Traits\CrudRepositoryFindAllTrait;
+use Untek\Domain\Repository\Traits\CrudRepositoryFindOneTrait;
+use Untek\Domain\Components\ArrayRepository\Helpers\FilterHelper;
 
 trait ArrayCrudRepositoryTrait
 {

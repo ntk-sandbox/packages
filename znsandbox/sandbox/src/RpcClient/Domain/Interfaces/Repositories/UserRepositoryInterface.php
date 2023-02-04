@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface UserRepositoryInterface extends CrudRepositoryInterface
 {

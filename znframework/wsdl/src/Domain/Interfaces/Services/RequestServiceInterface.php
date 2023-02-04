@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Interfaces\Services;
+namespace Untek\Framework\Wsdl\Domain\Interfaces\Services;
 
 interface RequestServiceInterface
 {

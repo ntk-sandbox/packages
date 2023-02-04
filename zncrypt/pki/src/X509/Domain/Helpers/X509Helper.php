@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Helpers;
+namespace Untek\Crypt\Pki\X509\Domain\Helpers;
 
 use phpseclib\File\X509;
 use SimpleXMLElement;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCrypt\Pki\X509\Domain\Entities\CertificateEntity;
-use ZnCrypt\Pki\X509\Domain\Entities\PersonEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Crypt\Pki\X509\Domain\Entities\CertificateEntity;
+use Untek\Crypt\Pki\X509\Domain\Entities\PersonEntity;
 use DateTime;
 
 class X509Helper

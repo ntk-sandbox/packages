@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Entities;
+namespace Untek\User\Authentication\Domain\Entities;
 
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 
 class TokenValueEntity
 {

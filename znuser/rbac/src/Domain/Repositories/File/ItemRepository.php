@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\File;
+namespace Untek\User\Rbac\Domain\Repositories\File;
 
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
-use ZnUser\Rbac\Domain\Entities\RoleEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Entities\RoleEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
 
 class ItemRepository extends BaseFileCrudRepository implements ItemRepositoryInterface
 {

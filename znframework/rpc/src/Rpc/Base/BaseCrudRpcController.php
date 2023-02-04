@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Base;
+namespace Untek\Framework\Rpc\Rpc\Base;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Exceptions\InvalidRequestException;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Exceptions\InvalidRequestException;
 
 abstract class BaseCrudRpcController extends BaseRpcController
 {

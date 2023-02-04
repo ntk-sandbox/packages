@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Rpc\Test;
+namespace Untek\Framework\Rpc\Test;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
-use ZnTool\Test\Asserts\BaseAssert;
-use ZnTool\Test\Helpers\RestHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
+use Untek\Tool\Test\Asserts\BaseAssert;
+use Untek\Tool\Test\Helpers\RestHelper;
 
 class RpcAssert extends BaseAssert
 {

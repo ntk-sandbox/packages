@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Log\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\ModifyInterface;
+use Untek\Domain\Repository\Interfaces\ModifyInterface;
 
 interface LogRepositoryInterface extends ModifyInterface
 {

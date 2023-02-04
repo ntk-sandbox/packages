@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Reference\Rpc\Controllers\ItemController;
-use ZnBundle\Reference\Domain\Enums\Rbac\ReferenceItemPermissionEnum;
+use Untek\Bundle\Reference\Rpc\Controllers\ItemController;
+use Untek\Bundle\Reference\Domain\Enums\Rbac\ReferenceItemPermissionEnum;
 
 return [
     [

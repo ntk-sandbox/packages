@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSymfony\Sandbox\Symfony4\Web\Base;
+namespace Untek\Symfony\Sandbox\Symfony4\Web\Base;
 
-use ZnSymfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
-use ZnSymfony\Sandbox\Symfony4\Web\Helpers\UrlHelper;
+use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
+use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\UrlHelper;
 use App\Dashboard\Controllers\DashboardController;
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;
 
-abstract class BaseModule extends \ZnLib\Web\Controller\Base\BaseModule
+abstract class BaseModule extends \Untek\Lib\Web\Controller\Base\BaseModule
 {
 
     abstract public function getNamespace(): string;

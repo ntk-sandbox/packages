@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\Env\Helpers;
+namespace Untek\Core\Env\Helpers;
 
 use Symfony\Component\Uid\Uuid;
-use ZnCore\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FileHelper;
 
 class TempHelper
 {

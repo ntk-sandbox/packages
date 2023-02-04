@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Language\Tests\Web;
+namespace Untek\Bundle\Language\Tests\Web;
 
 use Tests\Helpers\FixtureHelper;
 
-class LanguageTest extends \ZnLib\Web\Test\BaseWebTest
+class LanguageTest extends \Untek\Lib\Web\Test\BaseWebTest
 {
 
     protected function fixtures(): array

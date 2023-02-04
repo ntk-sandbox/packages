@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Controllers;
+namespace Untek\Framework\Rpc\Rpc\Controllers;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Services\SettingsServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\SettingsServiceInterface;
 
 class SettingsController
 {

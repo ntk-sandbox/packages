@@ -1,27 +1,27 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Base;
+namespace Untek\Framework\Rpc\Domain\Base;
 
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ErrorCollectionHelper;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Domain\Traits\DispatchEventTrait;
-use ZnDomain\Domain\Traits\ForgeQueryTrait;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Repository\Base\BaseRepository;
-use ZnDomain\Repository\Traits\RepositoryMapperTrait;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
-use ZnFramework\Rpc\Domain\Facades\RpcClientFacade;
-use ZnFramework\Rpc\Domain\Forms\BaseRpcAuthForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthGuestForm;
-use ZnFramework\Rpc\Domain\Libs\RpcAuthProvider;
-use ZnFramework\Rpc\Domain\Libs\RpcProvider;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ErrorCollectionHelper;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Traits\DispatchEventTrait;
+use Untek\Domain\Domain\Traits\ForgeQueryTrait;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Repository\Base\BaseRepository;
+use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
+use Untek\Framework\Rpc\Domain\Facades\RpcClientFacade;
+use Untek\Framework\Rpc\Domain\Forms\BaseRpcAuthForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthGuestForm;
+use Untek\Framework\Rpc\Domain\Libs\RpcAuthProvider;
+use Untek\Framework\Rpc\Domain\Libs\RpcProvider;
 
 abstract class BaseRpcRepository extends BaseRepository implements GetEntityClassInterface
 {

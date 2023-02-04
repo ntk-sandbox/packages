@@ -15,8 +15,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnKaz\\Base\\": "src",
-      "ZnKaz\\Base\\Tests\\": "tests"
+      "Untek\\Kaz\\Base\\": "src",
+      "Untek\\Kaz\\Base\\Tests\\": "tests"
     }
   }
 }

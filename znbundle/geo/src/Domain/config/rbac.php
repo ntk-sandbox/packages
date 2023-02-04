@@ -1,10 +1,10 @@
 <?php
 
-use ZnBundle\Geo\Domain\Enums\Rbac\GeoCountryPermissionEnum;
-use ZnBundle\Geo\Domain\Enums\Rbac\GeoCurrencyPermissionEnum;
-use ZnBundle\Geo\Domain\Enums\Rbac\GeoLocalityPermissionEnum;
-use ZnBundle\Geo\Domain\Enums\Rbac\GeoRegionPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Bundle\Geo\Domain\Enums\Rbac\GeoCountryPermissionEnum;
+use Untek\Bundle\Geo\Domain\Enums\Rbac\GeoCurrencyPermissionEnum;
+use Untek\Bundle\Geo\Domain\Enums\Rbac\GeoLocalityPermissionEnum;
+use Untek\Bundle\Geo\Domain\Enums\Rbac\GeoRegionPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

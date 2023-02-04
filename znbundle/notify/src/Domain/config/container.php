@@ -4,20 +4,20 @@ use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mailer\Transport\NullTransport;
 use Symfony\Component\Mailer\Transport\TransportInterface;
-use ZnCore\Env\Helpers\EnvHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
 
 return [
     'singletons' => [
 //        MailerInterface::class => Mailer::class,
 //        TransportInterface::class => NullTransport::class,
-        'ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface' => EnvHelper::isTest() ? 'ZnBundle\Notify\Domain\Repositories\File\EmailRepository' : 'ZnBundle\Notify\Domain\Repositories\Telegram\EmailRepository',
-        'ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface' => EnvHelper::isTest() ? 'ZnBundle\Notify\Domain\Repositories\File\SmsRepository' : 'ZnBundle\Notify\Domain\Repositories\Telegram\SmsRepository',
+        'Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface' => EnvHelper::isTest() ? 'Untek\Bundle\Notify\Domain\Repositories\File\EmailRepository' : 'Untek\Bundle\Notify\Domain\Repositories\Telegram\EmailRepository',
+        'Untek\Bundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface' => EnvHelper::isTest() ? 'Untek\Bundle\Notify\Domain\Repositories\File\SmsRepository' : 'Untek\Bundle\Notify\Domain\Repositories\Telegram\SmsRepository',
 
-        'ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface' => 'ZnBundle\Notify\Domain\Services\ToastrService',
-        'ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface' => 'ZnBundle\Notify\Domain\Services\FlashService',
-        'ZnBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface' => 'ZnBundle\Notify\Domain\Services\SmsService',
-        'ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface' => 'ZnBundle\Notify\Domain\Services\EmailService',
-        'ZnBundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface' => 'ZnBundle\Notify\Domain\Repositories\Session\FlashRepository',
-        //'ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface' => 'ZnBundle\Notify\Domain\Repositories\Session\ToastrRepository',
+        'Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface' => 'Untek\Bundle\Notify\Domain\Services\ToastrService',
+        'Untek\Bundle\Notify\Domain\Interfaces\Services\FlashServiceInterface' => 'Untek\Bundle\Notify\Domain\Services\FlashService',
+        'Untek\Bundle\Notify\Domain\Interfaces\Services\SmsServiceInterface' => 'Untek\Bundle\Notify\Domain\Services\SmsService',
+        'Untek\Bundle\Notify\Domain\Interfaces\Services\EmailServiceInterface' => 'Untek\Bundle\Notify\Domain\Services\EmailService',
+        'Untek\Bundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface' => 'Untek\Bundle\Notify\Domain\Repositories\Session\FlashRepository',
+        //'Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface' => 'Untek\Bundle\Notify\Domain\Repositories\Session\ToastrRepository',
     ],
 ];

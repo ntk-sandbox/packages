@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Entities;
+namespace Untek\Framework\Rpc\Domain\Entities;
 
 class HandlerEntity {
 

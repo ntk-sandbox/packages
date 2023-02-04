@@ -2,7 +2,7 @@
 
 use Psr\Container\ContainerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
-use ZnLib\Components\SymfonyTranslation\Libs\Translator;
+use Untek\Lib\Components\SymfonyTranslation\Libs\Translator;
 
 $defaultLang = 'ru';
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
 use Symfony\Component\Uid\Uuid;
 use UnexpectedValueException;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnCore\Arr\Libs\Alias;
-use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
-use ZnCrypt\Jwt\Domain\Entities\JwtHeaderEntity;
-use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
-use ZnCrypt\Jwt\Domain\Entities\JwtTokenEntity;
-use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Core\Arr\Libs\Alias;
+use Untek\Crypt\Jwt\Domain\Entities\JwtEntity;
+use Untek\Crypt\Jwt\Domain\Entities\JwtHeaderEntity;
+use Untek\Crypt\Jwt\Domain\Entities\JwtProfileEntity;
+use Untek\Crypt\Jwt\Domain\Entities\JwtTokenEntity;
+use Untek\Crypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
 
 class JwtHelper
 {

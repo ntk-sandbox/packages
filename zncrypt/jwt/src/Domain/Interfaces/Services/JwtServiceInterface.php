@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Interfaces\Services;
+namespace Untek\Crypt\Jwt\Domain\Interfaces\Services;
 
-use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
+use Untek\Crypt\Jwt\Domain\Entities\JwtEntity;
 
 interface JwtServiceInterface
 {

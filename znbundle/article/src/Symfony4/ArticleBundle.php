@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Article\Symfony4;
+namespace Untek\Bundle\Article\Symfony4;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

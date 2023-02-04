@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Helpers;
+namespace Untek\Kaz\Iin\Domain\Helpers;
 
 
-use ZnCore\Text\Helpers\TextHelper;
-use ZnKaz\Iin\Domain\Entities\IndividualEntity;
-use ZnKaz\Iin\Domain\Libs\CheckSum;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Kaz\Iin\Domain\Entities\IndividualEntity;
+use Untek\Kaz\Iin\Domain\Libs\CheckSum;
 
 class IinHelper
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Base;
+namespace Untek\Framework\Rpc\Domain\Base;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
-use ZnDomain\QueryFilter\Traits\ForgeQueryFilterTrait;
-use ZnDomain\QueryFilter\Traits\QueryFilterTrait;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Repository\Interfaces\FindOneUniqueInterface;
-use ZnDomain\Repository\Traits\CrudRepositoryDeleteTrait;
-use ZnDomain\Repository\Traits\CrudRepositoryFindAllTrait;
-use ZnDomain\Repository\Traits\CrudRepositoryFindOneTrait;
-use ZnDomain\Repository\Traits\CrudRepositoryInsertTrait;
-use ZnDomain\Repository\Traits\CrudRepositoryUpdateTrait;
-use ZnDomain\Repository\Traits\RepositoryRelationTrait;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnFramework\Rpc\Domain\Helpers\RpcQueryHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
+use Untek\Domain\QueryFilter\Traits\ForgeQueryFilterTrait;
+use Untek\Domain\QueryFilter\Traits\QueryFilterTrait;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\FindOneUniqueInterface;
+use Untek\Domain\Repository\Traits\CrudRepositoryDeleteTrait;
+use Untek\Domain\Repository\Traits\CrudRepositoryFindAllTrait;
+use Untek\Domain\Repository\Traits\CrudRepositoryFindOneTrait;
+use Untek\Domain\Repository\Traits\CrudRepositoryInsertTrait;
+use Untek\Domain\Repository\Traits\CrudRepositoryUpdateTrait;
+use Untek\Domain\Repository\Traits\RepositoryRelationTrait;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Framework\Rpc\Domain\Helpers\RpcQueryHelper;
 
 abstract class BaseRpcCrudRepository extends BaseRpcRepository implements CrudRepositoryInterface, ForgeQueryByFilterInterface, FindOneUniqueInterface
 {

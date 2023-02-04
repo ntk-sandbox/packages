@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Helpers;
+namespace Untek\Framework\Telegram\Domain\Helpers;
 
 
-use ZnCore\Text\Helpers\TextHelper;
+use Untek\Core\Text\Helpers\TextHelper;
 
 class MatchHelper
 {

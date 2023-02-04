@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\TypeServiceInterface;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\TransportServiceInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\TypeServiceInterface;
 
 class NotifyService implements NotifyServiceInterface, GetEntityClassInterface
 {

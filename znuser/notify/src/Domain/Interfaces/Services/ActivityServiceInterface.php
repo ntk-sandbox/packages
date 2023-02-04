@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Interfaces\Services;
+namespace Untek\User\Notify\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ActivityServiceInterface extends CrudServiceInterface
 {

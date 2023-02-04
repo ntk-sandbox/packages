@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnDatabase\Tool\Commands;
+namespace Untek\Database\Tool\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnDatabase\Base\Console\Traits\OverwriteDatabaseTrait;
-use ZnDatabase\Base\Domain\Facades\DbFacade;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
+use Untek\Database\Base\Console\Traits\OverwriteDatabaseTrait;
+use Untek\Database\Base\Domain\Facades\DbFacade;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Eloquent\Domain\Factories\ManagerFactory;
 
 class DropDatabaseCommand extends Command
 {

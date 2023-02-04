@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Libs\ConstraintCodeGenerator;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Libs\ConstraintCodeGenerator;
 
 class FormScenario extends FilterScenario
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnCore\App\Libs;
+namespace Untek\Core\App\Libs;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\App\Interfaces\EnvStorageInterface;
-use ZnCore\App\Libs\EnvStorageDrivers\EnvStorageGetenv;
-use ZnCore\Bundle\Libs\BundleLoader;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\ConfigManager\Libs\ConfigManager;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Libs\ContainerConfigurator;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
+use Untek\Core\App\Interfaces\EnvStorageInterface;
+use Untek\Core\App\Libs\EnvStorageDrivers\EnvStorageGetenv;
+use Untek\Core\Bundle\Libs\BundleLoader;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\ConfigManager\Libs\ConfigManager;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Libs\ContainerConfigurator;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
 
 /**
  * Инициализатор окружения и предварительных конфигов

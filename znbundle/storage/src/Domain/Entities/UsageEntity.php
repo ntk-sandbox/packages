@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Entities;
+namespace Untek\Bundle\Storage\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 use DateTime;
 
 class UsageEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface

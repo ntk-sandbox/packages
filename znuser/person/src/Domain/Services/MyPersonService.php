@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnUser\Person\Domain\Services;
+namespace Untek\User\Person\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseService;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Person\Domain\Entities\PersonEntity;
-use ZnUser\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
-use ZnUser\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
-use ZnUser\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Person\Domain\Entities\PersonEntity;
+use Untek\User\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\User\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
+use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class MyPersonService extends BaseService implements MyPersonServiceInterface
 {

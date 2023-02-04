@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Libs;
+namespace Untek\Kaz\Iin\Domain\Libs;
 
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Regex;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnKaz\Iin\Domain\Exceptions\BadCheckSumException;
-use ZnKaz\Iin\Domain\Exceptions\CheckSumException;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Kaz\Iin\Domain\Exceptions\BadCheckSumException;
+use Untek\Kaz\Iin\Domain\Exceptions\CheckSumException;
 
 class Validator
 {

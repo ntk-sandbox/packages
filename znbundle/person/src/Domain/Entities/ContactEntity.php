@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Person\Domain\Entities;
+namespace Untek\Bundle\Person\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ContactEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

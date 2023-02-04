@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Dto;
+namespace Untek\Tool\Generator\Domain\Dto;
 
 class RoutesConfigDto
 {

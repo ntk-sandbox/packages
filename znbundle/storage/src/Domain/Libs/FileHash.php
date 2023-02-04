@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Libs;
+namespace Untek\Bundle\Storage\Domain\Libs;
 
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
 
 class FileHash
 {

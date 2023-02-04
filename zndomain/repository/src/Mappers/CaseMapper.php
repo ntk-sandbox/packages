@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Repository\Mappers;
+namespace Untek\Domain\Repository\Mappers;
 
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Text\Helpers\Inflector;
-use ZnDomain\Repository\Interfaces\MapperInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Domain\Repository\Interfaces\MapperInterface;
 
 class CaseMapper implements MapperInterface
 {

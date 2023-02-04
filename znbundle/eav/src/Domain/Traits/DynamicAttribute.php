@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Traits;
+namespace Untek\Bundle\Eav\Domain\Traits;
 
 use Exception;
 use InvalidArgumentException;
-use ZnCore\Text\Helpers\Inflector;
+use Untek\Core\Text\Helpers\Inflector;
 
 trait DynamicAttribute
 {

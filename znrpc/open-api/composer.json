@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnRpc\\OpenApi\\": "src",
-      "ZnRpc\\OpenApi\\Tests\\": "tests"
+      "Untek\\Rpc\\OpenApi\\": "src",
+      "Untek\\Rpc\\OpenApi\\Tests\\": "tests"
     }
   }
 }

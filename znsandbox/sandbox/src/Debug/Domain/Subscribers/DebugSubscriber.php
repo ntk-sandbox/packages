@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Debug\Domain\Subscribers;
+namespace Untek\Sandbox\Sandbox\Debug\Domain\Subscribers;
 
-use ZnSandbox\Sandbox\Debug\Domain\Entities\RequestEntity;
-use ZnSandbox\Sandbox\Debug\Domain\Libs\Profiler;
+use Untek\Sandbox\Sandbox\Debug\Domain\Entities\RequestEntity;
+use Untek\Sandbox\Sandbox\Debug\Domain\Libs\Profiler;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\Uid\Uuid;
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\App\Enums\AppEventEnum;
+use Untek\Core\App\Interfaces\AppInterface;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Core\App\Enums\AppEventEnum;
 
 /**
  * Отладка и профилирование.

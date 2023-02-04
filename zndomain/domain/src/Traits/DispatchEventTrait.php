@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\Domain\Traits;
+namespace Untek\Domain\Domain\Traits;
 
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Domain\Events\QueryEvent;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Domain\Events\QueryEvent;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Domain\Query\Entities\Query;
 
 trait DispatchEventTrait
 {

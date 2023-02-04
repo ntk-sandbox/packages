@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Entities;
+namespace Untek\Database\Migration\Domain\Entities;
 
 class GenerateEntity
 {

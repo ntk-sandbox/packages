@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Helpers;
+namespace Untek\Crypt\Pki\X509\Domain\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCrypt\Pki\X509\Domain\Entities\PersonEntity;
-use ZnCrypt\Pki\X509\Domain\Entities\SignatureEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Crypt\Pki\X509\Domain\Entities\PersonEntity;
+use Untek\Crypt\Pki\X509\Domain\Entities\SignatureEntity;
 
 class NcaLayerHelper
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Libs\Rsa;
+namespace Untek\Crypt\Pki\Domain\Libs\Rsa;
 
-use ZnCrypt\Pki\Domain\Enums\CertificateFormatEnum;
-use ZnCrypt\Pki\Domain\Enums\RsaKeyFormatEnum;
+use Untek\Crypt\Pki\Domain\Enums\CertificateFormatEnum;
+use Untek\Crypt\Pki\Domain\Enums\RsaKeyFormatEnum;
 
 interface RsaStoreInterface
 {

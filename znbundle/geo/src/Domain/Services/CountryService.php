@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Services;
+namespace Untek\Bundle\Geo\Domain\Services;
 
-use ZnBundle\Geo\Domain\Entities\CountryEntity;
-use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Geo\Domain\Entities\CountryEntity;
+use Untek\Bundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
 
 /**
  * @method

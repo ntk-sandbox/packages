@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\DynamicEntity\Interfaces;
+namespace Untek\Lib\Components\DynamicEntity\Interfaces;
 
 interface DynamicEntityAttributesInterface
 {

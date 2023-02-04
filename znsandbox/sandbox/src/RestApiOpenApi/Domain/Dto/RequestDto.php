@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RestApiOpenApi\Domain\Dto;
+namespace Untek\Sandbox\Sandbox\RestApiOpenApi\Domain\Dto;
 
 class RequestDto
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Entities;
+namespace Untek\Kaz\Iin\Domain\Entities;
 
 class IndividualEntity extends BaseEntity
 {

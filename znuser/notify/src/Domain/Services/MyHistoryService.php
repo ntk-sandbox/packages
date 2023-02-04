@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
-use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;
+use Untek\User\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
 
 class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterface
 {

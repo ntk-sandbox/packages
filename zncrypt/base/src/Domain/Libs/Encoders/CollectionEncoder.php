@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Libs\Encoders;
+namespace Untek\Crypt\Base\Domain\Libs\Encoders;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Contract\Encoder\Interfaces\DecodeInterface;
-use ZnCore\Contract\Encoder\Interfaces\EncodeInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Contract\Encoder\Interfaces\DecodeInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncodeInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class CollectionEncoder implements EncoderInterface
 {

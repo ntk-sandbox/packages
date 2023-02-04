@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Password\Domain\Helpers;
+namespace Untek\User\Password\Domain\Helpers;
 
-use ZnUser\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints\Callback;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 
 class PasswordValidatorHelper
 {

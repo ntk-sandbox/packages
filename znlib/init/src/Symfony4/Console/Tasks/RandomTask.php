@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Init\Symfony4\Console\Tasks;
+namespace Untek\Lib\Init\Symfony4\Console\Tasks;
 
-use ZnCore\Text\Libs\RandomString;
+use Untek\Core\Text\Libs\RandomString;
 
 class RandomTask extends BaseTask
 {

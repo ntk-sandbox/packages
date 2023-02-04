@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Repository\Mappers;
+namespace Untek\Domain\Repository\Mappers;
 
-use ZnDomain\Repository\Interfaces\MapperInterface;
+use Untek\Domain\Repository\Interfaces\MapperInterface;
 
 class ClearEmptyMapper implements MapperInterface
 {

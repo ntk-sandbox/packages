@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Base\Tests\Unit;
+namespace Untek\Core\Base\Tests\Unit;
 
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Tool\Test\Base\BaseTest;
 
 use App1\ClassSum;
 use App1\ClassMultiplication;

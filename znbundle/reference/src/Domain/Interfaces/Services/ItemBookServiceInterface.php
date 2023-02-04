@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Interfaces\Services;
+namespace Untek\Bundle\Reference\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ItemBookServiceInterface extends CrudServiceInterface
 {

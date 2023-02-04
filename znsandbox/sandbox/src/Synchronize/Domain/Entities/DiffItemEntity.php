@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Synchronize\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\Synchronize\Domain\Entities;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 class DiffItemEntity
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Services;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface VersionHandlerServiceInterface extends CrudServiceInterface
 {

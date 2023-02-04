@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Office\Domain\Enums;
+namespace Untek\Sandbox\Sandbox\Office\Domain\Enums;
 
 class AttributeEnum
 {

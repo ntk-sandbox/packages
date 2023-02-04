@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Test\Traits;
+namespace Untek\Tool\Test\Traits;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Components\Store\Helpers\StoreHelper;
-use ZnTool\Test\Helpers\TestHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Components\Store\Helpers\StoreHelper;
+use Untek\Tool\Test\Helpers\TestHelper;
 
 trait AssertTrait
 {

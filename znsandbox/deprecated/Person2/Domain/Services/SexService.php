@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
-use ZnBundle\Reference\Domain\Entities\ItemEntity;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\SexEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\SexRepositoryInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\SexServiceInterface;
+use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\SexEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\SexRepositoryInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\SexServiceInterface;
 
 /**
  * @method SexRepositoryInterface getRepository()

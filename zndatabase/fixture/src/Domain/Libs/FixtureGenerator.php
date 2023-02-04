@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Fixture\Domain\Libs;
+namespace Untek\Database\Fixture\Domain\Libs;
 
 use Closure;
 

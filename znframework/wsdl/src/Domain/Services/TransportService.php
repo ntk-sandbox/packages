@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Services;
+namespace Untek\Framework\Wsdl\Domain\Services;
 
-use ZnFramework\Wsdl\Domain\Entities\TransportEntity;
-use ZnFramework\Wsdl\Domain\Enums\StatusEnum;
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\TransportRepositoryInterface;
-use ZnFramework\Wsdl\Domain\Interfaces\Services\TransportServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Framework\Wsdl\Domain\Entities\TransportEntity;
+use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\TransportRepositoryInterface;
+use Untek\Framework\Wsdl\Domain\Interfaces\Services\TransportServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method TransportRepositoryInterface getRepository()

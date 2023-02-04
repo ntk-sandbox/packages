@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Widgets\Dashboard\Helpers;
+namespace Untek\Bundle\Dashboard\Symfony4\Widgets\Dashboard\Helpers;
 
-use ZnLib\Web\Menu\Domain\Helpers\MenuHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Lib\Web\Menu\Domain\Helpers\MenuHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class DashboardHelper
 {

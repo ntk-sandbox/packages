@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\MigrationFieldRender;
+namespace Untek\Tool\Generator\Domain\Libs\MigrationFieldRender;
 
-use ZnTool\Generator\Domain\Libs\Types\BoolType;
+use Untek\Tool\Generator\Domain\Libs\Types\BoolType;
 
 class TypeBooleanRender extends BaseRender
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Messenger\Symfony4\Widgets;
+namespace Untek\Bundle\Messenger\Symfony4\Widgets;
 
-use ZnDomain\Query\Entities\Query;
-use ZnBundle\Messenger\Domain\Entities\MessageEntity;
-use ZnBundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
-use ZnLib\Web\Widget\Base\BaseWidget;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Bundle\Messenger\Domain\Entities\MessageEntity;
+use Untek\Bundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
+use Untek\Lib\Web\Widget\Base\BaseWidget;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 

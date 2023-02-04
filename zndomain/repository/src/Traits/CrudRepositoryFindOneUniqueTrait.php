@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Repository\Traits;
+namespace Untek\Domain\Repository\Traits;
 
 trait CrudRepositoryFindOneUniqueTrait
 {

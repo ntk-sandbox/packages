@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Ip\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\Ip\Domain\Helpers;
 
 class IpHelper
 {
@@ -9,7 +9,7 @@ class IpHelper
     {
         $collection = [];
         foreach ($domains as $domain) {
-            $collection[] = \ZnLib\Components\Http\Helpers\IpHelper::getIpByUrl($domain);
+            $collection[] = \Untek\Lib\Components\Http\Helpers\IpHelper::getIpByUrl($domain);
         }
         return $collection;
     }

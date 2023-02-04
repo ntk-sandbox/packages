@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Services;
+namespace Untek\Bundle\Messenger\Domain\Services;
 
 use FOS\UserBundle\Model\FosUserInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnBundle\Messenger\Domain\Entities\BotEntity;
-use ZnBundle\Messenger\Domain\Interfaces\Repositories\BotRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\Services\BotServiceInterface;
-use ZnBundle\User\Domain\Services\AuthService;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Entities\BotEntity;
+use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\BotRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Services\BotServiceInterface;
+use Untek\Bundle\User\Domain\Services\AuthService;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 
 class BotService extends BaseCrudService implements BotServiceInterface
 {

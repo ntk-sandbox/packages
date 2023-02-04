@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Libs\Rsa;
+namespace Untek\Crypt\Pki\Domain\Libs\Rsa;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
 class RsaStoreFile extends BaseRsaStore implements RsaStoreInterface
 {

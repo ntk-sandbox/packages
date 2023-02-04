@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Libs;
+namespace Untek\Bundle\Eav\Domain\Libs;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\ConstraintViolation;
 use Symfony\Component\Validator\ConstraintViolationList;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\SymfonyValidationHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\SymfonyValidationHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
 
 class Validator
 {

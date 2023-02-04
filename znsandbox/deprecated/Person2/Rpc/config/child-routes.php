@@ -1,7 +1,7 @@
 <?php
 
-use ZnSandbox\Sandbox\Person2\Domain\Enums\Rbac\ChildPermissionEnum;
-use ZnSandbox\Sandbox\Person2\Rpc\Controllers\ChildController;
+use Untek\Sandbox\Sandbox\Person2\Domain\Enums\Rbac\ChildPermissionEnum;
+use Untek\Sandbox\Sandbox\Person2\Rpc\Controllers\ChildController;
 
 return [
     /*[

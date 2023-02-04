@@ -1,8 +1,10 @@
 <?php
 
-namespace ZnKaz\Eds;
+namespace Untek\Kaz\Eds;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Kaz\Eds\Commands\CrlRefreshCommand;
 
 class Bundle extends BaseBundle
 {
@@ -12,13 +14,18 @@ class Bundle extends BaseBundle
         return 'eds';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnKaz\Eds\Commands',
+            'Untek\Kaz\Eds\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(CrlRefreshCommand::class);
     }
-    
+
     public function migration(): array
     {
         return [

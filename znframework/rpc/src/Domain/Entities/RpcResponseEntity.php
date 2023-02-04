@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Entities;
+namespace Untek\Framework\Rpc\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
 
 class RpcResponseEntity implements EntityIdInterface, ValidationByMetadataInterface
 {

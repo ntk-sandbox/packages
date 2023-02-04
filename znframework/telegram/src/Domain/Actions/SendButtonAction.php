@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Actions;
+namespace Untek\Framework\Telegram\Domain\Actions;
 
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Entities\ResponseEntity;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Entities\ResponseEntity;
 use danog\MadelineProto\APIFactory;
-use ZnFramework\Telegram\Domain\Base\BaseAction;
-use ZnFramework\Telegram\Domain\Entities\MessageEntity;
+use Untek\Framework\Telegram\Domain\Base\BaseAction;
+use Untek\Framework\Telegram\Domain\Entities\MessageEntity;
 
 class SendButtonAction extends BaseAction
 {

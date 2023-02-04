@@ -2,15 +2,15 @@
 
 return [
     'singletons' => [
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Services\\ProcedureServiceInterface' => 'ZnFramework\\Rpc\\Domain\\Services\\ProcedureService',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Encoders\\RequestEncoderInterface' => 'ZnFramework\\Rpc\\Domain\\Encoders\\RequestEncoder',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Encoders\\ResponseEncoderInterface' => 'ZnFramework\\Rpc\\Domain\\Encoders\\ResponseEncoder',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Services\\MethodServiceInterface' => 'ZnFramework\\Rpc\\Domain\\Services\\MethodService',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Services\\DocsServiceInterface' => 'ZnFramework\\Rpc\\Domain\\Services\\DocsService',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Services\\VersionHandlerServiceInterface' => 'ZnFramework\\Rpc\\Domain\\Services\\VersionHandlerService',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Repositories\\VersionHandlerRepositoryInterface' => 'ZnFramework\\Rpc\\Domain\\Repositories\\Eloquent\\VersionHandlerRepository',
-//        'ZnFramework\\Rpc\\Symfony4\\Web\\Controllers\\DocsController' => 'ZnFramework\\Rpc\\Symfony4\\Web\\Controllers\\DocsController',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Repositories\\DocsRepositoryInterface' => 'ZnFramework\\Rpc\\Domain\\Repositories\\File\\DocsRepository',
-        'ZnFramework\\Rpc\\Domain\\Interfaces\\Services\\SettingsServiceInterface' => 'ZnFramework\\Rpc\\Domain\\Services\\SettingsService',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Services\\ProcedureServiceInterface' => 'Untek\\Framework\\Rpc\\Domain\\Services\\ProcedureService',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Encoders\\RequestEncoderInterface' => 'Untek\\Framework\\Rpc\\Domain\\Encoders\\RequestEncoder',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Encoders\\ResponseEncoderInterface' => 'Untek\\Framework\\Rpc\\Domain\\Encoders\\ResponseEncoder',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Services\\MethodServiceInterface' => 'Untek\\Framework\\Rpc\\Domain\\Services\\MethodService',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Services\\DocsServiceInterface' => 'Untek\\Framework\\Rpc\\Domain\\Services\\DocsService',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Services\\VersionHandlerServiceInterface' => 'Untek\\Framework\\Rpc\\Domain\\Services\\VersionHandlerService',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Repositories\\VersionHandlerRepositoryInterface' => 'Untek\\Framework\\Rpc\\Domain\\Repositories\\Eloquent\\VersionHandlerRepository',
+//        'Untek\\Framework\\Rpc\\Symfony4\\Web\\Controllers\\DocsController' => 'Untek\\Framework\\Rpc\\Symfony4\\Web\\Controllers\\DocsController',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Repositories\\DocsRepositoryInterface' => 'Untek\\Framework\\Rpc\\Domain\\Repositories\\File\\DocsRepository',
+        'Untek\\Framework\\Rpc\\Domain\\Interfaces\\Services\\SettingsServiceInterface' => 'Untek\\Framework\\Rpc\\Domain\\Services\\SettingsService',
     ],
 ];

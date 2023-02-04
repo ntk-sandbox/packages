@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Controllers;
+namespace Untek\Framework\Rpc\Rpc\Controllers;
 
 use Exception;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDatabase\Fixture\Domain\Services\FixtureService;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Database\Fixture\Domain\Services\FixtureService;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 /**
  * Class FixtureController
- * @package ZnFramework\Rpc\Rpc\Controllers
+ * @package Untek\Framework\Rpc\Rpc\Controllers
  * @todo перенести в пакет с фикстурами
  */
 class FixtureController

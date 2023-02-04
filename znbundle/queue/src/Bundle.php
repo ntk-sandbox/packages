@@ -1,8 +1,11 @@
 <?php
 
-namespace ZnBundle\Queue;
+namespace Untek\Bundle\Queue;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Bundle\Queue\Symfony4\Commands\ListenerCommand;
+use Untek\Bundle\Queue\Symfony4\Commands\RunCommand;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
 
 class Bundle extends BaseBundle
 {
@@ -15,15 +18,21 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            new \ZnLib\Components\Lock\Bundle(['all']),
+            new \Untek\Lib\Components\Lock\Bundle(['all']),
         ];
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnBundle\Queue\Symfony4\Commands',
+            'Untek\Bundle\Queue\Symfony4\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(ListenerCommand::class);
+        $commandConfigurator->registerCommandClass(RunCommand::class);
     }
 
     public function migration(): array

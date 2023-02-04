@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnCore\\Arr\\": "src",
-      "ZnCore\\Arr\\Tests\\": "tests"
+      "Untek\\Core\\Arr\\": "src",
+      "Untek\\Core\\Arr\\Tests\\": "tests"
     }
   }
 }

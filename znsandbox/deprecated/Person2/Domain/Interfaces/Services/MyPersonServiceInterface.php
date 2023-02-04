@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services;
 
-use ZnDomain\Query\Entities\Query;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
 
 interface MyPersonServiceInterface
 {

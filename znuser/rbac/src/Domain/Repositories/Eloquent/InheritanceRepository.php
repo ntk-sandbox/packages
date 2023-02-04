@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\Eloquent;
+namespace Untek\User\Rbac\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Rbac\Domain\Entities\InheritanceEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
 
 class InheritanceRepository extends BaseEloquentCrudRepository implements InheritanceRepositoryInterface
 {

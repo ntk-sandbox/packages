@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs;
 
 use Illuminate\Cookie\CookieValuePrefix;
 use Illuminate\Testing\LoggedExceptionCollection;
@@ -12,11 +12,11 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnSandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
-use ZnSandbox\Sandbox\WebTest\Domain\Helpers\TestHttpRequestHelper;
-use ZnSandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Dto\RequestDataDto;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Helpers\TestHttpRequestHelper;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Interfaces\PluginInterface;
 
 abstract class BaseMockHttpClient
 {

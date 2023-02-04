@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Stress\Domain\Entities;
+namespace Untek\Tool\Stress\Domain\Entities;
 
 class ProfileEntity
 {

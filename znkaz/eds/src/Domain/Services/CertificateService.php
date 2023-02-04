@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Services;
+namespace Untek\Kaz\Eds\Domain\Services;
 
 use phpseclib\File\X509;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCrypt\Base\Domain\Exceptions\CertificateExpiredException;
-use ZnCrypt\Base\Domain\Exceptions\FailCertificateSignatureException;
-use ZnKaz\Eds\Domain\Entities\CertificateEntity;
-use ZnKaz\Eds\Domain\Interfaces\Repositories\CertificateRepositoryInterface;
-use ZnKaz\Eds\Domain\Interfaces\Services\CertificateServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;
+use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
+use Untek\Kaz\Eds\Domain\Entities\CertificateEntity;
+use Untek\Kaz\Eds\Domain\Interfaces\Repositories\CertificateRepositoryInterface;
+use Untek\Kaz\Eds\Domain\Interfaces\Services\CertificateServiceInterface;
 
 /**
  * @method CertificateRepositoryInterface getRepository()

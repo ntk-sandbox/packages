@@ -1,6 +1,6 @@
 <?php
 
-use ZnSandbox\Sandbox\Person\Symfony4\Web\Controllers\PersonController;
+use Untek\Sandbox\Sandbox\Person\Symfony4\Web\Controllers\PersonController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 return function (RoutingConfigurator $routes) {

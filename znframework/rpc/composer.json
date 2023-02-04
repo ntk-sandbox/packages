@@ -21,8 +21,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnLib\\Rpc\\": "src",
-      "ZnLib\\Rpc\\Tests\\": "tests"
+      "Untek\\Lib\\Rpc\\": "src",
+      "Untek\\Lib\\Rpc\\Tests\\": "tests"
     }
   }
 }

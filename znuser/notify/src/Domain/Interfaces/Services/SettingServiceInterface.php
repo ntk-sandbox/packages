@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Interfaces\Services;
+namespace Untek\User\Notify\Domain\Interfaces\Services;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnUser\Notify\Domain\Entities\SettingEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\User\Notify\Domain\Entities\SettingEntity;
 
 interface SettingServiceInterface
 {

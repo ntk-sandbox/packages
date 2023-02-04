@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\ConfigManager\Traits;
+namespace Untek\Core\ConfigManager\Traits;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
 
 DeprecateHelper::hardThrow();
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Init\Domain\Repositories\File;
+namespace Untek\Lib\Init\Domain\Repositories\File;
 
-use ZnLib\Init\Domain\Entities\RequirementEntity;
-use ZnLib\Init\Domain\Interfaces\Repositories\RequirementRepositoryInterface;
+use Untek\Lib\Init\Domain\Entities\RequirementEntity;
+use Untek\Lib\Init\Domain\Interfaces\Repositories\RequirementRepositoryInterface;
 
 class RequirementRepository implements RequirementRepositoryInterface
 {

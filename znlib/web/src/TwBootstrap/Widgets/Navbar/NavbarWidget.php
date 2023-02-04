@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Navbar;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Navbar;
 
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class NavbarWidget extends BaseWidget2
 {

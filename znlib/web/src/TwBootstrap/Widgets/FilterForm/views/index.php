@@ -6,10 +6,10 @@
  * @var array $attributes
  */
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\Web\View\Libs\View;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\Web\View\Libs\View;
 
 ?>
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Interfaces\Services;
+namespace Untek\Bundle\Eav\Domain\Interfaces\Services;
 
-use ZnBundle\Eav\Domain\Entities\CategoryEntity;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\Eav\Domain\Entities\CategoryEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface CategoryServiceInterface extends CrudServiceInterface
 {

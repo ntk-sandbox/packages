@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Base\Tests\Unit;
+namespace Untek\Core\Base\Tests\Unit;
 
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
-use ZnLib\I18Next\Services\TranslationService;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Lib\I18Next\Services\TranslationService;
 use PHPUnit\Framework\TestCase;
 
 final class I18NextTest extends TestCase

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\WebApp\Libs\EnvDetector;
+namespace Untek\Lib\Web\WebApp\Libs\EnvDetector;
 
 use Symfony\Component\HttpFoundation\Request;
-use ZnCore\Env\Interfaces\EnvDetectorInterface;
+use Untek\Core\Env\Interfaces\EnvDetectorInterface;
 
 class WebEnvDetector implements EnvDetectorInterface
 {

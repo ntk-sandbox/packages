@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\EntityManager\Libs\BundleLoaders;
+namespace Untek\Domain\EntityManager\Libs\BundleLoaders;
 
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\Instance\Libs\Resolvers\MethodParametersResolver;
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 /**
  * Загрузчик конфигурации менеджера сущностей

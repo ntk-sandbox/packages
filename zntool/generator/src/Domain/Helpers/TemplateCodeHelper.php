@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Helpers;
+namespace Untek\Tool\Generator\Domain\Helpers;
 
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Dto\BuildDto;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\ArrayRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\AuthorIdRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\CreatedAtRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\DescriptionRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\IdRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\MiscRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\SizeRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\StatusRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\TimeRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\TitleRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\TypeBooleanRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\TypeIntegerRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\TypeTimeRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\UpdatedAtRender;
-use ZnTool\Generator\Domain\Libs\MigrationFieldRender\UserIdRender;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\ArrayRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\AuthorIdRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\CreatedAtRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\DescriptionRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\IdRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\MiscRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\SizeRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\StatusRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\TimeRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\TitleRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\TypeBooleanRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\TypeIntegerRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\TypeTimeRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\UpdatedAtRender;
+use Untek\Tool\Generator\Domain\Libs\MigrationFieldRender\UserIdRender;
 
 class TemplateCodeHelper
 {

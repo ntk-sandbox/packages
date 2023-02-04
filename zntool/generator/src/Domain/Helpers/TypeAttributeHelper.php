@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Helpers;
+namespace Untek\Tool\Generator\Domain\Helpers;
 
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Libs\Types\BaseType;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Libs\Types\BaseType;
 
 class TypeAttributeHelper
 {

@@ -1,8 +1,10 @@
 <?php
 
-namespace ZnLib\Init;
+namespace Untek\Lib\Init;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Lib\Init\Symfony4\Console\Commands\InitCommand;
 
 class Bundle extends BaseBundle
 {
@@ -12,10 +14,16 @@ class Bundle extends BaseBundle
         return 'init';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnLib\Init\Symfony4\Console\Commands',
+            'Untek\Lib\Init\Symfony4\Console\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(InitCommand::class);
     }
+
 }

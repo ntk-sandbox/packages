@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Libs;
+namespace Untek\Database\Backup\Domain\Libs;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDatabase\Backup\Domain\Interfaces\Storages\StorageInterface;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Database\Backup\Domain\Interfaces\Storages\StorageInterface;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Fixture\Domain\Repositories\DbRepository;
 
 class DbStorage extends BaseStorage implements StorageInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Debug\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\Debug\Domain\Libs;
 
-use ZnSandbox\Sandbox\Debug\Domain\Entities\ProfilingEntity;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Sandbox\Sandbox\Debug\Domain\Entities\ProfilingEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
 
 class Profiler
 {

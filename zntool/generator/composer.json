@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnTool\\Generator\\": "src",
-      "ZnTool\\Generator\\Tests\\": "tests"
+      "Untek\\Tool\\Generator\\": "src",
+      "Untek\\Tool\\Generator\\Tests\\": "tests"
     }
   }
 }

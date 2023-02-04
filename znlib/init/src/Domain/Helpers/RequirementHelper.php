@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Init\Domain\Helpers;
+namespace Untek\Lib\Init\Domain\Helpers;
 
 class RequirementHelper
 {

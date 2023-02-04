@@ -15,8 +15,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\Geo\\": "src",
-			"ZnBundle\\Geo\\Tests\\": "tests"
+			"Untek\\Bundle\\Geo\\": "src",
+			"Untek\\Bundle\\Geo\\Tests\\": "tests"
 		}
 	}
 }

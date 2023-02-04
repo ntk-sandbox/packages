@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Base;
+namespace Untek\Framework\Console\Domain\Base;
 
-use ZnCore\Env\Enums\OsFamilyEnum;
-use ZnCore\Env\Helpers\OsHelper;
-use ZnFramework\Console\Domain\Exceptions\ShellException;
+use Untek\Core\Env\Enums\OsFamilyEnum;
+use Untek\Core\Env\Helpers\OsHelper;
+use Untek\Framework\Console\Domain\Exceptions\ShellException;
 
 abstract class BaseShell
 {

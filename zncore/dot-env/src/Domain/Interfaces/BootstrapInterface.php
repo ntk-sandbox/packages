@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Interfaces;
+namespace Untek\Core\DotEnv\Domain\Interfaces;
 
 interface BootstrapInterface
 {

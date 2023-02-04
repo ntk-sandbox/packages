@@ -1,7 +1,7 @@
 <?php
 
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnSandbox\Sandbox\Apache\Symfony4\Web\Controllers\ServerController;
+use Untek\Sandbox\Sandbox\Apache\Symfony4\Web\Controllers\ServerController;
 
 return function (RoutingConfigurator $routes) {
     $routes

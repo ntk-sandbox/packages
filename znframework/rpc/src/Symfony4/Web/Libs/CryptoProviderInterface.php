@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Rpc\Symfony4\Web\Libs;
+namespace Untek\Framework\Rpc\Symfony4\Web\Libs;
 
-use ZnCrypt\Base\Domain\Exceptions\CertificateExpiredException;
-use ZnCrypt\Base\Domain\Exceptions\FailCertificateSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\FailSignatureException;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;
+use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 /**
  * Интерфейс криптопровайдера, для контроль ЭПЦ.

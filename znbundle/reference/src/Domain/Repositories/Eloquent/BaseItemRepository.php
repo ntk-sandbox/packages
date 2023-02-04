@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Reference\Domain\Repositories\Eloquent;
 
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 abstract class BaseItemRepository extends ItemRepository implements ItemRepositoryInterface
 {

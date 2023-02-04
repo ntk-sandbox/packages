@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCrypt\Pki\Symfony4\Commands;
+namespace Untek\Crypt\Pki\Symfony4\Commands;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCrypt\Base\Domain\Entities\CertificateInfoEntity;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
-use ZnCrypt\Pki\Domain\Services\RsaService;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Crypt\Base\Domain\Entities\CertificateInfoEntity;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
+use Untek\Crypt\Pki\Domain\Services\RsaService;
 
 class RsaGenerateCommand extends BaseGeneratorCommand
 {

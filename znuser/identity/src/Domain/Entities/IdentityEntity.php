@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnUser\Identity\Domain\Entities;
+namespace Untek\User\Identity\Domain\Entities;
 
 use DateTime;
 use mysql_xdevapi\Collection;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotImplementedMethodException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\Contract\User\Interfaces\Entities\PersonEntityInterface;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Components\Status\Enums\StatusEnum;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotImplementedMethodException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\PersonEntityInterface;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class IdentityEntity implements ValidationByMetadataInterface, EntityIdInterface, IdentityEntityInterface
 {

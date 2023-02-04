@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Repositories\Conf;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Repositories\Conf;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnSandbox\Sandbox\Apache\Domain\Entities\HostEntity;
-use ZnSandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
-use ZnSandbox\Sandbox\Apache\Domain\Helpers\HostsParser;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Sandbox\Sandbox\Apache\Domain\Entities\HostEntity;
+use Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
+use Untek\Sandbox\Sandbox\Apache\Domain\Helpers\HostsParser;
 
 class HostsRepository
 {

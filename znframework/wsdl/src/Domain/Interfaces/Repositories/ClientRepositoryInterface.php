@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Interfaces\Repositories;
+namespace Untek\Framework\Wsdl\Domain\Interfaces\Repositories;
 
-use ZnFramework\Wsdl\Domain\Entities\ServiceEntity;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Framework\Wsdl\Domain\Entities\ServiceEntity;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ClientRepositoryInterface //extends CrudRepositoryInterface
 {

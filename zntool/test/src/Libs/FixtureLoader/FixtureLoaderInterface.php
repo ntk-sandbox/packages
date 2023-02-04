@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Test\Libs\FixtureLoader;
+namespace Untek\Tool\Test\Libs\FixtureLoader;
 
 interface FixtureLoaderInterface
 {

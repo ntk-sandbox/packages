@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs;
+namespace Untek\Core\DotEnv\Domain\Libs;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Contract\Common\Exceptions\NotSupportedException;
-use ZnCore\DotEnv\Domain\Enums\DotEnvModeEnum;
-use ZnCore\DotEnv\Domain\Interfaces\BootstrapInterface;
-use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Contract\Common\Exceptions\NotSupportedException;
+use Untek\Core\DotEnv\Domain\Enums\DotEnvModeEnum;
+use Untek\Core\DotEnv\Domain\Interfaces\BootstrapInterface;
+use Untek\Core\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
 
 /**
  * Class DotEnv
- * @package ZnCore\DotEnv\Domain\Libs
+ * @package Untek\Core\DotEnv\Domain\Libs
  * @deprecated
  */
 class DotEnv
@@ -18,7 +18,7 @@ class DotEnv
 
     /**
      * @param string $mode
-     * @throws \ZnCore\Code\Exceptions\DeprecatedException
+     * @throws \Untek\Core\Code\Exceptions\DeprecatedException
      * @deprecated
      */
     public static function init(string $mode = DotEnvModeEnum::MAIN): void

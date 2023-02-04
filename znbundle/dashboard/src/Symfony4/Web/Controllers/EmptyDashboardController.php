@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Web\Controllers;
+namespace Untek\Bundle\Dashboard\Symfony4\Web\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

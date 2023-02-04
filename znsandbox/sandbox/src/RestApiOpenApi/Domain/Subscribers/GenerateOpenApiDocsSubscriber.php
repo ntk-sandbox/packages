@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RestApiOpenApi\Domain\Subscribers;
+namespace Untek\Sandbox\Sandbox\RestApiOpenApi\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use ZnSandbox\Sandbox\RestApiOpenApi\Domain\Libs\OpenApi3\OpenApi3;
+use Untek\Sandbox\Sandbox\RestApiOpenApi\Domain\Libs\OpenApi3\OpenApi3;
 
 class GenerateOpenApiDocsSubscriber implements EventSubscriberInterface
 {

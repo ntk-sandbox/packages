@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Components\Cors\Subscribers;
+namespace Untek\Lib\Components\Cors\Subscribers;
 
 use Fruitcake\Cors\CorsService;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use ZnLib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 
 class CorsSubscriber implements EventSubscriberInterface
 {

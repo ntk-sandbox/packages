@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Repositories\File;
+namespace Untek\User\Rbac\Domain\Repositories\File;
 
-use ZnDomain\Query\Entities\Query;
-use ZnUser\Rbac\Domain\Entities\PermissionEntity;
-use ZnUser\Rbac\Domain\Entities\RoleEntity;
-use ZnUser\Rbac\Domain\Enums\ItemTypeEnum;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Domain\Query\Entities\Query;
+use Untek\User\Rbac\Domain\Entities\PermissionEntity;
+use Untek\User\Rbac\Domain\Entities\RoleEntity;
+use Untek\User\Rbac\Domain\Enums\ItemTypeEnum;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
 
 class PermissionRepository extends ItemRepository implements RoleRepositoryInterface
 {

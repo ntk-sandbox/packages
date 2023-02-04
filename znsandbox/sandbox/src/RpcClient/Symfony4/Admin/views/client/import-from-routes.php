@@ -1,32 +1,32 @@
 <?php
 
 /**
- * @var $this \ZnLib\Web\View\Libs\View
+ * @var $this \Untek\Lib\Web\View\Libs\View
  * @var $formView FormView|AbstractType[]
- * @var $formRender \ZnLib\Web\Form\Libs\FormRender
+ * @var $formRender \Untek\Lib\Web\Form\Libs\FormRender
  * @var $dataProvider DataProvider
  * @var $baseUri string
- * @var $rpcResponseEntity \ZnFramework\Rpc\Domain\Entities\RpcResponseEntity
- * @var $rpcRequestEntity \ZnFramework\Rpc\Domain\Entities\RpcRequestEntity
- * @var $favoriteEntity \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
- * @var $favoriteCollection \ZnCore\Collection\Interfaces\Enumerable | \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
- * @var $historyCollection \ZnCore\Collection\Interfaces\Enumerable | \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
- * @var $methodCollectionIndexed \ZnCore\Collection\Interfaces\Enumerable | \ZnFramework\Rpc\Domain\Entities\MethodEntity[]
+ * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
+ * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
+ * @var $favoriteEntity \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
+ * @var $favoriteCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
+ * @var $historyCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
+ * @var $methodCollectionIndexed \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Framework\Rpc\Domain\Entities\MethodEntity[]
  * @var $routeMethodList array | string[]
  * @var $missingMethodList array | string[]
  */
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 
 /*$favCollection = [];
 foreach ($methodCollectionIndexed as $methodEntity) {
 //    if(in_array($methodEntity->getMethodName(), $missingMethodList) ) {
-        $favEntity = new \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity();
+        $favEntity = new \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity();
         $favEntity->setMethod($methodEntity->getMethodName());
         $favEntity->setDescription($methodEntity->getTitle());
         if($methodEntity->getIsVerifyAuth()) {
@@ -35,10 +35,10 @@ foreach ($methodCollectionIndexed as $methodEntity) {
         $favCollection[] = $favEntity;
 //    }
 }*/
-$map = \ZnSandbox\Sandbox\RpcClient\Domain\Helpers\FavoriteHelper::generateFavoriteCollectionToMap($favCollection);
+$map = \Untek\Sandbox\Sandbox\RpcClient\Domain\Helpers\FavoriteHelper::generateFavoriteCollectionToMap($favCollection);
 
 /**
- * @var $favoriteEntityItem \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity
+ * @var $favoriteEntityItem \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity
  */
 
 ?>

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Factories;
+namespace Untek\User\Rbac\Domain\Factories;
 
 use Casbin\Enforcer;
 use Casbin\ManagementEnforcer;
 use Casbin\Model\Model;
 use Casbin\Rbac\DefaultRoleManager\RoleManager;
 use Casbin\Rbac\RoleManager as RoleManagerContract;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
 
 class EnforcerFactory
 {

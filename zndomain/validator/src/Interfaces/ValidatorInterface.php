@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Validator\Interfaces;
+namespace Untek\Domain\Validator\Interfaces;
 
 interface ValidatorInterface
 {

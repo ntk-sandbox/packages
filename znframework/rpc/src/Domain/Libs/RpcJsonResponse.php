@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs;
+namespace Untek\Framework\Rpc\Domain\Libs;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseCollection;
-use ZnFramework\Rpc\Domain\Enums\RpcBatchModeEnum;
-use ZnFramework\Rpc\Domain\Interfaces\Encoders\ResponseEncoderInterface;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseCollection;
+use Untek\Framework\Rpc\Domain\Enums\RpcBatchModeEnum;
+use Untek\Framework\Rpc\Domain\Interfaces\Encoders\ResponseEncoderInterface;
 
 class RpcJsonResponse
 {

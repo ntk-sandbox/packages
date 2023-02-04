@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Helpers;
+namespace Untek\Bundle\Storage\Domain\Helpers;
 
 class UploadHelper
 {

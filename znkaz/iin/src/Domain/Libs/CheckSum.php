@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Libs;
+namespace Untek\Kaz\Iin\Domain\Libs;
 
-use ZnKaz\Iin\Domain\Entities\CheckSumEntity;
-use ZnKaz\Iin\Domain\Exceptions\CheckSumGenerateException;
+use Untek\Kaz\Iin\Domain\Entities\CheckSumEntity;
+use Untek\Kaz\Iin\Domain\Exceptions\CheckSumGenerateException;
 
 class CheckSum
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Services;
+namespace Untek\Bundle\Geo\Domain\Services;
 
-use ZnBundle\Geo\Domain\Interfaces\Services\CurrencyServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnBundle\Geo\Domain\Interfaces\Repositories\CurrencyRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnBundle\Geo\Domain\Entities\CurrencyEntity;
+use Untek\Bundle\Geo\Domain\Interfaces\Services\CurrencyServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Bundle\Geo\Domain\Interfaces\Repositories\CurrencyRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Bundle\Geo\Domain\Entities\CurrencyEntity;
 
 /**
  * @method

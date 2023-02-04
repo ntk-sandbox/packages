@@ -17,8 +17,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "ZnFramework\\Console\\": "src",
-      "ZnFramework\\Console\\Tests\\": "tests"
+      "Untek\\Framework\\Console\\": "src",
+      "Untek\\Framework\\Console\\Tests\\": "tests"
     }
   }
 }

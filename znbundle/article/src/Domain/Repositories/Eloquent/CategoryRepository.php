@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Article\Domain\Repositories\Eloquent;
 
-use ZnBundle\Article\Domain\Entities\CategoryEntity;
-use ZnBundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Article\Domain\Entities\CategoryEntity;
+use Untek\Bundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class CategoryRepository extends BaseEloquentCrudRepository implements CategoryRepositoryInterface
 {

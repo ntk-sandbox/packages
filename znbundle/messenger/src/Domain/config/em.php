@@ -1,9 +1,9 @@
 <?php
 
-use ZnBundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
 
 return [
     'entities' => [
-        ZnBundle\Messenger\Domain\Entities\MessageEntity::class => MessageRepositoryInterface::class,
+        Untek\Bundle\Messenger\Domain\Entities\MessageEntity::class => MessageRepositoryInterface::class,
     ],
 ];

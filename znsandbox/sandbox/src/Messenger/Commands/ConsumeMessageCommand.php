@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Messenger\Commands;
+namespace Untek\Sandbox\Sandbox\Messenger\Commands;
 
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;

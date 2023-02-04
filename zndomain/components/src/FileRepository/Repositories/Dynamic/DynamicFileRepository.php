@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDomain\Components\FileRepository\Repositories\Dynamic;
+namespace Untek\Domain\Components\FileRepository\Repositories\Dynamic;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Components\ArrayRepository\Helpers\FilterHelper;
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
-use ZnLib\Components\DynamicEntity\Entities\DynamicEntity;
-use ZnLib\Components\Store\StoreFile;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Components\ArrayRepository\Helpers\FilterHelper;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Lib\Components\DynamicEntity\Entities\DynamicEntity;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 class DynamicFileRepository extends BaseFileCrudRepository
 {

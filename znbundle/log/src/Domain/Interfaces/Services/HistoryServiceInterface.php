@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Interfaces\Services;
+namespace Untek\Bundle\Log\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface HistoryServiceInterface extends CrudServiceInterface
 {

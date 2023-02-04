@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\I18Next\Libs\BundleLoaders;
+namespace Untek\Lib\I18Next\Libs\BundleLoaders;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
-use ZnLib\I18Next\Facades\I18Next;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
+use Untek\Lib\I18Next\Facades\I18Next;
 
 class I18NextLoader extends BaseLoader
 {

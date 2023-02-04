@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Helpers;
 
 class ConfFile {
 

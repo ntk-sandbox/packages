@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Subscribers;
+namespace Untek\User\Authentication\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use ZnUser\Authentication\Domain\Enums\AuthEventEnum;
-use ZnUser\Authentication\Domain\Events\AuthEvent;
-use ZnUser\Identity\Domain\Events\IdentityEvent;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\User\Authentication\Domain\Enums\AuthEventEnum;
+use Untek\User\Authentication\Domain\Events\AuthEvent;
+use Untek\User\Identity\Domain\Events\IdentityEvent;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class SymfonyAuthenticationIdentitySubscriber implements EventSubscriberInterface
 {

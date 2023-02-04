@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Services;
+namespace Untek\Lib\Components\ShellRobot\Domain\Services;
 
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Libs\App\TaskProcessor;
-use ZnFramework\Console\Domain\Libs\IO;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Libs\App\TaskProcessor;
+use Untek\Framework\Console\Domain\Libs\IO;
 
 class TaskService
 {

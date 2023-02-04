@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Services;
+namespace Untek\Bundle\TalkBox\Domain\Services;
 
-use ZnBundle\TalkBox\Domain\Interfaces\Repositories\AnswerOptionRepositoryInterface;
-use ZnBundle\TalkBox\Domain\Interfaces\Services\AnswerOptionServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Repositories\AnswerOptionRepositoryInterface;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerOptionServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Query\Entities\Query;
 
 class AnswerOptionService extends BaseCrudService implements AnswerOptionServiceInterface
 {

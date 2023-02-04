@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnSandbox\Sandbox\I18n\Domain\Subscribers;
+namespace Untek\Sandbox\Sandbox\I18n\Domain\Subscribers;
 
 use App\Workshop\Domain\Entities\CategoryEntity;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnSandbox\Sandbox\I18n\Domain\Interfaces\Services\TranslateServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Services\TranslateServiceInterface;
 
 class SyncTranslateSubscriber implements EventSubscriberInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Helpers;
+namespace Untek\Bundle\TalkBox\Domain\Helpers;
 
-use ZnFramework\Telegram\Domain\Helpers\MatchHelper;
-use ZnBundle\TalkBox\Domain\Libs\Parser;
+use Untek\Framework\Telegram\Domain\Helpers\MatchHelper;
+use Untek\Bundle\TalkBox\Domain\Libs\Parser;
 
 
 class WordHelper

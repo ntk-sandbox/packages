@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnUser\Person\Rpc\Controllers;
+namespace Untek\User\Person\Rpc\Controllers;
 
 use Symfony\Component\Validator\Constraints\NotBlank;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnUser\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;
 
 class PersonController extends BaseCrudRpcController
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSymfony\Sandbox\Symfony4\Web\Base;
+namespace Untek\Symfony\Sandbox\Symfony4\Web\Base;
 
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\TwBootstrap\Widgets\TabContent\TabContentWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Table\TableWidget;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\TwBootstrap\Widgets\TabContent\TabContentWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Table\TableWidget;
 
 abstract class BaseController extends BaseWebController
 {

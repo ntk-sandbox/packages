@@ -2,7 +2,7 @@
 
 return [
 	'singletons' => [
-		'ZnSandbox\\Sandbox\\RpcMock\\Domain\\Interfaces\\Services\\MethodServiceInterface' => 'ZnSandbox\\Sandbox\\RpcMock\\Domain\\Services\\MethodService',
-		'ZnSandbox\\Sandbox\\RpcMock\\Domain\\Interfaces\\Repositories\\MethodRepositoryInterface' => 'ZnSandbox\\Sandbox\\RpcMock\\Domain\\Repositories\\Eloquent\\MethodRepository',
+		'Untek\\Sandbox\\Sandbox\\RpcMock\\Domain\\Interfaces\\Services\\MethodServiceInterface' => 'Untek\\Sandbox\\Sandbox\\RpcMock\\Domain\\Services\\MethodService',
+		'Untek\\Sandbox\\Sandbox\\RpcMock\\Domain\\Interfaces\\Repositories\\MethodRepositoryInterface' => 'Untek\\Sandbox\\Sandbox\\RpcMock\\Domain\\Repositories\\Eloquent\\MethodRepository',
 	],
 ];

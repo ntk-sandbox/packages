@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Init\Domain\Interfaces\Repositories;
+namespace Untek\Lib\Init\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 interface LockerRepositoryInterface extends RepositoryInterface
 {

@@ -2,10 +2,10 @@
 
 return [
 	'entities' => [
-		'ZnUser\\Notify\\Domain\\Entities\\TypeEntity' => 'ZnUser\\Notify\\Domain\\Interfaces\\Repositories\\TypeRepositoryInterface',
-		'ZnUser\\Notify\\Domain\\Entities\\NotifyEntity' => 'ZnUser\\Notify\\Domain\\Interfaces\\Repositories\\HistoryRepositoryInterface',
-		'ZnUser\\Notify\\Domain\\Entities\\SettingEntity' => 'ZnUser\\Notify\\Domain\\Interfaces\\Repositories\\SettingRepositoryInterface',
-		'ZnUser\\Notify\\Domain\\Entities\\TransportEntity' => 'ZnUser\\Notify\\Domain\\Interfaces\\Repositories\\TransportRepositoryInterface',
-		'ZnUser\\Notify\\Domain\\Entities\\TypeTransportEntity' => 'ZnUser\\Notify\\Domain\\Interfaces\\Repositories\\TypeTransportRepositoryInterface',
+		'Untek\\User\\Notify\\Domain\\Entities\\TypeEntity' => 'Untek\\User\\Notify\\Domain\\Interfaces\\Repositories\\TypeRepositoryInterface',
+		'Untek\\User\\Notify\\Domain\\Entities\\NotifyEntity' => 'Untek\\User\\Notify\\Domain\\Interfaces\\Repositories\\HistoryRepositoryInterface',
+		'Untek\\User\\Notify\\Domain\\Entities\\SettingEntity' => 'Untek\\User\\Notify\\Domain\\Interfaces\\Repositories\\SettingRepositoryInterface',
+		'Untek\\User\\Notify\\Domain\\Entities\\TransportEntity' => 'Untek\\User\\Notify\\Domain\\Interfaces\\Repositories\\TransportRepositoryInterface',
+		'Untek\\User\\Notify\\Domain\\Entities\\TypeTransportEntity' => 'Untek\\User\\Notify\\Domain\\Interfaces\\Repositories\\TypeTransportRepositoryInterface',
 	],
 ];

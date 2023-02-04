@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Collection;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Collection;
 
 use Symfony\Component\HttpFoundation\Request;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnLib\Components\Http\Helpers\UrlHelper;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Lib\Components\Http\Helpers\UrlHelper;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class CollectionWidget extends BaseWidget2
 {

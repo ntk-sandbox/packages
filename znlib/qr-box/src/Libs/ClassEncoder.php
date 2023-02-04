@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\QrBox\Libs;
+namespace Untek\Lib\QrBox\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Libs\Collection;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Lib\Components\Format\Encoders\ChainEncoder;
 
 class ClassEncoder
 {

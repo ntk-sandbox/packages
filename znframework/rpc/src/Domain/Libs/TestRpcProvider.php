@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs;
+namespace Untek\Framework\Rpc\Domain\Libs;
 
 use GuzzleHttp\Client;
-use ZnFramework\Rpc\Domain\Encoders\RequestEncoder;
-use ZnFramework\Rpc\Domain\Encoders\ResponseEncoder;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
-use ZnFramework\Rpc\Domain\Forms\BaseRpcAuthForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthByLoginForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthByTokenForm;
-use ZnFramework\Rpc\Domain\Forms\RpcAuthGuestForm;
-use ZnFramework\Rpc\Domain\Interfaces\Encoders\RequestEncoderInterface;
-use ZnFramework\Rpc\Domain\Interfaces\Encoders\ResponseEncoderInterface;
+use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
+use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Forms\BaseRpcAuthForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthByLoginForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthByTokenForm;
+use Untek\Framework\Rpc\Domain\Forms\RpcAuthGuestForm;
+use Untek\Framework\Rpc\Domain\Interfaces\Encoders\RequestEncoderInterface;
+use Untek\Framework\Rpc\Domain\Interfaces\Encoders\ResponseEncoderInterface;
 
 class TestRpcProvider extends RpcProvider
 {

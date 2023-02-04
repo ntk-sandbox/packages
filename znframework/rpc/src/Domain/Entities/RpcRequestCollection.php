@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Entities;
+namespace Untek\Framework\Rpc\Domain\Entities;
 
-use ZnDomain\Validator\Helpers\ValidationHelper;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
 
 class RpcRequestCollection extends BaseRpcCollection
 {

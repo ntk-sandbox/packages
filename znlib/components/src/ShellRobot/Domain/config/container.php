@@ -2,11 +2,11 @@
 
 return [
 	'singletons' => [
-		'ZnLib\\Components\\ShellRobot\\Domain\\Interfaces\\Services\\VarServiceInterface' => 'ZnLib\\Components\\ShellRobot\\Domain\\Services\\VarService',
-		'ZnLib\\Components\\ShellRobot\\Domain\\Interfaces\\Repositories\\VarRepositoryInterface' => 'ZnLib\\Components\\ShellRobot\\Domain\\Repositories\\File\\VarRepository',
-		'ZnLib\\Components\\ShellRobot\\Domain\\Interfaces\\Services\\ConfigServiceInterface' => 'ZnLib\\Components\\ShellRobot\\Domain\\Services\\ConfigService',
-		'ZnLib\\Components\\ShellRobot\\Domain\\Interfaces\\Repositories\\ConfigRepositoryInterface' => 'ZnLib\\Components\\ShellRobot\\Domain\\Repositories\\File\\ConfigRepository',
-		'ZnLib\\Components\\ShellRobot\\Domain\\Interfaces\\Services\\ConnectionServiceInterface' => 'ZnLib\\Components\\ShellRobot\\Domain\\Services\\ConnectionService',
-		'ZnLib\\Components\\ShellRobot\\Domain\\Interfaces\\Repositories\\ConnectionRepositoryInterface' => 'ZnLib\\Components\\ShellRobot\\Domain\\Repositories\\File\\ConnectionRepository',
+		'Untek\\Lib\\Components\\ShellRobot\\Domain\\Interfaces\\Services\\VarServiceInterface' => 'Untek\\Lib\\Components\\ShellRobot\\Domain\\Services\\VarService',
+		'Untek\\Lib\\Components\\ShellRobot\\Domain\\Interfaces\\Repositories\\VarRepositoryInterface' => 'Untek\\Lib\\Components\\ShellRobot\\Domain\\Repositories\\File\\VarRepository',
+		'Untek\\Lib\\Components\\ShellRobot\\Domain\\Interfaces\\Services\\ConfigServiceInterface' => 'Untek\\Lib\\Components\\ShellRobot\\Domain\\Services\\ConfigService',
+		'Untek\\Lib\\Components\\ShellRobot\\Domain\\Interfaces\\Repositories\\ConfigRepositoryInterface' => 'Untek\\Lib\\Components\\ShellRobot\\Domain\\Repositories\\File\\ConfigRepository',
+		'Untek\\Lib\\Components\\ShellRobot\\Domain\\Interfaces\\Services\\ConnectionServiceInterface' => 'Untek\\Lib\\Components\\ShellRobot\\Domain\\Services\\ConnectionService',
+		'Untek\\Lib\\Components\\ShellRobot\\Domain\\Interfaces\\Repositories\\ConnectionRepositoryInterface' => 'Untek\\Lib\\Components\\ShellRobot\\Domain\\Repositories\\File\\ConnectionRepository',
 	],
 ];

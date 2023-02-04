@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\Container\Libs;
+namespace Untek\Core\Container\Libs;
 
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Libs\Container;
 use Psr\Container\ContainerInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Container\Libs\ContainerConfigurators\IlluminateContainerConfigurator;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Container\Libs\ContainerConfigurators\IlluminateContainerConfigurator;
 
 class ContainerConfigurator implements ContainerConfiguratorInterface
 {

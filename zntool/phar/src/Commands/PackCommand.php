@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Phar\Commands;
+namespace Untek\Tool\Phar\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnFramework\Console\Symfony4\Widgets\LogWidget;
-use ZnTool\Phar\Domain\Helpers\PharHelper;
-use ZnTool\Phar\Domain\Libs\Packager;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
+use Untek\Tool\Phar\Domain\Helpers\PharHelper;
+use Untek\Tool\Phar\Domain\Libs\Packager;
 
 class PackCommand extends Command
 {

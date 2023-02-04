@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\Relation\Libs\Types;
+namespace Untek\Domain\Relation\Libs\Types;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Code\Factories\PropertyAccess;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Relation\Interfaces\RelationInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Code\Factories\PropertyAccess;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Relation\Interfaces\RelationInterface;
 
 class OneToOneRelation extends BaseRelation implements RelationInterface
 {

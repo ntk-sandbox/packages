@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Test\Traits;
+namespace Untek\Tool\Test\Traits;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnFramework\Rpc\Domain\Libs\RpcFixtureProvider;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Framework\Rpc\Domain\Libs\RpcFixtureProvider;
 
 trait FixtureTrait
 {

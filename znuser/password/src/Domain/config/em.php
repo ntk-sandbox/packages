@@ -2,7 +2,7 @@
 
 return [
 	'entities' => [
-		'ZnUser\\Password\\Domain\\Entities\\PasswordHistoryEntity' => 'ZnUser\\Password\\Domain\\Interfaces\\Repositories\\PasswordHistoryRepositoryInterface',
-		'ZnUser\\Password\\Domain\\Entities\\PasswordBlacklistEntity' => 'ZnUser\\Password\\Domain\\Interfaces\\Repositories\\PasswordBlacklistRepositoryInterface',
+		'Untek\\User\\Password\\Domain\\Entities\\PasswordHistoryEntity' => 'Untek\\User\\Password\\Domain\\Interfaces\\Repositories\\PasswordHistoryRepositoryInterface',
+		'Untek\\User\\Password\\Domain\\Entities\\PasswordBlacklistEntity' => 'Untek\\User\\Password\\Domain\\Interfaces\\Repositories\\PasswordBlacklistRepositoryInterface',
 	],
 ];

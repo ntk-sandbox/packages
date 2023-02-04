@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Filters;
+namespace Untek\Bundle\Messenger\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class MessageFilter implements ValidationByMetadataInterface

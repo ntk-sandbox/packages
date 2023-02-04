@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Subscribers;
+namespace Untek\Framework\Rpc\Domain\Subscribers;
 
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcResponseEvent;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcResponseEvent;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class LogSubscriber implements EventSubscriberInterface
 {

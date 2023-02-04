@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Store\Helpers;
+namespace Untek\Lib\Components\Store\Helpers;
 
-use ZnLib\Components\Store\StoreFile;
+use Untek\Lib\Components\Store\StoreFile;
 
 class StoreHelper
 {

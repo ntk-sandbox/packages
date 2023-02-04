@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Libs;
+namespace Untek\User\Authentication\Domain\Libs;
 
-use ZnCore\Text\Libs\RandomString;
-use ZnUser\Authentication\Domain\Interfaces\AuthorizationTokenGeneratorInterface;
+use Untek\Core\Text\Libs\RandomString;
+use Untek\User\Authentication\Domain\Interfaces\AuthorizationTokenGeneratorInterface;
 
 class SafeUriAuthorizationTokenGenerator implements AuthorizationTokenGeneratorInterface
 {

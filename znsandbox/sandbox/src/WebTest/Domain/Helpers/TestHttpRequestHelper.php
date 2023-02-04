@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Helpers;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

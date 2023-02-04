@@ -1,7 +1,7 @@
 <?php
 
-use ZnSandbox\Sandbox\Person2\Domain\Enums\Rbac\ContactPermissionEnum;
-use ZnSandbox\Sandbox\Person2\Rpc\Controllers\ContactController;
+use Untek\Sandbox\Sandbox\Person2\Domain\Enums\Rbac\ContactPermissionEnum;
+use Untek\Sandbox\Sandbox\Person2\Rpc\Controllers\ContactController;
 
 return [
     [

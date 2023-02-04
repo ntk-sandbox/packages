@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Package\Domain\Services;
+namespace Untek\Tool\Package\Domain\Services;
 
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnTool\Package\Domain\Repositories\File\GroupRepository;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Tool\Package\Domain\Repositories\File\GroupRepository;
 
 class GroupService extends BaseCrudService
 {

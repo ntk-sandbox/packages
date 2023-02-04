@@ -1,34 +1,34 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Symfony4\Admin\Controllers;
+namespace Untek\Sandbox\Sandbox\RpcClient\Symfony4\Admin\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcClientRequestEvent;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use ZnFramework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Libs\FormManager;
-use ZnLib\Web\Layout\Libs\LayoutManager;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientFavoritePermissionEnum;
-use ZnSandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientHistoryPermissionEnum;
-use ZnSandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientRequestPermissionEnum;
-use ZnSandbox\Sandbox\RpcClient\Domain\Helpers\FavoriteHelper;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\ClientServiceInterface;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\FavoriteServiceInterface;
-use ZnSandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\ImportForm;
-use ZnSandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcClientRequestEvent;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Libs\FormManager;
+use Untek\Lib\Web\Layout\Libs\LayoutManager;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientFavoritePermissionEnum;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientHistoryPermissionEnum;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientRequestPermissionEnum;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Helpers\FavoriteHelper;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services\ClientServiceInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services\FavoriteServiceInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\ImportForm;
+use Untek\Sandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
 
 class ClientController extends BaseWebController implements ControllerAccessInterface
 {
@@ -210,7 +210,7 @@ class ClientController extends BaseWebController implements ControllerAccessInte
         $favCollection = [];
         foreach ($methodCollectionIndexed as $methodEntity) {
             if (in_array($methodEntity->getMethodName(), $missingMethodList)) {
-                $favEntity = new \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity();
+                $favEntity = new \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity();
                 $favEntity->setMethod($methodEntity->getMethodName());
                 $favEntity->setDescription($methodEntity->getTitle());
                 if ($methodEntity->getIsVerifyAuth()) {
@@ -269,7 +269,7 @@ class ClientController extends BaseWebController implements ControllerAccessInte
 
         $favCollection = [];
         foreach ($methodCollectionIndexed as $methodEntity) {
-            $favEntity = new \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity();
+            $favEntity = new \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity();
             $favEntity->setMethod($methodEntity->getMethodName());
             $favEntity->setDescription($methodEntity->getTitle());
             if ($methodEntity->getIsVerifyAuth()) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\WebApp\Base;
+namespace Untek\Lib\Web\WebApp\Base;
 
 use Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -25,7 +25,7 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
 
 abstract class BaseHttpKernel implements HttpKernelInterface, TerminableInterface
 {

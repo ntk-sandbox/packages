@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\Bundle\Base;
+namespace Untek\Core\Bundle\Base;
 
 
-use ZnCore\Bundle\Interfaces\BundleDepsInterface;
+use Untek\Core\Bundle\Interfaces\BundleDepsInterface;
 
 /**
  * Абстрактный класс бандла.
@@ -16,7 +16,7 @@ use ZnCore\Bundle\Interfaces\BundleDepsInterface;
  * @method array i18next() переводы в формате I18Next
  * @method array rbac() конфигурация ролей, полномочий, наследования RBAC
  * @method array migration() миграции БД
- * @method array console() команды консоли
+// * @method array console() команды консоли
  * @method array symfonyRpc() RPC-роуты
  * @method array symfonyAdmin() роуты админки
  * @method array symfonyWeb() роуты пользовательской части

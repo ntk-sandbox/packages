@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnLib\Init\Symfony4\Web\Controllers;
+namespace Untek\Lib\Init\Symfony4\Web\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDatabase\Fixture\Domain\Services\FixtureService;
-use ZnLib\Init\Domain\Services\LockerService;
-use ZnLib\Init\Domain\Services\RequirementService;
-use ZnDatabase\Migration\Domain\Entities\MigrationEntity;
-use ZnDatabase\Migration\Domain\Services\MigrationService;
-use ZnLib\Rest\Web\Controller\BaseCrudWebController;
-use ZnLib\Web\Controller\Base\BaseWebController;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Database\Fixture\Domain\Services\FixtureService;
+use Untek\Lib\Init\Domain\Services\LockerService;
+use Untek\Lib\Init\Domain\Services\RequirementService;
+use Untek\Database\Migration\Domain\Entities\MigrationEntity;
+use Untek\Database\Migration\Domain\Services\MigrationService;
+use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
 
 class InitController extends BaseWebController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
-use ZnDomain\Domain\Interfaces\DomainInterface;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
 use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;

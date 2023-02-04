@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Interfaces\Services;
+namespace Untek\User\Rbac\Domain\Interfaces\Services;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface AssignmentServiceInterface extends CrudServiceInterface
 {

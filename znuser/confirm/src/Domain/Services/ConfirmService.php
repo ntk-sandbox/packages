@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnUser\Confirm\Domain\Services;
+namespace Untek\User\Confirm\Domain\Services;
 
-use ZnBundle\Notify\Domain\Entities\SmsEntity;
-use ZnBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
-use ZnUser\Confirm\Domain\Entities\ConfirmEntity;
-use ZnUser\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface;
-use ZnUser\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
+use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
+use Untek\User\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface;
+use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
 
 /**
  * @method ConfirmRepositoryInterface getRepository

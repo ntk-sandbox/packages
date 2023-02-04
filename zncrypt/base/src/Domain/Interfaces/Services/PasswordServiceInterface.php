@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Interfaces\Services;
+namespace Untek\Crypt\Base\Domain\Interfaces\Services;
 
 interface PasswordServiceInterface
 {

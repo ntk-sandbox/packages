@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
 
 class InitReleaseTask extends BaseShell implements TaskInterface
 {

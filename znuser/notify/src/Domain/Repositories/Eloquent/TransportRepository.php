@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Repositories\Eloquent;
+namespace Untek\User\Notify\Domain\Repositories\Eloquent;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnUser\Notify\Domain\Entities\TransportEntity;
-use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\User\Notify\Domain\Entities\TransportEntity;
+use Untek\User\Notify\Domain\Entities\TypeTransportEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
 
 class TransportRepository extends BaseEloquentCrudRepository implements TransportRepositoryInterface
 {

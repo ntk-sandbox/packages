@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
 use Throwable;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnCore\Code\Factories\PropertyAccess;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Core\Code\Factories\PropertyAccess;
 
 /**
  * Работа с атрибутами класса

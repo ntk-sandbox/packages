@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Helpers;
+namespace Untek\Framework\Rpc\Domain\Helpers;
 
-use ZnCore\Env\Enums\EnvEnum;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Facades\RpcClientFacade;
+use Untek\Core\Env\Enums\EnvEnum;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Facades\RpcClientFacade;
 
 class RpcTestHelper
 {

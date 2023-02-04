@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCore\App\Subscribers;
+namespace Untek\Core\App\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\App\Enums\AppEventEnum;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\Env\Helpers\PhpErrorHelper;
+use Untek\Core\App\Enums\AppEventEnum;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Env\Helpers\PhpErrorHelper;
 
 class PhpErrorSubscriber implements EventSubscriberInterface
 {

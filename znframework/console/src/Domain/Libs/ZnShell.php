@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs;
+namespace Untek\Framework\Console\Domain\Libs;
 
 use Symfony\Component\Process\Process;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
 
 class ZnShell
 {

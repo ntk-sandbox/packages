@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Entities;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities;
 
 use Symfony\Component\PropertyAccess\Exception\UnexpectedTypeException;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Code\Helpers\TypeHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Code\Helpers\TypeHelper;
 
 class AttributeEntity
 {

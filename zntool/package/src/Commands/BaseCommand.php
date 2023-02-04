@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Package\Commands;
+namespace Untek\Tool\Package\Commands;
 
-use ZnTool\Package\Domain\Interfaces\Services\GitServiceInterface;
-use ZnTool\Package\Domain\Interfaces\Services\PackageServiceInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\GitServiceInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\PackageServiceInterface;
 use Symfony\Component\Console\Command\Command;
 
 abstract class BaseCommand extends Command

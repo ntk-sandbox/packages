@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Services;
+namespace Untek\Bundle\Language\Domain\Services;
 
-use ZnBundle\Language\Domain\Interfaces\Services\TranslateServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnBundle\Language\Domain\Entities\TranslateEntity;
+use Untek\Bundle\Language\Domain\Interfaces\Services\TranslateServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Bundle\Language\Domain\Entities\TranslateEntity;
 
 class TranslateService extends BaseCrudService implements TranslateServiceInterface
 {

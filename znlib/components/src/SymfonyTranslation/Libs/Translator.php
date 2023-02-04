@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\Components\SymfonyTranslation\Libs;
+namespace Untek\Lib\Components\SymfonyTranslation\Libs;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnLib\I18Next\Exceptions\NotFoundBundleException;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnLib\Components\SymfonyTranslation\Helpers\TranslatorHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Lib\I18Next\Exceptions\NotFoundBundleException;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Lib\Components\SymfonyTranslation\Helpers\TranslatorHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class Translator implements TranslatorInterface
 {

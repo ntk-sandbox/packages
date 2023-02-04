@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\TalkBox\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface AnswerRepositoryInterface extends CrudRepositoryInterface
 {

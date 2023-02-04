@@ -1,7 +1,7 @@
 <?php
 
-use ZnKaz\Iin\Domain\Enums\Rbac\IinPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Kaz\Iin\Domain\Enums\Rbac\IinPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

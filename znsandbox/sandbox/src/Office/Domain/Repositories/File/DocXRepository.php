@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Office\Domain\Repositories\File;
+namespace Untek\Sandbox\Sandbox\Office\Domain\Repositories\File;
 
-use ZnSandbox\Sandbox\Office\Domain\Entities\DocXEntity;
-use ZnSandbox\Sandbox\Office\Domain\Interfaces\Repositories\DocXRepositoryInterface;
+use Untek\Sandbox\Sandbox\Office\Domain\Entities\DocXEntity;
+use Untek\Sandbox\Sandbox\Office\Domain\Interfaces\Repositories\DocXRepositoryInterface;
 
 class DocXRepository implements DocXRepositoryInterface
 {

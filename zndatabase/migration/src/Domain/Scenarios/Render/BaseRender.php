@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Scenarios\Render;
+namespace Untek\Database\Migration\Domain\Scenarios\Render;
 
 abstract class BaseRender
 {

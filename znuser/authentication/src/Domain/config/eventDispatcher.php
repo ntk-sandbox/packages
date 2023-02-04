@@ -1,12 +1,12 @@
 <?php
 
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 
 return function (EventDispatcherConfiguratorInterface $configurator): void {
-    $configurator->addSubscriber(\ZnUser\Authentication\Domain\Subscribers\SymfonyAuthenticationIdentitySubscriber::class);
+    $configurator->addSubscriber(\Untek\User\Authentication\Domain\Subscribers\SymfonyAuthenticationIdentitySubscriber::class);
     /*$configurator->addSubscriber(
         [
-            'class' => \ZnUser\Authentication\Domain\Subscribers\AuthenticationAttemptSubscriber::class,
+            'class' => \Untek\User\Authentication\Domain\Subscribers\AuthenticationAttemptSubscriber::class,
             'action' => 'authorization',
             // todo: вынести в настройки
             'attemptCount' => 3,

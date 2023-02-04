@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Telegram\Symfony4\Commands;
+namespace Untek\Framework\Telegram\Symfony4\Commands;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Command\Command;
@@ -8,13 +8,13 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Lock\Exception\LockAcquiringException;
 use Symfony\Component\Lock\LockFactory;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnFramework\Console\Symfony4\Traits\IOTrait;
-use ZnFramework\Console\Symfony4\Traits\LockTrait;
-use ZnFramework\Console\Symfony4\Traits\LoopTrait;
-use ZnFramework\Telegram\Domain\Repositories\File\ConfigRepository;
-use ZnFramework\Telegram\Domain\Services\LongPullService;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Framework\Console\Symfony4\Traits\IOTrait;
+use Untek\Framework\Console\Symfony4\Traits\LockTrait;
+use Untek\Framework\Console\Symfony4\Traits\LoopTrait;
+use Untek\Framework\Telegram\Domain\Repositories\File\ConfigRepository;
+use Untek\Framework\Telegram\Domain\Services\LongPullService;
 
 class LongPullCommand extends Command
 {

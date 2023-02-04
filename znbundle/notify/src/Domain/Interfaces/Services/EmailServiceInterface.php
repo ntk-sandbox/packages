@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Interfaces\Services;
+namespace Untek\Bundle\Notify\Domain\Interfaces\Services;
 
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Queue\Domain\Enums\PriorityEnum;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
 
 interface EmailServiceInterface
 {

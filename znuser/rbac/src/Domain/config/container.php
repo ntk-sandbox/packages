@@ -2,14 +2,14 @@
 
 return [
     'singletons' => [
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\RoleServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\RoleService',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\ManagerServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\ManagerService',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\InheritanceServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\InheritanceService',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\ManagerRepositoryInterface' => 'ZnUser\\Rbac\\Domain\\Repositories\\File\\ManagerRepository',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\ItemServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\ItemService',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\PermissionServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\PermissionService',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\AssignmentServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\AssignmentService',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Repositories\\AssignmentRepositoryInterface' => 'ZnUser\\Rbac\\Domain\\Repositories\\Eloquent\\AssignmentRepository',
-        'ZnUser\\Rbac\\Domain\\Interfaces\\Services\\MyAssignmentServiceInterface' => 'ZnUser\\Rbac\\Domain\\Services\\MyAssignmentService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\RoleServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\RoleService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\ManagerServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\ManagerService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\InheritanceServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\InheritanceService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\ManagerRepositoryInterface' => 'Untek\\User\\Rbac\\Domain\\Repositories\\File\\ManagerRepository',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\ItemServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\ItemService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\PermissionServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\PermissionService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\AssignmentServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\AssignmentService',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\AssignmentRepositoryInterface' => 'Untek\\User\\Rbac\\Domain\\Repositories\\Eloquent\\AssignmentRepository',
+        'Untek\\User\\Rbac\\Domain\\Interfaces\\Services\\MyAssignmentServiceInterface' => 'Untek\\User\\Rbac\\Domain\\Services\\MyAssignmentService',
     ],
 ];

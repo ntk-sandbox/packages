@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell;
 
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
-use ZnTool\Deployer\Entities\ApacheStatusEntity;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShellDriver;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell\FileSystemShell;
+use Untek\Tool\Deployer\Entities\ApacheStatusEntity;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShellDriver;
 
 class ApacheShell extends BaseShellDriver
 {

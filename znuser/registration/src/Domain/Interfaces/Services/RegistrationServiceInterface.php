@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Registration\Domain\Interfaces\Services;
+namespace Untek\User\Registration\Domain\Interfaces\Services;
 
-use ZnUser\Registration\Domain\Forms\RegistrationForm;
-use ZnUser\Registration\Domain\Forms\RequestActivationCodeForm;
+use Untek\User\Registration\Domain\Forms\RegistrationForm;
+use Untek\User\Registration\Domain\Forms\RequestActivationCodeForm;
 
 interface RegistrationServiceInterface
 {

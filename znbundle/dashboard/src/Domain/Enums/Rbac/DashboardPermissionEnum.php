@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Dashboard\Domain\Enums\Rbac;
+namespace Untek\Bundle\Dashboard\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class DashboardPermissionEnum implements GetLabelsInterface
 {

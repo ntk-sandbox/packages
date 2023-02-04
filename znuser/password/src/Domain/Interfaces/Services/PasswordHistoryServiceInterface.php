@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Password\Domain\Interfaces\Services;
+namespace Untek\User\Password\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface PasswordHistoryServiceInterface extends CrudServiceInterface
 {

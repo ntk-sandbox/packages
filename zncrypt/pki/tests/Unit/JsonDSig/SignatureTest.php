@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnCrypt\Pki\Tests\Unit\JsonDSig;
+namespace Untek\Crypt\Pki\Tests\Unit\JsonDSig;
 
-use ZnCrypt\Base\Domain\Enums\EncodingEnum;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Base\Domain\Enums\OpenSslAlgoEnum;
-use ZnCrypt\Base\Domain\Exceptions\FailCertificateSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\FailSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\InvalidDigestException;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyHelper;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
-use ZnCrypt\Pki\Domain\Libs\Rsa\BaseRsaStore;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreRam;
-use ZnCrypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\OpenSsl\OpenSslSignature;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\Signature;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Crypt\Base\Domain\Enums\EncodingEnum;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Base\Domain\Enums\OpenSslAlgoEnum;
+use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\BaseRsaStore;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreRam;
+use Untek\Crypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\OpenSsl\OpenSslSignature;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\Signature;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class SignatureTest extends BaseTest
 {

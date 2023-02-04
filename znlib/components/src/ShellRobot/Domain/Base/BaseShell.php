@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Base;
+namespace Untek\Lib\Components\ShellRobot\Domain\Base;
 
-use ZnLib\Components\ShellRobot\Domain\Libs\Shell\LocalShell;
-use ZnFramework\Console\Domain\Base\BaseShellNew;
-use ZnFramework\Console\Domain\Libs\IO;
+use Untek\Lib\Components\ShellRobot\Domain\Libs\Shell\LocalShell;
+use Untek\Framework\Console\Domain\Base\BaseShellNew;
+use Untek\Framework\Console\Domain\Libs\IO;
 
 abstract class BaseShell
 {

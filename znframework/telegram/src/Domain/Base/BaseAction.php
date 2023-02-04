@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Base;
+namespace Untek\Framework\Telegram\Domain\Base;
 
-use ZnCore\Container\Libs\Container;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Services\ResponseService;
-use ZnFramework\Telegram\Domain\Services\SessionService;
-use ZnFramework\Telegram\Domain\Services\StateService;
-use ZnFramework\Telegram\Domain\Services\UserService;
+use Untek\Core\Container\Libs\Container;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Services\ResponseService;
+use Untek\Framework\Telegram\Domain\Services\SessionService;
+use Untek\Framework\Telegram\Domain\Services\StateService;
+use Untek\Framework\Telegram\Domain\Services\UserService;
 
 abstract class BaseAction
 {

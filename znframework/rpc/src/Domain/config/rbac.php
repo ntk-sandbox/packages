@@ -1,10 +1,10 @@
 <?php
 
-use ZnFramework\Rpc\Domain\Enums\Rbac\RpcMethodPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
-use ZnFramework\Rpc\Domain\Enums\Rbac\RpcDocPermissionEnum;
-use ZnFramework\Rpc\Domain\Enums\Rbac\RpcSettingsPermissionEnum;
-use ZnFramework\Rpc\Domain\Enums\Rbac\FixturePermissionEnum;
+use Untek\Framework\Rpc\Domain\Enums\Rbac\RpcMethodPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Framework\Rpc\Domain\Enums\Rbac\RpcDocPermissionEnum;
+use Untek\Framework\Rpc\Domain\Enums\Rbac\RpcSettingsPermissionEnum;
+use Untek\Framework\Rpc\Domain\Enums\Rbac\FixturePermissionEnum;
 
 return [
     'roleEnums' => [

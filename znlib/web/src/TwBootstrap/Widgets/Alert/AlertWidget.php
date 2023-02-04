@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Alert;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Alert;
 
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class AlertWidget extends BaseWidget2
 {

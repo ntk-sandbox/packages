@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Language\Symfony4\Widgets\Language;
+namespace Untek\Bundle\Language\Symfony4\Widgets\Language;
 
-use ZnBundle\Language\Domain\Filters\LanguageFilter;
-use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
-use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Bundle\Language\Domain\Filters\LanguageFilter;
+use Untek\Bundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class LanguageWidget extends BaseWidget2
 {

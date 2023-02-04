@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Repositories\Config;
+namespace Untek\Crypt\Jwt\Domain\Repositories\Config;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\DotEnv\Domain\Libs\DotEnvMap;
-use ZnCrypt\Jwt\Domain\Entities\JwtProfileEntity;
-use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
-use ZnCrypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
-use ZnLib\Components\Time\Enums\TimeEnum;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\DotEnv\Domain\Libs\DotEnvMap;
+use Untek\Crypt\Jwt\Domain\Entities\JwtProfileEntity;
+use Untek\Crypt\Jwt\Domain\Entities\KeyEntity;
+use Untek\Crypt\Jwt\Domain\Interfaces\Repositories\ProfileRepositoryInterface;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
 
 class ProfileRepository implements ProfileRepositoryInterface
 {

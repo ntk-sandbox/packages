@@ -5,9 +5,9 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace ZnCore\Text\Helpers;
+namespace Untek\Core\Text\Helpers;
 
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 
 /**
  * Inflector pluralizes and singularizes English nouns. It also contains some other useful methods.

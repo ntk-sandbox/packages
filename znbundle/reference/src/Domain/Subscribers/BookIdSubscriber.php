@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Subscribers;
+namespace Untek\Bundle\Reference\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnBundle\Reference\Domain\Entities\ItemEntity;
-use ZnBundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class BookIdSubscriber implements EventSubscriberInterface
 {

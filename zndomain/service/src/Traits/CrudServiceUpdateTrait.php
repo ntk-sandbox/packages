@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Service\Traits;
+namespace Untek\Domain\Service\Traits;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Domain\Enums\EventEnum;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
 
 trait CrudServiceUpdateTrait
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Geo\Rpc\Controllers;
+namespace Untek\Bundle\Geo\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
 
 class CountryController extends BaseCrudRpcController
 {

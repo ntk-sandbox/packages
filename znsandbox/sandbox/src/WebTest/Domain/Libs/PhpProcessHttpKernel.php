@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
-use ZnSandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
 
 class PhpProcessHttpKernel implements HttpKernelInterface
 {

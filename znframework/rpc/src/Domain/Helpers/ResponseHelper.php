@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Helpers;
+namespace Untek\Framework\Rpc\Domain\Helpers;
 
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 class ResponseHelper
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnTool\Package\Domain\Repositories\File;
+namespace Untek\Tool\Package\Domain\Repositories\File;
 
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnLib\Components\Store\StoreFile;
-use ZnTool\Package\Domain\Entities\ConfigEntity;
-use ZnTool\Package\Domain\Entities\GroupEntity;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Interfaces\Repositories\PackageRepositoryInterface;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Tool\Package\Domain\Entities\ConfigEntity;
+use Untek\Tool\Package\Domain\Entities\GroupEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Interfaces\Repositories\PackageRepositoryInterface;
 
 class PackageRepository implements PackageRepositoryInterface
 {

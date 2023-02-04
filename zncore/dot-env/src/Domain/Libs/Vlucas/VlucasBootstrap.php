@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs\Vlucas;
+namespace Untek\Core\DotEnv\Domain\Libs\Vlucas;
 
 use Dotenv\Dotenv;
 use Dotenv\Loader\Loader;
 use Dotenv\Parser\Entry;
 use Dotenv\Parser\Parser;
 use Dotenv\Store\StringStore;
-use ZnCore\Code\Exceptions\NotFoundDependencyException;
-use ZnCore\Code\Helpers\ComposerHelper;
-use ZnCore\DotEnv\Domain\Interfaces\BootstrapInterface;
-use ZnLib\Components\Store\StoreFile;
+use Untek\Core\Code\Exceptions\NotFoundDependencyException;
+use Untek\Core\Code\Helpers\ComposerHelper;
+use Untek\Core\DotEnv\Domain\Interfaces\BootstrapInterface;
+use Untek\Lib\Components\Store\StoreFile;
 
 /**
  * Загрузчик переменных окружения

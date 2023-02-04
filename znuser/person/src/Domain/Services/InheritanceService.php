@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Person\Domain\Services;
+namespace Untek\User\Person\Domain\Services;
 
-use ZnUser\Person\Domain\Interfaces\Services\InheritanceServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnUser\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Person\Domain\Entities\InheritanceEntity;
+use Untek\User\Person\Domain\Interfaces\Services\InheritanceServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\User\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Person\Domain\Entities\InheritanceEntity;
 
 /**
  * @method

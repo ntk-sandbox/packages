@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Interfaces\Repositories;
+namespace Untek\User\Rbac\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ItemRepositoryInterface extends CrudRepositoryInterface
 {

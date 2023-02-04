@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnUser\Password\Domain\Services;
+namespace Untek\User\Password\Domain\Services;
 
-use ZnUser\Password\Domain\Interfaces\Services\PasswordHistoryServiceInterface;
-use ZnUser\Password\Domain\Enums\UserActionEnum;
-use ZnUser\Password\Domain\Enums\UserActionEventEnum;
-use ZnUser\Identity\Domain\Events\UserActionEvent;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordServiceInterface;
-use ZnUser\Password\Domain\Subscribers\SendNotifyAfterUpdatePasswordSubscriber;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordHistoryServiceInterface;
+use Untek\User\Password\Domain\Enums\UserActionEnum;
+use Untek\User\Password\Domain\Enums\UserActionEventEnum;
+use Untek\User\Identity\Domain\Events\UserActionEvent;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordServiceInterface;
+use Untek\User\Password\Domain\Subscribers\SendNotifyAfterUpdatePasswordSubscriber;
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class PasswordService extends BaseService implements PasswordServiceInterface
 {

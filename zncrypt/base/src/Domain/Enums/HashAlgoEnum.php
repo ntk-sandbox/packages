@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Enums;
+namespace Untek\Crypt\Base\Domain\Enums;
 
 /**
  * Class HashAlgoEnum
  *
- * @package ZnCrypt\Base\Domain\Enums
+ * @package Untek\Crypt\Base\Domain\Enums
  */
 class HashAlgoEnum
 {

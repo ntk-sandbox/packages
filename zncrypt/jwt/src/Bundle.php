@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Jwt;
+namespace Untek\Crypt\Jwt;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

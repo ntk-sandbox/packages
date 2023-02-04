@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Identity\Domain\Relations;
+namespace Untek\User\Identity\Domain\Relations;
 
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
 
 class IdentityRelation
 {

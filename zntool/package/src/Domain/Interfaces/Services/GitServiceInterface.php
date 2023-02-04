@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Package\Domain\Interfaces\Services;
+namespace Untek\Tool\Package\Domain\Interfaces\Services;
 
-use ZnTool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
 
 interface GitServiceInterface
 {

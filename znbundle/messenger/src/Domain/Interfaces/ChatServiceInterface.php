@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Interfaces;
+namespace Untek\Bundle\Messenger\Domain\Interfaces;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ChatServiceInterface extends CrudServiceInterface
 {

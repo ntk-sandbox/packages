@@ -1,17 +1,17 @@
 <?php
 
-use Zn\Example\Plus;
+use Untek\\Example\Plus;
 
 $namespaces = [
-    'Zn\\Example' => __DIR__ . '/../src/Example',
+    'Untek\\\Example' => __DIR__ . '/../src/Example',
 ];
 
-//dd(class_exists(\ZnCore\Code\Helpers\ComposerHelper::class));
+//dd(class_exists(\Untek\Core\Code\Helpers\ComposerHelper::class));
 
 foreach ($namespaces as $namespace => $path) {
     $path = realpath($path);
-//    dd(\ZnCore\FileSystem\Helpers\FileHelper::scanDir($path));
+//    dd(\Untek\Core\FileSystem\Helpers\FileHelper::scanDir($path));
     //dd($namespace, $path);
-    //\ZnCore\Code\Helpers\ComposerHelper::register($namespace, $path);
+    //\Untek\Core\Code\Helpers\ComposerHelper::register($namespace, $path);
     //dd(Plus::run(1, 6));
 }

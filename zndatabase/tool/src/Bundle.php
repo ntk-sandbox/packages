@@ -1,8 +1,11 @@
 <?php
 
-namespace ZnDatabase\Tool;
+namespace Untek\Database\Tool;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Database\Tool\Commands\DropDatabaseCommand;
+use Untek\Database\Tool\Commands\FixSequenceCommand;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
 
 class Bundle extends BaseBundle
 {
@@ -12,10 +15,17 @@ class Bundle extends BaseBundle
         return 'databaseTool';
     }
 
-    public function console(): array
+//    public function console(): array
+//    {
+//        return [
+//            'Untek\Database\Tool\Commands',
+//        ];
+//    }
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
     {
-        return [
-            'ZnDatabase\Tool\Commands',
-        ];
+        $commandConfigurator->registerCommandClass(DropDatabaseCommand::class);
+        $commandConfigurator->registerCommandClass(FixSequenceCommand::class);
     }
+
 }

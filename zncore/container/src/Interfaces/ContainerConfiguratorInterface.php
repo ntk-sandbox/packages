@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Container\Interfaces;
+namespace Untek\Core\Container\Interfaces;
 
 use Psr\Container\ContainerInterface;
 

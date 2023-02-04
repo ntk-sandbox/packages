@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Enums;
+namespace Untek\Bundle\Notify\Domain\Enums;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class NotifyPermissionEnum implements GetLabelsInterface
 {

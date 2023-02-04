@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Services;
+namespace Untek\Kaz\Eds\Domain\Services;
 
 use phpseclib\File\X509;
 use phpseclib\Math\BigInteger;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnKaz\Eds\Domain\Entities\HostEntity;
-use ZnKaz\Eds\Domain\Entities\LogEntity;
-use ZnKaz\Eds\Domain\Interfaces\Services\CrlServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnKaz\Eds\Domain\Interfaces\Repositories\CrlRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnKaz\Eds\Domain\Entities\CrlEntity;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Kaz\Eds\Domain\Entities\HostEntity;
+use Untek\Kaz\Eds\Domain\Entities\LogEntity;
+use Untek\Kaz\Eds\Domain\Interfaces\Services\CrlServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Kaz\Eds\Domain\Interfaces\Repositories\CrlRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Kaz\Eds\Domain\Entities\CrlEntity;
 
 /**
  * @method CrlRepositoryInterface getRepository()

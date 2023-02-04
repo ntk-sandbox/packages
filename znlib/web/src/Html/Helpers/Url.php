@@ -5,10 +5,10 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace ZnLib\Web\Html\Helpers;
+namespace Untek\Lib\Web\Html\Helpers;
 
 use Symfony\Component\HttpFoundation\Request;
-use ZnCore\Contract\Common\Exceptions\InvalidArgumentException;
+use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;
 
 /**
  * Url provides a set of static methods for managing URLs.
@@ -128,7 +128,7 @@ class Url
 //            return static::toRoute($url, $scheme);
 //        }
 
-//        $url = \ZnCore\FileSystem\Helpers\FileHelper::getAlias($url);
+//        $url = \Untek\Core\FileSystem\Helpers\FileHelper::getAlias($url);
         /*if ($url === '') {
             $url = Yii::$app->getRequest()->getUrl();
         }*/
@@ -286,7 +286,7 @@ class Url
      */
     /*protected static function normalizeRoute($route)
     {
-        $route = \ZnCore\FileSystem\Helpers\FileHelper::getAlias((string)$route);
+        $route = \Untek\Core\FileSystem\Helpers\FileHelper::getAlias((string)$route);
         if (strncmp($route, '/', 1) === 0) {
             // absolute route
             return ltrim($route, '/');

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Jobs;
+namespace Untek\Bundle\Notify\Domain\Jobs;
 
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnBundle\Queue\Domain\Interfaces\JobInterface;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use Untek\Bundle\Queue\Domain\Interfaces\JobInterface;
 use Psr\Container\ContainerInterface;
 
 class SendEmailJob implements JobInterface

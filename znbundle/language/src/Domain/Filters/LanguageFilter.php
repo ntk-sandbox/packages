@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Filters;
+namespace Untek\Bundle\Language\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class LanguageFilter
 {

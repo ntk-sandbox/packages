@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Repositories\File;
+namespace Untek\Framework\Wsdl\Domain\Repositories\File;
 
-use ZnFramework\Wsdl\Domain\Entities\ServiceEntity;
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
-use ZnDomain\Repository\Base\BaseRepository;
+use Untek\Framework\Wsdl\Domain\Entities\ServiceEntity;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
+use Untek\Domain\Repository\Base\BaseRepository;
 
 class ServiceRepository extends BaseRepository implements ServiceRepositoryInterface
 {

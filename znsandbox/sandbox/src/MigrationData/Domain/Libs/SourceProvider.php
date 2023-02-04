@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\MigrationData\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\MigrationData\Domain\Libs;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class SourceProvider
 {

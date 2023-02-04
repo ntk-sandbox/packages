@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Entities;
+namespace Untek\Bundle\Messenger\Domain\Entities;
 
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class MessageEntity implements EntityIdInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Bundle\Base;
+namespace Untek\Core\Bundle\Base;
 
 class CallMethodLoader extends BaseLoader
 {

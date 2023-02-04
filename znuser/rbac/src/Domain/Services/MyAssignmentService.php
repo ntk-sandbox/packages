@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseService;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
-use ZnUser\Rbac\Domain\Entities\MyAssignmentEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\MyAssignmentRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
+use Untek\User\Rbac\Domain\Entities\MyAssignmentEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\MyAssignmentRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;
 
 /**
  * @method MyAssignmentRepositoryInterface getRepository()

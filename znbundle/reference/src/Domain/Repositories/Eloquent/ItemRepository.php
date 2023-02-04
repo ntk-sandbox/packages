@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Reference\Domain\Repositories\Eloquent;
 
-use ZnBundle\Reference\Domain\Entities\BookEntity;
-use ZnBundle\Reference\Domain\Entities\ItemEntity;
-use ZnBundle\Reference\Domain\Filters\ItemFilter;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Domain\Enums\RelationEnum;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDomain\Repository\Mappers\JsonMapper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Reference\Domain\Entities\BookEntity;
+use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
+use Untek\Bundle\Reference\Domain\Filters\ItemFilter;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Domain\Enums\RelationEnum;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ItemRepository extends BaseEloquentCrudRepository implements ItemRepositoryInterface
 {

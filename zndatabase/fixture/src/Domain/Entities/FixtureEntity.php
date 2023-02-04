@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Fixture\Domain\Entities;
+namespace Untek\Database\Fixture\Domain\Entities;
 
 class FixtureEntity
 {

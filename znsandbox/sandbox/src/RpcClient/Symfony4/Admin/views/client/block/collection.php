@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @var $this \ZnLib\Web\View\Libs\View
+ * @var $this \Untek\Lib\Web\View\Libs\View
  * @var $baseUri string
- * @var $favoriteEntity \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
- * @var $collection \ZnCore\Collection\Interfaces\Enumerable | \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
+ * @var $favoriteEntity \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
+ * @var $collection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
  */
 
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 /*$map = [];
 foreach ($collection as $favoriteEntityItem) {
@@ -21,7 +21,7 @@ foreach ($collection as $favoriteEntityItem) {
 }
 ksort($map);*/
 
-$map = \ZnSandbox\Sandbox\RpcClient\Domain\Helpers\FavoriteHelper::generateFavoriteCollectionToMap($collection);
+$map = \Untek\Sandbox\Sandbox\RpcClient\Domain\Helpers\FavoriteHelper::generateFavoriteCollectionToMap($collection);
 
 ?>
 

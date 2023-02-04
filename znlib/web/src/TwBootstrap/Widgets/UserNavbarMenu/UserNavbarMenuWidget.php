@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\UserNavbarMenu;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\UserNavbarMenu;
 
 use Symfony\Component\Security\Core\Security;
-use ZnLib\Web\Widget\Base\BaseWidget2;
-use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
-use ZnUser\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;
 
 class UserNavbarMenuWidget extends BaseWidget2
 {

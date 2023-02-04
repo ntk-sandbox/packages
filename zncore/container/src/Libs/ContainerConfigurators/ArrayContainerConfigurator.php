@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\Container\Libs\ContainerConfigurators;
+namespace Untek\Core\Container\Libs\ContainerConfigurators;
 
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Libs\Container;
 use Psr\Container\ContainerInterface;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
 
 class ArrayContainerConfigurator implements ContainerConfiguratorInterface
 {

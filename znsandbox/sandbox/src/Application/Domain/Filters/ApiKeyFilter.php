@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Filters;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Filters;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ApiKeyFilter implements ValidationByMetadataInterface
 {

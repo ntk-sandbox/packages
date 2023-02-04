@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Debug\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\Debug\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ProfilingServiceInterface extends CrudServiceInterface
 {

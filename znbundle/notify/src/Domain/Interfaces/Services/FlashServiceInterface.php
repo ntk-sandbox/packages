@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Interfaces\Services;
+namespace Untek\Bundle\Notify\Domain\Interfaces\Services;
 
 interface FlashServiceInterface
 {

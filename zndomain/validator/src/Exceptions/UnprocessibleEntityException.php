@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDomain\Validator\Exceptions;
+namespace Untek\Domain\Validator\Exceptions;
 
 use Error;
 use Symfony\Component\Validator\ConstraintViolation;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
 
 class UnprocessibleEntityException extends Error
 {

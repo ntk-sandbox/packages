@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Rpc\Controllers;
+namespace Untek\Sandbox\Sandbox\RpcMock\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnSandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
 
 class MethodController extends BaseCrudRpcController
 {

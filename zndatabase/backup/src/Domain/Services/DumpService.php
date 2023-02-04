@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Services;
+namespace Untek\Database\Backup\Domain\Services;
 
-use ZnDatabase\Backup\Domain\Interfaces\Services\DumpServiceInterface;
-use ZnDatabase\Backup\Domain\Interfaces\Repositories\DumpRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDatabase\Backup\Domain\Entities\DumpEntity;
+use Untek\Database\Backup\Domain\Interfaces\Services\DumpServiceInterface;
+use Untek\Database\Backup\Domain\Interfaces\Repositories\DumpRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Database\Backup\Domain\Entities\DumpEntity;
 
 /**
  * @method DumpRepositoryInterface getRepository()

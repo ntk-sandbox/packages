@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\EventDispatcher\Traits;
+namespace Untek\Core\EventDispatcher\Traits;
 
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 trait EventDispatcherTrait
 {

@@ -2,8 +2,8 @@
 
 return [
     'singletons' => [
-        'ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface' => 'ZnBundle\Notify\Domain\Repositories\Symfony\ToastrRepository',
-        'ZnBundle\\Language\\Domain\\Interfaces\\Repositories\\SwitchRepositoryInterface' => 'ZnBundle\\Language\\Domain\\Repositories\\Symfony4\\SwitchRepository',
-        'ZnBundle\\Language\\Domain\\Interfaces\\Repositories\\StorageRepositoryInterface' => 'ZnBundle\\Language\\Domain\\Repositories\\Symfony4\\StorageRepository',
+        'Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface' => 'Untek\Bundle\Notify\Domain\Repositories\Symfony\ToastrRepository',
+        'Untek\\Bundle\\Language\\Domain\\Interfaces\\Repositories\\SwitchRepositoryInterface' => 'Untek\\Bundle\\Language\\Domain\\Repositories\\Symfony4\\SwitchRepository',
+        'Untek\\Bundle\\Language\\Domain\\Interfaces\\Repositories\\StorageRepositoryInterface' => 'Untek\\Bundle\\Language\\Domain\\Repositories\\Symfony4\\StorageRepository',
     ],
 ];

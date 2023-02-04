@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnDomain\Service\Subscribers;
+namespace Untek\Domain\Service\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class ReadOnlyServiceSubscriber implements EventSubscriberInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Person\Domain\Repositories\Eloquent;
+namespace Untek\User\Person\Domain\Repositories\Eloquent;
 
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Person\Domain\Entities\InheritanceEntity;
-use ZnUser\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
-use ZnUser\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Person\Domain\Entities\InheritanceEntity;
+use Untek\User\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\User\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 
 class InheritanceRepository extends BaseEloquentCrudRepository implements InheritanceRepositoryInterface
 {

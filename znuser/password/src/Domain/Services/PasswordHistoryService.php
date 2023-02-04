@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnUser\Password\Domain\Services;
+namespace Untek\User\Password\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Symfony\Component\Security\Core\Security;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
-use ZnUser\Password\Domain\Entities\PasswordHistoryEntity;
-use ZnUser\Password\Domain\Interfaces\Repositories\PasswordHistoryRepositoryInterface;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordHistoryServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
+use Untek\User\Password\Domain\Entities\PasswordHistoryEntity;
+use Untek\User\Password\Domain\Interfaces\Repositories\PasswordHistoryRepositoryInterface;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordHistoryServiceInterface;
 
 class PasswordHistoryService extends BaseCrudService implements PasswordHistoryServiceInterface
 {

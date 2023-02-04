@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Repositories\File;
+namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\File;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\ConfigRepositoryInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\ConfigRepositoryInterface;
 
 class ConfigRepository implements ConfigRepositoryInterface
 {

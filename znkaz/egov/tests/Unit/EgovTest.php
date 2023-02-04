@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnKaz\Egov\Tests\Unit;
+namespace Untek\Kaz\Egov\Tests\Unit;
 
-use ZnCore\Collection\Libs\Collection;
-use ZnKaz\Egov\Factories\EgovEncoderServiceFactory;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnLib\QrBox\Tests\Unit\BaseTest;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Kaz\Egov\Factories\EgovEncoderServiceFactory;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\QrBox\Tests\Unit\BaseTest;
 
 class EgovTest extends BaseTest
 {

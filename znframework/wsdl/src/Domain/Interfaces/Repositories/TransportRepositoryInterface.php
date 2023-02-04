@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Interfaces\Repositories;
+namespace Untek\Framework\Wsdl\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface TransportRepositoryInterface extends CrudRepositoryInterface
 {

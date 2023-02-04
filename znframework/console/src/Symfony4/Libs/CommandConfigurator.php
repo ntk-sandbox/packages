@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Console\Symfony4\Libs;
+namespace Untek\Framework\Console\Symfony4\Libs;
 
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command\Command;
-use ZnCore\Code\Helpers\ComposerHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\Code\Helpers\ComposerHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
 
 class CommandConfigurator
 {
@@ -26,8 +26,11 @@ class CommandConfigurator
 
     protected function registerFromNamespace(string $namespace): void
     {
+//        dump($namespace);
         $files = $this->scanByNamespace($namespace);
+//        dump($namespace, $files);
         $commands = $this->forgeFullClassNames($files, $namespace);
+//        dump($commands);
         foreach ($commands as $commandClassName) {
             $this->registerCommandClass($commandClassName);
         }
@@ -56,6 +59,7 @@ class CommandConfigurator
     protected function scanByNamespace(string $namespace): array
     {
         $path = ComposerHelper::getPsr4Path($namespace);
+//        dump($namespace, $path);
         $files = FindFileHelper::scanDir($path);
         $files = array_filter(
             $files,

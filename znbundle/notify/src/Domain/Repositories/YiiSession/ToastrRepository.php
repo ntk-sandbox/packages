@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\YiiSession;
+namespace Untek\Bundle\Notify\Domain\Repositories\YiiSession;
 
 use Yii;
-use ZnBundle\Notify\Domain\Entities\ToastrEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class ToastrRepository implements ToastrRepositoryInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Helpers;
 
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
-use ZnSandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
 
 class FavoriteHelper
 {

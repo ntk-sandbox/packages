@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Queue\Symfony4\Widgets;
+namespace Untek\Bundle\Queue\Symfony4\Widgets;
 
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnBundle\Queue\Domain\Entities\TotalEntity;
+use Untek\Bundle\Queue\Domain\Entities\TotalEntity;
 
 class TotalQueueWidget
 {

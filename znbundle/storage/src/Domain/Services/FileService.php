@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Services;
+namespace Untek\Bundle\Storage\Domain\Services;
 
-use ZnBundle\Storage\Domain\Entities\FileEntity;
-use ZnBundle\Storage\Domain\Interfaces\Services\FileServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Bundle\Storage\Domain\Entities\FileEntity;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\FileServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class FileService extends BaseCrudService implements FileServiceInterface
 {

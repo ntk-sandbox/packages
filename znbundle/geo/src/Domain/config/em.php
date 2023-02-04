@@ -2,9 +2,9 @@
 
 return [
 	'entities' => [
-		'ZnBundle\\Geo\\Domain\\Entities\\CountryEntity' => 'ZnBundle\\Geo\\Domain\\Interfaces\\Repositories\\CountryRepositoryInterface',
-		'ZnBundle\\Geo\\Domain\\Entities\\RegionEntity' => 'ZnBundle\\Geo\\Domain\\Interfaces\\Repositories\\RegionRepositoryInterface',
-		'ZnBundle\\Geo\\Domain\\Entities\\LocalityEntity' => 'ZnBundle\\Geo\\Domain\\Interfaces\\Repositories\\LocalityRepositoryInterface',
-		'ZnBundle\\Geo\\Domain\\Entities\\CurrencyEntity' => 'ZnBundle\\Geo\\Domain\\Interfaces\\Repositories\\CurrencyRepositoryInterface',
+		'Untek\\Bundle\\Geo\\Domain\\Entities\\CountryEntity' => 'Untek\\Bundle\\Geo\\Domain\\Interfaces\\Repositories\\CountryRepositoryInterface',
+		'Untek\\Bundle\\Geo\\Domain\\Entities\\RegionEntity' => 'Untek\\Bundle\\Geo\\Domain\\Interfaces\\Repositories\\RegionRepositoryInterface',
+		'Untek\\Bundle\\Geo\\Domain\\Entities\\LocalityEntity' => 'Untek\\Bundle\\Geo\\Domain\\Interfaces\\Repositories\\LocalityRepositoryInterface',
+		'Untek\\Bundle\\Geo\\Domain\\Entities\\CurrencyEntity' => 'Untek\\Bundle\\Geo\\Domain\\Interfaces\\Repositories\\CurrencyRepositoryInterface',
 	],
 ];

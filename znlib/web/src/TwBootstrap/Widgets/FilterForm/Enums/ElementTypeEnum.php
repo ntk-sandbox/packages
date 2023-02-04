@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\FilterForm\Enums;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\FilterForm\Enums;
 
 class ElementTypeEnum
 {

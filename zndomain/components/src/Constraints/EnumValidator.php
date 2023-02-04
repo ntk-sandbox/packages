@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Components\Constraints;
+namespace Untek\Domain\Components\Constraints;
 
 use Symfony\Component\Validator\Constraint;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnDomain\Validator\Constraints\BaseValidator;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Domain\Validator\Constraints\BaseValidator;
 
 class EnumValidator extends BaseValidator
 {

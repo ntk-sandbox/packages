@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Repository\Base;
+namespace Untek\Domain\Repository\Base;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 abstract class BaseRepository implements RepositoryInterface
 {

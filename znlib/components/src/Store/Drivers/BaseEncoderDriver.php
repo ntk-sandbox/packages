@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Store\Drivers;
+namespace Untek\Lib\Components\Store\Drivers;
 
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 
 abstract class BaseEncoderDriver implements DriverInterface
 {

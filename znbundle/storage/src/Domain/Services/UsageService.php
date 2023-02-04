@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Services;
+namespace Untek\Bundle\Storage\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnBundle\Storage\Domain\Entities\UsageEntity;
-use ZnBundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
-use ZnBundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\Bundle\Storage\Domain\Entities\UsageEntity;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 class UsageService extends BaseCrudService implements UsageServiceInterface
 {

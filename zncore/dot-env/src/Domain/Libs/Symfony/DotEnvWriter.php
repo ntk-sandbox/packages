@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs\Symfony;
+namespace Untek\Core\DotEnv\Domain\Libs\Symfony;
 
 class DotEnvWriter
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Office\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\Office\Domain\Interfaces\Services;
 
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnSandbox\Sandbox\Office\Domain\Entities\DocXEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Sandbox\Sandbox\Office\Domain\Entities\DocXEntity;
 
 interface DocXServiceInterface extends CrudServiceInterface
 {

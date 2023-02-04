@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\Init\Symfony4\Console\Commands;
+namespace Untek\Lib\Init\Symfony4\Console\Commands;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Container\Traits\ContainerAwareAttributeTrait;
-use ZnLib\Init\Symfony4\Console\Libs\Init;
+use Untek\Core\Container\Traits\ContainerAwareAttributeTrait;
+use Untek\Lib\Init\Symfony4\Console\Libs\Init;
 
 
 class InitCommand extends Command
@@ -40,11 +40,11 @@ class InitCommand extends Command
     {
         $isOverwrite = $input->getOption('overwrite');
         
-//        \ZnCore\DotEnv\Domain\Libs\DotEnv::init();
+//        \Untek\Core\DotEnv\Domain\Libs\DotEnv::init();
         $defaultDefinitions = [
-            'copyFiles' => 'ZnLib\Init\Symfony4\Console\Tasks\CopyFilesTask',
+            'copyFiles' => 'Untek\Lib\Init\Symfony4\Console\Tasks\CopyFilesTask',
             'random' => [
-                'class' => 'ZnLib\Init\Symfony4\Console\Tasks\RandomTask',
+                'class' => 'Untek\Lib\Init\Symfony4\Console\Tasks\RandomTask',
                 'length' => 64,
                 'charSet' => 'num|lower|upper',
                 'quote' => '"',
@@ -56,10 +56,10 @@ class InitCommand extends Command
                     'CSRF_TOKEN_ID',
                 ],
             ],
-//    'setCookieValidationKey' => 'ZnLib\Init\Symfony4\Console\Tasks\GenerateCookieValidationKeyTask',
-            'setWritable' => 'ZnLib\Init\Symfony4\Console\Tasks\SetWritableTask',
-            'setExecutable' => 'ZnLib\Init\Symfony4\Console\Tasks\SetExecutableTask',
-            'createSymlink' => 'ZnLib\Init\Symfony4\Console\Tasks\CreateSymlinkTask',
+//    'setCookieValidationKey' => 'Untek\Lib\Init\Symfony4\Console\Tasks\GenerateCookieValidationKeyTask',
+            'setWritable' => 'Untek\Lib\Init\Symfony4\Console\Tasks\SetWritableTask',
+            'setExecutable' => 'Untek\Lib\Init\Symfony4\Console\Tasks\SetExecutableTask',
+            'createSymlink' => 'Untek\Lib\Init\Symfony4\Console\Tasks\CreateSymlinkTask',
         ];
 
 //$configFile = getenv('ENVIRONMENTS_CONFIG_FILE') ?: __DIR__ . '/../../../../environments/config.php';
@@ -72,7 +72,7 @@ class InitCommand extends Command
 
 //        $input = new ArgvInput;
 //        $output = new ConsoleOutput;
-//        $container = new \ZnCore\Container\Libs\Container();
+//        $container = new \Untek\Core\Container\Libs\Container();
         $initLib = new Init($this->getContainer(), $input, $output, $config['environments'], $config['definitions']);
         $initLib->run();
 

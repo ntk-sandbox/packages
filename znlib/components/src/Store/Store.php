@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnLib\Components\Store;
+namespace Untek\Lib\Components\Store;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
-use ZnLib\Components\Store\Drivers\DriverInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Lib\Components\Store\Drivers\DriverInterface;
 
 class Store
 {
@@ -24,7 +24,7 @@ class Store
         $driver = strtolower($driver);
         $driver = ucfirst($driver);
         $this->driver = $driver;
-        $driverClass = 'ZnLib\Components\Store\Drivers\\' . $driver;
+        $driverClass = 'Untek\\Lib\Components\Store\Drivers\\' . $driver;
 
         $instanceResolver = new InstanceResolver();
         $this->driverInstance = $instanceResolver->create($driverClass);

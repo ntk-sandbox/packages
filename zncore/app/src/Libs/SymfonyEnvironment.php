@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\App\Libs;
+namespace Untek\Core\App\Libs;
 
-use ZnCore\App\Interfaces\EnvironmentInterface;
-use ZnCore\DotEnv\Domain\Libs\Symfony\SymfonyBootstrap;
-use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
+use Untek\Core\App\Interfaces\EnvironmentInterface;
+use Untek\Core\DotEnv\Domain\Libs\Symfony\SymfonyBootstrap;
+use Untek\Core\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
 
 class SymfonyEnvironment extends BaseEnvironment implements EnvironmentInterface
 {

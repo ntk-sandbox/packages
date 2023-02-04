@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs\ShellParsers;
+namespace Untek\Framework\Console\Domain\Libs\ShellParsers;
 
 class ShellItemsParser
 {

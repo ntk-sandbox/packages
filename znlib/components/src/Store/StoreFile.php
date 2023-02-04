@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Store;
+namespace Untek\Lib\Components\Store;
 
-use ZnCore\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
 
 class StoreFile
 {

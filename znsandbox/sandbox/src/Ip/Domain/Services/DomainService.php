@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Ip\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Ip\Domain\Services;
 
-use ZnSandbox\Sandbox\Ip\Domain\Helpers\IpHelper;
-use ZnSandbox\Sandbox\Ip\Domain\Repositories\Api\HostInfoRepository;
+use Untek\Sandbox\Sandbox\Ip\Domain\Helpers\IpHelper;
+use Untek\Sandbox\Sandbox\Ip\Domain\Repositories\Api\HostInfoRepository;
 
 class DomainService
 {

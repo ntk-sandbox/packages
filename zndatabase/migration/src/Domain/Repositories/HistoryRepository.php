@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Repositories;
+namespace Untek\Database\Migration\Domain\Repositories;
 
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Libs\Container;
 use Illuminate\Database\Schema\Blueprint;
 use Psr\Container\ContainerInterface;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentRepository;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Migration\Domain\Entities\MigrationEntity;
-use ZnDatabase\Migration\Domain\Interfaces\MigrationInterface;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentRepository;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Migration\Domain\Entities\MigrationEntity;
+use Untek\Database\Migration\Domain\Interfaces\MigrationInterface;
 
 class HistoryRepository extends BaseEloquentRepository
 {

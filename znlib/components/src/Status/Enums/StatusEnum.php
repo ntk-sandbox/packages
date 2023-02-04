@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\Status\Enums;
+namespace Untek\Lib\Components\Status\Enums;
 
-use ZnLib\I18Next\Facades\I18Next;
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 /**
  * Статусы сущности

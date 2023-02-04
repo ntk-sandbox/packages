@@ -2,6 +2,6 @@
 
 return [
     'entities' => [
-        'ZnUser\Confirm\Domain\Entities\ConfirmEntity' => 'ZnUser\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface',
+        'Untek\User\Confirm\Domain\Entities\ConfirmEntity' => 'Untek\User\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface',
     ],
 ];

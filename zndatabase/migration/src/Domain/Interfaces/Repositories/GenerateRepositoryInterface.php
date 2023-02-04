@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Interfaces\Repositories;
+namespace Untek\Database\Migration\Domain\Interfaces\Repositories;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
 
 interface GenerateRepositoryInterface extends GetEntityClassInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Debug;
+namespace Untek\Sandbox\Sandbox\Debug;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

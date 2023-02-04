@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Symfony4\Admin\Forms;
+namespace Untek\Sandbox\Sandbox\Application\Symfony4\Admin\Forms;
 
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Eav\Domain\Enums\AttributeTypeEnum;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Bundle\Eav\Domain\Enums\AttributeTypeEnum;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 
 class ApiKeyForm implements ValidationByMetadataInterface, BuildFormInterface
 {

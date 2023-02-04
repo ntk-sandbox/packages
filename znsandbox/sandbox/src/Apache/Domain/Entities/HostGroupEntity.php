@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Entities;
 
 class HostGroupEntity {
 

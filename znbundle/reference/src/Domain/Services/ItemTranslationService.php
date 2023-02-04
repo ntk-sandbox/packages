@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Services;
+namespace Untek\Bundle\Reference\Domain\Services;
 
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\ItemTranslationServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemTranslationServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 class ItemTranslationService extends BaseCrudService implements ItemTranslationServiceInterface
 {

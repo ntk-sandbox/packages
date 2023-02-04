@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Package\Domain\Libs\Deps;
+namespace Untek\Tool\Package\Domain\Libs\Deps;
 
 class PhpNameSpaceParser
 {

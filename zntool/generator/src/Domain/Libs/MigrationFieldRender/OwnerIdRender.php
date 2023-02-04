@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\MigrationFieldRender;
+namespace Untek\Tool\Generator\Domain\Libs\MigrationFieldRender;
 
 class OwnerIdRender extends BaseRender
 {

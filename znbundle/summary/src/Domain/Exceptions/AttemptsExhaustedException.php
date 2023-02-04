@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Exceptions;
+namespace Untek\Bundle\Summary\Domain\Exceptions;
 
 use Exception;
 

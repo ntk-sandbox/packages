@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs;
+namespace Untek\Core\DotEnv\Domain\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Pattern\Singleton\SingletonTrait;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Pattern\Singleton\SingletonTrait;
 
 class DotEnvMap
 {

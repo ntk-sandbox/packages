@@ -1,25 +1,25 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Synchronize\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Synchronize\Domain\Services;
 
 use Symfony\Contracts\Cache\CacheInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
-use ZnDatabase\Fixture\Domain\Repositories\FileRepository;
-use ZnDatabase\Fixture\Domain\Services\FixtureService;
-use ZnSandbox\Sandbox\Synchronize\Domain\Entities\DiffAttributeEntity;
-use ZnSandbox\Sandbox\Synchronize\Domain\Entities\DiffCollectionEntity;
-use ZnSandbox\Sandbox\Synchronize\Domain\Entities\DiffConfigEntity;
-use ZnSandbox\Sandbox\Synchronize\Domain\Entities\DiffItemEntity;
-use ZnSandbox\Sandbox\Synchronize\Domain\Interfaces\Services\SynchronizeServiceInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Fixture\Domain\Repositories\DbRepository;
+use Untek\Database\Fixture\Domain\Repositories\FileRepository;
+use Untek\Database\Fixture\Domain\Services\FixtureService;
+use Untek\Sandbox\Sandbox\Synchronize\Domain\Entities\DiffAttributeEntity;
+use Untek\Sandbox\Sandbox\Synchronize\Domain\Entities\DiffCollectionEntity;
+use Untek\Sandbox\Sandbox\Synchronize\Domain\Entities\DiffConfigEntity;
+use Untek\Sandbox\Sandbox\Synchronize\Domain\Entities\DiffItemEntity;
+use Untek\Sandbox\Sandbox\Synchronize\Domain\Interfaces\Services\SynchronizeServiceInterface;
 
 class SynchronizeService extends BaseService implements SynchronizeServiceInterface
 {

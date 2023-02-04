@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Enums\Rbac;
+namespace Untek\Bundle\Messenger\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
-use ZnCore\Contract\Rbac\Traits\CrudRbacInheritanceTrait;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\Core\Contract\Rbac\Traits\CrudRbacInheritanceTrait;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 class MessengerChatPermissionEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {

@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnUser\\Rbac\\": "src",
-      "ZnUser\\Rbac\\Tests\\": "tests"
+      "Untek\\User\\Rbac\\": "src",
+      "Untek\\User\\Rbac\\Tests\\": "tests"
     }
   }
 }

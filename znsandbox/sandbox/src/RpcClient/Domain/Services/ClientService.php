@@ -1,25 +1,25 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Services;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
-use ZnFramework\Rpc\Domain\Libs\RpcProvider;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\ClientEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\UserEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\ClientRepositoryInterface;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\ClientServiceInterface;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services\UserServiceInterface;
-use ZnSandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Libs\RpcProvider;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ClientEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\UserEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\ClientRepositoryInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services\ClientServiceInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services\UserServiceInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 class ClientService extends BaseService implements ClientServiceInterface
 {

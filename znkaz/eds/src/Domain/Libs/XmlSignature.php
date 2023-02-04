@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Libs;
+namespace Untek\Kaz\Eds\Domain\Libs;
 
 use DOMDocument;
 use Exception;
@@ -9,14 +9,14 @@ use phpseclib\File\X509;
 use RobRichards\XMLSecLibs\XMLSecEnc;
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
 use RobRichards\XMLSecLibs\XMLSecurityKey;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCrypt\Base\Domain\Exceptions\FailSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\InvalidDigestException;
-use ZnCrypt\Pki\X509\Domain\Helpers\X509Helper;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\FingerprintEntity;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\HashEntity;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\VerifyEntity;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;
+use Untek\Crypt\Pki\X509\Domain\Helpers\X509Helper;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\FingerprintEntity;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\HashEntity;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\VerifyEntity;
 
 class XmlSignature
 {

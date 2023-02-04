@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcOpenApi\Domain\Libs\OpenApi3;
+namespace Untek\Sandbox\Sandbox\RpcOpenApi\Domain\Libs\OpenApi3;
 
-use ZnCore\Contract\Encoder\Interfaces\EncodeInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncodeInterface;
 
 class ParametersSchema implements EncodeInterface
 {

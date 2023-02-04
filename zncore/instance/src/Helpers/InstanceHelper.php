@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\Instance\Helpers;
+namespace Untek\Core\Instance\Helpers;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
 
 /**
  * Работа с объектами
@@ -17,7 +17,7 @@ class InstanceHelper
      * @param array $constructParams
      * @param ContainerInterface|null $container
      * @return object
-     * @throws \ZnCore\Contract\Common\Exceptions\InvalidConfigException
+     * @throws \Untek\Core\Contract\Common\Exceptions\InvalidConfigException
      */
     public static function create($definition, array $constructParams = [], ContainerInterface $container = null): object
     {

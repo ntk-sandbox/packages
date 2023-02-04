@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Article\Domain\Entities;
+namespace Untek\Bundle\Article\Domain\Entities;
 
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class CategoryEntity implements EntityIdInterface
 {

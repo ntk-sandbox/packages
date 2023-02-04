@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain;
+namespace Untek\Crypt\Pki\X509\Domain;
 
-use ZnDomain\Domain\Interfaces\DomainInterface;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
 
 class Domain implements DomainInterface
 {

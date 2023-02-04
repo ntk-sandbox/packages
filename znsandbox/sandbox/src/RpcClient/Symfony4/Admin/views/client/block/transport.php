@@ -2,15 +2,15 @@
 
 
 /**
- * @var $this \ZnLib\Web\View\Libs\View
- * @var $rpcResponseEntity \ZnFramework\Rpc\Domain\Entities\RpcResponseEntity
- * @var $rpcRequestEntity \ZnFramework\Rpc\Domain\Entities\RpcRequestEntity
+ * @var $this \Untek\Lib\Web\View\Libs\View
+ * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
+ * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
  */
 
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Encoders\RequestEncoder;
-use ZnFramework\Rpc\Domain\Encoders\ResponseEncoder;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
+use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 $responseEncoder = new ResponseEncoder();
 $responseData = $responseEncoder->encode(EntityHelper::toArray($rpcResponseEntity, true));

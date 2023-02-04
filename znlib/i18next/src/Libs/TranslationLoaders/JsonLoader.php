@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\I18Next\Libs\TranslationLoaders;
+namespace Untek\Lib\I18Next\Libs\TranslationLoaders;
 
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnLib\I18Next\Interfaces\TranslationLoaders\TranslationLoaderInterface;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Lib\I18Next\Interfaces\TranslationLoaders\TranslationLoaderInterface;
 
 class JsonLoader implements TranslationLoaderInterface
 {

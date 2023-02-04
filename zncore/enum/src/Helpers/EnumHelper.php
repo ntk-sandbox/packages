@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\Enum\Helpers;
+namespace Untek\Core\Enum\Helpers;
 
 use InvalidArgumentException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\ReflectionHelper;
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Instance\Exceptions\NotInstanceOfException;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\ReflectionHelper;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Instance\Exceptions\NotInstanceOfException;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
 use ReflectionException;
 
 /**

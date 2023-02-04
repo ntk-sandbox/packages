@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Store\Drivers;
+namespace Untek\Lib\Components\Store\Drivers;
 
-use ZnLib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
 
 class Xml extends BaseEncoderDriver implements DriverInterface
 {

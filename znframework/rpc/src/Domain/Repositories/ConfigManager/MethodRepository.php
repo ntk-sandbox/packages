@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Repositories\ConfigManager;
+namespace Untek\Framework\Rpc\Domain\Repositories\ConfigManager;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Contracts\Cache\CacheInterface;
-use ZnLib\Components\Store\StoreFile;
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class MethodRepository extends BaseFileCrudRepository implements MethodRepositoryInterface
 {
@@ -48,7 +48,7 @@ class MethodRepository extends BaseFileCrudRepository implements MethodRepositor
     {
         $cacheItem = $this->cache->getItem(self::CACHE_KEY);
         if($cacheItem->get() == null) {
-            $collection = \ZnFramework\Rpc\Domain\Helpers\RoutesHelper::getAllRoutes();
+            $collection = \Untek\Framework\Rpc\Domain\Helpers\RoutesHelper::getAllRoutes();
             $cacheItem->set($collection);
             $cacheItem->expiresAfter(60);
             $this->cache->save($cacheItem);

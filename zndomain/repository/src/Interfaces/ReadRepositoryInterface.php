@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Repository\Interfaces;
+namespace Untek\Domain\Repository\Interfaces;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Domain\Interfaces\ReadAllInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Interfaces\ReadAllInterface;
 
 interface ReadRepositoryInterface extends
     RepositoryInterface, GetEntityClassInterface, ReadAllInterface, FindOneInterface//, RelationConfigInterface

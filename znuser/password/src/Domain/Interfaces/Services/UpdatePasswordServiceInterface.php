@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Password\Domain\Interfaces\Services;
+namespace Untek\User\Password\Domain\Interfaces\Services;
 
 interface UpdatePasswordServiceInterface
 {

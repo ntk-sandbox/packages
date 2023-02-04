@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\QueryFilter\Interfaces;
+namespace Untek\Domain\QueryFilter\Interfaces;
 
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Query;
 
 /**
  * Формирование параметров запроса из фильтра

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Dev\Composer\Domain\Interfaces\Services;
+namespace Untek\Tool\Dev\Composer\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ConfigServiceInterface extends CrudServiceInterface
 {

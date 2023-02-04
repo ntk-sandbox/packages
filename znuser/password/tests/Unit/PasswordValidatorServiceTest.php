@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Password\Tests\Unit;
+namespace Untek\User\Password\Tests\Unit;
 
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Validator\Helpers\ErrorCollectionHelper;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Validator\Helpers\ErrorCollectionHelper;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Tool\Test\Base\BaseTest;
 
 include_once __DIR__ . '/../bootstrap.php';
 

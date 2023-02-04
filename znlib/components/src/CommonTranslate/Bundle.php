@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\CommonTranslate;
+namespace Untek\Lib\Components\CommonTranslate;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

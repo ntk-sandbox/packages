@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Repositories\Eloquent;
+namespace Untek\Framework\Rpc\Domain\Repositories\Eloquent;
 
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
 
 class MethodRepository extends BaseEloquentCrudRepository implements MethodRepositoryInterface
 {

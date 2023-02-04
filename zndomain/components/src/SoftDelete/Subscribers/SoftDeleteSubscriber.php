@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnDomain\Components\SoftDelete\Subscribers;
+namespace Untek\Domain\Components\SoftDelete\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Domain\Events\QueryEvent;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnLib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Domain\Events\QueryEvent;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class SoftDeleteSubscriber implements EventSubscriberInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Rpc\Controllers;
+namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactTypeServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactTypeServiceInterface;
 
 class ContactTypeController extends BaseCrudRpcController
 {

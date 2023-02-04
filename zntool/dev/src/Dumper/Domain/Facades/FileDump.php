@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Dev\Dumper\Domain\Facades;
+namespace Untek\Tool\Dev\Dumper\Domain\Facades;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
 class FileDump
 {

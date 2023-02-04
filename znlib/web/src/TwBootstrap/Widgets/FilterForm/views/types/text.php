@@ -6,7 +6,7 @@
  * @var $value
  */
 
-use ZnLib\Web\Html\Helpers\Html; ?>
+use Untek\Lib\Web\Html\Helpers\Html; ?>
 
 <?= Html::input('text', $inputName, $value, [
     'class' => 'form-control',

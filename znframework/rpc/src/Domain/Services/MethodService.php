@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Services;
+namespace Untek\Framework\Rpc\Domain\Services;
 
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnFramework\Rpc\Domain\Exceptions\RpcMethodNotFoundException;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Framework\Rpc\Domain\Exceptions\RpcMethodNotFoundException;
 
 class MethodService extends BaseCrudService implements MethodServiceInterface
 {
@@ -46,7 +46,7 @@ class MethodService extends BaseCrudService implements MethodServiceInterface
             'is_verify_auth' => false,
 //          'permission_name' => 'oFixtureImport',
             'permission_name' => null,
-            'handler_class' => 'ZnFramework\Rpc\Rpc\Controllers\FixtureController',
+            'handler_class' => 'Untek\Framework\Rpc\Rpc\Controllers\FixtureController',
             'handler_method' => 'import',
             'status_id' => 100,
             'title' => null,

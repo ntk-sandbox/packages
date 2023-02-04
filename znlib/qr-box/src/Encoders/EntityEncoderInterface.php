@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\QrBox\Encoders;
+namespace Untek\Lib\QrBox\Encoders;
 
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 
 interface EntityEncoderInterface extends EncoderInterface
 {

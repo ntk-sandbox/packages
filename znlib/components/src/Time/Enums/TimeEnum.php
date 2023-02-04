@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Time\Enums;
+namespace Untek\Lib\Components\Time\Enums;
 
 /**
  * Единицы измерения времени

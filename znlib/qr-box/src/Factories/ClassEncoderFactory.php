@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\QrBox\Factories;
+namespace Untek\Lib\QrBox\Factories;
 
-use ZnLib\Components\Format\Encoders\GZipEncoder;
-use ZnLib\Components\Format\Encoders\ZipEncoder;
-use ZnLib\QrBox\Encoders\Base64Encoder;
-use ZnLib\QrBox\Encoders\HexEncoder;
-use ZnLib\QrBox\Libs\ClassEncoder;
+use Untek\Lib\Components\Format\Encoders\GZipEncoder;
+use Untek\Lib\Components\Format\Encoders\ZipEncoder;
+use Untek\Lib\QrBox\Encoders\Base64Encoder;
+use Untek\Lib\QrBox\Encoders\HexEncoder;
+use Untek\Lib\QrBox\Libs\ClassEncoder;
 
 class ClassEncoderFactory
 {

@@ -1,10 +1,10 @@
 <?php
 
-use ZnSandbox\Sandbox\Application\Symfony4\Admin\Controllers\ApplicationController;
-use ZnSandbox\Sandbox\Application\Symfony4\Admin\Controllers\EdsController;
+use Untek\Sandbox\Sandbox\Application\Symfony4\Admin\Controllers\ApplicationController;
+use Untek\Sandbox\Sandbox\Application\Symfony4\Admin\Controllers\EdsController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnSandbox\Sandbox\Application\Symfony4\Admin\Controllers\ApiKeyController;
-use ZnLib\Web\Controller\Helpers\RouteHelper;
+use Untek\Sandbox\Sandbox\Application\Symfony4\Admin\Controllers\ApiKeyController;
+use Untek\Lib\Web\Controller\Helpers\RouteHelper;
 
 return function (RoutingConfigurator $routes) {
     RouteHelper::generateCrud($routes, ApplicationController::class, '/application/application');

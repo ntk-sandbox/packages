@@ -1,22 +1,22 @@
 <?php
 
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
-use ZnFramework\Wsdl\Domain\Libs\SoapHandler;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
+use Untek\Framework\Wsdl\Domain\Libs\SoapHandler;
 use Psr\Container\ContainerInterface;
 
 
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 return function (ContainerConfiguratorInterface $configurator) {
     $configurator->importFromDir([__DIR__ . '/../src']);
     $isNullDriver = EnvHelper::isTest() || EnvHelper::isDev();
     if($isNullDriver) {
-        $configurator->singleton(ClientRepositoryInterface::class, 'ZnFramework\\Wsdl\\Domain\\Repositories\\Null\\ClientRepository');
+        $configurator->singleton(ClientRepositoryInterface::class, 'Untek\\Framework\\Wsdl\\Domain\\Repositories\\Null\\ClientRepository');
     } else {
-        $configurator->singleton(ClientRepositoryInterface::class, 'ZnFramework\\Wsdl\\Domain\\Repositories\\Wsdl\\ClientRepository');
+        $configurator->singleton(ClientRepositoryInterface::class, 'Untek\\Framework\\Wsdl\\Domain\\Repositories\\Wsdl\\ClientRepository');
     }
 
 //    $configurator->singleton(SoapHandler::class, function(ContainerInterface $container) {
@@ -38,9 +38,9 @@ return function (ContainerConfiguratorInterface $configurator) {
 
 //return [
 //	'singletons' => [
-//        'ZnFramework\\Wsdl\\Domain\\Interfaces\\Repositories\\ClientRepositoryInterface' => EnvHelper::isTest()
-//            ? 'ZnFramework\\Wsdl\\Domain\\Repositories\\Null\\ClientRepository'
-//            : 'ZnFramework\\Wsdl\\Domain\\Repositories\\Wsdl\\ClientRepository'
+//        'Untek\\Framework\\Wsdl\\Domain\\Interfaces\\Repositories\\ClientRepositoryInterface' => EnvHelper::isTest()
+//            ? 'Untek\\Framework\\Wsdl\\Domain\\Repositories\\Null\\ClientRepository'
+//            : 'Untek\\Framework\\Wsdl\\Domain\\Repositories\\Wsdl\\ClientRepository'
 //        ,
 //		SoapHandler::class => function(ContainerInterface $container) {
 //            /** @var SoapHandler $soapHandler */

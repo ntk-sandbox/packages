@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders;
 
 class JsonEncoder extends BaseEncoder
 {

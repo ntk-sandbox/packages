@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Exceptions;
+namespace Untek\Crypt\Base\Domain\Exceptions;
 
 class CertificateExpiredException extends \UnexpectedValueException
 {

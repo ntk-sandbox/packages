@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Events;
+namespace Untek\User\Authentication\Domain\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnUser\Authentication\Domain\Forms\AuthForm;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\EventDispatcher\Traits\EventSkipHandleTrait;
+use Untek\User\Authentication\Domain\Forms\AuthForm;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\EventDispatcher\Traits\EventSkipHandleTrait;
 
 class AuthEvent extends Event
 {

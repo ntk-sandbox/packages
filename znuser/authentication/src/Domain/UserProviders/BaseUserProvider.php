@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\UserProviders;
+namespace Untek\User\Authentication\Domain\UserProviders;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Exception\UserNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\Common\Exceptions\NotSupportedException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Repository\Interfaces\FindOneInterface;
-use ZnUser\Authentication\Domain\Helpers\TokenHelper;
-use ZnUser\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\Common\Exceptions\NotSupportedException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Repository\Interfaces\FindOneInterface;
+use Untek\User\Authentication\Domain\Helpers\TokenHelper;
+use Untek\User\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
 
 abstract class BaseUserProvider implements UserProviderInterface
 {

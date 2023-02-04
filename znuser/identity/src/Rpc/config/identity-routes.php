@@ -1,6 +1,6 @@
 <?php
 
-use ZnUser\Identity\Rpc\Controllers\IdentityController;
+use Untek\User\Identity\Rpc\Controllers\IdentityController;
 
 return [
     [

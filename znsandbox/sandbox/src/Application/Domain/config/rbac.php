@@ -1,7 +1,7 @@
 <?php
 
-use ZnSandbox\Sandbox\Application\Domain\Enums\Rbac\ApplicationPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Sandbox\Sandbox\Application\Domain\Enums\Rbac\ApplicationPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

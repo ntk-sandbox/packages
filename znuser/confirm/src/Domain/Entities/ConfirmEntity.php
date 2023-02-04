@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Confirm\Domain\Entities;
+namespace Untek\User\Confirm\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use DateTime;
 
 class ConfirmEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface

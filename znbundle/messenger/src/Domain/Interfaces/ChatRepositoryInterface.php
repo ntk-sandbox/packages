@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Interfaces;
+namespace Untek\Bundle\Messenger\Domain\Interfaces;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnBundle\Messenger\Domain\Entities\ChatEntity;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Bundle\Messenger\Domain\Entities\ChatEntity;
 
 interface ChatRepositoryInterface extends CrudRepositoryInterface
 {

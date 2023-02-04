@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnLib\Web\Widget\Base;
+namespace Untek\Lib\Web\Widget\Base;
 
 use ReflectionClass;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
-use ZnLib\Web\View\Helpers\RenderHelper;
-use ZnLib\Web\View\Libs\View;
-use ZnLib\Web\Widget\Interfaces\WidgetInterface2;
+use Untek\Lib\Web\View\Helpers\RenderHelper;
+use Untek\Lib\Web\View\Libs\View;
+use Untek\Lib\Web\Widget\Interfaces\WidgetInterface2;
 
 abstract class BaseWidget2 implements WidgetInterface2
 {
@@ -22,7 +22,7 @@ abstract class BaseWidget2 implements WidgetInterface2
     public function getView(): View
     {
         if($this->view == null) {
-            $this->view = \ZnCore\Container\Helpers\ContainerHelper::getContainer()->get(View::class);
+            $this->view = \Untek\Core\Container\Helpers\ContainerHelper::getContainer()->get(View::class);
             //$this->view = new View();
         }
         return $this->view;

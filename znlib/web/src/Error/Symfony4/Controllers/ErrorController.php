@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Error\Symfony4\Controllers;
+namespace Untek\Lib\Web\Error\Symfony4\Controllers;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -10,13 +10,13 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
-use ZnUser\Authentication\Symfony4\Web\Enums\WebUserEnum;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
+use Untek\User\Authentication\Symfony4\Web\Enums\WebUserEnum;
 
 DeprecateHelper::hardThrow();
 

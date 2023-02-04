@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Stress\Domain\Libs;
+namespace Untek\Tool\Stress\Domain\Libs;
 
 class Runtime
 {

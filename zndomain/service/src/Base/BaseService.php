@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDomain\Service\Base;
+namespace Untek\Domain\Service\Base;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnDomain\Repository\Traits\RepositoryAwareTrait;
-use ZnDomain\Service\Interfaces\CreateEntityInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
+use Untek\Domain\Service\Interfaces\CreateEntityInterface;
 
 abstract class BaseService implements GetEntityClassInterface, CreateEntityInterface
 {

@@ -3,8 +3,8 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDatabase\Migration\Domain\Base\BaseColumnMigration;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Database\Migration\Domain\Base\BaseColumnMigration;
 
 class m_2022_02_20_054747_add_status_id_in_person_table extends BaseColumnMigration
 {

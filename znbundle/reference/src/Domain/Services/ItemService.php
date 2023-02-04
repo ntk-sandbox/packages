@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Services;
+namespace Untek\Bundle\Reference\Domain\Services;
 
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Components\SoftDelete\Traits\Service\SoftDeleteTrait;
-use ZnDomain\Components\SoftDelete\Traits\Service\SoftRestoreTrait;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Components\SoftDelete\Traits\Service\SoftDeleteTrait;
+use Untek\Domain\Components\SoftDelete\Traits\Service\SoftRestoreTrait;
 
 class ItemService extends BaseCrudService implements ItemServiceInterface
 {

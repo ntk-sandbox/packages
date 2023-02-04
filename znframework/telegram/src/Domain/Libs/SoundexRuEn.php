@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Libs;
+namespace Untek\Framework\Telegram\Domain\Libs;
 
-use ZnFramework\Telegram\Domain\Helpers\TranslitHelper;
+use Untek\Framework\Telegram\Domain\Helpers\TranslitHelper;
 
 class SoundexRuEn
 {

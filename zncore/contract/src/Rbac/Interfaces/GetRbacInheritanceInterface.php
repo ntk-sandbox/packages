@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\Rbac\Interfaces;
+namespace Untek\Core\Contract\Rbac\Interfaces;
 
 /**
  * Возможность получения древа наследования полномочий RBAC

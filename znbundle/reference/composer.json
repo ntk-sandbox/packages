@@ -15,8 +15,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\Reference\\": "src",
-			"ZnBundle\\Reference\\Tests\\": "tests"
+			"Untek\\Bundle\\Reference\\": "src",
+			"Untek\\Bundle\\Reference\\Tests\\": "tests"
 		}
 	}
 }

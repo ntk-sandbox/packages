@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Person\Domain\Entities;
+namespace Untek\Bundle\Person\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class PersonEntity implements ValidationByMetadataInterface
 {

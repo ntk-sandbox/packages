@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Enums\Rbac;
+namespace Untek\Bundle\Reference\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
-use ZnCore\Contract\Rbac\Traits\CrudRbacInheritanceTrait;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\Core\Contract\Rbac\Traits\CrudRbacInheritanceTrait;
 
 class ReferenceItemPermissionEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {

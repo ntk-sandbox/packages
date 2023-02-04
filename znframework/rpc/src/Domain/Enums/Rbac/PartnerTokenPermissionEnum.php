@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Enums\Rbac;
+namespace Untek\Framework\Rpc\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class PartnerTokenPermissionEnum implements GetLabelsInterface
 {

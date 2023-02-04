@@ -1,9 +1,9 @@
 <?php
 
-use ZnBundle\Storage\Domain\Enums\Rbac\StorageFilePermissionEnum;
-use ZnBundle\Storage\Domain\Enums\Rbac\StorageMyFilePermissionEnum;
-use ZnBundle\Storage\Domain\Enums\Rbac\StorageServicePermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Bundle\Storage\Domain\Enums\Rbac\StorageFilePermissionEnum;
+use Untek\Bundle\Storage\Domain\Enums\Rbac\StorageMyFilePermissionEnum;
+use Untek\Bundle\Storage\Domain\Enums\Rbac\StorageServicePermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

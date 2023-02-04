@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnDomain\Relation\Libs;
+namespace Untek\Domain\Relation\Libs;
 
 use InvalidArgumentException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Interfaces\RelationInterface;
-use ZnDomain\Repository\Interfaces\RelationConfigInterface;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Interfaces\RelationInterface;
+use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 class RelationLoader
 {

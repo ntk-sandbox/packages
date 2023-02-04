@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Person\Domain\Interfaces\Services;
+namespace Untek\Bundle\Person\Domain\Interfaces\Services;
 
-use ZnBundle\Person\Domain\Entities\PersonEntity;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Bundle\Person\Domain\Entities\PersonEntity;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 
 interface PersonServiceInterface
 {

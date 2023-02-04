@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Entities;
+namespace Untek\Bundle\Queue\Domain\Entities;
 
-use ZnCore\Collection\Libs\Collection;
+use Untek\Core\Collection\Libs\Collection;
 
 class TotalEntity
 {

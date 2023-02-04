@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Debug\Domain\Forms;
+namespace Untek\Sandbox\Sandbox\Debug\Domain\Forms;
 
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 

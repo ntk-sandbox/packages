@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Libs\Parsers;
+namespace Untek\Kaz\Iin\Domain\Libs\Parsers;
 
-use ZnKaz\Iin\Domain\Entities\DateEntity;
-use ZnKaz\Iin\Domain\Exceptions\BadDateException;
+use Untek\Kaz\Iin\Domain\Entities\DateEntity;
+use Untek\Kaz\Iin\Domain\Exceptions\BadDateException;
 
 class JuridicalDateParser implements DateParserInterface
 {

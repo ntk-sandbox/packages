@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Dashboard\Domain\Services;
+namespace Untek\Bundle\Dashboard\Domain\Services;
 
-use ZnBundle\Dashboard\Domain\Interfaces\Services\DocServiceInterface;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Bundle\Dashboard\Domain\Interfaces\Services\DocServiceInterface;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
 class DocService implements DocServiceInterface
 {

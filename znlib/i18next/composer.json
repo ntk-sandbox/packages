@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnLib\\I18Next\\": "src",
-      "ZnLib\\I18Next\\Tests\\": "tests"
+      "Untek\\Lib\\I18Next\\": "src",
+      "Untek\\Lib\\I18Next\\Tests\\": "tests"
     }
   }
 }

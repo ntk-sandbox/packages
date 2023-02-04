@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Interfaces\Services;
+namespace Untek\Bundle\Eav\Domain\Interfaces\Services;
 
-use ZnBundle\Eav\Domain\Entities\AttributeEntity;
-use ZnBundle\Eav\Domain\Entities\DynamicEntity;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
+use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ValueServiceInterface extends CrudServiceInterface
 {

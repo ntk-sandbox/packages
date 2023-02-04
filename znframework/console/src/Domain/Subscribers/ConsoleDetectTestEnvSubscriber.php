@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Subscribers;
+namespace Untek\Framework\Console\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\App\Enums\AppEventEnum;
-use ZnCore\App\Events\AppEvent;
-use ZnFramework\Console\Domain\Libs\EnvDetector\ConsoleEnvDetector;
+use Untek\Core\App\Enums\AppEventEnum;
+use Untek\Core\App\Events\AppEvent;
+use Untek\Framework\Console\Domain\Libs\EnvDetector\ConsoleEnvDetector;
 
 class ConsoleDetectTestEnvSubscriber implements EventSubscriberInterface
 {

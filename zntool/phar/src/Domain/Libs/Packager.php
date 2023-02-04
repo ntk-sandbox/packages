@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Phar\Domain\Libs;
+namespace Untek\Tool\Phar\Domain\Libs;
 
 use ArrayIterator;
 use Phar;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
 class Packager
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person\Rpc\Controllers;
+namespace Untek\Sandbox\Sandbox\Person\Rpc\Controllers;
 
-use ZnSandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Sandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
 
 class PersonController extends BaseCrudRpcController
 {

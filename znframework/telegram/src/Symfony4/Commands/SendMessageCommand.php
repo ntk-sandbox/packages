@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Telegram\Symfony4\Commands;
+namespace Untek\Framework\Telegram\Symfony4\Commands;
 
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Libs\Container;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnFramework\Telegram\Domain\Services\BotService;
-use ZnFramework\Telegram\Domain\Services\ResponseService;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Framework\Telegram\Domain\Services\BotService;
+use Untek\Framework\Telegram\Domain\Services\ResponseService;
 
 class SendMessageCommand extends Command
 {

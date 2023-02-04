@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Reference;
+namespace Untek\Bundle\Reference;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

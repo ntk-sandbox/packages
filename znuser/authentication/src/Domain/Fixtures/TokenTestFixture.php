@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Fixtures;
+namespace Untek\User\Authentication\Domain\Fixtures;
 
 class TokenTestFixture
 {

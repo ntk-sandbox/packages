@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\Arr\Libs;
+namespace Untek\Core\Arr\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class Alias
 {

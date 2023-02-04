@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\Store\Helpers;
+namespace Untek\Lib\Components\Store\Helpers;
 
 use Yii;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
 class FileGeneratorHelper
 {

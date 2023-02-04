@@ -1,8 +1,12 @@
 <?php
 
-namespace ZnDatabase\Migration;
+namespace Untek\Database\Migration;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Database\Migration\Commands\DownCommand;
+use Untek\Database\Migration\Commands\GenerateCommand;
+use Untek\Database\Migration\Commands\UpCommand;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
 
 class Bundle extends BaseBundle
 {
@@ -12,11 +16,18 @@ class Bundle extends BaseBundle
         return 'databaseMigration';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnDatabase\Migration\Commands',
+            'Untek\Database\Migration\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(DownCommand::class);
+        $commandConfigurator->registerCommandClass(GenerateCommand::class);
+        $commandConfigurator->registerCommandClass(UpCommand::class);
     }
 
     public function container(): array

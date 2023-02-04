@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Authentication\Rpc\Controllers\ImitationController;
-use ZnUser\Authentication\Domain\Enums\Rbac\ImitationAuthenticationPermissionEnum;
+use Untek\User\Authentication\Rpc\Controllers\ImitationController;
+use Untek\User\Authentication\Domain\Enums\Rbac\ImitationAuthenticationPermissionEnum;
 
 return [
     [

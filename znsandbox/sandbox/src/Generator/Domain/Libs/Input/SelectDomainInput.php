@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Libs\Input;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Libs\Input;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\BundleEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
-use ZnSandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\BundleEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
+use Untek\Sandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 
 class SelectDomainInput extends BaseInput
 {

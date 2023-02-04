@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Repositories\Console;
+namespace Untek\Bundle\Language\Domain\Repositories\Console;
 
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use ZnBundle\Language\Domain\Interfaces\Repositories\StorageRepositoryInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Repositories\StorageRepositoryInterface;
 
 class StorageRepository implements StorageRepositoryInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\TalkBox\Commands;
+namespace Untek\Bundle\TalkBox\Commands;
 
-use ZnBundle\TalkBox\Domain\__Handlers\DialogEventHandler;
+use Untek\Bundle\TalkBox\Domain\__Handlers\DialogEventHandler;
 use danog\MadelineProto\API;
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Libs\Container;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
 
 class FreeDialogCommand extends Command
 {

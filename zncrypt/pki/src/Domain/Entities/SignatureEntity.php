@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Entities;
+namespace Untek\Crypt\Pki\Domain\Entities;
 
 class SignatureEntity
 {

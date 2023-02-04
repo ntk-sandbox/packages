@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Filter\Widgets\Text;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Text;
 
-use ZnLib\Web\TwBootstrap\Widgets\Filter\Widgets\BaseFilterWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\BaseFilterWidget;
 
 class TextFilterWidget extends BaseFilterWidget
 {

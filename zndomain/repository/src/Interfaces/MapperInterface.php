@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Repository\Interfaces;
+namespace Untek\Domain\Repository\Interfaces;
 
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 
 /**
  * Возможность маппинга сущностей

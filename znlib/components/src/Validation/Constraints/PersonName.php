@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Validation\Constraints;
+namespace Untek\Lib\Components\Validation\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 

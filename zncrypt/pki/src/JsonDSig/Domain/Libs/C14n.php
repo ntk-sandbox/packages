@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs;
 
-use ZnCore\Collection\Libs\Collection;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders\HexEncoder;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders\JsonEncoder;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders\SortEncoder;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders\HexEncoder;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders\JsonEncoder;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders\SortEncoder;
+use Untek\Lib\Components\Format\Encoders\ChainEncoder;
 
 class C14n
 {

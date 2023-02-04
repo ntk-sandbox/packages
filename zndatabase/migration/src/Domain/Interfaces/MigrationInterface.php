@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Interfaces;
+namespace Untek\Database\Migration\Domain\Interfaces;
 
 use Illuminate\Database\Schema\Builder;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnCore\Base\Tests\Unit;
+namespace Untek\Core\Base\Tests\Unit;
 
-use ZnKaz\Iin\Domain\Entities\IndividualEntity;
-use ZnKaz\Iin\Domain\Entities\JuridicalEntity;
-use ZnKaz\Iin\Domain\Exceptions\BadDateException;
-use ZnKaz\Iin\Domain\Exceptions\BadTypeException;
-use ZnKaz\Iin\Domain\Helpers\IinParser;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Kaz\Iin\Domain\Entities\IndividualEntity;
+use Untek\Kaz\Iin\Domain\Entities\JuridicalEntity;
+use Untek\Kaz\Iin\Domain\Exceptions\BadDateException;
+use Untek\Kaz\Iin\Domain\Exceptions\BadTypeException;
+use Untek\Kaz\Iin\Domain\Helpers\IinParser;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class ValidateTest extends BaseTest
 {

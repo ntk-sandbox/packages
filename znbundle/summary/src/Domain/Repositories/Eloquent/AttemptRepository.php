@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Summary\Domain\Repositories\Eloquent;
 
 use DateTime;
-use ZnBundle\Summary\Domain\Entities\AttemptEntity;
-use ZnBundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Summary\Domain\Entities\AttemptEntity;
+use Untek\Bundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class AttemptRepository extends BaseEloquentCrudRepository implements AttemptRepositoryInterface
 {

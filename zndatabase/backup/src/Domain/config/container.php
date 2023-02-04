@@ -3,7 +3,7 @@
 return [
 	'definitions' => [],
 	'singletons' => [
-		'ZnDatabase\\Backup\\Domain\\Interfaces\\Services\\DumpServiceInterface' => 'ZnDatabase\\Backup\\Domain\\Services\\DumpService',
-		'ZnDatabase\\Backup\\Domain\\Interfaces\\Repositories\\DumpRepositoryInterface' => 'ZnDatabase\\Backup\\Domain\\Repositories\\File\\DumpRepository',
+		'Untek\\Database\\Backup\\Domain\\Interfaces\\Services\\DumpServiceInterface' => 'Untek\\Database\\Backup\\Domain\\Services\\DumpService',
+		'Untek\\Database\\Backup\\Domain\\Interfaces\\Repositories\\DumpRepositoryInterface' => 'Untek\\Database\\Backup\\Domain\\Repositories\\File\\DumpRepository',
 	],
 ];

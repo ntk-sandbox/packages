@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Libs;
+namespace Untek\Database\Base\Domain\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class TableAlias
 {

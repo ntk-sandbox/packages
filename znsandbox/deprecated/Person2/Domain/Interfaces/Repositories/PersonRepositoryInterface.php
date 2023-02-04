@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
 
 interface PersonRepositoryInterface
 {

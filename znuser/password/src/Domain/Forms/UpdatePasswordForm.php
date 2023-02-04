@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Password\Domain\Forms;
+namespace Untek\User\Password\Domain\Forms;
 
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
-use ZnUser\Password\Domain\Helpers\PasswordValidatorHelper;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\User\Password\Domain\Helpers\PasswordValidatorHelper;
 
 class UpdatePasswordForm implements ValidationByMetadataInterface, BuildFormInterface
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnUser\Person\Domain\Services;
+namespace Untek\User\Person\Domain\Services;
 
-use ZnBundle\Eav\Domain\Entities\AttributeEntity;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnUser\Person\Domain\Entities\ContactEntity;
-use ZnUser\Person\Domain\Interfaces\Services\ContactTypeServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\MyContactServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\User\Person\Domain\Entities\ContactEntity;
+use Untek\User\Person\Domain\Interfaces\Services\ContactTypeServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\MyContactServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 /**
  * @method ContactRepositoryInterface getRepository()

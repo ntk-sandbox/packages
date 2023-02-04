@@ -1,3 +1,3 @@
 <?php
 
-\ZnCore\Env\DotEnvHelper::init();
+\Untek\Core\Env\DotEnvHelper::init();

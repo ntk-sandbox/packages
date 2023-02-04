@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Interfaces\Services;
+namespace Untek\Bundle\TalkBox\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface AnswerTagServiceInterface extends CrudServiceInterface
 {

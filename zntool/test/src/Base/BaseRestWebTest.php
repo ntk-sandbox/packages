@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Test\Base;
+namespace Untek\Tool\Test\Base;
 
-use ZnTool\Test\Asserts\RestWebAssert;
+use Untek\Tool\Test\Asserts\RestWebAssert;
 use Psr\Http\Message\ResponseInterface;
 
 abstract class BaseRestWebTest extends BaseRestTest

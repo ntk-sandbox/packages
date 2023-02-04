@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\EgovData\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\EgovData\Domain\Libs;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
 
 class EgovDataProvider
 {

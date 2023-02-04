@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Generator\Commands;
+namespace Untek\Tool\Generator\Commands;
 
-use ZnTool\Generator\Domain\Dto\BuildDto;
-use ZnTool\Generator\Domain\Scenarios\Input\BaseInputScenario;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Scenarios\Input\BaseInputScenario;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

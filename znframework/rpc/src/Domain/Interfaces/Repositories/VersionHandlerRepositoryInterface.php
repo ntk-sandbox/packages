@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Repositories;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface VersionHandlerRepositoryInterface extends CrudRepositoryInterface
 {

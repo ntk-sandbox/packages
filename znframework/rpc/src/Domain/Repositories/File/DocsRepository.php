@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Repositories\File;
+namespace Untek\Framework\Rpc\Domain\Repositories\File;
 
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnFramework\Rpc\Domain\Entities\DocEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
-use ZnLib\Web\Html\Helpers\HtmlHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Framework\Rpc\Domain\Entities\DocEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
+use Untek\Lib\Web\Html\Helpers\HtmlHelper;
 
 class DocsRepository implements DocsRepositoryInterface
 {

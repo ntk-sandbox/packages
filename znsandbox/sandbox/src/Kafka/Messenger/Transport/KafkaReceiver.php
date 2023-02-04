@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Kafka\Messenger\Transport;
+namespace Untek\Sandbox\Sandbox\Kafka\Messenger\Transport;
 
 use longlang\phpkafka\Consumer\ConsumeMessage;
 use longlang\phpkafka\Consumer\Consumer;
@@ -9,8 +9,8 @@ use Symfony\Component\Messenger\Stamp\TransportMessageIdStamp;
 use Symfony\Component\Messenger\Transport\Receiver\ReceiverInterface;
 use Symfony\Component\Messenger\Transport\Sender\SenderInterface;
 use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;
-use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\ConsumeMessageStamp;
-use ZnSandbox\Sandbox\Kafka\Messenger\Stamp\TopicStamp;
+use Untek\Sandbox\Sandbox\Kafka\Messenger\Stamp\ConsumeMessageStamp;
+use Untek\Sandbox\Sandbox\Kafka\Messenger\Stamp\TopicStamp;
 
 class KafkaReceiver implements ReceiverInterface
 {

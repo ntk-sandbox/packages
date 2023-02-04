@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Notify\Domain\Interfaces\Repositories;
 
 interface FlashRepositoryInterface
 {

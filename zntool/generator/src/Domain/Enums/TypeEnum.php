@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Enums;
+namespace Untek\Tool\Generator\Domain\Enums;
 
 class TypeEnum
 {

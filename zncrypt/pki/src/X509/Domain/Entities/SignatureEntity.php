@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\X509\Domain\Entities;
+namespace Untek\Crypt\Pki\X509\Domain\Entities;
 
 
-use ZnCore\Text\Helpers\TextHelper;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
 
 class SignatureEntity
 {

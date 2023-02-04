@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Telegram\Symfony4\Commands;
+namespace Untek\Framework\Telegram\Symfony4\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

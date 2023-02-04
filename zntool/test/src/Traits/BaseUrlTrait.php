@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Test\Traits;
+namespace Untek\Tool\Test\Traits;
 
 trait BaseUrlTrait
 {

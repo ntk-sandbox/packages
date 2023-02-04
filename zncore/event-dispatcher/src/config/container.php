@@ -2,9 +2,9 @@
 
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnCore\EventDispatcher\Libs\EventDispatcherConfigurator;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\EventDispatcher\Libs\EventDispatcherConfigurator;
 
 return function (ContainerConfiguratorInterface $containerConfigurator) {
     $containerConfigurator->singleton(EventDispatcherConfiguratorInterface::class, EventDispatcherConfigurator::class);

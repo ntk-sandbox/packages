@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Package\Domain\Services;
+namespace Untek\Tool\Package\Domain\Services;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\ComposerHelper;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
-use ZnTool\Package\Domain\Libs\Deps\PhpClassNameInQuotedStringParser;
-use ZnTool\Package\Domain\Libs\Deps\PhpClassNameParser;
-use ZnTool\Package\Domain\Libs\Deps\PhpUsesParser;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\ComposerHelper;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
+use Untek\Tool\Package\Domain\Libs\Deps\PhpClassNameInQuotedStringParser;
+use Untek\Tool\Package\Domain\Libs\Deps\PhpClassNameParser;
+use Untek\Tool\Package\Domain\Libs\Deps\PhpUsesParser;
 
 class DependencyService
 {

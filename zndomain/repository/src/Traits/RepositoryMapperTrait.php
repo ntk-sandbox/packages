@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnDomain\Repository\Traits;
+namespace Untek\Domain\Repository\Traits;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Repository\Libs\MapperEncoder;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Repository\Libs\MapperEncoder;
+use Untek\Lib\Components\Format\Encoders\ChainEncoder;
 
 trait RepositoryMapperTrait
 {

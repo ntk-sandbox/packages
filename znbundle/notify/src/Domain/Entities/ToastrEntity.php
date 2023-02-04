@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Entities;
+namespace Untek\Bundle\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Bundle\Notify\Domain\Enums\FlashMessageTypeEnum;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ToastrEntity implements ValidationByMetadataInterface
 {

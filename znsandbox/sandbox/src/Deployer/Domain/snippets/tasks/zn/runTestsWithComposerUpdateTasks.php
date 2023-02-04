@@ -1,16 +1,16 @@
 <?php
 
-use ZnLib\Components\ShellRobot\Domain\Tasks\FileSystem\SetPermissionTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerInstallTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy\ConfigureDomainTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Tests\InitReleaseTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy\MakeLinkForCurrentReleaseTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Git\GitCloneTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnImportFixtureTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnInitTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnMigrateUpTask;
+use Untek\Lib\Components\ShellRobot\Domain\Tasks\FileSystem\SetPermissionTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerInstallTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy\ConfigureDomainTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Tests\InitReleaseTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy\MakeLinkForCurrentReleaseTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Git\GitCloneTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnImportFixtureTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnInitTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnMigrateUpTask;
 
-\ZnCore\Code\Helpers\DeprecateHelper::hardThrow();
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
 
 return [
     [
@@ -23,7 +23,7 @@ return [
         'branch' => '{{gitBranch}}',
     ],
     [
-        'class' => \ZnSandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerUpdateTask::class,
+        'class' => \Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerUpdateTask::class,
         'directory' => '{{releasePath}}',
 //            'noDev' => true,
     ],
@@ -46,11 +46,11 @@ return [
     ],
     [
         'class' => ZnMigrateUpTask::class,
-        'env' => \ZnCore\Env\Enums\EnvEnum::TEST,
+        'env' => \Untek\Core\Env\Enums\EnvEnum::TEST,
     ],
     [
         'class' => ZnMigrateUpTask::class,
-//        'env' => \ZnCore\Env\Enums\EnvEnum::TEST,
+//        'env' => \Untek\Core\Env\Enums\EnvEnum::TEST,
     ],
     [
         'class' => ConfigureDomainTask::class,
@@ -62,10 +62,10 @@ return [
         ],
     ],
     [
-        'class' => \ZnSandbox\Sandbox\Deployer\Domain\Tasks\Apache\ApacheRestartTask::class,
+        'class' => \Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Apache\ApacheRestartTask::class,
     ],
 
     [
-        'class' => \ZnSandbox\Sandbox\Deployer\Domain\Tasks\PhpUnit\RunPhpUnitTestTask::class,
+        'class' => \Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\PhpUnit\RunPhpUnitTestTask::class,
     ],
 ];

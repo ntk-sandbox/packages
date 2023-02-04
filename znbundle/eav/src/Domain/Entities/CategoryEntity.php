@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Entities;
+namespace Untek\Bundle\Eav\Domain\Entities;
 
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 
 class CategoryEntity implements ValidationByMetadataInterface, EntityIdInterface, BuildFormInterface
 {

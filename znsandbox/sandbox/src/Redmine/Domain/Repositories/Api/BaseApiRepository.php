@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Repositories\Api;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Repositories\Api;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 use Redmine\Api\AbstractApi;
 use Redmine\Client;
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Contract\Common\Exceptions\NotSupportedException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Traits\RepositoryMapperTrait;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Core\Contract\Common\Exceptions\NotSupportedException;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
 
 abstract class BaseApiRepository implements IssueApiRepositoryInterface
 {

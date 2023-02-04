@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Services;
 
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Traits\RepositoryAwareTrait;
-use ZnSandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
-use ZnSandbox\Sandbox\Apache\Domain\Repositories\Conf\HostsRepository;
-use ZnSandbox\Sandbox\Apache\Domain\Repositories\Conf\ServerRepository;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
+use Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
+use Untek\Sandbox\Sandbox\Apache\Domain\Repositories\Conf\HostsRepository;
+use Untek\Sandbox\Sandbox\Apache\Domain\Repositories\Conf\ServerRepository;
 
 class ServerService
 {

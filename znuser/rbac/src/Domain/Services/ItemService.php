@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
-use ZnUser\Rbac\Domain\Interfaces\Services\ItemServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Interfaces\Services\ItemServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
 
 class ItemService extends BaseCrudService implements ItemServiceInterface
 {

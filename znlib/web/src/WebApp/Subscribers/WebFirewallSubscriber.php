@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\WebApp\Subscribers;
+namespace Untek\Lib\Web\WebApp\Subscribers;
 
 use Symfony\Bundle\FrameworkBundle\Test\TestBrowserToken;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -12,15 +12,15 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInt
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\SignedCookie\Libs\CookieValue;
-use ZnUser\Authentication\Domain\Enums\WebCookieEnum;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\SignedCookie\Libs\CookieValue;
+use Untek\User\Authentication\Domain\Enums\WebCookieEnum;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 
 class WebFirewallSubscriber implements EventSubscriberInterface
 {

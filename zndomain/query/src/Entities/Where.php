@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Query\Entities;
+namespace Untek\Domain\Query\Entities;
 
-use ZnDomain\Query\Enums\OperatorEnum;
+use Untek\Domain\Query\Enums\OperatorEnum;
 
 class Where
 {

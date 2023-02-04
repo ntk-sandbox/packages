@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Identity;
+namespace Untek\User\Identity;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {
@@ -15,9 +15,9 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-//            new \ZnBundle\User\Bundle(['all']),
-            new \ZnUser\Authentication\Bundle(['all']),
-            new \ZnUser\Confirm\Bundle(['all']),
+//            new \Untek\Bundle\User\Bundle(['all']),
+            new \Untek\User\Authentication\Bundle(['all']),
+            new \Untek\User\Confirm\Bundle(['all']),
         ];
     }
 

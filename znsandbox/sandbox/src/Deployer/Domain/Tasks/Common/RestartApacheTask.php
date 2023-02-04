@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Tasks\Common;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Common;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShell;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
-use ZnSandbox\Sandbox\Deployer\Domain\Repositories\Shell\ApacheShell;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShell;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\TaskInterface;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Repositories\Shell\ApacheShell;
 
 DeprecateHelper::hardThrow();
 

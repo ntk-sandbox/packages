@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\QrBox\Enums;
+namespace Untek\Lib\QrBox\Enums;
 
 class ImageExtensionEnum
 {

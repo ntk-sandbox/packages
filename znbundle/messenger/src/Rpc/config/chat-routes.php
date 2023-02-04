@@ -1,7 +1,7 @@
 <?php
 
-use ZnBundle\Messenger\Domain\Enums\Rbac\MessengerChatPermissionEnum;
-use ZnBundle\Messenger\Rpc\Controllers\ChatController;
+use Untek\Bundle\Messenger\Domain\Enums\Rbac\MessengerChatPermissionEnum;
+use Untek\Bundle\Messenger\Rpc\Controllers\ChatController;
 
 return [
     [

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Services;
+namespace Untek\Framework\Rpc\Domain\Services;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnFramework\Rpc\Domain\Entities\DocEntity;
-use ZnFramework\Rpc\Domain\Helpers\DocContentHelper;
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
-use ZnFramework\Rpc\Domain\Interfaces\Services\DocsServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Framework\Rpc\Domain\Entities\DocEntity;
+use Untek\Framework\Rpc\Domain\Helpers\DocContentHelper;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\DocsServiceInterface;
 
 class DocsService implements DocsServiceInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Byte\Enums;
+namespace Untek\Lib\Components\Byte\Enums;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 /**
  * Единицы измерения информации в байтах

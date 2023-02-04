@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Repositories\Eloquent;
+namespace Untek\User\Notify\Domain\Repositories\Eloquent;
 
-use ZnUser\Notify\Domain\Entities\TypeEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
+use Untek\User\Notify\Domain\Entities\TypeEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
 
 class TypeRepository extends BaseEloquentCrudRepository implements TypeRepositoryInterface
 {

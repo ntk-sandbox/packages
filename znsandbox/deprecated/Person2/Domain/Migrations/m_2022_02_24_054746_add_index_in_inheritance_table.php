@@ -3,7 +3,7 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnDatabase\Migration\Domain\Base\BaseColumnMigration;
+use Untek\Database\Migration\Domain\Base\BaseColumnMigration;
 
 class m_2022_02_24_054746_add_index_in_inheritance_table extends BaseColumnMigration
 {

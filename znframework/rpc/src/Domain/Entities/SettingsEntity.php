@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Entities;
+namespace Untek\Framework\Rpc\Domain\Entities;
 
-use ZnDomain\Validator\Constraints\Boolean;
-use ZnDomain\Components\Constraints\Enum;
-use ZnFramework\Rpc\Domain\Enums\RpcCryptoProviderStrategyEnum;
+use Untek\Domain\Validator\Constraints\Boolean;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Framework\Rpc\Domain\Enums\RpcCryptoProviderStrategyEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class SettingsEntity implements ValidationByMetadataInterface, UniqueInterface
 {

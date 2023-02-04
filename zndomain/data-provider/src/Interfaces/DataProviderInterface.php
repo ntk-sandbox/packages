@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\DataProvider\Interfaces;
+namespace Untek\Domain\DataProvider\Interfaces;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 /**
  * Провайдер данных

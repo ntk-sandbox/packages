@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain;
+namespace Untek\Lib\Components\ShellRobot\Domain;
 
-use ZnDomain\Domain\Interfaces\DomainInterface;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
 
 class Domain implements DomainInterface
 {

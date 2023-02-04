@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Env\Helpers;
+namespace Untek\Core\Env\Helpers;
 
 class PhpErrorHelper
 {

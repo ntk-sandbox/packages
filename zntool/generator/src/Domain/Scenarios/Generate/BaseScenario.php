@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;
@@ -8,10 +8,10 @@ use Laminas\Code\Generator\InterfaceGenerator;
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Laminas\Code\Generator\PropertyGenerator;
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnTool\Generator\Domain\Dto\BuildDto;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 
 abstract class BaseScenario
 {
@@ -121,7 +121,7 @@ abstract class BaseScenario
 
     protected function bundleNamespace(): string
     {
-        return \ZnCore\Instance\Helpers\ClassHelper::getNamespace($this->domainNamespace);
+        return \Untek\Core\Instance\Helpers\ClassHelper::getNamespace($this->domainNamespace);
     }
 
     public function classNamespace(): string
@@ -173,7 +173,7 @@ abstract class BaseScenario
         $phpCode = $fileGenerator->generate();
         foreach ($fileGenerator->getUses() as $useItem) {
             $useClass = $useItem[0];
-            $phpCode = str_replace('\\' . $useClass, \ZnCore\Instance\Helpers\ClassHelper::getClassOfClassName($useClass), $phpCode);
+            $phpCode = str_replace('\\' . $useClass, \Untek\Core\Instance\Helpers\ClassHelper::getClassOfClassName($useClass), $phpCode);
         }
         return $phpCode;
     }

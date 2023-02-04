@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Test\Traits;
+namespace Untek\Tool\Test\Traits;
 
-use ZnLib\Components\Store\StoreFile;
+use Untek\Lib\Components\Store\StoreFile;
 
 trait DataTestTrait
 {

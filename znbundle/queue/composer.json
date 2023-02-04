@@ -18,8 +18,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\Queue\\": "src",
-			"ZnBundle\\Queue\\Tests\\": "tests"
+			"Untek\\Bundle\\Queue\\": "src",
+			"Untek\\Bundle\\Queue\\Tests\\": "tests"
 		}
 	}
 }

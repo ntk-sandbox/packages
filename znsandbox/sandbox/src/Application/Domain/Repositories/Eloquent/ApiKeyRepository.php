@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Repositories\Eloquent;
 
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApiKeyRepositoryInterface;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApiKeyRepositoryInterface;
 
 class ApiKeyRepository extends BaseEloquentCrudRepository implements ApiKeyRepositoryInterface
 {

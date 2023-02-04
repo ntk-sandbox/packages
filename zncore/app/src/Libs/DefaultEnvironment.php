@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCore\App\Libs;
+namespace Untek\Core\App\Libs;
 
-use ZnCore\App\Interfaces\EnvironmentInterface;
-use ZnCore\App\Interfaces\EnvStorageInterface;
-use ZnCore\DotEnv\Domain\Interfaces\BootstrapInterface;
-use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
+use Untek\Core\App\Interfaces\EnvironmentInterface;
+use Untek\Core\App\Interfaces\EnvStorageInterface;
+use Untek\Core\DotEnv\Domain\Interfaces\BootstrapInterface;
+use Untek\Core\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
 
 class DefaultEnvironment extends BaseEnvironment implements EnvironmentInterface
 {

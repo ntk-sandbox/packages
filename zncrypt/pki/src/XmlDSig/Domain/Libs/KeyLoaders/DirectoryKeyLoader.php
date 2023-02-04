@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnCrypt\Pki\XmlDSig\Domain\Libs\KeyLoaders;
+namespace Untek\Crypt\Pki\XmlDSig\Domain\Libs\KeyLoaders;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnCrypt\Pki\XmlDSig\Domain\Entities\KeyEntity;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Crypt\Pki\XmlDSig\Domain\Entities\KeyEntity;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 class DirectoryKeyLoader
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Web\Html\Helpers;
+namespace Untek\Lib\Web\Html\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\Web\Html\Helpers\Url;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\Web\Html\Helpers\Url;
 
 /**
  * Работа с HTML

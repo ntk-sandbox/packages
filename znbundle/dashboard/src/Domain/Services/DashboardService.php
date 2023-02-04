@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Dashboard\Domain\Services;
+namespace Untek\Bundle\Dashboard\Domain\Services;
 
-use ZnBundle\Dashboard\Domain\Interfaces\Services\DashboardServiceInterface;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Bundle\Dashboard\Domain\Interfaces\Services\DashboardServiceInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class DashboardService extends BaseService implements DashboardServiceInterface
 {

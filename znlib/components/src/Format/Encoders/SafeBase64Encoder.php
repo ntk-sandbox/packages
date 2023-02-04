@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\Format\Encoders;
+namespace Untek\Lib\Components\Format\Encoders;
 
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
 
 /**
  * Безопасный Base64-сериализатор для URL.

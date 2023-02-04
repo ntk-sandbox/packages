@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Article\Symfony4\Web\Controllers;
+namespace Untek\Bundle\Article\Symfony4\Web\Controllers;
 
-use ZnDomain\DataProvider\Entities\DataProviderEntity;
-use ZnDomain\Query\Helpers\QueryHelper;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnDomain\Query\Entities\Query;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Rest\Web\Controller\BaseCrudWebController;
-use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
-use ZnBundle\Notify\Domain\Enums\FlashMessageTypeEnum;
-use ZnBundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
+use Untek\Domain\DataProvider\Entities\DataProviderEntity;
+use Untek\Domain\Query\Helpers\QueryHelper;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;
+use Untek\Bundle\Article\Domain\Interfaces\PostServiceInterface;
+use Untek\Bundle\Notify\Domain\Enums\FlashMessageTypeEnum;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Web\Controller\Helpers\WebQueryHelper;
+use Untek\Lib\Web\Controller\Helpers\WebQueryHelper;
 
 class ArticleController extends AbstractController
 {

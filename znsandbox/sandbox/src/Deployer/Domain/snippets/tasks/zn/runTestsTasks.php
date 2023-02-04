@@ -1,16 +1,16 @@
 <?php
 
-use ZnCore\Env\Enums\EnvEnum;
-use ZnLib\Components\ShellRobot\Domain\Tasks\FileSystem\DeleteDirectoryTask;
-use ZnLib\Components\ShellRobot\Domain\Tasks\FileSystem\SetPermissionTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Apache\ApacheRestartTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerInstallTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Deploy\ConfigureDomainTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Git\GitCloneTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\PhpUnit\RunPhpUnitTestTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Tests\InitReleaseTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnInitTask;
-use ZnSandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnMigrateUpTask;
+use Untek\Core\Env\Enums\EnvEnum;
+use Untek\Lib\Components\ShellRobot\Domain\Tasks\FileSystem\DeleteDirectoryTask;
+use Untek\Lib\Components\ShellRobot\Domain\Tasks\FileSystem\SetPermissionTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Apache\ApacheRestartTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Composer\ComposerInstallTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Deploy\ConfigureDomainTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Git\GitCloneTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\PhpUnit\RunPhpUnitTestTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Tests\InitReleaseTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnInitTask;
+use Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Zn\ZnMigrateUpTask;
 
 return [
     'initRelease' => [
@@ -54,7 +54,7 @@ return [
     ],
     /*'znMigrateUpForMainEnv' => [
         'class' => ZnMigrateUpTask::class,
-//        'env' => \ZnCore\Env\Enums\EnvEnum::TEST,
+//        'env' => \Untek\Core\Env\Enums\EnvEnum::TEST,
     ],*/
     'configureDomain' => [
         'class' => ConfigureDomainTask::class,

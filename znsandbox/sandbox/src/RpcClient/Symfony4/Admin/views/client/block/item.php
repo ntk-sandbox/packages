@@ -1,26 +1,26 @@
 <?php
 
 /**
- * @var $this \ZnLib\Web\View\Libs\View
+ * @var $this \Untek\Lib\Web\View\Libs\View
  * @var $baseUri string
- * @var $favoriteEntity \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
- * @var $favoriteEntityItem \ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity
+ * @var $favoriteEntity \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
+ * @var $favoriteEntityItem \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity
  */
 
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 $isActive = $favoriteEntity && ($favoriteEntity->getId() == $favoriteEntityItem->getId() || $favoriteEntity->getChecksum() == $favoriteEntityItem->getChecksum());
 
 ?>
 
-<a href="<?= \ZnLib\Web\Html\Helpers\Url::to([$baseUri, 'id' => $favoriteEntityItem->getId()]) ?>"
+<a href="<?= \Untek\Lib\Web\Html\Helpers\Url::to([$baseUri, 'id' => $favoriteEntityItem->getId()]) ?>"
    style="border: 1px solid rgba(0,0,0,.125) !important; padding: 0.3rem 0.7rem;"
    class="list-group-item list-group-item-action <?= $isActive ? 'active' : '' ?>">
     <div class="d-flex w-100 justify-content-between">
         <?php
 
 
-        $lifeTimeLimitNew = \ZnLib\Components\Time\Enums\TimeEnum::SECOND_PER_DAY;
+        $lifeTimeLimitNew = \Untek\Lib\Components\Time\Enums\TimeEnum::SECOND_PER_DAY;
         $lifeTimeLimitPartNew = $lifeTimeLimitNew / 3;
         $lifeTimeNew = time() - $favoriteEntityItem->getCreatedAt()->getTimestamp();
         $isNew = $lifeTimeNew < $lifeTimeLimitNew;
@@ -39,13 +39,13 @@ $isActive = $favoriteEntity && ($favoriteEntity->getId() == $favoriteEntityItem-
 
             $lifeTimeUpd = time() - $favoriteEntityItem->getUpdatedAt()->getTimestamp();
             //dump($favoriteEntityItem->getUpdatedAt()->getTimestamp());
-            $isUpd = $lifeTimeUpd < \ZnLib\Components\Time\Enums\TimeEnum::SECOND_PER_DAY;
+            $isUpd = $lifeTimeUpd < \Untek\Lib\Components\Time\Enums\TimeEnum::SECOND_PER_DAY;
             $colorUpd = '#ffc107';
-            if($lifeTimeUpd < \ZnLib\Components\Time\Enums\TimeEnum::SECOND_PER_HOUR * 8 * 1) {
+            if($lifeTimeUpd < \Untek\Lib\Components\Time\Enums\TimeEnum::SECOND_PER_HOUR * 8 * 1) {
                 $colorUpd = '#ffc107';
-            } elseif($lifeTimeUpd < \ZnLib\Components\Time\Enums\TimeEnum::SECOND_PER_HOUR * 8 * 2) {
+            } elseif($lifeTimeUpd < \Untek\Lib\Components\Time\Enums\TimeEnum::SECOND_PER_HOUR * 8 * 2) {
                 $colorUpd = 'rgba(255,193,7,0.66)';
-            } elseif($lifeTimeUpd < \ZnLib\Components\Time\Enums\TimeEnum::SECOND_PER_HOUR * 8 * 3) {
+            } elseif($lifeTimeUpd < \Untek\Lib\Components\Time\Enums\TimeEnum::SECOND_PER_HOUR * 8 * 3) {
                 $colorUpd = 'rgba(255,193,7,0.45)';
             }
         }

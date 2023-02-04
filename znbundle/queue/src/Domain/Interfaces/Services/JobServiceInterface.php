@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Interfaces\Services;
+namespace Untek\Bundle\Queue\Domain\Interfaces\Services;
 
-use ZnBundle\Queue\Domain\Entities\TotalEntity;
-use ZnBundle\Queue\Domain\Enums\PriorityEnum;
-use ZnBundle\Queue\Domain\Interfaces\JobInterface;
+use Untek\Bundle\Queue\Domain\Entities\TotalEntity;
+use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
+use Untek\Bundle\Queue\Domain\Interfaces\JobInterface;
 
 interface JobServiceInterface
 {

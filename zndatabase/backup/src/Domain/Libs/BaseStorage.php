@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Backup\Domain\Libs;
+namespace Untek\Database\Backup\Domain\Libs;
 
 abstract class BaseStorage //implements StorageInterface
 {

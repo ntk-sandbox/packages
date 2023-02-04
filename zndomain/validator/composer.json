@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnDomain\\Validator\\": "src",
-      "ZnDomain\\Validator\\Tests\\": "tests"
+      "Untek\\Domain\\Validator\\": "src",
+      "Untek\\Domain\\Validator\\Tests\\": "tests"
     }
   }
 }

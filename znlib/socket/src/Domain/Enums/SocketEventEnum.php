@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Enums;
+namespace Untek\Lib\Socket\Domain\Enums;
 
 class SocketEventEnum {
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Code\Helpers\PhpHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Code\Helpers\PhpHelper;
 
 class WidgetFormatter extends BaseFormatter implements FormatterInterface
 {

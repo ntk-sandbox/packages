@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Interfaces\Services;
+namespace Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services;
 
 interface ConfigServiceInterface
 {

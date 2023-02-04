@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Collection\Interfaces;
+namespace Untek\Core\Collection\Interfaces;
 
 /** 
  * Интерфейс коллекции сущностей

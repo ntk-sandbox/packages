@@ -1,22 +1,22 @@
 <?php
 
-namespace ZnDatabase\Eloquent\Domain\Base;
+namespace Untek\Database\Eloquent\Domain\Base;
 
 use Illuminate\Database\Query\Builder as QueryBuilder;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Domain\Traits\DispatchEventTrait;
-use ZnDomain\Domain\Traits\ForgeQueryTrait;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Traits\RepositoryDispatchEventTrait;
-use ZnDomain\Repository\Traits\RepositoryMapperTrait;
-use ZnDomain\Repository\Traits\RepositoryQueryTrait;
-use ZnDatabase\Base\Domain\Traits\TableNameTrait;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Eloquent\Domain\Helpers\QueryBuilder\EloquentQueryBuilderHelper;
-use ZnDatabase\Eloquent\Domain\Traits\EloquentTrait;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Traits\DispatchEventTrait;
+use Untek\Domain\Domain\Traits\ForgeQueryTrait;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Traits\RepositoryDispatchEventTrait;
+use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Domain\Repository\Traits\RepositoryQueryTrait;
+use Untek\Database\Base\Domain\Traits\TableNameTrait;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Eloquent\Domain\Helpers\QueryBuilder\EloquentQueryBuilderHelper;
+use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;
 
 abstract class BaseEloquentRepository implements GetEntityClassInterface
 {

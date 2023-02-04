@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Enums;
+namespace Untek\Kaz\Egov\Qr\Enums;
 
 class ImageExtensionEnum
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Helpers;
+namespace Untek\Database\Base\Domain\Helpers;
 
 use GuzzleHttp\Psr7\Uri;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
 
 class ConfigHelper
 {

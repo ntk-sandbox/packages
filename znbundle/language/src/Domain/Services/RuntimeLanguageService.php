@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Services;
+namespace Untek\Bundle\Language\Domain\Services;
 
-use ZnBundle\Language\Domain\Interfaces\Repositories\StorageRepositoryInterface;
-use ZnBundle\Language\Domain\Interfaces\Repositories\SwitchRepositoryInterface;
-use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Repositories\StorageRepositoryInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Repositories\SwitchRepositoryInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 
 class RuntimeLanguageService implements RuntimeLanguageServiceInterface
 {

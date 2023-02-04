@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Dto;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Dto;
 
 class RequestDataDto
 {

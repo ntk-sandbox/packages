@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs\OpenSsl;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs\OpenSsl;
 
 use phpseclib\File\X509;
-use ZnCrypt\Base\Domain\Enums\OpenSslAlgoEnum;
-use ZnCrypt\Base\Domain\Exceptions\CertificateExpiredException;
-use ZnCrypt\Base\Domain\Exceptions\ExpiredException;
-use ZnCrypt\Base\Domain\Exceptions\FailCertificateSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\FailSignatureException;
-use ZnCrypt\Base\Domain\Exceptions\InvalidDigestException;
-use ZnCrypt\Base\Domain\Helpers\EncodingHelper;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyHelper;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
-use ZnCrypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
-use ZnCrypt\Pki\JsonDSig\Domain\Helpers\OpenSslHelper;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\C14n;
-use ZnCrypt\Pki\X509\Domain\Helpers\X509Helper;
+use Untek\Crypt\Base\Domain\Enums\OpenSslAlgoEnum;
+use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;
+use Untek\Crypt\Base\Domain\Exceptions\ExpiredException;
+use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;
+use Untek\Crypt\Base\Domain\Helpers\EncodingHelper;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
+use Untek\Crypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
+use Untek\Crypt\Pki\JsonDSig\Domain\Helpers\OpenSslHelper;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\C14n;
+use Untek\Crypt\Pki\X509\Domain\Helpers\X509Helper;
 
 class OpenSslSignature
 {

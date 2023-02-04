@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\I18Next\Services;
+namespace Untek\Lib\I18Next\Services;
 
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnLib\I18Next\Exceptions\NotFoundBundleException;
-use ZnLib\I18Next\Interfaces\Services\TranslationServiceInterface;
-use ZnLib\I18Next\Interfaces\TranslationLoaders\TranslationLoaderInterface;
-use ZnLib\I18Next\Libs\TranslationLoaders\JsonLoader;
-use ZnLib\I18Next\Libs\Translator;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Lib\I18Next\Exceptions\NotFoundBundleException;
+use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Lib\I18Next\Interfaces\TranslationLoaders\TranslationLoaderInterface;
+use Untek\Lib\I18Next\Libs\TranslationLoaders\JsonLoader;
+use Untek\Lib\I18Next\Libs\Translator;
 
 class TranslationService implements TranslationServiceInterface
 {

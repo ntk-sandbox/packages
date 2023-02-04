@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Libs;
+namespace Untek\Framework\Rpc\Domain\Libs;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\RequestOptions;
-use ZnFramework\Rpc\Domain\Encoders\RequestEncoder;
-use ZnFramework\Rpc\Domain\Encoders\ResponseEncoder;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
+use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
 
 class HttpRpcClient extends BaseRpcClient
 {

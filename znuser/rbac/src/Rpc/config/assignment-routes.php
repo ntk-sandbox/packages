@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Rbac\Domain\Enums\Rbac\RbacAssignmentEnum;
-use ZnUser\Rbac\Rpc\Controllers\AssignmentController;
+use Untek\User\Rbac\Domain\Enums\Rbac\RbacAssignmentEnum;
+use Untek\User\Rbac\Rpc\Controllers\AssignmentController;
 
 return [
     [

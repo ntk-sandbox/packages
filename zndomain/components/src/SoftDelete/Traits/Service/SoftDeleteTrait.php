@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Components\SoftDelete\Traits\Service;
+namespace Untek\Domain\Components\SoftDelete\Traits\Service;
 
 trait SoftDeleteTrait
 {

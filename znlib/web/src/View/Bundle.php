@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\View;
+namespace Untek\Lib\Web\View;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

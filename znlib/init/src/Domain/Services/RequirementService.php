@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Init\Domain\Services;
+namespace Untek\Lib\Init\Domain\Services;
 
 use YiiRequirementChecker;
-use ZnDomain\Service\Base\BaseService;
-use ZnLib\Init\Domain\Helpers\RequirementHelper;
-use ZnLib\Init\Domain\Interfaces\Repositories\RequirementRepositoryInterface;
-use ZnLib\Init\Domain\Interfaces\Services\RequirementServiceInterface;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Lib\Init\Domain\Helpers\RequirementHelper;
+use Untek\Lib\Init\Domain\Interfaces\Repositories\RequirementRepositoryInterface;
+use Untek\Lib\Init\Domain\Interfaces\Services\RequirementServiceInterface;
 
 class RequirementService extends BaseService implements RequirementServiceInterface
 {

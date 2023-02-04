@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnCore\Pattern\Strategy\Base;
+namespace Untek\Core\Pattern\Strategy\Base;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Contract\Common\Exceptions\InvalidArgumentException;
-use ZnCore\Instance\Helpers\InstanceHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;
+use Untek\Core\Instance\Helpers\InstanceHelper;
 
 /**
  * Class BaseStrategyContext
  *
- * @package ZnCore\Base\Scenario\Base
+ * @package Untek\Core\Base\Scenario\Base
  *
  * @property-read Object $strategyInstance
  * @property-read array $strategyDefinitions

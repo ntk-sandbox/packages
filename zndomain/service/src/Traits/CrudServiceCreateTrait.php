@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Service\Traits;
+namespace Untek\Domain\Service\Traits;
 
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Helpers\ValidationHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
 
 trait CrudServiceCreateTrait
 {

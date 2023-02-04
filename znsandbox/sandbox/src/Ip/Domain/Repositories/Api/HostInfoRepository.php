@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Ip\Domain\Repositories\Api;
+namespace Untek\Sandbox\Sandbox\Ip\Domain\Repositories\Api;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
-use ZnSandbox\Sandbox\Ip\Domain\Helpers\IpHelper;
-use ZnSandbox\Sandbox\Ip\Domain\Interfaces\Repositories\HostInfoRepositoryInterface;
+use Untek\Sandbox\Sandbox\Ip\Domain\Helpers\IpHelper;
+use Untek\Sandbox\Sandbox\Ip\Domain\Interfaces\Repositories\HostInfoRepositoryInterface;
 
 class HostInfoRepository implements HostInfoRepositoryInterface
 {

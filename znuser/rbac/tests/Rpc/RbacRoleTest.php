@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Tests\Rpc;
+namespace Untek\User\Rbac\Tests\Rpc;
 
-use ZnFramework\Rpc\Test\BaseRpcTest;
-use ZnFramework\Rpc\Test\Traits\CrudRpcTestTrait;
-use ZnTool\Test\Helpers\TestHelper;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
+use Untek\Framework\Rpc\Test\Traits\CrudRpcTestTrait;
+use Untek\Tool\Test\Helpers\TestHelper;
 
 class RbacRoleTest extends BaseRpcTest
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Domain\Interfaces;
+namespace Untek\Domain\Domain\Interfaces;
 
-use ZnCore\Contract\Common\Interfaces\GetNameInterface;
+use Untek\Core\Contract\Common\Interfaces\GetNameInterface;
 
 interface DomainInterface extends GetNameInterface
 {

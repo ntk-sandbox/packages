@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Wrappers;
+namespace Untek\Kaz\Egov\Qr\Wrappers;
 
-use ZnLib\Egov\Helpers\XmlHelper;
-use ZnKaz\Egov\Qr\Entities\BarCodeEntity;
+use Untek\Lib\Egov\Helpers\XmlHelper;
+use Untek\Kaz\Egov\Qr\Entities\BarCodeEntity;
 
 class JsonWrapper implements WrapperInterface
 {

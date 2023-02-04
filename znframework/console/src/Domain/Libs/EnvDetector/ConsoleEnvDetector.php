@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Libs\EnvDetector;
+namespace Untek\Framework\Console\Domain\Libs\EnvDetector;
 
-use ZnCore\Env\Interfaces\EnvDetectorInterface;
+use Untek\Core\Env\Interfaces\EnvDetectorInterface;
 
 class ConsoleEnvDetector implements EnvDetectorInterface
 {

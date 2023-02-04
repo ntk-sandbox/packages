@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\App\Events;
+namespace Untek\Core\App\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use ZnCore\App\Interfaces\AppInterface;
+use Untek\Core\App\Interfaces\AppInterface;
 
 class AppEvent extends Event
 {

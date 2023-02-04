@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Password\Tests\Web;
+namespace Untek\User\Password\Tests\Web;
 
-class RestorePasswordTest extends \ZnLib\Web\Test\BaseWebTest
+class RestorePasswordTest extends \Untek\Lib\Web\Test\BaseWebTest
 {
 
     protected function fixtures(): array

@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnLib\\Telegram\\": "src",
-      "ZnLib\\Telegram\\Tests\\": "tests"
+      "Untek\\Lib\\Telegram\\": "src",
+      "Untek\\Lib\\Telegram\\Tests\\": "tests"
     }
   }
 }

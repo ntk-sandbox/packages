@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Env\Enums;
+namespace Untek\Core\Env\Enums;
 
 /**
  * Семейство операционных систем

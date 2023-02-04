@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Entities;
+namespace Untek\Database\Base\Domain\Entities;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class ColumnEntity
 {

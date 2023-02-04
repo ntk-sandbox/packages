@@ -1,9 +1,9 @@
 <?php
 
 
-namespace ZnFramework\Telegram\Domain\Services;
+namespace Untek\Framework\Telegram\Domain\Services;
 
-use ZnFramework\Telegram\Domain\Entities\BotEntity;
+use Untek\Framework\Telegram\Domain\Entities\BotEntity;
 use Exception;
 
 class BotService

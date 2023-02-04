@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Input;
+namespace Untek\Tool\Generator\Domain\Scenarios\Input;
 
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\Question;
 
 class TypeInputScenario extends BaseInputScenario

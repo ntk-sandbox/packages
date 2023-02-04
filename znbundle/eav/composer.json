@@ -15,8 +15,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnBundle\\Eav\\": "src",
-			"ZnBundle\\Eav\\Tests\\": "tests"
+			"Untek\\Bundle\\Eav\\": "src",
+			"Untek\\Bundle\\Eav\\Tests\\": "tests"
 		}
 	}
 }

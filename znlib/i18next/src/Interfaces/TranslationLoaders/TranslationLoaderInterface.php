@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\I18Next\Interfaces\TranslationLoaders;
+namespace Untek\Lib\I18Next\Interfaces\TranslationLoaders;
 
 interface TranslationLoaderInterface
 {

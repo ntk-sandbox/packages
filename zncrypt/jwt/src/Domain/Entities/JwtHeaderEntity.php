@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Entities;
+namespace Untek\Crypt\Jwt\Domain\Entities;
 
-use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use Untek\Crypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
 
 /**
  * Class JwtHeaderEntity
- * @package ZnCrypt\Base\Domain\Entities
+ * @package Untek\Crypt\Base\Domain\Entities
  *
  * @property $typ string
  * @property $alg string

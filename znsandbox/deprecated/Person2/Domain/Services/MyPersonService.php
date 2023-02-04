@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseService;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 class MyPersonService extends BaseService implements MyPersonServiceInterface
 {

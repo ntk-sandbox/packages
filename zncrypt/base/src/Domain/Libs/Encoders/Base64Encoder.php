@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Libs\Encoders;
+namespace Untek\Crypt\Base\Domain\Libs\Encoders;
 
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
 
 class Base64Encoder implements EncoderInterface
 {

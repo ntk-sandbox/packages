@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnLib\Web\Controller\Base;
+namespace Untek\Lib\Web\Controller\Base;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\Web\Controller\Enums\CrudControllerActionEnum;
-use ZnLib\Web\Controller\Helpers\WebQueryHelper;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnUser\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\Web\Controller\Enums\CrudControllerActionEnum;
+use Untek\Lib\Web\Controller\Helpers\WebQueryHelper;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
 
 abstract class BaseWebCrudController extends BaseWebController
 {

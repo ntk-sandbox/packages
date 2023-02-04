@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Wsdl\Tests\Base;
+namespace Untek\Framework\Wsdl\Tests\Base;
 
-use ZnFramework\Wsdl\Domain\Libs\SoapClient;
+use Untek\Framework\Wsdl\Domain\Libs\SoapClient;
 use PHPUnit\Framework\TestCase;
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnTool\Test\Helpers\TestHelper;
-use ZnTool\Test\Traits\BaseUrlTrait;
-use ZnTool\Test\Traits\FixtureTrait;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Tool\Test\Helpers\TestHelper;
+use Untek\Tool\Test\Traits\BaseUrlTrait;
+use Untek\Tool\Test\Traits\FixtureTrait;
 
 abstract class BaseWsdlTest extends TestCase
 {

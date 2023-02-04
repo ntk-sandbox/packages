@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\MyChildServiceInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Subscribers\MyChildSubscriber;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyChildServiceInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Subscribers\MyChildSubscriber;
 
 class MyChildService extends BaseCrudService implements MyChildServiceInterface
 {

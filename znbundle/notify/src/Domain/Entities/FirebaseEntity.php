@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Entities;
+namespace Untek\Bundle\Notify\Domain\Entities;
 
 class FirebaseEntity
 {

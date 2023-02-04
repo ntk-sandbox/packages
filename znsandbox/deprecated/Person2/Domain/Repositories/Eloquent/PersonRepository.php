@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\ContactRepositoryInterface;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\ContactRepositoryInterface;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 
 class PersonRepository extends BaseEloquentCrudRepository implements PersonRepositoryInterface
 {

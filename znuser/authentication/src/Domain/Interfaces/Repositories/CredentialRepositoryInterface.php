@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Interfaces\Repositories;
+namespace Untek\User\Authentication\Domain\Interfaces\Repositories;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
-use ZnUser\Authentication\Domain\Enums\CredentialTypeEnum;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
+use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
 
 interface CredentialRepositoryInterface extends CrudRepositoryInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Repositories\Eloquent;
 
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDomain\Repository\Mappers\JsonMapper;
-use ZnDomain\Repository\Mappers\TimeMapper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;
-use ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\UserRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;
+use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\UserRepositoryInterface;
 
 class FavoriteRepository extends BaseEloquentCrudRepository implements FavoriteRepositoryInterface
 {

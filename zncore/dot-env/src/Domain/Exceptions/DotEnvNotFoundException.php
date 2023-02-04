@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Exceptions;
+namespace Untek\Core\DotEnv\Domain\Exceptions;
 
 use Throwable;
-use ZnCore\Code\Helpers\DeprecateHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 
 DeprecateHelper::hardThrow();
 

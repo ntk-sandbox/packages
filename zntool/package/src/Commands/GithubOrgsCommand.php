@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnTool\Package\Commands;
+namespace Untek\Tool\Package\Commands;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnCore\Collection\Libs\Collection;
-use ZnLib\Components\Http\Enums\HttpMethodEnum;
-use ZnLib\Components\Store\Helpers\StoreHelper;
-use ZnTool\Package\Domain\Entities\GroupEntity;
-use ZnTool\Package\Domain\Entities\PackageEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Lib\Components\Store\Helpers\StoreHelper;
+use Untek\Tool\Package\Domain\Entities\GroupEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
 
 class GithubOrgsCommand extends BaseCommand
 {

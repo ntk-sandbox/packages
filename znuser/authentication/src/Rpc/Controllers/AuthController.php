@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Authentication\Rpc\Controllers;
+namespace Untek\User\Authentication\Rpc\Controllers;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseRpcController;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
-use ZnUser\Authentication\Domain\Forms\AuthForm;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\User\Authentication\Domain\Forms\AuthForm;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 
 class AuthController extends BaseRpcController
 {

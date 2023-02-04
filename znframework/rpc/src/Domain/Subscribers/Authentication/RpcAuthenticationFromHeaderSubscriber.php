@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Subscribers\Authentication;
+namespace Untek\Framework\Rpc\Domain\Subscribers\Authentication;
 
 use Symfony\Component\HttpFoundation\Request;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Enums\HttpHeaderEnum;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
 
 class RpcAuthenticationFromHeaderSubscriber extends BaseRpcAuthenticationSubscriber
 {

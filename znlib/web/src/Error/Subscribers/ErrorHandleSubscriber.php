@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Error\Subscribers;
+namespace Untek\Lib\Web\Error\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -8,9 +8,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Throwable;
-use ZnLib\Web\Error\Libs\CallAction;
-use ZnLib\Web\Error\Symfony4\Controllers\WebErrorController;
-use ZnLib\Web\View\Libs\View;
+use Untek\Lib\Web\Error\Libs\CallAction;
+use Untek\Lib\Web\Error\Symfony4\Controllers\WebErrorController;
+use Untek\Lib\Web\View\Libs\View;
 
 class ErrorHandleSubscriber implements EventSubscriberInterface
 {

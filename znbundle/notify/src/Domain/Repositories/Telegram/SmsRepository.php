@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\Telegram;
+namespace Untek\Bundle\Notify\Domain\Repositories\Telegram;
 
-use ZnBundle\Notify\Domain\Entities\SmsEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use ZnFramework\Telegram\Domain\Facades\Bot;
+use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use Untek\Framework\Telegram\Domain\Facades\Bot;
 
 class SmsRepository implements SmsRepositoryInterface
 {

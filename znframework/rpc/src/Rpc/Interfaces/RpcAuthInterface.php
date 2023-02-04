@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Interfaces;
+namespace Untek\Framework\Rpc\Rpc\Interfaces;
 
 interface RpcAuthInterface
 {

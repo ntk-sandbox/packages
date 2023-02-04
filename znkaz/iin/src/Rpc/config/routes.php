@@ -1,8 +1,8 @@
 <?php
 
-use ZnKaz\Iin\Domain\Enums\Rbac\SecurityPermissionEnum;
-use ZnKaz\Iin\Rpc\Controllers\RestorePasswordController;
-use ZnKaz\Iin\Rpc\Controllers\UpdatePasswordController;
+use Untek\Kaz\Iin\Domain\Enums\Rbac\SecurityPermissionEnum;
+use Untek\Kaz\Iin\Rpc\Controllers\RestorePasswordController;
+use Untek\Kaz\Iin\Rpc\Controllers\UpdatePasswordController;
 
 return [
     [
@@ -10,8 +10,8 @@ return [
         'version' => '1',
         'is_verify_eds' => false,
         'is_verify_auth' => false,
-        'permission_name' => \ZnKaz\Iin\Domain\Enums\Rbac\IinPermissionEnum::GET_INFO,
-        'handler_class' => \ZnKaz\Iin\Rpc\Controllers\IinController::class,
+        'permission_name' => \Untek\Kaz\Iin\Domain\Enums\Rbac\IinPermissionEnum::GET_INFO,
+        'handler_class' => \Untek\Kaz\Iin\Rpc\Controllers\IinController::class,
         'handler_method' => 'getInfo',
         'status_id' => 100,
         'title' => null,

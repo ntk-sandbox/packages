@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Repositories\File;
+namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\File;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface;
 
 class VarRepository implements VarRepositoryInterface
 {

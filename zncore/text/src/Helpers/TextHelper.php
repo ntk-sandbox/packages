@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Text\Helpers;
+namespace Untek\Core\Text\Helpers;
 
 class TextHelper
 {

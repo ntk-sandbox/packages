@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnKaz\Egov\Wrappers;
+namespace Untek\Kaz\Egov\Wrappers;
 
 
-use ZnLib\Components\Format\Encoders\XmlEncoder;
-use ZnLib\QrBox\Entities\BarCodeEntity;
+use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Lib\QrBox\Entities\BarCodeEntity;
 use DateTime;
-use ZnLib\QrBox\Wrappers\WrapperInterface;
+use Untek\Lib\QrBox\Wrappers\WrapperInterface;
 
-class XmlWrapper extends \ZnLib\QrBox\Wrappers\XmlWrapper implements WrapperInterface
+class XmlWrapper extends \Untek\Lib\QrBox\Wrappers\XmlWrapper implements WrapperInterface
 {
 
     protected static $favorId;

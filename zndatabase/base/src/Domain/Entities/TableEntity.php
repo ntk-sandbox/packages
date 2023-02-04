@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Entities;
+namespace Untek\Database\Base\Domain\Entities;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 class TableEntity
 {

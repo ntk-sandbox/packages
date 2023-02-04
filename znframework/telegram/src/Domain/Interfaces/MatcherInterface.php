@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Interfaces;
+namespace Untek\Framework\Telegram\Domain\Interfaces;
 
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
 
 interface MatcherInterface
 {

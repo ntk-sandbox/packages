@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Settings\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Settings\Domain\Services;
 
-use ZnSandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
-use ZnSandbox\Sandbox\Settings\Domain\Interfaces\Repositories\SystemRepositoryInterface;
-use ZnSandbox\Sandbox\Settings\Domain\Interfaces\Services\SystemServiceInterface;
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
+use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Repositories\SystemRepositoryInterface;
+use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Services\SystemServiceInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method SystemRepositoryInterface getRepository()

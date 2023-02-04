@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Illuminate\Database\Schema\Blueprint;
 use Laminas\Code\Generator\FileGenerator;
-use ZnCore\Text\Helpers\Inflector;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnDatabase\Migration\Domain\Base\BaseCreateTableMigration;
-use ZnTool\Generator\Domain\Helpers\TemplateCodeHelper;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Database\Migration\Domain\Base\BaseCreateTableMigration;
+use Untek\Tool\Generator\Domain\Helpers\TemplateCodeHelper;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
 
 class MigrationScenario extends BaseScenario
 {

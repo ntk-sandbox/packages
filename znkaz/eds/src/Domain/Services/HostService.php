@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Services;
+namespace Untek\Kaz\Eds\Domain\Services;
 
-use ZnKaz\Eds\Domain\Interfaces\Services\HostServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnKaz\Eds\Domain\Interfaces\Repositories\HostRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnKaz\Eds\Domain\Entities\HostEntity;
+use Untek\Kaz\Eds\Domain\Interfaces\Services\HostServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Kaz\Eds\Domain\Interfaces\Repositories\HostRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Kaz\Eds\Domain\Entities\HostEntity;
 
 /**
  * @method HostRepositoryInterface getRepository()

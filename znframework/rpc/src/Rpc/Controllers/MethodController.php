@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Rpc\Rpc\Controllers;
+namespace Untek\Framework\Rpc\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnFramework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 
 class MethodController extends BaseCrudRpcController
 {

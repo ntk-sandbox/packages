@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
-use ZnUser\Rbac\Domain\Interfaces\Services\PermissionServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\PermissionRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Rbac\Domain\Entities\PermissionEntity;
+use Untek\User\Rbac\Domain\Interfaces\Services\PermissionServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\PermissionRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Rbac\Domain\Entities\PermissionEntity;
 
 /**
  * @method PermissionRepositoryInterface getRepository()

@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Libs\ContactDrivers;
+namespace Untek\User\Notify\Domain\Libs\ContactDrivers;
 
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class WebDriver implements ContactDriverInterface
 {

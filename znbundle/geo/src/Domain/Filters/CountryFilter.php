@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Filters;
+namespace Untek\Bundle\Geo\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\QueryFilter\Interfaces\DefaultSortInterface;
+use Untek\Domain\QueryFilter\Interfaces\DefaultSortInterface;
 
 class CountryFilter implements DefaultSortInterface
 {

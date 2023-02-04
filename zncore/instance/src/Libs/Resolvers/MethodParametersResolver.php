@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\Instance\Libs\Resolvers;
+namespace Untek\Core\Instance\Libs\Resolvers;
 
 use Exception;
 use Psr\Container\ContainerInterface;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionParameter;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
 
 class MethodParametersResolver
 {

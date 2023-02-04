@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\Widget\Widgets\Toastr;
+namespace Untek\Lib\Web\Widget\Widgets\Toastr;
 
-use ZnLib\Web\Asset\Base\BaseAsset;
-use ZnLib\Web\View\Libs\View;
+use Untek\Lib\Web\Asset\Base\BaseAsset;
+use Untek\Lib\Web\View\Libs\View;
 
 class ToastrAsset extends BaseAsset
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Repositories;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Repositories;
 
 interface DocsRepositoryInterface
 {

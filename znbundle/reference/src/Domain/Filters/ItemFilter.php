@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Filters;
+namespace Untek\Bundle\Reference\Domain\Filters;
 
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Components\Constraints\Enum;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Components\Constraints\Enum;
 
 class ItemFilter implements ValidationByMetadataInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\PropertyGenerator;
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Text\Helpers\Inflector;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 
 class PermissionEnumScenario extends BaseScenario
 {

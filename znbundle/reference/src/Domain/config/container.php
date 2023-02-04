@@ -2,12 +2,12 @@
 
 return [
     'singletons' => [
-        'ZnBundle\Reference\Domain\Interfaces\Services\BookServiceInterface' => 'ZnBundle\Reference\Domain\Services\BookService',
-        'ZnBundle\Reference\Domain\Interfaces\Services\ItemServiceInterface' => 'ZnBundle\Reference\Domain\Services\ItemService',
-        'ZnBundle\Reference\Domain\Interfaces\Services\ItemBookServiceInterface' => 'ZnBundle\Reference\Domain\Services\ItemBookService',
+        'Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface' => 'Untek\Bundle\Reference\Domain\Services\BookService',
+        'Untek\Bundle\Reference\Domain\Interfaces\Services\ItemServiceInterface' => 'Untek\Bundle\Reference\Domain\Services\ItemService',
+        'Untek\Bundle\Reference\Domain\Interfaces\Services\ItemBookServiceInterface' => 'Untek\Bundle\Reference\Domain\Services\ItemBookService',
 
-        'ZnBundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface' => 'ZnBundle\Reference\Domain\Repositories\Eloquent\BookRepository',
-        'ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface' => 'ZnBundle\Reference\Domain\Repositories\Eloquent\ItemRepository',
-        'ZnBundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface' => 'ZnBundle\Reference\Domain\Repositories\Eloquent\ItemTranslationRepository',
+        'Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface' => 'Untek\Bundle\Reference\Domain\Repositories\Eloquent\BookRepository',
+        'Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface' => 'Untek\Bundle\Reference\Domain\Repositories\Eloquent\ItemRepository',
+        'Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface' => 'Untek\Bundle\Reference\Domain\Repositories\Eloquent\ItemTranslationRepository',
     ],
 ];

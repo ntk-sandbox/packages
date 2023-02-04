@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDomain\Domain\Traits;
+namespace Untek\Domain\Domain\Traits;
 
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Query\Entities\Query;
 
 trait ForgeQueryTrait
 {

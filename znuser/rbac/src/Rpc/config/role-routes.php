@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Rbac\Domain\Enums\Rbac\RbacItemPermissionEnum;
-use ZnUser\Rbac\Rpc\Controllers\RoleController;
+use Untek\User\Rbac\Domain\Enums\Rbac\RbacItemPermissionEnum;
+use Untek\User\Rbac\Rpc\Controllers\RoleController;
 
 return [
     [

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Store\Drivers;
+namespace Untek\Lib\Components\Store\Drivers;
 
 use Symfony\Component\Yaml\Yaml as SymfonyYaml;
 

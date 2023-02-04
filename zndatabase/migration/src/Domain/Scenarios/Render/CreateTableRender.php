@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Scenarios\Render;
+namespace Untek\Database\Migration\Domain\Scenarios\Render;
 
 use Laminas\Code\Generator\FileGenerator;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnTool\Generator\Domain\Helpers\TemplateCodeHelper;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Tool\Generator\Domain\Helpers\TemplateCodeHelper;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
 
 class CreateTableRender extends BaseRender
 {
@@ -33,7 +33,7 @@ class CreateTableRender extends BaseRender
 
         $fileGenerator->setNamespace('Migrations');
         $fileGenerator->setUse('Illuminate\Database\Schema\Blueprint');
-        $fileGenerator->setUse('ZnDatabase\Migration\Domain\Base\BaseCreateTableMigration');
+        $fileGenerator->setUse('Untek\Database\Migration\Domain\Base\BaseCreateTableMigration');
 
         $code = TemplateCodeHelper::generateMigrationClassCode($this->getClassName(), $this->dto->attributes, $this->dto->tableName);
 

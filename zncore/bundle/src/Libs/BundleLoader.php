@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnCore\Bundle\Libs;
+namespace Untek\Core\Bundle\Libs;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Bundle\Base\BaseBundle;
-use ZnCore\Bundle\Base\BaseLoader;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Container\Traits\ContainerAttributeTrait;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Instance\Helpers\InstanceHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseLoader;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Container\Traits\ContainerAttributeTrait;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\InstanceHelper;
 
 /**
  * Загрузчик бандлов.

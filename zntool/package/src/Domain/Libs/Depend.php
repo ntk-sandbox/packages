@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnTool\Package\Domain\Libs;
+namespace Untek\Tool\Package\Domain\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\Store\StoreFile;
-use ZnTool\Package\Domain\Entities\ConfigEntity;
-use ZnTool\Package\Domain\Helpers\ComposerConfigHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Tool\Package\Domain\Entities\ConfigEntity;
+use Untek\Tool\Package\Domain\Helpers\ComposerConfigHelper;
 
 class Depend
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Phar\Domain\Helpers;
+namespace Untek\Tool\Phar\Domain\Helpers;
 
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnLib\Components\Store\StoreFile;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Lib\Components\Store\StoreFile;
 
 class PharHelper
 {

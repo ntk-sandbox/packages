@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Services;
+namespace Untek\Bundle\Notify\Domain\Services;
 
-use ZnBundle\Notify\Domain\Interfaces\Services\TestServiceInterface;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\TestServiceInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\TestRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 class TestService extends BaseCrudService implements TestServiceInterface
 {

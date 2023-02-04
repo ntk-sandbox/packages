@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Helpers;
+namespace Untek\Framework\Rpc\Domain\Helpers;
 
 class ErrorHelper
 {

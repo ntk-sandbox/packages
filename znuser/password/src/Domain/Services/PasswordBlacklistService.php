@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Password\Domain\Services;
+namespace Untek\User\Password\Domain\Services;
 
-use ZnUser\Password\Domain\Interfaces\Services\PasswordBlacklistServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Password\Domain\Entities\PasswordBlacklistEntity;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordBlacklistServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Password\Domain\Entities\PasswordBlacklistEntity;
 
 class PasswordBlacklistService extends BaseCrudService implements PasswordBlacklistServiceInterface
 {

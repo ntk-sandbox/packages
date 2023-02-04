@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Services;
+namespace Untek\User\Authentication\Domain\Services;
 
 use Doctrine\ORM\EntityManagerInterface;
 use FOS\UserBundle\Model\UserInterface;
 use FOS\UserBundle\Model\UserManagerInterface;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
-use ZnCrypt\Jwt\Domain\Entities\JwtEntity;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
+use Untek\Crypt\Jwt\Domain\Entities\JwtEntity;
 
 class JwtTokenService implements TokenServiceInterface
 {

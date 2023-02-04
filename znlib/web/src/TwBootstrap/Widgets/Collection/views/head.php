@@ -7,9 +7,9 @@
  * @var AttributeEntity[] $attributes
  */
 
-use ZnLib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
-use ZnLib\Web\Html\Helpers\HtmlHelper;
-use ZnLib\Web\View\Libs\View;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
+use Untek\Lib\Web\Html\Helpers\HtmlHelper;
+use Untek\Lib\Web\View\Libs\View;
 
 ?>
 
@@ -18,7 +18,7 @@ use ZnLib\Web\View\Libs\View;
         <th>
             <?php
             if ($attributeEntity->getSortAttribute()) {
-                echo \ZnLib\Web\TwBootstrap\Widgets\Collection\Helpers\CollectionWidgetHelper::sortByField($attributeEntity->getLabel(), $attributeEntity->getSortAttribute(), $baseUrl, $queryParams);
+                echo \Untek\Lib\Web\TwBootstrap\Widgets\Collection\Helpers\CollectionWidgetHelper::sortByField($attributeEntity->getLabel(), $attributeEntity->getSortAttribute(), $baseUrl, $queryParams);
             } else {
                 echo $attributeEntity->getLabel();
             }

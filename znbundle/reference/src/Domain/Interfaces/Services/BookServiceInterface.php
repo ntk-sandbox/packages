@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Interfaces\Services;
+namespace Untek\Bundle\Reference\Domain\Interfaces\Services;
 
-use ZnBundle\Reference\Domain\Entities\BookEntity;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Reference\Domain\Entities\BookEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Query\Entities\Query;
 
 interface BookServiceInterface extends CrudServiceInterface
 {

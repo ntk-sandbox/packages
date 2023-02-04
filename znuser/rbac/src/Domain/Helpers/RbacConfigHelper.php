@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Helpers;
+namespace Untek\User\Rbac\Domain\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Container\Helpers\ContainerHelper;
 
 class RbacConfigHelper
 {

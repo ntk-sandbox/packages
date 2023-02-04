@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Helpers;
+namespace Untek\Crypt\Pki\Domain\Helpers;
 
-use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
-use ZnCrypt\Base\Domain\Enums\RsaBitsEnum;
-use ZnCrypt\Jwt\Domain\Entities\KeyEntity;
+use Untek\Crypt\Base\Domain\Enums\EncryptAlgorithmEnum;
+use Untek\Crypt\Base\Domain\Enums\RsaBitsEnum;
+use Untek\Crypt\Jwt\Domain\Entities\KeyEntity;
 
 class RsaHelper
 {

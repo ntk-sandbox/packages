@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\InterfaceGenerator;
 

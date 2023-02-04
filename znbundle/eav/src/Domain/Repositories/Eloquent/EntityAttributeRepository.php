@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Entities\EntityAttributeEntity;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnBundle\Eav\Domain\Interfaces\Repositories\EntityAttributeRepositoryInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Eav\Domain\Entities\EntityAttributeEntity;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityAttributeRepositoryInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class EntityAttributeRepository extends BaseEloquentCrudRepository implements EntityAttributeRepositoryInterface
 {

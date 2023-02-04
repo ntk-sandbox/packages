@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Controller\Traits;
+namespace Untek\Lib\Web\Controller\Traits;
 
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 

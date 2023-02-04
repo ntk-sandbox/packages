@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Factories;
+namespace Untek\Lib\Components\ShellRobot\Domain\Factories;
 
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Services\ConfigServiceInterface;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Services\ConnectionServiceInterface;
-use ZnLib\Components\ShellRobot\Domain\Interfaces\Services\VarServiceInterface;
-use ZnLib\Components\ShellRobot\Domain\Libs\Shell\RemoteShell;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\ConfigServiceInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\ConnectionServiceInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\VarServiceInterface;
+use Untek\Lib\Components\ShellRobot\Domain\Libs\Shell\RemoteShell;
 
 class ShellFactory
 {

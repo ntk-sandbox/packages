@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Services;
+namespace Untek\Bundle\Storage\Domain\Services;
 
-use ZnBundle\Storage\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
-use ZnBundle\Storage\Domain\Interfaces\Services\ServiceServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
+use Untek\Bundle\Storage\Domain\Interfaces\Services\ServiceServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class ServiceService extends BaseCrudService implements ServiceServiceInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\EgovData\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\EgovData\Domain\Libs;
 
 use GuzzleHttp\Client as GuzzleClient;
 use Psr\Http\Message\ResponseInterface;

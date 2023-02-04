@@ -1,6 +1,6 @@
 <?php
 
-use ZnUser\Rbac\Domain\Facades\FixtureGeneratorFacade;
+use Untek\User\Rbac\Domain\Facades\FixtureGeneratorFacade;
 
 return [
     'deps' => [

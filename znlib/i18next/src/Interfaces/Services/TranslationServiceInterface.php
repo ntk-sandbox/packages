@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\I18Next\Interfaces\Services;
+namespace Untek\Lib\I18Next\Interfaces\Services;
 
 interface TranslationServiceInterface
 {

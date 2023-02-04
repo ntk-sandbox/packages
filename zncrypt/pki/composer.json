@@ -16,8 +16,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ZnCrypt\\Pki\\": "src",
-			"ZnCrypt\\Pki\\Tests\\": "tests"
+			"Untek\\Crypt\\Pki\\": "src",
+			"Untek\\Crypt\\Pki\\Tests\\": "tests"
 		}
 	}
 }

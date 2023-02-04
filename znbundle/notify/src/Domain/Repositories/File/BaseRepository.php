@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Notify\Domain\Repositories\File;
+namespace Untek\Bundle\Notify\Domain\Repositories\File;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
-use ZnDomain\Entity\Helpers\EntityHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Domain\Entity\Helpers\EntityHelper;
 
 DeprecateHelper::hardThrow();
 

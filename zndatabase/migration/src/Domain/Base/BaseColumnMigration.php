@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Base;
+namespace Untek\Database\Migration\Domain\Base;
 
 use Illuminate\Database\Schema\Builder;
-use ZnDatabase\Base\Domain\Helpers\SqlHelper;
+use Untek\Database\Base\Domain\Helpers\SqlHelper;
 
 abstract class BaseColumnMigration extends BaseCreateTableMigration
 {

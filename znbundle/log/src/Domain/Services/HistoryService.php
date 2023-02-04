@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Services;
+namespace Untek\Bundle\Log\Domain\Services;
 
-use ZnBundle\Log\Domain\Entities\HistoryEntity;
-use ZnBundle\Log\Domain\Entities\LogEntity;
-use ZnBundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
-use ZnBundle\Log\Domain\Interfaces\Services\HistoryServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnDomain\Query\Entities\Query;
+use Untek\Bundle\Log\Domain\Entities\HistoryEntity;
+use Untek\Bundle\Log\Domain\Entities\LogEntity;
+use Untek\Bundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
+use Untek\Bundle\Log\Domain\Interfaces\Services\HistoryServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Domain\Query\Entities\Query;
 
 class HistoryService extends BaseCrudService implements HistoryServiceInterface
 {

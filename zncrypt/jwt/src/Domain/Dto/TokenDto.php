@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Dto;
+namespace Untek\Crypt\Jwt\Domain\Dto;
 
 /**
  * Class TokenDto
- * @package ZnCrypt\Base\Domain\Dto
+ * @package Untek\Crypt\Base\Domain\Dto
  *
  * @property $header_encoded
  * @property $payload_encoded

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Interfaces\Services;
+namespace Untek\User\Rbac\Domain\Interfaces\Services;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 interface MyAssignmentServiceInterface
 {

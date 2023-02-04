@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\Container\Traits;
+namespace Untek\Core\Container\Traits;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Contract\Common\Exceptions\ReadOnlyException;
+use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
 
 trait ContainerAwareStaticAttributeTrait
 {

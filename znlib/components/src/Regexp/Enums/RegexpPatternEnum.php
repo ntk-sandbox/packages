@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\Regexp\Enums;
+namespace Untek\Lib\Components\Regexp\Enums;
 
 /**
  * Часто используемые регулярные выражения

@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Services;
+namespace Untek\User\Rbac\Domain\Services;
 
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Rbac\Domain\Entities\AssignmentEntity;
-use ZnUser\Rbac\Domain\Entities\ItemEntity;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
+use Untek\User\Rbac\Domain\Entities\ItemEntity;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Services\AssignmentServiceInterface;
 
 /**
  * @method AssignmentRepositoryInterface getRepository()

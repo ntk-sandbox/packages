@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\App\Libs\EnvStorageDrivers;
+namespace Untek\Core\App\Libs\EnvStorageDrivers;
 
-use ZnCore\App\Interfaces\EnvStorageInterface;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\App\Interfaces\EnvStorageInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
 
 /**
  * Хранилище переменных окружения.

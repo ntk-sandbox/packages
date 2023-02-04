@@ -1,7 +1,7 @@
 <?php
 
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnTool\Dev\VarDumper\Subscribers\SymfonyDumperSubscriber;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Tool\Dev\VarDumper\Subscribers\SymfonyDumperSubscriber;
 
 return function (EventDispatcherConfiguratorInterface $configurator): void {
 

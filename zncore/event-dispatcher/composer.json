@@ -15,8 +15,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnCore\\EventDispatcher\\": "src",
-      "ZnCore\\EventDispatcher\\Tests\\": "tests"
+      "Untek\\Core\\EventDispatcher\\": "src",
+      "Untek\\Core\\EventDispatcher\\Tests\\": "tests"
     }
   }
 }

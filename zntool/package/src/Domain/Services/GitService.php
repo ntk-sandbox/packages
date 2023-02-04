@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnTool\Package\Domain\Services;
+namespace Untek\Tool\Package\Domain\Services;
 
 //use Illuminate\Support\Arr;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Service\Base\BaseService;
-use ZnTool\Package\Domain\Entities\CommitEntity;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Entities\TagEntity;
-use ZnTool\Package\Domain\Interfaces\Repositories\GitRepositoryInterface;
-use ZnTool\Package\Domain\Interfaces\Services\GitServiceInterface;
-use ZnTool\Package\Domain\Interfaces\Services\PackageServiceInterface;
-use ZnTool\Package\Domain\Libs\GitShell;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Tool\Package\Domain\Entities\CommitEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Entities\TagEntity;
+use Untek\Tool\Package\Domain\Interfaces\Repositories\GitRepositoryInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\GitServiceInterface;
+use Untek\Tool\Package\Domain\Interfaces\Services\PackageServiceInterface;
+use Untek\Tool\Package\Domain\Libs\GitShell;
 
 class GitService extends BaseService implements GitServiceInterface
 {

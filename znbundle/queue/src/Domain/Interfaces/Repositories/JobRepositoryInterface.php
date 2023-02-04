@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Queue\Domain\Interfaces\Repositories;
 
-use ZnBundle\Queue\Domain\Entities\JobEntity;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Bundle\Queue\Domain\Entities\JobEntity;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface JobRepositoryInterface extends CrudRepositoryInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnTool\Package\Domain\Helpers;
+namespace Untek\Tool\Package\Domain\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnTool\Package\Domain\Entities\ConfigEntity;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Tool\Package\Domain\Entities\ConfigEntity;
 
 class ComposerConfigHelper
 {

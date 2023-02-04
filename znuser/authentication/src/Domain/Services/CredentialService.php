@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Services;
+namespace Untek\User\Authentication\Domain\Services;
 
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Service\Base\BaseService;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Service\Base\BaseService;
 
 class CredentialService extends BaseService implements CredentialServiceInterface
 {

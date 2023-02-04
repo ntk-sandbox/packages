@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnLib\Socket\Domain\Apps\Base;
+namespace Untek\Lib\Socket\Domain\Apps\Base;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\App\Base\BaseApp;
-use ZnCore\App\Libs\ZnCore;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnFramework\Console\Domain\Subscribers\ConsoleDetectTestEnvSubscriber;
-use ZnLib\Socket\Domain\Libs\SocketDaemon;
+use Untek\Core\App\Base\BaseApp;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Framework\Console\Domain\Subscribers\ConsoleDetectTestEnvSubscriber;
+use Untek\Lib\Socket\Domain\Libs\SocketDaemon;
 
 //DeprecateHelper::hardThrow();
 

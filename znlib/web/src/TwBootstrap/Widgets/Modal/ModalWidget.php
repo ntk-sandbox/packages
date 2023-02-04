@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Modal;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Modal;
 
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class ModalWidget extends BaseWidget2
 {

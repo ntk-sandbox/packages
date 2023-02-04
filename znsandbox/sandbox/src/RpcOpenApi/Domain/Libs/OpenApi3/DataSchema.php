@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcOpenApi\Domain\Libs\OpenApi3;
+namespace Untek\Sandbox\Sandbox\RpcOpenApi\Domain\Libs\OpenApi3;
 
 use DateTime;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Contract\Encoder\Interfaces\EncodeInterface;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Contract\Encoder\Interfaces\EncodeInterface;
 
 class DataSchema implements EncodeInterface
 {

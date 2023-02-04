@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\EntityManager\Interfaces;
+namespace Untek\Domain\EntityManager\Interfaces;
 
 interface OrmInterface extends TransactionInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Entities;
+namespace Untek\User\Notify\Domain\Entities;
 
-use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
+use Untek\Bundle\Person\Domain\Entities\ContactTypeEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Constraints\Boolean;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Constraints\Boolean;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class SettingEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Rpc\Symfony4\Web\Libs;
+namespace Untek\Framework\Rpc\Symfony4\Web\Libs;
 
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 /**
  * Стратегия криптопровайдера, которая не выпоняет проверок ЭЦП.

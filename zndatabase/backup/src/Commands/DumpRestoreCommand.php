@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnDatabase\Backup\Commands;
+namespace Untek\Database\Backup\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDatabase\Backup\Domain\Entities\DumpEntity;
-use ZnDatabase\Backup\Domain\Interfaces\Services\DumpServiceInterface;
-use ZnDatabase\Backup\Domain\Libs\DbStorage;
-use ZnDatabase\Backup\Domain\Libs\ZipStorage;
-use ZnDatabase\Base\Console\Traits\OverwriteDatabaseTrait;
-use ZnDatabase\Base\Domain\Libs\Dependency;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use ZnDatabase\Fixture\Domain\Repositories\DbRepository;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Database\Backup\Domain\Entities\DumpEntity;
+use Untek\Database\Backup\Domain\Interfaces\Services\DumpServiceInterface;
+use Untek\Database\Backup\Domain\Libs\DbStorage;
+use Untek\Database\Backup\Domain\Libs\ZipStorage;
+use Untek\Database\Base\Console\Traits\OverwriteDatabaseTrait;
+use Untek\Database\Base\Domain\Libs\Dependency;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Fixture\Domain\Repositories\DbRepository;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 
 class DumpRestoreCommand extends Command
 {
@@ -60,9 +60,9 @@ class DumpRestoreCommand extends Command
     }
 
     /**
-     * @return \ZnDatabase\Eloquent\Domain\Capsule\Manager
+     * @return \Untek\Database\Eloquent\Domain\Capsule\Manager
      */
-    public function getCapsule(): \ZnDatabase\Eloquent\Domain\Capsule\Manager
+    public function getCapsule(): \Untek\Database\Eloquent\Domain\Capsule\Manager
     {
         return $this->capsule;
     }

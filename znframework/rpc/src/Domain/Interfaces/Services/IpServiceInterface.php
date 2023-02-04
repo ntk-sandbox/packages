@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Interfaces\Services;
+namespace Untek\Framework\Rpc\Domain\Interfaces\Services;
 
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 
 interface IpServiceInterface
 {

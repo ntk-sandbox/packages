@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Base;
+namespace Untek\Database\Migration\Domain\Base;
 
 use Closure;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
-use ZnDatabase\Base\Domain\Enums\DbDriverEnum;
-use ZnDatabase\Base\Domain\Helpers\SqlHelper;
-use ZnDatabase\Base\Domain\Traits\TableNameTrait;
-use ZnDatabase\Migration\Domain\Enums\ForeignActionEnum;
-use ZnDatabase\Migration\Domain\Interfaces\MigrationInterface;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Database\Base\Domain\Enums\DbDriverEnum;
+use Untek\Database\Base\Domain\Helpers\SqlHelper;
+use Untek\Database\Base\Domain\Traits\TableNameTrait;
+use Untek\Database\Migration\Domain\Enums\ForeignActionEnum;
+use Untek\Database\Migration\Domain\Interfaces\MigrationInterface;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 
 abstract class BaseCreateTableMigration extends BaseMigration implements MigrationInterface
 {

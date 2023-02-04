@@ -2,15 +2,15 @@
 
 /**
  * @var View $this
- * @var \ZnCore\Collection\Interfaces\Enumerable | LanguageEntity[] $collection
+ * @var \Untek\Core\Collection\Interfaces\Enumerable | LanguageEntity[] $collection
  * @var string $language
  * @var string $baseUrl
  */
 
-use ZnBundle\Language\Domain\Entities\LanguageEntity;
-use ZnBundle\Language\Symfony4\Widgets\Language\Assets\LanguageAsset;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\Web\View\Libs\View;
+use Untek\Bundle\Language\Domain\Entities\LanguageEntity;
+use Untek\Bundle\Language\Symfony4\Widgets\Language\Assets\LanguageAsset;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\Web\View\Libs\View;
 
 (new LanguageAsset())->register($this);
 

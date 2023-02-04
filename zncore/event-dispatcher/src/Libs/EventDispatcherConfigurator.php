@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnCore\EventDispatcher\Libs;
+namespace Untek\Core\EventDispatcher\Libs;
 
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Container\Libs\Container;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Container\Libs\Container;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 class EventDispatcherConfigurator implements EventDispatcherConfiguratorInterface
 {

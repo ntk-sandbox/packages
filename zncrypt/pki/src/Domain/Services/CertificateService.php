@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Services;
+namespace Untek\Crypt\Pki\Domain\Services;
 
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnCrypt\Base\Domain\Entities\CertificateInfoEntity;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Pki\Domain\Entities\CertificateSubjectEntity;
-use ZnCrypt\Pki\Domain\Entities\RsaKeyEntity;
-use ZnCrypt\Pki\Domain\Entities\SignatureEntity;
-use ZnCrypt\Pki\Domain\Helpers\RsaKeyHelper;
-use ZnCrypt\Pki\Domain\Libs\Rsa\Rsa;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreRam;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Crypt\Base\Domain\Entities\CertificateInfoEntity;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;
+use Untek\Crypt\Pki\Domain\Entities\RsaKeyEntity;
+use Untek\Crypt\Pki\Domain\Entities\SignatureEntity;
+use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\Rsa;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreFile;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreRam;
 
 class CertificateService
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Interfaces\Services;
+namespace Untek\Bundle\Eav\Domain\Interfaces\Services;
 
-use ZnBundle\Eav\Domain\Entities\DynamicEntity;
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
-use ZnBundle\Eav\Domain\Forms\DynamicForm;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Bundle\Eav\Domain\Forms\DynamicForm;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface EntityServiceInterface extends CrudServiceInterface
 {

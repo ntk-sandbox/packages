@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Subscribers;
+namespace Untek\Framework\Rpc\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnFramework\Rpc\Domain\Enums\RpcEventEnum;
-use ZnFramework\Rpc\Domain\Events\RpcRequestEvent;
-use ZnUser\Authentication\Domain\Traits\GetUserTrait;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
+use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;
+use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 class CheckAccessSubscriber implements EventSubscriberInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Entities;
+namespace Untek\User\Rbac\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class InheritanceEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

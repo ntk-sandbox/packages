@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Notify;
+namespace Untek\Bundle\Notify;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 // todo: отделить flash, toastr
 class Bundle extends BaseBundle

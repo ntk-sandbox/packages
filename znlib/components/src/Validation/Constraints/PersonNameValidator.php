@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\Validation\Constraints;
+namespace Untek\Lib\Components\Validation\Constraints;
 
 use Symfony\Component\Validator\Constraint;
-use ZnDomain\Validator\Constraints\BaseValidator;
+use Untek\Domain\Validator\Constraints\BaseValidator;
 
 class PersonNameValidator extends BaseValidator
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Confirm\Domain\Repositories\Eloquent;
+namespace Untek\User\Confirm\Domain\Repositories\Eloquent;
 
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDomain\Query\Entities\Query;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Confirm\Domain\Entities\ConfirmEntity;
-use ZnUser\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
+use Untek\User\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface;
 
 class ConfirmRepository extends BaseEloquentCrudRepository implements ConfirmRepositoryInterface
 {

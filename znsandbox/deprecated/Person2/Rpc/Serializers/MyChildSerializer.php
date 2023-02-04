@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Rpc\Serializers;
+namespace Untek\Sandbox\Sandbox\Person2\Rpc\Serializers;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnFramework\Rpc\Rpc\Serializers\DefaultSerializer;
-use ZnSandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Framework\Rpc\Rpc\Serializers\DefaultSerializer;
+use Untek\Sandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
 
 class MyChildSerializer extends DefaultSerializer
 {

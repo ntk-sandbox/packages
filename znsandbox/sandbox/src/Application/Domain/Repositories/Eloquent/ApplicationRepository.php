@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Application\Domain\Entities\ApplicationEntity;
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApplicationEntity;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
 
 class ApplicationRepository extends BaseEloquentCrudRepository implements ApplicationRepositoryInterface
 {

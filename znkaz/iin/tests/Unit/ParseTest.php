@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\Base\Tests\Unit;
+namespace Untek\Core\Base\Tests\Unit;
 
-use ZnKaz\Iin\Domain\Entities\IndividualEntity;
-use ZnKaz\Iin\Domain\Entities\JuridicalEntity;
-use ZnKaz\Iin\Domain\Enums\JuridicalPartEnum;
-use ZnKaz\Iin\Domain\Enums\JuridicalTypeEnum;
-use ZnKaz\Iin\Domain\Enums\SexEnum;
-use ZnKaz\Iin\Domain\Helpers\IinParser;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Kaz\Iin\Domain\Entities\IndividualEntity;
+use Untek\Kaz\Iin\Domain\Entities\JuridicalEntity;
+use Untek\Kaz\Iin\Domain\Enums\JuridicalPartEnum;
+use Untek\Kaz\Iin\Domain\Enums\JuridicalTypeEnum;
+use Untek\Kaz\Iin\Domain\Enums\SexEnum;
+use Untek\Kaz\Iin\Domain\Helpers\IinParser;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class ParseTest extends BaseTest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Facades;
+namespace Untek\Framework\Telegram\Domain\Facades;
 
 class Bot
 {

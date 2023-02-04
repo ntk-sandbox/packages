@@ -6,12 +6,12 @@
  * @var $entity EntityIdInterface
  */
 
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\Web\Controller\Helpers\ActionHelper;
-use ZnLib\Web\View\Libs\View;
-use ZnLib\Web\TwBootstrap\Widgets\Detail\DetailWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Web\Controller\Helpers\ActionHelper;
+use Untek\Lib\Web\View\Libs\View;
+use Untek\Lib\Web\TwBootstrap\Widgets\Detail\DetailWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 
 $attributes = [
     [

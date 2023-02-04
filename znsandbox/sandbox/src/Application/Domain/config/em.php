@@ -2,8 +2,8 @@
 
 return [
 	'entities' => [
-		'ZnSandbox\\Sandbox\\Application\\Domain\\Entities\\ApplicationEntity' => 'ZnSandbox\\Sandbox\\Application\\Domain\\Interfaces\\Repositories\\ApplicationRepositoryInterface',
-		'ZnSandbox\\Sandbox\\Application\\Domain\\Entities\\ApiKeyEntity' => 'ZnSandbox\\Sandbox\\Application\\Domain\\Interfaces\\Repositories\\ApiKeyRepositoryInterface',
-		'ZnSandbox\\Sandbox\\Application\\Domain\\Entities\\EdsEntity' => 'ZnSandbox\\Sandbox\\Application\\Domain\\Interfaces\\Repositories\\EdsRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Application\\Domain\\Entities\\ApplicationEntity' => 'Untek\\Sandbox\\Sandbox\\Application\\Domain\\Interfaces\\Repositories\\ApplicationRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Application\\Domain\\Entities\\ApiKeyEntity' => 'Untek\\Sandbox\\Sandbox\\Application\\Domain\\Interfaces\\Repositories\\ApiKeyRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Application\\Domain\\Entities\\EdsEntity' => 'Untek\\Sandbox\\Sandbox\\Application\\Domain\\Interfaces\\Repositories\\EdsRepositoryInterface',
 	],
 ];

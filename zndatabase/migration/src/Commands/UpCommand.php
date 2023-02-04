@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnDatabase\Migration\Commands;
+namespace Untek\Database\Migration\Commands;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnFramework\Console\Symfony4\Helpers\OutputHepler;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Framework\Console\Symfony4\Helpers\OutputHepler;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

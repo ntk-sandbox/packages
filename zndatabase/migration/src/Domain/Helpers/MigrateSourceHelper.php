@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Helpers;
+namespace Untek\Database\Migration\Domain\Helpers;
 
 
 class MigrateSourceHelper

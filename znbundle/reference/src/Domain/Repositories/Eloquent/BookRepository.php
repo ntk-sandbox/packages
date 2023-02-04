@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Reference\Domain\Repositories\Eloquent;
 
-use ZnBundle\Reference\Domain\Entities\BookEntity;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Entities\Query;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnDomain\Repository\Mappers\JsonMapper;
+use Untek\Bundle\Reference\Domain\Entities\BookEntity;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Domain\Repository\Mappers\JsonMapper;
 
 class BookRepository extends BaseEloquentCrudRepository implements BookRepositoryInterface
 {

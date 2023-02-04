@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;
-use ZnCore\Text\Helpers\Inflector;
-use ZnLib\Components\Store\StoreFile;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentRepository;
-use ZnTool\Generator\Domain\Enums\TypeEnum;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
-use ZnTool\Generator\Domain\Helpers\LocationHelper;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentRepository;
+use Untek\Tool\Generator\Domain\Enums\TypeEnum;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Tool\Generator\Domain\Helpers\LocationHelper;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
 
 class RepositoryScenario extends BaseScenario
 {
@@ -74,7 +74,7 @@ class RepositoryScenario extends BaseScenario
         $classGenerator->addMethodFromGenerator($methodGenerator);
 
         $entityFullClassName = $this->domainNamespace . LocationHelper::fullClassName($this->name, TypeEnum::ENTITY);
-        $entityPureClassName = \ZnCore\Instance\Helpers\ClassHelper::getClassOfClassName($entityFullClassName);
+        $entityPureClassName = \Untek\Core\Instance\Helpers\ClassHelper::getClassOfClassName($entityFullClassName);
         $fileGenerator->setUse($entityFullClassName);
 
         $methodGenerator = $this->generateGetEntityClassMethod($entityPureClassName);
@@ -138,7 +138,7 @@ class RepositoryScenario extends BaseScenario
                 $className = BaseEloquentRepository::class;
             }
         } else {
-            //$className = 'ZnDomain\Domain\Base\BaseRepository';
+            //$className = 'Untek\Domain\Domain\Base\BaseRepository';
         }
         return $className;
     }

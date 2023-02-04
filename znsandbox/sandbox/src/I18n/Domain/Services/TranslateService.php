@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnSandbox\Sandbox\I18n\Domain\Services;
+namespace Untek\Sandbox\Sandbox\I18n\Domain\Services;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseService;
-use ZnSandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
-use ZnSandbox\Sandbox\I18n\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
-use ZnSandbox\Sandbox\I18n\Domain\Interfaces\Services\TranslateServiceInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Sandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
+use Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
+use Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Services\TranslateServiceInterface;
 
 /**
  * @method TranslateRepositoryInterface getRepository()

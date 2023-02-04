@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnDomain\Components\ArrayRepository\Helpers;
+namespace Untek\Domain\Components\ArrayRepository\Helpers;
 
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Common\Collections\Expr\Comparison;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Query\Entities\Query;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Query\Entities\Query;
 
 class FilterHelper
 {

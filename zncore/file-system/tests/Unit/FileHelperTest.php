@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCore\Base\Tests\Unit;
+namespace Untek\Core\Base\Tests\Unit;
 
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnCore\FileSystem\Helpers\MimeTypeHelper;
-use ZnTool\Test\Asserts\DataAssert;
-use ZnTool\Test\Asserts\DataTestCase;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
+use Untek\Tool\Test\Asserts\DataAssert;
+use Untek\Tool\Test\Asserts\DataTestCase;
 
 final class FileHelperTest extends DataTestCase
 {

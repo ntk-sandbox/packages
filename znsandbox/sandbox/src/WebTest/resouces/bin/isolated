@@ -11,9 +11,9 @@
  */
 
 use Symfony\Component\Console\Application;
-use ZnCore\App\Libs\ZnCore;
-use ZnCore\Container\Libs\Container;
-use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Core\Container\Libs\Container;
+use Untek\Sandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
 
 $_SERVER['MICRO_TIME'] = microtime(true);
 $_SERVER['REQUEST_ID'] = uniqid();

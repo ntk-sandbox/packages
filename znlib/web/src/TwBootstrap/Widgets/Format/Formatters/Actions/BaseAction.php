@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\Web\Html\Helpers\Url;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\Web\Html\Helpers\Url;
 
 class BaseAction
 {

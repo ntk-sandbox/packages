@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Enums;
+namespace Untek\Bundle\Language\Domain\Enums;
 
 class LanguageEnum {
 	

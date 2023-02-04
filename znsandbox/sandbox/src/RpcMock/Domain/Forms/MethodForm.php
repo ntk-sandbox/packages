@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcMock\Domain\Forms;
+namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Forms;
 
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Components\Constraints\Enum;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Components\Constraints\Enum;
 
 class MethodForm implements ValidationByMetadataInterface
 {

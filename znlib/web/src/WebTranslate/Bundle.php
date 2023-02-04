@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Web\WebTranslate;
+namespace Untek\Lib\Web\WebTranslate;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

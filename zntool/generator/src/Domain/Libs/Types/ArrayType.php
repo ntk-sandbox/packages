@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\Types;
+namespace Untek\Tool\Generator\Domain\Libs\Types;
 
 class ArrayType extends BaseType
 {

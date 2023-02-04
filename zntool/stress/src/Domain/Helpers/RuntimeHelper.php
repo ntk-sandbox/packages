@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Stress\Domain\Helpers;
+namespace Untek\Tool\Stress\Domain\Helpers;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnTool\Stress\Domain\Libs\Runtime;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Tool\Stress\Domain\Libs\Runtime;
 
 class RuntimeHelper
 {

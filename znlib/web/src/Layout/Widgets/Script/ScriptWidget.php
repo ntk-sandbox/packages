@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Web\Layout\Widgets\Script;
+namespace Untek\Lib\Web\Layout\Widgets\Script;
 
-use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnLib\Web\View\Resources\Js;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
+use Untek\Lib\Web\View\Resources\Js;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class ScriptWidget extends BaseWidget2
 {

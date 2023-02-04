@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Collection\Helpers;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Collection\Helpers;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Web\Html\Helpers\Html;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Web\Html\Helpers\Html;
 
 class CollectionWidgetHelper
 {

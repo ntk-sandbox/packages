@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Queue\Domain\Repositories\Eloquent;
 
-use ZnBundle\Queue\Domain\Entities\JobEntity;
-use ZnBundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Queue\Domain\Entities\JobEntity;
+use Untek\Bundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class JobRepository extends BaseEloquentCrudRepository implements JobRepositoryInterface
 {

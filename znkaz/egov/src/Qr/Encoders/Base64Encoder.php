@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Encoders;
+namespace Untek\Kaz\Egov\Qr\Encoders;
 
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
 
 class Base64Encoder implements EntityEncoderInterface
 {

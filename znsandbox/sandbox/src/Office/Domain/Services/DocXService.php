@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Office\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Office\Domain\Services;
 
 
-use ZnCore\Text\Helpers\TemplateHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Office\Domain\Entities\DocXEntity;
-use ZnSandbox\Sandbox\Office\Domain\Enums\AttributeEnum;
-use ZnSandbox\Sandbox\Office\Domain\Interfaces\Services\DocXServiceInterface;
-use ZnLib\Components\Zip\Libs\Zip;
+use Untek\Core\Text\Helpers\TemplateHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Office\Domain\Entities\DocXEntity;
+use Untek\Sandbox\Sandbox\Office\Domain\Enums\AttributeEnum;
+use Untek\Sandbox\Sandbox\Office\Domain\Interfaces\Services\DocXServiceInterface;
+use Untek\Lib\Components\Zip\Libs\Zip;
 
 /**
  * @method

@@ -2,7 +2,7 @@
 
 return [
 	'entities' => [
-		'ZnSandbox\\Sandbox\\Bundle\\Domain\\Entities\\BundleEntity' => 'ZnSandbox\\Sandbox\\Bundle\\Domain\\Interfaces\\Repositories\\BundleRepositoryInterface',
-		'ZnSandbox\\Sandbox\\Bundle\\Domain\\Entities\\DomainEntity' => 'ZnSandbox\\Sandbox\\Bundle\\Domain\\Interfaces\\Repositories\\DomainRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Bundle\\Domain\\Entities\\BundleEntity' => 'Untek\\Sandbox\\Sandbox\\Bundle\\Domain\\Interfaces\\Repositories\\BundleRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Bundle\\Domain\\Entities\\DomainEntity' => 'Untek\\Sandbox\\Sandbox\\Bundle\\Domain\\Interfaces\\Repositories\\DomainRepositoryInterface',
 	],
 ];

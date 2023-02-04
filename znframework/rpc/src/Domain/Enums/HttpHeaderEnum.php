@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Enums;
+namespace Untek\Framework\Rpc\Domain\Enums;
 
-class HttpHeaderEnum extends \ZnLib\Components\Http\Enums\HttpHeaderEnum
+class HttpHeaderEnum extends \Untek\Lib\Components\Http\Enums\HttpHeaderEnum
 {
 
     const IP = 'ip';

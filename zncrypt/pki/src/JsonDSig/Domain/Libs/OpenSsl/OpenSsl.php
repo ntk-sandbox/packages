@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs\OpenSsl;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs\OpenSsl;
 
-use ZnCrypt\Pki\Domain\Enums\RsaKeyFormatEnum;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
-use ZnCrypt\Pki\JsonDSig\Domain\Helpers\OpenSslHelper;
+use Untek\Crypt\Pki\Domain\Enums\RsaKeyFormatEnum;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
+use Untek\Crypt\Pki\JsonDSig\Domain\Helpers\OpenSslHelper;
 
 class OpenSsl
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Reference\Rpc\Controllers;
+namespace Untek\Bundle\Reference\Rpc\Controllers;
 
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnBundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
 
 class BookController extends BaseCrudRpcController
 {

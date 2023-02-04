@@ -1,26 +1,26 @@
 <?php
 
-namespace ZnDomain\EntityManager\Libs;
+namespace Untek\Domain\EntityManager\Libs;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Interfaces\OrmInterface;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnLib\I18Next\Facades\I18Next;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Interfaces\OrmInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Lib\I18Next\Facades\I18Next;
 
 class EntityManager implements EntityManagerInterface
 {

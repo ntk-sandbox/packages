@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\Init\Symfony4\Console\Libs;
+namespace Untek\Lib\Init\Symfony4\Console\Libs;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Instance\Libs\InstanceProvider;
-use ZnFramework\Console\Symfony4\Helpers\InputHelper;
-use ZnLib\Init\Symfony4\Console\Tasks\BaseTask;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Instance\Libs\InstanceProvider;
+use Untek\Framework\Console\Symfony4\Helpers\InputHelper;
+use Untek\Lib\Init\Symfony4\Console\Tasks\BaseTask;
 
 class Init
 {

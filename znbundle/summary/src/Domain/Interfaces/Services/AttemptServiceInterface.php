@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Interfaces\Services;
+namespace Untek\Bundle\Summary\Domain\Interfaces\Services;
 
-use ZnBundle\Summary\Domain\Exceptions\AttemptsBlockedException;
-use ZnBundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
+use Untek\Bundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface AttemptServiceInterface extends CrudServiceInterface
 {

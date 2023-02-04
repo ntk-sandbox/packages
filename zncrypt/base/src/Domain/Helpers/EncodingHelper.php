@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Base\Domain\Helpers;
+namespace Untek\Crypt\Base\Domain\Helpers;
 
-use ZnCrypt\Base\Domain\Enums\EncodingEnum;
-use ZnCrypt\Base\Domain\Exceptions\UnknownEncodingException;
+use Untek\Crypt\Base\Domain\Enums\EncodingEnum;
+use Untek\Crypt\Base\Domain\Exceptions\UnknownEncodingException;
 
 class EncodingHelper
 {

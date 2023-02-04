@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\EntityManager\Libs;
+namespace Untek\Domain\EntityManager\Libs;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 class EntityManagerConfigurator implements EntityManagerConfiguratorInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnLib\Web\Controller\Helpers;
+namespace Untek\Lib\Web\Controller\Helpers;
 
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Web\Html\Helpers\Html;
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class ActionHelper
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Summary\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Summary\Domain\Repositories\Eloquent;
 
-use ZnBundle\Summary\Domain\Entities\CounterEntity;
-use ZnBundle\Summary\Domain\Interfaces\Repositories\CounterRepositoryInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Summary\Domain\Entities\CounterEntity;
+use Untek\Bundle\Summary\Domain\Interfaces\Repositories\CounterRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class CounterRepository extends BaseEloquentCrudRepository implements CounterRepositoryInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Helpers;
+namespace Untek\Kaz\Iin\Domain\Helpers;
 
-use ZnKaz\Iin\Domain\Entities\BaseEntity;
-use ZnKaz\Iin\Domain\Enums\TypeEnum;
-use ZnKaz\Iin\Domain\Exceptions\BadTypeException;
-use ZnKaz\Iin\Domain\Libs\Parsers\IndividualParser;
-use ZnKaz\Iin\Domain\Libs\Parsers\JuridicalParser;
-use ZnKaz\Iin\Domain\Libs\Parsers\ParserInterface;
-use ZnKaz\Iin\Domain\Libs\Validator;
+use Untek\Kaz\Iin\Domain\Entities\BaseEntity;
+use Untek\Kaz\Iin\Domain\Enums\TypeEnum;
+use Untek\Kaz\Iin\Domain\Exceptions\BadTypeException;
+use Untek\Kaz\Iin\Domain\Libs\Parsers\IndividualParser;
+use Untek\Kaz\Iin\Domain\Libs\Parsers\JuridicalParser;
+use Untek\Kaz\Iin\Domain\Libs\Parsers\ParserInterface;
+use Untek\Kaz\Iin\Domain\Libs\Validator;
 
 class IinParser
 {

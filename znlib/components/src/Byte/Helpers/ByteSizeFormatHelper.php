@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\Byte\Helpers;
+namespace Untek\Lib\Components\Byte\Helpers;
 
-use ZnLib\Components\Byte\Enums\ByteEnum;
-use ZnCore\Enum\Helpers\EnumHelper;
+use Untek\Lib\Components\Byte\Enums\ByteEnum;
+use Untek\Core\Enum\Helpers\EnumHelper;
 
 class ByteSizeFormatHelper
 {

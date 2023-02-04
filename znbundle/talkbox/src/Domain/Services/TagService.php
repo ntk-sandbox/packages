@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Services;
+namespace Untek\Bundle\TalkBox\Domain\Services;
 
 use Illuminate\Contracts\Container\Container;
-use ZnBundle\TalkBox\Domain\Entities\TagEntity;
-use ZnBundle\TalkBox\Domain\Interfaces\Repositories\TagRepositoryInterface;
-use ZnBundle\TalkBox\Domain\Interfaces\Services\TagServiceInterface;
-use ZnBundle\TalkBox\Domain\Libs\Parser;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Query\Entities\Where;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnFramework\Telegram\Domain\Libs\SoundexRuEn;
+use Untek\Bundle\TalkBox\Domain\Entities\TagEntity;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Repositories\TagRepositoryInterface;
+use Untek\Bundle\TalkBox\Domain\Interfaces\Services\TagServiceInterface;
+use Untek\Bundle\TalkBox\Domain\Libs\Parser;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Where;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Framework\Telegram\Domain\Libs\SoundexRuEn;
 
 class TagService extends BaseCrudService implements TagServiceInterface
 {
@@ -33,17 +33,17 @@ class TagService extends BaseCrudService implements TagServiceInterface
         $parser = new Parser;
         $collection = $parser->parseFromText($dataBaseText);
 
-        /** @var \ZnBundle\TalkBox\Domain\Interfaces\Services\TagServiceInterface $tagService */
-        $tagService = $container->get(\ZnBundle\TalkBox\Domain\Services\TagService::class);
+        /** @var \Untek\Bundle\TalkBox\Domain\Interfaces\Services\TagServiceInterface $tagService */
+        $tagService = $container->get(\Untek\Bundle\TalkBox\Domain\Services\TagService::class);
 
-        /** @var \ZnBundle\TalkBox\Domain\Interfaces\Services\AnswerServiceInterface $answerService */
-        $answerService = $container->get(\ZnBundle\TalkBox\Domain\Services\AnswerService::class);
+        /** @var \Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerServiceInterface $answerService */
+        $answerService = $container->get(\Untek\Bundle\TalkBox\Domain\Services\AnswerService::class);
 
-        /** @var \ZnBundle\TalkBox\Domain\Interfaces\Services\AnswerTagServiceInterface $answerTagService */
-        $answerTagService = $container->get(\ZnBundle\TalkBox\Domain\Services\AnswerTagService::class);
+        /** @var \Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerTagServiceInterface $answerTagService */
+        $answerTagService = $container->get(\Untek\Bundle\TalkBox\Domain\Services\AnswerTagService::class);
 
-        /** @var \ZnBundle\TalkBox\Domain\Interfaces\Services\AnswerOptionServiceInterface $answerOptionService */
-        $answerOptionService = $container->get(\ZnBundle\TalkBox\Domain\Services\AnswerOptionService::class);
+        /** @var \Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerOptionServiceInterface $answerOptionService */
+        $answerOptionService = $container->get(\Untek\Bundle\TalkBox\Domain\Services\AnswerOptionService::class);
 
         foreach ($collection as $token => $answer) {
 

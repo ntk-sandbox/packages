@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Domain\Helpers;
+namespace Untek\Sandbox\Sandbox\Apache\Domain\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnCore\FileSystem\Helpers\FindFileHelper;
-use ZnDomain\Domain\Interfaces\DomainInterface;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Core\FileSystem\Helpers\FindFileHelper;
+use Untek\Domain\Domain\Interfaces\DomainInterface;
 
 class ConfParser {
 

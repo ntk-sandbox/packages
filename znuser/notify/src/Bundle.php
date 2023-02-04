@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Notify;
+namespace Untek\User\Notify;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

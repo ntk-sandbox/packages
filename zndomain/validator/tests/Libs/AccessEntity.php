@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDomain\Validator\Tests\Libs;
+namespace Untek\Domain\Validator\Tests\Libs;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class AccessEntity implements EntityIdInterface, ValidationByMetadataInterface

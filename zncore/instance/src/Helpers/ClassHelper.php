@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnCore\Instance\Helpers;
+namespace Untek\Core\Instance\Helpers;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Contract\Common\Exceptions\InvalidArgumentException;
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Instance\Exceptions\NotInstanceOfException;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Instance\Exceptions\NotInstanceOfException;
 
 /**
  * Работа с классами

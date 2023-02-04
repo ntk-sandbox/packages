@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Person\Tests\Rpc;
+namespace Untek\User\Person\Tests\Rpc;
 
-use ZnFramework\Rpc\Test\BaseRpcTest;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
 
 abstract class MyContactTest extends BaseRpcTest
 {

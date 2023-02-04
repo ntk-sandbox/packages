@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Entities;
+namespace Untek\Crypt\Jwt\Domain\Entities;
 
 /**
  * Class KeyEntity
- * @package ZnCrypt\Base\Domain\Entities
+ * @package Untek\Crypt\Base\Domain\Entities
  *
  * @property string $type
  * @property string $private

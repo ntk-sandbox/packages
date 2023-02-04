@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDatabase\Eloquent\Domain\Libs\ConfigBuilders;
+namespace Untek\Database\Eloquent\Domain\Libs\ConfigBuilders;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 
 DeprecateHelper::hardThrow();
 

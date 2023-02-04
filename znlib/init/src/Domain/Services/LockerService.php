@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Init\Domain\Services;
+namespace Untek\Lib\Init\Domain\Services;
 
-use ZnLib\Init\Domain\Interfaces\Services\LockerServiceInterface;
-use ZnLib\Init\Domain\Interfaces\Repositories\LockerRepositoryInterface;
-use ZnDomain\Service\Base\BaseService;
+use Untek\Lib\Init\Domain\Interfaces\Services\LockerServiceInterface;
+use Untek\Lib\Init\Domain\Interfaces\Repositories\LockerRepositoryInterface;
+use Untek\Domain\Service\Base\BaseService;
 
 class LockerService extends BaseService implements LockerServiceInterface
 {

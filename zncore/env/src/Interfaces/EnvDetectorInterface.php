@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Env\Interfaces;
+namespace Untek\Core\Env\Interfaces;
 
 interface EnvDetectorInterface
 {

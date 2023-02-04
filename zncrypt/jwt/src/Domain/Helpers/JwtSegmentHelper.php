@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
-use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
+use Untek\Crypt\Base\Domain\Helpers\SafeBase64Helper;
 
 class JwtSegmentHelper
 {

@@ -4,12 +4,12 @@ return [
     'title' => 'Development setup. PHP',
     'tasks' => [
         [
-            'class' => \ZnLib\Components\ShellRobot\Domain\Tasks\LinuxPackage\AddPackageRepositoryTask::class,
+            'class' => \Untek\Lib\Components\ShellRobot\Domain\Tasks\LinuxPackage\AddPackageRepositoryTask::class,
             'repository' => 'ppa:ondrej/php',
 //        'title' => '',
         ],
         [
-            'class' => \ZnLib\Components\ShellRobot\Domain\Tasks\LinuxPackage\InstallLinuxPackageTask::class,
+            'class' => \Untek\Lib\Components\ShellRobot\Domain\Tasks\LinuxPackage\InstallLinuxPackageTask::class,
             'package' => [
                 '{{phpv}}',
                 '{{phpv}}-cli',
@@ -19,7 +19,7 @@ return [
             'title' => '## Install base PHP packages',
         ],
         [
-            'class' => \ZnLib\Components\ShellRobot\Domain\Tasks\LinuxPackage\InstallLinuxPackageTask::class,
+            'class' => \Untek\Lib\Components\ShellRobot\Domain\Tasks\LinuxPackage\InstallLinuxPackageTask::class,
             'package' => [
                 '{{phpv}}-gmp',
                 '{{phpv}}-curl',
@@ -38,7 +38,7 @@ return [
             'title' => '## Install ext PHP packages',
         ],
         [
-            'class' => \ZnSandbox\Sandbox\Deployer\Domain\Tasks\Setup\ConfigPhpTask::class,
+            'class' => \Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Setup\ConfigPhpTask::class,
             'apacheIniConfig' => [
                 'short_open_tag' => 'On',
             ],
@@ -50,7 +50,7 @@ return [
             ],
         ],
         [
-            'class' => \ZnSandbox\Sandbox\Deployer\Domain\Tasks\Composer\InstallComposerToSystemTask::class,
+            'class' => \Untek\Sandbox\Sandbox\Deployer\Domain\Tasks\Composer\InstallComposerToSystemTask::class,
 //            'title' => '',
         ],
     ],

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\QrBox\Libs;
+namespace Untek\Lib\QrBox\Libs;
 
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnLib\QrBox\Wrappers\WrapperInterface;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Lib\QrBox\Wrappers\WrapperInterface;
 
 class WrapperDetector
 {

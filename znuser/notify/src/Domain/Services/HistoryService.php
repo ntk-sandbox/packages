@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Entities\TypeEntity;
-use ZnUser\Notify\Domain\Interfaces\Services\HistoryServiceInterface;
-use ZnBundle\Person\Domain\Services\ContactService;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Entities\TypeEntity;
+use Untek\User\Notify\Domain\Interfaces\Services\HistoryServiceInterface;
+use Untek\Bundle\Person\Domain\Services\ContactService;
 use Yii;
-use ZnBundle\Notify\Domain\Entities\EmailEntity;
-use ZnBundle\Notify\Domain\Entities\SmsEntity;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Repository\Traits\RepositoryAwareTrait;
+use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
+use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
+use Untek\Bundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
 
 class HistoryService implements HistoryServiceInterface
 {

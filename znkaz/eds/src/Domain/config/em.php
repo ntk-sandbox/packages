@@ -2,9 +2,9 @@
 
 return [
 	'entities' => [
-		'ZnKaz\\Eds\\Domain\\Entities\\CrlEntity' => 'ZnKaz\\Eds\\Domain\\Interfaces\\Repositories\\CrlRepositoryInterface',
-		'ZnKaz\\Eds\\Domain\\Entities\\HostEntity' => 'ZnKaz\\Eds\\Domain\\Interfaces\\Repositories\\HostRepositoryInterface',
-		'ZnKaz\\Eds\\Domain\\Entities\\LogEntity' => 'ZnKaz\\Eds\\Domain\\Interfaces\\Repositories\\LogRepositoryInterface',
-		'ZnKaz\\Eds\\Domain\\Entities\\CertificateEntity' => 'ZnKaz\\Eds\\Domain\\Interfaces\\Repositories\\CertificateRepositoryInterface',
+		'Untek\\Kaz\\Eds\\Domain\\Entities\\CrlEntity' => 'Untek\\Kaz\\Eds\\Domain\\Interfaces\\Repositories\\CrlRepositoryInterface',
+		'Untek\\Kaz\\Eds\\Domain\\Entities\\HostEntity' => 'Untek\\Kaz\\Eds\\Domain\\Interfaces\\Repositories\\HostRepositoryInterface',
+		'Untek\\Kaz\\Eds\\Domain\\Entities\\LogEntity' => 'Untek\\Kaz\\Eds\\Domain\\Interfaces\\Repositories\\LogRepositoryInterface',
+		'Untek\\Kaz\\Eds\\Domain\\Entities\\CertificateEntity' => 'Untek\\Kaz\\Eds\\Domain\\Interfaces\\Repositories\\CertificateRepositoryInterface',
 	],
 ];

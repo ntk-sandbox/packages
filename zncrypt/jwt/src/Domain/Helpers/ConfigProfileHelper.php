@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Helpers;
+namespace Untek\Crypt\Jwt\Domain\Helpers;
 
-use ZnCore\Contract\Common\Exceptions\InvalidConfigException;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCrypt\Base\Domain\Entities\ConfigEntity;
-use ZnCrypt\Jwt\Domain\Entities\ProfileEntity;
+use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Crypt\Base\Domain\Entities\ConfigEntity;
+use Untek\Crypt\Jwt\Domain\Entities\ProfileEntity;
 
 class ConfigProfileHelper
 {

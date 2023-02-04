@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Ip;
+namespace Untek\Sandbox\Sandbox\Ip;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

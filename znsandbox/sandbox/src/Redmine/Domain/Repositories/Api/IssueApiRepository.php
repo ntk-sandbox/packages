@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Redmine\Domain\Repositories\Api;
+namespace Untek\Sandbox\Sandbox\Redmine\Domain\Repositories\Api;
 
 use Redmine\Api\AbstractApi;
-use ZnDomain\Repository\Mappers\PathMapper;
-use ZnDomain\Repository\Mappers\TimeMapper;
-use ZnSandbox\Sandbox\Redmine\Domain\Entities\IssueApiEntity;
-use ZnSandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
-use ZnSandbox\Sandbox\Redmine\Domain\Mappers\IssueApiMapper;
+use Untek\Domain\Repository\Mappers\PathMapper;
+use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\IssueApiEntity;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
+use Untek\Sandbox\Sandbox\Redmine\Domain\Mappers\IssueApiMapper;
 
 class IssueApiRepository extends BaseApiRepository implements IssueApiRepositoryInterface
 {

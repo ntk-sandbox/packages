@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Libs\TableAdapters;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Libs\TableAdapters;
 
-use ZnCore\Collection\Libs\Collection;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
-use ZnSandbox\Sandbox\Generator\Domain\Entities\AttributeEntity;
-use ZnSandbox\Sandbox\Generator\Domain\Entities\EntityEntity;
-use ZnSandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\DomainEntity;
+use Untek\Sandbox\Sandbox\Generator\Domain\Entities\AttributeEntity;
+use Untek\Sandbox\Sandbox\Generator\Domain\Entities\EntityEntity;
+use Untek\Sandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
 
 class EntityAdapter extends BaseAdapter
 {

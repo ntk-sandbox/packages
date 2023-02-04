@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Interfaces\Services;
+namespace Untek\User\Authentication\Domain\Interfaces\Services;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
 
 interface TokenServiceInterface
 {

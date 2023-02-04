@@ -1,10 +1,10 @@
 <?php
 
-use ZnUser\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\RbacAssignmentEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\RbacItemPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\RbacMyAssignmentPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\RbacAssignmentEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\RbacItemPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\RbacMyAssignmentPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

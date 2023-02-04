@@ -2,7 +2,7 @@
 
 return [
 	'entities' => [
-		'ZnFramework\\Wsdl\\Domain\\Entities\\TransportEntity' => 'ZnFramework\\Wsdl\\Domain\\Interfaces\\Repositories\\TransportRepositoryInterface',
-		'ZnFramework\\Wsdl\\Domain\\Entities\\ServiceEntity' => 'ZnFramework\\Wsdl\\Domain\\Interfaces\\Repositories\\ServiceRepositoryInterface',
+		'Untek\\Framework\\Wsdl\\Domain\\Entities\\TransportEntity' => 'Untek\\Framework\\Wsdl\\Domain\\Interfaces\\Repositories\\TransportRepositoryInterface',
+		'Untek\\Framework\\Wsdl\\Domain\\Entities\\ServiceEntity' => 'Untek\\Framework\\Wsdl\\Domain\\Interfaces\\Repositories\\ServiceRepositoryInterface',
 	],
 ];

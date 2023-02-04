@@ -1,21 +1,21 @@
 <?php
 
-namespace ZnTool\Stress\Commands;
+namespace Untek\Tool\Stress\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnTool\Stress\Domain\Entities\ProfileEntity;
-use ZnTool\Stress\Domain\Entities\ResultEntity;
-use ZnTool\Stress\Domain\Entities\TestEntity;
-use ZnTool\Stress\Domain\Helpers\RuntimeHelper;
-use ZnTool\Stress\Domain\Repositories\Conf\ProfileRepository;
-use ZnTool\Stress\Domain\Services\StressService;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Tool\Stress\Domain\Entities\ProfileEntity;
+use Untek\Tool\Stress\Domain\Entities\ResultEntity;
+use Untek\Tool\Stress\Domain\Entities\TestEntity;
+use Untek\Tool\Stress\Domain\Helpers\RuntimeHelper;
+use Untek\Tool\Stress\Domain\Repositories\Conf\ProfileRepository;
+use Untek\Tool\Stress\Domain\Services\StressService;
 
 class StressCommand extends Command
 {

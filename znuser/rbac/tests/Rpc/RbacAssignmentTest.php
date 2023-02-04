@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Rbac\Tests\Rpc;
+namespace Untek\User\Rbac\Tests\Rpc;
 
-use ZnFramework\Rpc\Test\BaseRpcTest;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 class RbacAssignmentTest extends BaseRpcTest
 {

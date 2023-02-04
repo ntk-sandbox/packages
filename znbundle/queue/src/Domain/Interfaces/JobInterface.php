@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Interfaces;
+namespace Untek\Bundle\Queue\Domain\Interfaces;
 
 interface JobInterface
 {

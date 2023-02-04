@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Helpers;
+namespace Untek\Kaz\Iin\Domain\Helpers;
 
-use ZnKaz\Iin\Domain\Enums\SexEnum;
+use Untek\Kaz\Iin\Domain\Enums\SexEnum;
 
 class CenturyHelper
 {

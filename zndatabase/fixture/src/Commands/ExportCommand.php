@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDatabase\Fixture\Commands;
+namespace Untek\Database\Fixture\Commands;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDatabase\Fixture\Domain\Entities\FixtureEntity;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnFramework\Console\Symfony4\Widgets\LogWidget;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Database\Fixture\Domain\Entities\FixtureEntity;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
 
 class ExportCommand extends BaseCommand
 {

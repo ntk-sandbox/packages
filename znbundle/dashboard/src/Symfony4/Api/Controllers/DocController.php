@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Api\Controllers;
+namespace Untek\Bundle\Dashboard\Symfony4\Api\Controllers;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnBundle\Dashboard\Domain\Interfaces\Services\DocServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Bundle\Dashboard\Domain\Interfaces\Services\DocServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;

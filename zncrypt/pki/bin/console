@@ -2,10 +2,10 @@
 <?php
 
 use Symfony\Component\Console\Application;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnCore\Container\Libs\Container;
-use ZnDatabase\Eloquent\Domain\Factories\ManagerFactory;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
+use Untek\Core\DotEnv\Domain\Libs\DotEnv;
+use Untek\Core\Container\Libs\Container;
+use Untek\Database\Eloquent\Domain\Factories\ManagerFactory;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 require __DIR__ . '/../../../autoload.php';
 DotEnv::init();

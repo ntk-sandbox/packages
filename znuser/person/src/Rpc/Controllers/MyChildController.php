@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnUser\Person\Rpc\Controllers;
+namespace Untek\User\Person\Rpc\Controllers;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnFramework\Rpc\Rpc\Serializers\SerializerInterface;
-use ZnUser\Person\Domain\Entities\InheritanceEntity;
-use ZnUser\Person\Domain\Interfaces\Services\MyChildServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnUser\Person\Rpc\Serializers\MyChildSerializer;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Rpc\Serializers\SerializerInterface;
+use Untek\User\Person\Domain\Entities\InheritanceEntity;
+use Untek\User\Person\Domain\Interfaces\Services\MyChildServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\User\Person\Rpc\Serializers\MyChildSerializer;
 
 class MyChildController extends BaseCrudRpcController
 {

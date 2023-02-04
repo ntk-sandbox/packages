@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Libs\App;
+namespace Untek\Lib\Components\ShellRobot\Domain\Libs\App;
 
 use Symfony\Component\Process\Process;
-use ZnCore\Pattern\Singleton\SingletonTrait;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Core\Pattern\Singleton\SingletonTrait;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
 
 class EnvProcessor
 {

@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Authentication\Domain\Enums\Rbac\AuthenticationPermissionEnum;
-use ZnUser\Authentication\Rpc\Controllers\AuthController;
+use Untek\User\Authentication\Domain\Enums\Rbac\AuthenticationPermissionEnum;
+use Untek\User\Authentication\Rpc\Controllers\AuthController;
 
 return [
     [

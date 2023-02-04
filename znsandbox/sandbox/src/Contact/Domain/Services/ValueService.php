@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Contact\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Contact\Domain\Services;
 
-use ZnSandbox\Sandbox\Contact\Domain\Interfaces\Services\ValueServiceInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Contact\Domain\Interfaces\Repositories\ValueRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Contact\Domain\Entities\ValueEntity;
+use Untek\Sandbox\Sandbox\Contact\Domain\Interfaces\Services\ValueServiceInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Contact\Domain\Interfaces\Repositories\ValueRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Contact\Domain\Entities\ValueEntity;
 
 /**
  * @method ValueRepositoryInterface getRepository()

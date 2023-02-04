@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Storage\Domain\Dto;
+namespace Untek\Bundle\Storage\Domain\Dto;
 
 class MatchDto
 {

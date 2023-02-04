@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\QrBox\Tests\Unit;
+namespace Untek\Lib\QrBox\Tests\Unit;
 
-use ZnLib\Components\Format\Encoders\ZipEncoder;
-use ZnLib\QrBox\Factories\ClassEncoderFactory;
-use ZnLib\QrBox\Factories\EncoderServiceFactory;
-use ZnLib\QrBox\Services\EncoderService;
-use ZnLib\QrBox\Wrappers\JsonWrapper;
-use ZnLib\QrBox\Wrappers\WrapperInterface;
-use ZnLib\QrBox\Wrappers\XmlWrapper;
+use Untek\Lib\Components\Format\Encoders\ZipEncoder;
+use Untek\Lib\QrBox\Factories\ClassEncoderFactory;
+use Untek\Lib\QrBox\Factories\EncoderServiceFactory;
+use Untek\Lib\QrBox\Services\EncoderService;
+use Untek\Lib\QrBox\Wrappers\JsonWrapper;
+use Untek\Lib\QrBox\Wrappers\WrapperInterface;
+use Untek\Lib\QrBox\Wrappers\XmlWrapper;
 
 class QrBoxTest extends BaseTest
 {

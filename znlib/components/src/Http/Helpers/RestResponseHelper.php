@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Components\Http\Helpers;
+namespace Untek\Lib\Components\Http\Helpers;
 
 use Psr\Http\Message\ResponseInterface;
-use ZnCore\FileSystem\Helpers\MimeTypeHelper;
-use ZnDomain\DataProvider\Entities\DataProviderEntity;
-use ZnLib\Components\Http\Enums\HttpHeaderEnum;
-use ZnLib\Components\Store\Store;
+use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
+use Untek\Domain\DataProvider\Entities\DataProviderEntity;
+use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
+use Untek\Lib\Components\Store\Store;
 
 class RestResponseHelper
 {

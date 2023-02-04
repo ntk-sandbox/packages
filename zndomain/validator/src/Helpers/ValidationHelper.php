@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnDomain\Validator\Helpers;
+namespace Untek\Domain\Validator\Helpers;
 
 use Symfony\Component\Validator\ConstraintViolationList;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Libs\Validators\ChainValidator;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Domain\Validator\Libs\Validators\ChainValidator;
 
 class ValidationHelper
 {
@@ -25,7 +25,7 @@ class ValidationHelper
     }
 
 //    /**
-//     * @return array | \ZnCore\Collection\Interfaces\Enumerable | ValidationErrorEntity[]
+//     * @return array | \Untek\Core\Collection\Interfaces\Enumerable | ValidationErrorEntity[]
 //     */
 //    private static function validate(object $data): ?Enumerable
 //    {
@@ -39,7 +39,7 @@ class ValidationHelper
 //    }
 
     /**
-     * @return array | \ZnCore\Collection\Interfaces\Enumerable | ValidationErrorEntity[]
+     * @return array | \Untek\Core\Collection\Interfaces\Enumerable | ValidationErrorEntity[]
      */
     public static function validateValue($value, array $rules): ConstraintViolationList
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Symfony4\HttpKernel;
+namespace Untek\Framework\Rpc\Symfony4\HttpKernel;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -11,10 +11,10 @@ use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnFramework\Rpc\Domain\Libs\ResponseFormatter;
-use ZnFramework\Rpc\Symfony4\Libs\RpcRequestHandler;
-use ZnLib\Web\WebApp\Base\BaseHttpKernel;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Framework\Rpc\Domain\Libs\ResponseFormatter;
+use Untek\Framework\Rpc\Symfony4\Libs\RpcRequestHandler;
+use Untek\Lib\Web\WebApp\Base\BaseHttpKernel;
 
 class RpcKernel extends BaseHttpKernel
 {

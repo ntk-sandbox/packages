@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Interfaces\Services;
+namespace Untek\Bundle\TalkBox\Domain\Interfaces\Services;
 
-use ZnBundle\TalkBox\Domain\Entities\TagEntity;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\TalkBox\Domain\Entities\TagEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface TagServiceInterface extends CrudServiceInterface
 {

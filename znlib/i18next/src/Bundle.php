@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\I18Next;
+namespace Untek\Lib\I18Next;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

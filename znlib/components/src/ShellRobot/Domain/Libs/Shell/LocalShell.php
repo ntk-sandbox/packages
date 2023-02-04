@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Libs\Shell;
+namespace Untek\Lib\Components\ShellRobot\Domain\Libs\Shell;
 
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnFramework\Console\Domain\Base\BaseShellNew;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Framework\Console\Domain\Base\BaseShellNew;
 
 class LocalShell extends BaseShellNew
 {

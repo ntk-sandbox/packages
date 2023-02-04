@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Interfaces\Services;
+namespace Untek\Bundle\Messenger\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnBundle\Messenger\Domain\Entities\BotEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\Messenger\Domain\Entities\BotEntity;
 
 interface BotServiceInterface extends CrudServiceInterface
 {

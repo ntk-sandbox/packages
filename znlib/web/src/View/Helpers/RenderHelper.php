@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\View\Helpers;
+namespace Untek\Lib\Web\View\Helpers;
 
 use ReflectionClass;
 

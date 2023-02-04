@@ -14,8 +14,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnRpc\\Mock\\": "src",
-      "ZnRpc\\Mock\\Tests\\": "tests"
+      "Untek\\Rpc\\Mock\\": "src",
+      "Untek\\Rpc\\Mock\\Tests\\": "tests"
     }
   }
 }

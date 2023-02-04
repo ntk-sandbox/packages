@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Input;
+namespace Untek\Tool\Generator\Domain\Scenarios\Input;
 
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\Question;

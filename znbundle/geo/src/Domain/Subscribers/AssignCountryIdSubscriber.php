@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Subscribers;
+namespace Untek\Bundle\Geo\Domain\Subscribers;
 
-use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
+use Untek\Bundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnDomain\Domain\Events\QueryEvent;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Domain\Domain\Events\QueryEvent;
 
 class AssignCountryIdSubscriber implements EventSubscriberInterface
 {

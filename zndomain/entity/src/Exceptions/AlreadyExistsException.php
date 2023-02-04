@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Entity\Exceptions;
+namespace Untek\Domain\Entity\Exceptions;
 
 use Exception;
 

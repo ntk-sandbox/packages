@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Facades;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Facades;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\Process\PhpProcess;
-use ZnSandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
-use ZnSandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Encoders\IsolateEncoder;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 
 class TestHttpFacade
 {
@@ -58,9 +58,9 @@ class TestHttpFacade
 <?php
 
 use Symfony\Component\Console\Application;
-use ZnCore\App\Libs\ZnCore;
-use ZnCore\Container\Libs\Container;
-use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
+use Untek\Core\App\Libs\ZnCore;
+use Untek\Core\Container\Libs\Container;
+use Untek\Sandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
 
 \$_SERVER['MICRO_TIME'] = microtime(true);
 \$_SERVER['REQUEST_ID'] = uniqid();
@@ -68,7 +68,7 @@ use ZnSandbox\Sandbox\WebTest\Commands\RequestReceiverCommand;
 require __DIR__ . '/vendor/autoload.php';
 
 \$container = new Container();
-\$znCore = new ZnCore(\$container);
+\$Untek\Core = new ZnCore(\$container);
 \$znCore->init();
 
 \$request = unserialize($serializedRequest);

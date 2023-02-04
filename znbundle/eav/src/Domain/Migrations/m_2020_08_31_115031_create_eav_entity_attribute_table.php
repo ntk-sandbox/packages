@@ -3,8 +3,8 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnDatabase\Migration\Domain\Base\BaseCreateTableMigration;
-use ZnDatabase\Migration\Domain\Enums\ForeignActionEnum;
+use Untek\Database\Migration\Domain\Base\BaseCreateTableMigration;
+use Untek\Database\Migration\Domain\Enums\ForeignActionEnum;
 
 class m_2020_08_31_115031_create_eav_entity_attribute_table extends BaseCreateTableMigration
 {

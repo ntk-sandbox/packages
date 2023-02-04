@@ -2,6 +2,6 @@
 
 return [
 	'entities' => [
-		'ZnSandbox\\Sandbox\\Contact\\Domain\\Entities\\ValueEntity' => 'ZnSandbox\\Sandbox\\Contact\\Domain\\Interfaces\\Repositories\\ValueRepositoryInterface',
+		'Untek\\Sandbox\\Sandbox\\Contact\\Domain\\Entities\\ValueEntity' => 'Untek\\Sandbox\\Sandbox\\Contact\\Domain\\Interfaces\\Repositories\\ValueRepositoryInterface',
 	],
 ];

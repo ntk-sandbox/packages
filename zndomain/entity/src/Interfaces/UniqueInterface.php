@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Entity\Interfaces;
+namespace Untek\Domain\Entity\Interfaces;
 
 /**
  * Интерфейс описания уникальных полей сущности

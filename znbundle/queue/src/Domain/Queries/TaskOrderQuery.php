@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Queries;
+namespace Untek\Bundle\Queue\Domain\Queries;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnDomain\Query\Entities\Query;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Domain\Query\Entities\Query;
 
 DeprecateHelper::hardThrow();
 

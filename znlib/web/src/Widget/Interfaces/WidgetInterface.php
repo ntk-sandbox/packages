@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Widget\Interfaces;
+namespace Untek\Lib\Web\Widget\Interfaces;
 
 interface WidgetInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\TypeI18nServiceInterface;
-use ZnDomain\Service\Base\BaseCrudService;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\TypeI18nServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
 
 class TypeI18nService extends BaseCrudService implements TypeI18nServiceInterface
 {

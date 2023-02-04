@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Enums;
+namespace Untek\User\Authentication\Domain\Enums;
 
 class CredentialTypeEnum
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnBundle\Messenger\Rpc\Controllers;
+namespace Untek\Bundle\Messenger\Rpc\Controllers;
 
-use ZnBundle\Messenger\Domain\Filters\MessageFilter;
-use ZnBundle\Messenger\Domain\Forms\MessageForm;
-use ZnBundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
-use ZnBundle\Messenger\Domain\Interfaces\Services\TournamentServiceInterface;
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Bundle\Messenger\Domain\Filters\MessageFilter;
+use Untek\Bundle\Messenger\Domain\Forms\MessageForm;
+use Untek\Bundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\Services\TournamentServiceInterface;
+use Untek\Core\DotEnv\Domain\Libs\DotEnv;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
 
 class MessageController extends BaseCrudRpcController
 {

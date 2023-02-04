@@ -2,6 +2,6 @@
 
 return [
 	'entities' => [
-        'ZnSandbox\\Sandbox\\RpcMock\\Domain\\Entities\\MethodEntity' => 'ZnSandbox\\Sandbox\\RpcMock\\Domain\\Interfaces\\Repositories\\MethodRepositoryInterface',
+        'Untek\\Sandbox\\Sandbox\\RpcMock\\Domain\\Entities\\MethodEntity' => 'Untek\\Sandbox\\Sandbox\\RpcMock\\Domain\\Interfaces\\Repositories\\MethodRepositoryInterface',
 	],
 ];

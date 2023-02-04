@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Services;
 
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Services\ApiKeyServiceInterface;
-use ZnCore\Text\Libs\RandomString;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApiKeyRepositoryInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnSandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApiKeyServiceInterface;
+use Untek\Core\Text\Libs\RandomString;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApiKeyRepositoryInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
 
 /**
  * @method

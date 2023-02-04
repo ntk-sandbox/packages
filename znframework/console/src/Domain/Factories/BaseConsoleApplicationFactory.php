@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Factories;
+namespace Untek\Framework\Console\Domain\Factories;
 
 use Symfony\Component\Console\Application;
-use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Core\App\Interfaces\AppInterface;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 
 abstract class BaseConsoleApplicationFactory
 {

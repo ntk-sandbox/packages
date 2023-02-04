@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Entities;
+namespace Untek\User\Notify\Domain\Entities;
 
 use DateTime;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDomain\Components\Constraints\Enum;
-use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\I18Next\Helpers\TranslatorHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\I18Next\Helpers\TranslatorHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class NotifyEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

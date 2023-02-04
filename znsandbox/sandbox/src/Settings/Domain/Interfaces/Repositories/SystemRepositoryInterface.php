@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Settings\Domain\Interfaces\Repositories;
+namespace Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Repositories;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnSandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Sandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
 
 interface SystemRepositoryInterface extends CrudRepositoryInterface
 {

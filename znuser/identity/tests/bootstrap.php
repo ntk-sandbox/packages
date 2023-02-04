@@ -1,5 +1,5 @@
 <?php
 
-//use ZnCore\DotEnv\Domain\Libs\DotEnv;
+//use Untek\Core\DotEnv\Domain\Libs\DotEnv;
 //
 //DotEnv::init();

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Enums\Rbac;
+namespace Untek\User\Rbac\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
 
 class ExtraPermissionEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {

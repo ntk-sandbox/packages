@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnKaz\Eds\Domain\Interfaces\Services;
+namespace Untek\Kaz\Eds\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
-use ZnKaz\Eds\Domain\Entities\LogEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Kaz\Eds\Domain\Entities\LogEntity;
 
 interface CrlServiceInterface extends CrudServiceInterface
 {

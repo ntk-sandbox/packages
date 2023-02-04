@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Interfaces\Services;
+namespace Untek\User\Authentication\Domain\Interfaces\Services;
 
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
 interface CredentialServiceInterface
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Package\Commands;
+namespace Untek\Tool\Package\Commands;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnFramework\Console\Symfony4\Style\SymfonyStyle;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Helpers\VersionHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Framework\Console\Symfony4\Style\SymfonyStyle;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Helpers\VersionHelper;
 
 class GitNeedReleaseCommand extends BaseCommand
 {

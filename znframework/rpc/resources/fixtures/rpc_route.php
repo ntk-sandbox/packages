@@ -4,5 +4,5 @@ return [
 	'deps' => [
         'rbac_item',
     ],
-	'collection' => \ZnFramework\Rpc\Domain\Helpers\RoutesHelper::getAllRoutes(),
+	'collection' => \Untek\Framework\Rpc\Domain\Helpers\RoutesHelper::getAllRoutes(),
 ];

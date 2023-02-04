@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Test\Base;
+namespace Untek\Tool\Test\Base;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
-use ZnLib\Rest\Contract\Authorization\AuthorizationInterface;
-use ZnLib\Rest\Contract\Authorization\BearerAuthorization;
-use ZnLib\Rest\Contract\Client\RestClient;
+use Untek\Lib\Rest\Contract\Authorization\AuthorizationInterface;
+use Untek\Lib\Rest\Contract\Authorization\BearerAuthorization;
+use Untek\Lib\Rest\Contract\Client\RestClient;
 use Psr\Http\Message\ResponseInterface;
 
 abstract class BaseRestTest extends BaseTest

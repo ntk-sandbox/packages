@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Log;
+namespace Untek\Bundle\Log;
 
-use ZnBundle\Log\Domain\Entities\LogEntity;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Bundle\Log\Domain\Entities\LogEntity;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Libs\Collection;
 
 class JsonRepository
 {

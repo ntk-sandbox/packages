@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnTool\Package\Commands;
+namespace Untek\Tool\Package\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Libs\Deps\DepsExtractor;
-use ZnTool\Package\Domain\Services\DependencyService;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Libs\Deps\DepsExtractor;
+use Untek\Tool\Package\Domain\Services\DependencyService;
 
 class DepsUnusedCommand extends BaseCommand
 {

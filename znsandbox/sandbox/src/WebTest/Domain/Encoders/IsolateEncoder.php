@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Encoders;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Encoders;
 
-use ZnCore\Collection\Libs\Collection;
-use ZnLib\Components\Format\Encoders\BaseChainEncoder;
-use ZnLib\Components\Format\Encoders\PhpSerializeEncoder;
-use ZnLib\Components\Format\Encoders\SafeBase64Encoder;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Lib\Components\Format\Encoders\BaseChainEncoder;
+use Untek\Lib\Components\Format\Encoders\PhpSerializeEncoder;
+use Untek\Lib\Components\Format\Encoders\SafeBase64Encoder;
 
 class IsolateEncoder extends BaseChainEncoder
 {

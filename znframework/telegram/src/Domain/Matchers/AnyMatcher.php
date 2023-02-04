@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Matchers;
+namespace Untek\Framework\Telegram\Domain\Matchers;
 
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Interfaces\MatcherInterface;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Interfaces\MatcherInterface;
 
 class AnyMatcher implements MatcherInterface
 {

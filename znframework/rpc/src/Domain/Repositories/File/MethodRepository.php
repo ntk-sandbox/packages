@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Repositories\File;
+namespace Untek\Framework\Rpc\Domain\Repositories\File;
 
-use ZnDomain\Components\FileRepository\Base\BaseFileCrudRepository;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnFramework\Rpc\Domain\Entities\MethodEntity;
-use ZnFramework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
-use ZnUser\Rbac\Domain\Interfaces\Repositories\PermissionRepositoryInterface;
+use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
+use Untek\User\Rbac\Domain\Interfaces\Repositories\PermissionRepositoryInterface;
 
 class MethodRepository extends BaseFileCrudRepository implements MethodRepositoryInterface
 {

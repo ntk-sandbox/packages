@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Domain\Interfaces;
+namespace Untek\Domain\Domain\Interfaces;
 
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Query\Entities\Query;
 
 interface CountInterface extends \Countable
 {

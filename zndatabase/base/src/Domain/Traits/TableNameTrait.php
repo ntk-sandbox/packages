@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDatabase\Base\Domain\Traits;
+namespace Untek\Database\Base\Domain\Traits;
 
-use ZnCore\DotEnv\Domain\Libs\DotEnv;
-use ZnDatabase\Eloquent\Domain\Capsule\Manager;
-use ZnDatabase\Base\Domain\Libs\TableAlias;
+use Untek\Core\DotEnv\Domain\Libs\DotEnv;
+use Untek\Database\Eloquent\Domain\Capsule\Manager;
+use Untek\Database\Base\Domain\Libs\TableAlias;
 
 trait TableNameTrait
 {

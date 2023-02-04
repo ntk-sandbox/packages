@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Web\Controllers;
+namespace Untek\Bundle\Dashboard\Symfony4\Web\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnBundle\Dashboard\Domain\Enums\Rbac\DashboardPermissionEnum;
-use ZnBundle\Dashboard\Domain\Interfaces\Services\DashboardServiceInterface;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Form\Traits\ControllerFormTrait;
+use Untek\Bundle\Dashboard\Domain\Enums\Rbac\DashboardPermissionEnum;
+use Untek\Bundle\Dashboard\Domain\Interfaces\Services\DashboardServiceInterface;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Lib\Web\Form\Traits\ControllerFormTrait;
 
 class DashboardController extends BaseWebController implements ControllerAccessInterface
 {

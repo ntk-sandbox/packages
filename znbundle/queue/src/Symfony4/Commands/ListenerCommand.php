@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnBundle\Queue\Symfony4\Commands;
+namespace Untek\Bundle\Queue\Symfony4\Commands;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Command\Command;
@@ -11,16 +11,16 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Lock\Exception\LockAcquiringException;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Process\Process;
-use ZnBundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
-use ZnBundle\Queue\Symfony4\Widgets\TotalQueueWidget;
-use ZnCore\Container\Traits\ContainerAwareTrait;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnFramework\Console\Domain\Exceptions\ShellException;
-use ZnFramework\Console\Domain\Helpers\CommandLineHelper;
-use ZnFramework\Console\Domain\Libs\ZnShell;
-use ZnFramework\Console\Symfony4\Traits\IOTrait;
-use ZnFramework\Console\Symfony4\Traits\LockTrait;
-use ZnFramework\Console\Symfony4\Traits\LoopTrait;
+use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
+use Untek\Bundle\Queue\Symfony4\Widgets\TotalQueueWidget;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Framework\Console\Domain\Exceptions\ShellException;
+use Untek\Framework\Console\Domain\Helpers\CommandLineHelper;
+use Untek\Framework\Console\Domain\Libs\ZnShell;
+use Untek\Framework\Console\Symfony4\Traits\IOTrait;
+use Untek\Framework\Console\Symfony4\Traits\LockTrait;
+use Untek\Framework\Console\Symfony4\Traits\LoopTrait;
 
 class ListenerCommand extends Command
 {

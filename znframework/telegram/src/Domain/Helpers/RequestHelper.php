@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Helpers;
+namespace Untek\Framework\Telegram\Domain\Helpers;
 
-use ZnFramework\Telegram\Domain\Entities\ChatEntity;
-use ZnFramework\Telegram\Domain\Entities\FromEntity;
-use ZnFramework\Telegram\Domain\Entities\MessageEntity;
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Entities\ChatEntity;
+use Untek\Framework\Telegram\Domain\Entities\FromEntity;
+use Untek\Framework\Telegram\Domain\Entities\MessageEntity;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
 
 class RequestHelper
 {

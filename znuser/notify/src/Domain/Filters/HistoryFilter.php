@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Filters;
+namespace Untek\User\Notify\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Components\Status\Enums\StatusSimpleEnum;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Components\Status\Enums\StatusSimpleEnum;
 
 class HistoryFilter implements ValidationByMetadataInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnTool\Test\Asserts;
+namespace Untek\Tool\Test\Asserts;
 
 use Psr\Http\Message\ResponseInterface;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnTool\Test\Helpers\RestHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Tool\Test\Helpers\RestHelper;
 
 abstract class RestAssert extends BaseAssert
 {

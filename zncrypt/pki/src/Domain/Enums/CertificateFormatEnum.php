@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Pki\Domain\Enums;
+namespace Untek\Crypt\Pki\Domain\Enums;
 
 class CertificateFormatEnum
 {

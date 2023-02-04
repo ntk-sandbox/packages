@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Libs\ContactDrivers;
+namespace Untek\User\Notify\Domain\Libs\ContactDrivers;
 
-use ZnBundle\Notify\Domain\Entities\SmsEntity;
-use ZnBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
+use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
+use Untek\Bundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\User\Notify\Domain\Entities\NotifyEntity;
+use Untek\User\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
 
 class PhoneDriver implements ContactDriverInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Repository\Interfaces;
+namespace Untek\Domain\Repository\Interfaces;
 
 interface RepositoryRelationInterface
 {

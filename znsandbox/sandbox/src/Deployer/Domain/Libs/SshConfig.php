@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Deployer\Domain\Libs;
+namespace Untek\Sandbox\Sandbox\Deployer\Domain\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class SshConfig
 {

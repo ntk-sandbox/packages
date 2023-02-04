@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Repositories\Json;
+namespace Untek\Bundle\Log\Domain\Repositories\Json;
 
 use Monolog\Handler\HandlerInterface;
-use ZnBundle\Log\Domain\Entities\HistoryEntity;
-use ZnBundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
-use ZnBundle\Log\Domain\Mappers\HistoryMapper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Bundle\Log\Domain\Entities\HistoryEntity;
+use Untek\Bundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
+use Untek\Bundle\Log\Domain\Mappers\HistoryMapper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
 
 class HistoryRepository implements HistoryRepositoryInterface
 {

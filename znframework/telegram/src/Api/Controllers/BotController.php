@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Telegram\Api\Controllers;
+namespace Untek\Framework\Telegram\Api\Controllers;
 
-use ZnFramework\Telegram\Domain\Handlers\DialogEventHandler2;
-use ZnFramework\Telegram\Domain\Services\BotService;
-use ZnFramework\Telegram\Domain\Services\RequestService;
-use ZnFramework\Telegram\Domain\Services\ResponseService;
-use ZnFramework\Telegram\Domain\Services\RouteService;
+use Untek\Framework\Telegram\Domain\Handlers\DialogEventHandler2;
+use Untek\Framework\Telegram\Domain\Services\BotService;
+use Untek\Framework\Telegram\Domain\Services\RequestService;
+use Untek\Framework\Telegram\Domain\Services\ResponseService;
+use Untek\Framework\Telegram\Domain\Services\RouteService;
 
 class BotController
 {

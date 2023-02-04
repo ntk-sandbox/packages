@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Entities;
+namespace Untek\Framework\Rpc\Domain\Entities;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class BaseRpcCollection
 {
 
-    /** @var \ZnCore\Collection\Interfaces\Enumerable | EntityIdInterface[] */
+    /** @var \Untek\Core\Collection\Interfaces\Enumerable | EntityIdInterface[] */
     protected $collection;
 
     public function __construct()

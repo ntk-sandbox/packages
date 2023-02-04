@@ -1,11 +1,11 @@
 <?php
 
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnBundle\Eav\Symfony4\Admin\Controllers\AttributeController;
-use ZnBundle\Eav\Symfony4\Admin\Controllers\CategoryController;
-use ZnBundle\Eav\Symfony4\Admin\Controllers\EntityAttributeController;
-use ZnBundle\Eav\Symfony4\Admin\Controllers\EntityController;
-use ZnLib\Web\Controller\Helpers\RouteHelper;
+use Untek\Bundle\Eav\Symfony4\Admin\Controllers\AttributeController;
+use Untek\Bundle\Eav\Symfony4\Admin\Controllers\CategoryController;
+use Untek\Bundle\Eav\Symfony4\Admin\Controllers\EntityAttributeController;
+use Untek\Bundle\Eav\Symfony4\Admin\Controllers\EntityController;
+use Untek\Lib\Web\Controller\Helpers\RouteHelper;
 
 return function (RoutingConfigurator $routes) {
     RouteHelper::generateCrud($routes, EntityController::class, '/eav/entity');

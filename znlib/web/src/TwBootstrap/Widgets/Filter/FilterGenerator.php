@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Filter;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Filter;
 
-use ZnLib\Web\TwBootstrap\Widgets\Filter\Widgets\Number\NumberFilterWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Filter\Widgets\Select\SelectFilterWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Filter\Widgets\Text\TextFilterWidget;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Number\NumberFilterWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Select\SelectFilterWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Text\TextFilterWidget;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class FilterGenerator
 {

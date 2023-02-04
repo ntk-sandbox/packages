@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnDatabase\Migration\Commands;
+namespace Untek\Database\Migration\Commands;
 
-use ZnFramework\Console\Symfony4\Widgets\LogWidget;
-use ZnDatabase\Migration\Domain\Entities\MigrationEntity;
-use ZnDatabase\Migration\Domain\Services\MigrationService;
+use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
+use Untek\Database\Migration\Domain\Entities\MigrationEntity;
+use Untek\Database\Migration\Domain\Services\MigrationService;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;

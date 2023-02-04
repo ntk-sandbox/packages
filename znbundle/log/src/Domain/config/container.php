@@ -8,17 +8,17 @@ use Monolog\Logger;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnBundle\Log\Domain\Interfaces\Repositories\LogRepositoryInterface;
-use ZnBundle\Log\Domain\Monolog\Handler\EloquentHandler;
-use ZnBundle\Log\Domain\Repositories\Eloquent\LogRepository;
-use ZnCore\App\Interfaces\EnvStorageInterface;
-use ZnCore\Text\Helpers\TemplateHelper;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Bundle\Log\Domain\Interfaces\Repositories\LogRepositoryInterface;
+use Untek\Bundle\Log\Domain\Monolog\Handler\EloquentHandler;
+use Untek\Bundle\Log\Domain\Repositories\Eloquent\LogRepository;
+use Untek\Core\App\Interfaces\EnvStorageInterface;
+use Untek\Core\Text\Helpers\TemplateHelper;
 
 return [
     'singletons' => [
-        'ZnBundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface' => 'ZnBundle\Log\Domain\Repositories\Json\HistoryRepository',
-        'ZnBundle\Log\Domain\Interfaces\Services\HistoryServiceInterface' => 'ZnBundle\Log\Domain\Services\HistoryService',
+        'Untek\Bundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface' => 'Untek\Bundle\Log\Domain\Repositories\Json\HistoryRepository',
+        'Untek\Bundle\Log\Domain\Interfaces\Services\HistoryServiceInterface' => 'Untek\Bundle\Log\Domain\Services\HistoryService',
 
         LogRepositoryInterface::class => LogRepository::class,
         HandlerInterface::class => function (ContainerInterface $container) {

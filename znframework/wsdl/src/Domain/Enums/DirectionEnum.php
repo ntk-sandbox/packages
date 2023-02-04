@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Enums;
+namespace Untek\Framework\Wsdl\Domain\Enums;
 
 class DirectionEnum
 {

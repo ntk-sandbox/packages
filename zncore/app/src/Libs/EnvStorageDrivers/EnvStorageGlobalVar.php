@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\App\Libs\EnvStorageDrivers;
+namespace Untek\Core\App\Libs\EnvStorageDrivers;
 
-use ZnCore\App\Interfaces\EnvStorageInterface;
+use Untek\Core\App\Interfaces\EnvStorageInterface;
 
 /**
  * Хранилище переменных окружения.

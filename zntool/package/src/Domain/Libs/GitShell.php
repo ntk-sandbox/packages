@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Package\Domain\Libs;
+namespace Untek\Tool\Package\Domain\Libs;
 
 //use Illuminate\Support\Arr;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\FileSystem\Helpers\FileHelper;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\Text\Helpers\TextHelper;
-use ZnFramework\Console\Domain\Base\BaseShell;
-use ZnFramework\Console\Domain\Exceptions\ShellException;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\FileSystem\Helpers\FileHelper;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Framework\Console\Domain\Base\BaseShell;
+use Untek\Framework\Console\Domain\Exceptions\ShellException;
 
 class GitShell extends BaseShell
 {

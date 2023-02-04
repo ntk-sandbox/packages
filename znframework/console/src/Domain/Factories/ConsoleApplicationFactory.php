@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Console\Domain\Factories;
+namespace Untek\Framework\Console\Domain\Factories;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
-use ZnCore\App\Interfaces\AppInterface;
-use ZnCore\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
-use ZnFramework\Console\Domain\Libs\ConsoleApp;
+use Untek\Core\App\Interfaces\AppInterface;
+use Untek\Core\DotEnv\Domain\Libs\Vlucas\VlucasBootstrap;
+use Untek\Framework\Console\Domain\Libs\ConsoleApp;
 
 class ConsoleApplicationFactory extends BaseConsoleApplicationFactory
 {

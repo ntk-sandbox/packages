@@ -1,8 +1,12 @@
 <?php
 
-namespace ZnFramework\Telegram;
+namespace Untek\Framework\Telegram;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Framework\Telegram\Symfony4\Commands\LongPullCommand;
+use Untek\Framework\Telegram\Symfony4\Commands\SendMessageCommand;
+use Untek\Framework\Telegram\Symfony4\Commands\SetHookUrlCommand;
 
 class Bundle extends BaseBundle
 {
@@ -15,15 +19,22 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            new \ZnLib\Components\Lock\Bundle(['all']),
+            new \Untek\Lib\Components\Lock\Bundle(['all']),
         ];
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnFramework\Telegram\Symfony4\Commands',
+            'Untek\Framework\Telegram\Symfony4\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(LongPullCommand::class);
+        $commandConfigurator->registerCommandClass(SendMessageCommand::class);
+        $commandConfigurator->registerCommandClass(SetHookUrlCommand::class);
     }
 
     public function container(): array

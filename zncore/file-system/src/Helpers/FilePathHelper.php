@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\FileSystem\Helpers;
+namespace Untek\Core\FileSystem\Helpers;
 
 class FilePathHelper
 {

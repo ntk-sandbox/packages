@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Interfaces\Repositories;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories;
 
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ContactRepositoryInterface extends CrudRepositoryInterface
 {

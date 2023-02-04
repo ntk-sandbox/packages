@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Enums\Rbac;
+namespace Untek\Bundle\Geo\Domain\Enums\Rbac;
 
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 class GeoCurrencyPermissionEnum implements GetLabelsInterface
 {

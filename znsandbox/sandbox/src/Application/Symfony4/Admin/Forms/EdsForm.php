@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Symfony4\Admin\Forms;
+namespace Untek\Sandbox\Sandbox\Application\Symfony4\Admin\Forms;
 
-use ZnSandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
+use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 
 class EdsForm implements ValidationByMetadataInterface, BuildFormInterface
 {

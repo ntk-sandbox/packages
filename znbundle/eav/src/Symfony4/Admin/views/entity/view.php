@@ -6,15 +6,15 @@
  * @var $entity EntityEntity
  */
 
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\Web\Controller\Helpers\ActionHelper;
-use ZnLib\Web\View\Libs\View;
-use ZnLib\Web\TwBootstrap\Widgets\Detail\DetailWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Web\Controller\Helpers\ActionHelper;
+use Untek\Lib\Web\View\Libs\View;
+use Untek\Lib\Web\TwBootstrap\Widgets\Detail\DetailWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 
 //dd($entity);
 

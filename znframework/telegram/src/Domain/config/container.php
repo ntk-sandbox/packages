@@ -1,6 +1,6 @@
 <?php
 
-use ZnFramework\Telegram\Domain\Services\BotService;
+use Untek\Framework\Telegram\Domain\Services\BotService;
 
 return [
     'singletons' => [

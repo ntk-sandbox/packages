@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnUser\Password\Domain\Services;
+namespace Untek\User\Password\Domain\Services;
 
-use ZnUser\Password\Domain\Entities\PasswordValidatorEntity;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordBlacklistServiceInterface;
-use ZnUser\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
+use Untek\User\Password\Domain\Entities\PasswordValidatorEntity;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordBlacklistServiceInterface;
+use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\Service\Base\BaseService;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\Service\Base\BaseService;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 
 class PasswordValidatorService extends BaseService implements PasswordValidatorServiceInterface
 {

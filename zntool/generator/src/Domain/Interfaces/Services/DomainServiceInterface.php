@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Interfaces\Services;
+namespace Untek\Tool\Generator\Domain\Interfaces\Services;
 
-use ZnTool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
 
 interface DomainServiceInterface
 {

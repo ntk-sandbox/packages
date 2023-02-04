@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\Container\Helpers;
+namespace Untek\Core\Container\Helpers;
 
-use ZnCore\Container\Traits\ContainerAwareStaticAttributeTrait;
+use Untek\Core\Container\Traits\ContainerAwareStaticAttributeTrait;
 
 class ContainerHelper
 {

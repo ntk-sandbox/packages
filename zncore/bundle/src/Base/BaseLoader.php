@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnCore\Bundle\Base;
+namespace Untek\Core\Bundle\Base;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Contracts\Cache\ItemInterface;
-use ZnCore\ConfigManager\Interfaces\ConfigManagerInterface;
-use ZnCore\Container\Traits\ContainerAttributeTrait;
-use ZnCore\Instance\Libs\Resolvers\ArgumentMetadataResolver;
-use ZnCore\Instance\Libs\Resolvers\InstanceResolver;
-use ZnLib\Components\Time\Enums\TimeEnum;
+use Untek\Core\ConfigManager\Interfaces\ConfigManagerInterface;
+use Untek\Core\Container\Traits\ContainerAttributeTrait;
+use Untek\Core\Instance\Libs\Resolvers\ArgumentMetadataResolver;
+use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
 
 /**
  * Абстрактный класс импорта конкретной конфигурации бандла.

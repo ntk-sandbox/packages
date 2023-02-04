@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDomain\Domain\Interfaces;
+namespace Untek\Domain\Domain\Interfaces;
 
 interface GetEntityClassInterface
 {

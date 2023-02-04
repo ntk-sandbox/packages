@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Web\Controller\Helpers;
+namespace Untek\Lib\Web\Controller\Helpers;
 
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use ZnCore\Instance\Helpers\ClassHelper;
+use Untek\Core\Instance\Helpers\ClassHelper;
 
 class RouteHelper
 {

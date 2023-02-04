@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Web\Test;
+namespace Untek\Lib\Web\Test;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use Symfony\Component\BrowserKit\AbstractBrowser;
-use ZnTool\Test\Asserts\BaseAssert;
+use Untek\Tool\Test\Asserts\BaseAssert;
 
 class WebAssert extends BaseAssert
 {

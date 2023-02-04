@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnFramework\Rpc;
+namespace Untek\Framework\Rpc;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

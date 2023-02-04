@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCore\Base\Tests\Unit;
+namespace Untek\Core\Base\Tests\Unit;
 
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Tool\Test\Base\BaseTest;
 
 class Class1
 {

@@ -1,8 +1,8 @@
 <?php
 
-use ZnBundle\Messenger\Domain\Enums\Rbac\MessengerChatPermissionEnum;
-use ZnBundle\Messenger\Domain\Enums\Rbac\MessengerMessagePermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Bundle\Messenger\Domain\Enums\Rbac\MessengerChatPermissionEnum;
+use Untek\Bundle\Messenger\Domain\Enums\Rbac\MessengerMessagePermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

@@ -1,23 +1,23 @@
 <?php
 
-namespace ZnUser\Person\Domain\Services;
+namespace Untek\User\Person\Domain\Services;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Domain\Events\EntityEvent;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnUser\Person\Domain\Entities\ChildEntity;
-use ZnUser\Person\Domain\Entities\InheritanceEntity;
-use ZnUser\Person\Domain\Entities\PersonEntity;
-use ZnUser\Person\Domain\Interfaces\Repositories\ChildRepositoryInterface;
-use ZnUser\Person\Domain\Interfaces\Services\ChildServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
-use ZnUser\Person\Domain\Interfaces\Services\PersonServiceInterface;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\User\Person\Domain\Entities\ChildEntity;
+use Untek\User\Person\Domain\Entities\InheritanceEntity;
+use Untek\User\Person\Domain\Entities\PersonEntity;
+use Untek\User\Person\Domain\Interfaces\Repositories\ChildRepositoryInterface;
+use Untek\User\Person\Domain\Interfaces\Services\ChildServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
+use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;
 
 class ChildService extends BaseCrudService implements ChildServiceInterface
 {
@@ -71,7 +71,7 @@ class ChildService extends BaseCrudService implements ChildServiceInterface
 
 //    public function persist(object $entity)
 //    {
-//        /** @var \ZnUser\Person\Domain\Entities\PersonEntity $entity */
+//        /** @var \Untek\User\Person\Domain\Entities\PersonEntity $entity */
 //        $myPersonId = $this->myPersonService->findOne()->getId();
 //        $childEntity = $this->personService->persist($entity);
 //

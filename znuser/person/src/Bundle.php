@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnUser\Person;
+namespace Untek\User\Person;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
 
 class Bundle extends BaseBundle
 {

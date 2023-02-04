@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnTool\Package\Domain\Entities;
+namespace Untek\Tool\Package\Domain\Entities;
 
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class PackageEntity implements EntityIdInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\ConfigManager\Interfaces;
+namespace Untek\Core\ConfigManager\Interfaces;
 
 /**
  * Реестр для хранения конфигов.

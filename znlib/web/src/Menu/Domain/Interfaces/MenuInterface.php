@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Web\Menu\Domain\Interfaces;
+namespace Untek\Lib\Web\Menu\Domain\Interfaces;
 
 interface MenuInterface
 {

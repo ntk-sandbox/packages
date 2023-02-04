@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Test\Asserts;
+namespace Untek\Tool\Test\Asserts;
 
-use ZnCore\Text\Helpers\TextHelper;
-use ZnTool\Test\Helpers\RestHelper;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Tool\Test\Helpers\RestHelper;
 use Psr\Http\Message\ResponseInterface;
 
 class RestWebAssert extends RestAssert

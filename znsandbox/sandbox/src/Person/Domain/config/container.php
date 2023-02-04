@@ -2,7 +2,7 @@
 
 return [
 	'singletons' => [
-		'ZnSandbox\\Sandbox\\Person\\Domain\\Interfaces\\Services\\PersonServiceInterface' => 'ZnSandbox\\Sandbox\\Person\\Domain\\Services\\PersonService',
+		'Untek\\Sandbox\\Sandbox\\Person\\Domain\\Interfaces\\Services\\PersonServiceInterface' => 'Untek\\Sandbox\\Sandbox\\Person\\Domain\\Services\\PersonService',
 	],
 //	'entities' => [],
 ];

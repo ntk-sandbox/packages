@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Person\Rpc\Serializers;
+namespace Untek\User\Person\Rpc\Serializers;
 
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnFramework\Rpc\Rpc\Serializers\DefaultSerializer;
-use ZnUser\Person\Domain\Entities\InheritanceEntity;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Framework\Rpc\Rpc\Serializers\DefaultSerializer;
+use Untek\User\Person\Domain\Entities\InheritanceEntity;
 
 class MyChildSerializer extends DefaultSerializer
 {

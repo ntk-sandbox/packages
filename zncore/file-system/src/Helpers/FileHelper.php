@@ -5,11 +5,11 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace ZnCore\FileSystem\Helpers;
+namespace Untek\Core\FileSystem\Helpers;
 
 use ErrorException;
-use ZnCore\Contract\Common\Exceptions\InvalidArgumentException;
-use ZnCore\Text\Helpers\StringHelper;
+use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;
+use Untek\Core\Text\Helpers\StringHelper;
 
 /**
  * BaseFileHelper provides concrete implementation for [[FileHelper]].
@@ -771,7 +771,7 @@ class FileHelper
     {
         DeprecateHelper::hardThrow();
         if ($magicFile !== null) {
-            $magicFile = \ZnCore\FileSystem\Helpers\FileHelper::getAlias($magicFile);
+            $magicFile = \Untek\Core\FileSystem\Helpers\FileHelper::getAlias($magicFile);
         }
         if ( ! extension_loaded('fileinfo')) {
             if ($checkExtension) {
@@ -851,7 +851,7 @@ class FileHelper
         if ($magicFile === null) {
             $magicFile = static::$mimeMagicFile;
         }
-        $magicFile = \ZnCore\FileSystem\Helpers\FileHelper::getAlias($magicFile);
+        $magicFile = \Untek\Core\FileSystem\Helpers\FileHelper::getAlias($magicFile);
         if ( ! isset(self::$_mimeTypes[$magicFile])) {
             self::$_mimeTypes[$magicFile] = require $magicFile;
         }
@@ -874,7 +874,7 @@ class FileHelper
         if ($aliasesFile === null) {
             $aliasesFile = static::$mimeAliasesFile;
         }
-        $aliasesFile = \ZnCore\FileSystem\Helpers\FileHelper::getAlias($aliasesFile);
+        $aliasesFile = \Untek\Core\FileSystem\Helpers\FileHelper::getAlias($aliasesFile);
         if ( ! isset(self::$_mimeAliases[$aliasesFile])) {
             self::$_mimeAliases[$aliasesFile] = require $aliasesFile;
         }

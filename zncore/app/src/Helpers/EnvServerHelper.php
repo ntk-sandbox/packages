@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCore\App\Helpers;
+namespace Untek\Core\App\Helpers;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 
 DeprecateHelper::hardThrow();
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\Tests\Unit;
+namespace Untek\Lib\Components\Tests\Unit;
 
-use ZnCore\FileSystem\Helpers\FileStorageHelper;
-use ZnLib\Components\TwigRender\Libs\Render;
-use ZnTool\Test\Asserts\DataAssert;
-use ZnTool\Test\Asserts\DataTestCase;
+use Untek\Core\FileSystem\Helpers\FileStorageHelper;
+use Untek\Lib\Components\TwigRender\Libs\Render;
+use Untek\Tool\Test\Asserts\DataAssert;
+use Untek\Tool\Test\Asserts\DataTestCase;
 
 final class TwigRenderTest extends DataTestCase
 {

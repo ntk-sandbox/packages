@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Repositories\Config;
+namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\Config;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Query\Entities\Query;
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
 
 class ProfileRepository
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnCrypt\Pki\XmlDSig\Domain\Entities;
+namespace Untek\Crypt\Pki\XmlDSig\Domain\Entities;
 
-use ZnCrypt\Pki\X509\Domain\Entities\PersonEntity;
+use Untek\Crypt\Pki\X509\Domain\Entities\PersonEntity;
 
 class VerifyEntity
 {

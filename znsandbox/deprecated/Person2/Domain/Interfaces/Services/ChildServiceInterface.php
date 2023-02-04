@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services;
 
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface ChildServiceInterface extends CrudServiceInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnLib\Components\Format\Encoders;
+namespace Untek\Lib\Components\Format\Encoders;
 
 
 use Symfony\Component\Serializer\Encoder\XmlEncoder as SymfonyXmlEncoder;
 use Exception;
 use InvalidArgumentException;
 use DomainException;
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
-use ZnCore\Contract\Encoder\Interfaces\PrettifyInterface;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Contract\Encoder\Interfaces\PrettifyInterface;
 
 /**
  * XML-сериализатор

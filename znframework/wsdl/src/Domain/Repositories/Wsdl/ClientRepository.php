@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Repositories\Wsdl;
+namespace Untek\Framework\Wsdl\Domain\Repositories\Wsdl;
 
-use ZnFramework\Wsdl\Domain\Entities\TransportEntity;
-use ZnFramework\Wsdl\Domain\Enums\StatusEnum;
-use ZnFramework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
-use ZnFramework\Wsdl\Domain\Libs\SoapClient;
-use ZnDomain\Repository\Base\BaseRepository;
+use Untek\Framework\Wsdl\Domain\Entities\TransportEntity;
+use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
+use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
+use Untek\Framework\Wsdl\Domain\Libs\SoapClient;
+use Untek\Domain\Repository\Base\BaseRepository;
 
 class ClientRepository extends BaseRepository implements ClientRepositoryInterface
 {

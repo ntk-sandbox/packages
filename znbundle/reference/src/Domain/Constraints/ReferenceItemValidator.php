@@ -1,18 +1,18 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Constraints;
+namespace Untek\Bundle\Reference\Domain\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
-use ZnBundle\Reference\Domain\Entities\ItemEntity;
-use ZnBundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Query\Entities\Query;
-use ZnKaz\Iin\Domain\Helpers\IinParser;
+use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
+use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Kaz\Iin\Domain\Helpers\IinParser;
 use Exception;
 
 class ReferenceItemValidator extends ConstraintValidator

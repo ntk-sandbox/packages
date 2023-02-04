@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Authentication\Token;
+namespace Untek\User\Authentication\Domain\Authentication\Token;
 
 use Symfony\Component\Security\Core\Authentication\Token\AbstractToken;
 use Symfony\Component\Security\Core\User\UserInterface;

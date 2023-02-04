@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnKaz\Iin\Domain\Libs\Parsers;
+namespace Untek\Kaz\Iin\Domain\Libs\Parsers;
 
-use ZnKaz\Iin\Domain\Entities\BaseEntity;
-use ZnKaz\Iin\Domain\Entities\JuridicalEntity;
+use Untek\Kaz\Iin\Domain\Entities\BaseEntity;
+use Untek\Kaz\Iin\Domain\Entities\JuridicalEntity;
 
 class JuridicalParser implements ParserInterface
 {

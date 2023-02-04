@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnSandbox\Sandbox\RpcClient\Domain\Interfaces\Services;
+namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services;
 
 interface ClientServiceInterface
 {

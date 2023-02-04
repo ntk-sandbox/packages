@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\Store;
+namespace Untek\Lib\Components\Store;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
 
 class ActiveStore
 {

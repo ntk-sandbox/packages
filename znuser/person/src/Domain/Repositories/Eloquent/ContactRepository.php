@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnUser\Person\Domain\Repositories\Eloquent;
+namespace Untek\User\Person\Domain\Repositories\Eloquent;
 
-use ZnBundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnUser\Person\Domain\Entities\ContactEntity;
-use ZnUser\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\User\Person\Domain\Entities\ContactEntity;
+use Untek\User\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 
 class ContactRepository extends BaseEloquentCrudRepository implements ContactRepositoryInterface
 {

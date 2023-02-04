@@ -1,8 +1,8 @@
 <?php
 
-use ZnLib\Web\View\Libs\View;
-use ZnLib\Web\View\Resources\Css;
-use ZnLib\Web\View\Resources\Js;
+use Untek\Lib\Web\View\Libs\View;
+use Untek\Lib\Web\View\Resources\Css;
+use Untek\Lib\Web\View\Resources\Js;
 
 return [
     'singletons' => [

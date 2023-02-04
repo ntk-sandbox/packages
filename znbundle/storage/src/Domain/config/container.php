@@ -1,12 +1,12 @@
 <?php
 
-use ZnBundle\Storage\Domain\Libs\FileHash;
+use Untek\Bundle\Storage\Domain\Libs\FileHash;
 
 return [
     'singletons' => [
         FileHash::class => function (\Psr\Container\ContainerInterface $container) {
-            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+            /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
             return new FileHash(
                 $envStorage->get('STORAGE_HASH_ALGORITHM'),
                 $envStorage->get('STORAGE_HASH_INCLUDE_SIZE'),
@@ -15,13 +15,13 @@ return [
                 $envStorage->get('STORAGE_PATH_ENCODER')
             );
         },
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\FileServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\FileService',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\ServiceServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\ServiceService',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\UsageServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\UsageService',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Repositories\\FileRepositoryInterface' => 'ZnBundle\\Storage\\Domain\\Repositories\\Eloquent\\FileRepository',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Repositories\\ServiceRepositoryInterface' => 'ZnBundle\\Storage\\Domain\\Repositories\\Eloquent\\ServiceRepository',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Repositories\\UsageRepositoryInterface' => 'ZnBundle\\Storage\\Domain\\Repositories\\Eloquent\\UsageRepository',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\UploadServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\UploadService',
-        'ZnBundle\\Storage\\Domain\\Interfaces\\Services\\MyFileServiceInterface' => 'ZnBundle\\Storage\\Domain\\Services\\MyFileService',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Services\\FileServiceInterface' => 'Untek\\Bundle\\Storage\\Domain\\Services\\FileService',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Services\\ServiceServiceInterface' => 'Untek\\Bundle\\Storage\\Domain\\Services\\ServiceService',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Services\\UsageServiceInterface' => 'Untek\\Bundle\\Storage\\Domain\\Services\\UsageService',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Repositories\\FileRepositoryInterface' => 'Untek\\Bundle\\Storage\\Domain\\Repositories\\Eloquent\\FileRepository',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Repositories\\ServiceRepositoryInterface' => 'Untek\\Bundle\\Storage\\Domain\\Repositories\\Eloquent\\ServiceRepository',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Repositories\\UsageRepositoryInterface' => 'Untek\\Bundle\\Storage\\Domain\\Repositories\\Eloquent\\UsageRepository',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Services\\UploadServiceInterface' => 'Untek\\Bundle\\Storage\\Domain\\Services\\UploadService',
+        'Untek\\Bundle\\Storage\\Domain\\Interfaces\\Services\\MyFileServiceInterface' => 'Untek\\Bundle\\Storage\\Domain\\Services\\MyFileService',
     ],
 ];

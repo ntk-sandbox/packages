@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Helpers;
+namespace Untek\Bundle\Eav\Domain\Helpers;
 
-use ZnBundle\Eav\Domain\Entities\EntityEntity;
-use ZnBundle\Eav\Domain\Libs\TypeNormalizer;
-use ZnBundle\Eav\Domain\Libs\Validator;
-use ZnLib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
+use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
+use Untek\Bundle\Eav\Domain\Libs\TypeNormalizer;
+use Untek\Bundle\Eav\Domain\Libs\Validator;
+use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
 
 class EavEntityValidationHelper
 {

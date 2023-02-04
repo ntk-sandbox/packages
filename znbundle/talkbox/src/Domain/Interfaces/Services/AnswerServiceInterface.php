@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\TalkBox\Domain\Interfaces\Services;
+namespace Untek\Bundle\TalkBox\Domain\Interfaces\Services;
 
-use ZnBundle\TalkBox\Domain\Entities\AnswerEntity;
-use ZnDomain\Service\Interfaces\CrudServiceInterface;
+use Untek\Bundle\TalkBox\Domain\Entities\AnswerEntity;
+use Untek\Domain\Service\Interfaces\CrudServiceInterface;
 
 interface AnswerServiceInterface extends CrudServiceInterface
 {

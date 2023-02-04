@@ -1,11 +1,11 @@
-ZnSandbox\Sandbox\UserSecurity => ZnUser\Password
+Untek\Sandbox\Sandbox\UserSecurity => Untek\User\Password
 zn/znsandbox/sandbox/src/UserSecurity => zn/znuser/password
 
 
-ZnSandbox\Sandbox\UserNotify => ZnUser\Notify
+Untek\Sandbox\Sandbox\UserNotify => Untek\User\Notify
 zn/znsandbox/sandbox/src/UserNotify => zn/znuser/notify/src
 
-ZnSandbox\Sandbox\Casbin => ZnUser\Rbac
+Untek\Sandbox\Sandbox\Casbin => Untek\User\Rbac
 zn/znsandbox/sandbox/src/Casbin => zn/znuser/rbac/src
 
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnUser\Identity\Rpc\Controllers;
+namespace Untek\User\Identity\Rpc\Controllers;
 
-use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
 
 class IdentityController extends BaseCrudRpcController
 {

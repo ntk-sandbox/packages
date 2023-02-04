@@ -1,23 +1,23 @@
 <?php
 
-namespace ZnDatabase\Doctrine\Domain\Base;
+namespace Untek\Database\Doctrine\Domain\Base;
 
 use Doctrine\DBAL\Driver\PDOStatement;
 use Doctrine\DBAL\Query\QueryBuilder;
 use Illuminate\Database\QueryException;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnDomain\Query\Enums\OperatorEnum;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-//use ZnDomain\Repository\Interfaces\RelationConfigInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDatabase\Doctrine\Domain\Helpers\QueryBuilder\DoctrineQueryBuilderHelper;
-use ZnDomain\Relation\Libs\QueryFilter;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
+use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+//use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Database\Doctrine\Domain\Helpers\QueryBuilder\DoctrineQueryBuilderHelper;
+use Untek\Domain\Relation\Libs\QueryFilter;
 
 abstract class BaseDoctrineCrudRepository extends BaseDoctrineRepository implements CrudRepositoryInterface//, RelationConfigInterface
 {

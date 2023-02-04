@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Enums;
+namespace Untek\User\Rbac\Domain\Enums;
 
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Enum\Interfaces\GetLabelsInterface;
-use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Enum\Interfaces\GetLabelsInterface;
+use Untek\Core\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 DeprecateHelper::hardThrow();
 

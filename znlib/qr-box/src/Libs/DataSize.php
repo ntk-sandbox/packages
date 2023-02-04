@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\QrBox\Libs;
+namespace Untek\Lib\QrBox\Libs;
 
-use ZnLib\Components\Format\Encoders\ChainEncoder;
-use ZnLib\QrBox\Entities\BarCodeEntity;
-use ZnLib\QrBox\Wrappers\WrapperInterface;
+use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Lib\QrBox\Entities\BarCodeEntity;
+use Untek\Lib\QrBox\Wrappers\WrapperInterface;
 use DateTime;
 
 class DataSize

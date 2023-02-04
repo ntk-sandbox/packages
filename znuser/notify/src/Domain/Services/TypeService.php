@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnUser\Notify\Domain\Entities\TypeEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\TypeServiceInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\User\Notify\Domain\Entities\TypeEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\TransportServiceInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\TypeServiceInterface;
 
 class TypeService extends BaseCrudService implements TypeServiceInterface
 {

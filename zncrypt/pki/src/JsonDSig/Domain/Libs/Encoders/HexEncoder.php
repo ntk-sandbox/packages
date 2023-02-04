@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnCrypt\Pki\JsonDSig\Domain\Libs\Encoders;
+namespace Untek\Crypt\Pki\JsonDSig\Domain\Libs\Encoders;
 
 
-use ZnCore\Text\Helpers\TextHelper;
+use Untek\Core\Text\Helpers\TextHelper;
 
 class HexEncoder extends BaseEncoder
 {

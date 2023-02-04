@@ -1,19 +1,19 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\DocBlock\Tag\MethodTag;
 use Laminas\Code\Generator\DocBlockGenerator;
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
-use ZnCore\Text\Helpers\Inflector;
-use ZnLib\Components\Store\StoreFile;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnTool\Generator\Domain\Enums\TypeEnum;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
-use ZnTool\Generator\Domain\Helpers\LocationHelper;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Tool\Generator\Domain\Enums\TypeEnum;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Tool\Generator\Domain\Helpers\LocationHelper;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
 
 class ServiceScenario extends BaseScenario
 {
@@ -77,17 +77,17 @@ class ServiceScenario extends BaseScenario
 
 
         if ($this->buildDto->isCrudService) {
-            $fileGenerator->setUse('ZnDomain\Service\Base\BaseCrudService');
+            $fileGenerator->setUse('Untek\Domain\Service\Base\BaseCrudService');
             $classGenerator->setExtendedClass('BaseCrudService');
         } else {
-            $fileGenerator->setUse('ZnDomain\Service\Base\BaseService');
+            $fileGenerator->setUse('Untek\Domain\Service\Base\BaseService');
             $classGenerator->setExtendedClass('BaseService');
         }
 
         $this->generateConstructMethod();
 
         $entityFullClassName = $this->domainNamespace . LocationHelper::fullClassName($this->name, TypeEnum::ENTITY);
-        $entityPureClassName = \ZnCore\Instance\Helpers\ClassHelper::getClassOfClassName($entityFullClassName);
+        $entityPureClassName = \Untek\Core\Instance\Helpers\ClassHelper::getClassOfClassName($entityFullClassName);
         $fileGenerator->setUse($entityFullClassName);
 
         $methodGenerator = $this->generateGetEntityClassMethod($entityPureClassName);
@@ -113,7 +113,7 @@ class ServiceScenario extends BaseScenario
         /*$phpCode = $fileGenerator->generate();
         foreach ($fileGenerator->getUses() as $useItem) {
             $useClass = $useItem[0];
-            $phpCode = str_replace('\\' . $useClass, \ZnCore\Instance\Helpers\ClassHelper::getClassOfClassName($useClass), $phpCode);
+            $phpCode = str_replace('\\' . $useClass, \Untek\Core\Instance\Helpers\ClassHelper::getClassOfClassName($useClass), $phpCode);
         }*/
 
 

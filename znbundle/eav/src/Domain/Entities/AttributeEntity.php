@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Eav\Domain\Entities;
+namespace Untek\Bundle\Eav\Domain\Entities;
 
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Eav\Domain\Enums\AttributeTypeEnum;
-use ZnDomain\Components\Constraints\Enum;
-use ZnCore\Enum\Helpers\EnumHelper;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Bundle\Eav\Domain\Enums\AttributeTypeEnum;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Core\Enum\Helpers\EnumHelper;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 
 class AttributeEntity implements ValidationByMetadataInterface, EntityIdInterface, BuildFormInterface
 {

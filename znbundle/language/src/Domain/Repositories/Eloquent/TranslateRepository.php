@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnBundle\Language\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Language\Domain\Repositories\Eloquent;
 
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnBundle\Language\Domain\Entities\TranslateEntity;
-use ZnBundle\Language\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Language\Domain\Entities\TranslateEntity;
+use Untek\Bundle\Language\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
 
 class TranslateRepository extends BaseEloquentCrudRepository implements TranslateRepositoryInterface
 {

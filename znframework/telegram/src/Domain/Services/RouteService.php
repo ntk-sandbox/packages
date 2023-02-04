@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnFramework\Telegram\Domain\Services;
+namespace Untek\Framework\Telegram\Domain\Services;
 
 use danog\MadelineProto\APIFactory;
-use ZnCore\Container\Helpers\ContainerHelper;
-use ZnCore\Instance\Libs\InstanceProvider;
-use ZnFramework\Telegram\Domain\Base\BaseAction;
-use ZnFramework\Telegram\Domain\Entities\RequestEntity;
-use ZnFramework\Telegram\Domain\Interfaces\MatcherInterface;
-use ZnFramework\Telegram\Domain\Services\SessionService;
-use ZnFramework\Telegram\Domain\Services\StateService;
-use ZnFramework\Telegram\Domain\Services\UserService;
+use Untek\Core\Container\Helpers\ContainerHelper;
+use Untek\Core\Instance\Libs\InstanceProvider;
+use Untek\Framework\Telegram\Domain\Base\BaseAction;
+use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
+use Untek\Framework\Telegram\Domain\Interfaces\MatcherInterface;
+use Untek\Framework\Telegram\Domain\Services\SessionService;
+use Untek\Framework\Telegram\Domain\Services\StateService;
+use Untek\Framework\Telegram\Domain\Services\UserService;
 
 class RouteService
 {

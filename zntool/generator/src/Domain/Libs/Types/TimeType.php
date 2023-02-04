@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Libs\Types;
+namespace Untek\Tool\Generator\Domain\Libs\Types;
 
-use ZnTool\Generator\Domain\Helpers\FieldRenderHelper;
-use ZnTool\Generator\Domain\Helpers\TypeAttributeHelper;
+use Untek\Tool\Generator\Domain\Helpers\FieldRenderHelper;
+use Untek\Tool\Generator\Domain\Helpers\TypeAttributeHelper;
 
 class TimeType extends BaseType
 {

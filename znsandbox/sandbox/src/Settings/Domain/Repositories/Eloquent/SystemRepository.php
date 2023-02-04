@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Settings\Domain\Repositories\Eloquent;
+namespace Untek\Sandbox\Sandbox\Settings\Domain\Repositories\Eloquent;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Mappers\JsonMapper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use ZnSandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
-use ZnSandbox\Sandbox\Settings\Domain\Interfaces\Repositories\SystemRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Sandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
+use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Repositories\SystemRepositoryInterface;
 
 class SystemRepository extends BaseEloquentCrudRepository implements SystemRepositoryInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Apache\Symfony4\Web\Controllers;
+namespace Untek\Sandbox\Sandbox\Apache\Symfony4\Web\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use ZnLib\Web\Controller\Base\BaseWebController;
-use ZnLib\Web\Controller\Base\BaseWebCrudController;
-use ZnSandbox\Sandbox\Apache\Domain\Services\ServerService;
+use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
+use Untek\Sandbox\Sandbox\Apache\Domain\Services\ServerService;
 
 class ServerController extends BaseWebCrudController
 {

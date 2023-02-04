@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCore\Contract\User\Interfaces\Entities;
+namespace Untek\Core\Contract\User\Interfaces\Entities;
 
 /**
  * Интерфейс сущности персоны пользователя

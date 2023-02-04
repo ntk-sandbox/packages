@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnDatabase\Migration\Domain\Interfaces\Services;
+namespace Untek\Database\Migration\Domain\Interfaces\Services;
 
 interface GenerateServiceInterface
 {

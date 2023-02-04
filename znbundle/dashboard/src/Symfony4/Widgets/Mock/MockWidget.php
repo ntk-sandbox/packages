@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Dashboard\Symfony4\Widgets\Mock;
+namespace Untek\Bundle\Dashboard\Symfony4\Widgets\Mock;
 
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class MockWidget extends BaseWidget2
 {

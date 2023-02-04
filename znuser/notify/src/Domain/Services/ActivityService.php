@@ -1,16 +1,16 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Services;
+namespace Untek\User\Notify\Domain\Services;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnUser\Notify\Domain\Entities\ActivityEntity;
-use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
-use ZnUser\Notify\Domain\Interfaces\Services\ActivityServiceInterface;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\User\Notify\Domain\Entities\ActivityEntity;
+use Untek\User\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
+use Untek\User\Notify\Domain\Interfaces\Services\ActivityServiceInterface;
 
 class ActivityService extends BaseCrudService implements ActivityServiceInterface
 {

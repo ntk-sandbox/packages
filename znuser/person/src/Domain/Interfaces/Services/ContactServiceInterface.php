@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Person\Domain\Interfaces\Services;
+namespace Untek\User\Person\Domain\Interfaces\Services;
 
 interface ContactServiceInterface
 {

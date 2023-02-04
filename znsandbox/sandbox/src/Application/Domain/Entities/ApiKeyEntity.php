@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Application\Domain\Entities;
+namespace Untek\Sandbox\Sandbox\Application\Domain\Entities;
 
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnDomain\Components\Constraints\Enum;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnLib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 
 class ApiKeyEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface, BuildFormInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnCore\DotEnv\Domain\Libs\Symfony;
+namespace Untek\Core\DotEnv\Domain\Libs\Symfony;
 
 use Symfony\Component\Dotenv\Dotenv;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Exceptions\NotFoundDependencyException;
-use ZnCore\Code\Helpers\ComposerHelper;
-use ZnCore\DotEnv\Domain\Enums\DotEnvModeEnum;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnCore\Pattern\Singleton\SingletonTrait;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Exceptions\NotFoundDependencyException;
+use Untek\Core\Code\Helpers\ComposerHelper;
+use Untek\Core\DotEnv\Domain\Enums\DotEnvModeEnum;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Core\Pattern\Singleton\SingletonTrait;
 
 /**
  * Резолвер переменных окружения.

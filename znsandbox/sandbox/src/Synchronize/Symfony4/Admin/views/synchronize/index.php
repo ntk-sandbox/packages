@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @var \ZnCore\Collection\Interfaces\Enumerable | DiffCollectionEntity[] $diffCollection
- * @var \ZnLib\Web\View\Libs\View $this
+ * @var \Untek\Core\Collection\Interfaces\Enumerable | DiffCollectionEntity[] $diffCollection
+ * @var \Untek\Lib\Web\View\Libs\View $this
  */
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnSandbox\Sandbox\Synchronize\Domain\Entities\DiffCollectionEntity;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Sandbox\Sandbox\Synchronize\Domain\Entities\DiffCollectionEntity;
 
 $this->title = I18Next::t('synchronize', 'synchronize.title');
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Entities;
+namespace Untek\Crypt\Jwt\Domain\Entities;
 
-use ZnLib\Components\Time\Enums\TimeEnum;
-use ZnCrypt\Base\Domain\Enums\EncryptAlgorithmEnum;
-use ZnCrypt\Base\Domain\Enums\EncryptFunctionEnum;
-use ZnCrypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
+use Untek\Crypt\Base\Domain\Enums\EncryptAlgorithmEnum;
+use Untek\Crypt\Base\Domain\Enums\EncryptFunctionEnum;
+use Untek\Crypt\Jwt\Domain\Enums\JwtAlgorithmEnum;
 
 /**
  * Class JwtProfileEntity
- * @package ZnCrypt\Base\Domain\Entities
+ * @package Untek\Crypt\Base\Domain\Entities
  *
  * @property $name string
  * @property $life_time integer

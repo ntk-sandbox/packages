@@ -5,14 +5,14 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
-use ZnCore\Env\Helpers\EnvHelper;
-use ZnLib\Components\Time\Enums\TimeEnum;
+use Untek\Core\Env\Helpers\EnvHelper;
+use Untek\Lib\Components\Time\Enums\TimeEnum;
 
 return [
     'singletons' => [
         AdapterInterface::class => function (ContainerInterface $container) {
-            /** @var \ZnCore\App\Interfaces\EnvStorageInterface $envStorage */
-            $envStorage = $container->get(\ZnCore\App\Interfaces\EnvStorageInterface::class);
+            /** @var \Untek\Core\App\Interfaces\EnvStorageInterface $envStorage */
+            $envStorage = $container->get(\Untek\Core\App\Interfaces\EnvStorageInterface::class);
 
             $isEnableCache = EnvHelper::isProd();
             if ($isEnableCache) {

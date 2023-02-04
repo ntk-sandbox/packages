@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\QueryFilter\Exceptions;
+namespace Untek\Domain\QueryFilter\Exceptions;
 
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 
 class BadFilterValidateException extends UnprocessibleEntityException
 {

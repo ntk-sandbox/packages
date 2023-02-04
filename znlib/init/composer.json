@@ -13,8 +13,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ZnLib\\Init\\": "src",
-      "ZnLib\\Init\\Tests\\": "tests"
+      "Untek\\Lib\\Init\\": "src",
+      "Untek\\Lib\\Init\\Tests\\": "tests"
     }
   }
 }

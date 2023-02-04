@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Repositories\Shell;
+namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\Shell;
 
-use ZnLib\Components\ShellRobot\Domain\Base\BaseShellDriver;
+use Untek\Lib\Components\ShellRobot\Domain\Base\BaseShellDriver;
 
 class ZipShell extends BaseShellDriver
 {

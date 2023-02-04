@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnBundle\Log\Domain\Interfaces\Repositories;
+namespace Untek\Bundle\Log\Domain\Interfaces\Repositories;
 
-use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
-use ZnDomain\Domain\Interfaces\ReadAllInterface;
-use ZnDomain\Repository\Interfaces\FindOneInterface;
-use ZnDomain\Repository\Interfaces\RepositoryInterface;
+use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Domain\Domain\Interfaces\ReadAllInterface;
+use Untek\Domain\Repository\Interfaces\FindOneInterface;
+use Untek\Domain\Repository\Interfaces\RepositoryInterface;
 
 interface HistoryRepositoryInterface extends RepositoryInterface, GetEntityClassInterface, ReadAllInterface, FindOneInterface
 {

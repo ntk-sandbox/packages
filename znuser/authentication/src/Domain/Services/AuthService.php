@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Services;
+namespace Untek\User\Authentication\Domain\Services;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\NullToken;
@@ -10,32 +10,32 @@ use Symfony\Component\Security\Core\Exception\UserNotFoundException;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnBundle\User\Domain\Entities\User;
-use ZnCore\Code\Helpers\DeprecateHelper;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use ZnCore\EventDispatcher\Traits\EventDispatcherTrait;
-use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
-use ZnCrypt\Base\Domain\Services\PasswordService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Repository\Interfaces\FindOneInterface;
-use ZnDomain\Repository\Traits\RepositoryAwareTrait;
-use ZnDomain\Validator\Entities\ValidationErrorEntity;
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnUser\Authentication\Domain\Entities\CredentialEntity;
-use ZnUser\Authentication\Domain\Entities\TokenValueEntity;
-use ZnUser\Authentication\Domain\Enums\AuthEventEnum;
-use ZnUser\Authentication\Domain\Events\AuthEvent;
-use ZnUser\Authentication\Domain\Forms\AuthForm;
-use ZnUser\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
-use ZnUser\Authentication\Domain\Libs\CredentialsPasswordValidator;
-use ZnUser\Identity\Domain\Events\IdentityEvent;
-use ZnUser\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
+use Untek\Bundle\User\Domain\Entities\User;
+use Untek\Core\Code\Helpers\DeprecateHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
+use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
+use Untek\Crypt\Base\Domain\Exceptions\InvalidPasswordException;
+use Untek\Crypt\Base\Domain\Services\PasswordService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Repository\Interfaces\FindOneInterface;
+use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
+use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\User\Authentication\Domain\Entities\CredentialEntity;
+use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
+use Untek\User\Authentication\Domain\Enums\AuthEventEnum;
+use Untek\User\Authentication\Domain\Events\AuthEvent;
+use Untek\User\Authentication\Domain\Forms\AuthForm;
+use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
+use Untek\User\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
+use Untek\User\Authentication\Domain\Libs\CredentialsPasswordValidator;
+use Untek\User\Identity\Domain\Events\IdentityEvent;
+use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 
 class AuthService implements AuthServiceInterface
 {

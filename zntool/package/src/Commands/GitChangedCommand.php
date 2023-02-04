@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Package\Commands;
+namespace Untek\Tool\Package\Commands;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnTool\Package\Domain\Entities\ChangedEntity;
-use ZnTool\Package\Domain\Entities\PackageEntity;
-use ZnTool\Package\Domain\Enums\StatusEnum;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Tool\Package\Domain\Entities\ChangedEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
+use Untek\Tool\Package\Domain\Enums\StatusEnum;
 
 class GitChangedCommand extends BaseCommand
 {

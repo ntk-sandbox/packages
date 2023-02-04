@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Authentication\Domain\Interfaces;
+namespace Untek\User\Authentication\Domain\Interfaces;
 
 /**
  * Generates authorization tokens.

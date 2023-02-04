@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Registration\Domain\Enums;
+namespace Untek\User\Registration\Domain\Enums;
 
 class UserRegistrationNotifyTypeEnum
 {

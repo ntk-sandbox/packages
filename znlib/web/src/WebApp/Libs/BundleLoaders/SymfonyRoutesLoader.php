@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnLib\Web\WebApp\Libs\BundleLoaders;
+namespace Untek\Lib\Web\WebApp\Libs\BundleLoaders;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 use Symfony\Component\Routing\Loader\PhpFileLoader;
 use Symfony\Component\Routing\RouteCollection;
-use ZnCore\Bundle\Base\BaseLoader;
+use Untek\Core\Bundle\Base\BaseLoader;
 
 class SymfonyRoutesLoader extends BaseLoader
 {

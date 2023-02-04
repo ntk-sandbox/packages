@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Enums;
+namespace Untek\Framework\Rpc\Domain\Enums;
 
 class RpcVersionEnum
 {

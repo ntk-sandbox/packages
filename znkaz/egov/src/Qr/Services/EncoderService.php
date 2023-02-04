@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnKaz\Egov\Qr\Services;
+namespace Untek\Kaz\Egov\Qr\Services;
 
 use Exception;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnKaz\Egov\Qr\Encoders\Base64Encoder;
-use ZnKaz\Egov\Qr\Encoders\EconomicCompressionEncoder;
-use ZnKaz\Egov\Qr\Encoders\GZipEncoder;
-use ZnKaz\Egov\Qr\Encoders\HexEncoder;
-use ZnKaz\Egov\Qr\Encoders\ImplodeEncoder;
-use ZnKaz\Egov\Qr\Encoders\SplitEncoder;
-use ZnKaz\Egov\Qr\Encoders\ZipEncoder;
-use ZnKaz\Egov\Qr\Entities\BarCodeEntity;
-use ZnKaz\Egov\Qr\Libs\ClassEncoder;
-use ZnKaz\Egov\Qr\Wrappers\JsonWrapper;
-use ZnKaz\Egov\Qr\Wrappers\WrapperInterface;
-use ZnKaz\Egov\Qr\Wrappers\XmlWrapper;
-use ZnLib\Egov\Helpers\XmlHelper;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Kaz\Egov\Qr\Encoders\Base64Encoder;
+use Untek\Kaz\Egov\Qr\Encoders\EconomicCompressionEncoder;
+use Untek\Kaz\Egov\Qr\Encoders\GZipEncoder;
+use Untek\Kaz\Egov\Qr\Encoders\HexEncoder;
+use Untek\Kaz\Egov\Qr\Encoders\ImplodeEncoder;
+use Untek\Kaz\Egov\Qr\Encoders\SplitEncoder;
+use Untek\Kaz\Egov\Qr\Encoders\ZipEncoder;
+use Untek\Kaz\Egov\Qr\Entities\BarCodeEntity;
+use Untek\Kaz\Egov\Qr\Libs\ClassEncoder;
+use Untek\Kaz\Egov\Qr\Wrappers\JsonWrapper;
+use Untek\Kaz\Egov\Qr\Wrappers\WrapperInterface;
+use Untek\Kaz\Egov\Qr\Wrappers\XmlWrapper;
+use Untek\Lib\Egov\Helpers\XmlHelper;
 use Zxing\QrReader;
 
 class EncoderService

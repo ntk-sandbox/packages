@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnFramework\Wsdl\Domain\Libs;
+namespace Untek\Framework\Wsdl\Domain\Libs;
 
 use Psr\Container\ContainerInterface;
 use SoapServer;
-use ZnCore\Container\Traits\ContainerAwareTrait;
+use Untek\Core\Container\Traits\ContainerAwareTrait;
 
 class SoapHandler
 {

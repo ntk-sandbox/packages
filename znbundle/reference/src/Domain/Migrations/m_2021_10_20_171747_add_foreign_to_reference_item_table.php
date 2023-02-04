@@ -3,7 +3,7 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnDatabase\Migration\Domain\Base\BaseColumnMigration;
+use Untek\Database\Migration\Domain\Base\BaseColumnMigration;
 
 class m_2021_10_20_171747_add_foreign_to_reference_item_table extends BaseColumnMigration
 {

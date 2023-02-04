@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Facades;
+namespace Untek\User\Rbac\Domain\Facades;
 
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnUser\Rbac\Domain\Libs\InheritanceMap;
-use ZnUser\Rbac\Domain\Libs\MapItem;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\User\Rbac\Domain\Libs\InheritanceMap;
+use Untek\User\Rbac\Domain\Libs\MapItem;
 
 class FixtureGeneratorFacade
 {
@@ -13,7 +13,7 @@ class FixtureGeneratorFacade
     {
         $inheritanceMap = new InheritanceMap($configFile);
         if($configFile == null) {
-            $config = \ZnUser\Rbac\Domain\Helpers\RbacConfigHelper::getAll();
+            $config = \Untek\User\Rbac\Domain\Helpers\RbacConfigHelper::getAll();
             $inheritanceMap->setConfig($config);
         }
 
@@ -30,7 +30,7 @@ class FixtureGeneratorFacade
     {
         $inheritanceMap = new InheritanceMap($configFile);
         if($configFile == null) {
-            $config = \ZnUser\Rbac\Domain\Helpers\RbacConfigHelper::getAll();
+            $config = \Untek\User\Rbac\Domain\Helpers\RbacConfigHelper::getAll();
             $inheritanceMap->setConfig($config);
         }
 

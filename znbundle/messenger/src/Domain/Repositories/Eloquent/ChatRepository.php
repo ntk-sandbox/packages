@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Messenger\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Messenger\Domain\Repositories\Eloquent;
 
-use ZnBundle\Messenger\Domain\Entities\ChatEntity;
-use ZnBundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
-use ZnBundle\Messenger\Domain\Interfaces\MemberRepositoryInterface;
-use ZnDomain\Domain\Enums\RelationEnum;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Messenger\Domain\Entities\ChatEntity;
+use Untek\Bundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
+use Untek\Bundle\Messenger\Domain\Interfaces\MemberRepositoryInterface;
+use Untek\Domain\Domain\Enums\RelationEnum;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ChatRepository extends BaseEloquentCrudRepository implements ChatRepositoryInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnTool\Package\Domain\Helpers;
+namespace Untek\Tool\Package\Domain\Helpers;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\FileSystem\Helpers\FilePathHelper;
-use ZnLib\Components\Store\StoreFile;
-use ZnTool\Package\Domain\Entities\ConfigEntity;
-use ZnTool\Package\Domain\Entities\GroupEntity;
-use ZnTool\Package\Domain\Entities\PackageEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\FileSystem\Helpers\FilePathHelper;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Tool\Package\Domain\Entities\ConfigEntity;
+use Untek\Tool\Package\Domain\Entities\GroupEntity;
+use Untek\Tool\Package\Domain\Entities\PackageEntity;
 
 class PackageHelper
 {

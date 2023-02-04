@@ -1,8 +1,10 @@
 <?php
 
-namespace ZnTool\Stress;
+namespace Untek\Tool\Stress;
 
-use ZnCore\Bundle\Base\BaseBundle;
+use Untek\Core\Bundle\Base\BaseBundle;
+use Untek\Framework\Console\Symfony4\Libs\CommandConfigurator;
+use Untek\Tool\Stress\Commands\StressCommand;
 
 class Bundle extends BaseBundle
 {
@@ -12,11 +14,16 @@ class Bundle extends BaseBundle
         return 'stress';
     }
 
-    public function console(): array
+    /*public function console(): array
     {
         return [
-            'ZnTool\Stress\Commands',
+            'Untek\Tool\Stress\Commands',
         ];
+    }*/
+
+    public function consoleCommands(CommandConfigurator $commandConfigurator)
+    {
+        $commandConfigurator->registerCommandClass(StressCommand::class);
     }
 
     public function container(): array

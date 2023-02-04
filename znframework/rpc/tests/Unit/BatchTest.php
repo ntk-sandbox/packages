@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnLib\Rpc\Tests\Unit;
+namespace Untek\Lib\Rpc\Tests\Unit;
 
-use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
-use ZnDomain\Validator\Helpers\ValidationHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestCollection;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseCollection;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Domain\Enums\RpcVersionEnum;
-use ZnTool\Test\Base\BaseTest;
+use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestCollection;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseCollection;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
+use Untek\Tool\Test\Base\BaseTest;
 
 final class BatchTest extends BaseTest {
 

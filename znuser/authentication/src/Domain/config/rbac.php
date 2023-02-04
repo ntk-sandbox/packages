@@ -1,9 +1,9 @@
 <?php
 
-use ZnUser\Authentication\Domain\Enums\Rbac\AuthenticationPermissionEnum;
-use ZnUser\Authentication\Domain\Enums\Rbac\ImitationAuthenticationPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
-use ZnUser\Authentication\Domain\Enums\Rbac\AuthenticationIdentityPermissionEnum;
+use Untek\User\Authentication\Domain\Enums\Rbac\AuthenticationPermissionEnum;
+use Untek\User\Authentication\Domain\Enums\Rbac\ImitationAuthenticationPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\User\Authentication\Domain\Enums\Rbac\AuthenticationIdentityPermissionEnum;
 
 return [
     'roleEnums' => [

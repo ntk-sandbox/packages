@@ -3,8 +3,8 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnDatabase\Migration\Domain\Base\BaseCreateTableMigration;
-use ZnDatabase\Migration\Domain\Enums\ForeignActionEnum;
+use Untek\Database\Migration\Domain\Base\BaseCreateTableMigration;
+use Untek\Database\Migration\Domain\Enums\ForeignActionEnum;
 
 class m_2021_01_10_122702_create_activity_table extends BaseCreateTableMigration
 {

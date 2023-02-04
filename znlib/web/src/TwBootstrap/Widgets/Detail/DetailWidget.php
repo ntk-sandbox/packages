@@ -1,28 +1,28 @@
 <?php
 
-namespace ZnLib\Web\TwBootstrap\Widgets\Detail;
+namespace Untek\Lib\Web\TwBootstrap\Widgets\Detail;
 
 use DateTime;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Enums\TypeEnum;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ArrayFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\BooleanFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\DoubleFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\HtmlFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\IntegerFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\NullFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ObjectFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ResourceClosedFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ResourceFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\StringFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\TimeFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\UnknownTypeFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnLib\Web\Widget\Base\BaseWidget2;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Enums\TypeEnum;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ArrayFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\BooleanFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\DoubleFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\HtmlFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\IntegerFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\NullFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ObjectFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ResourceClosedFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ResourceFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\StringFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\TimeFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\UnknownTypeFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class DetailWidget extends BaseWidget2
 {

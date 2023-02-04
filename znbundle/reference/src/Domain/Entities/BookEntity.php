@@ -1,20 +1,20 @@
 <?php
 
-namespace ZnBundle\Reference\Domain\Entities;
+namespace Untek\Bundle\Reference\Domain\Entities;
 
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnLib\Components\ReadOnly\Helpers\ReadOnlyHelper;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnDomain\Components\Constraints\Enum;
-use ZnLib\Components\I18n\Traits\I18nTrait;
-use ZnDomain\Components\SoftDelete\Traits\Entity\SoftDeleteEntityTrait;
-use ZnDomain\Components\SoftDelete\Traits\Entity\SoftRestoreEntityTrait;
-use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use Untek\Lib\Components\Status\Enums\StatusEnum;
+use Untek\Lib\Components\ReadOnly\Helpers\ReadOnlyHelper;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Domain\Components\Constraints\Enum;
+use Untek\Lib\Components\I18n\Traits\I18nTrait;
+use Untek\Domain\Components\SoftDelete\Traits\Entity\SoftDeleteEntityTrait;
+use Untek\Domain\Components\SoftDelete\Traits\Entity\SoftRestoreEntityTrait;
+use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
 
 class BookEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface
 {

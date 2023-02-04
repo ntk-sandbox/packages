@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnCrypt\Jwt\Domain\Interfaces\Repositories;
+namespace Untek\Crypt\Jwt\Domain\Interfaces\Repositories;
 
 interface ProfileRepositoryInterface
 {

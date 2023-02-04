@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\TalkBox\Commands;
+namespace Untek\Bundle\TalkBox\Commands;
 
 use danog\MadelineProto\API;
-use ZnCore\Container\Libs\Container;
+use Untek\Core\Container\Libs\Container;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
-use ZnCore\Container\Helpers\ContainerHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
 
 class SendMessageCommand extends Command
 {

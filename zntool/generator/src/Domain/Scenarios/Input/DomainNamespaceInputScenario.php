@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Input;
+namespace Untek\Tool\Generator\Domain\Scenarios\Input;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnFramework\Console\Symfony4\Question\ChoiceQuestion;
-use ZnSandbox\Sandbox\Bundle\Domain\Entities\BundleEntity;
-use ZnSandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
-use ZnSandbox\Sandbox\Generator\Domain\Services\GeneratorService;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Entities\BundleEntity;
+use Untek\Sandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
+use Untek\Sandbox\Sandbox\Generator\Domain\Services\GeneratorService;
 
 class DomainNamespaceInputScenario extends BaseInputScenario
 {

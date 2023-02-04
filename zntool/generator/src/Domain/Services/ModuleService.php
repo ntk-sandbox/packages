@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Services;
+namespace Untek\Tool\Generator\Domain\Services;
 
-use ZnCore\Text\Helpers\Inflector;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnTool\Generator\Domain\Dto\BuildDto;
-use ZnTool\Generator\Domain\Interfaces\Services\ModuleServiceInterface;
-use ZnTool\Generator\Domain\Scenarios\Generate\BaseScenario;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Tool\Generator\Domain\Dto\BuildDto;
+use Untek\Tool\Generator\Domain\Interfaces\Services\ModuleServiceInterface;
+use Untek\Tool\Generator\Domain\Scenarios\Generate\BaseScenario;
 
 class ModuleService implements ModuleServiceInterface
 {
@@ -26,7 +26,7 @@ class ModuleService implements ModuleServiceInterface
 
     private function createScenarioByTypeName($type): BaseScenario
     {
-        $scenarioClass = 'ZnTool\\Generator\\Domain\Scenarios\\Generate\\' . $type . 'Scenario';
+        $scenarioClass = 'Untek\\Tool\\Generator\\Domain\Scenarios\\Generate\\' . $type . 'Scenario';
         /** @var BaseScenario $scenarioInstance */
         $scenarioInstance = new $scenarioClass;
         return $scenarioInstance;

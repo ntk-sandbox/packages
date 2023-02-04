@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnSandbox\Sandbox\WebTest\Domain\Libs\Plugins;
+namespace Untek\Sandbox\Sandbox\WebTest\Domain\Libs\Plugins;
 
-use ZnSandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
+use Untek\Sandbox\Sandbox\WebTest\Domain\Traits\PluginParentTrait;
 
 class JsonAuthPlugin
 {

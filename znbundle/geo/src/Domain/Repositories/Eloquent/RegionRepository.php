@@ -1,15 +1,15 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Geo\Domain\Repositories\Eloquent;
 
-use ZnBundle\Geo\Domain\Entities\RegionEntity;
-use ZnBundle\Geo\Domain\Interfaces\Repositories\CountryRepositoryInterface;
-use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
-use ZnBundle\Geo\Domain\Interfaces\Repositories\RegionRepositoryInterface;
-use ZnDomain\Relation\Libs\Types\OneToManyRelation;
-use ZnDomain\Relation\Libs\Types\OneToOneRelation;
-use ZnDomain\Repository\Mappers\JsonMapper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Geo\Domain\Entities\RegionEntity;
+use Untek\Bundle\Geo\Domain\Interfaces\Repositories\CountryRepositoryInterface;
+use Untek\Bundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
+use Untek\Bundle\Geo\Domain\Interfaces\Repositories\RegionRepositoryInterface;
+use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class RegionRepository extends BaseEloquentCrudRepository implements RegionRepositoryInterface
 {

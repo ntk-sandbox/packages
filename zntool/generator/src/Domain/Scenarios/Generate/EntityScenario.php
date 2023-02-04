@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnTool\Generator\Domain\Scenarios\Generate;
+namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Text\Helpers\Inflector;
-use ZnLib\Components\Store\StoreFile;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
-use ZnDomain\Entity\Interfaces\UniqueInterface;
-use ZnTool\Generator\Domain\Helpers\ClassHelper;
-use ZnTool\Generator\Domain\Libs\ConstraintCodeGenerator;
-use ZnTool\Package\Domain\Helpers\PackageHelper;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Text\Helpers\Inflector;
+use Untek\Lib\Components\Store\StoreFile;
+use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
+use Untek\Tool\Generator\Domain\Libs\ConstraintCodeGenerator;
+use Untek\Tool\Package\Domain\Helpers\PackageHelper;
 
 class EntityScenario extends BaseEntityScenario
 {

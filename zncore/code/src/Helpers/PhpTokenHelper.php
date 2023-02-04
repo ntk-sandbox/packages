@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnCore\Code\Helpers;
+namespace Untek\Core\Code\Helpers;
 
-use ZnCore\Code\Entities\PhpTokenEntity;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Libs\Collection;
+use Untek\Core\Code\Entities\PhpTokenEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Libs\Collection;
 
 class PhpTokenHelper
 {

@@ -2,9 +2,9 @@
 
 namespace Tests\Rpc\Application;
 
-use ZnFramework\Rpc\Test\BaseRpcTest;
-use ZnFramework\Rpc\Test\Traits\CrudRpcTestTrait;
-use ZnTool\Test\Helpers\TestHelper;
+use Untek\Framework\Rpc\Test\BaseRpcTest;
+use Untek\Framework\Rpc\Test\Traits\CrudRpcTestTrait;
+use Untek\Tool\Test\Helpers\TestHelper;
 
 abstract class ApplicationTest extends BaseRpcTest
 {

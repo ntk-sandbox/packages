@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnUser\Rbac\Domain\Enums;
+namespace Untek\User\Rbac\Domain\Enums;
 
 class RbacCacheEnum
 {

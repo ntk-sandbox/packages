@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnBundle\Dashboard\Domain\Interfaces\Services;
+namespace Untek\Bundle\Dashboard\Domain\Interfaces\Services;
 
-use ZnCore\Contract\Common\Exceptions\NotFoundException;
+use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 
 interface DocServiceInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnUser\Notify\Domain\Interfaces\Repositories;
+namespace Untek\User\Notify\Domain\Interfaces\Repositories;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
-use ZnUser\Notify\Domain\Entities\TransportEntity;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\User\Notify\Domain\Entities\TransportEntity;
 
 interface TransportRepositoryInterface extends CrudRepositoryInterface
 {

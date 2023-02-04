@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnBundle\Queue\Domain\Repositories\Eloquent;
+namespace Untek\Bundle\Queue\Domain\Repositories\Eloquent;
 
-use ZnBundle\Queue\Domain\Entities\ScheduleEntity;
-use ZnBundle\Queue\Domain\Interfaces\Repositories\ScheduleRepositoryInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Query\Entities\Query;
-use ZnDomain\Repository\Mappers\TimeMapper;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use Untek\Bundle\Queue\Domain\Entities\ScheduleEntity;
+use Untek\Bundle\Queue\Domain\Interfaces\Repositories\ScheduleRepositoryInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ScheduleRepository extends BaseEloquentCrudRepository implements ScheduleRepositoryInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnBundle\Geo\Domain\Services;
+namespace Untek\Bundle\Geo\Domain\Services;
 
-use ZnBundle\Geo\Domain\Entities\LocalityEntity;
-use ZnBundle\Geo\Domain\Interfaces\Services\LocalityServiceInterface;
-use ZnBundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
+use Untek\Bundle\Geo\Domain\Entities\LocalityEntity;
+use Untek\Bundle\Geo\Domain\Interfaces\Services\LocalityServiceInterface;
+use Untek\Bundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
 use Yii;
-use ZnDomain\Service\Base\BaseCrudService;
-use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnDomain\Query\Entities\Query;
+use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Domain\Query\Entities\Query;
 
 /**
  * @method

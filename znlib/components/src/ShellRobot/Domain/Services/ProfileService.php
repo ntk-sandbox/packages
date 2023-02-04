@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnLib\Components\ShellRobot\Domain\Services;
+namespace Untek\Lib\Components\ShellRobot\Domain\Services;
 
-use ZnLib\Components\ShellRobot\Domain\Factories\ShellFactory;
-use ZnLib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
+use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
+use Untek\Lib\Components\ShellRobot\Domain\Repositories\Config\ProfileRepository;
 
 class ProfileService
 {

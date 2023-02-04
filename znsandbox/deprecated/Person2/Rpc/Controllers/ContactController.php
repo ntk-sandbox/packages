@@ -1,13 +1,13 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Person2\Rpc\Controllers;
+namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
-use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use ZnDomain\Query\Entities\Query;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
-use ZnFramework\Rpc\Rpc\Base\BaseCrudRpcController;
-use ZnSandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactServiceInterface;
+use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
+use Untek\Domain\Query\Entities\Query;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactServiceInterface;
 
 class ContactController extends BaseCrudRpcController
 {

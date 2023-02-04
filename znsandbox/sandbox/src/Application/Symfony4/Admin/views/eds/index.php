@@ -6,17 +6,17 @@
  * @var $baseUri string
  */
 
-use ZnCore\Text\Helpers\TextHelper;
-use ZnSandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
+use Untek\Core\Text\Helpers\TextHelper;
+use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
 
-use ZnLib\Web\Html\Helpers\Url;
-use ZnLib\I18Next\Facades\I18Next;
-use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnLib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
-use ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Lib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
+use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 
 $attributes = [
     [

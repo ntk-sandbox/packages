@@ -1,11 +1,11 @@
 <?php
 
-namespace ZnSandbox\Sandbox\Generator\Domain\Services;
+namespace Untek\Sandbox\Sandbox\Generator\Domain\Services;
 
-use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Collection\Helpers\CollectionHelper;
-use ZnDatabase\Base\Domain\Entities\TableEntity;
-use ZnDatabase\Base\Domain\Repositories\Eloquent\SchemaRepository;
+use Untek\Core\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Helpers\CollectionHelper;
+use Untek\Database\Base\Domain\Entities\TableEntity;
+use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 
 class GeneratorService
 {

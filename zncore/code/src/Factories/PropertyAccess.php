@@ -1,12 +1,12 @@
 <?php
 
-namespace ZnCore\Code\Factories;
+namespace Untek\Core\Code\Factories;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
 use Symfony\Component\PropertyAccess\PropertyAccessorBuilder;
-use ZnCore\Container\Helpers\ContainerHelper;
+use Untek\Core\Container\Helpers\ContainerHelper;
 
 class PropertyAccess
 {

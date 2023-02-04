@@ -1,14 +1,14 @@
 <?php
 
-namespace ZnDomain\Repository\Libs;
+namespace Untek\Domain\Repository\Libs;
 
-use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCore\Collection\Libs\Collection;
-use ZnCore\Instance\Helpers\ClassHelper;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Repository\Interfaces\MapperInterface;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
+use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Collection\Libs\Collection;
+use Untek\Core\Instance\Helpers\ClassHelper;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Lib\Components\Format\Encoders\ChainEncoder;
 
 class MapperEncoder //implements MapperInterface
 {

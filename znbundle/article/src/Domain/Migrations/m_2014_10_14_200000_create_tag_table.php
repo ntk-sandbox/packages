@@ -3,7 +3,7 @@
 namespace Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
-use ZnLib\Migration\Domain\Base\BaseCreateTableMigration;
+use Untek\Lib\Migration\Domain\Base\BaseCreateTableMigration;
 
 class m_2014_10_14_200000_create_tag_table extends BaseCreateTableMigration
 {

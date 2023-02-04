@@ -1,11 +1,11 @@
 <?php
 
-use ZnCore\Container\Libs\BundleLoaders\ContainerLoader;
-use ZnDatabase\Migration\Domain\Libs\BundleLoaders\MigrationLoader;
-use ZnDomain\EntityManager\Libs\BundleLoaders\EntityManagerLoader;
-use ZnLib\Components\Cors\Libs\BundleLoaders\EventDispatcherLoader;
-use ZnLib\I18Next\Libs\BundleLoaders\I18NextLoader;
-use ZnUser\Rbac\Domain\Libs\BundleLoaders\RbacConfigLoader;
+use Untek\Core\Container\Libs\BundleLoaders\ContainerLoader;
+use Untek\Database\Migration\Domain\Libs\BundleLoaders\MigrationLoader;
+use Untek\Domain\EntityManager\Libs\BundleLoaders\EntityManagerLoader;
+use Untek\Lib\Components\Cors\Libs\BundleLoaders\EventDispatcherLoader;
+use Untek\Lib\I18Next\Libs\BundleLoaders\I18NextLoader;
+use Untek\User\Rbac\Domain\Libs\BundleLoaders\RbacConfigLoader;
 
 return [
     'entityManager' => EntityManagerLoader::class,

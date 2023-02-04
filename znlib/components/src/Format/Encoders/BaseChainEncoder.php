@@ -1,10 +1,10 @@
 <?php
 
-namespace ZnLib\Components\Format\Encoders;
+namespace Untek\Lib\Components\Format\Encoders;
 
-use ZnCore\Instance\Helpers\InstanceHelper;
-use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Instance\Helpers\InstanceHelper;
+use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 /**
  * Агрегатный кодер

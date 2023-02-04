@@ -1,6 +1,6 @@
 <?php
 
-namespace ZnLib\Components\I18n\Enums;
+namespace Untek\Lib\Components\I18n\Enums;
 
 class LanguageI18nEnum
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ZnDomain\Relation\Interfaces;
+namespace Untek\Domain\Relation\Interfaces;
 
-use ZnCore\Collection\Interfaces\Enumerable;
+use Untek\Core\Collection\Interfaces\Enumerable;
 
 interface RelationInterface
 {

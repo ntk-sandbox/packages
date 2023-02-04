@@ -1,13 +1,13 @@
 <?php
 
-use ZnUser\Person\Domain\Enums\Rbac\ChildPermissionEnum;
-use ZnUser\Person\Domain\Enums\Rbac\ContactPermissionEnum;
-use ZnUser\Person\Domain\Enums\Rbac\ContactTypePermissionEnum;
-use ZnUser\Person\Domain\Enums\Rbac\MyChildPermissionEnum;
-use ZnUser\Person\Domain\Enums\Rbac\MyContactPermissionEnum;
-use ZnUser\Person\Domain\Enums\Rbac\MyPersonPermissionEnum;
-use ZnUser\Person\Domain\Enums\Rbac\PersonPersonPermissionEnum;
-use ZnUser\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
+use Untek\User\Person\Domain\Enums\Rbac\ChildPermissionEnum;
+use Untek\User\Person\Domain\Enums\Rbac\ContactPermissionEnum;
+use Untek\User\Person\Domain\Enums\Rbac\ContactTypePermissionEnum;
+use Untek\User\Person\Domain\Enums\Rbac\MyChildPermissionEnum;
+use Untek\User\Person\Domain\Enums\Rbac\MyContactPermissionEnum;
+use Untek\User\Person\Domain\Enums\Rbac\MyPersonPermissionEnum;
+use Untek\User\Person\Domain\Enums\Rbac\PersonPersonPermissionEnum;
+use Untek\User\Rbac\Domain\Enums\Rbac\SystemRoleEnum;
 
 return [
     'roleEnums' => [

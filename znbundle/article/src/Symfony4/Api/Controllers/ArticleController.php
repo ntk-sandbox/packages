@@ -1,9 +1,9 @@
 <?php
 
-namespace ZnBundle\Article\Symfony4\Api\Controllers;
+namespace Untek\Bundle\Article\Symfony4\Api\Controllers;
 
-use ZnBundle\Article\Domain\Interfaces\PostServiceInterface;
-use ZnLib\Rest\Symfony4\Base\BaseCrudApiController;
+use Untek\Bundle\Article\Domain\Interfaces\PostServiceInterface;
+use Untek\Lib\Rest\Symfony4\Base\BaseCrudApiController;
 
 class ArticleController extends BaseCrudApiController
 {

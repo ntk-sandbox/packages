@@ -1,24 +1,24 @@
 <?php
 
-namespace ZnFramework\Rpc\Domain\Base;
+namespace Untek\Framework\Rpc\Domain\Base;
 
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use ZnCore\App\Subscribers\PhpErrorSubscriber;
-use ZnCore\Container\Interfaces\ContainerConfiguratorInterface;
-use ZnCore\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use ZnFramework\Rpc\Domain\Subscribers\ApplicationAuthenticationSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\Authentication\RpcAuthenticationFromAllSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\Authentication\RpcAuthenticationFromChainSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\CheckAccessSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\CryptoProviderSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\LanguageSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\LogSubscriber;
-use ZnFramework\Rpc\Domain\Subscribers\TimestampSubscriber;
-use ZnFramework\Rpc\Symfony4\HttpKernel\RpcKernel;
-use ZnCore\App\Base\BaseApp;
-use ZnLib\Web\WebApp\Subscribers\WebDetectTestEnvSubscriber;
+use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use Untek\Core\App\Subscribers\PhpErrorSubscriber;
+use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
+use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
+use Untek\Framework\Rpc\Domain\Subscribers\ApplicationAuthenticationSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\Authentication\RpcAuthenticationFromAllSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\Authentication\RpcAuthenticationFromChainSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\CheckAccessSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\CryptoProviderSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\LanguageSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\LogSubscriber;
+use Untek\Framework\Rpc\Domain\Subscribers\TimestampSubscriber;
+use Untek\Framework\Rpc\Symfony4\HttpKernel\RpcKernel;
+use Untek\Core\App\Base\BaseApp;
+use Untek\Lib\Web\WebApp\Subscribers\WebDetectTestEnvSubscriber;
 
 abstract class BaseRpcApp extends BaseApp
 {

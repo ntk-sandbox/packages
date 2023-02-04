@@ -1,17 +1,17 @@
 <?php
 
-namespace ZnFramework\Rpc\Symfony4\Web\Libs;
+namespace Untek\Framework\Rpc\Symfony4\Web\Libs;
 
-use ZnCore\Code\Helpers\PropertyHelper;
-use ZnCrypt\Base\Domain\Enums\EncodingEnum;
-use ZnCrypt\Base\Domain\Enums\HashAlgoEnum;
-use ZnCrypt\Base\Domain\Enums\OpenSslAlgoEnum;
-use ZnCrypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
-use ZnCrypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
-use ZnCrypt\Pki\JsonDSig\Domain\Libs\OpenSsl\OpenSslSignature;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnFramework\Rpc\Domain\Entities\RpcRequestEntity;
-use ZnFramework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Crypt\Base\Domain\Enums\EncodingEnum;
+use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
+use Untek\Crypt\Base\Domain\Enums\OpenSslAlgoEnum;
+use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
+use Untek\Crypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
+use Untek\Crypt\Pki\JsonDSig\Domain\Libs\OpenSsl\OpenSslSignature;
+use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 /**
  * Стратегия криптопровайдера, выполяющая контроль ЭПЦ, наподобие XMLDSig.

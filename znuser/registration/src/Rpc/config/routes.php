@@ -1,7 +1,7 @@
 <?php
 
-use ZnUser\Registration\Domain\Enums\Rbac\UserRegistrationPermissionEnum;
-use ZnUser\Registration\Rpc\Controllers\RegistrationController;
+use Untek\User\Registration\Domain\Enums\Rbac\UserRegistrationPermissionEnum;
+use Untek\User\Registration\Rpc\Controllers\RegistrationController;
 
 return [
     [
