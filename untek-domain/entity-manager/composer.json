@@ -1,0 +1,21 @@
+{
+  "name": "untek-domain/entity-manager",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zn Developer",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "Untek\\Domain\\EntityManager\\": "src",
+      "Untek\\Domain\\EntityManager\\Tests\\": "tests"
+    }
+  }
+}

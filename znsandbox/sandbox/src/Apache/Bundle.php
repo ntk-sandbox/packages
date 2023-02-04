@@ -22,7 +22,7 @@ class Bundle extends BaseBundle
     /*public function i18next(): array
     {
         return [
-            'user' => 'zn/znbundle/user/src/Domain/i18next/__lng__/__ns__.json',
+            'user' => 'zn/untek-bundle/user/src/Domain/i18next/__lng__/__ns__.json',
         ];
     }
 

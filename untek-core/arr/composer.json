@@ -1,0 +1,21 @@
+{
+  "name": "untek-core/arr",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zn Developer",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "Untek\\Core\\Arr\\": "src",
+      "Untek\\Core\\Arr\\Tests\\": "tests"
+    }
+  }
+}

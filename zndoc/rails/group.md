@@ -2,12 +2,12 @@
 
 Группы:
 
-* [znbundle](https://github.com/znbundle) - Различные модули для бизнеса
+* [untek-bundle](https://github.com/untek-bundle) - Различные модули для бизнеса
 * [zncore](https://github.com/zncore) - Основные пакеты (ядро)
 * [zncrypt](https://github.com/zncrypt) - Криптография
 * [zndatabase](https://github.com/zndatabase) - Работа с базой данных
 * [zndoc](https://github.com/zndoc) - Документация общего назначения
-* [zndomain](https://github.com/zndomain) - Архитектурные паттерны
+* [untek-domain](https://github.com/untek-domain) - Архитектурные паттерны
 * [znexample](https://github.com/znexample) - Примеры
 * [znfixture](https://github.com/znfixture) - Фикстуры с данными
 * [znfork](https://github.com/znfork) - Форки сторонних пакетов

@@ -7,7 +7,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'znbundle',
+        'name' => 'untek-bundle',
         'provider_name' => 'github',
         'authors' => [],
     ],
@@ -17,7 +17,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'zncore',
+        'name' => 'untek-core',
         'provider_name' => 'github',
         'authors' => [],
     ],
@@ -102,7 +102,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'zndomain',
+        'name' => 'untek-domain',
         'provider_name' => 'github',
         'authors' => [],
     ],

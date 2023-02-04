@@ -33,7 +33,7 @@ class DependencyService
 //            $files = $this->getFiles($dir);
             foreach ($files as $filePath) {
 //                $filePath = $file->getRealPath();
-//                $filePath = __DIR__ . '/../../../../../znbundle/eav/src/Domain/config/container.php';
+//                $filePath = __DIR__ . '/../../../../../untek-bundle/eav/src/Domain/config/container.php';
                 $code = file_get_contents($filePath);
 
                 $classesFromUses = $classUsesParser->parse($code);
@@ -70,7 +70,7 @@ class DependencyService
 //            $files = $this->getFiles($dir);
             foreach ($files as $filePath) {
 //                $filePath = $file->getRealPath();
-//                $filePath = __DIR__ . '/../../../../../znbundle/eav/src/Domain/config/container.php';
+//                $filePath = __DIR__ . '/../../../../../untek-bundle/eav/src/Domain/config/container.php';
                 $code = file_get_contents($filePath);
 
                 $classesFromString = $classNameStringParser->parse($code);

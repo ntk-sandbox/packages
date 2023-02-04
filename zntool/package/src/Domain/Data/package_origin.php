@@ -2,10 +2,10 @@
 
 return [
 	[
-		'id' => 'znbundle/user',
+		'id' => 'untek-bundle/user',
 		'name' => 'user',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -13,10 +13,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/messenger',
+		'id' => 'untek-bundle/messenger',
 		'name' => 'messenger',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -24,10 +24,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/reference',
+		'id' => 'untek-bundle/reference',
 		'name' => 'reference',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -35,10 +35,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/article',
+		'id' => 'untek-bundle/article',
 		'name' => 'article',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -46,10 +46,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/storage',
+		'id' => 'untek-bundle/storage',
 		'name' => 'storage',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -57,10 +57,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/queue',
+		'id' => 'untek-bundle/queue',
 		'name' => 'queue',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -68,10 +68,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/notify',
+		'id' => 'untek-bundle/notify',
 		'name' => 'notify',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -79,10 +79,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/dashboard',
+		'id' => 'untek-bundle/dashboard',
 		'name' => 'dashboard',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -90,10 +90,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/language',
+		'id' => 'untek-bundle/language',
 		'name' => 'language',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -101,10 +101,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/rbac',
+		'id' => 'untek-bundle/rbac',
 		'name' => 'rbac',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -112,10 +112,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/talkbox',
+		'id' => 'untek-bundle/talkbox',
 		'name' => 'talkbox',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -123,10 +123,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/eav',
+		'id' => 'untek-bundle/eav',
 		'name' => 'eav',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -134,10 +134,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znbundle/log',
+		'id' => 'untek-bundle/log',
 		'name' => 'log',
 		'group' => [
-			'name' => 'znbundle',
+			'name' => 'untek-bundle',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -409,10 +409,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncore/db',
+		'id' => 'untek-core/db',
 		'name' => 'db',
 		'group' => [
-			'name' => 'zncore',
+			'name' => 'untek-core',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -420,10 +420,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncore/base',
+		'id' => 'untek-core/base',
 		'name' => 'base',
 		'group' => [
-			'name' => 'zncore',
+			'name' => 'untek-core',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -431,10 +431,10 @@ return [
 		],
 	],
 	[
-		'id' => 'zncore/domain',
+		'id' => 'untek-core/domain',
 		'name' => 'domain',
 		'group' => [
-			'name' => 'zncore',
+			'name' => 'untek-core',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,

@@ -1,0 +1,22 @@
+{
+	"name": "untek-bundle/dashboard",
+	"type": "extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Zn Developer",
+			"email": "zndev@ya.ru"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"znpack/core": "0.x-dev",
+		"znpack/domain": "0.x-dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"Untek\\Bundle\\Dashboard\\": "src",
+			"Untek\\Bundle\\Dashboard\\Tests\\": "tests"
+		}
+	}
+}
