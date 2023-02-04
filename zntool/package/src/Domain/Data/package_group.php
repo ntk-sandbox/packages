@@ -12,7 +12,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'znkaz',
+        'name' => 'untek-kaz',
         'provider_name' => 'github',
         'authors' => [],
     ],
@@ -52,7 +52,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'znlib',
+        'name' => 'untek-lib',
         'provider_name' => 'github',
         'authors' => [],
     ],
@@ -97,7 +97,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'znpack',
+        'name' => 'untek-pack',
         'provider_name' => 'github',
         'authors' => [],
     ],

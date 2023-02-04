@@ -10,8 +10,8 @@
 	],
 	"minimum-stability": "dev",
 	"require": {
-		"znpack/core": "0.x-dev",
-		"znpack/domain": "0.x-dev"
+		"untek-pack/core": "0.x-dev",
+		"untek-pack/domain": "0.x-dev"
 	},
 	"autoload": {
 		"psr-4": {

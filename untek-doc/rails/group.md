@@ -11,9 +11,9 @@
 * [znexample](https://github.com/znexample) - Примеры
 * [znfixture](https://github.com/znfixture) - Фикстуры с данными
 * [untek-fork](https://github.com/untek-fork) - Форки сторонних пакетов
-* [znkaz](https://github.com/znkaz) - Работа с гос. сервисами Казахстана
-* [znlib](https://github.com/znlib) - Библиотеки
-* [znpack](https://github.com/znpack) - Наборы зависимостей для краткой декларации
+* [untek-kaz](https://github.com/untek-kaz) - Работа с гос. сервисами Казахстана
+* [untek-lib](https://github.com/untek-lib) - Библиотеки
+* [untek-pack](https://github.com/untek-pack) - Наборы зависимостей для краткой декларации
 * [znsandbox](https://github.com/znsandbox) - Песочница для пакетов (сырые, испытательные наработки)
 * [zntool](https://github.com/zntool) - Инструменты для разработки
 * [znuser](https://github.com/znuser) - Пользователь, права доступа

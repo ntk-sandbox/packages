@@ -552,10 +552,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/rest',
+		'id' => 'untek-lib/rest',
 		'name' => 'rest',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -563,10 +563,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/socket',
+		'id' => 'untek-lib/socket',
 		'name' => 'socket',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -574,10 +574,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/web',
+		'id' => 'untek-lib/web',
 		'name' => 'web',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -585,10 +585,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znframework/console',
+		'id' => 'untek-framework/console',
 		'name' => 'console',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -596,10 +596,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/init',
+		'id' => 'untek-lib/init',
 		'name' => 'init',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -607,10 +607,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/telegram',
+		'id' => 'untek-lib/telegram',
 		'name' => 'telegram',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -618,10 +618,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/db',
+		'id' => 'untek-lib/db',
 		'name' => 'db',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -629,10 +629,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/migration',
+		'id' => 'untek-lib/migration',
 		'name' => 'migration',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -640,10 +640,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znlib/fixture',
+		'id' => 'untek-lib/fixture',
 		'name' => 'fixture',
 		'group' => [
-			'name' => 'znlib',
+			'name' => 'untek-lib',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,

@@ -8,7 +8,7 @@ use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
 class ZnShell extends BaseShellDriver
 {
 
-    const RELATIVE_PATH_TO_BIN = 'zn/znframework/console/bin';
+    const RELATIVE_PATH_TO_BIN = 'zn/untek-framework/console/bin';
 
     public function setBinDirectory($releasePath)
     {

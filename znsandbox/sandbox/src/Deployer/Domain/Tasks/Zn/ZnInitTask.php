@@ -24,7 +24,7 @@ class ZnInitTask extends BaseShell implements TaskInterface
     {
         $releasePath = ShellFactory::getVarProcessor()->get('releasePath');
         $zn = new ZnShell($this->remoteShell);
-        $zn->setDirectory($releasePath . '/vendor/ntk-sandbox/packages/znlib/init/bin');
+        $zn->setDirectory($releasePath . '/vendor/ntk-sandbox/packages/untek-lib/init/bin');
         $zn->init($this->profile);
     }
 }

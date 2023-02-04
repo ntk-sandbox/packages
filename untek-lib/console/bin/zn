@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+exit('Deprecated!!!');
+
+require __DIR__ . '/../../../untek-framework/console/bin/zn';

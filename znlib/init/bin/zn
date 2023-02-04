@@ -1,6 +1,0 @@
-#!/usr/bin/env php
-<?php
-
-use Untek\Lib\Init\Domain\Libs\InitConsoleApp;
-
-\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow('use vendor/ntk-sandbox/packages/znframework/console/bin');

@@ -1,6 +1,0 @@
-#!/usr/bin/env php
-<?php
-
-exit('Deprecated!!!');
-
-require __DIR__ . '/../../../znframework/console/bin/zn';

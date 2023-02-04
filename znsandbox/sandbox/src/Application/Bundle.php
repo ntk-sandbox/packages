@@ -30,7 +30,7 @@ class Bundle extends BaseBundle
     {
         return [
            // 'app' => 'common/i18next/__lng__/__ns__.json',
-            'web' => 'vendor/ntk-sandbox/packages/znlib/web/src/i18next/__lng__/__ns__.json',
+            'web' => 'vendor/ntk-sandbox/packages/untek-lib/web/src/i18next/__lng__/__ns__.json',
         ];
     }*/
 

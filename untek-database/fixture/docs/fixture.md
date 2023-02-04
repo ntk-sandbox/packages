@@ -41,7 +41,7 @@ return [
 
 Переходим в папку `bin`:
 
-    cd vendor/ntk-sandbox/packages/znlib/fixture/bin
+    cd vendor/ntk-sandbox/packages/untek-lib/fixture/bin
 
 Импорт фикстур:
 

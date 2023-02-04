@@ -167,7 +167,7 @@ abstract class BaseApp implements AppInterface
      */
     protected function bundleLoaders(): array
     {
-        return include __DIR__ . '/../../../../znlib/components/src/DefaultApp/config/bundleLoaders.php';
+        return include __DIR__ . '/../../../../untek-lib/components/src/DefaultApp/config/bundleLoaders.php';
     }
 
     /**

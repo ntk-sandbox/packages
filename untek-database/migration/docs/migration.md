@@ -42,7 +42,7 @@ if (!class_exists(m_2014_10_12_200000_create_post_table::class)) {
 
 Переходим в папку `bin`:
 
-    cd vendor/ntk-sandbox/packages/znlib/migration/bin
+    cd vendor/ntk-sandbox/packages/untek-lib/migration/bin
 
 Применить миграции:
 

@@ -1,0 +1,24 @@
+{
+  "name": "untek-kaz/egov",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zn Developer",
+      "email": "zndev@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "symfony/serializer": "^4.4|^5.0",
+    "untek-lib/qr-box": "0.x-dev",
+    "untek-pack/core": "0.x-dev",
+    "untek-pack/domain": "0.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Untek\\Kaz\\Egov\\": "src",
+      "Untek\\Kaz\\Egov\\Tests\\": "tests"
+    }
+  }
+}
