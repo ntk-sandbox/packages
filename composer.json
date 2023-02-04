@@ -173,7 +173,7 @@
       "ZnUser\\Password\\Tests\\": "znuser/password/tests",
       "ZnUser\\Person\\Tests\\": "znuser/person/tests",
       "ZnUser\\Rbac\\Tests\\": "znuser/rbac/tests",
-      "ZnUser\\Registration\\Tests\\": "znuser/registration/tests",
+      "ZnUser\\Registration\\Tests\\": "znuser/registration/tests"
 
 
 
