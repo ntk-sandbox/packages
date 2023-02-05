@@ -18,7 +18,7 @@
     "untek-core/config-manager": "0.x-dev",
     "untek-core/container": "0.x-dev",
     "untek-core/contract": "0.x-dev",
-
+    "untek-core/dot-env": "0.x-dev",
     "untek-core/enum": "0.x-dev",
     "untek-core/env": "0.x-dev",
     "untek-core/event-dispatcher": "0.x-dev",
