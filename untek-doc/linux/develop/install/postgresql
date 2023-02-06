@@ -1,7 +1,0 @@
-
-ALTER USER postgres with password 'postgres';
-
-sudo service postgresql restart
-
-https://allwebstuff.info/peer-authentication-failed-for-user-postgres
-http://interestabout.blogspot.com/2011/03/ubuntu-postgres.html
