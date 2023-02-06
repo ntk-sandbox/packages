@@ -145,9 +145,7 @@
       "Untek\\User\\Rbac\\Tests\\": "untek-user/rbac/tests",
       "Untek\\User\\Registration\\Tests\\": "untek-user/registration/tests",
 
-      "Casbin\\": "untek-fork/casbin/src",
-
-      "phpseclib/phpseclib": "2.*"
+      "Casbin\\": "untek-fork/casbin/src"
     }
   },
   "autoload-dev": {
