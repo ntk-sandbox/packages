@@ -3,7 +3,6 @@
 namespace Untek\Sandbox\Sandbox\Apache\Domain\Helpers;
 
 use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Domain\Interfaces\DomainInterface;
 use Untek\Sandbox\Sandbox\Apache\Domain\Entities\HostEntity;
 
 class HostsParser {

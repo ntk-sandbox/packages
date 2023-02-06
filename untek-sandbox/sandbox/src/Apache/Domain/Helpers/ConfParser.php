@@ -4,7 +4,6 @@ namespace Untek\Sandbox\Sandbox\Apache\Domain\Helpers;
 
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 use Untek\Core\FileSystem\Helpers\FindFileHelper;
-use Untek\Domain\Domain\Interfaces\DomainInterface;
 
 class ConfParser {
 

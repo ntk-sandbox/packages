@@ -7,7 +7,6 @@ use Monolog\Logger;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\Domain\Interfaces\DomainInterface;
 use Untek\Bundle\Log\Domain\Monolog\Handler\EloquentHandler;
 
 class LoggerFactory
