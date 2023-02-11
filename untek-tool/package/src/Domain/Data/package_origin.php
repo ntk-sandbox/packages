@@ -475,10 +475,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znexample/database',
+		'id' => 'untek-example/database',
 		'name' => 'database',
 		'group' => [
-			'name' => 'znexample',
+			'name' => 'untek-example',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -486,10 +486,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znexample/composer-package',
+		'id' => 'untek-example/composer-package',
 		'name' => 'composer-package',
 		'group' => [
-			'name' => 'znexample',
+			'name' => 'untek-example',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,
@@ -497,10 +497,10 @@ return [
 		],
 	],
 	[
-		'id' => 'znexample/phpunit',
+		'id' => 'untek-example/phpunit',
 		'name' => 'phpunit',
 		'group' => [
-			'name' => 'znexample',
+			'name' => 'untek-example',
 			'providerName' => 'github',
 			'url' => null,
 			'authors' => null,

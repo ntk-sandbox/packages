@@ -32,7 +32,7 @@ return [
         'authors' => [],
     ],
     [
-        'name' => 'znexample',
+        'name' => 'untek-example',
         'provider_name' => 'github',
         'authors' => [],
     ],
