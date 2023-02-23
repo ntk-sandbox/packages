@@ -31,6 +31,14 @@ abstract class BaseHttpRepository
         return $this->runRequest($method, $endpoint, $options);
     }
 
+    /**
+     *
+     *
+     * @param string $method
+     * @param string $endpoint
+     * @param array $options
+     * @return ResponseInterface
+     */
     protected function runRequest(string $method, string $endpoint, array $options): ResponseInterface
     {
         $method = strtoupper($method);
