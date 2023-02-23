@@ -2,8 +2,7 @@
 
 namespace Untek\Lib\Web\RestApiApp\Base;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Response;
+use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 use Throwable;
 use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
@@ -11,19 +10,20 @@ use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
 abstract class BaseHttpRepository
 {
 
-    protected Client $client;
+    protected ClientInterface $client;
 
-    public function url(): ?string {
+    public function url(): ?string
+    {
         return null;
     }
 
     abstract protected function handleError(array $body, array $codeToField): void;
 
-    protected function request(string $uri, string $method, array $postParams = []): Response
+    protected function request(string $uri, string $method, array $postParams = []): ResponseInterface
     {
         $baseUrl = $this->url();
         $options = $this->getOptions($uri, $method, $postParams);
-        if($baseUrl) {
+        if ($baseUrl) {
             $endpoint = $baseUrl . '/' . $uri;
         } else {
             $endpoint = $uri;
