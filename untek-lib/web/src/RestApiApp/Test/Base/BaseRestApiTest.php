@@ -16,10 +16,12 @@ use Untek\Tool\Test\Base\BaseTestCase;
 abstract class BaseRestApiTest extends BaseTestCase
 {
 
+    protected ?string $pathToIsolated = null;
+    protected ?string $kernelClass = null;
+
     protected function printData(Response $response)
     {
         $responseBody = json_decode($response->getContent(), JSON_OBJECT_AS_ARRAY);
-
         dd($responseBody);
     }
 
@@ -29,11 +31,11 @@ abstract class BaseRestApiTest extends BaseTestCase
         return $assert;
     }
 
-    protected function sendResponse(string $method, string $uri, $data = null): Response
+    protected function sendResponse(string $method, string $uri, $data = []): Response
     {
         $httpClient = $this->createHttpClient();
         $request = $httpClient->createRequest($method, $uri, $data);
-        $response = TestHttpFacade::handleRequestViaBrowser($request);
+        $response = TestHttpFacade::handleRequestViaBrowser($request, $this->pathToIsolated, $this->kernelClass);
 
 //        $httpKernel = TestHttpFacade::createHttpKernel();
 //        $response = $httpKernel->handle($request);

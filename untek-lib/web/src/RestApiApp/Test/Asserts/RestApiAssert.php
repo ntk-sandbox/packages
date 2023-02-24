@@ -18,6 +18,15 @@ class RestApiAssert extends BaseAssert
     {
         $this->response = $response;
     }
+    
+    public function assertPath($expected, string $path)
+    {
+        $responseBody = json_decode($this->response->getContent(), JSON_OBJECT_AS_ARRAY);
+        $actual = ArrayHelper::getValue($responseBody, $path);
+//        dd($responseBody);
+        $this->assertEquals($expected, $actual);
+        return $this;
+    }
 
     public function assertData(array $data)
     {

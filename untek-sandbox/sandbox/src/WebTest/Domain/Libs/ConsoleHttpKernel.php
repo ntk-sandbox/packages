@@ -14,10 +14,14 @@ class ConsoleHttpKernel implements HttpKernelInterface
 {
 
     protected EncoderInterface $encoder;
+    protected string $pathToIsolated;
+    protected string $kernelClass;
 
-    public function __construct(IsolateEncoder $encoder)
+    public function __construct(IsolateEncoder $encoder, string $pathToIsolated = null, string $kernelClass = null)
     {
         $this->encoder = $encoder;
+        $this->pathToIsolated = $pathToIsolated ?: __DIR__ . '/../../../../../../untek-sandbox/sandbox/src/WebTest/resouces/bin';
+        $this->kernelClass = $kernelClass ?: \App\Application\Common\Libs\HttpServer::class;
     }
 
     public function handle(Request $request, int $type = self::MAIN_REQUEST, bool $catch = true): Response
@@ -34,14 +38,16 @@ class ConsoleHttpKernel implements HttpKernelInterface
             'php',
             'isolated',
             'http:request:run',
-            "--kernel" => \App\Application\Common\Libs\HttpServer::class,
+            "--kernel" => $this->kernelClass,
             $encodedRequest
         ];
         $commandString = CommandLineHelper::argsToString($command);
-        $cwd = realpath(__DIR__ . '/../../../../../../untek-sandbox/sandbox/src/WebTest/resouces/bin');
+        $cwd = realpath($this->pathToIsolated);
+//        dd($commandString, $cwd);
         $process = Process::fromShellCommandline($commandString, $cwd);
         $res = $process->run();
         $encodedResponse = $process->getOutput();
+//        dd($process->getErrorOutput());
         return $encodedResponse;
     }
 }

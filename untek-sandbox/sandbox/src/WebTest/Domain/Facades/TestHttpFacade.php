@@ -13,15 +13,15 @@ use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 class TestHttpFacade
 {
 
-    public static function createHttpKernel(): HttpKernelInterface
+    public static function createHttpKernel(string $pathToIsolated = null, string $kernelClass = null): HttpKernelInterface
     {
         $encoder = new IsolateEncoder();
-        return new ConsoleHttpKernel($encoder);
+        return new ConsoleHttpKernel($encoder, $pathToIsolated, $kernelClass);
     }
 
-    private static function createHttpKernelBrowser(): HttpKernelBrowser
+    private static function createHttpKernelBrowser(string $pathToIsolated = null, string $kernelClass = null): HttpKernelBrowser
     {
-        $httpKernel = self::createHttpKernel();
+        $httpKernel = self::createHttpKernel($pathToIsolated, $kernelClass);
         $httpKernelBrowser = new HttpKernelBrowser($httpKernel);
         $httpKernelBrowser->followRedirects();
         return $httpKernelBrowser;
@@ -33,9 +33,9 @@ class TestHttpFacade
         return $kernel->handle($request);
     }*/
 
-    public static function handleRequestViaBrowser(Request $request): Response
+    public static function handleRequestViaBrowser(Request $request, string $pathToIsolated = null, string $kernelClass = null): Response
     {
-        $httpKernelBrowser = self::createHttpKernelBrowser();
+        $httpKernelBrowser = self::createHttpKernelBrowser($pathToIsolated, $kernelClass);
         $httpKernelBrowser->request(
             $request->getMethod(),
             $request->getUri(),

@@ -8,10 +8,17 @@ class TestHttpRequestHelper
 {
 
     public static function prepareHeaderKeys(array $headers): array {
-        return collect($headers)->mapWithKeys(function ($value, $name) {
+        $result = [];
+        foreach ($headers as $headerKey => $headerValue) {
+            $headerKey = self::prepareHeaderKey($headerKey);
+            $result[$headerKey] = $headerValue;
+        }
+        return $result;
+        
+        /*return collect($headers)->mapWithKeys(function ($value, $name) {
             $name = self::prepareHeaderKey($name);
             return [$name => $value];
-        })->all();
+        })->all();*/
     }
 
     protected static function prepareHeaderKey(string $name): string {
@@ -54,11 +61,20 @@ class TestHttpRequestHelper
     public static function transformHeadersToServerVars(array $headers)
     {
         $headers = self::prepareHeaderKeys($headers);
-        return collect($headers)->mapWithKeys(function ($value, $name) {
-//            $name = self::prepareHeaderKey($name);
 
-            return [self::formatServerHeaderKey($name) => $value];
-        })->all();
+        $result = [];
+        foreach ($headers as $headerKey => $headerValue) {
+            $headerKey = self::formatServerHeaderKey($headerKey);
+            $result[$headerKey] = $headerValue;
+        }
+        
+        return $result;
+        
+//        return collect($headers)->mapWithKeys(function ($value, $name) {
+////            $name = self::prepareHeaderKey($name);
+//
+//            return [self::formatServerHeaderKey($name) => $value];
+//        })->all();
     }
 
     /**
