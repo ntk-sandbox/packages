@@ -46,7 +46,16 @@ class ConsoleHttpKernel implements HttpKernelInterface
 //        dd($commandString, $cwd);
         $process = Process::fromShellCommandline($commandString, $cwd);
         $res = $process->run();
+
+
+        if($process->getErrorOutput()) {
+            throw new \Exception($process->getErrorOutput());
+        }
+
         $encodedResponse = $process->getOutput();
+
+
+
 //        dd($process->getErrorOutput());
         return $encodedResponse;
     }
