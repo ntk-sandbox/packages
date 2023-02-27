@@ -128,13 +128,13 @@ trait ArrayCrudRepositoryTrait
     public function deleteByCondition(array $condition)
     {
         $items = $this->getItems();
-        foreach ($items as &$item) {
+        foreach ($items as $index => $item) {
             $isMatch = $this->isMatch($item, $condition);
             if ($isMatch) {
-                unset($item);
+                unset($items[$index]);
             }
         }
-        $this->setItems($items);
+        $this->setItems(array_values($items));
     }
 
     private function isMatch(array $item, array $condition): bool
