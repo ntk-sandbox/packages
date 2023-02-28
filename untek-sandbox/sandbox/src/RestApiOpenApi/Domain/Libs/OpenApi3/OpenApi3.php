@@ -55,7 +55,7 @@ class OpenApi3
 
         $requestDto->uri = str_replace('/rest-api', '', $requestDto->uri);
 
-        if($urlData['query']) {
+        if(!empty($urlData['query'])) {
             $requestDto->query = $urlData['query'];
 //            dd($urlData['query']);
         }
@@ -188,8 +188,12 @@ class OpenApi3
         $encoder = new Yaml(2);
         $docsDir = $this->sourceDirectory . "/v1";
         $mainFile = "$docsDir/$fileName";
-        $yaml = file_get_contents($mainFile);
-        return $encoder->decode($yaml);
+        if(is_file($mainFile)) {
+            $yaml = file_get_contents($mainFile);
+        } else {
+            $yaml = '';
+        }
+        return $encoder->decode($yaml) ?: [];
     }
 
     protected function addPathInMain(array $config, string $tag)
