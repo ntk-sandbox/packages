@@ -36,6 +36,7 @@ class RequestReceiverCommand extends Command
 {
 
     protected static $defaultName = 'http:request:run';
+    protected static $defaultDescription = 'Isolated HTTP request handler.';
 
     private HttpRequestService $httpRequestService;
 
@@ -44,10 +45,10 @@ class RequestReceiverCommand extends Command
         parent::__construct();
     }
 
-    public function getDescription()
+    /*public function getDescription(): string
     {
         return 'Isolated HTTP request handler.';
-    }
+    }*/
 
     protected function configure()
     {
