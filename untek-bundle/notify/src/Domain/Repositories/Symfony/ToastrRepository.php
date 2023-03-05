@@ -3,7 +3,6 @@
 namespace Untek\Bundle\Notify\Domain\Repositories\Symfony;
 
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Yii;
 use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
 use Untek\Domain\Validator\Helpers\ValidationHelper;

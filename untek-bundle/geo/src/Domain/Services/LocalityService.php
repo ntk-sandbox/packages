@@ -5,7 +5,6 @@ namespace Untek\Bundle\Geo\Domain\Services;
 use Untek\Bundle\Geo\Domain\Entities\LocalityEntity;
 use Untek\Bundle\Geo\Domain\Interfaces\Services\LocalityServiceInterface;
 use Untek\Bundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
-use Yii;
 use Untek\Domain\Service\Base\BaseCrudService;
 use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Domain\Query\Entities\Query;
@@ -32,14 +31,5 @@ class LocalityService extends BaseCrudService implements LocalityServiceInterfac
         return [
             AssignCountryIdSubscriber::class,
         ];
-    }
-
-    protected function forgeQuery(Query $query = null): Query
-    {
-        $parentQuery = parent::forgeQuery($query);
-        /*if ($regionId = Yii::$app->request->get('region_id')) {
-            $parentQuery->where('region_id', (int)$regionId);
-        }*/
-        return $parentQuery;
     }
 }

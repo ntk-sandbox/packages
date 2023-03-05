@@ -8,7 +8,6 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
-use Yii;
 use Untek\Core\Code\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Instance\Helpers\ClassHelper;
@@ -60,11 +59,6 @@ class MenuService extends BaseCrudService implements MenuServiceInterface
 
     private function getRoute(): string
     {
-        if (class_exists(Yii::class)) {
-            $action = Yii::$app->requestedAction;
-            $route = $action->controller->module->id . '/' . $action->controller->id;
-            return $route;
-        }
         $request = Request::createFromGlobals();
         $route = $request->getPathInfo();
         $route = trim($route, '/');

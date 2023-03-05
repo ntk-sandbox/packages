@@ -8,7 +8,6 @@ use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\User\Notify\Domain\Entities\NotifyEntity;
 use Untek\User\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
 use Untek\Bundle\Person\Domain\Services\ContactService;
-use Yii;
 use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 

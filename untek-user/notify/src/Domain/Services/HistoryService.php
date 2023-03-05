@@ -6,7 +6,6 @@ use Untek\User\Notify\Domain\Entities\NotifyEntity;
 use Untek\User\Notify\Domain\Entities\TypeEntity;
 use Untek\User\Notify\Domain\Interfaces\Services\HistoryServiceInterface;
 use Untek\Bundle\Person\Domain\Services\ContactService;
-use Yii;
 use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
 use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
@@ -78,7 +77,7 @@ class HistoryService implements HistoryServiceInterface
     {
         $email = $this->contactService->oneMainContactByUserId($notifyEntity->getRecipientId(), self::EMAIL_TYPE_ID)->getValue();
         $emailEntity = new EmailEntity();
-        $emailEntity->setFrom(Yii::$app->params['senderEmail']);
+        $emailEntity->setFrom();
         $emailEntity->setTo($email);
         $emailEntity->setSubject($notifyEntity->getSubject());
         $emailEntity->setBody($notifyEntity->getContent());

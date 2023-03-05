@@ -2,7 +2,6 @@
 
 namespace Untek\Lib\Components\Store\Helpers;
 
-use Yii;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 
@@ -12,15 +11,7 @@ class FileGeneratorHelper
     public static function generate($data)
     {
         $code = self::generateCode($data);
-
         $fileName = $data['fileName'];
-
-        /*if(!empty($data['dirAlias']) && !empty($data['baseName'])) {
-            $fileName = FileHelper::getAlias($data['dirAlias'].'/'.$data['baseName'].'.php');
-        } elseif(!empty($data['fileName'])) {
-            $fileName = $data['fileName'];
-        }*/
-
         FileStorageHelper::save($fileName, $code);
     }
 
