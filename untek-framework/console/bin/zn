@@ -1,30 +1,4 @@
 #!/usr/bin/env php
 <?php
 
-use Untek\Core\App\Libs\ZnCore;
-use Untek\Core\Container\Libs\Container;
-use Untek\Framework\Console\Domain\Factories\ConsoleApplicationFactory;
-
-$_SERVER['MICRO_TIME'] = microtime(true);
-$_SERVER['REQUEST_ID'] = uniqid();
-
-require __DIR__ . '/../../../../../autoload.php';
-
-/**
- * Инициализация ядра.
- *
- * Инициализируются/конфигурируются компоненты:
- * - DotEnv
- * - контейнер
- *   - EventDispatcher
- *   - ConfigManager
- *   - ContainerConfigurator
- * - загрузчик бандлов
- */
-$container = new Container();
-$znCore = new ZnCore($container);
-$znCore->init();
-
-$applicationFactory = new ConsoleApplicationFactory($container);
-$application = $applicationFactory->createApplicationInstance();
-$application->run();
+require __DIR__ . '/../../../../../untek-framework/console/bin/zn';
