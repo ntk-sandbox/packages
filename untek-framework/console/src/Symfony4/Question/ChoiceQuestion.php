@@ -28,7 +28,7 @@ class ChoiceQuestion extends \Symfony\Component\Console\Question\ChoiceQuestion
         });
     }
 
-    public function getChoices()
+    public function getChoices(): array
     {
         $choices = parent::getChoices();
         if ($this->isMultiselect()) {
