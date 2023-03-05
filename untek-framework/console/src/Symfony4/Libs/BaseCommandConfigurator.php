@@ -27,7 +27,6 @@ abstract class BaseCommandConfigurator implements CommandConfiguratorInterface
                 $commandInstance = $this->container->get($commandClassName);
                 $this->registerCommandInstance($commandInstance);
             } catch (ContainerExceptionInterface $e) {
-                dd($e);
                 $message = "DI dependencies not resolved for class \"$commandClassName\"!";
                 $this->logger?->warning($message);
             }
