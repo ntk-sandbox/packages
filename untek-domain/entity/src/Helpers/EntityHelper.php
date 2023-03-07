@@ -20,6 +20,15 @@ class EntityHelper
         return $propertyAccessor->getValue($enitity, $attribute);
     }*/
 
+    /**
+     * @param string $entityClass
+     * @param array $attributes
+     * @return object
+     * @throws \Untek\Core\Contract\Common\Exceptions\InvalidConfigException
+     * @throws \Untek\Core\Instance\Exceptions\NotInstanceOfException
+     * @deprecated
+     * @see \Untek\Core\Property\Helpers\PropertyHelper::createObject()
+     */
     public static function createEntity(string $entityClass, $attributes = [])
     {
         $entityInstance = ClassHelper::createObject($entityClass);
@@ -48,6 +57,13 @@ class EntityHelper
         return $arraySnakeCase;
     }
 
+    /**
+     * @param $entity
+     * @param bool $recursive
+     * @return array
+     * @deprecated
+     * @see \Untek\Core\Property\Helpers\PropertyHelper::toArray()
+     */
     public static function toArray($entity, bool $recursive = false): array
     {
         $array = [];
