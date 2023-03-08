@@ -2,6 +2,11 @@
 
 return [
     [
+        'name' => 'untek-utility',
+        'provider_name' => 'github',
+        'authors' => [],
+    ],
+    [
         'name' => 'untek-framework',
         'provider_name' => 'github',
         'authors' => [],
