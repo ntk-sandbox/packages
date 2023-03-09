@@ -2,7 +2,7 @@
 
 namespace Untek\Tool\Package\Infrastructure;
 
-use Mservis\Operator\Shared\Infrastructure\Bundle\BaseBundle;
+use Untek\Core\Kernel\Bundle\BaseBundle;
 
 class PackageBundle extends BaseBundle
 {

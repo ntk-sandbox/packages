@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Init;
 
-use Mservis\Operator\Shared\Infrastructure\Bundle\BaseBundle;
+use Untek\Core\Kernel\Bundle\BaseBundle;
 
 class InitBundle extends BaseBundle
 {
