@@ -18,14 +18,10 @@ class RestApiAssert extends BaseAssert
     {
         $this->response = $response;
     }
-
-    protected function getPayload(): array {
-        return json_decode($this->response->getContent(), JSON_OBJECT_AS_ARRAY);
-    }
     
     public function assertPath($expected, string $path)
     {
-        $responseBody = $this->getPayload();
+        $responseBody = json_decode($this->response->getContent(), JSON_OBJECT_AS_ARRAY);
         $actual = ArrayHelper::getValue($responseBody, $path);
 //        dd($responseBody);
         $this->assertEquals($expected, $actual);
@@ -34,10 +30,11 @@ class RestApiAssert extends BaseAssert
 
     public function assertData(array $data)
     {
-        $responseBody = $this->getPayload();
+        $responseBody = json_decode($this->response->getContent(), JSON_OBJECT_AS_ARRAY);
         $this->assertEquals($data, $responseBody);
         return $this;
     }
+
 
     public function assertNotFound(string $message = null)
     {
@@ -69,15 +66,14 @@ class RestApiAssert extends BaseAssert
     public function assertErrorCode(int $code)
     {
 //        $this->assertIsError();
-        $this->assertEquals($code, $this->response->getStatusCode());
+        $this->assertEquals($code, $this->response->getError()['code']);
         return $this;
     }
 
     public function assertErrorMessage(string $message)
     {
 //        $this->assertIsError();
-        $responseBody = $this->getPayload();
-        $this->assertEquals($message, $responseBody['message']);
+        $this->assertEquals($message, $this->response->getError()['message']);
         return $this;
     }
 
