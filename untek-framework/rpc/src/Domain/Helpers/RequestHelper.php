@@ -3,7 +3,7 @@
 namespace Untek\Framework\Rpc\Domain\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Env\Enums\EnvEnum;
 use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestCollection;

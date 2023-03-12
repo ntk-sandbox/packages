@@ -2,7 +2,7 @@
 
 namespace Untek\Crypt\Pki\XmlDSig\Domain\Libs\KeyLoaders;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\FileSystem\Helpers\FileHelper;

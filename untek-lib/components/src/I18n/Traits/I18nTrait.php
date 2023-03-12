@@ -6,7 +6,7 @@ use Untek\Bundle\Language\Domain\Entities\LanguageEntity;
 use Untek\Bundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Lib\Components\I18n\Enums\LanguageI18nEnum;
 

@@ -3,7 +3,7 @@
 namespace Untek\User\Registration\Rpc\Controllers;
 
 use Psr\Container\ContainerInterface;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Container\Traits\ContainerAwareTrait;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;

@@ -2,7 +2,7 @@
 
 namespace Untek\User\Password\Rpc\Controllers;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\User\Password\Domain\Forms\UpdatePasswordForm;

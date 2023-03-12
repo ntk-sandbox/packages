@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Rest\Tests\Unit\DSig;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
 use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;
 use Untek\Domain\Entity\Helpers\EntityHelper;

@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Symfony4\Web\Libs;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Crypt\Base\Domain\Enums\EncodingEnum;
 use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
 use Untek\Crypt\Base\Domain\Enums\OpenSslAlgoEnum;

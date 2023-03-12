@@ -12,7 +12,7 @@ use Untek\Bundle\Queue\Domain\Interfaces\Repositories\JobRepositoryInterface;
 use Untek\Bundle\Queue\Domain\Interfaces\Services\JobServiceInterface;
 use Untek\Bundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
 use Untek\Bundle\Queue\Domain\Queries\NewTaskQuery;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Domain\Entity\Helpers\EntityHelper;
 use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;

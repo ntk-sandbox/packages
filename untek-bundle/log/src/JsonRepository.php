@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Log;
 
 use Untek\Bundle\Log\Domain\Entities\LogEntity;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Libs\Collection;
 
 class JsonRepository

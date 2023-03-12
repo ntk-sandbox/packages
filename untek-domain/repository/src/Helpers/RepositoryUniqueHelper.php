@@ -2,7 +2,7 @@
 
 namespace Untek\Domain\Repository\Helpers;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Text\Helpers\Inflector;
 use Untek\Domain\Entity\Interfaces\UniqueInterface;
 use Untek\Domain\Query\Entities\Query;

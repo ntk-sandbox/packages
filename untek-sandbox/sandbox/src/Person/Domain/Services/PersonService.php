@@ -7,7 +7,7 @@ use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
 use Untek\Bundle\Eav\Domain\Forms\DynamicForm;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Text\Helpers\TextHelper;
 use Untek\Domain\Entity\Helpers\EntityHelper;

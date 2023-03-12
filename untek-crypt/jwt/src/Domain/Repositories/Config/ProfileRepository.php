@@ -2,7 +2,7 @@
 
 namespace Untek\Crypt\Jwt\Domain\Repositories\Config;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\DotEnv\Domain\Libs\DotEnvMap;
 use Untek\Crypt\Jwt\Domain\Entities\JwtProfileEntity;
 use Untek\Crypt\Jwt\Domain\Entities\KeyEntity;

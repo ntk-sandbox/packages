@@ -4,7 +4,7 @@ namespace Untek\Domain\Entity\Helpers;
 
 use ReflectionClass;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Text\Helpers\Inflector;
@@ -27,15 +27,16 @@ class EntityHelper
      * @throws \Untek\Core\Contract\Common\Exceptions\InvalidConfigException
      * @throws \Untek\Core\Instance\Exceptions\NotInstanceOfException
      * @deprecated
-     * @see \Untek\Core\Property\Helpers\PropertyHelper::createObject()
+     * @see \Untek\Core\Instance\Helpers\PropertyHelper::createObject()
      */
     public static function createEntity(string $entityClass, $attributes = [])
     {
-        $entityInstance = ClassHelper::createObject($entityClass);
+        return \Untek\Core\Instance\Helpers\PropertyHelper::createObject($entityClass, $attributes);
+        /*$entityInstance = ClassHelper::createObject($entityClass);
         if ($attributes) {
             PropertyHelper::setAttributes($entityInstance, $attributes);
         }
-        return $entityInstance;
+        return $entityInstance;*/
     }
 
     public static function isEntity($data)
@@ -62,7 +63,7 @@ class EntityHelper
      * @param bool $recursive
      * @return array
      * @deprecated
-     * @see \Untek\Core\Property\Helpers\PropertyHelper::toArray()
+     * @see \Untek\Core\Instance\Helpers\PropertyHelper::toArray()
      */
     public static function toArray($entity, bool $recursive = false): array
     {
@@ -104,7 +105,8 @@ class EntityHelper
         if ($entity instanceof DynamicEntityAttributesInterface) {
             return $entity->attributes();
         }
-        $reflClass = new ReflectionClass($entity);
+        return \Untek\Core\Instance\Helpers\PropertyHelper::getAttributeNames($entity);
+        /*$reflClass = new ReflectionClass($entity);
         $attributesRef = $reflClass->getProperties();
         $attributes = ArrayHelper::getColumn($attributesRef, 'name');
         foreach ($attributes as $index => $attributeName) {
@@ -112,7 +114,7 @@ class EntityHelper
                 unset($attributes[$index]);
             }
         }
-        return $attributes;
+        return $attributes;*/
     }
 
     /*public static function setAttribute(object $entity, string $name, $value): void

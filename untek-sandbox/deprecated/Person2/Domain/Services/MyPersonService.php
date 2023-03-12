@@ -3,7 +3,7 @@
 namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Domain\Query\Entities\Query;
 use Untek\Domain\Service\Base\BaseService;

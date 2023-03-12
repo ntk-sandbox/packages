@@ -4,7 +4,7 @@ namespace Untek\Framework\Rpc\Domain\Libs;
 
 use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Env\Helpers\EnvHelper;
 use Untek\Domain\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;

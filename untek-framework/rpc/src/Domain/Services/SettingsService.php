@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Domain\Services;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Domain\Entity\Helpers\EntityHelper;
 use Untek\Domain\Validator\Helpers\ValidationHelper;
 use Untek\Framework\Rpc\Domain\Entities\SettingsEntity;

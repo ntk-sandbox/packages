@@ -9,7 +9,7 @@ use Untek\Bundle\Eav\Domain\Entities\ValueEntity;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\ValueRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Domain\Service\Base\BaseCrudService;

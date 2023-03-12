@@ -9,7 +9,7 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Bundle\Eav\Domain\Entities\EntityAttributeEntity;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityAttributeServiceInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Domain\Entity\Helpers\EntityHelper;
 use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Lib\Web\Controller\Base\BaseWebCrudController;

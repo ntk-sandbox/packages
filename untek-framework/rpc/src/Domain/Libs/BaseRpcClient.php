@@ -9,7 +9,7 @@ use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Domain\Entity\Helpers\EntityHelper;
 use Untek\Domain\Validator\Helpers\ValidationHelper;
 use Untek\Lib\Components\Http\Enums\HttpMethodEnum;

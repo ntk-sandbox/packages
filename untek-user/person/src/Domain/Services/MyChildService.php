@@ -2,7 +2,7 @@
 
 namespace Untek\User\Person\Domain\Services;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Domain\Domain\Enums\EventEnum;
 use Untek\Domain\Domain\Events\EntityEvent;
 use Untek\Domain\Entity\Helpers\EntityHelper;

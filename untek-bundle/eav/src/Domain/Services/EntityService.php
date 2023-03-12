@@ -11,7 +11,7 @@ use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
 use Untek\Bundle\Eav\Domain\Libs\TypeNormalizer;
 use Untek\Bundle\Eav\Domain\Libs\Validator;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;

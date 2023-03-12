@@ -5,7 +5,7 @@ namespace Untek\Bundle\Storage\Domain\Subscribers;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Bundle\Storage\Domain\Dto\MatchDto;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\FileSystem\Helpers\MimeTypeHelper;

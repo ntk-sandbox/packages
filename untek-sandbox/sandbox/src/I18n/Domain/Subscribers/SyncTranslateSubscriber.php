@@ -4,7 +4,7 @@ namespace Untek\Sandbox\Sandbox\I18n\Domain\Subscribers;
 
 use App\Workshop\Domain\Entities\CategoryEntity;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Domain\Domain\Enums\EventEnum;
 use Untek\Domain\Domain\Events\EntityEvent;
 use Untek\Domain\Entity\Interfaces\EntityIdInterface;

@@ -3,7 +3,7 @@
 namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Lib\Web\Html\Helpers\Html;
 
 class LinkFormatter extends BaseFormatter implements FormatterInterface

@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Rpc\Base;
 
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Domain\Entity\Helpers\EntityHelper;
 use Untek\Domain\Query\Entities\Query;
