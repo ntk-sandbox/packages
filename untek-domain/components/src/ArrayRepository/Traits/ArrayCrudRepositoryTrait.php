@@ -58,9 +58,6 @@ trait ArrayCrudRepositoryTrait
         $query->where('id', $id);
         $query->limit(1);
         $collection = $this->findAll($query);
-        if($collection->isEmpty()) {
-            throw new NotFoundException();
-        }
         return $collection->first();
     }
 
