@@ -10,7 +10,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "untek-database/eloquent": "0.x-dev"
+    "untek-database/eloquent": "0.1.x-dev"
   },
   "autoload": {
     "psr-4": {

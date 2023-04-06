@@ -10,14 +10,14 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "untek-user/authentication": "0.x-dev",
-        "untek-user/confirm": "0.x-dev",
-        "untek-user/identity": "0.x-dev",
-        "untek-user/notify": "0.x-dev",
-        "untek-user/password": "0.x-dev",
-        "untek-user/person": "0.x-dev",
-        "untek-user/rbac": "0.x-dev",
-        "untek-user/registration": "0.x-dev"
+    "untek-user/authentication": "0.1.x-dev",
+        "untek-user/confirm": "0.1.x-dev",
+        "untek-user/identity": "0.1.x-dev",
+        "untek-user/notify": "0.1.x-dev",
+        "untek-user/password": "0.1.x-dev",
+        "untek-user/person": "0.1.x-dev",
+        "untek-user/rbac": "0.1.x-dev",
+        "untek-user/registration": "0.1.x-dev"
   },
   "autoload": {
     "psr-4": {

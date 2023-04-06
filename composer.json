@@ -5,7 +5,7 @@
   "minimum-stability": "dev",
   "require": {
     "sroze/argument-resolver": "2.0.4",
-    "untek-framework/console": "0.x-dev"
+    "untek-framework/console": "0.1.x-dev"
   },
   "autoload": {
     "psr-4": {

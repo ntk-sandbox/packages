@@ -12,8 +12,8 @@
 	"require": {
 		"psr/log": "~1.0",
 		"monolog/monolog": "~1.22 || ~2.0",
-		"untek-pack/core": "0.x-dev",
-		"untek-pack/domain": "0.x-dev"
+		"untek-pack/core": "0.1.x-dev",
+		"untek-pack/domain": "0.1.x-dev"
 	},
 	"autoload": {
 		"psr-4": {

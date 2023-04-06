@@ -10,16 +10,16 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "untek-domain/components": "0.x-dev",
-    "untek-domain/data-provider": "0.x-dev",
-    "untek-domain/domain": "0.x-dev",
-    "untek-domain/entity-manager": "0.x-dev",
-    "untek-domain/query-filter": "0.x-dev",
-    "untek-domain/relation": "0.x-dev",
-    "untek-domain/repository": "0.x-dev",
-    "untek-domain/entity": "0.x-dev",
-    "untek-domain/query": "0.x-dev",
-    "untek-domain/validator": "0.x-dev",
-    "untek-domain/service": "0.x-dev"
+    "untek-domain/components": "0.1.x-dev",
+    "untek-domain/data-provider": "0.1.x-dev",
+    "untek-domain/domain": "0.1.x-dev",
+    "untek-domain/entity-manager": "0.1.x-dev",
+    "untek-domain/query-filter": "0.1.x-dev",
+    "untek-domain/relation": "0.1.x-dev",
+    "untek-domain/repository": "0.1.x-dev",
+    "untek-domain/entity": "0.1.x-dev",
+    "untek-domain/query": "0.1.x-dev",
+    "untek-domain/validator": "0.1.x-dev",
+    "untek-domain/service": "0.1.x-dev"
   }
 }

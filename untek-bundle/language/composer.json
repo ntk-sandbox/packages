@@ -12,8 +12,8 @@
 	"minimum-stability": "dev",
 	"require": {
 		"symfony/serializer": "4.*|5.*",
-		"untek-pack/core": "0.x-dev",
-		"untek-pack/domain": "0.x-dev"
+		"untek-pack/core": "0.1.x-dev",
+		"untek-pack/domain": "0.1.x-dev"
 	},
 	"autoload": {
 		"psr-4": {

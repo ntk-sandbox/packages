@@ -11,10 +11,10 @@
   "minimum-stability": "dev",
   "require": {
     "symfony/debug-pack": "^1.0",
-    "untek-database/backup": "0.x-dev",
-    "untek-database/tool": "0.x-dev",
-    "untek-tool/generator": "0.x-dev",
-    "untek-tool/package": "0.x-dev",
-    "untek-tool/test": "0.x-dev"
+    "untek-database/backup": "0.1.x-dev",
+    "untek-database/tool": "0.1.x-dev",
+    "untek-tool/generator": "0.1.x-dev",
+    "untek-tool/package": "0.1.x-dev",
+    "untek-tool/test": "0.1.x-dev"
   }
 }

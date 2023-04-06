@@ -10,7 +10,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "untek-fork/casbin": "0.x-dev"
+    "untek-fork/casbin": "0.1.x-dev"
   },
   "autoload": {
     "psr-4": {

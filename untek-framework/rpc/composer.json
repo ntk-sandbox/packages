@@ -11,10 +11,10 @@
   "minimum-stability": "dev",
   "require": {
     "guzzlehttp/guzzle": "^7.4",
-    "untek-pack/core": "0.x-dev",
-    "untek-pack/domain": "0.x-dev",
-    "untek-lib/components": "0.x-dev",
-    "untek-lib/settings": "0.x-dev",
+    "untek-pack/core": "0.1.x-dev",
+    "untek-pack/domain": "0.1.x-dev",
+    "untek-lib/components": "0.1.x-dev",
+    "untek-lib/settings": "0.1.x-dev",
     "symfony/http-foundation": "^4.4|^5.0",
     "symfony/routing": "^4.4|^5.0",
     "symfony/config": "^4.4|^5.0"
