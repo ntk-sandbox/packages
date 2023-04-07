@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Person\Domain\Interfaces\Services;
 
 use Untek\Bundle\Person\Domain\Entities\PersonEntity;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 
 interface PersonServiceInterface
 {

@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Geo\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\QueryFilter\Interfaces\DefaultSortInterface;
+use Untek\Model\QueryFilter\Interfaces\DefaultSortInterface;
 
 class CountryFilter implements DefaultSortInterface
 {

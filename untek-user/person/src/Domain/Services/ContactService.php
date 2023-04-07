@@ -3,9 +3,9 @@
 namespace Untek\User\Person\Domain\Services;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Person\Domain\Entities\ContactEntity;
 use Untek\User\Person\Domain\Interfaces\Services\ContactServiceInterface;
 use Untek\User\Person\Domain\Interfaces\Services\ContactTypeServiceInterface;

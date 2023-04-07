@@ -5,9 +5,9 @@ namespace Untek\Bundle\Eav\Domain\Services;
 use Untek\Bundle\Eav\Domain\Entities\CategoryEntity;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\CategoryRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\CategoryServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 
 /**
  * Class CategoryService

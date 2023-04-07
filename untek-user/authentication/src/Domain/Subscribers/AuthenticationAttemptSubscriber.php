@@ -5,7 +5,7 @@ namespace Untek\User\Authentication\Domain\Subscribers;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use Untek\Bundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\User\Authentication\Domain\Enums\AuthEventEnum;
 use Untek\User\Authentication\Domain\Enums\UserNotifyTypeEnum;
 use Untek\User\Authentication\Domain\Events\AuthEvent;

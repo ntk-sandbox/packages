@@ -15,10 +15,10 @@ use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInter
 use Untek\Bundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
 use Untek\Bundle\User\Domain\Services\AuthService;
 use Untek\Bundle\User\Domain\Services\AuthService2;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
 use Untek\Lib\Socket\Domain\Libs\SocketDaemon;
 use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;

@@ -4,10 +4,10 @@ namespace Untek\Tool\Test\Traits;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Lib\Components\Store\Helpers\StoreHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Component\FormatAdapter\Helpers\StoreHelper;
 use Untek\Tool\Test\Helpers\TestHelper;
 
 trait AssertTrait

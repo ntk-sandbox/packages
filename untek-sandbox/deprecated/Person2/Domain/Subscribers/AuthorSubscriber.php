@@ -5,8 +5,8 @@ namespace Untek\Sandbox\Sandbox\Person2\Domain\Subscribers;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Untek\Core\Instance\Helpers\PropertyHelper;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class AuthorSubscriber implements EventSubscriberInterface

@@ -7,10 +7,10 @@ use Untek\Bundle\Storage\Domain\Entities\FileEntity;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
 use Untek\Bundle\Storage\Domain\Libs\FileHash;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Core\FileSystem\Helpers\FileHelper;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\Service\Base\BaseService;
 
 class UploadService extends BaseService implements UploadServiceInterface
 {

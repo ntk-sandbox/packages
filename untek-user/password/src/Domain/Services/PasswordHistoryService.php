@@ -4,8 +4,8 @@ namespace Untek\User\Password\Domain\Services;
 
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Symfony\Component\Security\Core\Security;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 use Untek\User\Password\Domain\Entities\PasswordHistoryEntity;
 use Untek\User\Password\Domain\Interfaces\Repositories\PasswordHistoryRepositoryInterface;

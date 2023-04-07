@@ -8,7 +8,7 @@ use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;
 use Untek\Crypt\Pki\Domain\Enums\CertificateFormatEnum;
 use Untek\Crypt\Pki\Domain\Enums\RsaKeyFormatEnum;
 use Untek\Crypt\Pki\Domain\Helpers\RsaKeyHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 abstract class BaseRsaStore implements RsaStoreInterface
 {

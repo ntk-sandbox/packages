@@ -7,7 +7,7 @@
  * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
  */
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
 use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;

@@ -4,14 +4,14 @@ namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Entities;
 
 use Untek\Crypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
 use Untek\Crypt\Pki\JsonDSig\Domain\Libs\C14n;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use DateTime;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
-use Untek\Domain\Components\Constraints\Enum;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Components\Constraints\Enum;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
 
 class MethodEntity implements EntityIdInterface, ValidationByMetadataInterface, UniqueInterface

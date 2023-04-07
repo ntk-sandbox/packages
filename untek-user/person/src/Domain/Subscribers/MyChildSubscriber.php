@@ -4,10 +4,10 @@ namespace Untek\User\Person\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class MyChildSubscriber implements EventSubscriberInterface

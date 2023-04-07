@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Validator\Helpers;
+namespace Untek\Model\Validator\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Model\Validator\Entities\ValidationErrorEntity;
 
 class ErrorCollectionHelper
 {

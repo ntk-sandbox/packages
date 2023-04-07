@@ -6,7 +6,7 @@ use Untek\User\Notify\Domain\Entities\SettingEntity;
 use Untek\User\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
 use Untek\User\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
 use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class SettingRepository extends BaseEloquentCrudRepository implements SettingRepositoryInterface

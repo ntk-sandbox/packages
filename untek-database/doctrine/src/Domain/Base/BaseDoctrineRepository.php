@@ -8,8 +8,8 @@ use Doctrine\DBAL\Driver\PDOStatement;
 use Doctrine\DBAL\Query\QueryBuilder;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
 use Untek\Database\Base\Domain\Traits\TableNameTrait;
 
 abstract class BaseDoctrineRepository implements GetEntityClassInterface

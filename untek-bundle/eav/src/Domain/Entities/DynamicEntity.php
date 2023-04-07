@@ -6,7 +6,7 @@ use InvalidArgumentException;
 use Untek\Bundle\Eav\Domain\Libs\Rules;
 use Untek\Bundle\Eav\Domain\Traits\DynamicAttribute;
 use Untek\Lib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
 
 class DynamicEntity implements ValidateDynamicEntityInterface, EntityIdInterface, DynamicEntityAttributesInterface

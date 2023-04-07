@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Validator\Libs\Validators;
+namespace Untek\Model\Validator\Libs\Validators;
 
-use Untek\Domain\Validator\Helpers\SymfonyValidationHelper;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
-use Untek\Domain\Validator\Interfaces\ValidatorInterface;
+use Untek\Model\Validator\Helpers\SymfonyValidationHelper;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidatorInterface;
 
 class ClassMetadataValidator extends BaseValidator implements ValidatorInterface
 {

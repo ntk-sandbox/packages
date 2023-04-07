@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Eav\Domain\Interfaces\Services;
 
 use Untek\Bundle\Eav\Domain\Entities\CategoryEntity;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface CategoryServiceInterface extends CrudServiceInterface
 {

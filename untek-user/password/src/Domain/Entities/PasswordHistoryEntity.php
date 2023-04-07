@@ -5,9 +5,9 @@ namespace Untek\User\Password\Domain\Entities;
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class PasswordHistoryEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

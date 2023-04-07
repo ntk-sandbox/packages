@@ -3,7 +3,7 @@
 namespace Untek\Lib\Socket\Domain\Libs;
 
 use Workerman\Connection\ConnectionInterface;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
 
 class Transport

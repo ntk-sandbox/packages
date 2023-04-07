@@ -4,8 +4,8 @@ namespace Untek\Bundle\Storage\Domain\Services;
 
 use Untek\Bundle\Storage\Domain\Entities\FileEntity;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\FileServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 class FileService extends BaseCrudService implements FileServiceInterface
 {

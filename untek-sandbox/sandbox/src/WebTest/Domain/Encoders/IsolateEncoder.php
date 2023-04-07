@@ -3,9 +3,9 @@
 namespace Untek\Sandbox\Sandbox\WebTest\Domain\Encoders;
 
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Lib\Components\Format\Encoders\BaseChainEncoder;
-use Untek\Lib\Components\Format\Encoders\PhpSerializeEncoder;
-use Untek\Lib\Components\Format\Encoders\SafeBase64Encoder;
+use Untek\Component\Encoder\Encoders\BaseChainEncoder;
+use Untek\Component\Encoder\Encoders\PhpSerializeEncoder;
+use Untek\Component\Encoder\Encoders\SafeBase64Encoder;
 
 class IsolateEncoder extends BaseChainEncoder
 {

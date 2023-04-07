@@ -4,10 +4,10 @@ namespace Untek\Sandbox\Sandbox\MigrationData\Domain\Libs;
 
 use App\Card\Domain\Events\PersistEvent;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class TargetProvider
 {

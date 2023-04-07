@@ -4,7 +4,7 @@ namespace Untek\Bundle\Geo\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Geo\Domain\Entities\LocalityEntity;
 use Untek\Bundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
-use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Model\Repository\Mappers\JsonMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class LocalityRepository extends BaseEloquentCrudRepository implements LocalityRepositoryInterface

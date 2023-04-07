@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Person2\Domain\Repositories\Eloquent;
 
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Sandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;

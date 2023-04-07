@@ -4,7 +4,7 @@ namespace Untek\User\Notify\Domain\Entities;
 
 use DateTime;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Components\Constraints\Enum;
+use Untek\Model\Components\Constraints\Enum;
 use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
@@ -12,9 +12,9 @@ use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Enum\Helpers\EnumHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Lib\I18Next\Helpers\TranslatorHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class NotifyEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

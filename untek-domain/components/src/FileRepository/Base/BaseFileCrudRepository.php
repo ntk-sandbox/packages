@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Domain\Components\FileRepository\Base;
+namespace Untek\Model\Components\FileRepository\Base;
 
-use Untek\Domain\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Repository\Traits\RepositoryRelationTrait;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Model\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Traits\RepositoryRelationTrait;
+use Untek\Component\FormatAdapter\StoreFile;
 
 abstract class BaseFileCrudRepository extends BaseFileRepository implements CrudRepositoryInterface
 {

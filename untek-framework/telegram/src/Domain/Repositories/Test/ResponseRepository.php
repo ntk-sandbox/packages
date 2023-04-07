@@ -7,8 +7,8 @@ use Untek\Framework\Telegram\Domain\Entities\BotEntity;
 use Untek\Framework\Telegram\Domain\Entities\ResponseEntity;
 use Untek\Framework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
 use Untek\Framework\Telegram\Domain\Services\RequestService;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Component\FormatAdapter\StoreFile;
 
 class ResponseRepository implements ResponseRepositoryInterface
 {

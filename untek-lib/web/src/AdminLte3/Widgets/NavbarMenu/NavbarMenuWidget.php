@@ -4,7 +4,7 @@ namespace Untek\Lib\Web\AdminLte3\Widgets\NavbarMenu;
 
 use Untek\Core\Collection\Helpers\CollectionHelper;
 use Untek\Lib\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class NavbarMenuWidget extends BaseWidget2

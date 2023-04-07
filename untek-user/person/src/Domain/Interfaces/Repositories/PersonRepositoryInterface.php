@@ -2,8 +2,8 @@
 
 namespace Untek\User\Person\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\User\Person\Domain\Entities\PersonEntity;
 
 interface PersonRepositoryInterface

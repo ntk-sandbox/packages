@@ -2,14 +2,14 @@
 
 namespace Untek\Framework\Rpc\Domain\Entities;
 
-use Untek\Domain\Validator\Constraints\Boolean;
-use Untek\Domain\Components\Constraints\Enum;
+use Untek\Model\Validator\Constraints\Boolean;
+use Untek\Model\Components\Constraints\Enum;
 use Untek\Framework\Rpc\Domain\Enums\RpcCryptoProviderStrategyEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Core\Enum\Helpers\EnumHelper;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class SettingsEntity implements ValidationByMetadataInterface, UniqueInterface
 {

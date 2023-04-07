@@ -5,8 +5,8 @@ namespace Untek\Framework\Rpc\Domain\Services;
 use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Framework\Rpc\Domain\Exceptions\RpcMethodNotFoundException;
 
 class MethodService extends BaseCrudService implements MethodServiceInterface

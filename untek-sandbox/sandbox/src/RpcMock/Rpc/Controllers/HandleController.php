@@ -3,8 +3,8 @@
 namespace Untek\Sandbox\Sandbox\RpcMock\Rpc\Controllers;
 
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;

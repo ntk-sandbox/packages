@@ -2,8 +2,8 @@
 
 namespace Untek\Lib\QrBox\Factories;
 
-use Untek\Lib\Components\Format\Encoders\GZipEncoder;
-use Untek\Lib\Components\Format\Encoders\ZipEncoder;
+use Untek\Component\Encoder\Encoders\GZipEncoder;
+use Untek\Component\Encoder\Encoders\ZipEncoder;
 use Untek\Lib\QrBox\Encoders\Base64Encoder;
 use Untek\Lib\QrBox\Encoders\HexEncoder;
 use Untek\Lib\QrBox\Libs\ClassEncoder;

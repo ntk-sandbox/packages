@@ -5,8 +5,8 @@ namespace Untek\Bundle\TalkBox\Domain\Entities;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Framework\Telegram\Domain\Libs\SoundexRuEn;
 use Symfony\Component\Validator\Constraints as Assert;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class TagEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

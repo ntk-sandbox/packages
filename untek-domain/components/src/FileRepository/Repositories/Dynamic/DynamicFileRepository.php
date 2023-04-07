@@ -1,15 +1,15 @@
 <?php
 
-namespace Untek\Domain\Components\FileRepository\Repositories\Dynamic;
+namespace Untek\Model\Components\FileRepository\Repositories\Dynamic;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Components\ArrayRepository\Helpers\FilterHelper;
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Components\ArrayRepository\Helpers\FilterHelper;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
 use Untek\Lib\Components\DynamicEntity\Entities\DynamicEntity;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 class DynamicFileRepository extends BaseFileCrudRepository

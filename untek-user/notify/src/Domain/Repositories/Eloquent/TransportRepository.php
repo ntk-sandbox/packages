@@ -5,7 +5,7 @@ namespace Untek\User\Notify\Domain\Repositories\Eloquent;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\User\Notify\Domain\Entities\TransportEntity;

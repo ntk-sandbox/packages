@@ -7,8 +7,8 @@ use Untek\Lib\Components\ShellRobot\Domain\Enums\VarEnum;
 use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
 use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\ConnectionServiceInterface;
 use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\ConnectionRepositoryInterface;
-use Untek\Domain\Service\Base\BaseService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method ConnectionRepositoryInterface getRepository()

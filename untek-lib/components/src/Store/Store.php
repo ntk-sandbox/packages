@@ -1,13 +1,13 @@
 <?php
 
-namespace Untek\Lib\Components\Store;
+namespace Untek\Component\FormatAdapter;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
-use Untek\Lib\Components\Store\Drivers\DriverInterface;
+use Untek\Component\FormatAdapter\Drivers\DriverInterface;
 
 class Store
 {
@@ -24,7 +24,7 @@ class Store
         $driver = strtolower($driver);
         $driver = ucfirst($driver);
         $this->driver = $driver;
-        $driverClass = 'Untek\\Lib\Components\Store\Drivers\\' . $driver;
+        $driverClass = 'Untek\Component\FormatAdapter\Drivers\\' . $driver;
 
         $instanceResolver = new InstanceResolver();
         $this->driverInstance = $instanceResolver->create($driverClass);

@@ -3,8 +3,8 @@
 namespace Untek\Kaz\Eds\Domain\Services;
 
 use phpseclib\File\X509;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;
 use Untek\Crypt\Base\Domain\Exceptions\FailCertificateSignatureException;
 use Untek\Kaz\Eds\Domain\Entities\CertificateEntity;

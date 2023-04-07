@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Query\Entities;
+namespace Untek\Model\Query\Entities;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Query\Enums\OperatorEnum;
+use Untek\Model\Query\Enums\OperatorEnum;
 
 // todo: refactor
 

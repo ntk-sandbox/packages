@@ -13,7 +13,7 @@ use Untek\Bundle\Queue\Domain\Services\JobService;
 use Untek\Bundle\Queue\Tests\Libs\Jobs\ExampleJob;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Tool\Test\Base\BaseTest;
 use Psr\Container\ContainerInterface;
 

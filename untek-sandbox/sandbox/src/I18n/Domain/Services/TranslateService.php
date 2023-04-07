@@ -4,9 +4,9 @@ namespace Untek\Sandbox\Sandbox\I18n\Domain\Services;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Sandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
 use Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Repositories\TranslateRepositoryInterface;
 use Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Services\TranslateServiceInterface;

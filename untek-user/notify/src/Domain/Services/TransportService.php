@@ -4,8 +4,8 @@ namespace Untek\User\Notify\Domain\Services;
 
 use Untek\Core\Instance\Exceptions\NotInstanceOfException;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\User\Notify\Domain\Entities\NotifyEntity;
 use Untek\User\Notify\Domain\Entities\TransportEntity;
 use Untek\User\Notify\Domain\Interfaces\Libs\ContactDriverInterface;

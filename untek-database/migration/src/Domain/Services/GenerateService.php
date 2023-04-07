@@ -2,7 +2,7 @@
 
 namespace Untek\Database\Migration\Domain\Services;
 
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Database\Migration\Domain\Interfaces\Repositories\GenerateRepositoryInterface;
 use Untek\Database\Migration\Domain\Interfaces\Services\GenerateServiceInterface;
 use Untek\Database\Migration\Domain\Scenarios\Render\CreateTableRender;

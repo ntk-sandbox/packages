@@ -5,7 +5,7 @@ namespace Untek\Framework\Rpc\Rpc\Serializers;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Helpers\ResponseHelper;
 

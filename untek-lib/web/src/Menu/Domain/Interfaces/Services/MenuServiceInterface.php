@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Web\Menu\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface MenuServiceInterface extends CrudServiceInterface
 {

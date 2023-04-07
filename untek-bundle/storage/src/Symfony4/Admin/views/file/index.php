@@ -12,7 +12,7 @@ use Untek\Bundle\Storage\Domain\Entities\FileEntity;
 use Untek\Lib\Components\Byte\Helpers\ByteSizeFormatHelper;
 use Untek\Lib\Web\Html\Helpers\Url;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Lib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
 use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
 use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Components\ArrayRepository\Base;
+namespace Untek\Model\Components\ArrayRepository\Base;
 
-use Untek\Domain\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
-use Untek\Domain\Domain\Traits\ForgeQueryTrait;
-use Untek\Domain\Repository\Base\BaseRepository;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Components\ArrayRepository\Traits\ArrayCrudRepositoryTrait;
+use Untek\Model\Shared\Traits\ForgeQueryTrait;
+use Untek\Model\Repository\Base\BaseRepository;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 abstract class BaseArrayCrudRepository extends BaseRepository implements CrudRepositoryInterface
 {

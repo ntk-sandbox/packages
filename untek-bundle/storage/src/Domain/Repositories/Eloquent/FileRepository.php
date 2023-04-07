@@ -5,7 +5,7 @@ namespace Untek\Bundle\Storage\Domain\Repositories\Eloquent;
 use Untek\Bundle\Storage\Domain\Entities\FileEntity;
 use Untek\Bundle\Storage\Domain\Interfaces\Repositories\FileRepositoryInterface;
 use Untek\Bundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class FileRepository extends BaseEloquentCrudRepository implements FileRepositoryInterface

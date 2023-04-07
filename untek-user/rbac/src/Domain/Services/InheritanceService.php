@@ -3,8 +3,8 @@
 namespace Untek\User\Rbac\Domain\Services;
 
 use Untek\User\Rbac\Domain\Interfaces\Services\InheritanceServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
 
 class InheritanceService extends BaseCrudService implements InheritanceServiceInterface

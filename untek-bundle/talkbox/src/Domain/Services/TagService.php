@@ -10,11 +10,11 @@ use Untek\Bundle\TalkBox\Domain\Libs\Parser;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Text\Helpers\TextHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Enums\OperatorEnum;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Enums\OperatorEnum;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Framework\Telegram\Domain\Libs\SoundexRuEn;
 
 class TagService extends BaseCrudService implements TagServiceInterface

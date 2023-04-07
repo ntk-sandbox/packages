@@ -3,7 +3,7 @@
 namespace Untek\User\Password\Domain\Interfaces\Repositories;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 use Untek\User\Password\Domain\Entities\PasswordHistoryEntity;
 
 interface PasswordHistoryRepositoryInterface extends CrudRepositoryInterface

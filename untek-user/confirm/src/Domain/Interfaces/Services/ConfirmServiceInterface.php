@@ -3,8 +3,8 @@
 namespace Untek\User\Confirm\Domain\Interfaces\Services;
 
 use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface ConfirmServiceInterface extends CrudServiceInterface
 {

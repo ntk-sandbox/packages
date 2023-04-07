@@ -5,9 +5,9 @@ namespace Untek\Bundle\Messenger\Domain\Repositories\Eloquent;
 use Untek\Bundle\Messenger\Domain\Entities\MessageEntity;
 use Untek\Bundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
 use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\MessageRepositoryInterface;
-use Untek\Domain\Domain\Enums\RelationEnum;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
-use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Model\Shared\Enums\RelationEnum;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Repository\Mappers\TimeMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 

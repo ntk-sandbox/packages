@@ -17,7 +17,7 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 use Untek\Lib\Web\Controller\Base\BaseWebController;
 use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;

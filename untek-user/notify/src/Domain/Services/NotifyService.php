@@ -2,10 +2,10 @@
 
 namespace Untek\User\Notify\Domain\Services;
 
-use Untek\Domain\Validator\Helpers\ValidationHelper;
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Validator\Helpers\ValidationHelper;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\User\Notify\Domain\Entities\NotifyEntity;
 use Untek\User\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 use Untek\User\Notify\Domain\Interfaces\Services\TransportServiceInterface;

@@ -2,7 +2,7 @@
 
 namespace Untek\User\Password\Domain\Interfaces\Services;
 
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 
 interface PasswordServiceInterface
 {

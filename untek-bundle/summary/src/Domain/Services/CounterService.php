@@ -8,12 +8,12 @@ use Untek\Bundle\Summary\Domain\Entities\CounterEntity;
 use Untek\Bundle\Summary\Domain\Interfaces\Repositories\CounterRepositoryInterface;
 use Untek\Bundle\Summary\Domain\Interfaces\Services\CounterServiceInterface;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 

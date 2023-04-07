@@ -4,7 +4,7 @@ namespace Untek\Kaz\Egov\Tests\Unit;
 
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Kaz\Egov\Factories\EgovEncoderServiceFactory;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Lib\QrBox\Tests\Unit\BaseTest;
 
 class EgovTest extends BaseTest

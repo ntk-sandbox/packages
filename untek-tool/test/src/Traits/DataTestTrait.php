@@ -2,7 +2,7 @@
 
 namespace Untek\Tool\Test\Traits;
 
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 
 trait DataTestTrait
 {

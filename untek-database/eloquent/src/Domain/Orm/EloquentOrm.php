@@ -2,7 +2,7 @@
 
 namespace Untek\Database\Eloquent\Domain\Orm;
 
-use Untek\Domain\EntityManager\Interfaces\OrmInterface;
+use Untek\Model\EntityManager\Interfaces\OrmInterface;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 class EloquentOrm implements OrmInterface

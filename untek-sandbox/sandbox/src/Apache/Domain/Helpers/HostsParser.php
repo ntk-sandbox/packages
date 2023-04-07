@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Apache\Domain\Helpers;
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Sandbox\Sandbox\Apache\Domain\Entities\HostEntity;
 
 class HostsParser {

@@ -3,15 +3,15 @@
 namespace Untek\Bundle\Reference\Domain\Services;
 
 use Untek\Lib\Components\Status\Enums\StatusEnum;
-use Untek\Domain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
+use Untek\Model\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
 use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Components\SoftDelete\Traits\Service\SoftDeleteTrait;
-use Untek\Domain\Components\SoftDelete\Traits\Service\SoftRestoreTrait;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Components\SoftDelete\Traits\Service\SoftDeleteTrait;
+use Untek\Model\Components\SoftDelete\Traits\Service\SoftRestoreTrait;
 
 class ItemService extends BaseCrudService implements ItemServiceInterface
 {

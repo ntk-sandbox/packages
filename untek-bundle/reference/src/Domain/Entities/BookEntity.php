@@ -8,13 +8,13 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Lib\Components\ReadOnly\Helpers\ReadOnlyHelper;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Components\Constraints\Enum;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Components\Constraints\Enum;
 use Untek\Lib\Components\I18n\Traits\I18nTrait;
-use Untek\Domain\Components\SoftDelete\Traits\Entity\SoftDeleteEntityTrait;
-use Untek\Domain\Components\SoftDelete\Traits\Entity\SoftRestoreEntityTrait;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Components\SoftDelete\Traits\Entity\SoftDeleteEntityTrait;
+use Untek\Model\Components\SoftDelete\Traits\Entity\SoftRestoreEntityTrait;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class BookEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface
 {

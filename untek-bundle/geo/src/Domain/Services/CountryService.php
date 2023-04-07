@@ -4,9 +4,9 @@ namespace Untek\Bundle\Geo\Domain\Services;
 
 use Untek\Bundle\Geo\Domain\Entities\CountryEntity;
 use Untek\Bundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 
 /**
  * @method

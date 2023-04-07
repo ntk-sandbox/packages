@@ -3,8 +3,8 @@
 namespace Untek\Bundle\Notify\Domain\Repositories\File;
 
 use Untek\Core\Code\Helpers\DeprecateHelper;
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 DeprecateHelper::hardThrow();
 

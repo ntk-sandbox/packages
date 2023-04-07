@@ -11,9 +11,9 @@ use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Contract\Common\Exceptions\NotSupportedException;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
-use Untek\Domain\Repository\Interfaces\FindOneInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Repository\Interfaces\FindOneInterface;
 use Untek\User\Authentication\Domain\Helpers\TokenHelper;
 use Untek\User\Authentication\Domain\Interfaces\Services\TokenServiceInterface;
 

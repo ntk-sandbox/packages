@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Entity\Interfaces;
+namespace Untek\Model\Entity\Interfaces;
 
 /**
  * Интерфейс атрибута "ID"

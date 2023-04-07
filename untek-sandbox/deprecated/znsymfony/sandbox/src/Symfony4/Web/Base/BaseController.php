@@ -3,9 +3,9 @@
 namespace Untek\Symfony\Sandbox\Symfony4\Web\Base;
 
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Web\Controller\Base\BaseWebController;
 use Untek\Lib\Web\TwBootstrap\Widgets\TabContent\TabContentWidget;
 use Untek\Lib\Web\TwBootstrap\Widgets\Table\TableWidget;

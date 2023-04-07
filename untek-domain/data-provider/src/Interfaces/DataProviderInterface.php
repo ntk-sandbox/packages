@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\DataProvider\Interfaces;
+namespace Untek\Model\DataProvider\Interfaces;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 

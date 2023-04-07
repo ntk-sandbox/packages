@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Redmine\Domain\Mappers;
 
-use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Model\Repository\Interfaces\MapperInterface;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\PriorityEntity;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\ProjectEntity;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\StatusEntity;

@@ -5,9 +5,9 @@ namespace Untek\Bundle\Article\Domain\Entities;
 use DateTime;
 use Symfony\Component\Validator\Constraints;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class PostEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

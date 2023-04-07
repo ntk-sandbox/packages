@@ -8,7 +8,7 @@ use Untek\Framework\Telegram\Domain\Entities\ResponseEntity;
 use Untek\Framework\Telegram\Domain\Helpers\HttpHelper;
 use Untek\Framework\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
 use danog\MadelineProto\Exception;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class ResponseRepository implements ResponseRepositoryInterface
 {

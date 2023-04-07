@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Repository\Interfaces;
+namespace Untek\Model\Repository\Interfaces;
 
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
-use Untek\Domain\Domain\Interfaces\ReadAllInterface;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
+use Untek\Model\Shared\Interfaces\ReadAllInterface;
 
 interface CrudRepositoryInterface extends RepositoryInterface, GetEntityClassInterface, ReadAllInterface, FindOneInterface, ModifyInterface//, RelationConfigInterface
 {

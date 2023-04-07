@@ -3,10 +3,10 @@
 namespace Untek\Tool\Package\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Symfony\Component\Validator\Constraints as Assert;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ConfigEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

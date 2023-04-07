@@ -11,7 +11,7 @@
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Tool\Package\Domain\Entities\ApiKeyEntity;
 
 //dd($this->translate('core', 'action.send'));

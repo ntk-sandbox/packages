@@ -3,8 +3,8 @@
 namespace Untek\Sandbox\Sandbox\Redmine\Domain\Repositories\Api;
 
 use Redmine\Api\AbstractApi;
-use Untek\Domain\Repository\Mappers\PathMapper;
-use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Model\Repository\Mappers\PathMapper;
+use Untek\Model\Repository\Mappers\TimeMapper;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\IssueApiEntity;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Mappers\IssueApiMapper;

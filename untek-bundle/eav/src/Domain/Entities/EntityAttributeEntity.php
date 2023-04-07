@@ -11,8 +11,8 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Eav\Domain\Enums\AttributeTypeEnum;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Enum\Helpers\EnumHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 
 class EntityAttributeEntity implements ValidationByMetadataInterface, EntityIdInterface, BuildFormInterface

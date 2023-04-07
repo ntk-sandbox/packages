@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Domain\Service\Traits;
+namespace Untek\Model\Service\Traits;
 
-use Untek\Domain\Domain\Enums\EventEnum;
+use Untek\Model\Shared\Enums\EventEnum;
 
 trait CrudServiceDeleteTrait
 {

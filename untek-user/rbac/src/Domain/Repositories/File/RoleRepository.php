@@ -2,11 +2,11 @@
 
 namespace Untek\User\Rbac\Domain\Repositories\File;
 
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\User\Rbac\Domain\Entities\RoleEntity;
 use Untek\User\Rbac\Domain\Enums\ItemTypeEnum;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
 
 class RoleRepository extends ItemRepository implements RoleRepositoryInterface
 {

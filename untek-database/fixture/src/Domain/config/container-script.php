@@ -1,7 +1,7 @@
 <?php
 
 use Untek\Database\Fixture\Domain\Repositories\FileRepository;
-use Untek\Lib\Components\Store\Helpers\StoreHelper;
+use Untek\Component\FormatAdapter\Helpers\StoreHelper;
 use Untek\Core\App\Interfaces\EnvStorageInterface;
 
 return [

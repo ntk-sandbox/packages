@@ -9,7 +9,7 @@ use Untek\Framework\Rpc\Domain\Events\RpcResponseEvent;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\SettingsServiceInterface;
 use Untek\Framework\Rpc\Symfony4\Web\Libs\CryptoProviderInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class CryptoProviderSubscriber implements EventSubscriberInterface
 {

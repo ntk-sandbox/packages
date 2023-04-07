@@ -3,7 +3,7 @@
 namespace Untek\User\Person\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Person\Domain\Entities\ContactEntity;
 use Untek\User\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;

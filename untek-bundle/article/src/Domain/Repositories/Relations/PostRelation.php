@@ -5,10 +5,10 @@ namespace Untek\Bundle\Article\Domain\Repositories\Relations;
 use Untek\Bundle\Article\Domain\Interfaces\CategoryRepositoryInterface;
 use Untek\Bundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use Untek\Bundle\Article\Domain\Interfaces\TagRepositoryInterface;
-use Untek\Domain\Domain\Enums\RelationEnum;
-use Untek\Domain\Domain\Libs\Relation\ManyToMany;
-use Untek\Domain\Domain\Libs\Relation\OneToOne;
-use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Model\Shared\Enums\RelationEnum;
+use Untek\Model\Shared\Libs\Relation\ManyToMany;
+use Untek\Model\Shared\Libs\Relation\OneToOne;
+use Untek\Model\Repository\Interfaces\RelationConfigInterface;
 
 class PostRelation
 {

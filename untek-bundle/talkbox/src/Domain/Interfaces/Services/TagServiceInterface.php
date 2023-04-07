@@ -4,8 +4,8 @@ namespace Untek\Bundle\TalkBox\Domain\Interfaces\Services;
 
 use Untek\Bundle\TalkBox\Domain\Entities\TagEntity;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface TagServiceInterface extends CrudServiceInterface
 {

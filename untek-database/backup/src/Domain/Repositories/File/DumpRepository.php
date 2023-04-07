@@ -10,11 +10,11 @@ use Untek\Database\Backup\Domain\Entities\DumpEntity;
 use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 use Untek\Database\Eloquent\Domain\Factories\ManagerFactory;
 use Untek\Database\Fixture\Domain\Repositories\DbRepository;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 class DumpRepository implements CrudRepositoryInterface
 {

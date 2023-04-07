@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Components\Store\Helpers;
+namespace Untek\Component\FormatAdapter\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;

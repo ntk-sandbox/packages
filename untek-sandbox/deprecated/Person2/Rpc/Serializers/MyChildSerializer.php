@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Person2\Rpc\Serializers;
 
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Framework\Rpc\Rpc\Serializers\DefaultSerializer;
 use Untek\Sandbox\Sandbox\Person2\Domain\Entities\InheritanceEntity;
 

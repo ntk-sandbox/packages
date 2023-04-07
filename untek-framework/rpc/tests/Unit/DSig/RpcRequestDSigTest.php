@@ -5,7 +5,7 @@ namespace Untek\Lib\Rest\Tests\Unit\DSig;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
 use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Tool\Test\Traits\DataTestTrait;
 

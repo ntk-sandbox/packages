@@ -2,7 +2,7 @@
 
 namespace Untek\User\Identity\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface IdentityServiceInterface extends CrudServiceInterface
 {

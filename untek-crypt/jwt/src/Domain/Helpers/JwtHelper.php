@@ -6,7 +6,7 @@ use Symfony\Component\Uid\Uuid;
 use UnexpectedValueException;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Core\Arr\Libs\Alias;
 use Untek\Crypt\Jwt\Domain\Entities\JwtEntity;
 use Untek\Crypt\Jwt\Domain\Entities\JwtHeaderEntity;

@@ -2,12 +2,12 @@
 
 namespace Untek\Database\Backup\Domain\Entities;
 
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use DateTime;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
 
 class DumpEntity implements EntityIdInterface, ValidationByMetadataInterface, UniqueInterface
 {

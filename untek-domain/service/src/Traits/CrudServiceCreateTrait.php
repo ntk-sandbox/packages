@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Service\Traits;
+namespace Untek\Model\Service\Traits;
 
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 
 trait CrudServiceCreateTrait
 {

@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Components\Validation\Constraints;
 
-use Untek\Domain\Validator\Constraints\BaseRegex;
+use Untek\Model\Validator\Constraints\BaseRegex;
 use Untek\Lib\Components\Regexp\Enums\RegexpPatternEnum;
 
 class Phone extends BaseRegex

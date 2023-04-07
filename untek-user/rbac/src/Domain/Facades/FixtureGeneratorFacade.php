@@ -2,7 +2,7 @@
 
 namespace Untek\User\Rbac\Domain\Facades;
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\User\Rbac\Domain\Libs\InheritanceMap;
 use Untek\User\Rbac\Domain\Libs\MapItem;
 

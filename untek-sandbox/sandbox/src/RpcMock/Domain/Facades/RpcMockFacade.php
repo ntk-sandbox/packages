@@ -3,7 +3,7 @@
 namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Facades;
 
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Enums\Rbac\RpcMockHandleMethodPermissionEnum;

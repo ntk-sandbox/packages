@@ -12,9 +12,9 @@ use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\Service\Base\BaseService;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 class PasswordService extends BaseService implements PasswordServiceInterface
 {

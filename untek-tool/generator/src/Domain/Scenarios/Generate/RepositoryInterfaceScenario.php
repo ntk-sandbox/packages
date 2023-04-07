@@ -2,8 +2,8 @@
 
 namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
 use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 
 class RepositoryInterfaceScenario extends BaseInterfaceScenario

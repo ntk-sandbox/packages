@@ -12,10 +12,10 @@ use Untek\Bundle\User\Domain\Services\AuthService;
 use Untek\Bundle\User\Domain\Services\AuthService2;
 use Untek\Core\Collection\Helpers\CollectionHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 
 /**

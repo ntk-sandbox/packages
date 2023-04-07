@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface VersionHandlerRepositoryInterface extends CrudRepositoryInterface
 {

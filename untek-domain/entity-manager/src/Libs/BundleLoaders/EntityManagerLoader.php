@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\EntityManager\Libs\BundleLoaders;
+namespace Untek\Model\EntityManager\Libs\BundleLoaders;
 
 use Untek\Core\Bundle\Base\BaseLoader;
 use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 /**
  * Загрузчик конфигурации менеджера сущностей

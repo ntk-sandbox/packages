@@ -4,7 +4,7 @@ namespace Untek\Lib\Components\ShellRobot\Domain\Repositories\Config;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Lib\Components\ShellRobot\Domain\Factories\ShellFactory;
 
 class ProfileRepository

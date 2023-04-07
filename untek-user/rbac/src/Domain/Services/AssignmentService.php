@@ -2,15 +2,15 @@
 
 namespace Untek\User\Rbac\Domain\Services;
 
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
 use Untek\User\Rbac\Domain\Entities\ItemEntity;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;

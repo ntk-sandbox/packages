@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Article\Domain\Interfaces;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface PostServiceInterface extends CrudServiceInterface
 {

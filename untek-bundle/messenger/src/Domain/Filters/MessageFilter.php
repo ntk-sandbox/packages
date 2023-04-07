@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Messenger\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class MessageFilter implements ValidationByMetadataInterface

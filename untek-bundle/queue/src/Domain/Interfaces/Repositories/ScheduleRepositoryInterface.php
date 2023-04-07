@@ -4,8 +4,8 @@ namespace Untek\Bundle\Queue\Domain\Interfaces\Repositories;
 
 use Untek\Bundle\Queue\Domain\Entities\ScheduleEntity;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ScheduleRepositoryInterface extends CrudRepositoryInterface
 {

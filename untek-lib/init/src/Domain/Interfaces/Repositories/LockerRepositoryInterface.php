@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Init\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
 
 interface LockerRepositoryInterface extends RepositoryInterface
 {

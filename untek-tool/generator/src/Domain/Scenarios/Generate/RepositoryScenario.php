@@ -6,7 +6,7 @@ use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentRepository;
 use Untek\Tool\Generator\Domain\Enums\TypeEnum;
@@ -138,7 +138,7 @@ class RepositoryScenario extends BaseScenario
                 $className = BaseEloquentRepository::class;
             }
         } else {
-            //$className = 'Untek\Domain\Domain\Base\BaseRepository';
+            //$className = 'Untek\Model\Shared\Base\BaseRepository';
         }
         return $className;
     }

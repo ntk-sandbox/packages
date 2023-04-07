@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Domain\Repository\Traits;
+namespace Untek\Model\Repository\Traits;
 
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
 
 trait RepositoryAwareTrait
 {

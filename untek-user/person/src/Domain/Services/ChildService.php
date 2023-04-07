@@ -3,14 +3,14 @@
 namespace Untek\User\Person\Domain\Services;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Person\Domain\Entities\ChildEntity;
 use Untek\User\Person\Domain\Entities\InheritanceEntity;
 use Untek\User\Person\Domain\Entities\PersonEntity;

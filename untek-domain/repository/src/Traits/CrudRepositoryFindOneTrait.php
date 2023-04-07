@@ -1,17 +1,17 @@
 <?php
 
-namespace Untek\Domain\Repository\Traits;
+namespace Untek\Model\Repository\Traits;
 
 use Untek\Core\Code\Factories\PropertyAccess;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Lib\I18Next\Facades\I18Next;
 
 trait CrudRepositoryFindOneTrait

@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Repository\Traits;
+namespace Untek\Model\Repository\Traits;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\RelationLoader;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\RelationLoader;
 
 trait RepositoryRelationTrait
 {

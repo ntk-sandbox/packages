@@ -11,7 +11,7 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Lib\Web\Controller\Base\BaseWebController;
 use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Lib\Web\Form\Traits\ControllerFormTrait;

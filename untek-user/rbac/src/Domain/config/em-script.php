@@ -1,6 +1,6 @@
 <?php
 
-use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 return function (EntityManagerConfiguratorInterface $entityManagerConfigurator) {
     $entityManagerConfigurator->bindEntity('Untek\\User\\Rbac\\Domain\\Entities\\RoleEntity', 'Untek\\User\\Rbac\\Domain\\Interfaces\\Repositories\\RoleRepositoryInterface');

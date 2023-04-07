@@ -8,7 +8,7 @@ use Untek\Core\Instance\Helpers\InstanceHelper;
 use Untek\Core\Contract\Encoder\Interfaces\DecodeInterface;
 use Untek\Core\Contract\Encoder\Interfaces\EncodeInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class CollectionEncoder implements EncoderInterface
 {

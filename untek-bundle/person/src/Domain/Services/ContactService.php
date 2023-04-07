@@ -5,10 +5,10 @@ namespace Untek\Bundle\Person\Domain\Services;
 use Untek\Bundle\Person\Domain\Entities\ContactEntity;
 use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use Untek\Bundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Entities\Query;
 
 class ContactService extends BaseCrudService implements ContactServiceInterface
 {

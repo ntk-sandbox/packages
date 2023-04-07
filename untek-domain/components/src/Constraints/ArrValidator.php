@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Components\Constraints;
+namespace Untek\Model\Components\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
-use Untek\Domain\Validator\Constraints\BaseValidator;
+use Untek\Model\Validator\Constraints\BaseValidator;
 
 class ArrValidator extends BaseValidator
 {

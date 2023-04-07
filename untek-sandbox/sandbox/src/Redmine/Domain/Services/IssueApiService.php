@@ -2,8 +2,8 @@
 
 namespace Untek\Sandbox\Sandbox\Redmine\Domain\Services;
 
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\IssueApiEntity;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Services\IssueApiServiceInterface;

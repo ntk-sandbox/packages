@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Untek\Core\Collection\Helpers\CollectionHelper;
 use Untek\Database\Base\Console\Traits\OverwriteDatabaseTrait;
 use Untek\Framework\Console\Symfony4\Widgets\LogWidget;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Database\Fixture\Domain\Entities\FixtureEntity;
 use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;

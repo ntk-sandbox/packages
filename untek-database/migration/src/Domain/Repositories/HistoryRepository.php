@@ -7,7 +7,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Psr\Container\ContainerInterface;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentRepository;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 use Untek\Database\Migration\Domain\Entities\MigrationEntity;

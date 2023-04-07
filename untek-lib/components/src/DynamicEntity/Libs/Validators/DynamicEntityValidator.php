@@ -4,8 +4,8 @@ namespace Untek\Lib\Components\DynamicEntity\Libs\Validators;
 
 use Untek\Lib\Components\DynamicEntity\Helpers\DynamicEntityValidationHelper;
 use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
-use Untek\Domain\Validator\Interfaces\ValidatorInterface;
-use Untek\Domain\Validator\Libs\Validators\BaseValidator;
+use Untek\Model\Validator\Interfaces\ValidatorInterface;
+use Untek\Model\Validator\Libs\Validators\BaseValidator;
 
 class DynamicEntityValidator extends BaseValidator implements ValidatorInterface
 {

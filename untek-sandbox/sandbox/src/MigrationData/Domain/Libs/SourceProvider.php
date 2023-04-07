@@ -4,9 +4,9 @@ namespace Untek\Sandbox\Sandbox\MigrationData\Domain\Libs;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class SourceProvider
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Domain\QueryFilter\Interfaces;
+namespace Untek\Model\QueryFilter\Interfaces;
 
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 
 /**
  * Формирование параметров запроса из фильтра

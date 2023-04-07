@@ -1,18 +1,18 @@
 <?php
 
-namespace Untek\Domain\Components\ArrayRepository\Traits;
+namespace Untek\Model\Components\ArrayRepository\Traits;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Domain\Traits\DispatchEventTrait;
-use Untek\Domain\Repository\Traits\CrudRepositoryFindAllTrait;
-use Untek\Domain\Repository\Traits\CrudRepositoryFindOneTrait;
-use Untek\Domain\Components\ArrayRepository\Helpers\FilterHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Shared\Traits\DispatchEventTrait;
+use Untek\Model\Repository\Traits\CrudRepositoryFindAllTrait;
+use Untek\Model\Repository\Traits\CrudRepositoryFindOneTrait;
+use Untek\Model\Components\ArrayRepository\Helpers\FilterHelper;
 
 trait ArrayCrudRepositoryTrait
 {

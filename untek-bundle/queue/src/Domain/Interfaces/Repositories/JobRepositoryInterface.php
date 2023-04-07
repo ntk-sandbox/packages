@@ -3,8 +3,8 @@
 namespace Untek\Bundle\Queue\Domain\Interfaces\Repositories;
 
 use Untek\Bundle\Queue\Domain\Entities\JobEntity;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface JobRepositoryInterface extends CrudRepositoryInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Repository\Interfaces;
+namespace Untek\Model\Repository\Interfaces;
 
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
 
 interface FindOneUniqueInterface
 {

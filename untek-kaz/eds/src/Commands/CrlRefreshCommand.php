@@ -6,7 +6,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Kaz\Eds\Domain\Entities\HostEntity;
 use Untek\Kaz\Eds\Domain\Entities\LogEntity;
 use Untek\Kaz\Eds\Domain\Interfaces\Services\CrlServiceInterface;

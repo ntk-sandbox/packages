@@ -4,7 +4,7 @@ namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Eav\Domain\Entities\EnumEntity;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class EnumRepository extends BaseEloquentCrudRepository implements EnumRepositoryInterface

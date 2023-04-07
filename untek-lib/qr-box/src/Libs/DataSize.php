@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\QrBox\Libs;
 
-use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Component\Encoder\Encoders\ChainEncoder;
 use Untek\Lib\QrBox\Entities\BarCodeEntity;
 use Untek\Lib\QrBox\Wrappers\WrapperInterface;
 use DateTime;

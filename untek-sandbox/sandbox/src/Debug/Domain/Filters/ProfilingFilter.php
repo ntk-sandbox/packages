@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Debug\Domain\Filters;
 
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 

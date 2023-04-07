@@ -9,7 +9,7 @@ use phpseclib\File\X509;
 use RobRichards\XMLSecLibs\XMLSecEnc;
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
 use RobRichards\XMLSecLibs\XMLSecurityKey;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Crypt\Base\Domain\Exceptions\FailSignatureException;
 use Untek\Crypt\Base\Domain\Exceptions\InvalidDigestException;

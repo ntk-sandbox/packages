@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\EntityManager\Interfaces;
+namespace Untek\Model\EntityManager\Interfaces;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Repository\Interfaces\FindOneUniqueInterface;
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Repository\Interfaces\FindOneUniqueInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
 
 interface EntityManagerInterface extends TransactionInterface, FindOneUniqueInterface
 {

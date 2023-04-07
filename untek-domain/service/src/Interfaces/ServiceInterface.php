@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Service\Interfaces;
+namespace Untek\Model\Service\Interfaces;
 
 interface ServiceInterface
 {

@@ -2,8 +2,8 @@
 
 namespace Untek\Framework\Rpc\Domain\Entities;
 
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 
 class RpcResponseCollection extends BaseRpcCollection
 {

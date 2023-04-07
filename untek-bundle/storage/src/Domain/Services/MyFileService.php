@@ -6,10 +6,10 @@ use Symfony\Component\Security\Core\Security;
 use Untek\Bundle\Storage\Domain\Entities\FileEntity;
 use Untek\Bundle\Storage\Domain\Interfaces\Repositories\MyFileRepositoryInterface;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\MyFileServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Join;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Join;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 

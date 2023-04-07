@@ -1,15 +1,15 @@
 <?php
 
-namespace Untek\Domain\Relation\Constraints;
+namespace Untek\Model\Relation\Constraints;
 
 use Exception;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Repository\Interfaces\FindOneInterface;
-use Untek\Domain\Validator\Constraints\BaseValidator;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Repository\Interfaces\FindOneInterface;
+use Untek\Model\Validator\Constraints\BaseValidator;
 
 class RelationValidator extends BaseValidator
 {

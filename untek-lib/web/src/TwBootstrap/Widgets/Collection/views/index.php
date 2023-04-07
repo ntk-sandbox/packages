@@ -14,7 +14,7 @@
  */
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Lib\I18Next\Facades\I18Next;
 use Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
 use Untek\Lib\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;

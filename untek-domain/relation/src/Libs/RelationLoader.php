@@ -1,15 +1,15 @@
 <?php
 
-namespace Untek\Domain\Relation\Libs;
+namespace Untek\Model\Relation\Libs;
 
 use InvalidArgumentException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Interfaces\RelationInterface;
-use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Interfaces\RelationInterface;
+use Untek\Model\Repository\Interfaces\RelationConfigInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
 
 class RelationLoader
 {

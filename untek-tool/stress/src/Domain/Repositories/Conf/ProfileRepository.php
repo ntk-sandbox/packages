@@ -7,10 +7,10 @@ use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 use Untek\Tool\Stress\Domain\Entities\ProfileEntity;
 
 class ProfileRepository implements CrudRepositoryInterface

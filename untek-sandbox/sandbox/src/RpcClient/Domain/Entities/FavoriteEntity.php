@@ -8,10 +8,10 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Lib\Components\ReadOnly\Helpers\ReadOnlyHelper;
 use Untek\Core\Text\Helpers\StringHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Components\Constraints\Enum;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Components\Constraints\Enum;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class FavoriteEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

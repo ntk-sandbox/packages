@@ -9,7 +9,7 @@
 use Untek\Bundle\Eav\Domain\Entities\EntityEntity;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Web\Controller\Helpers\ActionHelper;
 use Untek\Lib\Web\View\Libs\View;
 use Untek\Lib\Web\TwBootstrap\Widgets\Detail\DetailWidget;

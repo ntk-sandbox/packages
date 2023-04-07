@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Domain\Events;
+namespace Untek\Model\Shared\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 
 class QueryEvent extends Event
 {

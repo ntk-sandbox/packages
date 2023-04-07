@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Domain\QueryFilter\Traits;
+namespace Untek\Model\QueryFilter\Traits;
 
 use Psr\EventDispatcher\EventDispatcherInterface;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\QueryEvent;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\QueryFilter\Helpers\FilterModelHelper;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\QueryEvent;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\QueryFilter\Helpers\FilterModelHelper;
 
 trait ForgeQueryFilterTrait
 {

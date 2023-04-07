@@ -3,7 +3,7 @@
 namespace Untek\Tool\Phar\Domain\Helpers;
 
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 
 class PharHelper
 {

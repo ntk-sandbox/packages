@@ -4,7 +4,7 @@ namespace Untek\Lib\Components\DynamicEntity\Helpers;
 
 use Symfony\Component\PropertyAccess\Exception\UninitializedPropertyException;
 use Symfony\Component\Validator\ConstraintViolationList;
-use Untek\Domain\Validator\Entities\ValidationErrorEntity;
+use Untek\Model\Validator\Entities\ValidationErrorEntity;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Code\Factories\PropertyAccess;

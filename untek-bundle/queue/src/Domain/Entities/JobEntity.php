@@ -7,9 +7,9 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Queue\Domain\Enums\PriorityEnum;
 use Untek\Bundle\Queue\Domain\Helpers\JobHelper;
 use Untek\Bundle\Queue\Domain\Interfaces\JobInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class JobEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface

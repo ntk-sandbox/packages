@@ -2,7 +2,7 @@
 
 namespace Untek\User\Person\Domain\Interfaces\Services;
 
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\User\Person\Domain\Entities\PersonEntity;
 
 interface MyPersonServiceInterface

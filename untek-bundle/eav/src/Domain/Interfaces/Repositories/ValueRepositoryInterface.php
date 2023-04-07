@@ -4,8 +4,8 @@ namespace Untek\Bundle\Eav\Domain\Interfaces\Repositories;
 
 use Untek\Bundle\Eav\Domain\Entities\ValueEntity;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ValueRepositoryInterface extends CrudRepositoryInterface
 {

@@ -2,9 +2,9 @@
 
 namespace Untek\Framework\Rpc\Domain\Repositories\File;
 
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\PermissionRepositoryInterface;

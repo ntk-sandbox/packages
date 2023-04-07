@@ -4,7 +4,7 @@ namespace Untek\User\Password\Domain\Entities;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class PasswordValidatorEntity implements ValidationByMetadataInterface
 {

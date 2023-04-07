@@ -3,9 +3,9 @@
 namespace Untek\Kaz\Eds\Domain\Services;
 
 use Untek\Kaz\Eds\Domain\Interfaces\Services\LogServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Kaz\Eds\Domain\Interfaces\Repositories\LogRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Kaz\Eds\Domain\Entities\LogEntity;
 
 /**

@@ -3,8 +3,8 @@
 namespace Untek\User\Rbac\Domain\Interfaces\Services;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface AssignmentServiceInterface extends CrudServiceInterface
 {

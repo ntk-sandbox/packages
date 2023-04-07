@@ -6,10 +6,10 @@ use Untek\Bundle\Log\Domain\Entities\HistoryEntity;
 use Untek\Bundle\Log\Domain\Entities\LogEntity;
 use Untek\Bundle\Log\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
 use Untek\Bundle\Log\Domain\Interfaces\Services\HistoryServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\DataProvider\Libs\DataProvider;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\DataProvider\Libs\DataProvider;
+use Untek\Model\Query\Entities\Query;
 
 class HistoryService extends BaseCrudService implements HistoryServiceInterface
 {

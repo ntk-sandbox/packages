@@ -6,8 +6,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use Untek\Lib\Components\I18n\Traits\I18nTrait;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ContactTypeEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

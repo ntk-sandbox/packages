@@ -7,8 +7,8 @@ use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
 use Untek\Bundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
 use Untek\Bundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
 
 /**

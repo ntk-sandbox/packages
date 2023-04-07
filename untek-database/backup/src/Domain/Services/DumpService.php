@@ -4,8 +4,8 @@ namespace Untek\Database\Backup\Domain\Services;
 
 use Untek\Database\Backup\Domain\Interfaces\Services\DumpServiceInterface;
 use Untek\Database\Backup\Domain\Interfaces\Repositories\DumpRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Database\Backup\Domain\Entities\DumpEntity;
 
 /**

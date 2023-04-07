@@ -8,9 +8,9 @@ use Untek\User\Authentication\Domain\Enums\AuthEventEnum;
 use Untek\User\Authentication\Domain\Events\AuthEvent;
 use Untek\User\Identity\Domain\Events\IdentityEvent;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class SymfonyAuthenticationIdentitySubscriber implements EventSubscriberInterface
 {

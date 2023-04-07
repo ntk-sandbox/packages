@@ -5,8 +5,8 @@ namespace Untek\Bundle\Eav\Domain\Interfaces\Services;
 use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
 use Untek\Bundle\Eav\Domain\Entities\DynamicEntity;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface ValueServiceInterface extends CrudServiceInterface
 {

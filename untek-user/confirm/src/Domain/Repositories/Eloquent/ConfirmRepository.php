@@ -2,9 +2,9 @@
 
 namespace Untek\User\Confirm\Domain\Repositories\Eloquent;
 
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Enums\OperatorEnum;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Enums\OperatorEnum;
+use Untek\Model\Query\Entities\Query;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Confirm\Domain\Entities\ConfirmEntity;

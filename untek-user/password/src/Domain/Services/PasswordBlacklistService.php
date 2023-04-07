@@ -3,8 +3,8 @@
 namespace Untek\User\Password\Domain\Services;
 
 use Untek\User\Password\Domain\Interfaces\Services\PasswordBlacklistServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Password\Domain\Entities\PasswordBlacklistEntity;
 
 class PasswordBlacklistService extends BaseCrudService implements PasswordBlacklistServiceInterface

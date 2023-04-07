@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\EntityManager\Libs;
+namespace Untek\Model\EntityManager\Libs;
 
 use Psr\Container\ContainerInterface;
 use Untek\Core\Instance\Helpers\PropertyHelper;
@@ -9,17 +9,17 @@ use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
 use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Interfaces\OrmInterface;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\OrmInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Lib\I18Next\Facades\I18Next;
 
 class EntityManager implements EntityManagerInterface

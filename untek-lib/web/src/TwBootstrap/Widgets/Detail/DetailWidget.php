@@ -21,7 +21,7 @@ use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\TimeFormatter;
 use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\UnknownTypeFormatter;
 use Untek\Lib\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class DetailWidget extends BaseWidget2

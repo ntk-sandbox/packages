@@ -19,7 +19,7 @@
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
 use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 

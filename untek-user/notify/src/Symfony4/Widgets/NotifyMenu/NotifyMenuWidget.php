@@ -4,8 +4,8 @@ namespace Untek\User\Notify\Symfony4\Widgets\NotifyMenu;
 
 use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;
 use Untek\User\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Entities\Query;
 use Untek\Lib\Web\Widget\Base\BaseWidget2;
 
 class NotifyMenuWidget extends BaseWidget2

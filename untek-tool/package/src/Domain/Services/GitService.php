@@ -5,7 +5,7 @@ namespace Untek\Tool\Package\Domain\Services;
 //use Illuminate\Support\Arr;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Tool\Package\Domain\Entities\CommitEntity;
 use Untek\Tool\Package\Domain\Entities\PackageEntity;
 use Untek\Tool\Package\Domain\Entities\TagEntity;

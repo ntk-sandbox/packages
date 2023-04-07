@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Web\Controller\Base\BaseWebController;
 use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Lib\Web\Form\Libs\FormManager;

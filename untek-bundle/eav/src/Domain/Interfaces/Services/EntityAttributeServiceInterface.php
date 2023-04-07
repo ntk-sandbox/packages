@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Eav\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface EntityAttributeServiceInterface extends CrudServiceInterface
 {

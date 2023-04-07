@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Relation\Libs\Types;
+namespace Untek\Model\Relation\Libs\Types;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Relation\Interfaces\RelationInterface;
+use Untek\Model\Relation\Interfaces\RelationInterface;
 
 class VoidRelation extends BaseRelation implements RelationInterface
 {

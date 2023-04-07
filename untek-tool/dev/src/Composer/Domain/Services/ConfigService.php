@@ -4,9 +4,9 @@ namespace Untek\Tool\Dev\Composer\Domain\Services;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Component\FormatAdapter\StoreFile;
 use Untek\Tool\Dev\Composer\Domain\Interfaces\Repositories\ConfigRepositoryInterface;
 use Untek\Tool\Dev\Composer\Domain\Interfaces\Services\ConfigServiceInterface;
 use Untek\Tool\Package\Domain\Entities\ConfigEntity;

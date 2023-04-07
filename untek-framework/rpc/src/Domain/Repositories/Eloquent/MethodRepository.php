@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Domain\Repositories\Eloquent;
 
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;

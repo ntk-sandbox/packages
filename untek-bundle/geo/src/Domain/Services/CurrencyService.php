@@ -3,9 +3,9 @@
 namespace Untek\Bundle\Geo\Domain\Services;
 
 use Untek\Bundle\Geo\Domain\Interfaces\Services\CurrencyServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Bundle\Geo\Domain\Interfaces\Repositories\CurrencyRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Bundle\Geo\Domain\Entities\CurrencyEntity;
 
 /**

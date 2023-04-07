@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Components\FileRepository\Base;
+namespace Untek\Model\Components\FileRepository\Base;
 
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Repository\Traits\RepositoryMapperTrait;
 
 abstract class BaseLoopedFileRepository extends BaseFileCrudRepository
 {

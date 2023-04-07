@@ -3,8 +3,8 @@
 namespace Untek\User\Identity\Domain\Relations;
 
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;
 
 class IdentityRelation

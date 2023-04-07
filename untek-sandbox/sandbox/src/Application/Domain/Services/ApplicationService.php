@@ -3,9 +3,9 @@
 namespace Untek\Sandbox\Sandbox\Application\Domain\Services;
 
 use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApplicationServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApplicationRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApplicationEntity;
 
 /**

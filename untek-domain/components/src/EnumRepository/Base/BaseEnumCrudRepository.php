@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Components\EnumRepository\Base;
+namespace Untek\Model\Components\EnumRepository\Base;
 
 use Untek\Core\Enum\Helpers\EnumHelper;
-use Untek\Domain\Components\ArrayRepository\Base\BaseArrayCrudRepository;
+use Untek\Model\Components\ArrayRepository\Base\BaseArrayCrudRepository;
 
 abstract class BaseEnumCrudRepository extends BaseArrayCrudRepository
 {

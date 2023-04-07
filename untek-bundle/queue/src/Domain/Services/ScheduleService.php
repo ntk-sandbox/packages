@@ -11,10 +11,10 @@ use Untek\Bundle\Queue\Domain\Interfaces\Repositories\ScheduleRepositoryInterfac
 use Untek\Bundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Components\SoftDelete\Subscribers\SoftDeleteSubscriber;
 
 /**
  * @method ScheduleRepositoryInterface getRepository()

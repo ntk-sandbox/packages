@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Components\SoftDelete\Traits\Entity;
+namespace Untek\Model\Components\SoftDelete\Traits\Entity;
 
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 

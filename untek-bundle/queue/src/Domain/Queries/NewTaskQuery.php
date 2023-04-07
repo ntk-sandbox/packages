@@ -2,8 +2,8 @@
 
 namespace Untek\Bundle\Queue\Domain\Queries;
 
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Query\Entities\Where;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class NewTaskQuery extends Query //TaskOrderQuery

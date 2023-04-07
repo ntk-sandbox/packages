@@ -3,19 +3,19 @@
 namespace Untek\Framework\Rpc\Domain\Base;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
-use Untek\Domain\QueryFilter\Traits\ForgeQueryFilterTrait;
-use Untek\Domain\QueryFilter\Traits\QueryFilterTrait;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Repository\Interfaces\FindOneUniqueInterface;
-use Untek\Domain\Repository\Traits\CrudRepositoryDeleteTrait;
-use Untek\Domain\Repository\Traits\CrudRepositoryFindAllTrait;
-use Untek\Domain\Repository\Traits\CrudRepositoryFindOneTrait;
-use Untek\Domain\Repository\Traits\CrudRepositoryInsertTrait;
-use Untek\Domain\Repository\Traits\CrudRepositoryUpdateTrait;
-use Untek\Domain\Repository\Traits\RepositoryRelationTrait;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
+use Untek\Model\QueryFilter\Traits\ForgeQueryFilterTrait;
+use Untek\Model\QueryFilter\Traits\QueryFilterTrait;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\FindOneUniqueInterface;
+use Untek\Model\Repository\Traits\CrudRepositoryDeleteTrait;
+use Untek\Model\Repository\Traits\CrudRepositoryFindAllTrait;
+use Untek\Model\Repository\Traits\CrudRepositoryFindOneTrait;
+use Untek\Model\Repository\Traits\CrudRepositoryInsertTrait;
+use Untek\Model\Repository\Traits\CrudRepositoryUpdateTrait;
+use Untek\Model\Repository\Traits\RepositoryRelationTrait;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Framework\Rpc\Domain\Helpers\RpcQueryHelper;
 
 abstract class BaseRpcCrudRepository extends BaseRpcRepository implements CrudRepositoryInterface, ForgeQueryByFilterInterface, FindOneUniqueInterface

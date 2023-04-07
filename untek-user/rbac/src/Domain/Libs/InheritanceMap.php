@@ -2,7 +2,7 @@
 
 namespace Untek\User\Rbac\Domain\Libs;
 
-use Untek\Lib\Components\Store\Helpers\StoreHelper;
+use Untek\Component\FormatAdapter\Helpers\StoreHelper;
 use Untek\User\Rbac\Domain\Interfaces\InheritanceMapInterface;
 
 class InheritanceMap implements InheritanceMapInterface

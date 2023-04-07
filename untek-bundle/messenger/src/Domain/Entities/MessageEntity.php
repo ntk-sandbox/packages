@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Messenger\Domain\Entities;
 
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class MessageEntity implements EntityIdInterface

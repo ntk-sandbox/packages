@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Domain\Service\Traits;
+namespace Untek\Model\Service\Traits;
 
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Query\Entities\Query;
 
 trait CrudServiceFindOneTrait
 {

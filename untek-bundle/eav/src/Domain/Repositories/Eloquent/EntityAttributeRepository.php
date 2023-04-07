@@ -5,8 +5,8 @@ namespace Untek\Bundle\Eav\Domain\Repositories\Eloquent;
 use Untek\Bundle\Eav\Domain\Entities\EntityAttributeEntity;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityAttributeRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class EntityAttributeRepository extends BaseEloquentCrudRepository implements EntityAttributeRepositoryInterface

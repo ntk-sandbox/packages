@@ -2,8 +2,8 @@
 
 namespace Untek\Bundle\Messenger\Domain\Interfaces;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Bundle\Messenger\Domain\Entities\ChatEntity;
 
 interface ChatRepositoryInterface extends CrudRepositoryInterface

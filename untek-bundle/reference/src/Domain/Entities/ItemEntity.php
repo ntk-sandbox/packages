@@ -6,15 +6,15 @@ use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use Untek\Domain\Components\Constraints\Enum;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Components\Constraints\Enum;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
 use Untek\Lib\Components\I18n\Traits\I18nTrait;
 use Untek\Lib\Components\ReadOnly\Helpers\ReadOnlyHelper;
-use Untek\Domain\Components\SoftDelete\Traits\Entity\SoftDeleteEntityTrait;
-use Untek\Domain\Components\SoftDelete\Traits\Entity\SoftRestoreEntityTrait;
+use Untek\Model\Components\SoftDelete\Traits\Entity\SoftDeleteEntityTrait;
+use Untek\Model\Components\SoftDelete\Traits\Entity\SoftRestoreEntityTrait;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class ItemEntity implements ValidationByMetadataInterface, EntityIdInterface, UniqueInterface

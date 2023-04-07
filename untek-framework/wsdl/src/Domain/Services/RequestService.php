@@ -10,8 +10,8 @@ use Untek\Framework\Wsdl\Domain\Libs\SoapHandler;
 use Psr\Container\ContainerInterface;
 use Untek\Core\Container\Traits\ContainerAwareTrait;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
-use Untek\Domain\Service\Base\BaseService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 class RequestService extends BaseService implements RequestServiceInterface
 {

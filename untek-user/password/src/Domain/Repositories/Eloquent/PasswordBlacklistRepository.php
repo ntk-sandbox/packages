@@ -3,7 +3,7 @@
 namespace Untek\User\Password\Domain\Repositories\Eloquent;
 
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Password\Domain\Entities\PasswordBlacklistEntity;
 use Untek\User\Password\Domain\Interfaces\Repositories\PasswordBlacklistRepositoryInterface;

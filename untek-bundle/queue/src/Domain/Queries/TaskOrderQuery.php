@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Queue\Domain\Queries;
 
 use Untek\Core\Code\Helpers\DeprecateHelper;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 
 DeprecateHelper::hardThrow();
 

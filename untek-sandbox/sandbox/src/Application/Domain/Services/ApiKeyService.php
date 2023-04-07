@@ -4,10 +4,10 @@ namespace Untek\Sandbox\Sandbox\Application\Domain\Services;
 
 use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Services\ApiKeyServiceInterface;
 use Untek\Core\Text\Libs\RandomString;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\Application\Domain\Interfaces\Repositories\ApiKeyRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
 
 /**

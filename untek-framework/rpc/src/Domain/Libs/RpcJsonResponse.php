@@ -5,7 +5,7 @@ namespace Untek\Framework\Rpc\Domain\Libs;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseCollection;
 use Untek\Framework\Rpc\Domain\Enums\RpcBatchModeEnum;
 use Untek\Framework\Rpc\Domain\Interfaces\Encoders\ResponseEncoderInterface;

@@ -3,7 +3,7 @@
 namespace Untek\Framework\Wsdl\Domain\Base;
 
 use SoapClient;
-use Untek\Domain\Repository\Base\BaseRepository;
+use Untek\Model\Repository\Base\BaseRepository;
 
 abstract class BaseWsdlRepository extends BaseRepository
 {

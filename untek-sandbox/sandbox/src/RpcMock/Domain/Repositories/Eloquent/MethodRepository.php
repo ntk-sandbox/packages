@@ -3,7 +3,7 @@
 namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Repositories\Eloquent;
 
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Model\Repository\Mappers\JsonMapper;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 
 class MethodRepository extends BaseEloquentCrudRepository

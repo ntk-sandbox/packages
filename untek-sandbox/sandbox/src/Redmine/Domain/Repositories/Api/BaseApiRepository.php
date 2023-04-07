@@ -8,10 +8,10 @@ use Redmine\Client;
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 use Untek\Core\Contract\Common\Exceptions\NotSupportedException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Traits\RepositoryMapperTrait;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\IssueApiRepositoryInterface;
 
 abstract class BaseApiRepository implements IssueApiRepositoryInterface

@@ -3,8 +3,8 @@
 namespace Untek\User\Rbac\Domain\Repositories\Eloquent;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\AssignmentRepositoryInterface;

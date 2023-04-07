@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Components\Format\Encoders;
+namespace Untek\Component\Encoder\Encoders;
 
 
 use Symfony\Component\Serializer\Encoder\XmlEncoder as SymfonyXmlEncoder;

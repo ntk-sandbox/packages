@@ -2,7 +2,7 @@
 
 namespace Untek\User\Rbac\Domain\Repositories\File;
 
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
 use Untek\User\Rbac\Domain\Entities\InheritanceEntity;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
 

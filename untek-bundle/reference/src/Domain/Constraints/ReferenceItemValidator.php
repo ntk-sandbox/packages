@@ -10,8 +10,8 @@ use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Query\Entities\Query;
 use Untek\Kaz\Iin\Domain\Helpers\IinParser;
 use Exception;
 

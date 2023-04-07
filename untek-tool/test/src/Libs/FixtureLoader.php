@@ -3,7 +3,7 @@
 namespace Untek\Tool\Test\Libs;
 
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\EntityManager\Libs\EntityManager;
+use Untek\Model\EntityManager\Libs\EntityManager;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 use Untek\Database\Fixture\Domain\Repositories\DbRepository;
 use Untek\Database\Fixture\Domain\Repositories\FileRepository;

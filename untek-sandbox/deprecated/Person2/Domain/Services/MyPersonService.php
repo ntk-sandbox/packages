@@ -4,9 +4,9 @@ namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
 use Untek\Core\Instance\Helpers\PropertyHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;

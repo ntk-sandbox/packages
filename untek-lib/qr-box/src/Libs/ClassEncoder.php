@@ -4,7 +4,7 @@ namespace Untek\Lib\QrBox\Libs;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Component\Encoder\Encoders\ChainEncoder;
 
 class ClassEncoder
 {

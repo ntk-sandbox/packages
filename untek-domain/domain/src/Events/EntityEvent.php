@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Domain\Events;
+namespace Untek\Model\Shared\Events;
 
 use Symfony\Contracts\EventDispatcher\Event;
 use Untek\Core\EventDispatcher\Traits\EventSkipHandleTrait;

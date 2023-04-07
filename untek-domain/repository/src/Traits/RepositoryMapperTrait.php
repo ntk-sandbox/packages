@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Repository\Traits;
+namespace Untek\Model\Repository\Traits;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Instance\Helpers\PropertyHelper;
@@ -8,10 +8,10 @@ use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Repository\Libs\MapperEncoder;
-use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Repository\Libs\MapperEncoder;
+use Untek\Component\Encoder\Encoders\ChainEncoder;
 
 trait RepositoryMapperTrait
 {

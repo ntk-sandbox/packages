@@ -5,7 +5,7 @@ namespace Untek\Lib\Components\ReadOnly\Helpers;
 use Untek\Core\Contract\Common\Exceptions\ReadOnlyAttributeException;
 use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class ReadOnlyHelper
 {

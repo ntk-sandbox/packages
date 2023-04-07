@@ -3,9 +3,9 @@
 namespace Untek\User\Person\Domain\Services;
 
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\User\Person\Domain\Entities\PersonEntity;
 use Untek\User\Person\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;

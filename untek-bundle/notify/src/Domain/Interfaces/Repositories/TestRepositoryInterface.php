@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Notify\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface TestRepositoryInterface extends CrudRepositoryInterface
 {

@@ -4,9 +4,9 @@ namespace Untek\User\Person\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
 use Untek\Core\Instance\Helpers\PropertyHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseService;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 use Untek\User\Person\Domain\Entities\PersonEntity;
 use Untek\User\Person\Domain\Interfaces\Repositories\InheritanceRepositoryInterface;

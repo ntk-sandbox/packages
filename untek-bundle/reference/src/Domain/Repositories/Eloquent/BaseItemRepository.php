@@ -4,9 +4,9 @@ namespace Untek\Bundle\Reference\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
 use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 
 abstract class BaseItemRepository extends ItemRepository implements ItemRepositoryInterface

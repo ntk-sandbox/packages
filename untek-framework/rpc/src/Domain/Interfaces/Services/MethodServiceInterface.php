@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
 
 interface MethodServiceInterface extends CrudServiceInterface

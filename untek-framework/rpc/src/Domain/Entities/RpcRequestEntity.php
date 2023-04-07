@@ -5,8 +5,8 @@ namespace Untek\Framework\Rpc\Domain\Entities;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;
 use Untek\Framework\Rpc\Domain\Exceptions\ParamNotFoundException;
 

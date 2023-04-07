@@ -3,7 +3,7 @@
 namespace Untek\User\Confirm\Domain\Interfaces\Repositories;
 
 use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ConfirmRepositoryInterface extends CrudRepositoryInterface
 {

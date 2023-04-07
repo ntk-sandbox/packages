@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Domain\EntityManager\Libs;
+namespace Untek\Model\EntityManager\Libs;
 
-use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 class EntityManagerConfigurator implements EntityManagerConfiguratorInterface
 {

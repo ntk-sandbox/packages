@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Repository\Mappers;
+namespace Untek\Model\Repository\Mappers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Model\Repository\Interfaces\MapperInterface;
 
 class PathMapper implements MapperInterface
 {

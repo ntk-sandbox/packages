@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Repository\Helpers;
+namespace Untek\Model\Repository\Helpers;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Query\Entities\Query;
 
 class RepositoryUniqueHelper
 {

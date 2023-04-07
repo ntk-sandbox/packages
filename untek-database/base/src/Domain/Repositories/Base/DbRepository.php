@@ -4,7 +4,7 @@ namespace Untek\Database\Base\Domain\Repositories\Base;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Domain\Helpers\EntityHelper;
+use Untek\Model\Shared\Helpers\EntityHelper;
 use Untek\Database\Base\Domain\Entities\ColumnEntity;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 use Untek\Database\Eloquent\Domain\Traits\EloquentTrait;

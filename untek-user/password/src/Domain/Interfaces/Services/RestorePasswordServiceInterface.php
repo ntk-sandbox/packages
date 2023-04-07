@@ -4,9 +4,9 @@ namespace Untek\User\Password\Domain\Interfaces\Services;
 
 use Untek\User\Password\Domain\Forms\CreatePasswordForm;
 use Untek\User\Password\Domain\Forms\RequestActivationCodeForm;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 
 interface RestorePasswordServiceInterface
 {

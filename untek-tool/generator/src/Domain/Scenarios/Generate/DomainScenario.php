@@ -3,7 +3,7 @@
 namespace Untek\Tool\Generator\Domain\Scenarios\Generate;
 
 use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
-use Untek\Domain\Domain\Interfaces\DomainInterface;
+use Untek\Model\Shared\Interfaces\DomainInterface;
 use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;

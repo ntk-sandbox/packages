@@ -2,9 +2,9 @@
 
 namespace Untek\Bundle\Summary\Domain\Interfaces\Services;
 
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface CounterServiceInterface extends CrudServiceInterface
 {

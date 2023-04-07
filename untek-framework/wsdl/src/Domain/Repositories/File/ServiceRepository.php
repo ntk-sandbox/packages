@@ -4,7 +4,7 @@ namespace Untek\Framework\Wsdl\Domain\Repositories\File;
 
 use Untek\Framework\Wsdl\Domain\Entities\ServiceEntity;
 use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
-use Untek\Domain\Repository\Base\BaseRepository;
+use Untek\Model\Repository\Base\BaseRepository;
 
 class ServiceRepository extends BaseRepository implements ServiceRepositoryInterface
 {

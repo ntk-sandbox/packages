@@ -3,7 +3,7 @@
 namespace Untek\Framework\Rpc\Rpc\Base;
 
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Helpers\ResponseHelper;

@@ -4,10 +4,10 @@ namespace Untek\User\Notify\Domain\Services;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\User\Notify\Domain\Entities\ActivityEntity;
 use Untek\User\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
 use Untek\User\Notify\Domain\Interfaces\Services\ActivityServiceInterface;

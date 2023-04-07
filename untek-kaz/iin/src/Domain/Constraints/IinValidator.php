@@ -7,7 +7,7 @@ use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Kaz\Iin\Domain\Helpers\IinParser;
 use Exception;
 

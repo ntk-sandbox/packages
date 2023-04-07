@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Domain\Interfaces;
+namespace Untek\Model\Shared\Interfaces;
 
 interface ReadAllInterface extends FindAllInterface, CountInterface
 {

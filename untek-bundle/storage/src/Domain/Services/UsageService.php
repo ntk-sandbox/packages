@@ -6,8 +6,8 @@ use Symfony\Component\Security\Core\Security;
 use Untek\Bundle\Storage\Domain\Entities\UsageEntity;
 use Untek\Bundle\Storage\Domain\Interfaces\Repositories\UsageRepositoryInterface;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\UsageServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 
 class UsageService extends BaseCrudService implements UsageServiceInterface
 {

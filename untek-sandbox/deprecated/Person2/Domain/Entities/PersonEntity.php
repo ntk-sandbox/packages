@@ -8,11 +8,11 @@ use Untek\Bundle\Reference\Domain\Constraints\ReferenceItem;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use Untek\Core\Contract\User\Interfaces\Entities\PersonEntityInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Components\Constraints\Enum;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Components\Constraints\Enum;
 use Untek\Core\Text\Helpers\TextHelper;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\User\Rbac\Domain\Entities\ItemEntity;
 

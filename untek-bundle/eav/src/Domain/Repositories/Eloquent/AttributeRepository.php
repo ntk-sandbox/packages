@@ -7,9 +7,9 @@ use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EnumRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\ValidationRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class AttributeRepository extends BaseEloquentCrudRepository implements AttributeRepositoryInterface

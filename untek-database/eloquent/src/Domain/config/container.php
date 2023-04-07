@@ -1,8 +1,8 @@
 <?php
 
 use Psr\Container\ContainerInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Libs\EntityManager;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Libs\EntityManager;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 use Untek\Database\Eloquent\Domain\Factories\ManagerFactory;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;

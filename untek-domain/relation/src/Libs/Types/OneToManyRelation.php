@@ -1,14 +1,14 @@
 <?php
 
-namespace Untek\Domain\Relation\Libs\Types;
+namespace Untek\Model\Relation\Libs\Types;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Domain\Interfaces\FindAllInterface;
+use Untek\Model\Shared\Interfaces\FindAllInterface;
 use Untek\Core\Code\Factories\PropertyAccess;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Interfaces\RelationInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Interfaces\RelationInterface;
 
 class OneToManyRelation extends BaseRelation implements RelationInterface
 {

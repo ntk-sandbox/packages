@@ -3,7 +3,7 @@
 namespace Untek\Lib\Web\Xml\Libs;
 
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 
 class XmlResponse extends Response
 {

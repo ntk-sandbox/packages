@@ -4,9 +4,9 @@ namespace Untek\Bundle\Messenger\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Messenger\Domain\Entities\MemberEntity;
 use Untek\Bundle\Messenger\Domain\Interfaces\MemberRepositoryInterface;
-use Untek\Domain\Domain\Enums\RelationEnum;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Shared\Enums\RelationEnum;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 

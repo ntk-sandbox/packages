@@ -4,9 +4,9 @@ namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;

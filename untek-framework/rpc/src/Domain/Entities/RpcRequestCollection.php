@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Domain\Entities;
 
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 
 class RpcRequestCollection extends BaseRpcCollection
 {

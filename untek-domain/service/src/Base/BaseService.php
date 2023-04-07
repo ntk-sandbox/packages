@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Domain\Service\Base;
+namespace Untek\Model\Service\Base;
 
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
-use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
-use Untek\Domain\Service\Interfaces\CreateEntityInterface;
+use Untek\Model\Repository\Traits\RepositoryAwareTrait;
+use Untek\Model\Service\Interfaces\CreateEntityInterface;
 
 abstract class BaseService implements GetEntityClassInterface, CreateEntityInterface
 {

@@ -6,7 +6,7 @@ use Untek\User\Authentication\Domain\Entities\CredentialEntity;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 use Untek\User\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\Service\Base\BaseService;
 
 class CredentialService extends BaseService implements CredentialServiceInterface
 {

@@ -7,13 +7,13 @@ use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
 use Untek\Bundle\Reference\Domain\Filters\ItemFilter;
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemRepositoryInterface;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Domain\Enums\RelationEnum;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
-use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Model\Shared\Enums\RelationEnum;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Repository\Mappers\JsonMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ItemRepository extends BaseEloquentCrudRepository implements ItemRepositoryInterface

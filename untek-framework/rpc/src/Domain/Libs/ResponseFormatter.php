@@ -6,7 +6,7 @@ use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 
 class ResponseFormatter

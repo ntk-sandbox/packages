@@ -2,7 +2,7 @@
 
 namespace Untek\Crypt\Pki\Domain\Services;
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Crypt\Base\Domain\Entities\CertificateInfoEntity;
 use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
 use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;

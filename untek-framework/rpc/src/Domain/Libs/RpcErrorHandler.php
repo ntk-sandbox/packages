@@ -2,8 +2,8 @@
 
 namespace Untek\Framework\Rpc\Domain\Libs;
 
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ErrorCollectionHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ErrorCollectionHelper;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;

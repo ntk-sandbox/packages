@@ -9,7 +9,7 @@ use Untek\Core\FileSystem\Helpers\FileHelper;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 use Untek\Core\FileSystem\Helpers\FindFileHelper;
 use Untek\Crypt\Pki\XmlDSig\Domain\Entities\KeyEntity;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class DirectoryKeyLoader
 {

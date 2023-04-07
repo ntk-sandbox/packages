@@ -8,7 +8,7 @@ use Untek\Core\Env\Helpers\EnvHelper;
 use Untek\Lib\I18Next\Exceptions\NotFoundBundleException;
 use Untek\Lib\I18Next\Facades\I18Next;
 use Untek\Lib\Components\SymfonyTranslation\Helpers\TranslatorHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class Translator implements TranslatorInterface
 {

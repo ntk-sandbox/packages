@@ -7,8 +7,8 @@ use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
 use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ClientRepositoryInterface;
 use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\TransportRepositoryInterface;
 use Untek\Framework\Wsdl\Domain\Interfaces\Services\TransportServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method TransportRepositoryInterface getRepository()

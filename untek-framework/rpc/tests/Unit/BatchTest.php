@@ -2,8 +2,8 @@
 
 namespace Untek\Lib\Rpc\Tests\Unit;
 
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestCollection;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseCollection;

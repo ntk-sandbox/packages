@@ -6,8 +6,8 @@ use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * Class IdentityService

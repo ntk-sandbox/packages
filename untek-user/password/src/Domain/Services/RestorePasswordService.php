@@ -2,7 +2,7 @@
 
 namespace Untek\User\Password\Domain\Services;
 
-use Untek\Domain\Validator\Helpers\UnprocessableHelper;
+use Untek\Model\Validator\Helpers\UnprocessableHelper;
 use Untek\User\Password\Domain\Enums\UserSecurityNotifyTypeEnum;
 use Untek\User\Password\Domain\Forms\CreatePasswordForm;
 use Untek\User\Password\Domain\Forms\RequestActivationCodeForm;
@@ -16,11 +16,11 @@ use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
 use Untek\Lib\Components\Time\Enums\TimeEnum;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\User\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 
 class RestorePasswordService implements RestorePasswordServiceInterface

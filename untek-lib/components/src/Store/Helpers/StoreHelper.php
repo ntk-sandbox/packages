@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Components\Store\Helpers;
+namespace Untek\Component\FormatAdapter\Helpers;
 
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 
 class StoreHelper
 {

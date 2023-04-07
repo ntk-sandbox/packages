@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Service\Interfaces;
+namespace Untek\Model\Service\Interfaces;
 
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 
 interface ModifyInterface
 {

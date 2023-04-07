@@ -6,8 +6,8 @@ use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
 use Untek\Framework\Rpc\Domain\Events\RpcResponseEvent;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class LogSubscriber implements EventSubscriberInterface
 {

@@ -3,8 +3,8 @@
 namespace Untek\Bundle\Dashboard\Domain\Services;
 
 use Untek\Bundle\Dashboard\Domain\Interfaces\Services\DashboardServiceInterface;
-use Untek\Domain\Service\Base\BaseService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 class DashboardService extends BaseService implements DashboardServiceInterface
 {

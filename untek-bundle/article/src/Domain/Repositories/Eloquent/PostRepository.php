@@ -8,7 +8,7 @@ use Untek\Bundle\Article\Domain\Interfaces\PostRepositoryInterface;
 use Untek\Bundle\Article\Domain\Interfaces\TagPostRepositoryInterface;
 use Untek\Bundle\Article\Domain\Interfaces\TagRepositoryInterface;
 use Untek\Bundle\Article\Domain\Repositories\Relations\PostRelation;
-use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
+use Untek\Model\Repository\Interfaces\RelationConfigInterface;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Database\Eloquent\Domain\Capsule\Manager;
 

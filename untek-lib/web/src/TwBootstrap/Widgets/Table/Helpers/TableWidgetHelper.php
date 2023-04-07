@@ -3,7 +3,7 @@
 namespace Untek\Lib\Web\TwBootstrap\Widgets\Table\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class TableWidgetHelper
 {

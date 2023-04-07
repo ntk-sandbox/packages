@@ -5,7 +5,7 @@ namespace Untek\Bundle\Eav\Domain\Libs;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints as Assert;
 use Untek\Bundle\Eav\Domain\Entities\AttributeEntity;
-use Untek\Domain\Validator\Constraints\Boolean;
+use Untek\Model\Validator\Constraints\Boolean;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Helpers\CollectionHelper;
 

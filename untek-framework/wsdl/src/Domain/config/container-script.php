@@ -7,8 +7,8 @@ use Psr\Container\ContainerInterface;
 
 use Untek\Core\Env\Helpers\EnvHelper;
 use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 return function (ContainerConfiguratorInterface $configurator) {
     $configurator->importFromDir([__DIR__ . '/../src']);

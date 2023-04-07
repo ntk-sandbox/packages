@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Messenger\Domain\Interfaces;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface MessageRepositoryInterface extends CrudRepositoryInterface
 {

@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Messenger\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface MessageServiceInterface extends CrudServiceInterface
 {

@@ -7,13 +7,13 @@ use Untek\Bundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
 use Untek\User\Confirm\Domain\Entities\ConfirmEntity;
 use Untek\User\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface;
 use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 
 /**
  * @method ConfirmRepositoryInterface getRepository

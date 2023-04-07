@@ -3,8 +3,8 @@
 namespace Untek\Framework\Rpc\Domain\Services;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Framework\Rpc\Domain\Entities\SettingsEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\SettingsServiceInterface;
 use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Services\SystemServiceInterface;

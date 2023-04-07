@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Repository\Interfaces;
+namespace Untek\Model\Repository\Interfaces;
 
 use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 

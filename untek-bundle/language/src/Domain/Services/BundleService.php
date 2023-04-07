@@ -3,8 +3,8 @@
 namespace Untek\Bundle\Language\Domain\Services;
 
 use Untek\Bundle\Language\Domain\Interfaces\Services\BundleServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Bundle\Language\Domain\Entities\BundleEntity;
 
 class BundleService extends BaseCrudService implements BundleServiceInterface

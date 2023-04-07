@@ -11,8 +11,8 @@ use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\ValueServiceInterface;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 
 /**
  * @method ValueRepositoryInterface getRepository()

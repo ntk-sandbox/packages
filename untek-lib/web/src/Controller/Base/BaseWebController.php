@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Core\Text\Helpers\TemplateHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 use Untek\Lib\I18Next\Facades\I18Next;
 use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;

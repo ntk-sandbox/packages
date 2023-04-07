@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Validator\Helpers;
+namespace Untek\Model\Validator\Helpers;
 
 use Symfony\Component\Validator\ConstraintViolationList;
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\Validator\Entities\ValidationErrorEntity;
-use Untek\Domain\Validator\Libs\Validators\ChainValidator;
+use Untek\Model\Validator\Entities\ValidationErrorEntity;
+use Untek\Model\Validator\Libs\Validators\ChainValidator;
 
 class ValidationHelper
 {

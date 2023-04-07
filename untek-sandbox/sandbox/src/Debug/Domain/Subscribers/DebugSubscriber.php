@@ -13,8 +13,8 @@ use Symfony\Contracts\EventDispatcher\Event;
 use Untek\Core\App\Interfaces\AppInterface;
 use Untek\Core\Container\Traits\ContainerAwareTrait;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Core\App\Enums\AppEventEnum;
 
 /**

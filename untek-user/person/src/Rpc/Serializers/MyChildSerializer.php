@@ -2,7 +2,7 @@
 
 namespace Untek\User\Person\Rpc\Serializers;
 
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Framework\Rpc\Rpc\Serializers\DefaultSerializer;
 use Untek\User\Person\Domain\Entities\InheritanceEntity;
 

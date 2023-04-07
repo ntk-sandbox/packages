@@ -6,8 +6,8 @@ use Untek\Sandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
 use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Repositories\SystemRepositoryInterface;
 use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Services\SystemServiceInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method SystemRepositoryInterface getRepository()

@@ -5,7 +5,7 @@ namespace Untek\Lib\Init\Symfony4\Web\Controllers;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Database\Fixture\Domain\Services\FixtureService;
 use Untek\Lib\Init\Domain\Services\LockerService;
 use Untek\Lib\Init\Domain\Services\RequirementService;

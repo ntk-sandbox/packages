@@ -3,7 +3,7 @@
 namespace Untek\Tool\Generator\Domain\Helpers;
 
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
-use Untek\Lib\Components\Store\Store;
+use Untek\Component\FormatAdapter\Store;
 
 class CodeHelper
 {

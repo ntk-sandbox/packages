@@ -4,7 +4,7 @@ namespace Untek\Bundle\Notify\Domain\Repositories\File;
 
 use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
-use Untek\Domain\Components\FileRepository\Base\BaseLoopedFileRepository;
+use Untek\Model\Components\FileRepository\Base\BaseLoopedFileRepository;
 
 class EmailRepository extends BaseLoopedFileRepository implements EmailRepositoryInterface
 {

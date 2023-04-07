@@ -11,8 +11,8 @@ use Symfony\Component\Mime\Email;
 use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use Untek\Core\Code\Helpers\ComposerHelper;
-use Untek\Domain\Repository\Base\BaseRepository;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Repository\Base\BaseRepository;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 ComposerHelper::requireAssert(Mailer::class, 'symfony/mailer');
 //ComposerHelper::requireAssert(MessageBus::class, 'symfony/messenger');

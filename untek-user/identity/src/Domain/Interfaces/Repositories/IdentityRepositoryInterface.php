@@ -3,8 +3,8 @@
 namespace Untek\User\Identity\Domain\Interfaces\Repositories;
 
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
 
 interface IdentityRepositoryInterface extends CrudRepositoryInterface
 {

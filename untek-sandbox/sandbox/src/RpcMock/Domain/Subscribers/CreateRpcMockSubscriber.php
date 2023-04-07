@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
 use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;

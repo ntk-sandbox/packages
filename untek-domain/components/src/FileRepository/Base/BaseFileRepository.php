@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Components\FileRepository\Base;
+namespace Untek\Model\Components\FileRepository\Base;
 
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
+use Untek\Component\FormatAdapter\StoreFile;
 
 abstract class BaseFileRepository implements RepositoryInterface
 {

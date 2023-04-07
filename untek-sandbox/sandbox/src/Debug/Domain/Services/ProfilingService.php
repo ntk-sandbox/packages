@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\Debug\Domain\Services;
 
 use Untek\Sandbox\Sandbox\Debug\Domain\Interfaces\Services\ProfilingServiceInterface;
 use Untek\Sandbox\Sandbox\Debug\Domain\Interfaces\Repositories\ProfilingRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\Debug\Domain\Entities\ProfilingEntity;
 
 /**

@@ -3,7 +3,7 @@
 namespace Untek\Kaz\Eds\Domain\Helpers;
 
 use phpseclib\File\X509;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 
 use Untek\Core\Text\Helpers\TextHelper;
 use Untek\Crypt\Base\Domain\Exceptions\CertificateExpiredException;

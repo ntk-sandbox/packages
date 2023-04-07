@@ -4,10 +4,10 @@ namespace Untek\Bundle\Reference\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Reference\Domain\Entities\BookEntity;
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\BookRepositoryInterface;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
-use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Model\Repository\Mappers\JsonMapper;
 
 class BookRepository extends BaseEloquentCrudRepository implements BookRepositoryInterface
 {

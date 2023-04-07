@@ -3,8 +3,8 @@
 namespace Untek\Framework\Rpc\Domain\Helpers;
 
 use Illuminate\Database\Query\Builder;
-use Untek\Domain\Query\Entities\Join;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Join;
+use Untek\Model\Query\Entities\Query;
 
 class RpcQueryHelper
 {

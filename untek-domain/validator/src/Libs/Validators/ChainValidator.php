@@ -1,13 +1,13 @@
 <?php
 
-namespace Untek\Domain\Validator\Libs\Validators;
+namespace Untek\Model\Validator\Libs\Validators;
 
 use Psr\Container\ContainerInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Container\Traits\ContainerAwareAttributeTrait;
 use Untek\Core\Instance\Libs\Resolvers\InstanceResolver;
-use Untek\Domain\Validator\Interfaces\ValidatorInterface;
+use Untek\Model\Validator\Interfaces\ValidatorInterface;
 
 class ChainValidator implements ValidatorInterface
 {

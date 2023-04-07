@@ -3,7 +3,7 @@
 namespace Untek\Framework\Wsdl\Domain\Libs;
 
 use GuzzleHttp\Client;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
 
 class SoapClient

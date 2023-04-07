@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class ObjectFormatter extends BaseFormatter implements FormatterInterface
 {

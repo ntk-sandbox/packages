@@ -4,10 +4,10 @@ namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;

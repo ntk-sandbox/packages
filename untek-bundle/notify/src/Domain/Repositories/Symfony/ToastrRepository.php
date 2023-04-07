@@ -5,11 +5,11 @@ namespace Untek\Bundle\Notify\Domain\Repositories\Symfony;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class ToastrRepository implements ToastrRepositoryInterface
 {

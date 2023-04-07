@@ -6,9 +6,9 @@ use Untek\Bundle\Geo\Domain\Entities\RegionEntity;
 use Untek\Bundle\Geo\Domain\Interfaces\Repositories\CountryRepositoryInterface;
 use Untek\Bundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
 use Untek\Bundle\Geo\Domain\Interfaces\Repositories\RegionRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
-use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Repository\Mappers\JsonMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class RegionRepository extends BaseEloquentCrudRepository implements RegionRepositoryInterface

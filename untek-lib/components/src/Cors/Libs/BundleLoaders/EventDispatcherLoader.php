@@ -5,7 +5,7 @@ namespace Untek\Lib\Components\Cors\Libs\BundleLoaders;
 use Untek\Core\Bundle\Base\BaseLoader;
 use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use Untek\Core\Instance\Libs\Resolvers\MethodParametersResolver;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerConfiguratorInterface;
 
 /**
  * Загрузчик конфигурации диспетчера событий

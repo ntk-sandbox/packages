@@ -8,10 +8,10 @@ use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Eav\Domain\Libs\Rules;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
 

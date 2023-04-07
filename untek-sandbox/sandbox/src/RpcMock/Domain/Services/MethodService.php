@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\RpcMock\Domain\Services;
 
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Repositories\MethodRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Components\Store\Drivers;
+namespace Untek\Component\FormatAdapter\Drivers;
 
 use Untek\Core\Contract\Encoder\Interfaces\EncoderInterface;
 

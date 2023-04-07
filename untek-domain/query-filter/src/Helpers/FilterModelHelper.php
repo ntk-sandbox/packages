@@ -1,16 +1,16 @@
 <?php
 
-namespace Untek\Domain\QueryFilter\Helpers;
+namespace Untek\Model\QueryFilter\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\QueryFilter\Exceptions\BadFilterValidateException;
-use Untek\Domain\QueryFilter\Interfaces\DefaultSortInterface;
-use Untek\Domain\QueryFilter\Interfaces\IgnoreAttributesInterface;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\QueryFilter\Exceptions\BadFilterValidateException;
+use Untek\Model\QueryFilter\Interfaces\DefaultSortInterface;
+use Untek\Model\QueryFilter\Interfaces\IgnoreAttributesInterface;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 
 class FilterModelHelper
 {

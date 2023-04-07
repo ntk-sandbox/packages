@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Components\Format\Encoders;
+namespace Untek\Component\Encoder\Encoders;
 
 use Exception;
 use Symfony\Component\Uid\Uuid;

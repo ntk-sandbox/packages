@@ -4,7 +4,7 @@ namespace Untek\Bundle\Eav\Domain\Services;
 
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\MeasureRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\MeasureServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 
 class MeasureService extends BaseCrudService implements MeasureServiceInterface
 {

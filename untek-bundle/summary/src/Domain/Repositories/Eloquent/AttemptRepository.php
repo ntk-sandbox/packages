@@ -5,9 +5,9 @@ namespace Untek\Bundle\Summary\Domain\Repositories\Eloquent;
 use DateTime;
 use Untek\Bundle\Summary\Domain\Entities\AttemptEntity;
 use Untek\Bundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterface;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Enums\OperatorEnum;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Enums\OperatorEnum;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class AttemptRepository extends BaseEloquentCrudRepository implements AttemptRepositoryInterface

@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Domain\Traits;
+namespace Untek\Model\Shared\Traits;
 
-use Untek\Domain\Domain\Events\EntityEvent;
-use Untek\Domain\Domain\Events\QueryEvent;
+use Untek\Model\Shared\Events\EntityEvent;
+use Untek\Model\Shared\Events\QueryEvent;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 
 trait DispatchEventTrait
 {

@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Messenger\Domain\Entities;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class ChatEntity implements EntityIdInterface
 {

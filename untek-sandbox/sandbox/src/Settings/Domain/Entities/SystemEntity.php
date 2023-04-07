@@ -4,9 +4,9 @@ namespace Untek\Sandbox\Sandbox\Settings\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class SystemEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

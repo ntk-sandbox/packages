@@ -5,9 +5,9 @@ namespace Untek\Bundle\Messenger\Domain\Repositories\Eloquent;
 use Untek\Bundle\Messenger\Domain\Entities\ChatEntity;
 use Untek\Bundle\Messenger\Domain\Interfaces\ChatRepositoryInterface;
 use Untek\Bundle\Messenger\Domain\Interfaces\MemberRepositoryInterface;
-use Untek\Domain\Domain\Enums\RelationEnum;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Shared\Enums\RelationEnum;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ChatRepository extends BaseEloquentCrudRepository implements ChatRepositoryInterface

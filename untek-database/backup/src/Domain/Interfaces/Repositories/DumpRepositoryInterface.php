@@ -2,7 +2,7 @@
 
 namespace Untek\Database\Backup\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 
 interface DumpRepositoryInterface extends CrudRepositoryInterface
 {

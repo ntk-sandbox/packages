@@ -8,9 +8,9 @@ use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemBookServiceInterface;
 use Untek\Bundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
 use Untek\Bundle\Reference\Domain\Subscribers\BookIdSubscriber;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 
 class ItemBookService extends ItemService implements ItemBookServiceInterface
 {

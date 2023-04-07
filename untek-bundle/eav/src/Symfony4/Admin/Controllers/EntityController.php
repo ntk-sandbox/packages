@@ -9,7 +9,7 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
 use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;

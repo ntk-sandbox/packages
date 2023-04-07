@@ -4,7 +4,7 @@ namespace Untek\Framework\Rpc\Domain\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
 use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
 use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;

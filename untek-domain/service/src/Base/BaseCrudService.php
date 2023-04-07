@@ -1,24 +1,24 @@
 <?php
 
-namespace Untek\Domain\Service\Base;
+namespace Untek\Model\Service\Base;
 
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\QueryEvent;
-use Untek\Domain\Domain\Traits\DispatchEventTrait;
-use Untek\Domain\Domain\Traits\ForgeQueryTrait;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\QueryEvent;
+use Untek\Model\Shared\Traits\DispatchEventTrait;
+use Untek\Model\Shared\Traits\ForgeQueryTrait;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
-use Untek\Domain\Service\Traits\CrudServiceCreateTrait;
-use Untek\Domain\Service\Traits\CrudServiceDeleteTrait;
-use Untek\Domain\Service\Traits\CrudServiceFindAllTrait;
-use Untek\Domain\Service\Traits\CrudServiceFindOneTrait;
-use Untek\Domain\Service\Traits\CrudServiceUpdateTrait;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Traits\CrudServiceCreateTrait;
+use Untek\Model\Service\Traits\CrudServiceDeleteTrait;
+use Untek\Model\Service\Traits\CrudServiceFindAllTrait;
+use Untek\Model\Service\Traits\CrudServiceFindOneTrait;
+use Untek\Model\Service\Traits\CrudServiceUpdateTrait;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 
 /**
  * @method CrudRepositoryInterface getRepository()

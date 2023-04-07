@@ -4,9 +4,9 @@ namespace Untek\Lib\Components\Http\Helpers;
 
 use Psr\Http\Message\ResponseInterface;
 use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
-use Untek\Domain\DataProvider\Entities\DataProviderEntity;
+use Untek\Model\DataProvider\Entities\DataProviderEntity;
 use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
-use Untek\Lib\Components\Store\Store;
+use Untek\Component\FormatAdapter\Store;
 
 class RestResponseHelper
 {

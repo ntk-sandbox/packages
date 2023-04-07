@@ -3,7 +3,7 @@
 
 namespace Untek\Framework\Telegram\Domain\Repositories\File;
 
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 
 class StoreRepository
 {

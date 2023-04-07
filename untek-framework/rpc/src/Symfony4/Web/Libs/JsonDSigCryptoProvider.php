@@ -9,7 +9,7 @@ use Untek\Crypt\Base\Domain\Enums\OpenSslAlgoEnum;
 use Untek\Crypt\Pki\Domain\Libs\Rsa\RsaStoreInterface;
 use Untek\Crypt\Pki\JsonDSig\Domain\Entities\SignatureEntity;
 use Untek\Crypt\Pki\JsonDSig\Domain\Libs\OpenSsl\OpenSslSignature;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 

@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Article\Domain\Entities;
 
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class CategoryEntity implements EntityIdInterface
 {

@@ -8,7 +8,7 @@ use Workerman\Connection\ConnectionInterface;
 use Workerman\Worker;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Socket\Domain\Entities\SocketEventEntity;
 use Untek\Lib\Socket\Domain\Enums\SocketEventEnum;
 use Untek\Lib\Socket\Domain\Repositories\Ram\ConnectionRepository;

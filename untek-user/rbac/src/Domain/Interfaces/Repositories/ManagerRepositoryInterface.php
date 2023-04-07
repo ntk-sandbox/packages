@@ -2,7 +2,7 @@
 
 namespace Untek\User\Rbac\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
 
 interface ManagerRepositoryInterface extends RepositoryInterface
 {

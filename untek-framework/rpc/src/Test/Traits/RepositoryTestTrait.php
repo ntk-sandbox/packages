@@ -3,7 +3,7 @@
 namespace Untek\Framework\Rpc\Test\Traits;
 
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\Components\FileRepository\Repositories\Dynamic\DynamicFileRepository;
+use Untek\Model\Components\FileRepository\Repositories\Dynamic\DynamicFileRepository;
 
 trait RepositoryTestTrait
 {

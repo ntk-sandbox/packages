@@ -8,10 +8,10 @@ use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInter
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\Service\Base\BaseService;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 class PasswordValidatorService extends BaseService implements PasswordValidatorServiceInterface
 {

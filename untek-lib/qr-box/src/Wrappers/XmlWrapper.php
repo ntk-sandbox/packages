@@ -3,7 +3,7 @@
 namespace Untek\Lib\QrBox\Wrappers;
 
 
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Lib\QrBox\Entities\BarCodeEntity;
 use DateTime;
 

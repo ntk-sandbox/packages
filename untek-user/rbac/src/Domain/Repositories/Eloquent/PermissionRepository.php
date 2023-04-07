@@ -2,7 +2,7 @@
 
 namespace Untek\User\Rbac\Domain\Repositories\Eloquent;
 
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\User\Rbac\Domain\Entities\ItemEntity;
 use Untek\User\Rbac\Domain\Entities\PermissionEntity;
 use Untek\User\Rbac\Domain\Enums\ItemTypeEnum;

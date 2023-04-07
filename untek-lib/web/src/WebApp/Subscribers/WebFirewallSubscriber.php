@@ -14,7 +14,7 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Lib\Web\SignedCookie\Libs\CookieValue;
 use Untek\User\Authentication\Domain\Enums\WebCookieEnum;

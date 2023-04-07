@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Components\SoftDelete\Traits\Service;
+namespace Untek\Model\Components\SoftDelete\Traits\Service;
 
 trait SoftRestoreTrait
 {

@@ -4,7 +4,7 @@ namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
 use Psr\Container\ContainerInterface;
 use Untek\Core\Container\Traits\ContainerAwareTrait;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;

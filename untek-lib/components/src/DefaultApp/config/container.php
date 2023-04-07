@@ -6,8 +6,8 @@ use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Symfony\Contracts\Cache\CacheInterface;
-use Untek\Domain\Validator\Libs\Validators\ChainValidator;
-use Untek\Domain\Validator\Libs\Validators\ClassMetadataValidator;
+use Untek\Model\Validator\Libs\Validators\ChainValidator;
+use Untek\Model\Validator\Libs\Validators\ClassMetadataValidator;
 use Untek\Lib\Components\DynamicEntity\Libs\Validators\DynamicEntityValidator;
 
 return [

@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Repository\Mappers;
+namespace Untek\Model\Repository\Mappers;
 
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Model\Repository\Interfaces\MapperInterface;
 
 class CaseMapper implements MapperInterface
 {

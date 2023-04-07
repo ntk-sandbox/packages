@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;

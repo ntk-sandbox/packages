@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\QrBox\Encoders;
 
-class HexEncoder extends \Untek\Lib\Components\Format\Encoders\HexEncoder implements EntityEncoderInterface
+class HexEncoder extends \Untek\Component\Encoder\Encoders\HexEncoder implements EntityEncoderInterface
 {
 
     public function compressionRate(): float

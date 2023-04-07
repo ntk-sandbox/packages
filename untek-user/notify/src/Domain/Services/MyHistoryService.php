@@ -4,11 +4,11 @@ namespace Untek\User\Notify\Domain\Services;
 
 use Symfony\Component\Security\Core\Security;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 use Untek\User\Notify\Domain\Entities\NotifyEntity;
 use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;

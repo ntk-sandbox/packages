@@ -5,8 +5,8 @@ namespace Untek\Bundle\TalkBox\Domain\Services;
 use Untek\Bundle\TalkBox\Domain\Entities\AnswerEntity;
 use Untek\Bundle\TalkBox\Domain\Interfaces\Repositories\AnswerRepositoryInterface;
 use Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Query\Entities\Query;
 
 class AnswerService extends BaseCrudService implements AnswerServiceInterface
 {

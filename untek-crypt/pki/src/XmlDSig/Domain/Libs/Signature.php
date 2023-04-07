@@ -9,7 +9,7 @@ use phpseclib\File\X509;
 use RobRichards\XMLSecLibs\XMLSecEnc;
 use RobRichards\XMLSecLibs\XMLSecurityDSig;
 use RobRichards\XMLSecLibs\XMLSecurityKey;
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Crypt\Pki\X509\Domain\Helpers\X509Helper;
 use Untek\Crypt\Pki\X509\Domain\Services\SignatureService;
 use Untek\Crypt\Pki\XmlDSig\Domain\Entities\FingerprintEntity;

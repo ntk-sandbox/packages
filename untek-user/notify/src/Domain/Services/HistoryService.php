@@ -10,10 +10,10 @@ use Untek\Bundle\Notify\Domain\Entities\EmailEntity;
 use Untek\Bundle\Notify\Domain\Entities\SmsEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
-use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Repository\Traits\RepositoryAwareTrait;
 
 class HistoryService implements HistoryServiceInterface
 {

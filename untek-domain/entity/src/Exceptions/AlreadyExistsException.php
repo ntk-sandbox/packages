@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Entity\Exceptions;
+namespace Untek\Model\Entity\Exceptions;
 
 use Exception;
 

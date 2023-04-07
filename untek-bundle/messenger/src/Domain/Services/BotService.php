@@ -8,7 +8,7 @@ use Untek\Bundle\Messenger\Domain\Entities\BotEntity;
 use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\BotRepositoryInterface;
 use Untek\Bundle\Messenger\Domain\Interfaces\Services\BotServiceInterface;
 use Untek\Bundle\User\Domain\Services\AuthService;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Identity\Domain\Interfaces\Repositories\IdentityRepositoryInterface;
 
 class BotService extends BaseCrudService implements BotServiceInterface

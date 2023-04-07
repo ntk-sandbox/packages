@@ -5,9 +5,9 @@ namespace Untek\Bundle\Eav\Domain\Libs;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\ConstraintViolation;
 use Symfony\Component\Validator\ConstraintViolationList;
-use Untek\Domain\Validator\Entities\ValidationErrorEntity;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\SymfonyValidationHelper;
+use Untek\Model\Validator\Entities\ValidationErrorEntity;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\SymfonyValidationHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 

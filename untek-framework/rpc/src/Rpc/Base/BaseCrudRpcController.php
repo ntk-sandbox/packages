@@ -4,11 +4,11 @@ namespace Untek\Framework\Rpc\Rpc\Base;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Exceptions\InvalidRequestException;

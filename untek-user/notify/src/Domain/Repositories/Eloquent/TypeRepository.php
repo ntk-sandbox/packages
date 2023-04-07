@@ -6,7 +6,7 @@ use Untek\User\Notify\Domain\Entities\TypeEntity;
 use Untek\User\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
 use Untek\User\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
 use Untek\User\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\User\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
 

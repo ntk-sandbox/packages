@@ -5,8 +5,8 @@ namespace Untek\Bundle\Geo\Domain\Services;
 use Untek\Bundle\Geo\Domain\Entities\RegionEntity;
 use Untek\Bundle\Geo\Domain\Interfaces\Services\RegionServiceInterface;
 use Untek\Bundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method

@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Domain\Repository\Mappers;
+namespace Untek\Model\Repository\Mappers;
 
-use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Model\Repository\Interfaces\MapperInterface;
 use Untek\Core\Text\Helpers\Inflector;
 
 class TimeMapper implements MapperInterface

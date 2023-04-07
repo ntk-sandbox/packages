@@ -7,7 +7,7 @@ use Exception;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Component\Encoder\Encoders\ChainEncoder;
 use Untek\Lib\QrBox\Entities\BarCodeEntity;
 use Untek\Lib\QrBox\Libs\DataSize;
 use Untek\Lib\QrBox\Libs\WrapperDetector;

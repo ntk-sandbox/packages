@@ -2,8 +2,8 @@
 
 namespace Untek\Sandbox\Sandbox\I18n\Domain\Interfaces\Repositories;
 
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Sandbox\Sandbox\I18n\Domain\Entities\TranslateEntity;
 
 interface TranslateRepositoryInterface extends CrudRepositoryInterface

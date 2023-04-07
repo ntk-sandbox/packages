@@ -4,8 +4,8 @@ namespace Untek\Lib\Web\TwBootstrap\Widgets\Pagination;
 
 use Symfony\Component\HttpFoundation\Request;
 use Untek\Core\Text\Helpers\TemplateHelper;
-use Untek\Domain\DataProvider\Entities\DataProviderEntity;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Entities\DataProviderEntity;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Lib\Web\Widget\Base\BaseWidget2;
 use Untek\Lib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
 

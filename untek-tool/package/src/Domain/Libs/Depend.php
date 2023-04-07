@@ -3,7 +3,7 @@
 namespace Untek\Tool\Package\Domain\Libs;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 use Untek\Tool\Package\Domain\Entities\ConfigEntity;
 use Untek\Tool\Package\Domain\Helpers\ComposerConfigHelper;
 

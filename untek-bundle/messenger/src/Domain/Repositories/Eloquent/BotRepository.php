@@ -4,8 +4,8 @@ namespace Untek\Bundle\Messenger\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Messenger\Domain\Entities\BotEntity;
 use Untek\Bundle\Messenger\Domain\Interfaces\Repositories\BotRepositoryInterface;
-use Untek\Domain\Domain\Enums\RelationEnum;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Shared\Enums\RelationEnum;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class BotRepository extends BaseEloquentCrudRepository implements BotRepositoryInterface

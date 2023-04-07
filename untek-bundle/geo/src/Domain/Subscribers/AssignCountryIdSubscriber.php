@@ -5,9 +5,9 @@ namespace Untek\Bundle\Geo\Domain\Subscribers;
 use Untek\Bundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
-use Untek\Domain\Domain\Events\QueryEvent;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
+use Untek\Model\Shared\Events\QueryEvent;
 
 class AssignCountryIdSubscriber implements EventSubscriberInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Service\Interfaces;
+namespace Untek\Model\Service\Interfaces;
 
-use Untek\Domain\DataProvider\Libs\DataProvider;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\DataProvider\Libs\DataProvider;
+use Untek\Model\Query\Entities\Query;
 
 interface ServiceDataProviderInterface
 {

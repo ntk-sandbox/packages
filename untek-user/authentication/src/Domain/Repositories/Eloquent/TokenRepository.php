@@ -4,7 +4,7 @@ namespace Untek\User\Authentication\Domain\Repositories\Eloquent;
 
 use Untek\User\Authentication\Domain\Entities\TokenEntity;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\TokenRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class TokenRepository extends BaseEloquentCrudRepository implements TokenRepositoryInterface

@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Query\Helpers;
+namespace Untek\Model\Query\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Code\Helpers\DeprecateHelper;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 
 DeprecateHelper::hardThrow();
 

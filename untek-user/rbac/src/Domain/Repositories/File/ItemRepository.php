@@ -6,7 +6,7 @@ use Untek\User\Rbac\Domain\Entities\ItemEntity;
 use Untek\User\Rbac\Domain\Entities\RoleEntity;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\ItemRepositoryInterface;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\RoleRepositoryInterface;
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
 
 class ItemRepository extends BaseFileCrudRepository implements ItemRepositoryInterface
 {

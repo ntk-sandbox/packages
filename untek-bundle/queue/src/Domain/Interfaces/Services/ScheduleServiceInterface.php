@@ -5,8 +5,8 @@ namespace Untek\Bundle\Queue\Domain\Interfaces\Services;
 use Untek\Bundle\Queue\Domain\Entities\JobEntity;
 use Untek\Bundle\Queue\Domain\Entities\ScheduleEntity;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface ScheduleServiceInterface extends CrudServiceInterface
 {

@@ -8,7 +8,7 @@ use GuzzleHttp\RequestOptions;
 use Psr\Log\LoggerInterface;
 use Untek\Core\Contract\Common\Exceptions\InternalServerErrorException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Telegram\Domain\Helpers\RequestHelper;
 use Untek\Framework\Telegram\Domain\Repositories\File\ConfigRepository;
 use Untek\Framework\Telegram\Domain\Repositories\File\StoreRepository;

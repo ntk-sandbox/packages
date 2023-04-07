@@ -5,8 +5,8 @@ namespace Untek\Bundle\Eav\Tests\Unit;
 use Untek\Bundle\Eav\Domain\Services\EntityService;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Tool\Test\Base\BaseRestApiTest;
 
 include __DIR__ . '/../bootstrap.php';

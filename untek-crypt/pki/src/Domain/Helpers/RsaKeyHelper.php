@@ -3,7 +3,7 @@
 namespace Untek\Crypt\Pki\Domain\Helpers;
 
 use Untek\Crypt\Pki\Domain\Entities\CertificateSubjectEntity;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 
 class RsaKeyHelper

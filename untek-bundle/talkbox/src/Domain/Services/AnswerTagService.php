@@ -5,8 +5,8 @@ namespace Untek\Bundle\TalkBox\Domain\Services;
 use Untek\Bundle\TalkBox\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
 use Untek\Bundle\TalkBox\Domain\Interfaces\Services\AnswerTagServiceInterface;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Entity\Helpers\EntityHelper;
 
 class AnswerTagService extends BaseCrudService implements AnswerTagServiceInterface
 {

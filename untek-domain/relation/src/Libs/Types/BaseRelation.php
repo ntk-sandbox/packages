@@ -1,15 +1,15 @@
 <?php
 
-namespace Untek\Domain\Relation\Libs\Types;
+namespace Untek\Model\Relation\Libs\Types;
 
 use Psr\Container\ContainerInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Domain\Interfaces\FindAllInterface;
+use Untek\Model\Shared\Interfaces\FindAllInterface;
 use Untek\Core\Code\Factories\PropertyAccess;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Relation\Interfaces\RelationInterface;
-use Untek\Domain\Relations\interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Relation\Interfaces\RelationInterface;
+use Untek\Model\Relations\interfaces\CrudRepositoryInterface;
 
 abstract class BaseRelation implements RelationInterface
 {

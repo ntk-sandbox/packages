@@ -14,10 +14,10 @@ use Untek\Bundle\Queue\Domain\Interfaces\Services\ScheduleServiceInterface;
 use Untek\Bundle\Queue\Domain\Queries\NewTaskQuery;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseService;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 /**

@@ -3,9 +3,9 @@
 namespace Untek\User\Rbac\Domain\Services;
 
 use Untek\User\Rbac\Domain\Interfaces\Services\PermissionServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\User\Rbac\Domain\Interfaces\Repositories\PermissionRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\User\Rbac\Domain\Entities\PermissionEntity;
 
 /**

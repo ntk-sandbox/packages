@@ -5,7 +5,7 @@ namespace Untek\Sandbox\Sandbox\MigrationData\Console\Base;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Sandbox\Sandbox\MigrationData\Domain\Libs\SourceProvider;
 use Untek\Sandbox\Sandbox\MigrationData\Domain\Libs\TargetProvider;
 

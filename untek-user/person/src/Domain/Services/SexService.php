@@ -3,8 +3,8 @@
 namespace Untek\User\Person\Domain\Services;
 
 use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\User\Person\Domain\Entities\SexEntity;
 use Untek\User\Person\Domain\Interfaces\Repositories\SexRepositoryInterface;
 use Untek\User\Person\Domain\Interfaces\Services\SexServiceInterface;

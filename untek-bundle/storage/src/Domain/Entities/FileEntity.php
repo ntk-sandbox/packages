@@ -8,10 +8,10 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Storage\Domain\Libs\FileHash;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
-use Untek\Domain\Components\Constraints\Enum;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Entity\Interfaces\UniqueInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Components\Constraints\Enum;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\UniqueInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 //use Untek\Core\DotEnv\Domain\Libs\DotEnvConfigInterface;

@@ -3,9 +3,9 @@
 namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Sandbox\Sandbox\Person2\Domain\Entities\ContactEntity;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactServiceInterface;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactTypeServiceInterface;

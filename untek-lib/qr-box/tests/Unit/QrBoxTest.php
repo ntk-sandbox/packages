@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\QrBox\Tests\Unit;
 
-use Untek\Lib\Components\Format\Encoders\ZipEncoder;
+use Untek\Component\Encoder\Encoders\ZipEncoder;
 use Untek\Lib\QrBox\Factories\ClassEncoderFactory;
 use Untek\Lib\QrBox\Factories\EncoderServiceFactory;
 use Untek\Lib\QrBox\Services\EncoderService;

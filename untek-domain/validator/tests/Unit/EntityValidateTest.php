@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Validator\Tests\Unit;
+namespace Untek\Model\Validator\Tests\Unit;
 
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
-use Untek\Domain\Validator\Tests\Libs\AccessEntity;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Tests\Libs\AccessEntity;
 use Untek\Tool\Test\Base\BaseTest;
 
 include __DIR__ . '/../Libs/AccessEntity.php';

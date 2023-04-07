@@ -4,15 +4,15 @@ namespace Untek\Kaz\Eds\Domain\Services;
 
 use phpseclib\File\X509;
 use phpseclib\Math\BigInteger;
-use Untek\Domain\Entity\Exceptions\AlreadyExistsException;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Exceptions\AlreadyExistsException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Kaz\Eds\Domain\Entities\HostEntity;
 use Untek\Kaz\Eds\Domain\Entities\LogEntity;
 use Untek\Kaz\Eds\Domain\Interfaces\Services\CrlServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Kaz\Eds\Domain\Interfaces\Repositories\CrlRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Kaz\Eds\Domain\Entities\CrlEntity;
 
 /**

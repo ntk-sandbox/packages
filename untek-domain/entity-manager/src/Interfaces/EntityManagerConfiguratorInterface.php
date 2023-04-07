@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\EntityManager\Interfaces;
+namespace Untek\Model\EntityManager\Interfaces;
 
 interface EntityManagerConfiguratorInterface
 {

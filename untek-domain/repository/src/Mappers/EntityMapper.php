@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Repository\Mappers;
+namespace Untek\Model\Repository\Mappers;
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Repository\Interfaces\MapperInterface;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Repository\Interfaces\MapperInterface;
 
 class EntityMapper implements MapperInterface
 {

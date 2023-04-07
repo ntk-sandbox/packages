@@ -6,7 +6,7 @@ use Untek\Framework\Wsdl\Domain\Entities\TransportEntity;
 use Untek\Framework\Wsdl\Domain\Enums\StatusEnum;
 use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\TransportRepositoryInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class TransportRepository extends BaseEloquentCrudRepository implements TransportRepositoryInterface

@@ -3,7 +3,7 @@
 namespace Untek\User\Authentication\Domain\Repositories\Eloquent;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\User\Authentication\Domain\Entities\CredentialEntity;
 use Untek\User\Authentication\Domain\Enums\CredentialTypeEnum;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;

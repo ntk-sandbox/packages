@@ -3,8 +3,8 @@
 namespace Untek\Sandbox\Sandbox\Settings\Domain\Repositories\Eloquent;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Mappers\JsonMapper;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Mappers\JsonMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Sandbox\Sandbox\Settings\Domain\Entities\SystemEntity;
 use Untek\Sandbox\Sandbox\Settings\Domain\Interfaces\Repositories\SystemRepositoryInterface;

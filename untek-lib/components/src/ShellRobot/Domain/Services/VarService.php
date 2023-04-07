@@ -2,8 +2,8 @@
 
 namespace Untek\Lib\Components\ShellRobot\Domain\Services;
 
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Repositories\VarRepositoryInterface;
 use Untek\Lib\Components\ShellRobot\Domain\Interfaces\Services\VarServiceInterface;
 

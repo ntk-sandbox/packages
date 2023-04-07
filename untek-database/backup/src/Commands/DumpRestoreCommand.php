@@ -17,7 +17,7 @@ use Untek\Database\Base\Console\Traits\OverwriteDatabaseTrait;
 use Untek\Database\Base\Domain\Libs\Dependency;
 use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
 use Untek\Database\Fixture\Domain\Repositories\DbRepository;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Console\Symfony4\Question\ChoiceQuestion;
 
 class DumpRestoreCommand extends Command

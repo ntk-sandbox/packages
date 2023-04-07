@@ -2,10 +2,10 @@
 
 namespace Untek\Bundle\Article\Symfony4\Web\Controllers;
 
-use Untek\Domain\DataProvider\Entities\DataProviderEntity;
-use Untek\Domain\Query\Helpers\QueryHelper;
-use Untek\Domain\DataProvider\Libs\DataProvider;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\DataProvider\Entities\DataProviderEntity;
+use Untek\Model\Query\Helpers\QueryHelper;
+use Untek\Model\DataProvider\Libs\DataProvider;
+use Untek\Model\Query\Entities\Query;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;
 use Untek\Bundle\Article\Domain\Interfaces\PostServiceInterface;

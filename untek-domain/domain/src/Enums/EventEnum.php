@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Domain\Enums;
+namespace Untek\Model\Shared\Enums;
 
 class EventEnum
 {

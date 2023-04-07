@@ -3,9 +3,9 @@
 namespace Untek\Sandbox\Sandbox\Redmine\Domain\Services;
 
 use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Services\UserServiceInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Interfaces\Repositories\UserRepositoryInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Sandbox\Sandbox\Redmine\Domain\Entities\UserEntity;
 
 /**

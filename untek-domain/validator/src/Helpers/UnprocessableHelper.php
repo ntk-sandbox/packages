@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Validator\Helpers;
+namespace Untek\Model\Validator\Helpers;
 
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Validator\Entities\ValidationErrorEntity;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Entities\ValidationErrorEntity;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 
 class UnprocessableHelper
 {

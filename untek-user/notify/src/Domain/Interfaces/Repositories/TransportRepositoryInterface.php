@@ -3,7 +3,7 @@
 namespace Untek\User\Notify\Domain\Interfaces\Repositories;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 use Untek\User\Notify\Domain\Entities\TransportEntity;
 
 interface TransportRepositoryInterface extends CrudRepositoryInterface

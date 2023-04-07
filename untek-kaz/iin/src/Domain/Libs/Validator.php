@@ -5,8 +5,8 @@ namespace Untek\Kaz\Iin\Domain\Libs;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Regex;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ValidationHelper;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Kaz\Iin\Domain\Exceptions\BadCheckSumException;
 use Untek\Kaz\Iin\Domain\Exceptions\CheckSumException;
 

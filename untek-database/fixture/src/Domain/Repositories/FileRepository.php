@@ -7,18 +7,18 @@ use Doctrine\Common\Collections\Expr\Comparison;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
 use Untek\Core\FileSystem\Helpers\FindFileHelper;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Repository\Interfaces\RepositoryInterface;
+use Untek\Model\Repository\Interfaces\RepositoryInterface;
 use Untek\Database\Base\Domain\Entities\RelationEntity;
 use Untek\Database\Fixture\Domain\Entities\FixtureEntity;
 use Untek\Database\Fixture\Domain\Libs\DataFixture;
 use Untek\Database\Fixture\Domain\Libs\FixtureInterface;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 use Untek\Sandbox\Sandbox\Generator\Domain\Services\GeneratorService;
 
 class FileRepository implements RepositoryInterface, GetEntityClassInterface

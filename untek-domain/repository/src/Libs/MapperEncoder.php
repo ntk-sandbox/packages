@@ -1,14 +1,14 @@
 <?php
 
-namespace Untek\Domain\Repository\Libs;
+namespace Untek\Model\Repository\Libs;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Repository\Interfaces\MapperInterface;
-use Untek\Lib\Components\Format\Encoders\ChainEncoder;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Repository\Interfaces\MapperInterface;
+use Untek\Component\Encoder\Encoders\ChainEncoder;
 
 class MapperEncoder //implements MapperInterface
 {

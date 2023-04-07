@@ -5,8 +5,8 @@ namespace Untek\Bundle\Language\Domain\Services;
 use Untek\Bundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
 use Untek\Bundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 
 class LanguageService extends BaseCrudService implements LanguageServiceInterface
 {

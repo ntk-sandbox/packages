@@ -3,7 +3,7 @@
 namespace Untek\User\Authentication\Rpc\Controllers;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;

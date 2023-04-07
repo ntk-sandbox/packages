@@ -57,7 +57,7 @@ class ConstraintCodeGenerator
 //        $isStatus = $attribute == 'status_id';
         if(StatusIdType::match($attributeName)) {
             $this->fileGenerator->setUse(\Untek\Lib\Components\Status\Enums\StatusEnum::class);
-            $this->fileGenerator->setUse(\Untek\Domain\Components\Constraints\Enum::class);
+            $this->fileGenerator->setUse(\Untek\Model\Components\Constraints\Enum::class);
             $validationRules[] =
                 "\$metadata->addPropertyConstraint('$attributeName', new Enum([
     'class' => StatusEnum::class,
@@ -66,7 +66,7 @@ class ConstraintCodeGenerator
 
         //$isBoolean = FieldRenderHelper::isMatchPrefix($attribute, 'is_');
         if(BoolType::match($attributeName)) {
-            $this->fileGenerator->setUse(\Untek\Domain\Validator\Constraints\Boolean::class);
+            $this->fileGenerator->setUse(\Untek\Model\Validator\Constraints\Boolean::class);
             $validationRules[] = "\$metadata->addPropertyConstraint('$attributeName', new Boolean());";
         }
 
@@ -76,7 +76,7 @@ class ConstraintCodeGenerator
         }
 
         if(ArrayType::match($attributeName) || I18nType::match($attributeName)) {
-            $this->fileGenerator->setUse(\Untek\Domain\Components\Constraints\Arr::class);
+            $this->fileGenerator->setUse(\Untek\Model\Components\Constraints\Arr::class);
             $validationRules[] = "\$metadata->addPropertyConstraint('$attributeName', new Arr());";
         }
 

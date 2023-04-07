@@ -4,8 +4,8 @@ namespace Untek\Bundle\Eav\Domain\Services;
 
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\AttributeRepositoryInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\AttributeServiceInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 
 class AttributeService extends BaseCrudService implements AttributeServiceInterface
 {

@@ -5,10 +5,10 @@ namespace Untek\Bundle\Reference\Domain\Subscribers;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Bundle\Reference\Domain\Entities\ItemEntity;
 use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class BookIdSubscriber implements EventSubscriberInterface
 {

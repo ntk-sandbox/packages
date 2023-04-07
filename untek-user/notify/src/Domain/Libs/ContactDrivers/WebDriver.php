@@ -4,8 +4,8 @@ namespace Untek\User\Notify\Domain\Libs\ContactDrivers;
 
 use Untek\User\Notify\Domain\Entities\NotifyEntity;
 use Untek\User\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 
 class WebDriver implements ContactDriverInterface
 {

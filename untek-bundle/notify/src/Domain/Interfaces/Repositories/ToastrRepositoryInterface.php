@@ -3,7 +3,7 @@
 namespace Untek\Bundle\Notify\Domain\Interfaces\Repositories;
 
 use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Core\Collection\Interfaces\Enumerable;
 
 interface ToastrRepositoryInterface

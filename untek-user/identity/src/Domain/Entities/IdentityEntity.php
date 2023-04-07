@@ -11,8 +11,8 @@ use Untek\Core\Contract\Common\Exceptions\NotImplementedMethodException;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use Untek\Core\Contract\User\Interfaces\Entities\PersonEntityInterface;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class IdentityEntity implements ValidationByMetadataInterface, EntityIdInterface, IdentityEntityInterface

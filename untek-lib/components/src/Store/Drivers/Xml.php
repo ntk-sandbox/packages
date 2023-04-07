@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Components\Store\Drivers;
+namespace Untek\Component\FormatAdapter\Drivers;
 
-use Untek\Lib\Components\Format\Encoders\XmlEncoder;
+use Untek\Component\Encoder\Encoders\XmlEncoder;
 
 class Xml extends BaseEncoderDriver implements DriverInterface
 {

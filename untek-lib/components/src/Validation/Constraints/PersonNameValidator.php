@@ -3,7 +3,7 @@
 namespace Untek\Lib\Components\Validation\Constraints;
 
 use Symfony\Component\Validator\Constraint;
-use Untek\Domain\Validator\Constraints\BaseValidator;
+use Untek\Model\Validator\Constraints\BaseValidator;
 
 class PersonNameValidator extends BaseValidator
 {

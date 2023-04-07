@@ -7,17 +7,17 @@ use Doctrine\DBAL\Query\QueryBuilder;
 use Illuminate\Database\QueryException;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Contract\Common\Exceptions\InvalidMethodParameterException;
-use Untek\Domain\Query\Enums\OperatorEnum;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-//use Untek\Domain\Repository\Interfaces\RelationConfigInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Enums\OperatorEnum;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+//use Untek\Model\Repository\Interfaces\RelationConfigInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Database\Doctrine\Domain\Helpers\QueryBuilder\DoctrineQueryBuilderHelper;
-use Untek\Domain\Relation\Libs\QueryFilter;
+use Untek\Model\Relation\Libs\QueryFilter;
 
 abstract class BaseDoctrineCrudRepository extends BaseDoctrineRepository implements CrudRepositoryInterface//, RelationConfigInterface
 {

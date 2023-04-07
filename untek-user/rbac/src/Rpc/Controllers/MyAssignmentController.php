@@ -2,7 +2,7 @@
 
 namespace Untek\User\Rbac\Rpc\Controllers;
 
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\User\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;

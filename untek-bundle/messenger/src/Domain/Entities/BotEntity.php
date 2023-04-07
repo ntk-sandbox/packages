@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Messenger\Domain\Entities;
 
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class BotEntity implements EntityIdInterface
 {

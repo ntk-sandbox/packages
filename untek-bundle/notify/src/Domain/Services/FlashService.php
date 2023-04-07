@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Notify\Domain\Services;
 
-use Untek\Domain\Service\Base\BaseService;
+use Untek\Model\Service\Base\BaseService;
 use Untek\Bundle\Notify\Domain\Enums\FlashMessageTypeEnum;
 use Untek\Bundle\Notify\Domain\Interfaces\Repositories\FlashRepositoryInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;

@@ -2,9 +2,9 @@
 
 namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Repositories\Eloquent;
 
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
-use Untek\Domain\Repository\Mappers\JsonMapper;
-use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Repository\Mappers\JsonMapper;
+use Untek\Model\Repository\Mappers\TimeMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Repositories\FavoriteRepositoryInterface;

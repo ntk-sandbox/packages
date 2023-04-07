@@ -4,7 +4,7 @@ namespace Untek\Bundle\Summary\Domain\Interfaces\Services;
 
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface AttemptServiceInterface extends CrudServiceInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Validator\Helpers;
+namespace Untek\Model\Validator\Helpers;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Translation\Translator;
@@ -11,8 +11,8 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Domain\Validator\Entities\ValidationErrorEntity;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Entities\ValidationErrorEntity;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 class SymfonyValidationHelper
 {

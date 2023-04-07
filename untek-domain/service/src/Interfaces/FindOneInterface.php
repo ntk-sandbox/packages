@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Domain\Service\Interfaces;
+namespace Untek\Model\Service\Interfaces;
 
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Query\Entities\Query;
 
 interface FindOneInterface
 {

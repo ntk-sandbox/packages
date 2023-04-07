@@ -2,7 +2,7 @@
 
 use Psr\Container\ContainerInterface;
 use Untek\Core\DotEnv\Domain\Libs\DotEnv;
-use Untek\Lib\Components\Store\StoreFile;
+use Untek\Component\FormatAdapter\StoreFile;
 use Untek\Sandbox\Sandbox\Synchronize\Domain\Interfaces\Services\SynchronizeServiceInterface;
 use Untek\Sandbox\Sandbox\Synchronize\Domain\Services\SynchronizeService;
 

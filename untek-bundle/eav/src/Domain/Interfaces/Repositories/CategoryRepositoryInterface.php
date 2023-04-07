@@ -3,8 +3,8 @@
 namespace Untek\Bundle\Eav\Domain\Interfaces\Repositories;
 
 use Untek\Bundle\Eav\Domain\Entities\CategoryEntity;
-use Untek\Domain\Repository\Interfaces\CrudRepositoryInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
+use Untek\Model\Query\Entities\Query;
 
 interface CategoryRepositoryInterface extends CrudRepositoryInterface
 {

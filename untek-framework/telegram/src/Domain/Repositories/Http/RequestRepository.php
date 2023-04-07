@@ -7,7 +7,7 @@ use Untek\Framework\Telegram\Domain\Entities\ChatEntity;
 use Untek\Framework\Telegram\Domain\Entities\FromEntity;
 use Untek\Framework\Telegram\Domain\Entities\MessageEntity;
 use Untek\Framework\Telegram\Domain\Entities\RequestEntity;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Telegram\Domain\Helpers\RequestHelper;
 
 class RequestRepository

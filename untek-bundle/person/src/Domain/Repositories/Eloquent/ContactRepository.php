@@ -5,7 +5,7 @@ namespace Untek\Bundle\Person\Domain\Repositories\Eloquent;
 use Untek\Bundle\Person\Domain\Entities\ContactEntity;
 use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use Untek\Bundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ContactRepository extends BaseEloquentCrudRepository implements ContactRepositoryInterface

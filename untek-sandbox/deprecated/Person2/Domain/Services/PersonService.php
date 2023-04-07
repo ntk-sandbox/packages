@@ -3,9 +3,9 @@
 namespace Untek\Sandbox\Sandbox\Person2\Domain\Services;
 
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Service\Base\BaseCrudService;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Sandbox\Sandbox\Person2\Domain\Entities\PersonEntity;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Repositories\PersonRepositoryInterface;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\PersonServiceInterface;

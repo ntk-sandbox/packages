@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Entity\Helpers;
+namespace Untek\Model\Entity\Helpers;
 
 use ReflectionClass;
 use Untek\Core\Arr\Helpers\ArrayHelper;

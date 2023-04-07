@@ -4,10 +4,10 @@ namespace Untek\Framework\Rpc\Domain\Repositories\ConfigManager;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Contracts\Cache\CacheInterface;
-use Untek\Lib\Components\Store\StoreFile;
-use Untek\Domain\Components\FileRepository\Base\BaseFileCrudRepository;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Component\FormatAdapter\StoreFile;
+use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Query\Entities\Query;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Repositories\MethodRepositoryInterface;

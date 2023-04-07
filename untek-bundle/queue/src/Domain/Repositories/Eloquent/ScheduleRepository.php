@@ -5,8 +5,8 @@ namespace Untek\Bundle\Queue\Domain\Repositories\Eloquent;
 use Untek\Bundle\Queue\Domain\Entities\ScheduleEntity;
 use Untek\Bundle\Queue\Domain\Interfaces\Repositories\ScheduleRepositoryInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Mappers\TimeMapper;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Mappers\TimeMapper;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ScheduleRepository extends BaseEloquentCrudRepository implements ScheduleRepositoryInterface

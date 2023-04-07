@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Person\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface InheritanceServiceInterface extends CrudServiceInterface
 {

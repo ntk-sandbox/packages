@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\Office\Domain\Services;
 
 
 use Untek\Core\Text\Helpers\TemplateHelper;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\Service\Base\BaseCrudService;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Sandbox\Sandbox\Office\Domain\Entities\DocXEntity;
 use Untek\Sandbox\Sandbox\Office\Domain\Enums\AttributeEnum;
 use Untek\Sandbox\Sandbox\Office\Domain\Interfaces\Services\DocXServiceInterface;

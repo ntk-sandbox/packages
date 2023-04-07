@@ -4,7 +4,7 @@ namespace Untek\Lib\Components\DynamicEntity\Entities;
 
 use Exception;
 use Untek\Lib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
-use Untek\Domain\Entity\Interfaces\EntityIdInterface;
+use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
 use Untek\Framework\Telegram\Domain\Facades\Bot;
 

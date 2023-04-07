@@ -3,15 +3,15 @@
 namespace Untek\Framework\Rpc\Domain\Base;
 
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Domain\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Domain\Validator\Helpers\ErrorCollectionHelper;
-use Untek\Domain\Domain\Interfaces\GetEntityClassInterface;
-use Untek\Domain\Domain\Traits\DispatchEventTrait;
-use Untek\Domain\Domain\Traits\ForgeQueryTrait;
+use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
+use Untek\Model\Validator\Helpers\ErrorCollectionHelper;
+use Untek\Model\Shared\Interfaces\GetEntityClassInterface;
+use Untek\Model\Shared\Traits\DispatchEventTrait;
+use Untek\Model\Shared\Traits\ForgeQueryTrait;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\Entity\Helpers\EntityHelper;
-use Untek\Domain\Repository\Base\BaseRepository;
-use Untek\Domain\Repository\Traits\RepositoryMapperTrait;
+use Untek\Model\Entity\Helpers\EntityHelper;
+use Untek\Model\Repository\Base\BaseRepository;
+use Untek\Model\Repository\Traits\RepositoryMapperTrait;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;

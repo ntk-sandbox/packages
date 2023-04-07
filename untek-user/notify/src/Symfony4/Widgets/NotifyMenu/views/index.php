@@ -8,7 +8,7 @@
 
 use Untek\Lib\Web\Html\Helpers\Url;
 use Untek\Lib\I18Next\Facades\I18Next;
-use Untek\Domain\DataProvider\Libs\DataProvider;
+use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Lib\Web\View\Libs\View;
 
 ?>

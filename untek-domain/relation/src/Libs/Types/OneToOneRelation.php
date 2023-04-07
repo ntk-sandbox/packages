@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Domain\Relation\Libs\Types;
+namespace Untek\Model\Relation\Libs\Types;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Code\Factories\PropertyAccess;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Domain\Relation\Interfaces\RelationInterface;
+use Untek\Model\Relation\Interfaces\RelationInterface;
 
 class OneToOneRelation extends BaseRelation implements RelationInterface
 {

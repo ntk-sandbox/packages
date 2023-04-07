@@ -2,8 +2,8 @@
 
 namespace Untek\Sandbox\Sandbox\Apache\Domain\Services;
 
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Repository\Traits\RepositoryAwareTrait;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Repository\Traits\RepositoryAwareTrait;
 use Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity;
 use Untek\Sandbox\Sandbox\Apache\Domain\Repositories\Conf\HostsRepository;
 use Untek\Sandbox\Sandbox\Apache\Domain\Repositories\Conf\ServerRepository;

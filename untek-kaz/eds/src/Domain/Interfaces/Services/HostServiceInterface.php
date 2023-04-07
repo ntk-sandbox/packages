@@ -2,7 +2,7 @@
 
 namespace Untek\Kaz\Eds\Domain\Interfaces\Services;
 
-use Untek\Domain\Service\Interfaces\CrudServiceInterface;
+use Untek\Model\Service\Interfaces\CrudServiceInterface;
 
 interface HostServiceInterface extends CrudServiceInterface
 {

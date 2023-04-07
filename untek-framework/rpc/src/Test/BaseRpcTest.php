@@ -3,7 +3,7 @@
 namespace Untek\Framework\Rpc\Test;
 
 use Untek\Core\Env\Enums\EnvEnum;
-use Untek\Domain\Entity\Helpers\EntityHelper;
+use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;

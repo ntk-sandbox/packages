@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Domain\Domain\Interfaces;
+namespace Untek\Model\Shared\Interfaces;
 
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Domain\Query\Entities\Query;
+use Untek\Model\Query\Entities\Query;
 
 interface FindAllInterface
 {

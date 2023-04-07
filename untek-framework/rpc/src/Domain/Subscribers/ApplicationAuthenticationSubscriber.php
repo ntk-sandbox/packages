@@ -5,7 +5,7 @@ namespace Untek\Framework\Rpc\Domain\Subscribers;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Enums\RpcEventEnum;
 use Untek\Framework\Rpc\Domain\Events\RpcRequestEvent;

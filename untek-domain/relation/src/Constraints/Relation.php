@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Domain\Relation\Constraints;
+namespace Untek\Model\Relation\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Untek\Domain\Components\SoftDelete\Subscribers;
+namespace Untek\Model\Components\SoftDelete\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Untek\Domain\Query\Entities\Where;
-use Untek\Domain\Query\Enums\OperatorEnum;
-use Untek\Domain\Domain\Enums\EventEnum;
-use Untek\Domain\Domain\Events\EntityEvent;
-use Untek\Domain\Domain\Events\QueryEvent;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use Untek\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use Untek\Model\Query\Entities\Where;
+use Untek\Model\Query\Enums\OperatorEnum;
+use Untek\Model\Shared\Enums\EventEnum;
+use Untek\Model\Shared\Events\EntityEvent;
+use Untek\Model\Shared\Events\QueryEvent;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Model\EntityManager\Traits\EntityManagerAwareTrait;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 
 class SoftDeleteSubscriber implements EventSubscriberInterface

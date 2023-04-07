@@ -9,9 +9,9 @@ use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityAttributeRepositoryInt
 use Untek\Bundle\Eav\Domain\Interfaces\Repositories\EntityRepositoryInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Domain\Query\Entities\Query;
-use Untek\Domain\Relation\Libs\Types\OneToManyRelation;
-use Untek\Domain\Relation\Libs\Types\OneToOneRelation;
+use Untek\Model\Query\Entities\Query;
+use Untek\Model\Relation\Libs\Types\OneToManyRelation;
+use Untek\Model\Relation\Libs\Types\OneToOneRelation;
 use Untek\Database\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class EntityRepository extends BaseEloquentCrudRepository implements EntityRepositoryInterface

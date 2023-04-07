@@ -8,8 +8,8 @@ use Laminas\Code\Generator\FileGenerator;
 use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Lib\Components\Store\StoreFile;
-use Untek\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use Untek\Component\FormatAdapter\StoreFile;
+use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Tool\Generator\Domain\Enums\TypeEnum;
 use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 use Untek\Tool\Generator\Domain\Helpers\LocationHelper;
@@ -77,10 +77,10 @@ class ServiceScenario extends BaseScenario
 
 
         if ($this->buildDto->isCrudService) {
-            $fileGenerator->setUse('Untek\Domain\Service\Base\BaseCrudService');
+            $fileGenerator->setUse('Untek\Model\Service\Base\BaseCrudService');
             $classGenerator->setExtendedClass('BaseCrudService');
         } else {
-            $fileGenerator->setUse('Untek\Domain\Service\Base\BaseService');
+            $fileGenerator->setUse('Untek\Model\Service\Base\BaseService');
             $classGenerator->setExtendedClass('BaseService');
         }
 

@@ -9,7 +9,7 @@ use Laminas\Code\Generator\PropertyGenerator;
 use Untek\Core\Instance\Helpers\InstanceHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Domain\Validator\Interfaces\ValidationByMetadataInterface;
+use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 
 abstract class BaseEntityScenario extends BaseScenario
 {
