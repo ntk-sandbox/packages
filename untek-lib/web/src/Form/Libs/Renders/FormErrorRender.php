@@ -7,7 +7,7 @@ use Symfony\Component\Validator\ConstraintViolation;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Lib\Web\Html\Helpers\Html;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Web\Form\Helpers\FormErrorHelper;
 
 class FormErrorRender extends BaseRender

@@ -7,7 +7,7 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Security;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 use Untek\User\Authentication\Domain\Traits\GetUserTrait;
 use Untek\User\Password\Domain\Forms\UpdatePasswordForm;

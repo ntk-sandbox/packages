@@ -17,7 +17,7 @@ $formRender->addFormOption('autocomplete', 'off');
 
 ?>
 
-<h2><?= \Untek\Lib\I18Next\Facades\I18Next::t('user.password', 'restore-password.action.create_password') ?></h2>
+<h2><?= \Untek\Component\I18Next\Facades\I18Next::t('user.password', 'restore-password.action.create_password') ?></h2>
 
 <?= $formRender->errors() ?>
 

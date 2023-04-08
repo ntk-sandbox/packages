@@ -6,7 +6,7 @@ use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Lib\Web\Html\Helpers\Html;
 use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 
 class ActionHelper

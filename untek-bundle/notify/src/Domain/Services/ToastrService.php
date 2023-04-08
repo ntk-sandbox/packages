@@ -8,7 +8,7 @@ use Untek\Bundle\Notify\Domain\Interfaces\Repositories\ToastrRepositoryInterface
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Model\Service\Base\BaseService;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 
 class ToastrService extends BaseService implements ToastrServiceInterface
 {

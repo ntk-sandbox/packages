@@ -12,7 +12,7 @@ use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Model\Entity\Interfaces\UniqueInterface;
 use Untek\Model\Query\Entities\Query;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 
 trait CrudRepositoryFindOneTrait
 {

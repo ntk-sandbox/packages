@@ -15,7 +15,7 @@ use Untek\Model\Service\Base\BaseService;
 use Untek\Model\Validator\Helpers\UnprocessableHelper;
 use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Lib\Components\Time\Enums\TimeEnum;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\User\Authentication\Domain\Entities\CredentialEntity;
 use Untek\User\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
 use Untek\User\Confirm\Domain\Entities\ConfirmEntity;

@@ -5,8 +5,8 @@ namespace Untek\Lib\Components\SymfonyTranslation\Libs;
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Lib\I18Next\Exceptions\NotFoundBundleException;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Exceptions\NotFoundBundleException;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Components\SymfonyTranslation\Helpers\TranslatorHelper;
 use Untek\Model\Entity\Helpers\EntityHelper;
 

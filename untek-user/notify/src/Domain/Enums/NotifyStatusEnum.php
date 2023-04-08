@@ -3,7 +3,7 @@
 namespace Untek\User\Notify\Domain\Enums;
 
 use Untek\Core\Enum\Interfaces\GetLabelsInterface;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 
 class NotifyStatusEnum implements GetLabelsInterface
 {

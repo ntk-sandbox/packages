@@ -4,7 +4,7 @@ namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Web\Html\Helpers\Html;
 use Untek\Lib\Web\Html\Helpers\Url;
 

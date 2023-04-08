@@ -7,7 +7,7 @@ use Untek\User\Password\Domain\Interfaces\Services\PasswordBlacklistServiceInter
 use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Service\Base\BaseService;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;

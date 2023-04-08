@@ -9,7 +9,7 @@
 use Untek\Core\Text\Helpers\TextHelper;
 use Untek\Tool\Package\Domain\Entities\ApiKeyEntity;
 
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Web\Controller\Helpers\ActionHelper;
 use Untek\Lib\Web\View\Libs\View;

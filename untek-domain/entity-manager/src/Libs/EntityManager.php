@@ -20,7 +20,7 @@ use Untek\Model\EntityManager\Interfaces\OrmInterface;
 use Untek\Model\Repository\Interfaces\CrudRepositoryInterface;
 use Untek\Model\Repository\Interfaces\RepositoryInterface;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 
 class EntityManager implements EntityManagerInterface
 {

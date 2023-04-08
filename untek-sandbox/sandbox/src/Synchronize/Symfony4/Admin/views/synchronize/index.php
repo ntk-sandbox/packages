@@ -6,7 +6,7 @@
  */
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Sandbox\Sandbox\Synchronize\Domain\Entities\DiffCollectionEntity;
 
 $this->title = I18Next::t('synchronize', 'synchronize.title');

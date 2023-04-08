@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 
 class UnknownTypeFormatter extends BaseFormatter implements FormatterInterface
 {

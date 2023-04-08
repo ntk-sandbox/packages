@@ -9,7 +9,7 @@ use Untek\User\Confirm\Domain\Interfaces\Repositories\ConfirmRepositoryInterface
 use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
 use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Model\Query\Entities\Where;
 use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;

@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Web\Menu\Domain\Helpers;
 
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Web\Html\Helpers\Url;
 
 class MenuHelper

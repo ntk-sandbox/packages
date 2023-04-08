@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Enum\Helpers\EnumHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\I18Next\Helpers\TranslatorHelper;
+use Untek\Component\I18Next\Helpers\TranslatorHelper;
 use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;

@@ -23,7 +23,7 @@ class TestApp extends BaseApp
         $bundles = [
             new \Untek\Lib\Components\CommonTranslate\Bundle(['all']),
             new \Untek\Lib\Components\SymfonyTranslation\Bundle(['all']),
-            new \Untek\Lib\I18Next\Bundle(['all']),
+            new \Untek\Component\I18Next\Bundle(['all']),
             new \Untek\Lib\Components\DefaultApp\Bundle(['all']),
 //            \Untek\Database\Eloquent\Bundle::class,
 //            \Untek\Database\Fixture\Bundle::class,

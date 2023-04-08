@@ -2,7 +2,7 @@
 
 namespace Untek\User\Password\Tests\Unit;
 
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Validator\Helpers\ErrorCollectionHelper;
 use Untek\User\Password\Domain\Interfaces\Services\PasswordValidatorServiceInterface;
 use Untek\Core\Instance\Helpers\ClassHelper;

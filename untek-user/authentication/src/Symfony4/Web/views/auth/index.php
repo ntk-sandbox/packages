@@ -46,4 +46,4 @@ $formRender->addFormOption('autocomplete', 'off');
 
 <?= $formRender->endFrom() ?>
 
-<a href="/restore-password"><?= \Untek\Lib\I18Next\Facades\I18Next::t('authentication', 'auth.forgot_title') ?></a>
+<a href="/restore-password"><?= \Untek\Component\I18Next\Facades\I18Next::t('authentication', 'auth.forgot_title') ?></a>

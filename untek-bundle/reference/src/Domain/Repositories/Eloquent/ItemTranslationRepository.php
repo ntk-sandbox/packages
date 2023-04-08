@@ -4,7 +4,7 @@ namespace Untek\Bundle\Reference\Domain\Repositories\Eloquent;
 
 use Untek\Bundle\Reference\Domain\Entities\ItemTranslationEntity;
 use Untek\Bundle\Reference\Domain\Interfaces\Repositories\ItemTranslationRepositoryInterface;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Query\Entities\Where;
 use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Model\Query\Entities\Query;

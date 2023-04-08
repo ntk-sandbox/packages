@@ -9,7 +9,7 @@ use Untek\Bundle\Summary\Domain\Interfaces\Repositories\AttemptRepositoryInterfa
 use Untek\Bundle\Summary\Domain\Interfaces\Services\AttemptServiceInterface;
 use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
 use Untek\Model\Service\Base\BaseCrudService;
-use Untek\Lib\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Component\I18Next\Interfaces\Services\TranslationServiceInterface;
 
 /**
  * @method AttemptRepositoryInterface getRepository()

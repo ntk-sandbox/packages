@@ -18,7 +18,7 @@ use Untek\User\Confirm\Domain\Interfaces\Services\ConfirmServiceInterface;
 use Untek\Lib\Components\Time\Enums\TimeEnum;
 use Untek\Model\Entity\Exceptions\AlreadyExistsException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\User\Notify\Domain\Interfaces\Services\NotifyServiceInterface;

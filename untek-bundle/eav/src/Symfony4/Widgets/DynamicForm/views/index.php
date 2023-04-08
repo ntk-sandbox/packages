@@ -6,7 +6,7 @@
  */
 
 use Untek\Bundle\Eav\Symfony4\Widgets\DynamicInput\DynamicInputWidget;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Web\Form\Libs\FormRender;
 use Untek\Lib\Web\View\Libs\View;
 

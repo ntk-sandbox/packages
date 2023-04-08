@@ -9,7 +9,7 @@ use Untek\Model\Validator\Helpers\UnprocessableHelper;
 use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Core\Contract\User\Interfaces\Entities\IdentityEntityInterface;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
 
 class ImitationAuthAuthService extends AuthService implements ImitationAuthServiceInterface

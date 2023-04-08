@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Model\Entity\Exceptions\AlreadyExistsException;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Lib\Web\Controller\Base\BaseWebController;
 use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;

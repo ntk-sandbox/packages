@@ -24,7 +24,7 @@ use Untek\Model\Repository\Traits\RepositoryAwareTrait;
 use Untek\Model\Validator\Entities\ValidationErrorEntity;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\User\Authentication\Domain\Entities\CredentialEntity;
 use Untek\User\Authentication\Domain\Entities\TokenValueEntity;
 use Untek\User\Authentication\Domain\Enums\AuthEventEnum;

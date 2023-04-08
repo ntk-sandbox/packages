@@ -2,7 +2,7 @@
 
 namespace Untek\Lib\Components\Status\Enums;
 
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Core\Enum\Interfaces\GetLabelsInterface;
 
 /**

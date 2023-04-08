@@ -11,7 +11,7 @@ use Untek\User\Password\Domain\Subscribers\SendNotifyAfterUpdatePasswordSubscrib
 use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Untek\User\Authentication\Domain\Interfaces\Repositories\CredentialRepositoryInterface;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
-use Untek\Lib\I18Next\Facades\I18Next;
+use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Service\Base\BaseService;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\EntityManager\Interfaces\EntityManagerInterface;
