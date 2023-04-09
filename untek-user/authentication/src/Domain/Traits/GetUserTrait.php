@@ -22,6 +22,7 @@ trait GetUserTrait
      */
     public function getUser(): ?IdentityEntityInterface
     {
+        
         $identityEntity = $this->security->getUser();
         if ($identityEntity == null) {
             throw new AuthenticationException();
