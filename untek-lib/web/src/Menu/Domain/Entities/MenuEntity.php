@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Menu\Domain\Entities;
+namespace Untek\Component\Web\Menu\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;

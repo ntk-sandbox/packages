@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\SignedCookie\Libs;
+namespace Untek\Component\Web\SignedCookie\Libs;
 
 use Untek\Crypt\Base\Domain\Enums\HashAlgoEnum;
 

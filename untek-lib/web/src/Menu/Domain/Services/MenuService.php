@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Menu\Domain\Services;
+namespace Untek\Component\Web\Menu\Domain\Services;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
@@ -16,11 +16,11 @@ use Untek\Model\Query\Entities\Query;
 use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Component\I18Next\Exceptions\NotFoundBundleException;
 use Untek\Component\I18Next\Facades\I18Next;
-use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Lib\Web\Menu\Domain\Entities\MenuEntity;
-use Untek\Lib\Web\Menu\Domain\Interfaces\MenuInterface;
-use Untek\Lib\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface;
-use Untek\Lib\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
+use Untek\Component\Web\Html\Helpers\Url;
+use Untek\Component\Web\Menu\Domain\Entities\MenuEntity;
+use Untek\Component\Web\Menu\Domain\Interfaces\MenuInterface;
+use Untek\Component\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface;
+use Untek\Component\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
 use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 
 class MenuService extends BaseCrudService implements MenuServiceInterface

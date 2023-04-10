@@ -1,15 +1,15 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions\BaseAction;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions\DeleteAction;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions\RestoreAction;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions\UpdateAction;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions\BaseAction;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions\DeleteAction;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions\RestoreAction;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions\UpdateAction;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions\ViewAction;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions\ViewAction;
 
 class ActionFormatter extends BaseFormatter implements FormatterInterface
 {

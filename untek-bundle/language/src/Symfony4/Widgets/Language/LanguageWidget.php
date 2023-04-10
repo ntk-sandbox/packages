@@ -5,7 +5,7 @@ namespace Untek\Bundle\Language\Symfony4\Widgets\Language;
 use Untek\Bundle\Language\Domain\Filters\LanguageFilter;
 use Untek\Bundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class LanguageWidget extends BaseWidget2
 {

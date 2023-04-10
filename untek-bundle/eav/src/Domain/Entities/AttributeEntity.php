@@ -14,7 +14,7 @@ use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class AttributeEntity implements ValidationByMetadataInterface, EntityIdInterface, BuildFormInterface
 {

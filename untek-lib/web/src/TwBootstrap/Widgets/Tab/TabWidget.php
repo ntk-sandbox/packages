@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Tab;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Tab;
 
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class TabWidget extends BaseWidget2
 {

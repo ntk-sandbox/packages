@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\NavbarMenu;
+namespace Untek\Component\Web\TwBootstrap\Widgets\NavbarMenu;
 
-use Untek\Lib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Menu\MenuWidget;
 
 class NavbarMenuWidget extends MenuWidget
 {

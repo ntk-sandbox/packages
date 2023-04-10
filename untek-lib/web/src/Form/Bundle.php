@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Form;
+namespace Untek\Component\Web\Form;
 
 use Untek\Core\Bundle\Base\BaseBundle;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Lib\Web\Widget\Widgets\Toastr;
+namespace Untek\Component\Web\Widget\Widgets\Toastr;
 
 use Untek\Bundle\Notify\Domain\Entities\ToastrEntity;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Core\Collection\Interfaces\Enumerable;
-use Untek\Lib\Web\View\Resources\Js;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\View\Resources\Js;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class ToastrWidget extends BaseWidget2
 {

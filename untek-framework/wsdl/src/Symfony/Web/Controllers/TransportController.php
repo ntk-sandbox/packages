@@ -5,7 +5,7 @@ namespace Untek\Framework\Wsdl\Symfony\Web\Controllers;
 use Untek\Framework\Wsdl\Domain\Interfaces\Services\RequestServiceInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Web\Xml\Libs\XmlResponse;
+use Untek\Component\Web\Xml\Libs\XmlResponse;
 
 class TransportController
 {

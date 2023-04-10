@@ -7,13 +7,13 @@
  */
 
 use Untek\Lib\Components\Byte\Helpers\ByteSizeFormatHelper;
-use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Component\Web\Html\Helpers\Html;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
-use Untek\Lib\Web\Controller\Helpers\ActionHelper;
-use Untek\Lib\Web\View\Libs\View;
-use Untek\Lib\Web\TwBootstrap\Widgets\Detail\DetailWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Component\Web\Controller\Helpers\ActionHelper;
+use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\TwBootstrap\Widgets\Detail\DetailWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 use Untek\Sandbox\Sandbox\Asset\Domain\Entities\FileEntity;
 
 $attributes = [

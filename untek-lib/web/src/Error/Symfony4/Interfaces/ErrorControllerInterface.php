@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Error\Symfony4\Interfaces;
+namespace Untek\Component\Web\Error\Symfony4\Interfaces;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

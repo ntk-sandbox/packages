@@ -5,7 +5,7 @@ namespace Untek\Bundle\Messenger\Symfony4\Widgets;
 use Untek\Model\Query\Entities\Query;
 use Untek\Bundle\Messenger\Domain\Entities\MessageEntity;
 use Untek\Bundle\Messenger\Domain\Interfaces\Services\MessageServiceInterface;
-use Untek\Lib\Web\Widget\Base\BaseWidget;
+use Untek\Component\Web\Widget\Base\BaseWidget;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 

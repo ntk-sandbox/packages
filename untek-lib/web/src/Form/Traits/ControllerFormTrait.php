@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Form\Traits;
+namespace Untek\Component\Web\Form\Traits;
 
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -15,9 +15,9 @@ use Symfony\Component\Validator\ConstraintViolation;
 use Untek\Model\Validator\Entities\ValidationErrorEntity;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
-use Untek\Lib\Web\Form\Libs\FormManager;
-use Untek\Lib\Web\Form\Libs\FormRender;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Libs\FormManager;
+use Untek\Component\Web\Form\Libs\FormRender;
 
 trait ControllerFormTrait
 {

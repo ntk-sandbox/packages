@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Subscribers;
+namespace Untek\Component\Web\WebApp\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Core\App\Enums\AppEventEnum;
 use Untek\Core\App\Events\AppEvent;
-use Untek\Lib\Web\WebApp\Libs\EnvDetector\WebEnvDetector;
+use Untek\Component\Web\WebApp\Libs\EnvDetector\WebEnvDetector;
 
 class WebDetectTestEnvSubscriber implements EventSubscriberInterface
 {

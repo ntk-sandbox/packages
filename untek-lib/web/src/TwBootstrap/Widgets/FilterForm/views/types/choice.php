@@ -8,7 +8,7 @@
  */
 
 
-use Untek\Lib\Web\Html\Helpers\Html; ?>
+use Untek\Component\Web\Html\Helpers\Html; ?>
 
 <?= Html::dropDownList($inputName, $value, $options, [
     'class' => 'form-control select2',

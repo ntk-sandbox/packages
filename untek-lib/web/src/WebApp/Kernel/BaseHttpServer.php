@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Kernel;
+namespace Untek\Component\Web\WebApp\Kernel;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\TerminableInterface;
 use Untek\Core\App\Interfaces\AppInterface;
 use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
 use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use Untek\Lib\Web\WebApp\Base\BaseWebApp;
+use Untek\Component\Web\WebApp\Base\BaseWebApp;
 
 abstract class BaseHttpServer implements TerminableInterface, HttpKernelInterface
 {

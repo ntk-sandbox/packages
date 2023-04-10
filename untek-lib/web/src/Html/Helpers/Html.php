@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace Untek\Lib\Web\Html\Helpers;
+namespace Untek\Component\Web\Html\Helpers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Untek\Core\Arr\Helpers\ArrayHelper;
@@ -14,7 +14,7 @@ use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
 use Untek\Core\Base\Legacy\Yii\Base\Model;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 
 /**
  * Html provides a set of static methods for generating commonly used HTML tags.
@@ -518,7 +518,7 @@ class Html
      * If a value is null, the corresponding attribute will not be rendered.
      * See [[renderTagAttributes()]] for details on how attributes are being rendered.
      * @return string the generated hyperlink
-     * @see \Untek\Lib\Web\Html\Helpers\Url::to()
+     * @see \Untek\Component\Web\Html\Helpers\Url::to()
      */
     public static function a($text, $url = null, $options = [])
     {

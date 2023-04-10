@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Wsdl\Domain\Base;
 
-use Untek\Lib\Web\WebApp\Base\BaseWebApp;
+use Untek\Component\Web\WebApp\Base\BaseWebApp;
 
 abstract class BaseWsdlApp extends BaseWebApp
 {

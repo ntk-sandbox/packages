@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Lib\Web\AdminLte3\Widgets\Sidebar;
+namespace Untek\Component\Web\AdminLte3\Widgets\Sidebar;
 
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Lib\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
+use Untek\Component\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
-use Untek\Lib\Web\TwBootstrap\Widgets\NavbarMenu\NavbarMenuWidget;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\TwBootstrap\Widgets\NavbarMenu\NavbarMenuWidget;
 
 class SidebarWidget extends BaseWidget2
 {

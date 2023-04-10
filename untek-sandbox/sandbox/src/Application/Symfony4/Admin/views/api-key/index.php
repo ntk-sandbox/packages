@@ -11,12 +11,12 @@ use Untek\Sandbox\Sandbox\Application\Domain\Entities\ApiKeyEntity;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
 
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\DataProvider\Libs\DataProvider;
-use Untek\Lib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 
 $attributes = [
     [

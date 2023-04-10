@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Form\Interfaces;
+namespace Untek\Component\Web\Form\Interfaces;
 
 use Symfony\Component\Form\FormBuilderInterface;
 

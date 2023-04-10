@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Lib\Web\Controller\Helpers;
+namespace Untek\Component\Web\Controller\Helpers;
 
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Web\Html\Helpers\Html;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Html;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 

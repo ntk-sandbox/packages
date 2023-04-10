@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Xml\Libs;
+namespace Untek\Component\Web\Xml\Libs;
 
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Component\Encoder\Encoders\XmlEncoder;

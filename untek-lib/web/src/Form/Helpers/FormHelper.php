@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Form\Helpers;
+namespace Untek\Component\Web\Form\Helpers;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormError;
@@ -13,7 +13,7 @@ use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Model\Validator\Entities\ValidationErrorEntity;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class FormHelper
 {

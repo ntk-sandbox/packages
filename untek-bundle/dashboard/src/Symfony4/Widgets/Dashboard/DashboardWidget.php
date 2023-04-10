@@ -5,7 +5,7 @@ namespace Untek\Bundle\Dashboard\Symfony4\Widgets\Dashboard;
 use Untek\Bundle\Dashboard\Symfony4\Widgets\Dashboard\Helpers\DashboardHelper;
 
 use Untek\Core\Text\Helpers\TemplateHelper;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class DashboardWidget extends BaseWidget2
 {

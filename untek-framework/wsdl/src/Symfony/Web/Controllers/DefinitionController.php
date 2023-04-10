@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
-use Untek\Lib\Web\Xml\Libs\XmlResponse;
+use Untek\Component\Web\Xml\Libs\XmlResponse;
 
 class DefinitionController
 {

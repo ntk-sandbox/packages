@@ -6,11 +6,11 @@
  * @var string $content
  */
 
-use Untek\Lib\Web\AdminApp\Assets\AdminAppAsset;
-use Untek\Lib\Web\Layout\Widgets\Script\ScriptWidget;
-use Untek\Lib\Web\Layout\Widgets\Style\StyleWidget;
-use Untek\Lib\Web\View\Libs\View;
-use Untek\Lib\Web\Widget\Widgets\Toastr\ToastrWidget;
+use Untek\Component\Web\AdminApp\Assets\AdminAppAsset;
+use Untek\Component\Web\Layout\Widgets\Script\ScriptWidget;
+use Untek\Component\Web\Layout\Widgets\Style\StyleWidget;
+use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\Widget\Widgets\Toastr\ToastrWidget;
 
 (new AdminAppAsset())->register($this);
 
@@ -29,7 +29,7 @@ use Untek\Lib\Web\Widget\Widgets\Toastr\ToastrWidget;
 </head>
 <body>
 
-<?= \Untek\Lib\Web\TwBootstrap\Widgets\Alert\AlertWidget::widget() ?>
+<?= \Untek\Component\Web\TwBootstrap\Widgets\Alert\AlertWidget::widget() ?>
 <?= $content ?>
 
 <?= ToastrWidget::widget(['view' => $this]) ?>

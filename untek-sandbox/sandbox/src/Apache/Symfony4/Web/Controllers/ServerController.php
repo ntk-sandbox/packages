@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\Apache\Symfony4\Web\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Base\BaseWebCrudController;
 use Untek\Sandbox\Sandbox\Apache\Domain\Services\ServerService;
 
 class ServerController extends BaseWebCrudController

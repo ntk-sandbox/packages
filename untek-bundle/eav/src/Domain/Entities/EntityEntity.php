@@ -13,7 +13,7 @@ use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Collection\Helpers\CollectionHelper;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class EntityEntity implements ValidationByMetadataInterface, EntityIdInterface, BuildFormInterface
 {

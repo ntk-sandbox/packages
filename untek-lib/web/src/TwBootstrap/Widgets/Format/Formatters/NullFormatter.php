@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters;
 
 use Untek\Component\I18Next\Facades\I18Next;
 

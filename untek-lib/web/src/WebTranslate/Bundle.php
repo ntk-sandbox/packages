@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebTranslate;
+namespace Untek\Component\Web\WebTranslate;
 
 use Untek\Core\Bundle\Base\BaseBundle;
 

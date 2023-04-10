@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Table\Helpers;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Table\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Model\Entity\Helpers\EntityHelper;

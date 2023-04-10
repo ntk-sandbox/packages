@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Controller\Enums;
+namespace Untek\Component\Web\Controller\Enums;
 
 class CrudControllerActionEnum
 {

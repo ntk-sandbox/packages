@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp;
+namespace Untek\Component\Web\WebApp;
 
 use Untek\Core\Bundle\Base\BaseBundle;
 
@@ -15,9 +15,9 @@ class Bundle extends BaseBundle
     public function deps(): array
     {
         return [
-            \Untek\Lib\Web\Form\Bundle::class,
-            \Untek\Lib\Web\View\Bundle::class,
-            \Untek\Lib\Web\Layout\Bundle::class,
+            \Untek\Component\Web\Form\Bundle::class,
+            \Untek\Component\Web\View\Bundle::class,
+            \Untek\Component\Web\Layout\Bundle::class,
         ];
     }
 

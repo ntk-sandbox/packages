@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\RestApiApp\Test\Asserts;
+namespace Untek\Component\Web\RestApiApp\Test\Asserts;
 
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Core\Arr\Helpers\ArrayHelper;

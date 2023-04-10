@@ -4,8 +4,8 @@ namespace Untek\Bundle\Eav\Symfony4\Widgets\DynamicForm;
 
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use Untek\Lib\Web\Form\Libs\FormRender;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Form\Libs\FormRender;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class DynamicFormWidget extends BaseWidget2
 {

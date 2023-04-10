@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\AdminApp\Base;
+namespace Untek\Component\Web\AdminApp\Base;
 
-use Untek\Lib\Web\WebApp\Base\BaseWebApp;
+use Untek\Component\Web\WebApp\Base\BaseWebApp;
 
 abstract class BaseAdminApp extends BaseWebApp
 {

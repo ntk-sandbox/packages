@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Libs\EnvDetector;
+namespace Untek\Component\Web\WebApp\Libs\EnvDetector;
 
 use Symfony\Component\HttpFoundation\Request;
 use Untek\Core\Env\Interfaces\EnvDetectorInterface;

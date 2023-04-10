@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\Layout\Widgets\Style;
+namespace Untek\Component\Web\Layout\Widgets\Style;
 
-use Untek\Lib\Web\View\Resources\Css;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\View\Resources\Css;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class StyleWidget extends BaseWidget2
 {

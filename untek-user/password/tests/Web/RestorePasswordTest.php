@@ -2,7 +2,7 @@
 
 namespace Untek\User\Password\Tests\Web;
 
-class RestorePasswordTest extends \Untek\Lib\Web\Test\BaseWebTest
+class RestorePasswordTest extends \Untek\Component\Web\Test\BaseWebTest
 {
 
     protected function fixtures(): array

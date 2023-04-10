@@ -8,7 +8,7 @@ use App\Dashboard\Controllers\DashboardController;
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;
 
-abstract class BaseModule extends \Untek\Lib\Web\Controller\Base\BaseModule
+abstract class BaseModule extends \Untek\Component\Web\Controller\Base\BaseModule
 {
 
     abstract public function getNamespace(): string;

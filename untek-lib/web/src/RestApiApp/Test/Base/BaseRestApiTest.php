@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Lib\Web\RestApiApp\Test\Base;
+namespace Untek\Component\Web\RestApiApp\Test\Base;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpKernelBrowser;
-use Untek\Lib\Web\RestApiApp\Test\Asserts\RestApiAssert;
+use Untek\Component\Web\RestApiApp\Test\Asserts\RestApiAssert;
 use Untek\Sandbox\Sandbox\WebTest\Domain\Facades\TestHttpFacade;
 use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\ConsoleHttpKernel;
 use Untek\Sandbox\Sandbox\WebTest\Domain\Libs\HttpClient;

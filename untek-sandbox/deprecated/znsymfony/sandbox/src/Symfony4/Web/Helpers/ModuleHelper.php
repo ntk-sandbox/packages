@@ -9,7 +9,7 @@ use Untek\Core\Code\Helpers\ComposerHelper;
 use Untek\Core\FileSystem\Helpers\FindFileHelper;
 use Untek\Core\Text\Helpers\Inflector;
 use Untek\Lib\Components\Http\Helpers\UrlHelper;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Base\BaseWebController;
 
 class ModuleHelper
 {

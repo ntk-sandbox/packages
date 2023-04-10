@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\Asset\Interfaces;
+namespace Untek\Component\Web\Asset\Interfaces;
 
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\View\Libs\View;
 
 interface AssetInterface
 {

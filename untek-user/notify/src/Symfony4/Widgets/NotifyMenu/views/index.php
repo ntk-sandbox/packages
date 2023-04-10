@@ -6,10 +6,10 @@
  * @var DataProvider $dataProvider
  */
 
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\DataProvider\Libs\DataProvider;
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\View\Libs\View;
 
 ?>
 

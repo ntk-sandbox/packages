@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\Menu\Domain\Repositories\File;
+namespace Untek\Component\Web\Menu\Domain\Repositories\File;
 
-use Untek\Lib\Web\Menu\Domain\Entities\MenuEntity;
-use Untek\Lib\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface;
+use Untek\Component\Web\Menu\Domain\Entities\MenuEntity;
+use Untek\Component\Web\Menu\Domain\Interfaces\Repositories\MenuRepositoryInterface;
 use Untek\Model\Components\FileRepository\Base\BaseFileCrudRepository;
 
 class MenuRepository extends BaseFileCrudRepository implements MenuRepositoryInterface

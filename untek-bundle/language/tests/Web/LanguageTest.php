@@ -4,7 +4,7 @@ namespace Untek\Bundle\Language\Tests\Web;
 
 use Tests\Helpers\FixtureHelper;
 
-class LanguageTest extends \Untek\Lib\Web\Test\BaseWebTest
+class LanguageTest extends \Untek\Component\Web\Test\BaseWebTest
 {
 
     protected function fixtures(): array

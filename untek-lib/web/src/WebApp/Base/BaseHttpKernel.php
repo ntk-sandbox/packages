@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Base;
+namespace Untek\Component\Web\WebApp\Base;
 
 use Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface;
 use Symfony\Component\HttpFoundation\Request;

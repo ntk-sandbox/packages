@@ -8,9 +8,9 @@
  */
 
 use App\User\Domain\Entities\IdentityEntity;
-use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Lib\Web\View\Libs\View;
-use Untek\Lib\Web\AdminLte3\Widgets\Sidebar\SidebarWidget;
+use Untek\Component\Web\Html\Helpers\Url;
+use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\AdminLte3\Widgets\Sidebar\SidebarWidget;
 
 ?>
 <!-- Brand Logo -->

@@ -9,7 +9,7 @@ use Symfony\Component\Mime\MimeTypes;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
 use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Base\BaseWebController;
 
 class AssetsController extends BaseWebController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Layout\Subscribers;
+namespace Untek\Component\Web\Layout\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -9,9 +9,9 @@ use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
-use Untek\Lib\Web\TwBootstrap\Widgets\Alert\AlertWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\TwBootstrap\Widgets\Alert\AlertWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\View\Libs\View;
 
 class SetLayoutSubscriber implements EventSubscriberInterface
 {

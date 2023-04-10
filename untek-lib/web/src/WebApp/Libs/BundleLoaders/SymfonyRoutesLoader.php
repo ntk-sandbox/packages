@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Libs\BundleLoaders;
+namespace Untek\Component\Web\WebApp\Libs\BundleLoaders;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Layout;
+namespace Untek\Component\Web\Layout;
 
 use Untek\Core\Bundle\Base\BaseBundle;
 

@@ -14,7 +14,7 @@ use Untek\Bundle\Notify\Domain\Interfaces\Services\FlashServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Web\Controller\Helpers\WebQueryHelper;
+use Untek\Component\Web\Controller\Helpers\WebQueryHelper;
 
 class ArticleController extends AbstractController
 {

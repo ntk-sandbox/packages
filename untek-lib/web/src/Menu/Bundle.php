@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Menu;
+namespace Untek\Component\Web\Menu;
 
 use Untek\Core\Bundle\Base\BaseBundle;
 

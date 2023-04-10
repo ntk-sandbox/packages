@@ -7,9 +7,9 @@
  */
 
 use Untek\Bundle\Language\Symfony4\Widgets\Language\LanguageWidget;
-use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Lib\Web\View\Libs\View;
-use Untek\Lib\Web\TwBootstrap\Widgets\UserNavbarMenu\UserNavbarMenuWidget;
+use Untek\Component\Web\Html\Helpers\Url;
+use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\TwBootstrap\Widgets\UserNavbarMenu\UserNavbarMenuWidget;
 use Untek\User\Notify\Symfony4\Widgets\NotifyMenu\NotifyMenuWidget;
 
 ?>

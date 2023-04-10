@@ -9,7 +9,7 @@ use Untek\Core\Collection\Libs\Collection;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Framework\Rpc\Domain\Entities\DocEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Repositories\DocsRepositoryInterface;
-use Untek\Lib\Web\Html\Helpers\HtmlHelper;
+use Untek\Component\Web\Html\Helpers\HtmlHelper;
 
 class DocsRepository implements DocsRepositoryInterface
 {

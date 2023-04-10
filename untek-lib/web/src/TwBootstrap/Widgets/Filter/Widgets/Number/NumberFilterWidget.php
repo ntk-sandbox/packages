@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Number;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets\Number;
 
-use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\BaseFilterWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Text\TextFilterWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets\BaseFilterWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets\Text\TextFilterWidget;
 
 class NumberFilterWidget extends TextFilterWidget
 {

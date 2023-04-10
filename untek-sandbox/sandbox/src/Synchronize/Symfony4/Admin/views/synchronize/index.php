@@ -2,7 +2,7 @@
 
 /**
  * @var \Untek\Core\Collection\Interfaces\Enumerable | DiffCollectionEntity[] $diffCollection
- * @var \Untek\Lib\Web\View\Libs\View $this
+ * @var \Untek\Component\Web\View\Libs\View $this
  */
 
 use Untek\Core\Arr\Helpers\ArrayHelper;

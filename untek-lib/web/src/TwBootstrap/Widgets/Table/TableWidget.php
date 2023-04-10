@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Table;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Table;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
-use Untek\Lib\Web\TwBootstrap\Widgets\Table\Helpers\TableWidgetHelper;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\TwBootstrap\Widgets\Table\Helpers\TableWidgetHelper;
 
 class TableWidget extends BaseWidget2
 {

@@ -8,7 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Core\Container\Helpers\ContainerHelper;
-use Untek\Lib\Web\Form\Libs\FormRender;
+use Untek\Component\Web\Form\Libs\FormRender;
 
 /** @var CsrfTokenManagerInterface $tokenManager */
 $tokenManager = ContainerHelper::getContainer()->get(CsrfTokenManagerInterface::class);

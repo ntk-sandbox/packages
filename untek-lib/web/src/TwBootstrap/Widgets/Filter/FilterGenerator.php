@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Filter;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Filter;
 
-use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Number\NumberFilterWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Select\SelectFilterWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets\Text\TextFilterWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets\Number\NumberFilterWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets\Select\SelectFilterWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets\Text\TextFilterWidget;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 

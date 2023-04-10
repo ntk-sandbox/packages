@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Controller\Helpers;
+namespace Untek\Component\Web\Controller\Helpers;
 
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 use Untek\Core\Instance\Helpers\ClassHelper;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\Menu\Domain\Helpers;
+namespace Untek\Component\Web\Menu\Domain\Helpers;
 
 use Untek\Component\I18Next\Facades\I18Next;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 
 class MenuHelper
 {

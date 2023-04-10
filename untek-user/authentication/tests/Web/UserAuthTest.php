@@ -2,7 +2,7 @@
 
 namespace Untek\User\Authentication\Tests\Web;
 
-use Untek\Lib\Web\Test\BaseWebTest;
+use Untek\Component\Web\Test\BaseWebTest;
 
 class UserAuthTest extends BaseWebTest
 {

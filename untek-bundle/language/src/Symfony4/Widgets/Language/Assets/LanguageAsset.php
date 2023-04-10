@@ -2,8 +2,8 @@
 
 namespace Untek\Bundle\Language\Symfony4\Widgets\Language\Assets;
 
-use Untek\Lib\Web\Asset\Base\BaseAsset;
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\Asset\Base\BaseAsset;
+use Untek\Component\Web\View\Libs\View;
 
 class LanguageAsset extends BaseAsset
 {

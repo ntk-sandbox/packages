@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @var $this \Untek\Lib\Web\View\Libs\View
+ * @var $this \Untek\Component\Web\View\Libs\View
  * @var $formView FormView|AbstractType[]
  * @var $dataProvider DataProvider
  * @var $collection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity[]
@@ -10,12 +10,12 @@
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\DataProvider\Libs\DataProvider;
-use Untek\Lib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;
 
 $attributes = [
     [
@@ -23,7 +23,7 @@ $attributes = [
         'attributeName' => 'ServerName',
         'format' => 'html',
         'value' => function (\Untek\Sandbox\Sandbox\Apache\Domain\Entities\ServerEntity $serverEntity) {
-            return \Untek\Lib\Web\Html\Helpers\Html::a($serverEntity->getServerName(), 'http://' . $serverEntity->getServerName(), ['target' => '_blank']);
+            return \Untek\Component\Web\Html\Helpers\Html::a($serverEntity->getServerName(), 'http://' . $serverEntity->getServerName(), ['target' => '_blank']);
         },
     ],
     [

@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\UserNavbarMenu;
+namespace Untek\Component\Web\TwBootstrap\Widgets\UserNavbarMenu;
 
 use Symfony\Component\Security\Core\Security;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 use Untek\User\Rbac\Domain\Entities\AssignmentEntity;
 use Untek\User\Rbac\Domain\Entities\ItemEntity;
 use Untek\User\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;

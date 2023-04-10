@@ -7,14 +7,14 @@ use Symfony\Component\HttpFoundation\HeaderUtils;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
 use Untek\Core\FileSystem\Helpers\MimeTypeHelper;
 use Untek\Framework\Rpc\Domain\Enums\Rbac\RpcDocPermissionEnum;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\DocsServiceInterface;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class DocsController extends BaseWebController implements ControllerAccessInterface
 {

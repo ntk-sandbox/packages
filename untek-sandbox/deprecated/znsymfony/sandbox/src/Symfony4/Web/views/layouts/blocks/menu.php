@@ -7,7 +7,7 @@
 
 use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\UrlHelper;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 
 $currentUri = \Untek\Lib\Components\Http\Helpers\UrlHelper::requestUri();
 

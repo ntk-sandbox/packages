@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\Asset\Base;
+namespace Untek\Component\Web\Asset\Base;
 
-use Untek\Lib\Web\Asset\Interfaces\AssetInterface;
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\Asset\Interfaces\AssetInterface;
+use Untek\Component\Web\View\Libs\View;
 
 abstract class BaseAsset implements AssetInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Lib\Web\Form\Libs\Renders;
+namespace Untek\Component\Web\Form\Libs\Renders;
 
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Validator\ConstraintViolation;
-use Untek\Lib\Web\Form\Helpers\FormErrorHelper;
+use Untek\Component\Web\Form\Helpers\FormErrorHelper;
 
 class HintRender extends BaseInputRender
 {

@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Dashboard\Symfony4\Widgets\Mock;
 
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class MockWidget extends BaseWidget2
 {

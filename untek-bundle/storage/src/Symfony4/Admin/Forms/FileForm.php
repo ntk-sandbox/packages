@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\ServiceServiceInterface;
 use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class FileForm implements ValidationByMetadataInterface, BuildFormInterface
 {

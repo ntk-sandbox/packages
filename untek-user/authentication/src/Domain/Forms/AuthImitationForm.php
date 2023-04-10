@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class AuthImitationForm implements ValidationByMetadataInterface, BuildFormInterface
 {

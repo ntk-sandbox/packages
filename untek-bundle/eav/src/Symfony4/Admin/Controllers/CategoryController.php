@@ -6,10 +6,10 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Untek\Bundle\Eav\Domain\Interfaces\Services\CategoryServiceInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use Untek\Lib\Web\Html\Helpers\Url;
-use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
-use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\Html\Helpers\Url;
+use Untek\Component\Web\Controller\Base\BaseWebCrudController;
+use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class CategoryController extends BaseWebCrudController implements ControllerAccessInterface
 {

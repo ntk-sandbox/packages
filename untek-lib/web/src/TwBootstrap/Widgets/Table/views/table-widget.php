@@ -7,7 +7,7 @@
  * @var array $bodyRows
  */
 
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\View\Libs\View;
 
 ?>
 

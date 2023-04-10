@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Subscribers;
+namespace Untek\Component\Web\WebApp\Subscribers;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;

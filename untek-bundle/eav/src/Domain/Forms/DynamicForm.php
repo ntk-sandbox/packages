@@ -19,7 +19,7 @@ use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Lib\Components\DynamicEntity\Interfaces\ValidateDynamicEntityInterface;
 use Untek\Component\I18Next\Facades\I18Next;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class DynamicForm implements BuildFormInterface, ToArrayInterface, ValidateDynamicEntityInterface
 {

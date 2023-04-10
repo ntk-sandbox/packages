@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
 
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Component\I18Next\Facades\I18Next;
-use Untek\Lib\Web\Html\Helpers\Html;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Html;
+use Untek\Component\Web\Html\Helpers\Url;
 
 class BaseAction
 {

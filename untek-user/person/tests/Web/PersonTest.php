@@ -2,7 +2,7 @@
 
 namespace Tests\Web;
 
-abstract class PersonTest extends \Untek\Lib\Web\Test\BaseWebTest
+abstract class PersonTest extends \Untek\Component\Web\Test\BaseWebTest
 {
 
     protected function fixtures(): array

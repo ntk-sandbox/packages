@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\AdminLte3\Assets;
+namespace Untek\Component\Web\AdminLte3\Assets;
 
-use Untek\Lib\Web\Asset\Base\BaseAsset;
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\Asset\Base\BaseAsset;
+use Untek\Component\Web\View\Libs\View;
 
 class AdminLte3Asset extends BaseAsset
 {

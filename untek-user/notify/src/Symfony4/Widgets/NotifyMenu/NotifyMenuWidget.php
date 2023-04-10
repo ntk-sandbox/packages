@@ -6,7 +6,7 @@ use Untek\User\Notify\Domain\Enums\NotifyStatusEnum;
 use Untek\User\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
 use Untek\Model\Query\Entities\Where;
 use Untek\Model\Query\Entities\Query;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class NotifyMenuWidget extends BaseWidget2
 {

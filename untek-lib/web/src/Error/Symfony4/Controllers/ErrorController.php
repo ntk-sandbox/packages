@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Error\Symfony4\Controllers;
+namespace Untek\Component\Web\Error\Symfony4\Controllers;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,8 +14,8 @@ use Untek\Core\Code\Helpers\DeprecateHelper;
 use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
 use Untek\User\Authentication\Symfony4\Web\Enums\WebUserEnum;
 
 DeprecateHelper::hardThrow();

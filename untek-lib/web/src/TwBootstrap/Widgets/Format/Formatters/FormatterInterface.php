@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters;
 
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
 
 interface FormatterInterface
 {

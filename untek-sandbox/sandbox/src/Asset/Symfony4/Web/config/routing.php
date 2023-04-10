@@ -2,7 +2,7 @@
 
 use Untek\Sandbox\Sandbox\Asset\Symfony4\Web\Controllers\AssetsController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
-use Untek\Lib\Web\Controller\Helpers\RouteHelper;
+use Untek\Component\Web\Controller\Helpers\RouteHelper;
 
 return function (RoutingConfigurator $routes) {
     $routes

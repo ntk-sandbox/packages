@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Controller\Base;
+namespace Untek\Component\Web\Controller\Base;
 
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormInterface;
@@ -15,12 +15,12 @@ use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;
-use Untek\Lib\Web\Controller\Traits\ControllerUrlGeneratorTrait;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
-use Untek\Lib\Web\Form\Traits\ControllerFormTrait;
-use Untek\Lib\Web\Layout\Libs\LayoutManager;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\Controller\Traits\ControllerUrlGeneratorTrait;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Traits\ControllerFormTrait;
+use Untek\Component\Web\Layout\Libs\LayoutManager;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\View\Libs\View;
 
 abstract class BaseWebController //implements ControllerLayoutInterface
 {

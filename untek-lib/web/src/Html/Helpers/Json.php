@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace Untek\Lib\Web\Html\Helpers;
+namespace Untek\Component\Web\Html\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Contract\Common\Exceptions\InvalidArgumentException;

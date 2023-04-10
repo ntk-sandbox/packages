@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @var \Untek\Lib\Web\View\Resources\Js $js
+ * @var \Untek\Component\Web\View\Resources\Js $js
  */
 
 foreach ($js->getFiles() as $item) {
@@ -10,7 +10,7 @@ foreach ($js->getFiles() as $item) {
     if (getenv('ASSET_FORCE_RELOAD') ?: false) {
         $options['src'] .= '?timestamp=' . time();
     }
-    echo \Untek\Lib\Web\Html\Helpers\Html::tag('script', '', $options);
+    echo \Untek\Component\Web\Html\Helpers\Html::tag('script', '', $options);
 }
 $js->resetFiles();
 

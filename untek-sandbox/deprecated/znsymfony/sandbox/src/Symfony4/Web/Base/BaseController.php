@@ -6,9 +6,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Untek\Component\Encoder\Encoders\XmlEncoder;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\TwBootstrap\Widgets\TabContent\TabContentWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Table\TableWidget;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\TwBootstrap\Widgets\TabContent\TabContentWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Table\TableWidget;
 
 abstract class BaseController extends BaseWebController
 {

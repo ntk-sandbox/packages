@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Libs;
+namespace Untek\Component\Web\WebApp\Libs;
 
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;

@@ -7,7 +7,7 @@
  */
 
 use Untek\Component\I18Next\Facades\I18Next;
-use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Component\Web\Html\Helpers\Html;
 
 $options = [
     null => $label,

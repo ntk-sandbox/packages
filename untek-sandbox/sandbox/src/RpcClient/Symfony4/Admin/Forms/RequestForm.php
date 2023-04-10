@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Framework\Rpc\Domain\Exceptions\InternalJsonRpcErrorException;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 use Untek\Framework\Rpc\Domain\Helpers\ErrorHelper;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\UserEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Interfaces\Services\UserServiceInterface;

@@ -2,10 +2,10 @@
 
 /**
  * @var View $this
- * @var \Untek\Lib\Web\View\Resources\Css $css
+ * @var \Untek\Component\Web\View\Resources\Css $css
  */
 
-use Untek\Lib\Web\View\Libs\View;
+use Untek\Component\Web\View\Libs\View;
 
 foreach ($css->getFiles() as $item) {
     $options = $item['options'];
@@ -14,7 +14,7 @@ foreach ($css->getFiles() as $item) {
     if (getenv('ASSET_FORCE_RELOAD') ?: false) {
         $options['href'] .= '?timestamp=' . time();
     }
-    echo \Untek\Lib\Web\Html\Helpers\Html::tag('link', '', $options);
+    echo \Untek\Component\Web\Html\Helpers\Html::tag('link', '', $options);
 }
 $css->resetFiles();
 ?>

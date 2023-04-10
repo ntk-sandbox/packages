@@ -18,7 +18,7 @@ use Untek\Framework\Rpc\Domain\Subscribers\LogSubscriber;
 use Untek\Framework\Rpc\Domain\Subscribers\TimestampSubscriber;
 use Untek\Framework\Rpc\Symfony4\HttpKernel\RpcKernel;
 use Untek\Core\App\Base\BaseApp;
-use Untek\Lib\Web\WebApp\Subscribers\WebDetectTestEnvSubscriber;
+use Untek\Component\Web\WebApp\Subscribers\WebDetectTestEnvSubscriber;
 
 abstract class BaseRpcApp extends BaseApp
 {

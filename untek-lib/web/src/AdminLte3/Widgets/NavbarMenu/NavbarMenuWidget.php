@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Lib\Web\AdminLte3\Widgets\NavbarMenu;
+namespace Untek\Component\Web\AdminLte3\Widgets\NavbarMenu;
 
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Lib\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
+use Untek\Component\Web\Menu\Domain\Interfaces\Services\MenuServiceInterface;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class NavbarMenuWidget extends BaseWidget2
 {
@@ -40,9 +40,9 @@ class NavbarMenuWidget extends BaseWidget2
         return $items;
     }
 
-    private function createWidget(array $items): \Untek\Lib\Web\TwBootstrap\Widgets\NavbarMenu\NavbarMenuWidget
+    private function createWidget(array $items): \Untek\Component\Web\TwBootstrap\Widgets\NavbarMenu\NavbarMenuWidget
     {
-        $nav = new \Untek\Lib\Web\TwBootstrap\Widgets\NavbarMenu\NavbarMenuWidget($items);
+        $nav = new \Untek\Component\Web\TwBootstrap\Widgets\NavbarMenu\NavbarMenuWidget($items);
         /*$nav->itemOptions = [
             'class' => 'nav-item',
             'tag' => 'li',

@@ -14,7 +14,7 @@ use Untek\Model\Components\Constraints\Enum;
 use Untek\Model\Validator\Interfaces\ValidationByMetadataInterface;
 use Untek\Model\Entity\Interfaces\UniqueInterface;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
 
 class ApplicationEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface, BuildFormInterface
 {

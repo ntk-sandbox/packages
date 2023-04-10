@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\RestApiApp\Base;
+namespace Untek\Component\Web\RestApiApp\Base;
 
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;

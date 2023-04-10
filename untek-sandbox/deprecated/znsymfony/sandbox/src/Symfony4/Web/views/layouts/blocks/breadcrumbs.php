@@ -2,7 +2,7 @@
 
 use Untek\Core\Text\Helpers\Inflector;
 use Untek\Lib\Components\Http\Helpers\UrlHelper;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 $currentUri = UrlHelper::requestUri();
 $uri = trim($currentUri, '/');

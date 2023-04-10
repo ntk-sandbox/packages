@@ -11,13 +11,13 @@ use Untek\Bundle\Storage\Domain\Interfaces\Services\FileServiceInterface;
 use Untek\Bundle\Storage\Domain\Interfaces\Services\UploadServiceInterface;
 use Untek\Bundle\Storage\Symfony4\Admin\Forms\FileForm;
 use Untek\Core\Contract\Common\Exceptions\ReadOnlyException;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Lib\Web\Controller\Base\BaseWebCrudController;
-use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\Controller\Base\BaseWebCrudController;
+use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class FileController extends BaseWebCrudController implements ControllerAccessInterface
 {

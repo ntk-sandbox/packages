@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Filter\Widgets;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Filter\Widgets;
 
-use Untek\Lib\Web\Html\Helpers\Html;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Html\Helpers\Html;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class BaseFilterWidget extends BaseWidget2
 {

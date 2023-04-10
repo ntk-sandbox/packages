@@ -1,10 +1,10 @@
 <?php
 
-namespace Untek\Lib\Web\Html\Helpers;
+namespace Untek\Component\Web\Html\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Web\Html\Helpers\Html;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Html;
+use Untek\Component\Web\Html\Helpers\Url;
 
 /**
  * Работа с HTML

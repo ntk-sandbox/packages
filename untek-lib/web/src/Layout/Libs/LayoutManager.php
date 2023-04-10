@@ -1,12 +1,12 @@
 <?php
 
-namespace Untek\Lib\Web\Layout\Libs;
+namespace Untek\Component\Web\Layout\Libs;
 
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Component\I18Next\Interfaces\Services\TranslationServiceInterface;
-use Untek\Lib\Web\TwBootstrap\Widgets\Alert\AlertWidget;
-use Untek\Lib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Alert\AlertWidget;
+use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 class LayoutManager
 {

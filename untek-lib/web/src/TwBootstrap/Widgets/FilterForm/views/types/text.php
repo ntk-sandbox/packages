@@ -6,7 +6,7 @@
  * @var $value
  */
 
-use Untek\Lib\Web\Html\Helpers\Html; ?>
+use Untek\Component\Web\Html\Helpers\Html; ?>
 
 <?= Html::input('text', $inputName, $value, [
     'class' => 'form-control',

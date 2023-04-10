@@ -1,26 +1,26 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Libs;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Libs;
 
 use DateTime;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Enums\TypeEnum;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ArrayFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\BooleanFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\DoubleFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\FormatterInterface;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\HtmlFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\IntegerFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\NullFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ObjectFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ResourceClosedFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\ResourceFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\StringFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\TimeFormatter;
-use Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\UnknownTypeFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Enums\TypeEnum;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ArrayFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\BooleanFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\DoubleFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\FormatterInterface;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\HtmlFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\IntegerFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\NullFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ObjectFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ResourceClosedFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ResourceFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\StringFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\TimeFormatter;
+use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\UnknownTypeFormatter;
 
 class FormatEncoder
 {

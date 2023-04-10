@@ -1,11 +1,11 @@
 <?php
 
-namespace Untek\Lib\Web\Widget\Base;
+namespace Untek\Component\Web\Widget\Base;
 
 use Untek\Core\Instance\Helpers\ClassHelper;
 
 use Untek\Core\Text\Helpers\TemplateHelper;
-use Untek\Lib\Web\Widget\Interfaces\WidgetInterface;
+use Untek\Component\Web\Widget\Interfaces\WidgetInterface;
 
 abstract class BaseWidget implements WidgetInterface
 {

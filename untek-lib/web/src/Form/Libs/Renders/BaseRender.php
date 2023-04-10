@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Form\Libs\Renders;
+namespace Untek\Component\Web\Form\Libs\Renders;
 
 use Symfony\Component\Form\FormView;
 

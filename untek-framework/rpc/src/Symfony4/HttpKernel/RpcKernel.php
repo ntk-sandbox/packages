@@ -14,7 +14,7 @@ use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Untek\Core\Env\Helpers\EnvHelper;
 use Untek\Framework\Rpc\Domain\Libs\ResponseFormatter;
 use Untek\Framework\Rpc\Symfony4\Libs\RpcRequestHandler;
-use Untek\Lib\Web\WebApp\Base\BaseHttpKernel;
+use Untek\Component\Web\WebApp\Base\BaseHttpKernel;
 
 class RpcKernel extends BaseHttpKernel
 {

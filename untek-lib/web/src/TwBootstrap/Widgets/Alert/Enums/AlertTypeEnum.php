@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Alert\Enums;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Alert\Enums;
 
 class AlertTypeEnum
 {

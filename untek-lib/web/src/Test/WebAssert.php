@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Test;
+namespace Untek\Component\Web\Test;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use Symfony\Component\BrowserKit\AbstractBrowser;

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @var $this \Untek\Lib\Web\View\Libs\View
+ * @var $this \Untek\Component\Web\View\Libs\View
  * @var $formView FormView|AbstractType[]
- * @var $formRender \Untek\Lib\Web\Form\Libs\FormRender
+ * @var $formRender \Untek\Component\Web\Form\Libs\FormRender
  * @var $dataProvider DataProvider
  * @var $baseUri string
  * @var $packageCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\Bundle\Domain\Entities\BundleEntity[]

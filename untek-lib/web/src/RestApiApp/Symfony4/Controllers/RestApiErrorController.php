@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\RestApiApp\Symfony4\Controllers;
+namespace Untek\Component\Web\RestApiApp\Symfony4\Controllers;
 
 use Exception;
 use Psr\Log\LoggerInterface;
@@ -14,8 +14,8 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 use Untek\Core\Contract\Common\Exceptions\NotFoundException;
 use Untek\Core\Env\Helpers\EnvHelper;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Error\Symfony4\Interfaces\ErrorControllerInterface;
 
 class RestApiErrorController extends BaseWebController implements ErrorControllerInterface
 {

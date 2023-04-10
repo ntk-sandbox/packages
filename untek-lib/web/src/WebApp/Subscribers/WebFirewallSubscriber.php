@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\WebApp\Subscribers;
+namespace Untek\Component\Web\WebApp\Subscribers;
 
 use Symfony\Bundle\FrameworkBundle\Test\TestBrowserToken;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -15,8 +15,8 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Contract\Common\Exceptions\InvalidConfigException;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
-use Untek\Lib\Web\SignedCookie\Libs\CookieValue;
+use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Component\Web\SignedCookie\Libs\CookieValue;
 use Untek\User\Authentication\Domain\Enums\WebCookieEnum;
 use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;

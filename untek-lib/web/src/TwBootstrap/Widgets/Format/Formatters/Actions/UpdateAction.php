@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\Actions;
 
 class UpdateAction extends BaseAction
 {

@@ -12,9 +12,9 @@ use Untek\Bundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInter
 use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\User\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use Untek\Component\I18Next\Facades\I18Next;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
-use Untek\Lib\Web\Form\Traits\ControllerFormTrait;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Component\Web\Form\Traits\ControllerFormTrait;
 use Untek\User\Rbac\Domain\Enums\RbacRoleEnum;
 
 class CurrentController extends BaseWebController implements ControllerAccessInterface

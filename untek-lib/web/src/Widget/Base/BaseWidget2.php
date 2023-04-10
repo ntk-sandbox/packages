@@ -1,13 +1,13 @@
 <?php
 
-namespace Untek\Lib\Web\Widget\Base;
+namespace Untek\Component\Web\Widget\Base;
 
 use ReflectionClass;
 use Untek\Core\Instance\Helpers\ClassHelper;
 
-use Untek\Lib\Web\View\Helpers\RenderHelper;
-use Untek\Lib\Web\View\Libs\View;
-use Untek\Lib\Web\Widget\Interfaces\WidgetInterface2;
+use Untek\Component\Web\View\Helpers\RenderHelper;
+use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\Widget\Interfaces\WidgetInterface2;
 
 abstract class BaseWidget2 implements WidgetInterface2
 {

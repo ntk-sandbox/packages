@@ -1,13 +1,13 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Pagination;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Pagination;
 
 use Symfony\Component\HttpFoundation\Request;
 use Untek\Core\Text\Helpers\TemplateHelper;
 use Untek\Model\DataProvider\Entities\DataProviderEntity;
 use Untek\Model\DataProvider\Libs\DataProvider;
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
-use Untek\Lib\Web\TwBootstrap\Widgets\Menu\MenuWidget;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\TwBootstrap\Widgets\Menu\MenuWidget;
 
 class PaginationWidget extends BaseWidget2
 {

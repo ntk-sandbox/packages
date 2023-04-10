@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\RequireJs\Widgets\RequireJs;
+namespace Untek\Component\Web\RequireJs\Widgets\RequireJs;
 
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class RequireJsWidget extends BaseWidget2
 {

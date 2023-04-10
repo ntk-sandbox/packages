@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Controller\Base;
+namespace Untek\Component\Web\Controller\Base;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -14,10 +14,10 @@ use Untek\Model\Service\Base\BaseCrudService;
 use Untek\Model\Service\Interfaces\CrudServiceInterface;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
-use Untek\Lib\Web\Controller\Enums\CrudControllerActionEnum;
-use Untek\Lib\Web\Controller\Helpers\WebQueryHelper;
-use Untek\Lib\Web\Form\Interfaces\BuildFormInterface;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Controller\Enums\CrudControllerActionEnum;
+use Untek\Component\Web\Controller\Helpers\WebQueryHelper;
+use Untek\Component\Web\Form\Interfaces\BuildFormInterface;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
 
 abstract class BaseWebCrudController extends BaseWebController

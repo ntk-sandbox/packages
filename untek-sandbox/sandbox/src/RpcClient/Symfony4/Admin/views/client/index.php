@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @var $this \Untek\Lib\Web\View\Libs\View
+ * @var $this \Untek\Component\Web\View\Libs\View
  * @var $formView FormView|AbstractType[]
- * @var $formRender \Untek\Lib\Web\Form\Libs\FormRender
+ * @var $formRender \Untek\Component\Web\Form\Libs\FormRender
  * @var $dataProvider DataProvider
  * @var $baseUri string
  * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
@@ -15,7 +15,7 @@
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use Untek\Lib\Web\Html\Helpers\Url;
+use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Model\DataProvider\Libs\DataProvider;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 

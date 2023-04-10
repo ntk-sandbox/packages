@@ -1,8 +1,8 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\FilterForm;
+namespace Untek\Component\Web\TwBootstrap\Widgets\FilterForm;
 
-use Untek\Lib\Web\Widget\Base\BaseWidget2;
+use Untek\Component\Web\Widget\Base\BaseWidget2;
 
 class FilterWidget extends BaseWidget2
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\TwBootstrap\Widgets\Format\Entities;
+namespace Untek\Component\Web\TwBootstrap\Widgets\Format\Entities;
 
 use Symfony\Component\PropertyAccess\Exception\UnexpectedTypeException;
 use Untek\Core\Instance\Helpers\PropertyHelper;

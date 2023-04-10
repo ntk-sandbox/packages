@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Web\Menu\Domain\Interfaces\Services;
+namespace Untek\Component\Web\Menu\Domain\Interfaces\Services;
 
 use Untek\Model\Service\Interfaces\CrudServiceInterface;
 

@@ -6,10 +6,10 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
-use Untek\Lib\Web\Controller\Interfaces\ControllerAccessInterface;
-use Untek\Lib\Web\Form\Libs\FormManager;
-use Untek\Lib\Web\Layout\Libs\LayoutManager;
+use Untek\Component\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
+use Untek\Component\Web\Form\Libs\FormManager;
+use Untek\Component\Web\Layout\Libs\LayoutManager;
 use Untek\Sandbox\Sandbox\Synchronize\Domain\Interfaces\Services\SynchronizeServiceInterface;
 use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
 

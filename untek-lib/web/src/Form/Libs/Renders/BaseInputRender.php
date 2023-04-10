@@ -1,9 +1,9 @@
 <?php
 
-namespace Untek\Lib\Web\Form\Libs\Renders;
+namespace Untek\Component\Web\Form\Libs\Renders;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Web\Html\Helpers\Html;
+use Untek\Component\Web\Html\Helpers\Html;
 
 abstract class BaseInputRender extends BaseRender
 {

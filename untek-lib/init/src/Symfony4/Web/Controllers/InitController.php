@@ -12,7 +12,7 @@ use Untek\Lib\Init\Domain\Services\RequirementService;
 use Untek\Database\Migration\Domain\Entities\MigrationEntity;
 use Untek\Database\Migration\Domain\Services\MigrationService;
 use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;
-use Untek\Lib\Web\Controller\Base\BaseWebController;
+use Untek\Component\Web\Controller\Base\BaseWebController;
 
 class InitController extends BaseWebController
 {
