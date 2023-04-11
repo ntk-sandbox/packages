@@ -5,7 +5,7 @@ namespace Untek\Framework\Wsdl\Symfony\Web\Controllers;
 use Untek\Framework\Wsdl\Domain\Interfaces\Repositories\ServiceRepositoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Core\FileSystem\Helpers\FileStorageHelper;
 use Untek\Component\Web\Xml\Libs\XmlResponse;
 

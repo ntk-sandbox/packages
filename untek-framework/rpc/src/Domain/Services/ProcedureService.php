@@ -29,7 +29,7 @@ use Untek\Framework\Rpc\Domain\Helpers\RequestHelper;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\ProcedureServiceInterface;
 use Untek\Framework\Rpc\Domain\Libs\ResponseFormatter;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 
 class ProcedureService implements ProcedureServiceInterface
 {

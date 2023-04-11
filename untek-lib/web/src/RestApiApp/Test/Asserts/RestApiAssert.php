@@ -5,7 +5,7 @@ namespace Untek\Component\Web\RestApiApp\Test\Asserts;
 use Symfony\Component\HttpFoundation\Response;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Tool\Test\Asserts\BaseAssert;
 use Untek\Tool\Test\Helpers\RestHelper;
 

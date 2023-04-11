@@ -3,7 +3,7 @@
 namespace Untek\Framework\Rpc\Test;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
 use Untek\Framework\Rpc\Domain\Enums\RpcVersionEnum;

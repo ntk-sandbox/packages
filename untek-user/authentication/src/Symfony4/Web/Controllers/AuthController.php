@@ -18,7 +18,7 @@ use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsBlockedException;
 use Untek\Bundle\Summary\Domain\Exceptions\AttemptsExhaustedException;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Component\Web\Controller\Base\BaseWebController;
 use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Component\Web\Form\Traits\ControllerFormTrait;

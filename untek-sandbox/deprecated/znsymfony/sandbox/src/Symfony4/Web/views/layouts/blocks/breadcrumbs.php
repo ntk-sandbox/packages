@@ -1,7 +1,7 @@
 <?php
 
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Lib\Components\Http\Helpers\UrlHelper;
+use Untek\Component\Http\Helpers\UrlHelper;
 use Untek\Component\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 
 $currentUri = UrlHelper::requestUri();

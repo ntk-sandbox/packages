@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\HeaderUtils;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
+use Untek\Component\Http\Enums\HttpHeaderEnum;
 use Untek\Component\Web\Html\Helpers\Url;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
 use Untek\Core\FileSystem\Helpers\MimeTypeHelper;

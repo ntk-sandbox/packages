@@ -11,7 +11,7 @@ class UrlHelper
 
     public static function getSector(string $sectorIndex): ?string
     {
-        $currentUri = \Untek\Lib\Components\Http\Helpers\UrlHelper::requestUri();
+        $currentUri = \Untek\Component\Http\Helpers\UrlHelper::requestUri();
         $currentUriArr = explode('/', trim($currentUri, '/'));
         $currentModule = $currentUriArr[$sectorIndex] ?? null;
         return $currentModule;

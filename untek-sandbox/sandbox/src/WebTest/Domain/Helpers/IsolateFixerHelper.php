@@ -4,7 +4,7 @@ namespace Untek\Sandbox\Sandbox\WebTest\Domain\Helpers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Untek\Lib\Components\Http\Helpers\SymfonyHttpResponseHelper;
+use Untek\Component\Http\Helpers\SymfonyHttpResponseHelper;
 
 class IsolateFixerHelper
 {

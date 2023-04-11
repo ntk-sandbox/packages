@@ -12,7 +12,7 @@ use Untek\Bundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Core\Text\Helpers\TemplateHelper;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Lib\Rest\Web\Controller\BaseCrudWebController;
 use Untek\Component\Web\Controller\Traits\ControllerUrlGeneratorTrait;

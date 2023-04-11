@@ -9,7 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Core\Collection\Helpers\CollectionHelper;
 use Untek\Core\Collection\Libs\Collection;
-use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Component\Http\Enums\HttpMethodEnum;
 use Untek\Component\FormatAdapter\Helpers\StoreHelper;
 use Untek\Tool\Package\Domain\Entities\GroupEntity;
 use Untek\Tool\Package\Domain\Entities\PackageEntity;

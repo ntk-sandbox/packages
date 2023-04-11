@@ -8,7 +8,7 @@ use Symfony\Component\Console\Question\ConfirmationQuestion;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Core\Text\Helpers\TextHelper;
 use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use Untek\Lib\Components\Http\Helpers\UrlHelper;
+use Untek\Component\Http\Helpers\UrlHelper;
 
 trait OverwriteDatabaseTrait
 {

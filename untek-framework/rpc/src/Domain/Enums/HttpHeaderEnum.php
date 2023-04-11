@@ -2,7 +2,7 @@
 
 namespace Untek\Framework\Rpc\Domain\Enums;
 
-class HttpHeaderEnum extends \Untek\Lib\Components\Http\Enums\HttpHeaderEnum
+class HttpHeaderEnum extends \Untek\Component\Http\Enums\HttpHeaderEnum
 {
 
     const IP = 'ip';

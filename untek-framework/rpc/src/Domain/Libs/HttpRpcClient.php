@@ -7,7 +7,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\RequestOptions;
 use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
 use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
-use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Component\Http\Enums\HttpMethodEnum;
 
 class HttpRpcClient extends BaseRpcClient
 {

@@ -9,7 +9,7 @@ class IpHelper
     {
         $collection = [];
         foreach ($domains as $domain) {
-            $collection[] = \Untek\Lib\Components\Http\Helpers\IpHelper::getIpByUrl($domain);
+            $collection[] = \Untek\Component\Http\Helpers\IpHelper::getIpByUrl($domain);
         }
         return $collection;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Components\Http\Helpers;
+namespace Untek\Component\Http\Helpers;
 
 class IpHelper
 {

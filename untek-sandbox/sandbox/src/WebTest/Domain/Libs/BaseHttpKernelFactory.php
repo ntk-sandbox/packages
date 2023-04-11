@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\TerminableInterface;
 use Untek\Core\App\Interfaces\AppInterface;
 use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
 use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
-use Untek\Lib\Components\Http\Helpers\SymfonyHttpResponseHelper;
+use Untek\Component\Http\Helpers\SymfonyHttpResponseHelper;
 
 abstract class BaseHttpKernelFactory
 {

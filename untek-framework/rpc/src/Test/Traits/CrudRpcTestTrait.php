@@ -7,7 +7,7 @@ use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Test\Enums\CrudMethodEnum;
 use Untek\Framework\Rpc\Test\RpcAssert;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 
 trait CrudRpcTestTrait
 {

@@ -5,7 +5,7 @@ namespace Untek\Component\Web\RestApiApp\Base;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 use Throwable;
-use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Component\Http\Enums\HttpMethodEnum;
 
 abstract class BaseHttpRepository
 {

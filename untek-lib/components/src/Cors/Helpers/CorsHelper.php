@@ -3,9 +3,9 @@
 namespace Untek\Lib\Components\Cors\Helpers;
 
 use Untek\Core\Code\Helpers\DeprecateHelper;
-use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
-use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
-use Untek\Lib\Components\Http\Enums\HttpServerEnum;
+use Untek\Component\Http\Enums\HttpHeaderEnum;
+use Untek\Component\Http\Enums\HttpMethodEnum;
+use Untek\Component\Http\Enums\HttpServerEnum;
 use Untek\Core\Enum\Helpers\EnumHelper;
 
 DeprecateHelper::hardThrow();

@@ -3,7 +3,7 @@
 use Untek\Core\Env\Helpers\EnvHelper;
 
 use Fruitcake\Cors\CorsService;
-use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Component\Http\Enums\HttpMethodEnum;
 
 use Untek\Crypt\Pki\Domain\Helpers\RsaKeyLoaderHelper;
 use Untek\Framework\Rpc\Symfony4\Web\Libs\CryptoProviderInterface;

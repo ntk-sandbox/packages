@@ -1,7 +1,7 @@
 <?php
 
 use Fruitcake\Cors\CorsService;
-use Untek\Lib\Components\Http\Enums\HttpMethodEnum;
+use Untek\Component\Http\Enums\HttpMethodEnum;
 
 return [
     'singletons' => [

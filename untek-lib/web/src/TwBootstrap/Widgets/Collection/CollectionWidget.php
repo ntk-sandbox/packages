@@ -4,7 +4,7 @@ namespace Untek\Component\Web\TwBootstrap\Widgets\Collection;
 
 use Symfony\Component\HttpFoundation\Request;
 use Untek\Core\Collection\Helpers\CollectionHelper;
-use Untek\Lib\Components\Http\Helpers\UrlHelper;
+use Untek\Component\Http\Helpers\UrlHelper;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Entities\AttributeEntity;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Libs\FormatEncoder;
 use Untek\Component\Web\Widget\Base\BaseWidget2;

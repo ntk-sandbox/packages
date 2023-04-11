@@ -1,6 +1,6 @@
 <?php
 
-namespace Untek\Lib\Components\Http\Enums;
+namespace Untek\Component\Http\Enums;
 
 /**
  * HTTP-методы

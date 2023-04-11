@@ -7,8 +7,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mime\MimeTypes;
 use Untek\Core\FileSystem\Helpers\FilePathHelper;
-use Untek\Lib\Components\Http\Enums\HttpHeaderEnum;
-use Untek\Lib\Components\Http\Enums\HttpStatusCodeEnum;
+use Untek\Component\Http\Enums\HttpHeaderEnum;
+use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Component\Web\Controller\Base\BaseWebController;
 
 class AssetsController extends BaseWebController
