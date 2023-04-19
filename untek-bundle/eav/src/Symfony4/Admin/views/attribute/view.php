@@ -11,7 +11,7 @@ use Untek\Bundle\Eav\Domain\Enums\AttributeTypeEnum;
 use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Component\Web\Controller\Helpers\ActionHelper;
-use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\View\Application\Services\View;
 use Untek\Component\Web\TwBootstrap\Widgets\Detail\DetailWidget;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\BooleanFormatter;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;

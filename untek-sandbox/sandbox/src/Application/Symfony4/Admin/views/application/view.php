@@ -10,7 +10,7 @@ use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Component\Web\Controller\Helpers\ActionHelper;
-use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\View\Application\Services\View;
 use Untek\Component\Web\TwBootstrap\Widgets\Detail\DetailWidget;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\EnumFormatter;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;

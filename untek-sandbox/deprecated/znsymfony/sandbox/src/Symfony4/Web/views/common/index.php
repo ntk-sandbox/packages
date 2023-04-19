@@ -9,7 +9,7 @@
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
-use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\View\Application\Services\View;
 
 ?>
 

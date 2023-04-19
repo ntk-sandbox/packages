@@ -3,7 +3,7 @@
 use Untek\Symfony\Sandbox\Symfony4\Web\Helpers\ModuleHelper;
 use Untek\Core\Text\Helpers\Inflector;
 use Untek\Bundle\Language\Symfony4\Widgets\Language\LanguageWidget;
-use Untek\Component\Web\View\Libs\View;
+use Untek\Component\Web\View\Application\Services\View;
 use Untek\Component\Web\TwBootstrap\Widgets\UserNavbarMenu\UserNavbarMenuWidget;
 
 $modules = ModuleHelper::getModules();
