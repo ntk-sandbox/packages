@@ -14,7 +14,7 @@ use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
 use Untek\Component\Web\Controller\Base\BaseWebController;
 use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Component\Web\Form\Libs\FormManager;
-use Untek\Component\Web\Layout\Libs\LayoutManager;
+use Untek\FrameworkPlugin\HttpLayout\Infrastructure\Libs\LayoutManager;
 use Untek\Sandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
 use Untek\Sandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
 use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;

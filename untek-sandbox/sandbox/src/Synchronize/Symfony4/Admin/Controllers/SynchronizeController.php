@@ -9,7 +9,7 @@ use Untek\Component\Http\Enums\HttpStatusCodeEnum;
 use Untek\Component\Web\Controller\Base\BaseWebController;
 use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Component\Web\Form\Libs\FormManager;
-use Untek\Component\Web\Layout\Libs\LayoutManager;
+use Untek\FrameworkPlugin\HttpLayout\Infrastructure\Libs\LayoutManager;
 use Untek\Sandbox\Sandbox\Synchronize\Domain\Interfaces\Services\SynchronizeServiceInterface;
 use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
 

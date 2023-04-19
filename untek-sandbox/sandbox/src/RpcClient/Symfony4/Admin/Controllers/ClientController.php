@@ -19,7 +19,7 @@ use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Component\Web\Controller\Base\BaseWebController;
 use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Component\Web\Form\Libs\FormManager;
-use Untek\Component\Web\Layout\Libs\LayoutManager;
+use Untek\FrameworkPlugin\HttpLayout\Infrastructure\Libs\LayoutManager;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientFavoritePermissionEnum;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Enums\Rbac\RpcClientHistoryPermissionEnum;

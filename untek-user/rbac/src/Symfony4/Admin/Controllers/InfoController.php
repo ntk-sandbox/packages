@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Untek\Component\Web\Controller\Base\BaseWebController;
 use Untek\Component\Web\Controller\Interfaces\ControllerAccessInterface;
 use Untek\Component\Web\Form\Libs\FormManager;
-use Untek\Component\Web\Layout\Libs\LayoutManager;
+use Untek\FrameworkPlugin\HttpLayout\Infrastructure\Libs\LayoutManager;
 use Untek\User\Rbac\Domain\Enums\Rbac\ExtraPermissionEnum;
 use Untek\User\Rbac\Domain\Interfaces\Services\ManagerServiceInterface;
 use Untek\User\Rbac\Domain\Interfaces\Services\RoleServiceInterface;
