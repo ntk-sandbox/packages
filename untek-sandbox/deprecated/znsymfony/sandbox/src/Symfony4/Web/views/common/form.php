@@ -1,13 +1,14 @@
 <?php
 
 /**
- * @var View $view
+ * @var HtmlRenderInterface $view
  * @var $formView FormView|AbstractType[]
  */
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
+use Untek\Component\Web\View\Application\Services\HtmlRenderInterface;
 use Untek\Core\Container\Helpers\ContainerHelper;
 use Untek\Component\Web\Form\Libs\FormRender;
 use Untek\Component\Web\View\Application\Services\View;
