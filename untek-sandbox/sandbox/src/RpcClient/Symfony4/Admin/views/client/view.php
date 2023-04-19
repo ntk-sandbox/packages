@@ -12,7 +12,7 @@ use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Model\Entity\Interfaces\EntityIdInterface;
 use Untek\Component\Web\Controller\Helpers\ActionHelper;
-use Untek\Component\Web\View\Application\Services\View;
+use Untek\Component\Web\HtmlRender\Application\Services\View;
 use Untek\Component\Web\TwBootstrap\Widgets\Detail\DetailWidget;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter;
 use Untek\Component\Web\TwBootstrap\Widgets\Format\Formatters\LinkFormatter;

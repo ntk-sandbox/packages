@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @var $this \Untek\Component\Web\View\Application\Services\View
+ * @var $this \Untek\Component\Web\HtmlRender\Application\Services\View
  * @var $baseUri string
  * @var $favoriteEntity \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
  * @var $collection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]

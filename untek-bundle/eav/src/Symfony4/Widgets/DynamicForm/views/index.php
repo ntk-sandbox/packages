@@ -8,7 +8,7 @@
 use Untek\Bundle\Eav\Symfony4\Widgets\DynamicInput\DynamicInputWidget;
 use Untek\Component\I18Next\Facades\I18Next;
 use Untek\Component\Web\Form\Libs\FormRender;
-use Untek\Component\Web\View\Application\Services\View;
+use Untek\Component\Web\HtmlRender\Application\Services\View;
 
 ?>
 

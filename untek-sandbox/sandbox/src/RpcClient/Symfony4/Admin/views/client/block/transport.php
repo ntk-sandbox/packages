@@ -2,7 +2,7 @@
 
 
 /**
- * @var $this \Untek\Component\Web\View\Application\Services\View
+ * @var $this \Untek\Component\Web\HtmlRender\Application\Services\View
  * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
  * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
  */

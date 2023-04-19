@@ -6,7 +6,7 @@
  * @var array $list
  */
 
-use Untek\Component\Web\View\Application\Services\View;
+use Untek\Component\Web\HtmlRender\Application\Services\View;
 
 ?>
 
