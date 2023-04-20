@@ -8,8 +8,8 @@
  */
 
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Framework\Rpc\Domain\Encoders\RequestEncoder;
-use Untek\Framework\Rpc\Domain\Encoders\ResponseEncoder;
+use Untek\Framework\Rpc\Infrastructure\Encoders\RequestEncoder;
+use Untek\Framework\Rpc\Infrastructure\Encoders\ResponseEncoder;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ApiKeyEntity;
 
 $responseEncoder = new ResponseEncoder();
