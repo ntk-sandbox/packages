@@ -8,7 +8,7 @@ use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
-use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseRpcController;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Entities\MethodEntity;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;

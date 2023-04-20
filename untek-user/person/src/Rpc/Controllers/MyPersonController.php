@@ -5,7 +5,7 @@ namespace Untek\User\Person\Rpc\Controllers;
 use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
-use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseRpcController;
 use Untek\User\Person\Domain\Interfaces\Services\MyPersonServiceInterface;
 
 class MyPersonController extends BaseRpcController

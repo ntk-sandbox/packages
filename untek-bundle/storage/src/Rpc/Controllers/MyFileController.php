@@ -4,7 +4,7 @@ namespace Untek\Bundle\Storage\Rpc\Controllers;
 
 use Untek\Bundle\Storage\Domain\Interfaces\Services\MyFileServiceInterface;
 use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 
 class MyFileController extends BaseCrudRpcController
 {

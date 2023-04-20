@@ -6,7 +6,7 @@ use Untek\Sandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterfa
 use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 
 class PersonController extends BaseCrudRpcController
 {

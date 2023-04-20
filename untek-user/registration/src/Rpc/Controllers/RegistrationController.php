@@ -7,7 +7,7 @@ use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Container\Traits\ContainerAwareTrait;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
-use Untek\Framework\Rpc\Rpc\Base\BaseRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseRpcController;
 use Untek\User\Registration\Domain\Forms\CreateAccountForm;
 use Untek\User\Registration\Domain\Forms\RequestActivationCodeForm;
 use Untek\User\Registration\Domain\Interfaces\Services\RegistrationServiceInterface;

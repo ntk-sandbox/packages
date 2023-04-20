@@ -3,7 +3,7 @@
 namespace Untek\User\Identity\Rpc\Controllers;
 
 use Untek\User\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 
 class IdentityController extends BaseCrudRpcController
 {

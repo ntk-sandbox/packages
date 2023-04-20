@@ -11,7 +11,7 @@ use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Model\Query\Entities\Query;
 use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 
 class MessageController extends BaseCrudRpcController
 {

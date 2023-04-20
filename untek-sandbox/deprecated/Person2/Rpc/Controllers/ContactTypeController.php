@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\ContactTypeServiceInterface;
 
 class ContactTypeController extends BaseCrudRpcController

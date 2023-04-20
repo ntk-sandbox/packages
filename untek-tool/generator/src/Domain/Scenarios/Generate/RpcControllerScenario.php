@@ -8,7 +8,7 @@ use Laminas\Code\Generator\MethodGenerator;
 use Laminas\Code\Generator\ParameterGenerator;
 use Laminas\Code\Generator\PropertyGenerator;
 use Untek\Core\Text\Helpers\Inflector;
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 use Untek\Tool\Generator\Domain\Helpers\ClassHelper;
 
 class RpcControllerScenario extends BaseScenario

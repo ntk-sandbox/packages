@@ -2,7 +2,7 @@
 
 namespace Untek\Bundle\Reference\Rpc\Controllers;
 
-use Untek\Framework\Rpc\Rpc\Base\BaseCrudRpcController;
+use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 use Untek\Bundle\Reference\Domain\Interfaces\Services\BookServiceInterface;
 
 class BookController extends BaseCrudRpcController
