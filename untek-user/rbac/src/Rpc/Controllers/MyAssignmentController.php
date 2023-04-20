@@ -3,8 +3,8 @@
 namespace Untek\User\Rbac\Rpc\Controllers;
 
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\User\Rbac\Domain\Interfaces\Services\MyAssignmentServiceInterface;
 
 class MyAssignmentController

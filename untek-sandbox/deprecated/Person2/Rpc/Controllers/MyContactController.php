@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
 use Untek\Bundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use Untek\Model\Query\Entities\Query;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyContactServiceInterface;
 

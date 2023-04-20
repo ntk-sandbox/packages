@@ -18,7 +18,7 @@ use Untek\FrameworkPlugin\HttpLayout\Infrastructure\Libs\LayoutManager;
 use Untek\Sandbox\Sandbox\Bundle\Domain\Interfaces\Services\BundleServiceInterface;
 use Untek\Sandbox\Sandbox\Generator\Domain\Helpers\TableMapperHelper;
 use Untek\Database\Base\Domain\Repositories\Eloquent\SchemaRepository;
-use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Model\MethodEntity;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Sandbox\Sandbox\Generator\Domain\Entities\FavoriteEntity;
 use Untek\Sandbox\Sandbox\Generator\Domain\Helpers\FavoriteHelper;

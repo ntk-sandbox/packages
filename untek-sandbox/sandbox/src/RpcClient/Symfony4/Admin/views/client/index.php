@@ -6,8 +6,8 @@
  * @var $formRender \Untek\Component\Web\Form\Libs\FormRender
  * @var $dataProvider DataProvider
  * @var $baseUri string
- * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
- * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
+ * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Model\RpcResponseEntity
+ * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Model\RpcRequestEntity
  * @var $favoriteEntity \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity | null
  * @var $favoriteCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]
  * @var $historyCollection \Untek\Core\Collection\Interfaces\Enumerable | \Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity[]

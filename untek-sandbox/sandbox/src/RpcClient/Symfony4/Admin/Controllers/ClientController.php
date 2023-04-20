@@ -13,7 +13,7 @@ use Untek\Lib\Components\Status\Enums\StatusEnum;
 use Untek\Core\Collection\Helpers\CollectionHelper;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Model\MethodEntity;
 use Untek\Framework\Rpc\Domain\Enums\RpcErrorCodeEnum;
 use Untek\Framework\Rpc\Domain\Interfaces\Services\MethodServiceInterface;
 use Untek\Component\Web\Controller\Base\BaseWebController;

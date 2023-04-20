@@ -6,8 +6,8 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 use Untek\Core\Arr\Helpers\ArrayHelper;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 use Untek\User\Person\Domain\Interfaces\Services\PersonServiceInterface;
 

@@ -2,7 +2,7 @@
 
 namespace Untek\Sandbox\Sandbox\RpcClient\Domain\Helpers;
 
-use Untek\Framework\Rpc\Domain\Entities\MethodEntity;
+use Untek\Framework\Rpc\Domain\Model\MethodEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Symfony4\Admin\Forms\RequestForm;
 

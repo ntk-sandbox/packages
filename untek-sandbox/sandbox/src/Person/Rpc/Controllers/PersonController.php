@@ -4,8 +4,8 @@ namespace Untek\Sandbox\Sandbox\Person\Rpc\Controllers;
 
 use Untek\Sandbox\Sandbox\Person\Domain\Interfaces\Services\PersonServiceInterface;
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 
 class PersonController extends BaseCrudRpcController

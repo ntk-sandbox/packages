@@ -4,8 +4,8 @@ namespace Untek\Kaz\Iin\Rpc\Controllers;
 
 use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Kaz\Iin\Domain\Helpers\IinParser;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 
 class IinController
 {

@@ -9,8 +9,8 @@ use Untek\Bundle\Messenger\Domain\Interfaces\Services\TournamentServiceInterface
 use Untek\Core\DotEnv\Domain\Libs\DotEnv;
 use Untek\Model\Validator\Helpers\ValidationHelper;
 use Untek\Model\Query\Entities\Query;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\Framework\Rpc\Presentation\Base\BaseCrudRpcController;
 
 class MessageController extends BaseCrudRpcController

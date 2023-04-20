@@ -3,7 +3,7 @@
 namespace Untek\Sandbox\Sandbox\RestApiOpenApi\Domain\Helpers;
 
 use Untek\Model\Entity\Helpers\EntityHelper;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
 use Untek\Sandbox\Sandbox\RpcMock\Domain\Libs\HasherHelper;
 
 class RequestHelper

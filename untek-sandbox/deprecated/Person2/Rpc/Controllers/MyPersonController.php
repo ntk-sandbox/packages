@@ -3,8 +3,8 @@
 namespace Untek\Sandbox\Sandbox\Person2\Rpc\Controllers;
 
 use Untek\Model\Query\Entities\Query;
-use Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity;
-use Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
+use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\Framework\Rpc\Presentation\Base\BaseRpcController;
 use Untek\Sandbox\Sandbox\Person2\Domain\Interfaces\Services\MyPersonServiceInterface;
 

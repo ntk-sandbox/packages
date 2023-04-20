@@ -3,8 +3,8 @@
 
 /**
  * @var $this \Untek\Component\Web\HtmlRender\Application\Services\View
- * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Entities\RpcResponseEntity
- * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Entities\RpcRequestEntity
+ * @var $rpcResponseEntity \Untek\Framework\Rpc\Domain\Model\RpcResponseEntity
+ * @var $rpcRequestEntity \Untek\Framework\Rpc\Domain\Model\RpcRequestEntity
  */
 
 use Untek\Model\Entity\Helpers\EntityHelper;
