@@ -4,8 +4,8 @@ namespace Untek\Tool\Test\Traits;
 
 use Untek\Core\Env\Enums\EnvEnum;
 use Untek\Framework\Rpc\Domain\Facades\RpcClientFacade;
-use Untek\Framework\Rpc\Domain\Libs\RpcAuthProvider;
-use Untek\Framework\Rpc\Domain\Libs\RpcProvider;
+use Untek\Framework\Rpc\Infrastructure\Libs\RpcAuthProvider;
+use Untek\Framework\Rpc\Infrastructure\Libs\RpcProvider;
 
 trait ProviderTrait
 {

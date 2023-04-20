@@ -3,7 +3,7 @@
 namespace Untek\Tool\Test\Traits;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Framework\Rpc\Domain\Libs\RpcFixtureProvider;
+use Untek\Framework\Rpc\Infrastructure\Libs\RpcFixtureProvider;
 
 trait FixtureTrait
 {

@@ -11,7 +11,7 @@ use Untek\Model\Service\Base\BaseService;
 use Untek\Framework\Rpc\Domain\Model\RpcRequestEntity;
 use Untek\Framework\Rpc\Domain\Model\RpcResponseEntity;
 use Untek\Framework\Rpc\Domain\Enums\HttpHeaderEnum;
-use Untek\Framework\Rpc\Domain\Libs\RpcProvider;
+use Untek\Framework\Rpc\Infrastructure\Libs\RpcProvider;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\ClientEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\FavoriteEntity;
 use Untek\Sandbox\Sandbox\RpcClient\Domain\Entities\UserEntity;
