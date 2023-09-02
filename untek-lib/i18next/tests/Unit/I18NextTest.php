@@ -3,7 +3,7 @@
 namespace Untek\Core\Base\Tests\Unit;
 
 use Untek\Core\Instance\Helpers\ClassHelper;
-use Untek\Component\I18Next\Interfaces\Services\TranslationServiceInterface;
+use Untek\Component\Translation\Interfaces\Services\TranslationServiceInterface;
 use Untek\Component\I18Next\Services\TranslationService;
 use PHPUnit\Framework\TestCase;
 
